@@ -1,0 +1,837 @@
+:root {
+  --bck0: #ffffff;
+  --bck1: rgb(237, 237, 237);
+  --bck2: #c7c7c7;
+  --black: #141414;
+  --blue: rgb(0, 0, 256);
+  --textSize0: 14px;
+  --fLight: 100;
+  --fRegular: 400;
+  --fBold: 600;
+  --mainHeight: calc(100vh - 110px);
+  --mainWidth: calc(100vw - 100px);
+  --mainWidthMq2: calc(100vw - 56px);
+}
+
+* {
+  box-sizing: border-box;
+  /* disable on touch highlights of html elements, especially on mobile! */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Twkeverett, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bck0);
+  color: #fff;
+  /* disable scrolling / rubberband effect on mobile */
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+#glcanvas {
+  display: block;
+  top: 0;
+  left: 0;
+  outline: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+.srcshape {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  mix-blend-mode: multiply;
+}
+
+#background {
+  width: var(--mainWidth);
+  height: var(--mainHeight);
+  background-color: var(--bck1);
+  position: fixed;
+  top: 70px;
+  left: 60px;
+  z-index: 0;
+}
+
+#scrollText {
+  width: 100vw;
+  position: fixed;
+  background-color: transparent;
+  z-index: 10;
+  bottom: -13px;
+}
+
+#scrollText ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: scrollTextAnim 30s infinite linear;
+}
+
+#scrollText ul li {
+  white-space: nowrap;
+  display: flex;
+  margin: 0 20px 0 0;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+}
+
+#logo {
+  z-index: 1001 !important;
+  filter: brightness(0);
+}
+
+#logo a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+nav a {
+  color: var(--black);
+}
+
+.w-nav-link.w--current {
+  color: var(--bck0);
+}
+
+@keyframes scrollTextAnim {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* indexPage */
+
+[context="index"] main,
+[context="index"] #contact,
+[context="works"] main {
+  width: var(--mainWidth);
+  min-height: var(--mainHeight);
+  position: relative;
+  left: 60px;
+  z-index: 3;
+}
+
+[context="index"] .srcshape {
+  mix-blend-mode: multiply;
+}
+
+[context="index"] #void {
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+[context="index"] #work {
+  min-height: 110vh;
+}
+
+[context="index"] #work #workList {
+  margin: 0 0 10vh 0;
+}
+
+[context="index"] #header {
+  width: 100vw;
+  height: 110vh;
+  position: fixed;
+  z-index: 4;
+  mix-blend-mode: multiply;
+}
+
+[context="index"] #logo {
+  position: fixed;
+  top: 50vh;
+  left: 100px;
+}
+
+[context="index"] .text-block {
+  left: 100px;
+  top: 55vh;
+  font-size: 12px;
+}
+
+[context="index"] #deco1 {
+  position: fixed;
+  top: 50vh;
+  left: 60px;
+  width: 10px;
+  height: 50px;
+  z-index: 4;
+  background-color: #a2a2a2;
+}
+
+[context="index"] #deco2,
+[context="index"] #deco3 {
+  position: fixed;
+  top: 70px;
+  left: 400px;
+  width: 35px;
+  height: 2px;
+  z-index: 4;
+  background-color: var(--black);
+}
+
+[context="index"] #deco3 {
+  top: 55vh;
+}
+
+[context="index"] #text1 {
+  position: fixed;
+  width: 400px;
+  top: 55vh;
+  left: 400px;
+  margin-top: 25px;
+  color: var(--black);
+  font-size: var(--textSize0);
+  font-family: Twkeverett, sans-serif;
+  font-weight: var(--fLight);
+}
+
+[context="index"] main {
+  mix-blend-mode: multiply;
+  z-index: 5;
+  /* margin: 0 0 500px 0; */
+  /* background-color: aqua; */
+}
+
+[context="index"] main .work {
+  margin: 0 0 20px 0;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+}
+
+[context="index"] main .work.workIndex {
+  z-index: 10;
+}
+
+[context="index"] main .work .image {
+  aspect-ratio: 1 / 1;
+  position: relative;
+  padding: 0 0 0 0;
+  /* align-items: flex-end; */
+}
+
+[context="index"] main .work .workelement {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: grayscale(100%) contrast(1.5);
+  background-size: cover;
+}
+
+[context="index"] main .work #gallery {
+  display: none;
+}
+
+[context="index"] main .work a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: 5;
+}
+
+[context="index"] main .work .image {
+  background-color: transparent;
+}
+[context="index"] main .work .image .tint {
+  background-color: var(--blue);
+  filter: opacity(0) grayscale(0%);
+}
+
+[context="index"] main .work .tint:hover {
+  filter: opacity(100) grayscale(0%);
+  mix-blend-mode: lighten;
+  transition: filter 0.1s ease; /* Adding transition for smooth effect */
+}
+
+[context="index"] main .work .title {
+  color: var(--black);
+  opacity: 0;
+}
+
+[context="index"] main .work .title.textVisible {
+  opacity: 1;
+  transition: opacity 0.1 ease;
+}
+
+[context="index"] main .work .title div {
+  display: inline-block;
+  background-color: var(--bck0);
+  padding: 0 5px;
+}
+
+[context="index"] main .basegrid {
+  background-color: red;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+[context="index"] #contact,
+[context="works"] main {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  display: grid;
+}
+
+[context="index"] #text1 {
+  position: fixed;
+  top: 55vh;
+}
+
+[context="index"] #contact {
+  color: var(--bck1);
+  z-index: 6;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+[context="index"] #contact .w-dyn-list {
+  grid-column: span 2 / 7;
+  display: flex;
+  align-items: center;
+}
+
+[context="index"] #contact .w-dyn-list .w-dyn-item {
+  display: flex;
+  flex-direction: row;
+}
+
+[context="index"] #contact a {
+  color: var(--bck1);
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+[context="index"] #contact a:hover {
+  text-decoration: underline;
+}
+
+[context="index"] #contact #image {
+  background-color: transparent;
+  height: 100%;
+  grid-area: 1/7;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+[context="index"] #contact #image .w-embed {
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+}
+
+[context="index"] #contact #image .w-embed video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* [context="index"] #contact #image img {
+  aspect-ratio: 1 / 1;
+  height: max-content;
+  padding: 0 0 0 0;
+  filter: grayscale(100%);
+  margin: unset;
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+} */
+
+[context="index"] #contact #textContact {
+  font-size: 20px;
+  font-weight: var(--fLight);
+  opacity: 0;
+}
+
+[context="index"] #contact #linksContact {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+}
+[context="index"] #contact #linksContact > * {
+  opacity: 0;
+}
+
+[context="index"] #contact #linksContact::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+[context="index"] #contact #deco4 {
+  background-color: var(--bck1);
+  height: 2px;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+[context="index"] #contact #deco5 {
+  background-color: var(--bck1);
+  grid-area: 1/7;
+  width: 100%;
+  aspect-ratio: 1/1;
+  align-self: flex-end;
+  position: relative;
+  bottom: 100px;
+  right: -30px;
+  z-index: 0;
+}
+
+/* workPage */
+
+body[context="works"] {
+  /* opacity: 0; */
+}
+
+[context="works"] #multiplier,
+#multiplier .galleryelement {
+  display: none;
+}
+
+[context="works"] nav.nav-menu a {
+  color: var(--bck0);
+}
+
+[context="works"] .srcshape {
+  z-index: 5;
+}
+
+[context="works"] nav {
+  display: none;
+}
+
+[context="works"] main {
+  color: var(--bck0);
+  top: 70px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 6;
+  mix-blend-mode: exclusion;
+}
+
+[context="works"] main #row1,
+[context="works"] main #row2,
+[context="works"] main #row2 {
+  height: 100%;
+  width: 100%;
+  height: var(--mainHeight);
+}
+
+[context="works"] main #row1 {
+  grid-area: 1/1;
+  /* background-color: var(--bck0); */
+  position: relative;
+  left: 100px;
+}
+[context="works"] main #row1 > * {
+  /* left: 100px; */
+  /* position: relative; */
+}
+
+[context="works"] main #row3 {
+  grid-area: 1/2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 40px;
+}
+
+[context="works"] main #row2 {
+  grid-area: 1/7;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+[context="works"] main #row3 {
+  justify-content: flex-end;
+  margin: 0 0 150px 0;
+  width: 80%;
+}
+
+/* [context="works"] #background {
+  left: 0;
+  width: calc((100vw / 7) + 86px);
+} */
+
+[context="works"] main img {
+  aspect-ratio: 1 / 1;
+  position: relative;
+  padding: 0 0 0 0;
+  grid-area: 1/1;
+  /* margin: 50px 0 0 0; */
+  filter: grayscale(100%);
+}
+
+[context="works"] main h1 {
+  position: relative;
+  padding: 0 0 0 0;
+  grid-area: 2/1;
+  margin: 10px 0 30px 0 !important;
+}
+
+[context="works"] main h2 {
+  font-weight: 100;
+}
+
+[context="works"] .heading {
+  font-size: var(--textSize0);
+  margin: 0;
+  line-height: 24px;
+}
+
+[context="works"] #row1 > *:not(img, h1) {
+  position: relative;
+  left: 60px;
+}
+
+[context="works"] #row1 *:before {
+  font-size: var(--textSize0);
+  font-weight: var(--fBold);
+}
+
+[context="works"] #workingWith,
+#workingFor,
+#services,
+#tools {
+  font-weight: var(--fLight);
+}
+
+[context="works"] #workingWith::before {
+  content: "Working with: ";
+}
+
+[context="works"] #workingFor::before {
+  content: "Working for: ";
+}
+
+[context="works"] #services::before {
+  margin-bottom: 8px;
+  content: "Jobs developed: ";
+}
+
+[context="works"] #tools::before {
+  margin-bottom: 8px;
+  content: "Tools used: ";
+}
+
+[context="works"] p#description {
+  align-self: flex-end;
+  margin: 0;
+  font-size: 12px;
+  font-weight: var(--fLight);
+}
+
+[context="works"] #deco1,
+#deco2 {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  z-index: 4;
+  background-color: var(--blue);
+}
+
+[context="works"] div#deco1 {
+  top: -10px;
+}
+
+[context="works"] div#deco2 {
+  left: 200px;
+  top: 70px;
+}
+
+[context="works"] main .textlist ul {
+  color: var(--bck2);
+}
+
+[context="works"] main #imageList {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 35px 0 0;
+}
+
+[context="works"] main #imageList li {
+  list-style-type: none;
+  font-weight: var(--fLight);
+  margin: 0 0 5px 0;
+}
+[context="works"] main #imageList li a {
+  color: var(--bck2);
+}
+[context="works"] main #imageList li.active a {
+  color: var(--bck0);
+  font-weight: var(--fBold);
+}
+[context="works"] main #imageList li {
+  cursor: pointer;
+}
+[context="works"] #logo {
+  position: fixed;
+  top: 0vh;
+  left: 100px;
+  z-index: 4;
+}
+
+[context="works"] #playerControls {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+}
+
+[context="works"] #playerControls #area1 {
+  height: 95vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+[context="works"] #playerControls #area2 {
+  display: flex !important;
+  flex-direction: row-reverse;
+  padding: 0 40px 0 0;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 100;
+  filter: invert(1);
+}
+
+.playerPause {
+  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bebf7e0312155d62089_controlPause_100.png) !important;
+}
+
+.playerMute {
+  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bec87562597ffbc33d5_controlVolume0_100.png) !important;
+}
+
+[context="works"] #playerControls * {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+[context="works"] #playerControls #controlPlay {
+  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706becfc28f3d8c4bc64e3_controlPlay_100.png);
+  height: calc(100px / 4);
+  width: calc(200px / 4);
+  cursor: pointer;
+}
+
+[context="works"] #playerControls #controlFullScreen {
+  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706beb823eb18c16916fa9_controlFullscreen_100.png);
+  height: calc(100px / 4);
+  width: calc(125px / 4);
+  cursor: pointer;
+}
+
+[context="works"] #playerControls #controlAudio {
+  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bec7b517c177427e194_controlVolume1_100.png);
+  height: calc(100px / 4);
+  width: calc(200px / 4);
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+/* filter to set the logo in white */
+/* filter: invert(1) grayscale(1) brightness(2); */
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  [context="works"] #background,
+  [context="index"] #background {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 50px;
+    left: 10px;
+  }
+
+  .navbar,
+  .container-3 {
+    height: 50px;
+  }
+
+  [context="index"] #work,
+  [context="works"] main {
+    width: 100vw;
+    padding: 0 30px;
+    left: 0;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    min-height: unset;
+  }
+
+  [context="works"] main #row1,
+  [context="works"] main #row2,
+  [context="works"] main #row3 {
+    height: unset;
+  }
+  [context="works"] main #row1 {
+    grid-area: 1/1;
+  }
+  [context="works"] main #row2 {
+    grid-area: 2/1;
+    height: unset;
+    left: unset;
+  }
+  [context="works"] main #row3 {
+    grid-area: unset;
+    margin: unset;
+    position: absolute;
+    font-size: 10px !important;
+    left: 90vw;
+    top: 10vh;
+    line-height: 15px;
+  }
+
+  [context="index"] #logoPlayer {
+    height: 50px;
+  }
+
+  [context="index"] .text-block {
+    left: 30px;
+    top: 503px;
+    font-size: 12px;
+  }
+
+  [context="index"] main .work {
+    margin: 0 0 80px 0;
+  }
+
+  [context="works"] #logo,
+  [context="index"] #logo {
+    width: 150px;
+    height: 50px;
+    left: 8px;
+    top: 2px;
+    filter: grayscale(1) invert(1);
+  }
+
+  .nav-menu {
+    margin-right: 8px;
+    display: flex !important;
+    align-items: center;
+  }
+
+  .nav-menu a.nav-link {
+    padding: 0 10px 0 10px;
+    font-weight: var(--fLight);
+    font-size: 13px;
+  }
+  .w-nav-button {
+    display: none !important;
+  }
+
+  [context="works"] #playerControls {
+    display: flex !important;
+    top: unset;
+    bottom: 0;
+    width: 50vw;
+    height: 50px;
+    justify-content: center;
+  }
+
+  [context="works"] #playerControls #area1 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  [context="index"] #background,
+  [context="works"] #background {
+    width: calc(100vw - 28px);
+    left: 28px;
+  }
+  [context="index"] #logo,
+  [context="works"] #logo {
+    width: 180px;
+    left: 28px;
+    display: flex;
+  }
+  [context="index"] #contact,
+  [context="index"] main .collection-list {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    display: grid;
+  }
+  [context="index"] #work {
+    width: var(--mainWidthMq2);
+    left: 28px;
+  }
+  [context="index"] #contact {
+    height: 110vh;
+  }
+  [context="index"] #background {
+    width: calc(100vw - 28px);
+    left: 28px;
+  }
+  [context="index"] main .work .title {
+    opacity: 1;
+  }
+  [context="index"] #contact #image {
+    grid-area: 1/3;
+  }
+  [context="index"] #contact #deco5 {
+    grid-area: 1/3;
+    bottom: 100px;
+    right: -30px;
+  }
+  [context="index"] #contact .w-dyn-list {
+    grid-column: span 2 / 3;
+  }
+}
+
+/* animations */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the element */
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+  /* Adjust the duration and timing function as needed */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>srcph.org_v01</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow: hidden; /* disable scrolling / rubberband effect on mobile */
+        height: 100vh;
+      }
+
+      canvas {
+        display: block;
+        position: absolute;
+        outline: 0;
+      }
+
+      * {
+        /* disable on touch highlights of html elements, especially on mobile! */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1"
+    />
+    <meta itemprop="name" content="srcph.org_v01" />
+    <meta itemprop="description" content="made with cables" />
+    <meta itemprop="image" content="screenshot.png" />
+    <meta name="description" content="made with cables" />
+  </head>
+  <body>
+    <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+
+    <script type="text/javascript" src="patch.js" async></script>
+    <script type="text/javascript" src="cablesLoader.js"></script>
+  </body>
+</html>
