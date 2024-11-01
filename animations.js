@@ -41,9 +41,11 @@ window.addEventListener("load", function () {
     if (mq3.matches) {
       tl1.to("#logo", { translateY: "-50vh" }),
         tl1.to("#text1", { translateY: "-70vh", opacity: 0 }, "<"),
+        tl1.to("#canvasMask4", { translateY: "-70vh"}, "<"),
         tl1.to("#deco1", { opacity: 0 }, "<"),
         tl1.to("#deco2", { opacity: 0 }, "<"),
-        tl1.to("#deco3", { opacity: 0 }, "<");
+        tl1.to("#deco3", { opacity: 0 }, "<"),
+        tl1.to("#canvasMask3", { translateY: "-50vh"}, "<");
 
       tl2.to("#textContact", { opacity: 1 }, "<"),
         tl2.to("#image img", { opacity: 1, left: "-30px" }, "<"),
@@ -57,7 +59,7 @@ window.addEventListener("load", function () {
           },
           onLeave: () => {
             //   console.log("onLeave");
-            gsap.to(window, { scrollTo: "#contact", duration: 2 });
+            // gsap.to(window, { scrollTo: "#contact", duration: 2 });
             // CABLES.patch.setVariable("stringTexture", "let's work together");
           },
           onEnterBack: () => {
@@ -65,7 +67,7 @@ window.addEventListener("load", function () {
           },
           onLeaveBack: () => {
             //   console.log("onLeaveBack");
-            gsap.to(window, { scrollTo: "#void", duration: 2 });
+            // gsap.to(window, { scrollTo: "#void", duration: 2 });
             // CABLES.patch.setVariable("stringTexture", "media design");
           },
           start: "top 90%",
@@ -73,28 +75,14 @@ window.addEventListener("load", function () {
           trigger: "#workList",
         });
 
-      ScrollTrigger.create({
-        onLeave: () => {
-          gsap.to(window, { scrollTo: "#workList", duration: 2 });
-        },
-        // markers: true,
-        start: "top top",
-        end: "bottom 70%",
-        trigger: "#void",
-      });
-
       // ScrollTrigger.create({
-      //     trigger: "#contact",
-      //     onLeave: () => {
-      //         gsap.to(window, {
-      //             scrollTo: {
-      //                 y: "#workList", // Scroll to this element
-      //                 offsetY: 70, // Optional: Offset for precise positioning
-      //             },
-      //             duration: 2, // Duration of the scroll animation
-      //         });
-      //         CABLES.patch.setVariable("stringTexture", "work");
-      //     },
+      //   onLeave: () => {
+      //     gsap.to(window, { scrollTo: "#workList", duration: 2 });
+      //   },
+      //   // markers: true,
+      //   start: "top top",
+      //   end: "bottom 70%",
+      //   trigger: "#void",
       // });
     }
 

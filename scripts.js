@@ -1,5 +1,6 @@
 const logo = document.getElementById("logo");
 const gridItems = document.querySelectorAll(".work");
+var mainColor;
 
 //Smooth Animation
 
@@ -26,7 +27,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 function handleScrollProgress(progress, variableName) {
   CABLES.patch.setVariable(variableName, progress);
-  console.log(variableName + String(progress));
+  // console.log(variableName + String(progress));
   // console.log(progress)
 }
 
@@ -44,6 +45,25 @@ function getElementPosition(elementId) {
   const rect = element.getBoundingClientRect();
   return { top: rect.top, left: rect.left };
 }
+// Track position of the mask
+
+const workList = document.getElementById("workList");
+const targetElement = document.getElementById("canvasMask1");
+
+function updatePosition() {
+  if (workList && targetElement) {
+    const rect = workList.getBoundingClientRect();
+    var WorkHeight = workList.offsetHeight;
+  
+    targetElement.style.transform = `translateY(${rect.top + window.scrollY}px)`;
+    targetElement.style.height = `${WorkHeight}px`;  // Remove the extra parentheses
+  }
+}
+
+requestAnimationFrame(function animate() {
+  updatePosition();
+  requestAnimationFrame(animate);
+});
 
 //OnLoaded Scripts
 window.addEventListener("load", function () {
@@ -60,6 +80,7 @@ window.addEventListener("load", function () {
     tl.to("body", { opacity: 0 });
   });
 });
+
 /////////// Context Index ///////////
 
 if (pageContext == "index") {
@@ -70,11 +91,28 @@ if (pageContext == "index") {
 
   const usedPositions = new Set();
 
+  /// Setting players
+
+  var playerWork = videojs(document.querySelector(".videojs-work"), {
+    controls: false,
+    autoplay: false,
+    preload: "auto",
+    muted: true,
+  });
+
+  var playerAbout = videojs(document.querySelector(".videojs-about"), {
+    controls: false,
+    autoplay: true,
+    preload: "auto",
+    muted: true,
+  });
+
   //// mq3
 
+  /// Random position on grid
   if (mq3.matches) {
     const numRows = 6;
-    const numCols = 6;
+    const numCols = 5;
 
     gridItems.forEach((item) => {
       let randomRow, randomCol;
@@ -86,10 +124,11 @@ if (pageContext == "index") {
       usedPositions.add(`${randomRow}-${randomCol}`);
 
       item.style.gridRow = randomRow;
-      item.style.gridColumn = randomCol;
+      item.style.gridColumn = randomCol + 1;
     });
+
     gridItems.forEach((item) => {
-      const depth = Math.floor(Math.random() * (100 - -100 + 1)) - 100; // Generate random integers between -50 and 50
+      const depth = getRandomInt(-50, 50);
 
       gsap.to(item, {
         yPercent: () => {
@@ -103,35 +142,38 @@ if (pageContext == "index") {
       });
     });
 
+    //
+
     const workContainers = document.querySelectorAll(".work");
 
-    workContainers.forEach((container) => {
-      let intervalId; // Variable to store interval ID
+    document.addEventListener("DOMContentLoaded", function () {
+      workContainers.forEach((container) => {
+        const videoElement = container.querySelector(".videojs-work");
+        if (!videoElement) return; // Skip if no video found in this container
 
-      container.addEventListener("mouseover", (event) => {
-        const imageSrcUrls = [];
-        let currentIndex = 0;
+        const player = videojs(videoElement);
 
-        const gallery = container.querySelector("#gallery");
-        const imageElements = gallery.querySelectorAll("img");
-        const workElement = container.querySelector(".workelement");
-        const titleElement = container.querySelector(".title");
-
-        imageElements.forEach((img) => {
-          const src = img.getAttribute("src");
-          imageSrcUrls.push(src);
+        container.addEventListener("mouseenter", function () {
+          player.muted(true);
+          player.play();
+          console.log("Mouseover:", container.getAttribute("Project"));
+          mainColor = container.getAttribute("color");
+          CABLES.patch.setVariable("mainColorHex", mainColor);
+          console.log(mainColor);
         });
 
-        function changeBackgroundImage() {
-          workElement.style.backgroundImage = `url(${imageSrcUrls[currentIndex]})`;
-          currentIndex = (currentIndex + 1) % imageSrcUrls.length; // Loop through images
-        }
-        changeBackgroundImage();
-        intervalId = setInterval(changeBackgroundImage, 350);
-      });
+        container.addEventListener("mouseleave", function () {
+          player.muted(true);
+          player.pause();
+          console.log("Mouseleave:", container.getAttribute("Project"));
+          mainColor = "#0d0d0d";
+          CABLES.patch.setVariable("mainColorHex", mainColor);
+        });
 
-      container.addEventListener("mouseout", () => {
-        clearInterval(intervalId); // Stop changing image on mouse out
+        // Optionally, if you want autoplay:
+        // player.ready(function () {
+        //   player.play();
+        // });
       });
     });
 
@@ -301,23 +343,47 @@ if (pageContext == "works") {
       end: () => "+=" + document.querySelector("#gallery").offsetWidth,
     },
   });
+
+  const playerControls = document.getElementById("playerControls");
+  let timeout;
+  let isHovering = false;
+
+  // Function to show controls
+  function showControls() {
+    playerControls.style.opacity = "1";
+    // Reset timer
+    clearTimeout(timeout);
+    // Only set hide timer if not hovering
+    if (!isHovering) {
+      timeout = setTimeout(hideControls, 2000);
+    }
+  }
+
+  function hideControls() {
+    if (!isHovering) {
+      // Only hide if not hovering
+      playerControls.style.opacity = "0";
+    }
+  }
+
+  // Add necessary CSS
+  playerControls.style.transition = "opacity 0.3s ease";
+  playerControls.style.opacity = "0";
+
+  // Event listeners for mouse movement
+  document.addEventListener("mousemove", showControls);
+
+  // Mouse enter/leave for controls
+  playerControls.addEventListener("mouseenter", () => {
+    isHovering = true;
+    showControls();
+    clearTimeout(timeout); // Cancel any pending hide
+  });
+
+  playerControls.addEventListener("mouseleave", () => {
+    isHovering = false;
+    timeout = setTimeout(hideControls, 2000);
+  });
 }
 
 /////////// General Functions ///////////
-
-// Logo player
-
-LottieInteractivity.create({
-  container: "body",
-  player: "#logoPlayer",
-  mode: "scroll",
-
-  actions: [
-    {
-      visibility: [0, 2.0],
-      type: "seek",
-      loop: true,
-      frames: [0, 113],
-    },
-  ],
-});

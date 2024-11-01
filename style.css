@@ -1,15 +1,21 @@
 :root {
   --bck0: #ffffff;
   --bck1: rgb(237, 237, 237);
-  --bck2: #c7c7c7;
+  --bck2: #f2f5fa;
   --black: #141414;
   --blue: rgb(0, 0, 256);
   --textSize0: 14px;
   --fLight: 100;
   --fRegular: 400;
   --fBold: 600;
+
+  --mainMargin: 42px;
+  --mainPadding: 36px;
+
+  --headerHeight: 65px;
+
   --mainHeight: calc(100vh - 110px);
-  --mainWidth: calc(100vw - 100px);
+  --mainWidth: calc(100vw - ((var(--mainMargin) * 2) + var(--mainPadding)));
   --mainWidthMq2: calc(100vw - 56px);
 }
 
@@ -47,6 +53,37 @@ a {
   z-index: 1;
   mix-blend-mode: multiply;
 }
+.canvasmask{
+  background-color: #ffffff;
+  z-index: 6;
+}
+#canvasMask1 {
+  height: 100vh;
+  left: calc((var(--mainWidth)/6) + var(--mainMargin) + var(--mainPadding));
+  right: calc(var(--mainMargin) + (var(--mainWidth)/6));
+  position: absolute;
+  
+}
+#canvasMask2 {
+  position: fixed;
+  height: 65px;
+  width: calc((var(--mainWidth) / 6) + var(--mainMargin));
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#canvasMask3 {
+  position: fixed;
+  height: 55vh;
+  width: calc((var(--mainWidth) / 6));
+  left:calc(var(--mainMargin) + var(--mainPadding));
+}
+#canvasMask4 {
+  position: fixed;
+  height: 65vh;
+  width: calc((var(--mainWidth) / 6) + var(--mainPadding));
+  left:calc((var(--mainWidth) / 6)  + var(--mainPadding));
+}
 
 .srcshape {
   position: fixed;
@@ -54,16 +91,6 @@ a {
   left: 0;
   z-index: 5;
   mix-blend-mode: multiply;
-}
-
-#background {
-  width: var(--mainWidth);
-  height: var(--mainHeight);
-  background-color: var(--bck1);
-  position: fixed;
-  top: 70px;
-  left: 60px;
-  z-index: 0;
 }
 
 #scrollText {
@@ -93,6 +120,7 @@ a {
 #logo {
   z-index: 1001 !important;
   filter: brightness(0);
+  height: var(--headerHeight);
 }
 
 #logo a {
@@ -100,6 +128,10 @@ a {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+#logoPlayer {
+  height: var(--headerHeight);
 }
 
 nav a {
@@ -123,12 +155,11 @@ nav a {
 /* indexPage */
 
 [context="index"] main,
-[context="index"] #contact,
-[context="works"] main {
-  width: var(--mainWidth);
-  min-height: var(--mainHeight);
+[context="index"] #contact {
+  /* width: calc(100vw - (var(--mainMargin) + var(--mainPadding))); */
+  padding-left: calc(var(--mainMargin) + var(--mainPadding));
+  padding-right: var(--mainMargin);
   position: relative;
-  left: 60px;
   z-index: 3;
 }
 
@@ -150,17 +181,64 @@ nav a {
 }
 
 [context="index"] #header {
-  width: 100vw;
   height: 110vh;
-  position: fixed;
+  position: relative;
   z-index: 4;
   mix-blend-mode: multiply;
+}
+[context="index"] .collection-list {
+  display: grid;
+
+  grid-template-columns: repeat(6, calc(100% / 6));
+  /* grid-template-columns: repeat(6, calc(var(--mainWidth) / 6));
+  grid-template-rows: repeat(auto, calc(var(--mainWidth) / 6)); */
+}
+
+[context="index"] .collection-list .work {
+  /* max-width: calc(var(--mainWidth) / 6); */
+  width: 100%;
+  height: 100%;
+}
+
+[context="index"] .collection-list .work .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire parent space */
+  aspect-ratio: 1 / 1;
+}
+[context="index"] .videojs-work {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[context="index"] .vjs-poster {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+[context="index"] .collection-list .work .video .videojs-work video {
+  height: 100%;
+  overflow: hidden;
 }
 
 [context="index"] #logo {
   position: fixed;
   top: 50vh;
   left: 100px;
+}
+
+[context="index"] #background {
+  /* width: var(--mainWidth); */
+  height: var(--mainHeight);
+  background-color: var(--bck1);
+  position: fixed;
+  top: 65px;
+  left: calc(var(--mainMargin) + var(--mainPadding));
+  right: var(--mainMargin);
+  z-index: 0;
 }
 
 [context="index"] .text-block {
@@ -170,6 +248,7 @@ nav a {
 }
 
 [context="index"] #deco1 {
+  display:none;
   position: fixed;
   top: 50vh;
   left: 60px;
@@ -179,14 +258,16 @@ nav a {
   background-color: #a2a2a2;
 }
 
+[context="index"] .deco{
+  z-index:7;
+}
 [context="index"] #deco2,
 [context="index"] #deco3 {
   position: fixed;
-  top: 70px;
+  top: var(--headerHeight);
   left: 400px;
   width: 35px;
   height: 2px;
-  z-index: 4;
   background-color: var(--black);
 }
 
@@ -195,10 +276,11 @@ nav a {
 }
 
 [context="index"] #text1 {
+  z-index:7;
   position: fixed;
   width: 400px;
   top: 55vh;
-  left: 400px;
+  left: calc((var(--mainWidth) / 6)  + var(--mainPadding));
   margin-top: 25px;
   color: var(--black);
   font-size: var(--textSize0);
@@ -228,6 +310,11 @@ nav a {
   aspect-ratio: 1 / 1;
   position: relative;
   padding: 0 0 0 0;
+  overflow: hidden; /* Prevent content from resizing the cell */
+  min-width: 0; /* Prevents cells from expanding beyond the grid size */
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
   /* align-items: flex-end; */
 }
 
@@ -255,15 +342,23 @@ nav a {
   background-color: transparent;
 }
 [context="index"] main .work .image .tint {
-  background-color: var(--blue);
-  filter: opacity(0) grayscale(0%);
+  background-color: transparent;
+  /* filter: opacity(0) grayscale(0%); */
+}
+[context="index"] main .work {
+  filter: grayscale(1) contrast(1.2);
 }
 
-[context="index"] main .work .tint:hover {
+[context="index"] main .work:hover {
+  filter: grayscale(0)  contrast(1);
+  transition: filter 0.1s ease;
+}
+
+/* [context="index"] main .work .tint:hover {
   filter: opacity(100) grayscale(0%);
   mix-blend-mode: lighten;
-  transition: filter 0.1s ease; /* Adding transition for smooth effect */
-}
+  transition: filter 0.1s ease; 
+} */
 
 [context="index"] main .work .title {
   color: var(--black);
@@ -291,8 +386,7 @@ nav a {
 [context="works"] main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: row;
   display: grid;
 }
@@ -331,24 +425,11 @@ nav a {
   text-decoration: underline;
 }
 
-[context="index"] #contact #image {
-  background-color: transparent;
-  height: 100%;
-  grid-area: 1/7;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: row;
-}
+
 [context="index"] #contact #image .w-embed {
   position: relative;
   bottom: 100px;
   z-index: 1;
-}
-
-[context="index"] #contact #image .w-embed video {
-  width: 100%;
-  height: 100%;
-  display: flex;
 }
 
 /* [context="index"] #contact #image img {
@@ -433,59 +514,67 @@ body[context="works"] {
 }
 
 [context="works"] main {
-  color: var(--bck0);
-  top: 70px;
+  /* grid-template-rows: var(--headerHeight) auto; */
+  color: var(--black);
+  top: 0px;
+  bottom: 0px;
+  left: calc(var(--mainMargin) + var(--mainPadding));
+  right: var(--mainMargin);
   background-color: transparent;
   position: fixed;
   z-index: 6;
-  mix-blend-mode: exclusion;
+}
+[context="works"] .infowrapper {
+  background-color: var(--bck1);
+  padding-top: var(--headerHeight);
+  padding-bottom: 65px;
 }
 
-[context="works"] main #row1,
-[context="works"] main #row2,
-[context="works"] main #row2 {
-  height: 100%;
-  width: 100%;
-  height: var(--mainHeight);
+[context="works"] .infoheader {
+  height: var(--headerHeight);
+  background-color: var(--bck0);
 }
 
-[context="works"] main #row1 {
+[context="works"] main #col1 {
   grid-area: 1/1;
-  /* background-color: var(--bck0); */
-  position: relative;
-  left: 100px;
 }
-[context="works"] main #row1 > * {
-  /* left: 100px; */
-  /* position: relative; */
+[context="works"] main #col1 .infoheader {
+  position: fixed;
+  left: 0px;
+  width: calc((var(--mainWidth) / 6) + var(--mainPadding) + var(--mainMargin));
 }
 
-[context="works"] main #row3 {
+[context="works"] #col1 .infowrapper {
+  margin-left: calc(var(--mainPadding) * -1);
+  padding-left: var(--mainPadding);
+}
+
+[context="works"] main #col2 {
   grid-area: 1/2;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 40px;
+}
+[context="works"] main #col2 p {
+  margin-top: 65px;
 }
 
-[context="works"] main #row2 {
-  grid-area: 1/7;
+[context="works"] main #col6 {
+  grid-area: 1/6;
   justify-content: flex-end;
   display: flex;
   align-items: center;
   z-index: 5;
 }
 
-[context="works"] main #row3 {
-  justify-content: flex-end;
-  margin: 0 0 150px 0;
-  width: 80%;
+[context="works"] #background {
+  /* width: var(--mainWidth); */
+  height: calc(100vh - var(--headerHeight));
+  background-color: var(--bck1);
+  position: fixed;
+  top: var(--headerHeight);
+  left: var(--mainMargin);
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
 }
-
-/* [context="works"] #background {
-  left: 0;
-  width: calc((100vw / 7) + 86px);
-} */
 
 [context="works"] main img {
   aspect-ratio: 1 / 1;
@@ -513,12 +602,7 @@ body[context="works"] {
   line-height: 24px;
 }
 
-[context="works"] #row1 > *:not(img, h1) {
-  position: relative;
-  left: 60px;
-}
-
-[context="works"] #row1 *:before {
+[context="works"] #col1 *:before {
   font-size: var(--textSize0);
   font-weight: var(--fBold);
 }
@@ -560,7 +644,7 @@ body[context="works"] {
   position: relative;
   width: 20px;
   height: 2px;
-  z-index: 4;
+  /* z-index: 4; */
   background-color: var(--blue);
 }
 
@@ -574,7 +658,7 @@ body[context="works"] {
 }
 
 [context="works"] main .textlist ul {
-  color: var(--bck2);
+  color: var(--black);
 }
 
 [context="works"] main #imageList {
@@ -589,7 +673,7 @@ body[context="works"] {
   margin: 0 0 5px 0;
 }
 [context="works"] main #imageList li a {
-  color: var(--bck2);
+  color: var(--black);
 }
 [context="works"] main #imageList li.active a {
   color: var(--bck0);
@@ -607,65 +691,32 @@ body[context="works"] {
 
 [context="works"] #playerControls {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  right: 0;
   top: 0;
-  width: 50vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 25px; /* needs defined width */
+  height: 40px; /* needs defined height */
+  z-index: 10;
 }
 
-[context="works"] #playerControls #area1 {
-  height: 95vh;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-}
-
-[context="works"] #playerControls #area2 {
-  display: flex !important;
-  flex-direction: row-reverse;
-  padding: 0 40px 0 0;
-  position: fixed;
-  right: 20px;
-  bottom: 60px;
-  z-index: 100;
-  filter: invert(1);
-}
-
-.playerPause {
-  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bebf7e0312155d62089_controlPause_100.png) !important;
-}
-
-.playerMute {
-  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bec87562597ffbc33d5_controlVolume0_100.png) !important;
-}
-
-[context="works"] #playerControls * {
+[context="works"] #playerControls > div {
+  width: 25px; /* needs defined width */
+  height: 40px; /* needs defined height */
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-[context="works"] #playerControls #controlPlay {
-  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706becfc28f3d8c4bc64e3_controlPlay_100.png);
-  height: calc(100px / 4);
-  width: calc(200px / 4);
   cursor: pointer;
 }
 
-[context="works"] #playerControls #controlFullScreen {
-  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706beb823eb18c16916fa9_controlFullscreen_100.png);
-  height: calc(100px / 4);
-  width: calc(125px / 4);
-  cursor: pointer;
+#playerControls {
+  /* Add your positioning styles */
+  transition: opacity 0.3s ease;
 }
 
-[context="works"] #playerControls #controlAudio {
-  background-image: url(https://uploads-ssl.webflow.com/630ca11296e48c2b70f1013e/65706bec7b517c177427e194_controlVolume1_100.png);
-  height: calc(100px / 4);
-  width: calc(200px / 4);
-  margin: 0 10px 0 0;
-  cursor: pointer;
+/* Optional: fade out when inactive */
+#playerControls.inactive {
+  opacity: 0;
 }
 
 /* filter to set the logo in white */
@@ -696,15 +747,15 @@ body[context="works"] {
     min-height: unset;
   }
 
-  [context="works"] main #row1,
-  [context="works"] main #row2,
+  [context="works"] main #col1,
+  [context="works"] main #col2,
   [context="works"] main #row3 {
     height: unset;
   }
-  [context="works"] main #row1 {
+  [context="works"] main #col1 {
     grid-area: 1/1;
   }
-  [context="works"] main #row2 {
+  [context="works"] main #col2 {
     grid-area: 2/1;
     height: unset;
     left: unset;
