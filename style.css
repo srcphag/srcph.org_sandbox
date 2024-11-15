@@ -688,7 +688,7 @@ body[context="works"] {
   width: 20px;
   height: 2px;
   /* z-index: 4; */
-  background-color: var(--blue);
+  background-color: var(--black);
 }
 
 [context="works"] div#deco1 {

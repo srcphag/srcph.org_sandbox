@@ -24543,8 +24543,8 @@ CABLES.build = {
 })();
 //# sourceMappingURL=libs.core.js.map
 if (!CABLES.exportedPatches) CABLES.exportedPatches = {};
-CABLES.exportedPatches["2myFLH"] = {
-  _id: "651a88bdc6d98bfb822e8d4a",
+CABLES.exportedPatches["GgjVeu"] = {
+  _id: "6737d25bb91f6fc8379ea12e",
   ops: [
     {
       id: "c4nbn4unw",
@@ -24585,8 +24585,8 @@ CABLES.exportedPatches["2myFLH"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -58 },
-        { name: "Movement Y", value: 33 },
+        { name: "Movement X", value: -1 },
+        { name: "Movement Y", value: 0 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -24953,101 +24953,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Gl.MainLoop",
     },
     {
-      id: "2ntt23rk3",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger",
-              objIn: "ycerb854n",
-              objOut: "2ntt23rk3",
-            },
-          ],
-        },
-        { name: "index", value: 26 },
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "wlexf7y4c",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "s4q4ruy44",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "l7dfseihc",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "u9xdonso0",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "ak01572n2",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "shz5fecuv",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "p4f215dps",
-              objOut: "2ntt23rk3",
-            },
-            {
-              portIn: "Data",
-              portOut: "value",
-              objIn: "y46v1327m",
-              objOut: "2ntt23rk3",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.ArrayIteratorObjects",
-    },
-    {
-      id: "ycerb854n",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "scale", value: 1 },
-        { name: "rotX", value: 0 },
-        { name: "rotZ", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Execute",
-              portOut: "trigger",
-              objIn: "pgm4y2zsw",
-              objOut: "ycerb854n",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.Transform",
-    },
-    {
       id: "3e9jbf60v",
       uiAttribs: {},
       portsOut: [
@@ -25064,173 +24969,6 @@ CABLES.exportedPatches["2myFLH"] = {
         },
       ],
       objName: "Ops.Gl.Matrix.TransformView",
-    },
-    {
-      id: "wlexf7y4c",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "P(0)" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "posX",
-              portOut: "Result",
-              objIn: "ycerb854n",
-              objOut: "wlexf7y4c",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "s4q4ruy44",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "P(1)" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "posY",
-              portOut: "Result",
-              objIn: "ycerb854n",
-              objOut: "s4q4ruy44",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "l7dfseihc",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "P(2)" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "posZ",
-              portOut: "Result",
-              objIn: "ycerb854n",
-              objOut: "l7dfseihc",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "u9xdonso0",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "id" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Switch Value",
-              portOut: "Result",
-              objIn: "412cpvr3l",
-              objOut: "u9xdonso0",
-            },
-            {
-              portIn: "number1",
-              portOut: "Result",
-              objIn: "zuplev70x",
-              objOut: "u9xdonso0",
-            },
-            {
-              portIn: "number1",
-              portOut: "Result",
-              objIn: "sk66l3rre",
-              objOut: "u9xdonso0",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "412cpvr3l",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        {
-          name: "Next Trigger",
-          links: [
-            {
-              portIn: "out1 Ops.Trigger.RouteTrigger Next Trigger",
-              portOut: "Next Trigger",
-              objIn: "vuczmz7aq",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        { name: "Switched Value", value: 0 },
-        {
-          name: "Trigger 1",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "Trigger 1",
-              objIn: "2zyh6jndg",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        {
-          name: "Trigger 2",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "Trigger 2",
-              objIn: "cumryawca",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        {
-          name: "Trigger 3",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "Trigger 3",
-              objIn: "wlciv31ho",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        {
-          name: "Trigger 4",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 4",
-              objIn: "9z1h5v2ud",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        {
-          name: "Trigger 5",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 5",
-              objIn: "j8jdjbzny",
-              objOut: "412cpvr3l",
-            },
-          ],
-        },
-        { name: "Highest Index", value: 5 },
-      ],
-      objName: "Ops.Trigger.RouteTrigger",
     },
     {
       id: "84fqupsq5",
@@ -25271,497 +25009,6 @@ CABLES.exportedPatches["2myFLH"] = {
         { name: "Aspect", value: 0.6447507953340403 },
       ],
       objName: "Ops.Gl.Matrix.Camera",
-    },
-    {
-      id: "ak01572n2",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "groups" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "value",
-              portOut: "Result",
-              objIn: "29knikgx6",
-              objOut: "ak01572n2",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "29knikgx6",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "old min", value: 0 },
-        { name: "old max", value: 1 },
-        { name: "new min", value: 0 },
-        { name: "new max", value: 1 },
-        { name: "Easing index", value: 0 },
-        { name: "Easing", value: "Linear" },
-        { name: "Clamp", value: 1 },
-      ],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "Switch Value",
-              portOut: "result",
-              objIn: "pgm4y2zsw",
-              objOut: "29knikgx6",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.MapRange",
-    },
-    {
-      id: "wlciv31ho",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "data", value: "" },
-        { name: "glb File", value: "ShapeBox.glb", display: "file" },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 1 },
-        { name: "Center", value: "XYZ" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.5 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "2zyh6jndg",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "data", value: "" },
-        {
-          name: "glb File",
-          value: "ShapeMidBoxLower_absCenter.glb",
-          display: "file",
-        },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 0 },
-        { name: "Center", value: "None" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.5 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "wc441c2ne",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "data", value: "" },
-        { name: "glb File", value: "ShapeShearBox.glb", display: "file" },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 0 },
-        { name: "Center", value: "None" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.75 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "9z1h5v2ud",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "posX", value: 0 },
-        { name: "posY", value: 0 },
-        { name: "posZ", value: 0 },
-        { name: "scale", value: 1 },
-        { name: "rotX", value: 0 },
-        { name: "rotY", value: 90 },
-        { name: "rotZ", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "trigger",
-              objIn: "wc441c2ne",
-              objOut: "9z1h5v2ud",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.Transform",
-    },
-    {
-      id: "j8jdjbzny",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "posX", value: 0 },
-        { name: "posY", value: 0 },
-        { name: "posZ", value: -0.25 },
-        { name: "scale", value: 1 },
-        { name: "rotX", value: 0 },
-        { name: "rotY", value: 0 },
-        { name: "rotZ", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "trigger",
-              objIn: "wfijf6f7h",
-              objOut: "j8jdjbzny",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.Transform",
-    },
-    {
-      id: "wfijf6f7h",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "data", value: "" },
-        { name: "glb File", value: "ShapeShearBoxMin.glb", display: "file" },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 1 },
-        { name: "Center", value: "XYZ" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.5 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "shz5fecuv",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "N(0)" }],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "value",
-              portOut: "Result",
-              objIn: "47r4v0qha",
-              objOut: "shz5fecuv",
-            },
-          ],
-        },
-        { name: "Found", value: 0 },
-      ],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "47r4v0qha",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "old min", value: -1 },
-        { name: "old max", value: 1 },
-        { name: "new min", value: -180 },
-        { name: "new max", value: 0 },
-        { name: "Easing index", value: 0 },
-        { name: "Easing", value: "Linear" },
-        { name: "Clamp", value: 1 },
-      ],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "number2",
-              portOut: "result",
-              objIn: "tzfacbc2c",
-              objOut: "47r4v0qha",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.MapRange",
-    },
-    {
-      id: "cumryawca",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "data", value: "" },
-        {
-          name: "glb File",
-          value: "Shape.MidBoxUpper_absCenter.glb",
-          display: "file",
-        },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 0 },
-        { name: "Center", value: "None" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.5 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "zuplev70x",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "number2", value: 5 }],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "result",
-              objIn: "h8278fmwj",
-              objOut: "zuplev70x",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Compare.Equals",
-    },
-    {
-      id: "p4f215dps",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "N(2)" }],
-      portsOut: [{ name: "Found", value: 0 }],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "y46v1327m",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Key", value: "N(1)" }],
-      portsOut: [{ name: "Found", value: 0 }],
-      objName: "Ops.Json.ObjectGetNumber_v2",
-    },
-    {
-      id: "tzfacbc2c",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "rotY",
-              portOut: "result",
-              objIn: "ycerb854n",
-              objOut: "tzfacbc2c",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Multiply",
-    },
-    {
-      id: "h8278fmwj",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "result",
-              objIn: "tzfacbc2c",
-              objOut: "h8278fmwj",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Sum",
-    },
-    {
-      id: "sk66l3rre",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "number2", value: 4 }],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "number2",
-              portOut: "result",
-              objIn: "h8278fmwj",
-              objOut: "sk66l3rre",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Compare.Equals",
-    },
-    {
-      id: "zfaiserj7",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "r", value: 1 },
-        { name: "g", value: 1 },
-        { name: "b", value: 1 },
-        { name: "a", value: 0 },
-        { name: "colorizeTexture", value: 0 },
-        { name: "Vertex Colors", value: 0 },
-        { name: "Alpha Mask Source index", value: 0 },
-        { name: "Alpha Mask Source", value: "Luminance" },
-        { name: "Opacity TexCoords Transform", value: 0 },
-        { name: "Discard Transparent Pixels", value: 0 },
-        { name: "diffuseRepeatX", value: 1 },
-        { name: "diffuseRepeatY", value: 1 },
-        { name: "Tex Offset X", value: 0 },
-        { name: "Tex Offset Y", value: 0 },
-        { name: "Crop TexCoords", value: 0 },
-        { name: "billboard", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Execute",
-              portOut: "trigger",
-              objIn: "412cpvr3l",
-              objOut: "zfaiserj7",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Shader.BasicMaterial_v3",
-    },
-    {
-      id: "pgm4y2zsw",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        { name: "Switched Value", value: 0 },
-        {
-          name: "Trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 0",
-              objIn: "zfaiserj7",
-              objOut: "pgm4y2zsw",
-            },
-          ],
-        },
-        {
-          name: "Trigger 1",
-          links: [
-            {
-              portIn: "Execute",
-              portOut: "Trigger 1",
-              objIn: "3bkjas95z",
-              objOut: "pgm4y2zsw",
-            },
-          ],
-        },
-        { name: "Highest Index", value: 1 },
-      ],
-      objName: "Ops.Trigger.RouteTrigger",
     },
     {
       id: "600tufksy",
@@ -25962,8 +25209,8 @@ CABLES.exportedPatches["2myFLH"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -58 },
-        { name: "Movement Y", value: 33 },
+        { name: "Movement X", value: -1 },
+        { name: "Movement Y", value: 0 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -26152,191 +25399,10 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Gl.ClearColor",
     },
     {
-      id: "t9owyozop",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "Array 2", value: 0 },
-        { name: "Array 3", value: 0 },
-        { name: "Array 4", value: 0 },
-        { name: "Array 5", value: 0 },
-        { name: "Array 6", value: 0 },
-        { name: "Array 7", value: 0 },
-        { name: "Array 8", value: 0 },
-        { name: "Array 9", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "array",
-              portOut: "Result",
-              objIn: "wa7lshxin",
-              objOut: "t9owyozop",
-            },
-            {
-              portIn: "array",
-              portOut: "Result",
-              objIn: "ebv6t3xke",
-              objOut: "t9owyozop",
-            },
-            {
-              portIn: "array",
-              portOut: "Result",
-              objIn: "jqp826rxs",
-              objOut: "t9owyozop",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.SwitchArray",
-    },
-    {
-      id: "qmlavcsni",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "a", value: 1 }],
-      portsOut: [
-        { name: "outr", value: 0 },
-        { name: "outg", value: 0.00392156862745098 },
-        { name: "outb", value: 1 },
-        { name: "outa", value: 1 },
-        { name: "Hex", value: "0001FF" },
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 0",
-              portOut: "Array",
-              objIn: "t9owyozop",
-              objOut: "qmlavcsni",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Color.ColorValue",
-    },
-    {
-      id: "290pxdqss",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "r", value: 0 },
-        { name: "g", value: 0 },
-        { name: "b", value: 0 },
-        { name: "a", value: 0 },
-      ],
-      portsOut: [
-        { name: "outr", value: 0 },
-        { name: "outg", value: 0 },
-        { name: "outb", value: 0 },
-        { name: "outa", value: 0 },
-        { name: "Hex", value: "000000" },
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Array",
-              objIn: "t9owyozop",
-              objOut: "290pxdqss",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Color.ColorValue",
-    },
-    {
       id: "dwq5osdkj",
       uiAttribs: {},
       portsIn: [{ name: "Variable", value: "nContext" }],
       objName: "Ops.Vars.VarSetNumber_v2",
-    },
-    {
-      id: "9ehsf9qk3",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Variable", value: "nContext" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Index",
-              portOut: "Value",
-              objIn: "t9owyozop",
-              objOut: "9ehsf9qk3",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetNumber_v2",
-    },
-    {
-      id: "wa7lshxin",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "index", value: 0 },
-        { name: "Value Invalid Index", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "r",
-              portOut: "value",
-              objIn: "35gxsvgw6",
-              objOut: "wa7lshxin",
-            },
-          ],
-        },
-        { name: "Valid Index", value: 1 },
-      ],
-      objName: "Ops.Array.ArrayGetNumber",
-    },
-    {
-      id: "ebv6t3xke",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "index", value: 1 },
-        { name: "Value Invalid Index", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "g",
-              portOut: "value",
-              objIn: "35gxsvgw6",
-              objOut: "ebv6t3xke",
-            },
-          ],
-        },
-        { name: "Valid Index", value: 1 },
-      ],
-      objName: "Ops.Array.ArrayGetNumber",
-    },
-    {
-      id: "jqp826rxs",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "index", value: 2 },
-        { name: "Value Invalid Index", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "b",
-              portOut: "value",
-              objIn: "35gxsvgw6",
-              objOut: "jqp826rxs",
-            },
-          ],
-        },
-        { name: "Valid Index", value: 1 },
-      ],
-      objName: "Ops.Array.ArrayGetNumber",
     },
     {
       id: "fy34a0ima",
@@ -26355,53 +25421,6 @@ CABLES.exportedPatches["2myFLH"] = {
       uiAttribs: {},
       portsIn: [{ name: "Named Trigger", value: "mainLoop" }],
       objName: "Ops.Trigger.TriggerSend",
-    },
-    {
-      id: "5h5n3tj5w",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        { name: "create port", value: 0 },
-        {
-          name: "in0 Ops.Gl.Matrix.TransformView trigger",
-          links: [
-            {
-              portIn: "exe",
-              portOut: "in0 Ops.Gl.Matrix.TransformView trigger",
-              objIn: "2ntt23rk3",
-              objOut: "5h5n3tj5w",
-            },
-          ],
-        },
-        {
-          name: "in1 Ops.Json.ObjectToArray Array",
-          links: [
-            {
-              portIn: "array",
-              portOut: "in1 Ops.Json.ObjectToArray Array",
-              objIn: "2ntt23rk3",
-              objOut: "5h5n3tj5w",
-            },
-          ],
-        },
-        { name: "in2 var get  Value", value: 0 },
-      ],
-      objName: "Ops.Ui.PatchInput",
-    },
-    {
-      id: "09j1w8t67",
-      uiAttribs: {},
-      storage: { subPatchVer: 1 },
-      portsIn: [
-        { name: "create port", value: 0 },
-        {
-          name: "dataStr",
-          value:
-            '{"ports":[{"name":"in0 Ops.Gl.Matrix.TransformView trigger","type":1},{"name":"in1 Ops.Json.ObjectToArray Array","type":3,"value":null},{"name":"in2 var get  Value","type":5,"value":null}],"portsOut":[{"name":"out0 Ops.Ui.VizArrayTable Start Row","type":0},{"name":"out1 Ops.Trigger.RouteTrigger Next Trigger","type":1}]}',
-        },
-        { name: "patchId", value: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      ],
-      portsOut: [{ name: "create port out", value: 0 }],
-      objName: "Ops.Ui.SubPatch",
     },
     {
       id: "86f86taet",
@@ -26423,51 +25442,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Math.Divide",
     },
     {
-      id: "vuczmz7aq",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "create port", value: 0 },
-        { name: "out0 Ops.Ui.VizArrayTable Start Row", value: 0 },
-      ],
-      objName: "Ops.Ui.PatchOutput",
-    },
-    {
-      id: "6sdme9fss",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "blendMode index", value: 0 },
-        { name: "blendMode", value: "normal" },
-        { name: "Amount", value: 1 },
-        { name: "Target index", value: 0 },
-        { name: "Target", value: "Color" },
-        { name: "Scale", value: 1 },
-        { name: "Use Texture Alpha", value: 0 },
-        { name: "Pos X", value: 0 },
-        { name: "Pos Y", value: 0 },
-        { name: "Rot X", value: 0 },
-        { name: "Rot Y", value: 0 },
-        { name: "Rot Z", value: 0 },
-        { name: "Mapping index", value: 4 },
-        { name: "Mapping", value: "Screen" },
-        { name: "Discard", value: 0 },
-        { name: "WorldSpace", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Execute",
-              portOut: "trigger",
-              objIn: "412cpvr3l",
-              objOut: "6sdme9fss",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
-    },
-    {
       id: "703egzgtr",
       uiAttribs: {},
       portsIn: [
@@ -26475,56 +25449,6 @@ CABLES.exportedPatches["2myFLH"] = {
         { name: "Variable", value: "imageUrl" },
       ],
       objName: "Ops.Vars.VarSetString_v2",
-    },
-    {
-      id: "qzulbuoq2",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Variable", value: "nContext" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Switch Value",
-              portOut: "Value",
-              objIn: "3bkjas95z",
-              objOut: "qzulbuoq2",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetNumber_v2",
-    },
-    {
-      id: "3bkjas95z",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsOut: [
-        { name: "Switched Value", value: 0 },
-        {
-          name: "Trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 0",
-              objIn: "35gxsvgw6",
-              objOut: "3bkjas95z",
-            },
-          ],
-        },
-        {
-          name: "Trigger 1",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 1",
-              objIn: "6sdme9fss",
-              objOut: "3bkjas95z",
-            },
-          ],
-        },
-        { name: "Highest Index", value: 1 },
-      ],
-      objName: "Ops.Trigger.RouteTrigger",
     },
     {
       id: "whp28n8pi",
@@ -26577,83 +25501,10 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Vars.VarGetNumber_v2",
     },
     {
-      id: "qskdnkqbh",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "trigger",
-              objIn: "hmrwm30er",
-              objOut: "qskdnkqbh",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.TransformView",
-    },
-    {
       id: "j2v7lizv8",
       uiAttribs: {},
       portsIn: [{ name: "Variable", value: "textTexture" }],
       objName: "Ops.Vars.VarSetTexture_v2",
-    },
-    {
-      id: "y0pluz7aa",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Variable", value: "textTexture" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Texture",
-              portOut: "Value",
-              objIn: "0jv7bxxzm",
-              objOut: "y0pluz7aa",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetTexture_v2",
-    },
-    {
-      id: "0jv7bxxzm",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "blendMode index", value: 6 },
-        { name: "blendMode", value: "add" },
-        { name: "Amount", value: 1 },
-        { name: "Target index", value: 0 },
-        { name: "Target", value: "Color" },
-        { name: "Scale", value: 0.46 },
-        { name: "Use Texture Alpha", value: 0 },
-        { name: "Pos X", value: 0 },
-        { name: "Pos Y", value: 0 },
-        { name: "Rot X", value: 0 },
-        { name: "Rot Y", value: 0 },
-        { name: "Rot Z", value: 0 },
-        { name: "Mapping index", value: 2 },
-        { name: "Mapping", value: "XZ" },
-        { name: "Discard", value: 0 },
-        { name: "WorldSpace", value: 1 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Execute",
-              portOut: "trigger",
-              objIn: "412cpvr3l",
-              objOut: "0jv7bxxzm",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
     },
     {
       id: "jvioe1871",
@@ -26665,62 +25516,10 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Vars.VarSetString_v2",
     },
     {
-      id: "35gxsvgw6",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [
-        { name: "a", value: 1 },
-        { name: "colorizeTexture", value: 0 },
-        { name: "Vertex Colors", value: 0 },
-        { name: "Alpha Mask Source index", value: 0 },
-        { name: "Alpha Mask Source", value: "Luminance" },
-        { name: "Opacity TexCoords Transform", value: 0 },
-        { name: "Discard Transparent Pixels", value: 0 },
-        { name: "diffuseRepeatX", value: 1 },
-        { name: "diffuseRepeatY", value: 1 },
-        { name: "Tex Offset X", value: 0 },
-        { name: "Tex Offset Y", value: 0 },
-        { name: "Crop TexCoords", value: 0 },
-        { name: "billboard", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger",
-              objIn: "0jv7bxxzm",
-              objOut: "35gxsvgw6",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Shader.BasicMaterial_v3",
-    },
-    {
       id: "bw5x42j1o",
       uiAttribs: {},
       portsIn: [{ name: "Variable", value: "imageTexture" }],
       objName: "Ops.Vars.VarSetTexture_v2",
-    },
-    {
-      id: "cj09n9u2m",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Variable", value: "imageTexture" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Texture",
-              portOut: "Value",
-              objIn: "6sdme9fss",
-              objOut: "cj09n9u2m",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetTexture_v2",
     },
     {
       id: "hdbfyi4so",
@@ -26809,24 +25608,6 @@ CABLES.exportedPatches["2myFLH"] = {
         },
       ],
       objName: "Ops.Vars.VarGetString",
-    },
-    {
-      id: "6velbs3jo",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "trigger",
-              objIn: "hmrwm30er",
-              objOut: "6velbs3jo",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.TransformView",
     },
     {
       id: "mk2ylcetg",
@@ -26934,110 +25715,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Ui.SubPatch",
     },
     {
-      id: "707v4leq3",
-      uiAttribs: {},
-      portsIn: [{ name: "Default", value: 0 }],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "Index",
-              portOut: "result",
-              objIn: "nmckaay6j",
-              objOut: "707v4leq3",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Boolean.ToggleBool_v2",
-    },
-    {
-      id: "4bp8isxoe",
-      uiAttribs: {},
-      portsIn: [{ name: "Named Trigger", value: "controlFullscreen" }],
-      portsOut: [
-        {
-          name: "Triggered",
-          links: [
-            {
-              portIn: "trigger",
-              portOut: "Triggered",
-              objIn: "707v4leq3",
-              objOut: "4bp8isxoe",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.TriggerReceive",
-    },
-    {
-      id: "nmckaay6j",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Value 0", value: 9.97 },
-        { name: "Value 1", value: 15 },
-        { name: "Value 2", value: 0 },
-        { name: "Value 3", value: 0 },
-        { name: "Value 4", value: 0 },
-        { name: "Value 5", value: 0 },
-        { name: "Value 6", value: 0 },
-        { name: "Value 7", value: 0 },
-        { name: "Value 8", value: 0 },
-        { name: "Value 9", value: 0 },
-        { name: "Value 10", value: 0 },
-        { name: "Value 11", value: 0 },
-        { name: "Value 12", value: 0 },
-        { name: "Value 13", value: 0 },
-        { name: "Value 14", value: 0 },
-        { name: "Value 15", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Value",
-              portOut: "Result",
-              objIn: "etk1vm5rn",
-              objOut: "nmckaay6j",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Number.SwitchNumber",
-    },
-    {
-      id: "etk1vm5rn",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Separate inc/dec", value: 1 },
-        { name: "Inc factor", value: 10, title: "Inc factor" },
-        { name: "Dec factor", value: 10 },
-      ],
-      portsOut: [{ name: "Result", value: 9.97 }],
-      objName: "Ops.Anim.Smooth",
-    },
-    {
-      id: "4m7mjjd7p",
-      uiAttribs: {},
-      portsIn: [{ name: "Named Trigger", value: "mainLoop" }],
-      portsOut: [
-        {
-          name: "Triggered",
-          links: [
-            {
-              portIn: "Update",
-              portOut: "Triggered",
-              objIn: "etk1vm5rn",
-              objOut: "4m7mjjd7p",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.TriggerReceive",
-    },
-    {
       id: "isiuxw17x",
       uiAttribs: {},
       portsIn: [
@@ -27063,267 +25740,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.String.String_v2",
     },
     {
-      id: "bthr506p2",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Pixel Units index", value: 0 },
-        { name: "Pixel Units", value: "CSS Pixels" },
-      ],
-      portsOut: [
-        { name: "X", value: 0 },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "number2",
-              portOut: "Y",
-              objIn: "39gcj8fx7",
-              objOut: "bthr506p2",
-            },
-          ],
-        },
-        { name: "Width", value: 0 },
-        {
-          name: "Height",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "Height",
-              objIn: "39gcj8fx7",
-              objOut: "bthr506p2",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Html.ElementClientRect",
-    },
-    {
-      id: "0shu534hw",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Query", value: "main" },
-        { name: "Mode index", value: 0 },
-        { name: "Mode", value: "document" },
-        { name: "Type index", value: 0 },
-        { name: "Type", value: "text/html" },
-        { name: "Document", value: "xml" },
-      ],
-      portsOut: [
-        {
-          name: "Element",
-          links: [
-            {
-              portIn: "Element",
-              portOut: "Element",
-              objIn: "bthr506p2",
-              objOut: "0shu534hw",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Html.QuerySelector_v2",
-    },
-    {
-      id: "6npf31cp1",
-      uiAttribs: {},
-      portsIn: [{ name: "Named Trigger", value: "mainLoop" }],
-      portsOut: [
-        {
-          name: "Triggered",
-          links: [
-            {
-              portIn: "Update",
-              portOut: "Triggered",
-              objIn: "0shu534hw",
-              objOut: "6npf31cp1",
-            },
-            {
-              portIn: "Update",
-              portOut: "Triggered",
-              objIn: "bthr506p2",
-              objOut: "6npf31cp1",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.TriggerReceive",
-    },
-    {
-      id: "39gcj8fx7",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "result",
-              objIn: "7z5xrzqx7",
-              objOut: "39gcj8fx7",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Sum",
-    },
-    {
-      id: "7jneaeqbm",
-      uiAttribs: {},
-      portsIn: [
-        { name: "old min", value: 0 },
-        { name: "old max", value: 1 },
-        { name: "new min", value: -1.45 },
-        { name: "new max", value: -12.79 },
-        { name: "Easing index", value: 0 },
-        { name: "Easing", value: "Linear" },
-        { name: "Clamp", value: 1 },
-      ],
-      portsOut: [{ name: "result", value: -1.45 }],
-      objName: "Ops.Math.MapRange",
-    },
-    {
-      id: "7z5xrzqx7",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "value",
-              portOut: "result",
-              objIn: "7jneaeqbm",
-              objOut: "7z5xrzqx7",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Divide",
-    },
-    {
-      id: "vuspak6eg",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Pixel Unit index", value: 0 },
-        { name: "Pixel Unit", value: "Display" },
-      ],
-      portsOut: [
-        { name: "width", value: 608 },
-        {
-          name: "height",
-          links: [
-            {
-              portIn: "number2",
-              portOut: "height",
-              objIn: "7z5xrzqx7",
-              objOut: "vuspak6eg",
-            },
-          ],
-        },
-        { name: "Pixel Ratio", value: 1 },
-        { name: "Pixel Width", value: 608 },
-        { name: "Pixel Height", value: 943 },
-        { name: "Aspect Ratio", value: 0.6447507953340403 },
-        { name: "Landscape", value: 0 },
-      ],
-      objName: "Ops.Gl.CanvasInfo_v2",
-    },
-    {
-      id: "pr42gl4je",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "data", value: "" },
-        { name: "glb File", value: "ShapeShearBox.glb", display: "file" },
-        { name: "Draw", value: 1 },
-        { name: "Camera index", value: 0 },
-        { name: "Camera", value: "None" },
-        { name: "Animation", value: "" },
-        { name: "Center index", value: 0 },
-        { name: "Center", value: "None" },
-        { name: "Rescale", value: 1 },
-        { name: "Rescale Size", value: 0.5 },
-        { name: "Time", value: 0 },
-        { name: "Sync to timeline", value: 0 },
-        { name: "Loop", value: 1 },
-        { name: "Normals Format index", value: 0 },
-        { name: "Normals Format", value: "XYZ" },
-        { name: "Vertices Format index", value: 0 },
-        { name: "Vertices Format", value: "XYZ" },
-        { name: "Calc Normals index", value: 0 },
-        { name: "Calc Normals", value: "Auto" },
-        { name: "Hide Nodes", value: 0 },
-        { name: "Use Material Properties", value: 0 },
-        { name: "Active", value: 1 },
-      ],
-      portsOut: [
-        { name: "Generator", value: "Khronos glTF Blender I/O v3.4.50" },
-        { name: "GLTF Version", value: 2 },
-        { name: "Anim Length", value: 0 },
-        { name: "Anim Time", value: 0 },
-        { name: "Loading", value: false },
-      ],
-      objName: "Ops.Gl.GLTF.GltfScene_v4",
-    },
-    {
-      id: "vjmafvky7",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "a", value: 1 },
-        { name: "colorizeTexture", value: 0 },
-        { name: "Vertex Colors", value: 0 },
-        { name: "Alpha Mask Source index", value: 0 },
-        { name: "Alpha Mask Source", value: "Luminance" },
-        { name: "Opacity TexCoords Transform", value: 0 },
-        { name: "Discard Transparent Pixels", value: 0 },
-        { name: "diffuseRepeatX", value: 1 },
-        { name: "diffuseRepeatY", value: 1 },
-        { name: "Tex Offset X", value: 0 },
-        { name: "Tex Offset Y", value: 0 },
-        { name: "Crop TexCoords", value: 0 },
-        { name: "billboard", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Exec",
-              portOut: "trigger",
-              objIn: "kz74gyd5g",
-              objOut: "vjmafvky7",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Shader.BasicMaterial_v3",
-    },
-    {
-      id: "ul6zrb5k6",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "posX", value: 0 },
-        { name: "posY", value: 0 },
-        { name: "posZ", value: 0 },
-        { name: "scale", value: 1 },
-        { name: "rotX", value: 0 },
-        { name: "rotY", value: 0 },
-        { name: "rotZ", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger",
-              objIn: "vjmafvky7",
-              objOut: "ul6zrb5k6",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.TransformView",
-    },
-    {
       id: "gm13f4zcc",
       uiAttribs: {},
       portsIn: [{ name: "a", value: 1 }],
@@ -27346,271 +25762,6 @@ CABLES.exportedPatches["2myFLH"] = {
         },
       ],
       objName: "Ops.Color.ColorValue",
-    },
-    {
-      id: "78z1dsqf5",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [{ name: "Variable", value: "mainColor" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Array",
-              portOut: "Value",
-              objIn: "tk9jp6s6x",
-              objOut: "78z1dsqf5",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetArray_v2",
-    },
-    {
-      id: "tk9jp6s6x",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [{ name: "Index", value: 0 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "r",
-              portOut: "X",
-              objIn: "vjmafvky7",
-              objOut: "tk9jp6s6x",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "g",
-              portOut: "Y",
-              objIn: "vjmafvky7",
-              objOut: "tk9jp6s6x",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "b",
-              portOut: "Z",
-              objIn: "vjmafvky7",
-              objOut: "tk9jp6s6x",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
-    },
-    {
-      id: "dqkememuz",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Variable", value: "mainColor" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Array",
-              portOut: "Value",
-              objIn: "8hb46vcab",
-              objOut: "dqkememuz",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetArray_v2",
-    },
-    {
-      id: "8hb46vcab",
-      uiAttribs: { subPatch: "fe4bc287-1aa5-4ba8-98bc-8f2bdc690aef" },
-      portsIn: [{ name: "Index", value: 0 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "r",
-              portOut: "X",
-              objIn: "qmlavcsni",
-              objOut: "8hb46vcab",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "g",
-              portOut: "Y",
-              objIn: "qmlavcsni",
-              objOut: "8hb46vcab",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "b",
-              portOut: "Z",
-              objIn: "qmlavcsni",
-              objOut: "8hb46vcab",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
-    },
-    {
-      id: "fdg714pud",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "blendMode index", value: 0 },
-        { name: "blendMode", value: "normal" },
-        { name: "Amount", value: 1 },
-        { name: "Target index", value: 2 },
-        { name: "Target", value: "Alpha" },
-        { name: "Scale", value: 0.8 },
-        { name: "Use Texture Alpha", value: 0 },
-        { name: "Pos X", value: 0.61 },
-        { name: "Pos Y", value: 0.63 },
-        { name: "Rot X", value: 0 },
-        { name: "Rot Y", value: 0 },
-        { name: "Rot Z", value: 0 },
-        { name: "Mapping index", value: 4 },
-        { name: "Mapping", value: "Screen" },
-        { name: "Discard", value: 0 },
-        { name: "WorldSpace", value: 0 },
-      ],
-      objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
-    },
-    {
-      id: "m58hauto1",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [{ name: "Variable", value: "textTexture" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Texture",
-              portOut: "Value",
-              objIn: "fdg714pud",
-              objOut: "m58hauto1",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetTexture_v2",
-    },
-    {
-      id: "a6v6ehq4l",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsOut: [
-        { name: "create port", value: 0 },
-        {
-          name: "in0 Ops.Trigger.RouteTriggerString Trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "in0 Ops.Trigger.RouteTriggerString Trigger 0",
-              objIn: "ul6zrb5k6",
-              objOut: "a6v6ehq4l",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Ui.PatchInput",
-    },
-    {
-      id: "97v008uwc",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [{ name: "create port", value: 0 }],
-      objName: "Ops.Ui.PatchOutput",
-    },
-    {
-      id: "fmv4mvs4s",
-      uiAttribs: {},
-      storage: { subPatchVer: 1 },
-      portsIn: [
-        { name: "create port", value: 0 },
-        {
-          name: "dataStr",
-          value:
-            '{"ports":[{"name":"in0 Ops.Trigger.RouteTriggerString Trigger 0","type":1}],"portsOut":[]}',
-        },
-        { name: "patchId", value: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      ],
-      portsOut: [{ name: "create port out", value: 0 }],
-      objName: "Ops.Ui.SubPatch",
-    },
-    {
-      id: "3epglv4s5",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "posX", value: 2.8 },
-        { name: "posZ", value: 0 },
-        { name: "scale", value: 20 },
-        { name: "rotX", value: -221.86 },
-        { name: "rotY", value: -14.3 },
-        { name: "rotZ", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "Render",
-              portOut: "trigger",
-              objIn: "pr42gl4je",
-              objOut: "3epglv4s5",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.Transform",
-    },
-    {
-      id: "kz74gyd5g",
-      uiAttribs: { subPatch: "ab28f98c-cb15-427f-986a-04aeaaa181f4" },
-      portsIn: [
-        { name: "X", value: 0.07 },
-        { name: "Y", value: 0.12 },
-        { name: "Input Type index", value: 1 },
-        { name: "Input Type", value: "-1 to 1" },
-      ],
-      portsOut: [
-        {
-          name: "Trigger out",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger out",
-              objIn: "3epglv4s5",
-              objOut: "kz74gyd5g",
-            },
-          ],
-        },
-        { name: "Result X", value: 2.2499999403953552 },
-        {
-          name: "Result Y",
-          links: [
-            {
-              portIn: "posY",
-              portOut: "Result Y",
-              objIn: "3epglv4s5",
-              objOut: "kz74gyd5g",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.ScreenPosTo3d_v3",
     },
     {
       id: "val0mhtoj",
@@ -27647,9 +25798,9 @@ CABLES.exportedPatches["2myFLH"] = {
           name: "Trigger 0",
           links: [
             {
-              portIn: "render",
+              portIn: "2uzay3xk0",
               portOut: "Trigger 0",
-              objIn: "6velbs3jo",
+              objIn: "d4y1qau5o",
               objOut: "val0mhtoj",
             },
           ],
@@ -27658,9 +25809,15 @@ CABLES.exportedPatches["2myFLH"] = {
           name: "Trigger 1",
           links: [
             {
-              portIn: "render",
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
               portOut: "Trigger 1",
-              objIn: "h39znwnt5",
+              objIn: "hmrwm30er",
+              objOut: "val0mhtoj",
+            },
+            {
+              portIn: "2uzay3xk0",
+              portOut: "Trigger 1",
+              objIn: "5md9tus12",
               objOut: "val0mhtoj",
             },
           ],
@@ -27669,9 +25826,9 @@ CABLES.exportedPatches["2myFLH"] = {
           name: "Trigger 2",
           links: [
             {
-              portIn: "render",
+              portIn: "2uzay3xk0",
               portOut: "Trigger 2",
-              objIn: "qskdnkqbh",
+              objIn: "0yzwf3yhr",
               objOut: "val0mhtoj",
             },
           ],
@@ -27721,36 +25878,8 @@ CABLES.exportedPatches["2myFLH"] = {
           ],
         },
         {
-          name: "Trigger 0",
-          links: [
-            {
-              portIn: "exe",
-              portOut: "Trigger 0",
-              objIn: "l6tabrnqs",
-              objOut: "uqyteclc3",
-            },
-          ],
-        },
-        {
-          name: "Trigger 1",
-          links: [
-            {
-              portIn: "exe",
-              portOut: "Trigger 1",
-              objIn: "o5t2bt6k9",
-              objOut: "uqyteclc3",
-            },
-          ],
-        },
-        {
           name: "Trigger 2",
           links: [
-            {
-              portIn: "exe",
-              portOut: "Trigger 2",
-              objIn: "qf6lbghx2",
-              objOut: "uqyteclc3",
-            },
             {
               portIn: "in0 Accumulator Trigger in",
               portOut: "Trigger 2",
@@ -28019,33 +26148,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Math.Sum",
     },
     {
-      id: "h39znwnt5",
-      uiAttribs: {},
-      portsIn: [
-        { name: "posX", value: 3.08 },
-        { name: "posY", value: -7.14 },
-        { name: "posZ", value: 0 },
-        { name: "scale", value: 8.5 },
-        { name: "rotX", value: -15.34 },
-        { name: "rotY", value: 33.89 },
-        { name: "rotZ", value: -2.06 },
-      ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "trigger",
-              objIn: "hmrwm30er",
-              objOut: "h39znwnt5",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Gl.Matrix.TransformView",
-    },
-    {
       id: "5bf8ed48-cc97-4597-a6f0-82572be13d7d",
       uiAttribs: { subPatch: "0d43ee2c-77f9-426f-94be-83a5661c1c30" },
       portsIn: [
@@ -28083,7 +26185,7 @@ CABLES.exportedPatches["2myFLH"] = {
             },
           ],
         },
-        { name: "Number", value: -0.819078947368421 },
+        { name: "Number", value: 0 },
       ],
       objName: "Ops.Number.TriggerOnChangeNumber",
     },
@@ -28505,8 +26607,8 @@ CABLES.exportedPatches["2myFLH"] = {
         { name: "Passive Events", value: 0 },
       ],
       portsOut: [
-        { name: "x", value: -0.819078947368421 },
-        { name: "y", value: 0.10074231177094384 },
+        { name: "x", value: 0 },
+        { name: "y", value: 0 },
         {
           name: "click",
           links: [
@@ -28520,8 +26622,8 @@ CABLES.exportedPatches["2myFLH"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -58 },
-        { name: "Movement Y", value: 33 },
+        { name: "Movement X", value: -1 },
+        { name: "Movement Y", value: 0 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -29004,7 +27106,7 @@ CABLES.exportedPatches["2myFLH"] = {
     {
       id: "ltmbqybsn",
       uiAttribs: { subPatch: "2154fd20-4fef-42fd-bef2-ef39e6975cdf" },
-      portsIn: [{ name: "create port" }],
+      portsIn: [{ name: "create port", value: 0 }],
       objName: "Ops.Ui.PatchOutput",
     },
     {
@@ -29012,7 +27114,7 @@ CABLES.exportedPatches["2myFLH"] = {
       uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
       storage: { subPatchVer: 1 },
       portsIn: [
-        { name: "create port" },
+        { name: "create port", value: 0 },
         {
           name: "dataStr",
           value:
@@ -29197,6 +27299,8 @@ CABLES.exportedPatches["2myFLH"] = {
         { name: "Use As Material", value: 0 },
         { name: "offset Y", value: 0 },
         { name: "repeat Y", value: 1 },
+        { name: "resolution X", value: 0 },
+        { name: "resolution Y", value: 0 },
       ],
       portsOut: [
         {
@@ -29628,6 +27732,17 @@ CABLES.exportedPatches["2myFLH"] = {
       ],
       portsOut: [
         {
+          name: "Next",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Next",
+              objIn: "3e9jbf60v",
+              objOut: "lywnyv9o4",
+            },
+          ],
+        },
+        {
           name: "Array Out",
           links: [
             {
@@ -29706,71 +27821,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Array.Array3",
     },
     {
-      id: "qf6lbghx2",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger 0",
-              objIn: "3e9jbf60v",
-              objOut: "qf6lbghx2",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.Sequence",
-    },
-    {
-      id: "o5t2bt6k9",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger 0",
-              objIn: "3e9jbf60v",
-              objOut: "o5t2bt6k9",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.Sequence",
-    },
-    {
-      id: "l6tabrnqs",
-      uiAttribs: {},
-      portsOut: [
-        {
-          name: "trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger 0",
-              objIn: "3e9jbf60v",
-              objOut: "l6tabrnqs",
-            },
-          ],
-        },
-        {
-          name: "trigger 1",
-          links: [
-            {
-              portIn: "in0 Ops.Trigger.RouteTriggerString Trigger 0",
-              portOut: "trigger 1",
-              objIn: "fmv4mvs4s",
-              objOut: "l6tabrnqs",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.Sequence",
-    },
-    {
       id: "9ab09c55-a9f4-45b3-91f7-1438b3975417",
       uiAttribs: {},
       portsIn: [
@@ -29796,110 +27846,6 @@ CABLES.exportedPatches["2myFLH"] = {
         },
       ],
       objName: "Ops.Array.SwitchArray",
-    },
-    {
-      id: "axxi4fptj",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 3.88 },
-        { name: "Y", value: 0.89 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 0",
-              portOut: "Array",
-              objIn: "kt0lwkcse",
-              objOut: "axxi4fptj",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
-      id: "kt0lwkcse",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array 3", value: 0 },
-        { name: "Array 4", value: 0 },
-        { name: "Array 5", value: 0 },
-        { name: "Array 6", value: 0 },
-        { name: "Array 7", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Result",
-              objIn: "9ab09c55-a9f4-45b3-91f7-1438b3975417",
-              objOut: "kt0lwkcse",
-            },
-          ],
-        },
-        { name: "Array length", value: 7 },
-      ],
-      objName: "Ops.Array.ArrayMerge_v3",
-    },
-    {
-      id: "j03rg049z",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array length", value: 1 },
-        { name: "Mode select index", value: 0 },
-        { name: "Mode select", value: "Number" },
-        { name: "Default Value", value: 5.95 },
-        { name: "Reverse", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Array",
-              objIn: "kt0lwkcse",
-              objOut: "j03rg049z",
-            },
-          ],
-        },
-        { name: "Array length out", value: 1 },
-      ],
-      objName: "Ops.Array.Array_v3",
-    },
-    {
-      id: "8y1oktz3a",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 248.87 },
-        { name: "Y", value: -40.95 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 2",
-              portOut: "Array",
-              objIn: "kt0lwkcse",
-              objOut: "8y1oktz3a",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
     },
     {
       id: "400e715b-2702-4f99-acf3-b545cbb099f7",
@@ -29954,110 +27900,6 @@ CABLES.exportedPatches["2myFLH"] = {
       objName: "Ops.Array.SwitchArray",
     },
     {
-      id: "dpswbpkzx",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 0.41 },
-        { name: "Y", value: -6.73 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 0",
-              portOut: "Array",
-              objIn: "d6gmy36f9",
-              objOut: "dpswbpkzx",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
-      id: "d6gmy36f9",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array 3", value: 0 },
-        { name: "Array 4", value: 0 },
-        { name: "Array 5", value: 0 },
-        { name: "Array 6", value: 0 },
-        { name: "Array 7", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Result",
-              objIn: "xunvxt053",
-              objOut: "d6gmy36f9",
-            },
-          ],
-        },
-        { name: "Array length", value: 7 },
-      ],
-      objName: "Ops.Array.ArrayMerge_v3",
-    },
-    {
-      id: "w8erdggi3",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array length", value: 1 },
-        { name: "Mode select index", value: 0 },
-        { name: "Mode select", value: "Number" },
-        { name: "Default Value", value: 8.88 },
-        { name: "Reverse", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Array",
-              objIn: "d6gmy36f9",
-              objOut: "w8erdggi3",
-            },
-          ],
-        },
-        { name: "Array length out", value: 1 },
-      ],
-      objName: "Ops.Array.Array_v3",
-    },
-    {
-      id: "vatxefuk6",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 250.28 },
-        { name: "Y", value: -45.93 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 2",
-              portOut: "Array",
-              objIn: "d6gmy36f9",
-              objOut: "vatxefuk6",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
       id: "zazzu6gav",
       uiAttribs: {},
       portsIn: [
@@ -30083,125 +27925,6 @@ CABLES.exportedPatches["2myFLH"] = {
         },
       ],
       objName: "Ops.Array.SwitchArray",
-    },
-    {
-      id: "6gi28gw4p",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 0.17 },
-        { name: "Y", value: -3.43 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 0",
-              portOut: "Array",
-              objIn: "1v0uxxgaz",
-              objOut: "6gi28gw4p",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
-      id: "1v0uxxgaz",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array 3", value: 0 },
-        { name: "Array 4", value: 0 },
-        { name: "Array 5", value: 0 },
-        { name: "Array 6", value: 0 },
-        { name: "Array 7", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Result",
-              objIn: "zazzu6gav",
-              objOut: "1v0uxxgaz",
-            },
-          ],
-        },
-        { name: "Array length", value: 7 },
-      ],
-      objName: "Ops.Array.ArrayMerge_v3",
-    },
-    {
-      id: "o9a97qk5l",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Array length", value: 1 },
-        { name: "Mode select index", value: 0 },
-        { name: "Mode select", value: "Number" },
-        { name: "Default Value", value: 9.08 },
-        { name: "Reverse", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 1",
-              portOut: "Array",
-              objIn: "1v0uxxgaz",
-              objOut: "o9a97qk5l",
-            },
-          ],
-        },
-        { name: "Array length out", value: 1 },
-      ],
-      objName: "Ops.Array.Array_v3",
-    },
-    {
-      id: "rpg72v3hb",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 340.51 },
-        { name: "Y", value: 8.92 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Array 2",
-              portOut: "Array",
-              objIn: "1v0uxxgaz",
-              objOut: "rpg72v3hb",
-            },
-          ],
-        },
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
-      id: "ov7enx4pu",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 1 },
-        { name: "X", value: 222.34 },
-        { name: "Y", value: -123.39 },
-        { name: "Z", value: 11.62 },
-      ],
-      portsOut: [
-        { name: "Total points", value: 1 },
-        { name: "Array length", value: 3 },
-      ],
-      objName: "Ops.Array.Array3",
     },
     {
       id: "lcig881l8",
@@ -30244,9 +27967,9 @@ CABLES.exportedPatches["2myFLH"] = {
           ],
         },
         { name: "duration", value: 119.933333 },
-        { name: "progress", value: 0.8868066385405549 },
+        { name: "progress", value: 4909284951974386e-20 },
         { name: "Interaction Needed", value: 0 },
-        { name: "CurrentTime", value: 106.360041 },
+        { name: "CurrentTime", value: 0.005888 },
         {
           name: "Loading",
           links: [
@@ -31035,7 +28758,8 @@ CABLES.exportedPatches["2myFLH"] = {
         { name: "data", value: "" },
         {
           name: "glb File",
-          value: "000002045050001042130030000_cubic2UV.glb",
+          value:
+            "651a88bdc6d98bfb822e8d4a_000002045050001042130030000_cubic2UV.glb",
           display: "file",
         },
         { name: "Draw", value: 1 },
@@ -31245,132 +28969,15 @@ CABLES.exportedPatches["2myFLH"] = {
           name: "Value",
           links: [
             {
-              portIn: "Array",
+              portIn: "byk06hys1",
               portOut: "Value",
-              objIn: "dv5wg39hj",
-              objOut: "chc44agoc",
-            },
-            {
-              portIn: "array",
-              portOut: "Value",
-              objIn: "6k9gvg4ij",
-              objOut: "chc44agoc",
-            },
-            {
-              portIn: "Array",
-              portOut: "Value",
-              objIn: "l1756sapw",
+              objIn: "0yzwf3yhr",
               objOut: "chc44agoc",
             },
           ],
         },
       ],
       objName: "Ops.Vars.VarGetArray_v2",
-    },
-    {
-      id: "dv5wg39hj",
-      uiAttribs: {},
-      portsIn: [{ name: "Index", value: 0 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "posX",
-              portOut: "X",
-              objIn: "qskdnkqbh",
-              objOut: "dv5wg39hj",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "posY",
-              portOut: "Y",
-              objIn: "qskdnkqbh",
-              objOut: "dv5wg39hj",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "posZ",
-              portOut: "Z",
-              objIn: "qskdnkqbh",
-              objOut: "dv5wg39hj",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
-    },
-    {
-      id: "6k9gvg4ij",
-      uiAttribs: {},
-      portsIn: [
-        { name: "index", value: 3 },
-        { name: "Value Invalid Index", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "scale",
-              portOut: "value",
-              objIn: "qskdnkqbh",
-              objOut: "6k9gvg4ij",
-            },
-          ],
-        },
-        { name: "Valid Index", value: 1 },
-      ],
-      objName: "Ops.Array.ArrayGetNumber",
-    },
-    {
-      id: "l1756sapw",
-      uiAttribs: {},
-      portsIn: [{ name: "Index", value: 4 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "rotX",
-              portOut: "X",
-              objIn: "qskdnkqbh",
-              objOut: "l1756sapw",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "rotY",
-              portOut: "Y",
-              objIn: "qskdnkqbh",
-              objOut: "l1756sapw",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "rotZ",
-              portOut: "Z",
-              objIn: "qskdnkqbh",
-              objOut: "l1756sapw",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
     },
     {
       id: "pccmrol86",
@@ -31714,7 +29321,7 @@ CABLES.exportedPatches["2myFLH"] = {
       portsIn: [
         { name: "Num Triplets", value: 1 },
         { name: "X", value: 332.62 },
-        { name: "Y", value: -88.68 },
+        { name: "Y", value: -88.18 },
         { name: "Z", value: 0 },
       ],
       portsOut: [
@@ -31823,9 +29430,9 @@ CABLES.exportedPatches["2myFLH"] = {
       uiAttribs: {},
       portsIn: [
         { name: "Num Triplets", value: 1 },
-        { name: "X", value: 331.98 },
+        { name: "X", value: 333 },
         { name: "Y", value: 0 },
-        { name: "Z", value: -8.45 },
+        { name: "Z", value: -8.39 },
       ],
       portsOut: [
         {
@@ -31853,132 +29460,15 @@ CABLES.exportedPatches["2myFLH"] = {
           name: "Value",
           links: [
             {
-              portIn: "Array",
+              portIn: "byk06hys1",
               portOut: "Value",
-              objIn: "7v0z0ba5d",
-              objOut: "3sqb5827s",
-            },
-            {
-              portIn: "array",
-              portOut: "Value",
-              objIn: "yo3ekv7v8",
-              objOut: "3sqb5827s",
-            },
-            {
-              portIn: "Array",
-              portOut: "Value",
-              objIn: "ib004qqjn",
+              objIn: "d4y1qau5o",
               objOut: "3sqb5827s",
             },
           ],
         },
       ],
       objName: "Ops.Vars.VarGetArray_v2",
-    },
-    {
-      id: "7v0z0ba5d",
-      uiAttribs: {},
-      portsIn: [{ name: "Index", value: 0 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "posX",
-              portOut: "X",
-              objIn: "6velbs3jo",
-              objOut: "7v0z0ba5d",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "posY",
-              portOut: "Y",
-              objIn: "6velbs3jo",
-              objOut: "7v0z0ba5d",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "posZ",
-              portOut: "Z",
-              objIn: "6velbs3jo",
-              objOut: "7v0z0ba5d",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
-    },
-    {
-      id: "yo3ekv7v8",
-      uiAttribs: {},
-      portsIn: [
-        { name: "index", value: 3 },
-        { name: "Value Invalid Index", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "value",
-          links: [
-            {
-              portIn: "scale",
-              portOut: "value",
-              objIn: "6velbs3jo",
-              objOut: "yo3ekv7v8",
-            },
-          ],
-        },
-        { name: "Valid Index", value: 1 },
-      ],
-      objName: "Ops.Array.ArrayGetNumber",
-    },
-    {
-      id: "ib004qqjn",
-      uiAttribs: {},
-      portsIn: [{ name: "Index", value: 4 }],
-      portsOut: [
-        {
-          name: "X",
-          links: [
-            {
-              portIn: "rotX",
-              portOut: "X",
-              objIn: "6velbs3jo",
-              objOut: "ib004qqjn",
-            },
-          ],
-        },
-        {
-          name: "Y",
-          links: [
-            {
-              portIn: "rotY",
-              portOut: "Y",
-              objIn: "6velbs3jo",
-              objOut: "ib004qqjn",
-            },
-          ],
-        },
-        {
-          name: "Z",
-          links: [
-            {
-              portIn: "rotZ",
-              portOut: "Z",
-              objIn: "6velbs3jo",
-              objOut: "ib004qqjn",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Array.Array3GetNumbers",
     },
     {
       id: "tu8296wau",
@@ -32425,11 +29915,608 @@ CABLES.exportedPatches["2myFLH"] = {
       ],
       objName: "Ops.Math.Divide",
     },
+    {
+      id: "imr8zljmp",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 0.41 },
+        { name: "Y", value: -6.73 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "bpyykpwd5",
+              objOut: "imr8zljmp",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "bpyykpwd5",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "w8rz76p68",
+              objOut: "bpyykpwd5",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "2p5xzcx54",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 8.88 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "bpyykpwd5",
+              objOut: "2p5xzcx54",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "0zhl4oyyh",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 250.28 },
+        { name: "Y", value: -45.93 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "bpyykpwd5",
+              objOut: "0zhl4oyyh",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "w8rz76p68",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "workPSR_mq2" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "gv5wydpvw",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 3.88 },
+        { name: "Y", value: 0.89 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "0aldyxi0a",
+              objOut: "gv5wydpvw",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "0aldyxi0a",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "z9j7nqtoi",
+              objOut: "0aldyxi0a",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "rz2flkkiq",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 5.95 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "0aldyxi0a",
+              objOut: "rz2flkkiq",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "1ohqdvker",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 248.87 },
+        { name: "Y", value: -40.95 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "0aldyxi0a",
+              objOut: "1ohqdvker",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "z9j7nqtoi",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexPSR_mq2" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "zauhxljs1",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexPSR_mq2" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Value",
+              objIn: "9ab09c55-a9f4-45b3-91f7-1438b3975417",
+              objOut: "zauhxljs1",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "wktp2kjaz",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "workPSR_mq2" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "byk06hys1",
+              portOut: "Value",
+              objIn: "5md9tus12",
+              objOut: "wktp2kjaz",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "0yzwf3yhr",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_0yzwf3yhr" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "0yzwf3yhr",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "5md9tus12",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_5md9tus12" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "5md9tus12",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "d4y1qau5o",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_d4y1qau5o" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "d4y1qau5o",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "sgxfp2dh9",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 0.17 },
+        { name: "Y", value: -3.43 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "nbbh25gsp",
+              objOut: "sgxfp2dh9",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "nbbh25gsp",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "hpl4pfw6d",
+              objOut: "nbbh25gsp",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "0gbr5e0jd",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 9.08 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "nbbh25gsp",
+              objOut: "0gbr5e0jd",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "obpbg4umr",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 340.51 },
+        { name: "Y", value: 8.92 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "nbbh25gsp",
+              objOut: "obpbg4umr",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "hpl4pfw6d",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexAboutPSR_mq2" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "j5bnp2pah",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexAboutPSR_mq2" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Value",
+              objIn: "zazzu6gav",
+              objOut: "j5bnp2pah",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "lz04ulvsv",
+      uiAttribs: {},
+      portsIn: [{ name: "Title", value: "" }],
+      objName: "Ops.Ui.Area",
+    },
+    {
+      id: "74ixjif61",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 0.41 },
+        { name: "Y", value: -6.73 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "tts0z2501",
+              objOut: "74ixjif61",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "tts0z2501",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "5weur9rlg",
+              objOut: "tts0z2501",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "1glgv73qv",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 8.88 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "tts0z2501",
+              objOut: "1glgv73qv",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "zky6tth8a",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 250.28 },
+        { name: "Y", value: -45.93 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "tts0z2501",
+              objOut: "zky6tth8a",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "5weur9rlg",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexWorkPSR_mq2" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "bvk5q8iei",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "indexWorkPSR_mq2" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Value",
+              objIn: "xunvxt053",
+              objOut: "bvk5q8iei",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
   ],
-  export: { time: "2024-11-15 14:53", service: "html", exportNumber: 100 },
+  export: { time: "2024-11-16 00:22", service: "html", exportNumber: 1 },
 };
 if (!CABLES.exportedPatch) {
-  CABLES.exportedPatch = CABLES.exportedPatches["2myFLH"];
+  CABLES.exportedPatch = CABLES.exportedPatches["GgjVeu"];
 }
 ("use strict");
 var CABLES = CABLES || {};
@@ -32439,12 +30526,12 @@ Ops.Gl = Ops.Gl || {};
 Ops.Ui = Ops.Ui || {};
 Ops.Anim = Ops.Anim || {};
 Ops.Html = Ops.Html || {};
-Ops.Json = Ops.Json || {};
 Ops.Math = Ops.Math || {};
 Ops.User = Ops.User || {};
 Ops.Vars = Ops.Vars || {};
 Ops.Array = Ops.Array || {};
 Ops.Color = Ops.Color || {};
+Ops.Patch = Ops.Patch || {};
 Ops.Cables = Ops.Cables || {};
 Ops.Number = Ops.Number || {};
 Ops.String = Ops.String || {};
@@ -32460,12 +30547,264 @@ Ops.Gl.Textures = Ops.Gl.Textures || {};
 Ops.Math.Compare = Ops.Math.Compare || {};
 Ops.User.srcphag = Ops.User.srcphag || {};
 Ops.Devices.Mouse = Ops.Devices.Mouse || {};
+Ops.Patch.PGgjVeu = Ops.Patch.PGgjVeu || {};
 Ops.Gl.ShaderEffects = Ops.Gl.ShaderEffects || {};
 Ops.Extension.Deprecated = Ops.Extension.Deprecated || {};
+Ops.Patch.PGgjVeu.TransfromFromArray = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const n = (e.attachments = {
+    inc_gen_ports_js:
+      'const port_2uzay3xk0=op.inTrigger("2uzay3xk0");\nport_2uzay3xk0.setUiAttribs({title:"render",});\n\nconst port_byk06hys1=op.inArray("byk06hys1");\nport_byk06hys1.setUiAttribs({title:"Array",});\n\nconst port_driq8l4om=op.outTrigger("driq8l4om");\nport_driq8l4om.setUiAttribs({title:"trigger",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_2uzay3xk0 = addedOps[i].outTrigger("innerOut_2uzay3xk0");\ninnerOut_2uzay3xk0.setUiAttribs({title:"render"});\nport_2uzay3xk0.onTriggered = () => { innerOut_2uzay3xk0.trigger(); };\n\nconst innerOut_byk06hys1 = addedOps[i].outArray("innerOut_byk06hys1");\ninnerOut_byk06hys1.setUiAttribs({title:"Array"});\nport_byk06hys1.on("change", (a,v) => { innerOut_byk06hys1.setRef(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_driq8l4om = addedOps[i].inTrigger("innerIn_driq8l4om");\ninnerIn_driq8l4om.setUiAttribs({title:"trigger"});\ninnerIn_driq8l4om.onTriggered = () => { port_driq8l4om.trigger(); };\n\n}\n}\n};\n',
+    subpatch_json:
+      '{"ops":[{"id":"bp0-0","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsOut":[{"name":"trigger","links":[{"portIn":"innerIn_driq8l4om","portOut":"trigger","objIn":"bp0-3","objOut":"bp0-0"}]}],"objName":"Ops.Gl.Matrix.TransformView"},{"id":"bp0-1","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"Index","value":0}],"portsOut":[{"name":"X","links":[{"portIn":"posX","portOut":"X","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Y","links":[{"portIn":"posY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Z","links":[{"portIn":"posZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-1"}]}],"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp0-2","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsOut":[{"name":"innerOut_2uzay3xk0","title":"render","links":[{"portIn":"render","portOut":"innerOut_2uzay3xk0","objIn":"bp0-0","objOut":"bp0-2"}]},{"name":"innerOut_byk06hys1","title":"Array","links":[{"portIn":"Array","portOut":"innerOut_byk06hys1","objIn":"bp0-1","objOut":"bp0-2"},{"portIn":"array","portOut":"innerOut_byk06hys1","objIn":"bp0-4","objOut":"bp0-2"},{"portIn":"Array","portOut":"innerOut_byk06hys1","objIn":"bp0-5","objOut":"bp0-2"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp0-3","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"innerIn_driq8l4om","title":"trigger"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp0-4","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"index","value":3},{"name":"Value Invalid Index","value":0}],"portsOut":[{"name":"value","links":[{"portIn":"scale","portOut":"value","objIn":"bp0-0","objOut":"bp0-4"}]},{"name":"Valid Index","value":0}],"objName":"Ops.Array.ArrayGetNumber"},{"id":"bp0-5","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"Index","value":4}],"portsOut":[{"name":"X","links":[{"portIn":"rotX","portOut":"X","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Y","links":[{"portIn":"rotY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Z","links":[{"portIn":"rotZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-5"}]}],"objName":"Ops.Array.Array3GetNumbers"}]}',
+  });
+  const a = e.inTrigger("2uzay3xk0");
+  a.setUiAttribs({ title: "render" });
+  const s = e.inArray("byk06hys1");
+  s.setUiAttribs({ title: "Array" });
+  const o = e.outTrigger("driq8l4om");
+  o.setUiAttribs({ title: "trigger" });
+  e.initInnerPorts = function (t) {
+    for (let e = 0; e < t.length; e++) {
+      if (t[e].innerInput) {
+        const n = t[e].outTrigger("innerOut_2uzay3xk0");
+        n.setUiAttribs({ title: "render" });
+        a.onTriggered = () => {
+          n.trigger();
+        };
+        const i = t[e].outArray("innerOut_byk06hys1");
+        i.setUiAttribs({ title: "Array" });
+        s.on("change", (e, t) => {
+          i.setRef(e);
+        });
+      }
+      if (t[e].innerOutput) {
+        const r = t[e].inTrigger("innerIn_driq8l4om");
+        r.setUiAttribs({ title: "trigger" });
+        r.onTriggered = () => {
+          o.trigger();
+        };
+      }
+    }
+  };
+  const i = "bp2sub_" + e.id;
+  new CABLES.SubPatchOp(e, { subId: i });
+  t();
+  function t() {
+    if (!n || !n.subpatch_json) return;
+    const t = JSON.parse(n.subpatch_json);
+    CABLES.Patch.replaceOpIds(t, {
+      parentSubPatchId: i,
+      prefixHash: i,
+      oldIdAsRef: true,
+      doNotUnlinkLostLinks: true,
+    });
+    for (let e = 0; e < t.ops.length; e++) {
+      t.ops[e].uiAttribs.blueprintSubpatch2 = true;
+    }
+    e.loadDependencies(t, () => {
+      e.patch.deSerialize(t, { opsCreated: e.initInnerPorts });
+      if (CABLES.UI) gui.savedState.setSaved("blueprintloaded", i);
+      e.patch.emitEvent("subpatchExpose", i);
+      e.setStorage({ blueprintVer: 2 });
+      e.patch.emitEvent("subpatchExpose", i);
+    });
+  }
+};
+Ops.Patch.PGgjVeu.TransfromFromArray.prototype = new CABLES.Op();
+CABLES.OPS["fe53a267-5d09-45e5-a791-f1a574055dc4"] = {
+  f: Ops.Patch.PGgjVeu.TransfromFromArray,
+  objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+};
+Ops.Gl.Matrix.TransformView = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  const t = n.inTrigger("render"),
+    i = n.inValueFloat("posX"),
+    r = n.inValueFloat("posY"),
+    a = n.inValueFloat("posZ"),
+    s = n.inValueFloat("scale"),
+    o = n.inValueFloat("rotX"),
+    l = n.inValueFloat("rotY"),
+    u = n.inValueFloat("rotZ"),
+    c = n.outTrigger("trigger");
+  n.setPortGroup("Position", [i, r, a]);
+  n.setPortGroup("Scale", [s]);
+  n.setPortGroup("Rotation", [o, u, l]);
+  const d = vec3.create();
+  const h = vec3.create();
+  const p = mat4.create();
+  mat4.identity(p);
+  let f = false;
+  let m = false;
+  let g = true;
+  let b = true;
+  let v = true;
+  t.onTriggered = function () {
+    const e = n.patch.cgl;
+    let t = false;
+    if (g) {
+      _();
+      t = true;
+    }
+    if (b) {
+      T();
+      t = true;
+    }
+    if (v) {
+      t = true;
+    }
+    if (t) y();
+    e.pushViewMatrix();
+    mat4.multiply(e.vMatrix, e.vMatrix, p);
+    c.trigger();
+    e.popViewMatrix();
+    if (n.isCurrentUiOp()) gui.setTransformGizmo({ posX: i, posY: r, posZ: a });
+  };
+  n.transform3d = function () {
+    return { pos: [i, r, a] };
+  };
+  function y() {
+    mat4.identity(p);
+    if (m) mat4.translate(p, p, d);
+    if (o.get() !== 0) mat4.rotateX(p, p, o.get() * CGL.DEG2RAD);
+    if (l.get() !== 0) mat4.rotateY(p, p, l.get() * CGL.DEG2RAD);
+    if (u.get() !== 0) mat4.rotateZ(p, p, u.get() * CGL.DEG2RAD);
+    if (f) mat4.scale(p, p, h);
+    A = false;
+  }
+  function _() {
+    m = false;
+    if (i.get() !== 0 || r.get() !== 0 || a.get() !== 0) m = true;
+    vec3.set(d, i.get(), r.get(), a.get());
+    g = false;
+  }
+  function T() {
+    f = false;
+    if (s.get() !== 0) f = true;
+    vec3.set(h, s.get(), s.get(), s.get());
+    O = false;
+  }
+  function S() {
+    g = true;
+  }
+  function O() {
+    b = true;
+  }
+  function A() {
+    v = true;
+  }
+  o.onChange = l.onChange = u.onChange = A;
+  s.onChange = O;
+  i.onChange = r.onChange = a.onChange = S;
+  o.set(0);
+  l.set(0);
+  u.set(0);
+  s.set(1);
+  i.set(0);
+  r.set(0);
+  a.set(0);
+  y();
+};
+Ops.Gl.Matrix.TransformView.prototype = new CABLES.Op();
+CABLES.OPS["0b3e04f7-323e-4ac8-8a22-a21e2f36e0e9"] = {
+  f: Ops.Gl.Matrix.TransformView,
+  objName: "Ops.Gl.Matrix.TransformView",
+};
+Ops.Array.Array3GetNumbers = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inArray("Array", 3),
+    i = e.inValueInt("Index"),
+    r = e.outNumber("X"),
+    a = e.outNumber("Y"),
+    s = e.outNumber("Z");
+  n.onChange = i.onChange = o;
+  function o() {
+    let e = n.get();
+    if (!e) {
+      r.set(0);
+      a.set(0);
+      s.set(0);
+      return;
+    }
+    let t = Math.min(e.length - 3, i.get() * 3);
+    if (e) {
+      r.set(e[t + 0]);
+      a.set(e[t + 1]);
+      s.set(e[t + 2]);
+    }
+  }
+};
+Ops.Array.Array3GetNumbers.prototype = new CABLES.Op();
+CABLES.OPS["56882cc4-c40d-4dc0-bf7c-db1b5a7acad0"] = {
+  f: Ops.Array.Array3GetNumbers,
+  objName: "Ops.Array.Array3GetNumbers",
+};
+Ops.Ui.SubPatchInput = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  t.innerInput = true;
+  const n = t.inTriggerButton("Goto SubPatchOp");
+  n.setUiAttribs({ hidePort: true });
+  n.onTriggered = () => {
+    const e = t.patch.getSubPatchOuterOp(t.uiAttribs.subPatch);
+    gui.patchView.centerSelectOp(e.id);
+  };
+};
+Ops.Ui.SubPatchInput.prototype = new CABLES.Op();
+CABLES.OPS["c4e4e933-136e-479e-8de8-0b35b75d9217"] = {
+  f: Ops.Ui.SubPatchInput,
+  objName: "Ops.Ui.SubPatchInput",
+};
+Ops.Ui.SubPatchOutput = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  e.innerOutput = true;
+};
+Ops.Ui.SubPatchOutput.prototype = new CABLES.Op();
+CABLES.OPS["02d45073-7936-4830-81ad-59a162febf1f"] = {
+  f: Ops.Ui.SubPatchOutput,
+  objName: "Ops.Ui.SubPatchOutput",
+};
+Ops.Array.ArrayGetNumber = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inArray("array"),
+    i = e.inValueInt("index"),
+    r = e.inFloat("Value Invalid Index", 0),
+    a = e.outNumber("value"),
+    s = e.outBoolNum("Valid Index", true);
+  n.ignoreValueSerialize = true;
+  i.onChange = n.onChange = o;
+  function o() {
+    if (n.get()) {
+      const e = n.get()[i.get()];
+      if (isNaN(e)) {
+        a.set(r.get());
+        s.set(false);
+      } else {
+        s.set(true);
+        a.set(parseFloat(e));
+      }
+    }
+  }
+};
+Ops.Array.ArrayGetNumber.prototype = new CABLES.Op();
+CABLES.OPS["d1189078-70cf-437d-9a37-b2ebe89acdaf"] = {
+  f: Ops.Array.ArrayGetNumber,
+  objName: "Ops.Array.ArrayGetNumber",
+};
 Ops.Devices.Mouse.Mouse_v3 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const M = (e.attachments = {});
+  const j = (e.attachments = {});
   const t = e.inSwitch(
       "Coordinates",
       ["-1 to 1", "Pixel Display", "Pixel", "0 to 1"],
@@ -32487,16 +30826,16 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     d = e.outTrigger("click right"),
     h = e.outBoolNum("Button is down"),
     p = e.outBoolNum("Mouse is hovering"),
-    m = e.outNumber("Movement X", 0),
-    f = e.outNumber("Movement Y", 0);
+    f = e.outNumber("Movement X", 0),
+    m = e.outNumber("Movement Y", 0);
   const g = e.patch.cgl;
   let b = 1;
   let v = null;
   let y = null;
-  s.onChange = r.onChange = j;
+  s.onChange = r.onChange = M;
   t.onChange = R;
   e.onDelete = N;
-  j();
+  M();
   e.on("loadedValueSet", _);
   function _() {
     if (b == 0) {
@@ -32559,11 +30898,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
   }
   i.onChange = function () {
     N();
-    j();
+    M();
   };
   o.onChange = function () {
     if (v) N();
-    if (o.get()) j();
+    if (o.get()) M();
   };
   function R() {
     if (t.get() == "Pixel") b = 0;
@@ -32571,11 +30910,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     else if (t.get() == "0 to 1") b = 2;
     else if (t.get() == "Pixel Display") b = 3;
   }
-  function O(e) {
+  function S(e) {
     h.set(false);
     p.set(T(e));
   }
-  function S(e) {
+  function O(e) {
     if (!T(e)) return;
     h.set(true);
   }
@@ -32595,7 +30934,7 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     h.set(false);
     p.set(T(e));
   }
-  function I(e) {
+  function E(e) {
     let t = e.clientX;
     let n = e.clientY;
     if (r.get() != "Document") {
@@ -32610,18 +30949,18 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     if (a.get()) n = y.clientHeight - n;
     D(t / g.pixelDensity, n / g.pixelDensity);
   }
-  function E(e) {
+  function I(e) {
     p.set(T(e));
-    I(e);
-    m.set(e.movementX / g.pixelDensity);
-    f.set(e.movementY / g.pixelDensity);
+    E(e);
+    f.set(e.movementX / g.pixelDensity);
+    m.set(e.movementY / g.pixelDensity);
   }
   function k(e) {
-    if (event.touches && event.touches.length > 0) I(e.touches[0]);
+    if (event.touches && event.touches.length > 0) E(e.touches[0]);
   }
   function P(e) {
     h.set(true);
-    if (e.touches && e.touches.length > 0) S(e.touches[0]);
+    if (e.touches && e.touches.length > 0) O(e.touches[0]);
   }
   function L(e) {
     h.set(false);
@@ -32633,15 +30972,15 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     v.removeEventListener("touchstart", P);
     v.removeEventListener("touchmove", k);
     v.removeEventListener("click", C);
-    v.removeEventListener("mousemove", E);
+    v.removeEventListener("mousemove", I);
     v.removeEventListener("mouseleave", x);
-    v.removeEventListener("mousedown", S);
+    v.removeEventListener("mousedown", O);
     v.removeEventListener("mouseup", A);
-    v.removeEventListener("mouseenter", O);
+    v.removeEventListener("mouseenter", S);
     v.removeEventListener("contextmenu", w);
     v = null;
   }
-  function j() {
+  function M() {
     if (v || !o.get()) N();
     if (!o.get()) return;
     v = y = g.canvas;
@@ -32658,11 +30997,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
       v.addEventListener("touchstart", P, e);
       v.addEventListener("touchmove", k, e);
     }
-    v.addEventListener("mousemove", E, e);
+    v.addEventListener("mousemove", I, e);
     v.addEventListener("mouseleave", x, e);
-    v.addEventListener("mousedown", S, e);
+    v.addEventListener("mousedown", O, e);
     v.addEventListener("mouseup", A, e);
-    v.addEventListener("mouseenter", O, e);
+    v.addEventListener("mouseenter", S, e);
     v.addEventListener("contextmenu", w, e);
     v.addEventListener("click", C, e);
   }
@@ -32678,8 +31017,8 @@ Ops.Math.MapRange = function () {
   const t = (e.attachments = {});
   const h = e.inValueFloat("value", 0),
     p = e.inValueFloat("old min", 0),
-    m = e.inValueFloat("old max", 1),
-    f = e.inValueFloat("new min", 0),
+    f = e.inValueFloat("old max", 1),
+    m = e.inValueFloat("new min", 0),
     g = e.inValueFloat("new max", 1),
     n = e.inValueSelect(
       "Easing",
@@ -32688,12 +31027,12 @@ Ops.Math.MapRange = function () {
     ),
     i = e.inBool("Clamp", true),
     b = e.outNumber("result", 0);
-  e.setPortGroup("Input Range", [p, m]);
-  e.setPortGroup("Output Range", [f, g]);
+  e.setPortGroup("Input Range", [p, f]);
+  e.setPortGroup("Output Range", [m, g]);
   let v = true;
   let y = 0;
   let _ = 0;
-  h.onChange = p.onChange = m.onChange = f.onChange = g.onChange = r;
+  h.onChange = p.onChange = f.onChange = m.onChange = g.onChange = r;
   r();
   i.onChange = () => {
     v = i.get();
@@ -32705,10 +31044,10 @@ Ops.Math.MapRange = function () {
     else y = 0;
   };
   function r() {
-    const e = f.get();
+    const e = m.get();
     const t = g.get();
     const n = p.get();
-    const i = m.get();
+    const i = f.get();
     let r = h.get();
     if (v) {
       if (r >= Math.max(i, n)) {
@@ -32785,8 +31124,8 @@ Ops.Anim.Smooth = function () {
   let h = 0;
   e.toWorkPortsNeedToBeLinked(n);
   let p;
-  let m;
-  let f = 4;
+  let f;
+  let m = 4;
   let g = true;
   let b = 0;
   const v = 0;
@@ -32796,7 +31135,7 @@ Ops.Anim.Smooth = function () {
   i.setUiAttribs({ hidePort: true });
   s.onChange = o.onChange = T;
   i.onChange = _;
-  O();
+  S();
   function _() {
     const e = i.get();
     if (!e) b = v;
@@ -32809,18 +31148,18 @@ Ops.Anim.Smooth = function () {
       s.setUiAttribs({ title: "Inc factor" });
     }
     T();
-    O();
+    S();
   }
   function T() {
     if (b == v) {
       p = s.get();
-      m = s.get();
+      f = s.get();
     } else if (b == y) {
       p = s.get();
-      m = o.get();
+      f = o.get();
     }
     if (p <= 0.2 || p != p) p = 0.2;
-    if (m <= 0.2 || m != m) m = 0.2;
+    if (f <= 0.2 || f != f) f = 0.2;
   }
   r.onChange = function () {
     g = false;
@@ -32830,18 +31169,18 @@ Ops.Anim.Smooth = function () {
   s.onChange = function () {
     T();
   };
-  function O() {
+  function S() {
     let e = 1;
     if (performance.now() - h > 500 || h === 0) u = r.get() || 0;
     else e = (performance.now() - h) / (performance.now() - h);
     h = performance.now();
     if (u != u) u = 0;
-    if (f <= 0) f = 1e-4;
+    if (m <= 0) m = 1e-4;
     const t = c - u;
-    if (t >= 0) u += t / (m * e);
+    if (t >= 0) u += t / (f * e);
     else u += t / (p * e);
     if (Math.abs(t) < 1e-5) u = c;
-    if (f != f) u = 0;
+    if (m != m) u = 0;
     if (u != u || u == -Infinity || u == Infinity) u = r.get();
     if (d != u) {
       l.set(u);
@@ -32854,7 +31193,7 @@ Ops.Anim.Smooth = function () {
     a.trigger();
   }
   n.onTriggered = function () {
-    O();
+    S();
   };
 };
 Ops.Anim.Smooth.prototype = new CABLES.Op();
@@ -33035,8 +31374,8 @@ Ops.Gl.MainLoop = function () {
       i.setUiAttrib({ extendTitle: "Inactive" });
     }
   };
-  const m = i.patch.cgl;
-  let f = 0;
+  const f = i.patch.cgl;
+  let m = 0;
   let g = 0;
   let b = null;
   let v = false;
@@ -33048,19 +31387,19 @@ Ops.Gl.MainLoop = function () {
   c.onChange = w;
   setTimeout(w, 100);
   let T = null;
-  let O = true;
   let S = true;
+  let O = true;
   window.addEventListener("blur", () => {
-    O = false;
+    S = false;
   });
   window.addEventListener("focus", () => {
-    O = true;
+    S = true;
   });
   document.addEventListener("visibilitychange", () => {
-    S = !document.hidden;
+    O = !document.hidden;
   });
   x();
-  m.mainloopOp = this;
+  f.mainloopOp = this;
   p.onChange = () => {
     r.set(0);
     a.set(0);
@@ -33068,8 +31407,8 @@ Ops.Gl.MainLoop = function () {
   function A() {
     if (o.get() && i.patch.loading.getProgress() < 1) return 5;
     if (s.get()) {
-      if (!S) return 10;
-      if (!O) return 30;
+      if (!O) return 10;
+      if (!S) return 30;
     }
     return t.get();
   }
@@ -33090,7 +31429,7 @@ Ops.Gl.MainLoop = function () {
         T.addEventListener("mouseenter", e);
         T.addEventListener("click", function (e) {
           if (CABLES.UI && !e.shiftKey) gui.cycleFullscreen();
-          else m.fullScreen();
+          else f.fullScreen();
         });
       }
       T.style.padding = "10px";
@@ -33115,57 +31454,57 @@ Ops.Gl.MainLoop = function () {
     }
   }
   i.onDelete = function () {
-    m.gl.clearColor(0, 0, 0, 0);
-    m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
+    f.gl.clearColor(0, 0, 0, 0);
+    f.gl.clear(f.gl.COLOR_BUFFER_BIT | f.gl.DEPTH_BUFFER_BIT);
   };
   function C(e) {
     if (!d.get()) return;
-    if (m.aborted || m.canvas.clientWidth === 0 || m.canvas.clientHeight === 0)
+    if (f.aborted || f.canvas.clientWidth === 0 || f.canvas.clientHeight === 0)
       return;
-    i.patch.cg = m;
+    i.patch.cg = f;
     if (h.get()) i.patch.cgl.pixelDensity = window.devicePixelRatio;
     const t = performance.now();
     i.patch.config.fpsLimit = A();
-    if (m.canvasWidth == -1) {
-      m.setCanvas(i.patch.config.glCanvasId);
+    if (f.canvasWidth == -1) {
+      f.setCanvas(i.patch.config.glCanvasId);
       return;
     }
-    if (m.canvasWidth != r.get() || m.canvasHeight != a.get()) {
+    if (f.canvasWidth != r.get() || f.canvasHeight != a.get()) {
       let e = 1;
       if (p.get() == "CSS") e = i.patch.cgl.pixelDensity;
-      r.set(m.canvasWidth / e);
-      a.set(m.canvasHeight / e);
+      r.set(f.canvasWidth / e);
+      a.set(f.canvasHeight / e);
     }
     if (CABLES.now() - g > 1e3) {
       CGL.fpsReport = CGL.fpsReport || [];
-      if (i.patch.loading.getProgress() >= 1 && g !== 0) CGL.fpsReport.push(f);
-      f = 0;
+      if (i.patch.loading.getProgress() >= 1 && g !== 0) CGL.fpsReport.push(m);
+      m = 0;
       g = CABLES.now();
     }
     CGL.MESH.lastShader = null;
     CGL.MESH.lastMesh = null;
-    m.renderStart(m, y, _);
+    f.renderStart(f, y, _);
     if (l.get()) {
-      m.gl.clearColor(0, 0, 0, 1);
-      m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
+      f.gl.clearColor(0, 0, 0, 1);
+      f.gl.clear(f.gl.COLOR_BUFFER_BIT | f.gl.DEPTH_BUFFER_BIT);
     }
     n.trigger();
     if (CGL.MESH.lastMesh) CGL.MESH.lastMesh.unBind();
     if (CGL.Texture.previewTexture) {
       if (!CGL.Texture.texturePreviewer)
-        CGL.Texture.texturePreviewer = new CGL.Texture.texturePreview(m);
+        CGL.Texture.texturePreviewer = new CGL.Texture.texturePreview(f);
       CGL.Texture.texturePreviewer.render(CGL.Texture.previewTexture);
     }
-    m.renderEnd(m);
+    f.renderEnd(f);
     i.patch.cg = null;
     if (u.get()) {
-      m.gl.clearColor(1, 1, 1, 1);
-      m.gl.colorMask(false, false, false, true);
-      m.gl.clear(m.gl.COLOR_BUFFER_BIT);
-      m.gl.colorMask(true, true, true, true);
+      f.gl.clearColor(1, 1, 1, 1);
+      f.gl.colorMask(false, false, false, true);
+      f.gl.clear(f.gl.COLOR_BUFFER_BIT);
+      f.gl.colorMask(true, true, true, true);
     }
-    if (!m.frameStore.phong) m.frameStore.phong = {};
-    f++;
+    if (!f.frameStore.phong) f.frameStore.phong = {};
+    m++;
     i.patch.cgl.profileData.profileMainloopMs = performance.now() - t;
   }
   function x() {
@@ -33183,255 +31522,454 @@ CABLES.OPS["b0472a1d-db16-4ba6-8787-f300fbdc77bb"] = {
   f: Ops.Gl.MainLoop,
   objName: "Ops.Gl.MainLoop",
 };
-Ops.Array.ArrayIteratorObjects = function () {
+Ops.Gl.Matrix.Camera = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const j = (e.attachments = {});
+  const t = e.inTrigger("render");
+  const n = e.outTrigger("trigger");
+  const i = e.inValueSelect(
+    "projection mode",
+    ["prespective", "ortogonal"],
+    "prespective"
+  );
+  const r = e.inValue("frustum near", 0.01);
+  const a = e.inValue("frustum far", 5e3);
+  const s = e.inValue("fov", 45);
+  const o = e.inValueBool("Auto Aspect Ratio", true);
+  const l = e.inValue("Aspect Ratio", 1);
+  const u = e.inValue("eye X", 0);
+  const c = e.inValue("eye Y", 0);
+  const d = e.inValue("eye Z", 5);
+  const h = e.inValue("center X", 0);
+  const p = e.inValue("center Y", 0);
+  const f = e.inValue("center Z", 0);
+  const m = e.inValue("truck", 0);
+  const g = e.inValue("boom", 0);
+  const b = e.inValue("dolly", 0);
+  const v = e.inValue("tilt", 0);
+  const y = e.inValue("pan", 0);
+  const _ = e.inValue("roll", 0);
+  const T = e.outNumber("Aspect");
+  const S = e.outArray("Look At Array");
+  const O = e.patch.cgl;
+  let A = 0;
+  const w = vec3.create();
+  const C = vec3.create();
+  const x = vec3.create();
+  const E = mat4.create();
+  mat4.identity(E);
+  const I = [];
+  const k = vec3.create();
+  const P = mat4.create();
+  mat4.identity(P);
+  let L = true;
+  t.onTriggered = function () {
+    if (O.frameStore.shadowPass) return n.trigger();
+    if (!o.get()) A = l.get();
+    else A = O.getViewPort()[2] / O.getViewPort()[3];
+    T.set(A);
+    O.pushViewMatrix();
+    if (L) {
+      mat4.identity(P);
+      vec3.set(k, m.get(), g.get(), b.get());
+      if (m.get() !== 0 || g.get() !== 0 || b.get() !== 0)
+        mat4.translate(P, P, k);
+      if (v.get() !== 0) mat4.rotateX(P, P, v.get() * CGL.DEG2RAD);
+      if (y.get() !== 0) mat4.rotateY(P, P, y.get() * CGL.DEG2RAD);
+      if (_.get() !== 0) mat4.rotateZ(P, P, _.get() * CGL.DEG2RAD);
+      L = false;
+    }
+    mat4.multiply(O.vMatrix, O.vMatrix, P);
+    O.pushPMatrix();
+    O.pushViewMatrix();
+    if (i.get() == "prespective") {
+      mat4.perspective(O.pMatrix, s.get() * 0.0174533, A, r.get(), a.get());
+    } else if (i.get() == "ortogonal") {
+      mat4.ortho(
+        O.pMatrix,
+        -1 * (s.get() / 14),
+        1 * (s.get() / 14),
+        (-1 * (s.get() / 14)) / A,
+        (1 * (s.get() / 14)) / A,
+        r.get(),
+        a.get()
+      );
+    }
+    I[0] = u.get();
+    I[1] = c.get();
+    I[2] = d.get();
+    I[3] = h.get();
+    I[4] = p.get();
+    I[5] = f.get();
+    I[6] = 0;
+    I[7] = 1;
+    I[8] = 0;
+    S.setRef(I);
+    vec3.set(w, 0, 1, 0);
+    vec3.set(C, u.get(), c.get(), d.get());
+    vec3.set(x, h.get(), p.get(), f.get());
+    mat4.lookAt(E, C, x, w);
+    mat4.multiply(O.vMatrix, O.vMatrix, E);
+    n.trigger();
+    O.popViewMatrix();
+    O.popPMatrix();
+    O.popViewMatrix();
+    if (e.isCurrentUiOp()) gui.setTransformGizmo({ posX: m, posY: g, posZ: b });
+  };
+  const N = function () {
+    if (!o.get()) {
+      l.setUiAttribs({ greyout: false });
+    } else {
+      l.setUiAttribs({ greyout: true });
+    }
+  };
+  const M = function () {
+    L = true;
+  };
+  m.onChange = M;
+  g.onChange = M;
+  b.onChange = M;
+  v.onChange = M;
+  y.onChange = M;
+  _.onChange = M;
+  o.onChange = N;
+  N();
+};
+Ops.Gl.Matrix.Camera.prototype = new CABLES.Op();
+CABLES.OPS["b24dbfdc-485c-49d2-92a1-7258efd9239a"] = {
+  f: Ops.Gl.Matrix.Camera,
+  objName: "Ops.Gl.Matrix.Camera",
+};
+Ops.Anim.Timer_v2 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
   const t = (e.attachments = {});
-  const n = e.inTrigger("exe"),
-    i = e.inArray("array"),
-    r = e.outTrigger("trigger"),
-    a = e.outTrigger("finished"),
-    s = e.outNumber("index"),
-    o = e.outObject("value");
-  n.onTriggered = function () {
-    const t = i.get();
-    if (!t) return;
-    for (let e = 0; e < t.length; e++) {
-      o.setRef(t[e]);
-      s.set(e);
-      r.trigger();
+  const a = e.inValue("Speed", 1),
+    n = e.inValueBool("Play", true),
+    i = e.inTriggerButton("Reset"),
+    r = e.inValueBool("Sync to timeline", false),
+    s = e.outNumber("Time");
+  e.setPortGroup("Controls", [n, i, a]);
+  const o = new CABLES.Timer();
+  let l = null;
+  let u = 0;
+  let c = false;
+  n.onChange = d;
+  d();
+  function d() {
+    if (n.get()) {
+      o.play();
+      e.patch.addOnAnimFrame(e);
+    } else {
+      o.pause();
+      e.patch.removeOnAnimFrame(e);
     }
-    a.trigger();
+  }
+  i.onTriggered = h;
+  function h() {
+    u = 0;
+    l = null;
+    o.setTime(0);
+    s.set(0);
+  }
+  r.onChange = function () {
+    c = r.get();
+    n.setUiAttribs({ greyout: c });
+    i.setUiAttribs({ greyout: c });
   };
-};
-Ops.Array.ArrayIteratorObjects.prototype = new CABLES.Op();
-CABLES.OPS["481d2d8f-b9ee-42a0-a905-caf9dc23a63f"] = {
-  f: Ops.Array.ArrayIteratorObjects,
-  objName: "Ops.Array.ArrayIteratorObjects",
-};
-Ops.Gl.Matrix.Transform = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const e = (n.attachments = {});
-  const t = n.inTrigger("render"),
-    i = n.inValue("posX", 0),
-    r = n.inValue("posY", 0),
-    a = n.inValue("posZ", 0),
-    s = n.inValue("scale", 1),
-    o = n.inValue("rotX", 0),
-    l = n.inValue("rotY", 0),
-    u = n.inValue("rotZ", 0),
-    c = n.outTrigger("trigger");
-  n.setPortGroup("Rotation", [o, l, u]);
-  n.setPortGroup("Position", [i, r, a]);
-  n.setPortGroup("Scale", [s]);
-  n.setUiAxisPorts(i, r, a);
-  n.toWorkPortsNeedToBeLinked(t, c);
-  const d = vec3.create();
-  const h = vec3.create();
-  const p = mat4.create();
-  mat4.identity(p);
-  let m = false,
-    f = false,
-    g = true,
-    b = true,
-    v = true;
-  o.onChange = l.onChange = u.onChange = A;
-  i.onChange = r.onChange = a.onChange = O;
-  s.onChange = S;
-  t.onTriggered = function () {
-    let e = false;
-    if (g) {
-      _();
-      e = true;
-    }
-    if (b) {
-      T();
-      e = true;
-    }
-    if (v) e = true;
-    if (e) y();
-    const t = n.patch.cg || n.patch.cgl;
-    t.pushModelMatrix();
-    mat4.multiply(t.mMatrix, t.mMatrix, p);
-    c.trigger();
-    t.popModelMatrix();
-    if (CABLES.UI) {
-      if (!i.isLinked() && !r.isLinked() && !a.isLinked()) {
-        gui.setTransform(n.id, i.get(), r.get(), a.get());
-        if (n.isCurrentUiOp())
-          gui.setTransformGizmo({ posX: i, posY: r, posZ: a });
+  e.onAnimFrame = function (e, t, n) {
+    if (o.isPlaying()) {
+      if (CABLES.overwriteTime !== undefined) {
+        s.set(CABLES.overwriteTime * a.get());
+      } else if (c) {
+        s.set(e * a.get());
+      } else {
+        o.update();
+        const i = o.get();
+        if (l === null) {
+          l = i;
+          return;
+        }
+        const r = Math.abs(i - l);
+        l = i;
+        u += r * a.get();
+        if (u != u) u = 0;
+        s.set(u);
       }
     }
   };
-  function y() {
-    mat4.identity(p);
-    if (f) mat4.translate(p, p, d);
-    if (o.get() !== 0) mat4.rotateX(p, p, o.get() * CGL.DEG2RAD);
-    if (l.get() !== 0) mat4.rotateY(p, p, l.get() * CGL.DEG2RAD);
-    if (u.get() !== 0) mat4.rotateZ(p, p, u.get() * CGL.DEG2RAD);
-    if (m) mat4.scale(p, p, h);
-    v = false;
-  }
-  function _() {
-    f = false;
-    if (i.get() !== 0 || r.get() !== 0 || a.get() !== 0) f = true;
-    vec3.set(d, i.get(), r.get(), a.get());
-    g = false;
-  }
-  function T() {
-    m = true;
-    vec3.set(h, s.get(), s.get(), s.get());
-    b = false;
-  }
-  function O() {
-    g = true;
-  }
-  function S() {
-    b = true;
-  }
-  function A() {
-    v = true;
-  }
-  y();
 };
-Ops.Gl.Matrix.Transform.prototype = new CABLES.Op();
-CABLES.OPS["650baeb1-db2d-4781-9af6-ab4e9d4277be"] = {
-  f: Ops.Gl.Matrix.Transform,
-  objName: "Ops.Gl.Matrix.Transform",
+Ops.Anim.Timer_v2.prototype = new CABLES.Op();
+CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"] = {
+  f: Ops.Anim.Timer_v2,
+  objName: "Ops.Anim.Timer_v2",
 };
-Ops.Gl.Matrix.TransformView = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const e = (n.attachments = {});
-  const t = n.inTrigger("render"),
-    i = n.inValueFloat("posX"),
-    r = n.inValueFloat("posY"),
-    a = n.inValueFloat("posZ"),
-    s = n.inValueFloat("scale"),
-    o = n.inValueFloat("rotX"),
-    l = n.inValueFloat("rotY"),
-    u = n.inValueFloat("rotZ"),
-    c = n.outTrigger("trigger");
-  n.setPortGroup("Position", [i, r, a]);
-  n.setPortGroup("Scale", [s]);
-  n.setPortGroup("Rotation", [o, u, l]);
-  const d = vec3.create();
-  const h = vec3.create();
-  const p = mat4.create();
-  mat4.identity(p);
-  let m = false;
-  let f = false;
-  let g = true;
-  let b = true;
-  let v = true;
-  t.onTriggered = function () {
-    const e = n.patch.cgl;
-    let t = false;
-    if (g) {
-      _();
-      t = true;
-    }
-    if (b) {
-      T();
-      t = true;
-    }
-    if (v) {
-      t = true;
-    }
-    if (t) y();
-    e.pushViewMatrix();
-    mat4.multiply(e.vMatrix, e.vMatrix, p);
-    c.trigger();
-    e.popViewMatrix();
-    if (n.isCurrentUiOp()) gui.setTransformGizmo({ posX: i, posY: r, posZ: a });
-  };
-  n.transform3d = function () {
-    return { pos: [i, r, a] };
-  };
-  function y() {
-    mat4.identity(p);
-    if (f) mat4.translate(p, p, d);
-    if (o.get() !== 0) mat4.rotateX(p, p, o.get() * CGL.DEG2RAD);
-    if (l.get() !== 0) mat4.rotateY(p, p, l.get() * CGL.DEG2RAD);
-    if (u.get() !== 0) mat4.rotateZ(p, p, u.get() * CGL.DEG2RAD);
-    if (m) mat4.scale(p, p, h);
-    A = false;
-  }
-  function _() {
-    f = false;
-    if (i.get() !== 0 || r.get() !== 0 || a.get() !== 0) f = true;
-    vec3.set(d, i.get(), r.get(), a.get());
-    g = false;
-  }
-  function T() {
-    m = false;
-    if (s.get() !== 0) m = true;
-    vec3.set(h, s.get(), s.get(), s.get());
-    S = false;
-  }
-  function O() {
-    g = true;
-  }
-  function S() {
-    b = true;
-  }
-  function A() {
-    v = true;
-  }
-  o.onChange = l.onChange = u.onChange = A;
-  s.onChange = S;
-  i.onChange = r.onChange = a.onChange = O;
-  o.set(0);
-  l.set(0);
-  u.set(0);
-  s.set(1);
-  i.set(0);
-  r.set(0);
-  a.set(0);
-  y();
-};
-Ops.Gl.Matrix.TransformView.prototype = new CABLES.Op();
-CABLES.OPS["0b3e04f7-323e-4ac8-8a22-a21e2f36e0e9"] = {
-  f: Ops.Gl.Matrix.TransformView,
-  objName: "Ops.Gl.Matrix.TransformView",
-};
-Ops.Json.ObjectGetNumber_v2 = function () {
+Ops.Math.Accumulator = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
   const t = (e.attachments = {});
-  const n = e.inObject("Data"),
-    i = e.inString("Key"),
-    r = e.outNumber("Result"),
-    a = e.outBoolNum("Found");
-  r.ignoreValueSerialize = true;
-  n.ignoreValueSerialize = true;
-  e.setUiAttrib({ extendTitlePort: i.name });
-  i.setUiAttribs({ stringTrim: true });
-  i.onChange = n.onChange = o;
-  i.on("change", s);
-  s();
-  function s() {
-    if (!i.get()) e.setUiError("nokey", "Missing Key Value");
-    else e.setUiError("nokey", null);
+  const n = e.inTrigger("Trigger in"),
+    i = e.inValueFloat("Add to number", 0),
+    r = e.inValueFloat("Multiplier to add number", 1),
+    a = e.inValueFloat("Default Value", 1),
+    s = e.inTriggerButton("Set Default Value"),
+    o = e.outNumber("Current value");
+  let l = performance.now();
+  let u = 0;
+  let c = true;
+  s.onTriggered = d;
+  function d() {
+    u = a.get();
+    o.set(u);
+    c = true;
   }
-  function o() {
-    const e = n.get();
-    if (e) {
-      const t = e[i.get()];
-      r.set(parseFloat(t));
-      if (t === undefined) a.set(0);
-      else a.set(1);
+  n.onTriggered = function () {
+    if (!c) {
+      let e = (performance.now() - l) / 100;
+      u += i.get() * e * r.get();
+      o.set(u);
+    }
+    l = performance.now();
+    c = false;
+  };
+};
+Ops.Math.Accumulator.prototype = new CABLES.Op();
+CABLES.OPS["460574ca-dca2-4283-8c37-57a8c446a51f"] = {
+  f: Ops.Math.Accumulator,
+  objName: "Ops.Math.Accumulator",
+};
+Ops.Vars.VarSetNumber_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("Value", 0);
+  e.varName = e.inDropDown("Variable", [], "", true);
+  new CABLES.VarSetOpWrapper(e, "number", n, e.varName);
+};
+Ops.Vars.VarSetNumber_v2.prototype = new CABLES.Op();
+CABLES.OPS["b5249226-6095-4828-8a1c-080654e192fa"] = {
+  f: Ops.Vars.VarSetNumber_v2,
+  objName: "Ops.Vars.VarSetNumber_v2",
+};
+Ops.Vars.VarSetString_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inString("Value", "New String");
+  e.varName = e.inDropDown("Variable", [], "", true);
+  new CABLES.VarSetOpWrapper(e, "string", n, e.varName);
+};
+Ops.Vars.VarSetString_v2.prototype = new CABLES.Op();
+CABLES.OPS["0b4d9229-8024-4a30-9cc0-f6653942c2e4"] = {
+  f: Ops.Vars.VarSetString_v2,
+  objName: "Ops.Vars.VarSetString_v2",
+};
+Ops.Cables.LoadingStatus_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const i = this;
+  const e = (i.attachments = {});
+  const t = i.inTrigger("exe"),
+    r = i.inValueBool("PreRender Ops"),
+    a = i.inBool("Play Timeline", true),
+    n = i.outTrigger("Next"),
+    s = i.outBoolNum("Finished Initial Loading", false),
+    o = i.outBoolNum("Loading"),
+    l = i.outNumber("Progress"),
+    u = i.outArray("Jobs"),
+    c = i.outTrigger("Trigger Loading Finished ");
+  const d = i.patch.cgl;
+  const h = i.patch;
+  let p = false;
+  const f = [];
+  let m = true;
+  let g = 0;
+  document.body.classList.add("cables-loading");
+  let b = d.patch.loading.start("loadingStatusInit", "loadingStatusInit", i);
+  i.patch.loading.on("finishedTask", v.bind(this));
+  i.patch.loading.on("startTask", v.bind(this));
+  function v() {
+    const e = i.patch.loading.getListJobs();
+    l.set(h.loading.getProgress());
+    let t = e.length === 0;
+    const n = !t;
+    if (n) {
+      u.set(i.patch.loading.getListJobs());
+    }
+    if (n) {
+      if (m) {
+        if (r.get()) i.patch.preRenderOps();
+        i.patch.timer.setTime(0);
+        if (a.get()) {
+          i.patch.timer.play();
+        } else {
+          i.patch.timer.pause();
+        }
+      }
+      m = false;
+      document.body.classList.remove("cables-loading");
+      document.body.classList.add("cables-loaded");
     } else {
-      r.set(0);
-      a.set(0);
+      p = true;
+      u.set(i.patch.loading.getListJobs());
+      if (h.loading.getProgress() < 1) {
+        i.patch.timer.setTime(0);
+        i.patch.timer.pause();
+      }
+    }
+    s.set(p);
+    if (o.get() && t) c.trigger();
+    o.set(n);
+    i.setUiAttribs({ loading: n });
+  }
+  t.onTriggered = () => {
+    v();
+    n.trigger();
+    if (b) {
+      d.patch.loading.finished(b);
+      b = null;
+    }
+  };
+};
+Ops.Cables.LoadingStatus_v2.prototype = new CABLES.Op();
+CABLES.OPS["e62f7f4c-7436-437e-8451-6bc3c28545f7"] = {
+  f: Ops.Cables.LoadingStatus_v2,
+  objName: "Ops.Cables.LoadingStatus_v2",
+};
+Ops.Html.WindowHasFocus = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = t.outBoolNum("has focus"),
+    i = t.outBoolNum("Tab Visible", true);
+  const r = true;
+  n.set(t.patch.getDocument().hasFocus());
+  window.addEventListener("blur", s);
+  window.addEventListener("focus", a);
+  t.patch.getDocument().addEventListener("visibilitychange", o);
+  t.onDelete = function () {
+    t.patch.getDocument().removeEventListener("visibilitychange", o);
+  };
+  function a() {
+    n.set(true);
+  }
+  function s() {
+    n.set(false);
+  }
+  function o(e) {
+    i.set(!t.patch.getDocument().hidden);
+  }
+};
+Ops.Html.WindowHasFocus.prototype = new CABLES.Op();
+CABLES.OPS["6542896e-aa13-4b57-81e0-163597f4149a"] = {
+  f: Ops.Html.WindowHasFocus,
+  objName: "Ops.Html.WindowHasFocus",
+};
+Ops.Gl.ClearColor = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("render"),
+    i = e.outTrigger("trigger"),
+    r = e.inFloatSlider("r", 0.1),
+    a = e.inFloatSlider("g", 0.1),
+    s = e.inFloatSlider("b", 0.1),
+    o = e.inFloatSlider("a", 1);
+  r.setUiAttribs({ colorPick: true });
+  const l = e.patch.cgl;
+  n.onTriggered = function () {
+    l.gl.clearColor(r.get(), a.get(), s.get(), o.get());
+    l.gl.clear(l.gl.COLOR_BUFFER_BIT | l.gl.DEPTH_BUFFER_BIT);
+    i.trigger();
+  };
+};
+Ops.Gl.ClearColor.prototype = new CABLES.Op();
+CABLES.OPS["19b441eb-9f63-4f35-ba08-b87841517c4d"] = {
+  f: Ops.Gl.ClearColor,
+  objName: "Ops.Gl.ClearColor",
+};
+Ops.Trigger.TriggerSend = function () {
+  CABLES.Op.apply(this, arguments);
+  const i = this;
+  const e = (i.attachments = {});
+  const t = i.inTriggerButton("Trigger");
+  i.varName = i.inValueSelect("Named Trigger", [], "", true);
+  i.varName.onChange = r;
+  t.onTriggered = a;
+  i.patch.addEventListener("namedTriggersChanged", n);
+  n();
+  function n() {
+    if (CABLES.UI) {
+      let e = [];
+      const t = i.patch.namedTriggers;
+      e.push("+ create new one");
+      for (const n in t) e.push(n);
+      e = e.sort();
+      i.varName.uiAttribs.values = e;
+    }
+  }
+  function r() {
+    if (CABLES.UI) {
+      if (i.varName.get() == "+ create new one") {
+        new CABLES.UI.ModalDialog({
+          prompt: true,
+          title: "New Trigger",
+          text: "Enter a name for the new trigger",
+          promptValue: "",
+          promptOk: (e) => {
+            i.varName.set(e);
+            i.patch.namedTriggers[e] = i.patch.namedTriggers[e] || [];
+            n();
+          },
+        });
+        return;
+      }
+      i.refreshParams();
+    }
+    if (!i.patch.namedTriggers[i.varName.get()]) {
+      i.patch.namedTriggers[i.varName.get()] =
+        i.patch.namedTriggers[i.varName.get()] || [];
+      i.patch.emitEvent("namedTriggersChanged");
+    }
+    i.setTitle(">" + i.varName.get());
+    i.refreshParams();
+    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
+  }
+  function a() {
+    const t = i.patch.namedTriggers[i.varName.get()];
+    i.patch.emitEvent("namedTriggerSent", i.varName.get());
+    if (!t) {
+      i.setUiError("unknowntrigger", "unknown trigger");
+      return;
+    } else i.setUiError("unknowntrigger", null);
+    for (let e = 0; e < t.length; e++) {
+      t[e]();
     }
   }
 };
-Ops.Json.ObjectGetNumber_v2.prototype = new CABLES.Op();
-CABLES.OPS["a7335e79-046e-40da-9e9c-db779b0a5e53"] = {
-  f: Ops.Json.ObjectGetNumber_v2,
-  objName: "Ops.Json.ObjectGetNumber_v2",
+Ops.Trigger.TriggerSend.prototype = new CABLES.Op();
+CABLES.OPS["ce1eaf2b-943b-4dc0-ab5e-ee11b63c9ed0"] = {
+  f: Ops.Trigger.TriggerSend,
+  objName: "Ops.Trigger.TriggerSend",
+};
+Ops.Math.Divide = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("number1", 1),
+    i = e.inValueFloat("number2", 2),
+    r = e.outNumber("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = i.onChange = a;
+  a();
+  function a() {
+    r.set(n.get() / i.get());
+  }
+};
+Ops.Math.Divide.prototype = new CABLES.Op();
+CABLES.OPS["86fcfd8c-038d-4b91-9820-a08114f6b7eb"] = {
+  f: Ops.Math.Divide,
+  objName: "Ops.Math.Divide",
 };
 Ops.Trigger.RouteTrigger = function () {
   CABLES.Op.apply(this, arguments);
@@ -33472,124 +32010,3987 @@ CABLES.OPS["44ceb5d8-b040-4722-b189-a6fb8172517d"] = {
   f: Ops.Trigger.RouteTrigger,
   objName: "Ops.Trigger.RouteTrigger",
 };
-Ops.Gl.Matrix.Camera = function () {
+Ops.Vars.VarGetNumber_v2 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const M = (e.attachments = {});
-  const t = e.inTrigger("render");
-  const n = e.outTrigger("trigger");
-  const i = e.inValueSelect(
-    "projection mode",
-    ["prespective", "ortogonal"],
-    "prespective"
-  );
-  const r = e.inValue("frustum near", 0.01);
-  const a = e.inValue("frustum far", 5e3);
-  const s = e.inValue("fov", 45);
-  const o = e.inValueBool("Auto Aspect Ratio", true);
-  const l = e.inValue("Aspect Ratio", 1);
-  const u = e.inValue("eye X", 0);
-  const c = e.inValue("eye Y", 0);
-  const d = e.inValue("eye Z", 5);
-  const h = e.inValue("center X", 0);
-  const p = e.inValue("center Y", 0);
-  const m = e.inValue("center Z", 0);
-  const f = e.inValue("truck", 0);
-  const g = e.inValue("boom", 0);
-  const b = e.inValue("dolly", 0);
-  const v = e.inValue("tilt", 0);
-  const y = e.inValue("pan", 0);
-  const _ = e.inValue("roll", 0);
-  const T = e.outNumber("Aspect");
-  const O = e.outArray("Look At Array");
-  const S = e.patch.cgl;
-  let A = 0;
-  const w = vec3.create();
-  const C = vec3.create();
-  const x = vec3.create();
-  const I = mat4.create();
-  mat4.identity(I);
-  const E = [];
-  const k = vec3.create();
-  const P = mat4.create();
-  mat4.identity(P);
-  let L = true;
-  t.onTriggered = function () {
-    if (S.frameStore.shadowPass) return n.trigger();
-    if (!o.get()) A = l.get();
-    else A = S.getViewPort()[2] / S.getViewPort()[3];
-    T.set(A);
-    S.pushViewMatrix();
-    if (L) {
-      mat4.identity(P);
-      vec3.set(k, f.get(), g.get(), b.get());
-      if (f.get() !== 0 || g.get() !== 0 || b.get() !== 0)
-        mat4.translate(P, P, k);
-      if (v.get() !== 0) mat4.rotateX(P, P, v.get() * CGL.DEG2RAD);
-      if (y.get() !== 0) mat4.rotateY(P, P, y.get() * CGL.DEG2RAD);
-      if (_.get() !== 0) mat4.rotateZ(P, P, _.get() * CGL.DEG2RAD);
-      L = false;
+  const t = (e.attachments = {});
+  const n = e.outNumber("Value");
+  e.varName = e.inValueSelect("Variable", [], "", true);
+  new CABLES.VarGetOpWrapper(e, "number", e.varName, n);
+};
+Ops.Vars.VarGetNumber_v2.prototype = new CABLES.Op();
+CABLES.OPS["421f5b52-c0fa-47c4-8b7a-012b9e1c864a"] = {
+  f: Ops.Vars.VarGetNumber_v2,
+  objName: "Ops.Vars.VarGetNumber_v2",
+};
+Ops.Vars.VarSetTexture_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTexture("Value", null);
+  e.varName = e.inDropDown("Variable", [], "", true);
+  new CABLES.VarSetOpWrapper(e, "object", n, e.varName);
+};
+Ops.Vars.VarSetTexture_v2.prototype = new CABLES.Op();
+CABLES.OPS["4fbfc71e-1429-439f-8591-ad35961252ed"] = {
+  f: Ops.Vars.VarSetTexture_v2,
+  objName: "Ops.Vars.VarSetTexture_v2",
+};
+Ops.Gl.Performance = function () {
+  CABLES.Op.apply(this, arguments);
+  const s = this;
+  const D = (s.attachments = {});
+  const e = s.inTrigger("exe"),
+    o = s.inValueBool("Visible", true),
+    R = s.inValueBool("Measure GPU", true),
+    l = s.outTrigger("childs"),
+    t = s.inSwitch("Position", ["top", "bottom"], "top"),
+    n = s.inBool("Open", false),
+    B = s.inBool("Smooth Graph", true),
+    U = s.inFloat("Scale", 3),
+    u = s.inFloat("Size", 128),
+    V = s.outObject("Canvas"),
+    F = s.outNumber("FPS");
+  const i = s.patch.cgl;
+  const r = document.createElement("div");
+  let a = null;
+  let c = null;
+  let d = false;
+  let h = 0;
+  let p = 0;
+  let f = 0;
+  let m = 0;
+  let g = 0;
+  const b = [];
+  const v = [];
+  const y = [];
+  const _ = [];
+  let T = 0;
+  let S = 0;
+  let O = null;
+  let G = 0;
+  let H = 0;
+  const A = ["|", "/", "-", "\\"];
+  let w = true;
+  const z = "#007f9c";
+  const q = "#aaaaaa";
+  const W = "#222222";
+  const C = "#003f5c";
+  const x = "#7a5195";
+  const E = "#ef5675";
+  const I = "#ffa600";
+  let X = false;
+  let k = 0;
+  let P = 0;
+  let L = 0;
+  s.toWorkPortsNeedToBeLinked(e, l);
+  const Y = s.patch.cgl.gl;
+  const K = Y.getExtension("EXT_disjoint_timer_query_webgl2");
+  e.onLinkChanged = o.onChange = () => {
+    j();
+    Z();
+  };
+  t.onChange = Q;
+  u.onChange = M;
+  r.id = "performance";
+  r.style.position = "absolute";
+  r.style.left = "0px";
+  r.style.opacity = "0.8";
+  r.style.padding = "10px";
+  r.style.cursor = "pointer";
+  r.style.background = "#222";
+  r.style.color = "white";
+  r.style["font-family"] = "monospace";
+  r.style["font-size"] = "12px";
+  r.style["z-index"] = "99999";
+  r.innerHTML = "&nbsp;";
+  r.addEventListener("click", $);
+  const N = s.patch.cgl.canvas.parentElement;
+  N.appendChild(r);
+  M();
+  j();
+  Q();
+  Z();
+  s.onDelete = function () {
+    if (O) O.remove();
+    if (r) r.remove();
+  };
+  function Q() {
+    O.style["pointer-events"] = "none";
+    if (t.get() == "top") {
+      O.style.top = r.style.top = "0px";
+      O.style.bottom = r.style.bottom = "initial";
+    } else {
+      O.style.bottom = r.style.bottom = "0px";
+      O.style.top = r.style.top = "initial";
     }
-    mat4.multiply(S.vMatrix, S.vMatrix, P);
-    S.pushPMatrix();
-    S.pushViewMatrix();
-    if (i.get() == "prespective") {
-      mat4.perspective(S.pMatrix, s.get() * 0.0174533, A, r.get(), a.get());
-    } else if (i.get() == "ortogonal") {
-      mat4.ortho(
-        S.pMatrix,
-        -1 * (s.get() / 14),
-        1 * (s.get() / 14),
-        (-1 * (s.get() / 14)) / A,
-        (1 * (s.get() / 14)) / A,
-        r.get(),
-        a.get()
+  }
+  function Z() {
+    if (!o.get() || !e.isLinked()) {
+      r.style.display = "none";
+      r.style.opacity = 0;
+      O.style.display = "none";
+    } else {
+      r.style.display = "block";
+      r.style.opacity = 1;
+      O.style.display = "block";
+    }
+  }
+  function M() {
+    if (!O) return;
+    const t = Math.max(0, parseInt(u.get()));
+    O.width = t;
+    O.height = t;
+    r.style.left = t + "px";
+    b.length = 0;
+    v.length = 0;
+    y.length = 0;
+    _.length = 0;
+    for (let e = 0; e < t; e++) {
+      b[e] = -1;
+      v[e] = -1;
+      y[e] = -1;
+      _[e] = -1;
+    }
+  }
+  n.onChange = function () {
+    d = n.get();
+    j();
+  };
+  function $() {
+    if (!o.get()) return;
+    r.style.opacity = 1;
+    d = !d;
+    j();
+  }
+  function j() {
+    te();
+    if (!O) ee();
+    if (d) {
+      O.style.display = "block";
+      r.style.left = u.get() + "px";
+      r.style["min-height"] = "56px";
+    } else {
+      O.style.display = "none";
+      r.style.left = "0px";
+      r.style["min-height"] = "auto";
+    }
+  }
+  function J() {
+    const t = O.height;
+    const n = U.get();
+    c.fillStyle = W;
+    c.fillRect(0, 0, O.width, t);
+    c.fillStyle = C;
+    let i = 0;
+    const r = Math.max(0, parseInt(u.get()));
+    for (i = r; i >= 0; i--) {
+      if (b[i] > 30) c.fillStyle = z;
+      if (b[i] > 60) c.fillStyle = q;
+      c.fillRect(r - i, t - b[i] * n, 1, b[i] * n);
+      if (b[i] > 30) c.fillStyle = C;
+    }
+    for (i = r; i >= 0; i--) {
+      let e = 0;
+      c.fillStyle = x;
+      e = v[i];
+      c.fillRect(r - i, t - e * n, 1, v[i] * n);
+      c.fillStyle = E;
+      e += y[i];
+      c.fillRect(r - i, t - e * n, 1, y[i] * n);
+      c.fillStyle = I;
+      e += _[i];
+      c.fillRect(r - i, t - e * n, 1, _[i] * n);
+    }
+    for (let e = 10; e < t; e += 10) {
+      c.fillStyle = "#888";
+      const a = t - e * n;
+      c.fillRect(O.width - 5, a, 5, 1);
+      c.font = "8px arial";
+      c.fillText(e + "ms", O.width - 27, a + 3);
+    }
+    c.fillStyle = "#fff";
+    c.fillRect(O.width - 5, t - (1e3 / p) * n, 5, 1);
+    c.fillText(Math.round(1e3 / p) + "ms", O.width - 27, t - (1e3 / p) * n);
+  }
+  function ee() {
+    O = document.createElement("canvas");
+    O.id = "performance_" + s.patch.config.glCanvasId;
+    O.width = u.get();
+    O.height = u.get();
+    O.style.display = "block";
+    O.style.opacity = 0.9;
+    O.style.position = "absolute";
+    O.style.left = "0px";
+    O.style.cursor = "pointer";
+    O.style.top = "-64px";
+    O.style["z-index"] = "99998";
+    N.appendChild(O);
+    c = O.getContext("2d");
+    O.addEventListener("click", $);
+    M();
+  }
+  function te() {
+    if (!o.get()) return;
+    let e = "";
+    if (s.patch.cgl.profileData.profileShaderCompiles > 0)
+      e +=
+        "Shader compile (" +
+        s.patch.cgl.profileData.profileShaderCompileName +
+        ") ";
+    if (s.patch.cgl.profileData.profileShaderGetUniform > 0)
+      e +=
+        "Shader get uni loc! (" +
+        s.patch.cgl.profileData.profileShaderGetUniformName +
+        ")";
+    if (s.patch.cgl.profileData.profileTextureResize > 0)
+      e += "Texture resize! ";
+    if (s.patch.cgl.profileData.profileFrameBuffercreate > 0)
+      e += "Framebuffer create! ";
+    if (s.patch.cgl.profileData.profileEffectBuffercreate > 0)
+      e += "Effectbuffer create! ";
+    if (s.patch.cgl.profileData.profileTextureDelete > 0)
+      e += "Texture delete! ";
+    if (s.patch.cgl.profileData.profileNonTypedAttrib > 0)
+      e +=
+        "Not-Typed Buffer Attrib! " +
+        s.patch.cgl.profileData.profileNonTypedAttribNames;
+    if (s.patch.cgl.profileData.profileTextureNew > 0)
+      e += "new texture created! ";
+    if (s.patch.cgl.profileData.profileGenMipMap > 0)
+      e += "generating mip maps!";
+    if (e.length > 0) {
+      e = '| <span style="color:#f80;">WARNING: ' + e + "<span>";
+    }
+    let t = "";
+    if (d) {
+      t += '<span style="color:' + C + '">■</span> ' + p + " fps ";
+      t +=
+        '<span style="color:' +
+        x +
+        '">■</span> ' +
+        Math.round(P * 100) / 100 +
+        "ms mainloop ";
+      t +=
+        '<span style="color:' +
+        E +
+        '">■</span> ' +
+        Math.round(L * 100) / 100 +
+        "ms onframe ";
+      if (k)
+        t +=
+          '<span style="color:' +
+          I +
+          '">■</span> ' +
+          Math.round(k * 100) / 100 +
+          "ms GPU";
+      t += e;
+      r.innerHTML = t;
+    } else {
+      t += p + " fps / ";
+      t +=
+        "CPU: " +
+        Math.round(s.patch.cgl.profileData.profileOnAnimFrameOps * 100) / 100 +
+        "ms / ";
+      if (k) t += "GPU: " + Math.round(k * 100) / 100 + "ms  ";
+      r.innerHTML = t;
+    }
+    if (s.patch.loading.getProgress() != 1) {
+      r.innerHTML +=
+        "<br/>loading " +
+        Math.round(s.patch.loading.getProgress() * 100) +
+        "% " +
+        A[++H % A.length];
+    }
+    if (d) {
+      let t = 0;
+      T = 0;
+      g = 0;
+      for (let e = b.length; e > b.length - b.length / 3; e--) {
+        if (b[e] > -1) {
+          T += b[e];
+          t++;
+        }
+        if (v[e] > -1) g += v[e];
+      }
+      T /= t;
+      g /= t;
+      r.innerHTML +=
+        "<br/> " +
+        i.canvasWidth +
+        " x " +
+        i.canvasHeight +
+        " (x" +
+        i.pixelDensity +
+        ") ";
+      r.innerHTML +=
+        "<br/>frame avg: " +
+        Math.round(g * 100) / 100 +
+        " ms (" +
+        Math.round((g / T) * 100) +
+        "%) / " +
+        Math.round(T * 100) / 100 +
+        " ms";
+      r.innerHTML += " (self: " + Math.round(S * 100) / 100 + " ms) ";
+      r.innerHTML +=
+        "<br/>shader binds: " +
+        Math.ceil(s.patch.cgl.profileData.profileShaderBinds / p) +
+        " uniforms: " +
+        Math.ceil(s.patch.cgl.profileData.profileUniformCount / p) +
+        " mvp_uni_mat4: " +
+        Math.ceil(s.patch.cgl.profileData.profileMVPMatrixCount / p) +
+        " num glPrimitives: " +
+        Math.ceil(s.patch.cgl.profileData.profileMeshNumElements / p) +
+        " fenced pixelread: " +
+        Math.ceil(s.patch.cgl.profileData.profileFencedPixelRead) +
+        " mesh.setGeom: " +
+        s.patch.cgl.profileData.profileMeshSetGeom +
+        " videos: " +
+        s.patch.cgl.profileData.profileVideosPlaying +
+        " tex preview: " +
+        s.patch.cgl.profileData.profileTexPreviews;
+      r.innerHTML +=
+        " draw meshes: " +
+        Math.ceil(s.patch.cgl.profileData.profileMeshDraw / p) +
+        " framebuffer blit: " +
+        Math.ceil(s.patch.cgl.profileData.profileFramebuffer / p) +
+        " texeffect blit: " +
+        Math.ceil(s.patch.cgl.profileData.profileTextureEffect / p);
+      r.innerHTML +=
+        " all shader compiletime: " +
+        Math.round(s.patch.cgl.profileData.shaderCompileTime * 100) / 100;
+    }
+    s.patch.cgl.profileData.clear();
+  }
+  function ne(e) {
+    e.style.padding = "0px";
+    e.style.margin = "0px";
+  }
+  function ie(t, e, n, i) {
+    const r = 20;
+    t.usedAvg = t.usedAvg || t.used;
+    if (!t.ele || w) {
+      const s = document.createElement("div");
+      t.ele = s;
+      if (t.childs && t.childs.length > 0) s.style.height = "500px";
+      else s.style.height = r + "px";
+      s.style.overflow = "hidden";
+      s.style.display = "inline-block";
+      if (!t.isRoot) {
+        s.innerHTML =
+          '<div style="min-height:' +
+          r +
+          'px;width:100%;overflow:hidden;color:black;position:relative">&nbsp;' +
+          t.name +
+          "</div>";
+        s.style["background-color"] =
+          "rgb(" + t.colR + "," + t.colG + "," + t.colB + ")";
+        s.style["border-left"] = "1px solid black";
+      }
+      e.appendChild(s);
+    }
+    if (!t.isRoot) {
+      if (performance.now() - t.lastTime > 200) {
+        t.ele.style.display = "none";
+        t.hidden = true;
+      } else {
+        if (t.hidden) {
+          t.ele.style.display = "inline-block";
+          t.hidden = false;
+        }
+      }
+      t.ele.style.float = "left";
+      t.ele.style.width = Math.floor((t.usedAvg / n) * 98) + "%";
+    } else {
+      t.ele.style.width = "100%";
+      t.ele.style.clear = "both";
+      t.ele.style.float = "none";
+    }
+    if (t && t.childs && t.childs.length > 0) {
+      let e = 0;
+      for (var a = 0; a < t.childs.length; a++) {
+        t.childs[a].usedAvg =
+          (t.childs[a].usedAvg || t.childs[a].used) * 0.95 +
+          t.childs[a].used * 0.05;
+        e += t.childs[a].usedAvg;
+      }
+      for (var a = 0; a < t.childs.length; a++) {
+        ie(t.childs[a], t.ele, e, i + 1);
+      }
+    }
+  }
+  function re(t) {
+    for (let e = 0; e < t.childs.length; e++) re(t.childs[e]);
+    t.childs.length = 0;
+  }
+  function ae() {
+    if (!CGL.performanceMeasures) return;
+    if (!a) {
+      s.log("create measure ele");
+      a = document.createElement("div");
+      a.style.width = "100%";
+      a.style["background-color"] = "#444";
+      a.style.bottom = "10px";
+      a.style.height = "100px";
+      a.style.opacity = "1";
+      a.style.position = "absolute";
+      a.style["z-index"] = "99999";
+      a.innerHTML = "";
+      N.appendChild(a);
+    }
+    let t = 0;
+    const n = CGL.performanceMeasures[0];
+    for (let e = 0; e < n.childs.length; e++) t += n.childs[e].used;
+    ie(CGL.performanceMeasures[0], a, t, 0);
+    n.childs.length = 0;
+    re(CGL.performanceMeasures[0]);
+    CGL.performanceMeasures.length = 0;
+    w = false;
+  }
+  e.onTriggered = se;
+  function se() {
+    const e = performance.now();
+    h++;
+    if (K && R.get() && o.get())
+      s.patch.cgl.profileData.doProfileGlQuery = true;
+    else s.patch.cgl.profileData.doProfileGlQuery = false;
+    if (f === 0) f = Date.now();
+    if (Date.now() - f >= 1e3) {
+      p = h;
+      h = 0;
+      F.set(p);
+      if (o.get()) te();
+      f = Date.now();
+    }
+    const n = s.patch.cgl.profileData.glQueryData;
+    k = 0;
+    if (n) {
+      let t = 0;
+      for (let e in n) {
+        t++;
+        if (n[e].time) k += n[e].time;
+      }
+    }
+    if (o.get()) {
+      ae();
+      if (d && !s.patch.cgl.profileData.pause) {
+        b.push(s.patch.cgl.profileData.profileFrameDelta);
+        b.shift();
+        v.push(m);
+        v.shift();
+        y.push(
+          s.patch.cgl.profileData.profileOnAnimFrameOps -
+            s.patch.cgl.profileData.profileMainloopMs
+        );
+        y.shift();
+        _.push(k);
+        _.shift();
+        J();
+      }
+    }
+    G = performance.now();
+    S = performance.now() - e;
+    const t = performance.now();
+    V.setRef(O);
+    l.trigger();
+    const i = performance.now() - t;
+    const r = s.patch.cgl.profileData.profileMainloopMs;
+    const a =
+      s.patch.cgl.profileData.profileOnAnimFrameOps -
+      s.patch.cgl.profileData.profileMainloopMs;
+    if (B.get()) {
+      m = m * 0.9 + i * 0.1;
+      P = P * 0.5 + r * 0.5;
+      L = L * 0.5 + a * 0.5;
+    } else {
+      m = i;
+      P = r;
+      L = a;
+    }
+    s.patch.cgl.profileData.clearGlQuery();
+  }
+};
+Ops.Gl.Performance.prototype = new CABLES.Op();
+CABLES.OPS["9cd2d9de-000f-4a14-bd13-e7d5f057583c"] = {
+  f: Ops.Gl.Performance,
+  objName: "Ops.Gl.Performance",
+};
+Ops.Ui.SubPatch = function () {
+  CABLES.Op.apply(this, arguments);
+  const u = this;
+  const e = (u.attachments = {});
+  u.dyn = u.addInPort(
+    new CABLES.Port(u, "create port", CABLES.OP_PORT_TYPE_DYNAMIC)
+  );
+  u.dynOut = u.addOutPort(
+    new CABLES.Port(u, "create port out", CABLES.OP_PORT_TYPE_DYNAMIC)
+  );
+  const t = u.addInPort(
+    new CABLES.Port(u, "dataStr", CABLES.OP_PORT_TYPE_VALUE, {
+      display: "readonly",
+    })
+  );
+  u.patchId = u.addInPort(
+    new CABLES.Port(u, "patchId", CABLES.OP_PORT_TYPE_VALUE, {
+      display: "readonly",
+    })
+  );
+  t.setUiAttribs({ hideParam: true });
+  u.patchId.setUiAttribs({ hidePort: true });
+  let c = { ports: [], portsOut: [] };
+  let n = CABLES.generateUUID();
+  u.patchId.set(n);
+  f();
+  p();
+  let d = false;
+  u.saveData = s;
+  u.init = () => {
+    u.setStorage({ subPatchVer: 1 });
+  };
+  u.patchId.onChange = function () {
+    if (!u.patch.isEditorMode()) return;
+    const t = u.patch.getSubPatchOps(n);
+    if (t.length === 2) {
+      if (u.patch.isEditorMode() && CABLES.UI.DEFAULTOPS.isInBlueprint(u))
+        CABLES.UI.undo.pause();
+      for (let e = 0; e < t.length; e++) {
+        u.patch.deleteOp(t[e].id);
+      }
+      if (u.patch.isEditorMode() && CABLES.UI.DEFAULTOPS.isInBlueprint(u))
+        CABLES.UI.undo.resume();
+    }
+  };
+  u.onLoaded = function () {};
+  u.onLoadedValueSet = function () {
+    c = JSON.parse(t.get());
+    if (!c) {
+      c = { ports: [], portsOut: [] };
+    }
+    a();
+  };
+  function i() {}
+  t.onChange = function () {
+    if (d) return;
+    if (!t.get()) return;
+    try {
+      i();
+    } catch (e) {
+      u.logError("cannot load subpatch data...");
+      u.logError(e);
+    }
+  };
+  function s() {
+    try {
+      t.set(JSON.stringify(c));
+    } catch (e) {
+      u.log(e);
+    }
+  }
+  u.addPortListener = h;
+  function h(n, e) {
+    if (!n.hasSubpatchLstener) {
+      n.hasSubpatchLstener = true;
+      n.addEventListener("onUiAttrChange", function (t) {
+        if (t.title) {
+          let e = 0;
+          for (e = 0; e < c.portsOut.length; e++)
+            if (c.portsOut[e].name == n.name) c.portsOut[e].title = t.title;
+          for (e = 0; e < c.ports.length; e++)
+            if (c.ports[e].name == n.name) c.ports[e].title = t.title;
+          s();
+        }
+      });
+    }
+    if (n.direction == CABLES.PORT_DIR_IN) {
+      if (n.type == CABLES.OP_PORT_TYPE_FUNCTION) {
+        n.onTriggered = function () {
+          if (e.isLinked()) e.trigger();
+        };
+      } else {
+        n.onChange = function () {
+          e.set(n.get());
+          if (!n.isLinked()) {
+            for (let e = 0; e < c.ports.length; e++) {
+              if (c.ports[e].name === n.name) {
+                c.ports[e].value = n.get();
+              }
+            }
+            s();
+          }
+        };
+      }
+    }
+  }
+  u.setupPorts = a;
+  function a() {
+    if (!u.patchId.get()) return;
+    const e = c.ports || [];
+    const t = c.portsOut || [];
+    let n = 0;
+    for (n = 0; n < e.length; n++) {
+      if (!u.getPortByName(e[n].name)) {
+        const i = u.addInPort(new CABLES.Port(u, e[n].name, e[n].type));
+        const r = f();
+        const a = r.addOutPort(new CABLES.Port(r, e[n].name, e[n].type));
+        i.ignoreValueSerialize = true;
+        i.setUiAttribs({ editableTitle: true });
+        if (e[n].title) {
+          i.setUiAttribs({ title: e[n].title });
+          a.setUiAttribs({ title: e[n].title });
+        }
+        if (e[n].objType) {
+          i.setUiAttribs({ objType: e[n].objType });
+          a.setUiAttribs({ objType: e[n].objType });
+        }
+        if (e[n].value) {
+          i.set(e[n].value);
+          a.set(e[n].value);
+        }
+        h(i, a);
+      }
+    }
+    for (n = 0; n < t.length; n++) {
+      if (!u.getPortByName(t[n].name)) {
+        const s = u.addOutPort(new CABLES.Port(u, t[n].name, t[n].type));
+        const o = p();
+        const l = o.addInPort(new CABLES.Port(o, t[n].name, t[n].type));
+        s.ignoreValueSerialize = true;
+        s.setUiAttribs({ editableTitle: true });
+        if (t[n].title) {
+          s.setUiAttribs({ title: t[n].title });
+          l.setUiAttribs({ title: t[n].title });
+        }
+        if (t[n].objType) {
+          s.setUiAttribs({ objType: t[n].objType });
+          l.setUiAttribs({ objType: t[n].objType });
+        }
+        h(l, s);
+      }
+    }
+    d = true;
+  }
+  u.addNewInPort = function (e, t, n) {
+    const i = "in" + c.ports.length + " " + e.op.name + " " + e.name;
+    const r = { name: i, type: e.type };
+    if (e.uiAttribs.objType) r.objType = e.uiAttribs.objType;
+    c.ports.push(r);
+    a();
+    return i;
+  };
+  u.dyn.onLinkChanged = function () {
+    if (u.dyn.isLinked()) {
+      const e = u.dyn.links[0].getOtherPort(u.dyn);
+      u.dyn.removeLinks();
+      e.removeLinkTo(u.dyn);
+      u.log("dyn link changed!!!");
+      const t = u.addNewInPort(e);
+      const n = gui.scene().link(e.op, e.getName(), u, t);
+      d = true;
+      s();
+    } else {
+      setTimeout(function () {
+        u.dyn.removeLinks();
+      }, 100);
+    }
+  };
+  u.addNewOutPort = function (e, t, n) {
+    const i = "out" + c.portsOut.length + " " + e.op.name + " " + e.name;
+    const r = { name: i, type: e.type };
+    if (e.uiAttribs.objType) r.objType = e.uiAttribs.objType;
+    c.portsOut.push(r);
+    a();
+    return i;
+  };
+  u.dynOut.onLinkChanged = function () {
+    if (u.dynOut.isLinked()) {
+      const e = u.dynOut.links[0].getOtherPort(u.dynOut);
+      u.dynOut.removeLinks();
+      if (e) {
+        e.removeLinkTo(u.dynOut);
+        const t = u.addNewOutPort(e);
+        gui.scene().link(e.op, e.getName(), u, t);
+      }
+      d = true;
+      s();
+    } else {
+      setTimeout(function () {
+        u.dynOut.removeLinks();
+      }, 100);
+      u.log("dynOut unlinked...");
+    }
+  };
+  function p() {
+    let e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchOutput");
+    if (!e) {
+      u.patch.addOp("Ops.Ui.PatchOutput", {
+        subPatch: u.patchId.get(),
+        translate: { x: 0, y: 0 },
+      });
+      e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchOutput");
+      if (!e) u.warn("no patchoutput!");
+    }
+    return e;
+  }
+  function f() {
+    let e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchInput");
+    if (!e) {
+      u.patch.addOp("Ops.Ui.PatchInput", {
+        subPatch: u.patchId.get(),
+        translate: { x: 0, y: 0 },
+      });
+      e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchInput");
+      if (!e) u.warn("no patchinput2!");
+    }
+    return e;
+  }
+  u.addSubLink = function (e, t) {
+    const n = c.ports.length;
+    const i = "in" + (n - 1) + " " + t.op.name + " " + t.name;
+    if (e.direction == CABLES.PORT_DIR_IN) {
+      gui.scene().link(e.op, e.getName(), f(), i);
+    } else {
+      const a = c.portsOut.length;
+      gui
+        .scene()
+        .link(
+          e.op,
+          e.getName(),
+          p(),
+          "out" + (a - 1) + " " + t.op.name + " " + t.name
+        );
+    }
+    const r = gui.patchView.getSubPatchBounds(u.patchId.get());
+    f().uiAttr({ translate: { x: r.minx, y: r.miny - 100 } });
+    p().uiAttr({ translate: { x: r.minx, y: r.maxy + 100 } });
+    s();
+    return i;
+  };
+  u.onDelete = function () {
+    for (let e = u.patch.ops.length - 1; e >= 0; e--)
+      if (
+        u.patch.ops[e] &&
+        u.patch.ops[e].uiAttribs &&
+        u.patch.ops[e].uiAttribs.subPatch == u.patchId.get()
+      )
+        u.patch.deleteOp(u.patch.ops[e].id);
+  };
+  u.rebuildListeners = () => {
+    u.log("rebuild listeners...");
+    const t = p();
+    for (let e = 0; e < t.portsIn.length; e++) {
+      if (t.portsIn[e].isLinked()) {
+        h(t.portsIn[e], this.portsOut[e]);
+      }
+    }
+  };
+};
+Ops.Ui.SubPatch.prototype = new CABLES.Op();
+CABLES.OPS["84d9a6f0-ed7a-466d-b386-225ed9e89c60"] = {
+  f: Ops.Ui.SubPatch,
+  objName: "Ops.Ui.SubPatch",
+};
+Ops.String.String_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inString("value", ""),
+    i = e.outString("String");
+  n.onChange = function () {
+    if (!n.isLinked()) e.setUiAttrib({ extendTitle: n.get() });
+    i.set(n.get());
+  };
+};
+Ops.String.String_v2.prototype = new CABLES.Op();
+CABLES.OPS["d697ff82-74fd-4f31-8f54-295bc64e713d"] = {
+  f: Ops.String.String_v2,
+  objName: "Ops.String.String_v2",
+};
+Ops.Color.ColorValue = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueSlider("r", Math.random());
+  const i = e.inValueSlider("g", Math.random());
+  const r = e.inValueSlider("b", Math.random());
+  n.setUiAttribs({ colorPick: true });
+  const a = e.inValueSlider("a", 1);
+  const s = e.outNumber("outr");
+  const o = e.outNumber("outg");
+  const l = e.outNumber("outb");
+  const u = e.outNumber("outa");
+  const c = e.outNumber("Hex", "000000");
+  const d = e.outArray("Array");
+  n.onChange = i.onChange = r.onChange = a.onChange = p;
+  function h(e) {
+    let t = Math.round(e * 255).toString(16);
+    if (t.length === 1) {
+      t = "0" + t;
+    }
+    return t.toUpperCase();
+  }
+  function p() {
+    s.set(n.get());
+    o.set(i.get());
+    l.set(r.get());
+    u.set(a.get());
+    let e = h(n.get()) + h(i.get()) + h(r.get());
+    c.set(e);
+    d.set([n.get(), i.get(), r.get(), a.get()]);
+  }
+  p();
+};
+Ops.Color.ColorValue.prototype = new CABLES.Op();
+CABLES.OPS["7caa37c8-f2a7-49f2-a29c-96af362abca0"] = {
+  f: Ops.Color.ColorValue,
+  objName: "Ops.Color.ColorValue",
+};
+Ops.Trigger.RouteTriggerString_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = 24,
+    i = t.inTriggerButton("Execute"),
+    r = t.inString("Switch Value"),
+    a = t.outTrigger("Next Trigger"),
+    s = t.outNumber("Switched Index");
+  let o = -1;
+  const l = [];
+  const u = [];
+  for (let e = 0; e < n; e++) {
+    l[e] = t.outTrigger("Trigger " + e);
+    u[e] = t.inString("String " + e);
+    u[e].onChange = c;
+  }
+  t.onLoad = t.onInit = r.onChange = c;
+  function c() {
+    o = -1;
+    for (let e = 0; e < u.length; e++) {
+      if (u[e].get() == r.get()) {
+        o = e;
+        break;
+      }
+    }
+  }
+  i.onTriggered = () => {
+    if (o >= 0) l[o].trigger();
+    s.set(o);
+    a.trigger();
+  };
+};
+Ops.Trigger.RouteTriggerString_v2.prototype = new CABLES.Op();
+CABLES.OPS["13bdac27-5da7-4311-890b-6a7e49d72040"] = {
+  f: Ops.Trigger.RouteTriggerString_v2,
+  objName: "Ops.Trigger.RouteTriggerString_v2",
+};
+Ops.Trigger.TriggerReceive = function () {
+  CABLES.Op.apply(this, arguments);
+  const i = this;
+  const e = (i.attachments = {});
+  const t = i.outTrigger("Triggered");
+  i.varName = i.inValueSelect("Named Trigger", [], "", true);
+  a();
+  i.patch.addEventListener("namedTriggersChanged", a);
+  let n = null;
+  function r() {
+    t.trigger();
+  }
+  function a() {
+    if (CABLES.UI) {
+      let t = [];
+      let n = i.patch.namedTriggers;
+      for (let e in n) t.push(e);
+      t = t.sort();
+      i.varName.uiAttribs.values = t;
+    }
+  }
+  i.varName.onChange = function () {
+    if (n) {
+      let e = i.patch.namedTriggers[n];
+      let t = e.indexOf(r);
+      if (t != -1) e.splice(t, 1);
+    }
+    i.setTitle(">" + i.varName.get());
+    i.patch.namedTriggers[i.varName.get()] =
+      i.patch.namedTriggers[i.varName.get()] || [];
+    let e = i.patch.namedTriggers[i.varName.get()];
+    e.push(r);
+    n = i.varName.get();
+    s();
+    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
+  };
+  i.on("uiParamPanel", s);
+  function s() {
+    if (!i.varName.get()) {
+      i.setUiError("unknowntrigger", "unknown trigger");
+    } else i.setUiError("unknowntrigger", null);
+  }
+};
+Ops.Trigger.TriggerReceive.prototype = new CABLES.Op();
+CABLES.OPS["0816c999-f2db-466b-9777-2814573574c5"] = {
+  f: Ops.Trigger.TriggerReceive,
+  objName: "Ops.Trigger.TriggerReceive",
+};
+Ops.Number.TriggerOnChangeNumber = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inFloat("Value"),
+    i = e.outTrigger("Next"),
+    r = e.outNumber("Number");
+  n.onChange = function () {
+    r.set(n.get());
+    i.trigger();
+  };
+};
+Ops.Number.TriggerOnChangeNumber.prototype = new CABLES.Op();
+CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"] = {
+  f: Ops.Number.TriggerOnChangeNumber,
+  objName: "Ops.Number.TriggerOnChangeNumber",
+};
+Ops.Math.Multiply = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("number1", 1),
+    i = e.inValueFloat("number2", 1),
+    r = e.outNumber("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = i.onChange = a;
+  a();
+  function a() {
+    const e = n.get();
+    const t = i.get();
+    r.set(e * t);
+  }
+};
+Ops.Math.Multiply.prototype = new CABLES.Op();
+CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"] = {
+  f: Ops.Math.Multiply,
+  objName: "Ops.Math.Multiply",
+};
+Ops.Gl.RenderToTexture_v3 = function () {
+  CABLES.Op.apply(this, arguments);
+  const r = this;
+  const e = (r.attachments = {});
+  const t = r.inTrigger("render"),
+    n = r.inSwitch("Size", ["Canvas", "Manual"], "Canvas"),
+    i = r.inValueInt("texture width", 512),
+    a = r.inValueInt("texture height", 512),
+    s = r.inBool("Auto Aspect", true),
+    o = r.inSwitch("filter", ["nearest", "linear", "mipmap"], "linear"),
+    l = r.inSwitch("Wrap", ["Clamp", "Repeat", "Mirror"], "Repeat"),
+    u = r.inSwitch("MSAA", ["none", "2x", "4x", "8x"], "none"),
+    c = r.outTrigger("trigger"),
+    d = r.outTexture("texture"),
+    h = r.outTexture("textureDepth"),
+    p = r.inDropDown(
+      "Pixel Format",
+      CGL.Texture.PIXELFORMATS,
+      CGL.Texture.PFORMATSTR_RGBA8UB
+    ),
+    f = r.inValueBool("Depth", true),
+    m = r.inValueBool("Clear", true);
+  const g = r.patch.cgl;
+  let b = null;
+  let v = true;
+  r.setPortGroup("Size", [n, i, a, s]);
+  p.onChange =
+    f.onChange =
+    m.onChange =
+    o.onChange =
+    l.onChange =
+    u.onChange =
+      _;
+  n.onChange = y;
+  t.onTriggered = r.preRender = T;
+  y();
+  function y() {
+    i.setUiAttribs({ greyout: n.get() != "Manual" });
+    a.setUiAttribs({ greyout: n.get() != "Manual" });
+    s.setUiAttribs({ greyout: n.get() != "Manual" });
+  }
+  function _() {
+    v = true;
+  }
+  function T() {
+    CGL.TextureEffect.checkOpNotInTextureEffect(r);
+    if (!b || v) {
+      if (b) b.delete();
+      let n = CGL.Texture.WRAP_REPEAT;
+      if (l.get() == "Clamp") n = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+      else if (l.get() == "Mirror") n = CGL.Texture.WRAP_MIRRORED_REPEAT;
+      let i = CGL.Texture.FILTER_NEAREST;
+      if (o.get() == "nearest") i = CGL.Texture.FILTER_NEAREST;
+      else if (o.get() == "linear") i = CGL.Texture.FILTER_LINEAR;
+      else if (o.get() == "mipmap") i = CGL.Texture.FILTER_MIPMAP;
+      if (p.get().indexOf("loat") && o.get() == "mipmap")
+        r.setUiError(
+          "fpmipmap",
+          "Can't use mipmap and float texture at the same time"
+        );
+      else r.setUiError("fpmipmap", null);
+      if (g.glVersion >= 2) {
+        let e = true;
+        let t = 4;
+        if (u.get() == "none") {
+          t = 0;
+          e = false;
+        }
+        if (u.get() == "2x") t = 2;
+        if (u.get() == "4x") t = 4;
+        if (u.get() == "8x") t = 8;
+        b = new CGL.Framebuffer2(g, 8, 8, {
+          name: "render2texture " + r.id,
+          pixelFormat: p.get(),
+          multisampling: e,
+          multisamplingSamples: t,
+          wrap: n,
+          filter: i,
+          depth: f.get(),
+          clear: m.get(),
+        });
+      } else {
+        b = new CGL.Framebuffer(g, 8, 8, {
+          isFloatingPointTexture: false,
+          clear: m.get(),
+        });
+      }
+      if (b && b.valid) {
+        h.set(b.getTextureDepth());
+        v = false;
+      } else {
+        b = null;
+        v = true;
+      }
+    }
+    let e = s.get();
+    if (n.get() == "Canvas") {
+      e = true;
+      i.set(r.patch.cgl.checkTextureSize(g.canvasWidth));
+      a.set(r.patch.cgl.checkTextureSize(g.canvasHeight));
+    }
+    if (
+      b.getWidth() != r.patch.cgl.checkTextureSize(i.get()) ||
+      b.getHeight() != r.patch.cgl.checkTextureSize(a.get())
+    ) {
+      b.setSize(
+        r.patch.cgl.checkTextureSize(i.get()),
+        r.patch.cgl.checkTextureSize(a.get())
       );
     }
-    E[0] = u.get();
-    E[1] = c.get();
-    E[2] = d.get();
-    E[3] = h.get();
-    E[4] = p.get();
-    E[5] = m.get();
-    E[6] = 0;
-    E[7] = 1;
-    E[8] = 0;
-    O.setRef(E);
-    vec3.set(w, 0, 1, 0);
-    vec3.set(C, u.get(), c.get(), d.get());
-    vec3.set(x, h.get(), p.get(), m.get());
-    mat4.lookAt(I, C, x, w);
-    mat4.multiply(S.vMatrix, S.vMatrix, I);
-    n.trigger();
-    S.popViewMatrix();
-    S.popPMatrix();
-    S.popViewMatrix();
-    if (e.isCurrentUiOp()) gui.setTransformGizmo({ posX: f, posY: g, posZ: b });
+    b.renderStart(g);
+    g.pushViewPort(0, 0, i.get(), a.get());
+    if (e) mat4.perspective(g.pMatrix, 45, i.get() / a.get(), 0.1, 1e3);
+    c.trigger();
+    b.renderEnd(g);
+    g.popViewPort();
+    h.setRef(b.getTextureDepth());
+    d.setRef(b.getTextureColor());
+  }
+};
+Ops.Gl.RenderToTexture_v3.prototype = new CABLES.Op();
+CABLES.OPS["41eec5c7-c480-477a-be81-04c3efac8357"] = {
+  f: Ops.Gl.RenderToTexture_v3,
+  objName: "Ops.Gl.RenderToTexture_v3",
+};
+Ops.Gl.Shader.BasicMaterial_v3 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {
+    basicmaterial_frag:
+      "{{MODULES_HEAD}}\nIN vec2 texCoord;\n#ifdef VERTEX_COLORS\nIN vec4 vertCol;\n#endif\n#ifdef HAS_TEXTURES\nIN vec2 texCoordOrig;\n#ifdef HAS_TEXTURE_DIFFUSE\nUNI sampler2D tex;\n#endif\n#ifdef HAS_TEXTURE_OPACITY\nUNI sampler2D texOpacity;\n#endif\n#endif\nvoid main()\n{\n{{MODULE_BEGIN_FRAG}}\nvec4 col=color;\n#ifdef HAS_TEXTURES\nvec2 uv=texCoord;\n#ifdef CROP_TEXCOORDS\nif(uv.x<0.||uv.x>1.||uv.y<0.||uv.y>1.)discard;\n#endif\n#ifdef HAS_TEXTURE_DIFFUSE\ncol=texture(tex,uv);\n#ifdef COLORIZE_TEXTURE\ncol.r*=color.r;\ncol.g*=color.g;\ncol.b*=color.b;\n#endif\n#endif\ncol.a*=color.a;\n#ifdef HAS_TEXTURE_OPACITY\n#ifdef TRANSFORMALPHATEXCOORDS\nuv=texCoordOrig;\n#endif\n#ifdef ALPHA_MASK_IR\ncol.a*=1.-texture(texOpacity,uv).r;\n#endif\n#ifdef ALPHA_MASK_IALPHA\ncol.a*=1.-texture(texOpacity,uv).a;\n#endif\n#ifdef ALPHA_MASK_ALPHA\ncol.a*=texture(texOpacity,uv).a;\n#endif\n#ifdef ALPHA_MASK_LUMI\ncol.a*=dot(vec3(0.2126,0.7152,0.0722),texture(texOpacity,uv).rgb);\n#endif\n#ifdef ALPHA_MASK_R\ncol.a*=texture(texOpacity,uv).r;\n#endif\n#ifdef ALPHA_MASK_G\ncol.a*=texture(texOpacity,uv).g;\n#endif\n#ifdef ALPHA_MASK_B\ncol.a*=texture(texOpacity,uv).b;\n#endif\n\n#endif\n#endif\n{{MODULE_COLOR}}\n#ifdef DISCARDTRANS\nif(col.a<0.2)discard;\n#endif\n#ifdef VERTEX_COLORS\ncol*=vertCol;\n#endif\noutColor=col;\n}\n",
+    basicmaterial_vert:
+      "\n{{MODULES_HEAD}}\n\nOUT vec2 texCoord;\nOUT vec2 texCoordOrig;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\n#ifdef HAS_TEXTURES\n    UNI float diffuseRepeatX;\n    UNI float diffuseRepeatY;\n    UNI float texOffsetX;\n    UNI float texOffsetY;\n#endif\n\n#ifdef VERTEX_COLORS\n    in vec4 attrVertColor;\n    out vec4 vertCol;\n\n#endif\n\n\nvoid main()\n{\n    mat4 mMatrix=modelMatrix;\n    mat4 modelViewMatrix;\n\n    norm=attrVertNormal;\n    texCoordOrig=attrTexCoord;\n    texCoord=attrTexCoord;\n    #ifdef HAS_TEXTURES\n        texCoord.x=texCoord.x*diffuseRepeatX+texOffsetX;\n        texCoord.y=(1.0-texCoord.y)*diffuseRepeatY+texOffsetY;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        vertCol=attrVertColor;\n    #endif\n\n    vec4 pos = vec4(vPosition, 1.0);\n\n    #ifdef BILLBOARD\n       vec3 position=vPosition;\n       modelViewMatrix=viewMatrix*modelMatrix;\n\n       gl_Position = projMatrix * modelViewMatrix * vec4((\n           position.x * vec3(\n               modelViewMatrix[0][0],\n               modelViewMatrix[1][0],\n               modelViewMatrix[2][0] ) +\n           position.y * vec3(\n               modelViewMatrix[0][1],\n               modelViewMatrix[1][1],\n               modelViewMatrix[2][1]) ), 1.0);\n    #endif\n\n    {{MODULE_VERTEX_POSITION}}\n\n    #ifndef BILLBOARD\n        modelViewMatrix=viewMatrix * mMatrix;\n\n        {{MODULE_VERTEX_MODELVIEW}}\n\n    #endif\n\n    // mat4 modelViewMatrix=viewMatrix*mMatrix;\n\n    #ifndef BILLBOARD\n        // gl_Position = projMatrix * viewMatrix * modelMatrix * pos;\n        gl_Position = projMatrix * modelViewMatrix * pos;\n    #endif\n}\n",
+  });
+  const n = e.inTrigger("render");
+  const i = e.outTrigger("trigger");
+  const r = e.outObject("shader", null, "shader");
+  r.ignoreValueSerialize = true;
+  e.toWorkPortsNeedToBeLinked(n);
+  e.toWorkShouldNotBeChild(
+    "Ops.Gl.TextureEffects.ImageCompose",
+    CABLES.OP_PORT_TYPE_FUNCTION
+  );
+  const a = e.patch.cgl;
+  const s = new CGL.Shader(a, "basicmaterialnew", this);
+  s.addAttribute({ type: "vec3", name: "vPosition" });
+  s.addAttribute({ type: "vec2", name: "attrTexCoord" });
+  s.addAttribute({ type: "vec3", name: "attrVertNormal", nameFrag: "norm" });
+  s.addAttribute({ type: "float", name: "attrVertIndex" });
+  s.setModules([
+    "MODULE_VERTEX_POSITION",
+    "MODULE_COLOR",
+    "MODULE_BEGIN_FRAG",
+    "MODULE_VERTEX_MODELVIEW",
+  ]);
+  s.setSource(t.basicmaterial_vert, t.basicmaterial_frag);
+  r.setRef(s);
+  n.onTriggered = x;
+  const o = e.inValueSlider("r", Math.random());
+  const l = e.inValueSlider("g", Math.random());
+  const u = e.inValueSlider("b", Math.random());
+  const c = e.inValueSlider("a", 1);
+  o.setUiAttribs({ colorPick: true });
+  const d = s.addUniformFrag("4f", "color", o, l, u, c);
+  s.uniformColorDiffuse = d;
+  const h = e.inTexture("texture");
+  let p = null;
+  h.onChange = I;
+  const f = e.inValueBool("colorizeTexture", false);
+  const m = e.inValueBool("Vertex Colors", false);
+  const g = e.inTexture("textureOpacity");
+  let b = null;
+  const v = e.inSwitch(
+    "Alpha Mask Source",
+    ["Luminance", "R", "G", "B", "A", "1-A", "1-R"],
+    "Luminance"
+  );
+  v.setUiAttribs({ greyout: true });
+  g.onChange = E;
+  const y = e.inValueBool("Opacity TexCoords Transform", false);
+  const _ = e.inValueBool("Discard Transparent Pixels");
+  const T = e.inValue("diffuseRepeatX", 1),
+    S = e.inValue("diffuseRepeatY", 1),
+    O = e.inValue("Tex Offset X", 0),
+    A = e.inValue("Tex Offset Y", 0),
+    w = e.inBool("Crop TexCoords", false);
+  s.addUniformFrag("f", "diffuseRepeatX", T);
+  s.addUniformFrag("f", "diffuseRepeatY", S);
+  s.addUniformFrag("f", "texOffsetX", O);
+  s.addUniformFrag("f", "texOffsetY", A);
+  const C = e.inValueBool("billboard", false);
+  v.onChange =
+    C.onChange =
+    _.onChange =
+    y.onChange =
+    w.onChange =
+    m.onChange =
+    f.onChange =
+      P;
+  e.setPortGroup("Color", [o, l, u, c]);
+  e.setPortGroup("Color Texture", [h, m, f]);
+  e.setPortGroup("Opacity", [g, v, _, y]);
+  e.setPortGroup("Texture Transform", [T, S, O, A, w]);
+  E();
+  I();
+  e.preRender = function () {
+    s.bind();
+    x();
   };
-  const N = function () {
-    if (!o.get()) {
-      l.setUiAttribs({ greyout: false });
+  function x() {
+    if (!s) return;
+    a.pushShader(s);
+    s.popTextures();
+    if (p && h.get()) s.pushTexture(p, h.get());
+    if (b && g.get()) s.pushTexture(b, g.get());
+    i.trigger();
+    a.popShader();
+  }
+  function E() {
+    if (g.get()) {
+      if (b !== null) return;
+      s.removeUniform("texOpacity");
+      s.define("HAS_TEXTURE_OPACITY");
+      if (!b) b = new CGL.Uniform(s, "t", "texOpacity");
     } else {
-      l.setUiAttribs({ greyout: true });
+      s.removeUniform("texOpacity");
+      s.removeDefine("HAS_TEXTURE_OPACITY");
+      b = null;
+    }
+    P();
+  }
+  function I() {
+    if (h.get()) {
+      if (!s.hasDefine("HAS_TEXTURE_DIFFUSE")) s.define("HAS_TEXTURE_DIFFUSE");
+      if (!p) p = new CGL.Uniform(s, "t", "texDiffuse");
+    } else {
+      s.removeUniform("texDiffuse");
+      s.removeDefine("HAS_TEXTURE_DIFFUSE");
+      p = null;
+    }
+    k();
+  }
+  function k() {
+    const e = h.isLinked() || g.isLinked();
+    T.setUiAttribs({ greyout: !e });
+    S.setUiAttribs({ greyout: !e });
+    O.setUiAttribs({ greyout: !e });
+    A.setUiAttribs({ greyout: !e });
+    f.setUiAttribs({ greyout: !e });
+    v.setUiAttribs({ greyout: !g.get() });
+    y.setUiAttribs({ greyout: !g.get() });
+    let t = true;
+    t = h.get() && !f.get();
+    o.setUiAttribs({ greyout: t });
+    l.setUiAttribs({ greyout: t });
+    u.setUiAttribs({ greyout: t });
+  }
+  function P() {
+    s.toggleDefine("VERTEX_COLORS", m.get());
+    s.toggleDefine("CROP_TEXCOORDS", w.get());
+    s.toggleDefine("COLORIZE_TEXTURE", f.get());
+    s.toggleDefine("TRANSFORMALPHATEXCOORDS", y.get());
+    s.toggleDefine("DISCARDTRANS", _.get());
+    s.toggleDefine("BILLBOARD", C.get());
+    s.toggleDefine("ALPHA_MASK_ALPHA", v.get() == "A");
+    s.toggleDefine("ALPHA_MASK_IALPHA", v.get() == "1-A");
+    s.toggleDefine("ALPHA_MASK_IR", v.get() == "1-R");
+    s.toggleDefine("ALPHA_MASK_LUMI", v.get() == "Luminance");
+    s.toggleDefine("ALPHA_MASK_R", v.get() == "R");
+    s.toggleDefine("ALPHA_MASK_G", v.get() == "G");
+    s.toggleDefine("ALPHA_MASK_B", v.get() == "B");
+    k();
+  }
+};
+Ops.Gl.Shader.BasicMaterial_v3.prototype = new CABLES.Op();
+CABLES.OPS["ec55d252-3843-41b1-b731-0482dbd9e72b"] = {
+  f: Ops.Gl.Shader.BasicMaterial_v3,
+  objName: "Ops.Gl.Shader.BasicMaterial_v3",
+};
+Ops.Html.FontFile_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const r = this;
+  const e = (r.attachments = {});
+  const a = r.inUrl("file", [".otf", ".ttf", ".woff", ".woff2"]),
+    s = r.inString("family"),
+    o = r.inBool("Active", true),
+    l = r.outBoolNum("Loaded"),
+    u = r.outTrigger("Loaded Trigger");
+  let c = null;
+  let d;
+  let h = null;
+  let t = null;
+  let p = null;
+  let f = "";
+  a.onChange = function () {
+    l.set(false);
+    i(null);
+  };
+  o.onChange = s.onChange = () => {
+    n();
+  };
+  function n() {
+    clearTimeout(t);
+    t = setTimeout(() => {
+      i(null);
+    }, 50);
+  }
+  r.patch.on("windowChanged", (e) => {
+    d = null;
+    i(e.document);
+  });
+  function i(e) {
+    if (p) p.remove();
+    if (d) {
+      const t = h.fonts.delete(d);
+      d = null;
+      setTimeout(() => {
+        r.patch.emitEvent("fontLoaded", f);
+      }, 100);
+    }
+    if (!o.get()) return;
+    h = e || h || r.patch.cgl.canvas.ownerDocument || document;
+    if (c) c = r.patch.cgl.patch.loading.finished(c);
+    r.setUiError("loadingerror", null);
+    f = s.get();
+    if (a.get() && s.get()) {
+      if (h.fonts) {
+        let e = "url(" + r.patch.getFilePath(String(a.get())) + ")";
+        d = new FontFace(s.get(), e);
+        c = r.patch.cgl.patch.loading.start("FontFile", a.get(), r);
+        h.fonts.add(d);
+        d.loaded
+          .then(
+            (e) => {
+              l.set(true);
+              u.trigger();
+              c = r.patch.cgl.patch.loading.finished(c);
+              r.patch.emitEvent("fontLoaded", s.get());
+            },
+            (e) => {
+              r.setUiError(
+                "loadingerror",
+                "Font loading error: " + d.status + "(" + a.get() + ")"
+              );
+              c = r.patch.cgl.patch.loading.finished(c);
+              l.set(true);
+            }
+          )
+          .catch((e) => {
+            c = r.patch.cgl.patch.loading.finished(c);
+            console.error("catch ", e);
+          });
+        d.load();
+      } else {
+        const n = r.patch.getFilePath(String(a.get()));
+        const i =
+          "".endl() +
+          "@font-face".endl() +
+          "{".endl() +
+          '  font-family: "' +
+          s.get() +
+          '";'.endl() +
+          '  src: url("' +
+          n +
+          '") format("truetype");'.endl() +
+          "}";
+        p = document.createElement("style");
+        p.classList.add("cablesEle");
+        p.type = "text/css";
+        p.innerHTML = i;
+        document
+          .getElementsByTagName("head")
+          [document.getElementsByTagName("head").length - 1].appendChild(p);
+      }
+    }
+  }
+};
+Ops.Html.FontFile_v2.prototype = new CABLES.Op();
+CABLES.OPS["68177370-116e-4c76-aef3-3b10d68e7227"] = {
+  f: Ops.Html.FontFile_v2,
+  objName: "Ops.Html.FontFile_v2",
+};
+Ops.Gl.Texture_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const r = this;
+  const e = (r.attachments = {});
+  const a = r.inUrl("File", [".jpg", ".png", ".webp", ".jpeg", ".avif"]),
+    t = r.inSwitch("Filter", ["nearest", "linear", "mipmap"]),
+    n = r.inValueSelect(
+      "Wrap",
+      ["repeat", "mirrored repeat", "clamp to edge"],
+      "clamp to edge"
+    ),
+    i = r.inSwitch("Anisotropic", ["0", "1", "2", "4", "8", "16"], "0"),
+    s = r.inSwitch("Data Format", ["R", "RG", "RGB", "RGBA", "SRGBA"], "RGBA"),
+    o = r.inValueBool("Flip", false),
+    l = r.inValueBool("Pre Multiplied Alpha", false),
+    u = r.inValueBool("Active", true),
+    c = r.inBool("Save Memory", true),
+    d = r.outTexture("Texture"),
+    h = r.inBool("Add Cachebuster", false),
+    p = r.inTriggerButton("Reload"),
+    f = r.outNumber("Width"),
+    m = r.outNumber("Height"),
+    g = r.outNumber("Aspect Ratio"),
+    b = r.outBoolNum("Loaded", 0),
+    v = r.outBoolNum("Loading", 0);
+  const y = r.patch.cgl;
+  r.toWorkPortsNeedToBeLinked(d);
+  r.setPortGroup("Size", [f, m]);
+  let _ = null;
+  let T = null;
+  let S = null;
+  let O = CGL.Texture.FILTER_MIPMAP;
+  let A = CGL.Texture.WRAP_REPEAT;
+  let w = 0;
+  let C = 0;
+  l.setUiAttribs({ hidePort: true });
+  l.onChange = a.onChange = s.onChange = h.onChange = o.onChange = E;
+  i.onChange = t.onChange = P;
+  n.onChange = L;
+  t.set("mipmap");
+  n.set("repeat");
+  d.set(CGL.Texture.getEmptyTexture(y));
+  p.onTriggered = E;
+  u.onChange = function () {
+    if (u.get()) {
+      if (_ != a.get() || !S) E();
+      else d.set(S);
+    } else {
+      d.set(CGL.Texture.getEmptyTexture(y));
+      f.set(CGL.Texture.getEmptyTexture(y).width);
+      m.set(CGL.Texture.getEmptyTexture(y).height);
+      if (S) S.delete();
+      r.setUiAttrib({ extendTitle: "" });
+      S = null;
     }
   };
-  const j = function () {
-    L = true;
+  const x = function () {
+    const e = CGL.Texture.getTempTexture(y);
+    d.set(e);
   };
-  f.onChange = j;
-  g.onChange = j;
-  b.onChange = j;
-  v.onChange = j;
-  y.onChange = j;
-  _.onChange = j;
-  o.onChange = N;
-  N();
+  function E(e) {
+    clearTimeout(C);
+    C = setTimeout(function () {
+      k(e);
+    }, 1);
+  }
+  function I() {
+    if (s.get() == "R") return CGL.Texture.PFORMATSTR_R8UB;
+    if (s.get() == "RG") return CGL.Texture.PFORMATSTR_RG8UB;
+    if (s.get() == "RGB") return CGL.Texture.PFORMATSTR_RGB8UB;
+    if (s.get() == "SRGBA") return CGL.Texture.PFORMATSTR_SRGBA8;
+    return CGL.Texture.PFORMATSTR_RGBA8UB;
+  }
+  function k(e) {
+    r.checkMainloopExists();
+    if (!u.get()) return;
+    if (T) T = y.patch.loading.finished(T);
+    T = y.patch.loading.start(r.objName, a.get(), r);
+    let t = r.patch.getFilePath(String(a.get()));
+    if (h.get() || e === true) t = CABLES.cacheBust(t);
+    if (String(a.get()).indexOf("data:") == 0) t = a.get();
+    let n = false;
+    _ = a.get();
+    if (a.get() && a.get().length > 1) {
+      b.set(false);
+      v.set(true);
+      const i = a.get();
+      r.setUiAttrib({ extendTitle: CABLES.basename(t) });
+      if (n) r.refreshParams();
+      y.patch.loading.addAssetLoadingTask(() => {
+        r.setUiError("urlerror", null);
+        CGL.Texture.load(
+          y,
+          t,
+          function (e, t) {
+            y.checkFrameStarted("texture inittexture");
+            if (a.get() != i) {
+              T = y.patch.loading.finished(T);
+              return;
+            }
+            if (S) S.delete();
+            if (e) {
+              const n = CGL.Texture.getErrorTexture(y);
+              d.setRef(n);
+              r.setUiError(
+                "urlerror",
+                'could not load texture: "' + a.get() + '"',
+                2
+              );
+              T = y.patch.loading.finished(T);
+              return;
+            }
+            f.set(t.width);
+            m.set(t.height);
+            g.set(t.width / t.height);
+            S = t;
+            d.setRef(S);
+            v.set(false);
+            b.set(true);
+            if (c.get()) S.image = null;
+            if (T) {
+              T = y.patch.loading.finished(T);
+            }
+            r.checkMainloopExists();
+          },
+          {
+            anisotropic: w,
+            wrap: A,
+            flip: o.get(),
+            unpackAlpha: l.get(),
+            pixelFormat: I(),
+            filter: O,
+          }
+        );
+        r.checkMainloopExists();
+      });
+    } else {
+      x();
+      T = y.patch.loading.finished(T);
+    }
+  }
+  function P() {
+    if (t.get() == "nearest") O = CGL.Texture.FILTER_NEAREST;
+    else if (t.get() == "linear") O = CGL.Texture.FILTER_LINEAR;
+    else if (t.get() == "mipmap") O = CGL.Texture.FILTER_MIPMAP;
+    else if (t.get() == "Anisotropic") O = CGL.Texture.FILTER_ANISOTROPIC;
+    i.setUiAttribs({ greyout: O != CGL.Texture.FILTER_MIPMAP });
+    w = parseFloat(i.get());
+    E();
+  }
+  function L() {
+    if (n.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
+    if (n.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    if (n.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+    E();
+  }
+  r.onFileChanged = function (e) {
+    if (a.get() && a.get().indexOf(e) > -1) {
+      d.set(CGL.Texture.getEmptyTexture(r.patch.cgl));
+      d.set(CGL.Texture.getTempTexture(y));
+      k(true);
+    }
+  };
 };
-Ops.Gl.Matrix.Camera.prototype = new CABLES.Op();
-CABLES.OPS["b24dbfdc-485c-49d2-92a1-7258efd9239a"] = {
-  f: Ops.Gl.Matrix.Camera,
-  objName: "Ops.Gl.Matrix.Camera",
+Ops.Gl.Texture_v2.prototype = new CABLES.Op();
+CABLES.OPS["790f3702-9833-464e-8e37-6f0f813f7e16"] = {
+  f: Ops.Gl.Texture_v2,
+  objName: "Ops.Gl.Texture_v2",
+};
+Ops.Gl.Textures.SwitchTextures_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = t.inTrigger("exec"),
+    i = this.inValueInt("num"),
+    r = t.inValueBool("Default Texture Transparent", true),
+    a = t.outTrigger("Next"),
+    s = this.outTexture("texture");
+  const o = t.patch.cgl;
+  const l = [];
+  let u = 0;
+  let c = -1;
+  let d = CGL.Texture.getEmptyTexture(o);
+  t.toWorkPortsNeedToBeLinked(n);
+  n.onTriggered = function () {
+    p();
+    a.trigger();
+  };
+  r.onChange = function () {
+    if (r.get()) d = CGL.Texture.getEmptyTexture(o);
+    else d = CGL.Texture.getTempTexture(o);
+    p(true);
+  };
+  for (let e = 0; e < 16; e++) {
+    const f = t.inTexture("texture" + e);
+    l.push(f);
+    f.onChange = h;
+  }
+  function h() {
+    p(true);
+  }
+  function p(e) {
+    u = parseInt(i.get(), 10);
+    if (!e) {
+      if (u == c) return;
+      if (u != u) return;
+    }
+    if (isNaN(u) || u < 0 || u > l.length - 1) u = 0;
+    if (l[u].get()) s.setRef(l[u].get());
+    else s.setRef(d);
+    c = u;
+  }
+};
+Ops.Gl.Textures.SwitchTextures_v2.prototype = new CABLES.Op();
+CABLES.OPS["a82ae429-ac07-4760-882b-595a857c7ae0"] = {
+  f: Ops.Gl.Textures.SwitchTextures_v2,
+  objName: "Ops.Gl.Textures.SwitchTextures_v2",
+};
+Ops.Number.Number = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("value"),
+    i = e.outNumber("result");
+  n.onChange = r;
+  function r() {
+    i.set(Number(n.get()));
+  }
+};
+Ops.Number.Number.prototype = new CABLES.Op();
+CABLES.OPS["8fb2bb5d-665a-4d0a-8079-12710ae453be"] = {
+  f: Ops.Number.Number,
+  objName: "Ops.Number.Number",
+};
+Ops.Boolean.ToggleBool_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTriggerButton("trigger"),
+    i = e.inTriggerButton("reset"),
+    r = e.inBool("Default", false),
+    a = e.outTrigger("Next"),
+    s = e.outBoolNum("result");
+  let o = false;
+  e.onLoadedValueSet = () => {
+    o = r.get();
+    s.set(r.get());
+    a.trigger();
+  };
+  n.onTriggered = function () {
+    o = !o;
+    s.set(o);
+    a.trigger();
+  };
+  i.onTriggered = function () {
+    o = r.get();
+    s.set(o);
+    a.trigger();
+  };
+};
+Ops.Boolean.ToggleBool_v2.prototype = new CABLES.Op();
+CABLES.OPS["4313d9bb-96b6-43bc-9190-6068cfb2593c"] = {
+  f: Ops.Boolean.ToggleBool_v2,
+  objName: "Ops.Boolean.ToggleBool_v2",
+};
+Ops.Trigger.GateTrigger = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Execute"),
+    i = e.inValueBool("Pass Through", true),
+    r = e.outTrigger("Trigger out");
+  n.onTriggered = function () {
+    if (i.get()) r.trigger();
+  };
+};
+Ops.Trigger.GateTrigger.prototype = new CABLES.Op();
+CABLES.OPS["65e8b8a2-ba13-485f-883a-2bcf377989da"] = {
+  f: Ops.Trigger.GateTrigger,
+  objName: "Ops.Trigger.GateTrigger",
+};
+Ops.String.StringContains_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inString("String"),
+    i = e.inString("SearchValue"),
+    r = e.outBoolNum("Found", false),
+    a = e.outNumber("Index", -1);
+  i.onChange = n.onChange = s;
+  s();
+  function s() {
+    if (n.get() && i.get() && i.get().length > 0) {
+      const e = n.get().indexOf(i.get());
+      a.set(e);
+      r.set(e > -1);
+    } else {
+      a.set(-1);
+      r.set(false);
+    }
+  }
+};
+Ops.String.StringContains_v2.prototype = new CABLES.Op();
+CABLES.OPS["2ca3e5d7-e6b4-46a7-8381-3fe1ad8b6879"] = {
+  f: Ops.String.StringContains_v2,
+  objName: "Ops.String.StringContains_v2",
+};
+Ops.Boolean.Or = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueBool("bool 1"),
+    i = e.inValueBool("bool 2"),
+    r = e.inValueBool("bool 3"),
+    a = e.inValueBool("bool 4"),
+    s = e.inValueBool("bool 5"),
+    o = e.inValueBool("bool 6"),
+    l = e.inValueBool("bool 7"),
+    u = e.inValueBool("bool 8"),
+    c = e.inValueBool("bool 9"),
+    d = e.inValueBool("bool 10"),
+    h = e.outBoolNum("result");
+  n.onChange =
+    i.onChange =
+    r.onChange =
+    a.onChange =
+    s.onChange =
+    o.onChange =
+    l.onChange =
+    u.onChange =
+    c.onChange =
+    d.onChange =
+      p;
+  function p() {
+    h.set(
+      n.get() ||
+        i.get() ||
+        r.get() ||
+        a.get() ||
+        s.get() ||
+        o.get() ||
+        l.get() ||
+        u.get() ||
+        c.get() ||
+        d.get()
+    );
+  }
+};
+Ops.Boolean.Or.prototype = new CABLES.Op();
+CABLES.OPS["b3b36238-4592-4e11-afe3-8361c4fd6be5"] = {
+  f: Ops.Boolean.Or,
+  objName: "Ops.Boolean.Or",
+};
+Ops.Extension.Deprecated.ToggleBoolValue = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueBool("in bool"),
+    i = e.outBoolNum("out bool");
+  n.changeAlways = true;
+  n.onChange = function () {
+    i.set(!(n.get() == true));
+  };
+};
+Ops.Extension.Deprecated.ToggleBoolValue.prototype = new CABLES.Op();
+CABLES.OPS["7b1abd02-3aad-4106-9848-7f4c3cfab6a9"] = {
+  f: Ops.Extension.Deprecated.ToggleBoolValue,
+  objName: "Ops.Extension.Deprecated.ToggleBoolValue",
+};
+Ops.Boolean.TriggerChangedFalse = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  let n = e.inValueBool("Value", false);
+  let i = e.outTrigger("Next");
+  let r = 0;
+  n.onChange = function () {
+    let e = n.get();
+    if (r && !e) {
+      r = false;
+      i.trigger();
+    } else {
+      r = true;
+    }
+  };
+};
+Ops.Boolean.TriggerChangedFalse.prototype = new CABLES.Op();
+CABLES.OPS["6387bcb0-6091-4199-8ab7-f96ad4aa3c7d"] = {
+  f: Ops.Boolean.TriggerChangedFalse,
+  objName: "Ops.Boolean.TriggerChangedFalse",
+};
+Ops.Boolean.TriggerChangedTrue = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  let n = e.inValueBool("Value", false);
+  let i = e.outTrigger("Next");
+  let r = 0;
+  n.onChange = function () {
+    let e = n.get();
+    if (!r && e) {
+      r = true;
+      i.trigger();
+    } else {
+      r = false;
+    }
+  };
+};
+Ops.Boolean.TriggerChangedTrue.prototype = new CABLES.Op();
+CABLES.OPS["385197e1-8b34-4d1c-897f-d1386d99e3b3"] = {
+  f: Ops.Boolean.TriggerChangedTrue,
+  objName: "Ops.Boolean.TriggerChangedTrue",
+};
+Ops.Trigger.DelayedTrigger = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("exe"),
+    i = e.inValueFloat("delay", 1),
+    r = e.inTriggerButton("Cancel"),
+    a = e.outTrigger("next"),
+    s = e.outBool("Delaying");
+  let o = null;
+  r.onTriggered = function () {
+    if (o) clearTimeout(o);
+    o = null;
+  };
+  n.onTriggered = function () {
+    s.set(true);
+    if (o) clearTimeout(o);
+    o = setTimeout(function () {
+      s.set(false);
+      o = null;
+      a.trigger();
+    }, i.get() * 1e3);
+  };
+};
+Ops.Trigger.DelayedTrigger.prototype = new CABLES.Op();
+CABLES.OPS["f4ff66b0-8500-46f7-9117-832aea0c2750"] = {
+  f: Ops.Trigger.DelayedTrigger,
+  objName: "Ops.Trigger.DelayedTrigger",
+};
+Ops.Math.Subtract = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValue("number1", 1),
+    i = e.inValue("number2", 1),
+    r = e.outNumber("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = i.onChange = a;
+  a();
+  function a() {
+    let e = n.get() - i.get();
+    if (!isNaN(e)) r.set(e);
+  }
+};
+Ops.Math.Subtract.prototype = new CABLES.Op();
+CABLES.OPS["a4ffe852-d200-4b96-9347-68feb01122ca"] = {
+  f: Ops.Math.Subtract,
+  objName: "Ops.Math.Subtract",
+};
+Ops.Trigger.NumberByTrigger = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTriggerButton("0"),
+    i = e.inTriggerButton("1"),
+    r = e.inTriggerButton("2"),
+    a = e.inTriggerButton("3"),
+    s = e.inTriggerButton("4"),
+    o = e.inTriggerButton("5"),
+    l = e.inTriggerButton("6"),
+    u = e.inTriggerButton("7"),
+    c = e.outNumber("number");
+  c.changeAlways = true;
+  const d = e.outTrigger("Triggered");
+  n.onTriggered = function () {
+    c.set(0);
+    d.trigger();
+  };
+  i.onTriggered = function () {
+    c.set(1);
+    d.trigger();
+  };
+  r.onTriggered = function () {
+    c.set(2);
+    d.trigger();
+  };
+  a.onTriggered = function () {
+    c.set(3);
+    d.trigger();
+  };
+  s.onTriggered = function () {
+    c.set(4);
+    d.trigger();
+  };
+  o.onTriggered = function () {
+    c.set(5);
+    d.trigger();
+  };
+  l.onTriggered = function () {
+    c.set(6);
+    d.trigger();
+  };
+  u.onTriggered = function () {
+    c.set(7);
+    d.trigger();
+  };
+};
+Ops.Trigger.NumberByTrigger.prototype = new CABLES.Op();
+CABLES.OPS["43ed1123-1312-4383-b843-27b8ec540c09"] = {
+  f: Ops.Trigger.NumberByTrigger,
+  objName: "Ops.Trigger.NumberByTrigger",
+};
+Ops.Gl.Shader.ShaderToTexture = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Render"),
+    i = e.inObject("Shader", null, "shader"),
+    s = e.inValueBool("Use Viewport Size", true),
+    o = e.inValueInt("Width", 512),
+    l = e.inValueInt("Height", 512),
+    u = e.inValueSelect("filter", ["nearest", "linear", "mipmap"]),
+    c = e.inSwitch("Anisotropic", ["0", "1", "2", "4", "8", "16"], "0"),
+    d = e.inValueSelect(
+      "wrap",
+      ["clamp to edge", "repeat", "mirrored repeat"],
+      "clamp to edge"
+    ),
+    h = e.inValueBool("Floating Point", false),
+    p = e.inSwitch("Num Textures", ["1", "4"], "1"),
+    r = e.outTrigger("Next"),
+    a = e.outTexture("Texture"),
+    f = e.outTexture("Texture 2"),
+    m = e.outTexture("Texture 3"),
+    g = e.outTexture("Texture 4");
+  e.setPortGroup("Texture Size", [s, o, l]);
+  e.setPortGroup("Texture settings", [u, d, h, c]);
+  let b = 1;
+  const v = e.patch.cgl;
+  const y = [0, 0, 0, 0];
+  const _ = null;
+  const T = [];
+  let S = null;
+  let O = null;
+  o.onChange =
+    l.onChange =
+    h.onChange =
+    u.onChange =
+    p.onChange =
+    c.onChange =
+    d.onChange =
+      P;
+  s.onChange = k;
+  const A = false;
+  let w = null;
+  const C = null;
+  let x = true;
+  const E = CGL.MESHES.getSimpleRect(v, "shader2texture rect");
+  e.toWorkPortsNeedToBeLinked(i);
+  u.set("nearest");
+  k();
+  function I() {
+    if (u.get() == "mipmap" && h.get()) {
+      e.setUiError(
+        "warning",
+        "HDR and mipmap filtering at the same time is not possible"
+      );
+    } else {
+      e.setUiError("warning", null);
+    }
+  }
+  function k() {
+    c.setUiAttribs({ greyout: u.get() != "mipmap" });
+    o.setUiAttribs({ greyout: s.get() });
+    l.setUiAttribs({ greyout: s.get() });
+    o.set(v.getViewPort()[2]);
+    l.set(v.getViewPort()[3]);
+  }
+  function P() {
+    x = true;
+    I();
+  }
+  function L() {
+    if (O) O.dispose();
+    S = null;
+    O = null;
+  }
+  function N() {
+    x = false;
+    if (w) w.delete();
+    const e = T.length;
+    b = parseInt(p.get());
+    T.length = 0;
+    for (let e = 0; e < b; e++) T[e] = true;
+    if (e != T.length) {
+      L();
+    }
+    w = null;
+    let t = o.get();
+    let n = l.get();
+    if (s.get()) {
+      t = v.getViewPort()[2];
+      n = v.getViewPort()[3];
+    }
+    let i = CGL.Texture.FILTER_NEAREST;
+    if (u.get() == "linear") i = CGL.Texture.FILTER_LINEAR;
+    else if (u.get() == "mipmap") i = CGL.Texture.FILTER_MIPMAP;
+    let r = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+    if (d.get() == "repeat") r = CGL.Texture.WRAP_REPEAT;
+    if (d.get() == "mirrored repeat") r = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    const a = Math.min(v.maxAnisotropic, parseFloat(c.get()));
+    if (v.glVersion >= 2) {
+      w = new CGL.Framebuffer2(v, t, n, {
+        anisotropic: a,
+        isFloatingPointTexture: h.get(),
+        multisampling: false,
+        numRenderBuffers: b,
+        wrap: r,
+        filter: i,
+        depth: true,
+        multisamplingSamples: 0,
+        clear: true,
+      });
+    } else {
+      w = new CGL.Framebuffer(v, o.get(), l.get(), {
+        isFloatingPointTexture: h.get(),
+        filter: i,
+        wrap: r,
+      });
+    }
+  }
+  n.onTriggered = function () {
+    const e = v.getViewPort();
+    if (!w || x) N();
+    if (
+      s.get() &&
+      w &&
+      (e[2] != w.getTextureColor().width || e[3] != w.getTextureColor().height)
+    )
+      N();
+    if (!i.get() || !i.get().setDrawBuffers) return;
+    if (i.get() != S) {
+      S = i.get();
+      O = i.get().copy();
+      O.setDrawBuffers(T);
+    }
+    if (!O) {
+      a.set(null);
+      return;
+    }
+    y[0] = e[0];
+    y[1] = e[1];
+    y[2] = e[2];
+    y[3] = e[3];
+    w.renderStart(v);
+    v.pushPMatrix();
+    mat4.identity(v.pMatrix);
+    v.pushViewMatrix();
+    mat4.identity(v.vMatrix);
+    v.pushModelMatrix();
+    mat4.identity(v.mMatrix);
+    v.pushShader(i.get());
+    if (O.bindTextures) O.bindTextures();
+    v.pushBlend(false);
+    E.render(i.get());
+    v.popBlend();
+    v.popPMatrix();
+    v.popModelMatrix();
+    v.popViewMatrix();
+    w.renderEnd(v);
+    if (b >= 2) {
+      a.set(w.getTextureColorNum(0));
+      f.set(w.getTextureColorNum(1));
+      m.set(w.getTextureColorNum(2));
+      g.set(w.getTextureColorNum(3));
+    } else a.set(w.getTextureColor());
+    v.popShader();
+    v.gl.viewport(y[0], y[1], y[2], y[3]);
+    r.trigger();
+  };
+};
+Ops.Gl.Shader.ShaderToTexture.prototype = new CABLES.Op();
+CABLES.OPS["a3debb76-7d84-4548-9e7b-24891423dcce"] = {
+  f: Ops.Gl.Shader.ShaderToTexture,
+  objName: "Ops.Gl.Shader.ShaderToTexture",
+};
+Ops.Gl.Shader.CustomShader_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const b = this;
+  const e = (b.attachments = {});
+  const t = b.inTrigger("render"),
+    n = b.inStringEditor("Fragment Code"),
+    i = b.inStringEditor("Vertex Code"),
+    r = b.inValueBool("Use As Material", true),
+    a = b.outTrigger("trigger"),
+    s = b.outObject("Shader", null, "shader"),
+    o = b.outBool("Has Errors");
+  const v = 7;
+  const y = b.patch.cgl;
+  const _ = [];
+  const T = [];
+  const S = [];
+  b.toWorkPortsNeedToBeLinked(t);
+  n.setUiAttribs({ editorSyntax: "glsl" });
+  i.setUiAttribs({ editorSyntax: "glsl" });
+  const O = new CGL.Shader(y, "customshader", b);
+  O.setModules([
+    "MODULE_VERTEX_POSITION",
+    "MODULE_COLOR",
+    "MODULE_BEGIN_FRAG",
+    "MODULE_VERTEX_MODELVIEW",
+  ]);
+  b.setPortGroup("Source Code", [n, i]);
+  b.setPortGroup("Options", [r]);
+  n.set(CGL.Shader.getDefaultFragmentShader());
+  i.set(CGL.Shader.getDefaultVertexShader());
+  n.onChange = i.onChange = function () {
+    if (n.isLinked() && !n.get()) return;
+    u = true;
+  };
+  t.onTriggered = d;
+  let l = 0;
+  let u = true;
+  b.onLoadedValueSet = c;
+  function c(n) {
+    g();
+    if (!n) return;
+    for (let t = 0; t < _.length; t++)
+      for (let e = 0; e < n.portsIn.length; e++)
+        if (_[t] && _[t].name == n.portsIn[e].name) {
+          _[t].set(n.portsIn[e].value);
+          _[t].deSerializeSettings(n.portsIn[e]);
+        }
+  }
+  b.init = function () {
+    g();
+  };
+  function d() {
+    I();
+    if (u) g();
+    if (r.get()) y.pushShader(O);
+    h();
+    a.trigger();
+    O.popTextures();
+    if (r.get()) y.popShader();
+  }
+  function h() {
+    for (let e = 0; e < T.length; e++)
+      if (T[e] && T[e].get() && T[e].get().tex)
+        O.pushTexture(T[e].uniform, T[e].get().tex);
+      else O.pushTexture(T[e], CGL.Texture.getEmptyTexture(y));
+  }
+  function p() {
+    for (let e = 0; e < T.length; e++)
+      if (T[e] && T[e].get() && T[e].get().tex)
+        y.setTexture(0 + e + v, T[e].get().tex);
+  }
+  function A(t) {
+    for (let e = 0; e < _.length; e++) if (_[e] && _[e].name == t) return true;
+    for (let e = 0; e < T.length; e++) if (T[e] && T[e].name == t) return true;
+    return false;
+  }
+  const f = mat4.create();
+  const w = [
+    "modelMatrix",
+    "viewMatrix",
+    "normalMatrix",
+    "mvMatrix",
+    "projMatrix",
+    "inverseViewMatrix",
+    "camPos",
+  ];
+  let C = 0;
+  const x = [];
+  function m(e) {
+    const t = e.split("\n");
+    const r = [];
+    for (let e = 0; e < t.length; e++) {
+      const n = t[e].split(";");
+      for (let e = 0; e < n.length; e++) {
+        let i = n[e].split(" ");
+        for (let e = 0; e < i.length; e++) i[e] = (i[e] + "").trim();
+        if (i[0] === "UNI" || i[0] === "uniform") {
+          let t = i[2];
+          if (i.length > 4) for (let e = 3; e < i.length; e++) t += i[e];
+          i = i.filter(function (e) {
+            return e !== "";
+          });
+          const a = i[1];
+          let n = [t];
+          if (t.indexOf(",") > -1) n = t.split(",");
+          for (let e = 0; e < n.length; e++) {
+            if (w.indexOf(n[e]) > -1) continue;
+            const s = n[e].trim().replace(/\[\d+\]$/, "");
+            if (a === "float") {
+              x.push(s);
+              if (!A(s)) {
+                const o = n[e].trim().match(/\[\d+\]$/);
+                if (o) {
+                  const l = parseInt(o[0].trim().slice(1, -1));
+                  const u = b.inArray(s, []);
+                  u.uniform = new CGL.Uniform(O, "f[]", s, new Float32Array(l));
+                  _.push(u);
+                  r.push(u);
+                  const c = {
+                    name: s,
+                    num: l,
+                    port: u,
+                    uni: u.uniform,
+                    changed: false,
+                  };
+                  u.onChange = function () {
+                    this.changed = true;
+                  }.bind(c);
+                  S.push(c);
+                } else {
+                  const u = b.inFloat(s, 0);
+                  u.uniform = new CGL.Uniform(O, "f", s, u);
+                  _.push(u);
+                  r.push(u);
+                }
+              }
+            } else if (a === "int") {
+              x.push(s);
+              if (!A(s)) {
+                const u = b.inInt(s, 0);
+                u.uniform = new CGL.Uniform(O, "i", s, u);
+                _.push(u);
+                r.push(u);
+              }
+            } else if (a === "bool") {
+              x.push(s);
+              if (!A(s)) {
+                const u = b.inBool(s, false);
+                u.uniform = new CGL.Uniform(O, "b", s, u);
+                _.push(u);
+                r.push(u);
+              }
+            } else if (a === "mat4") {
+              x.push(s);
+              if (!A(s)) {
+                const u = b.inArray(s, 0);
+                u.uniform = new CGL.Uniform(O, "m4", s, u);
+                _.push(u);
+                r.push(u);
+                const c = {
+                  name: s,
+                  num: 16,
+                  port: u,
+                  uni: u.uniform,
+                  changed: false,
+                };
+                u.onChange = function () {
+                  this.changed = true;
+                }.bind(c);
+                S.push(c);
+              }
+            } else if (a === "sampler2D" || a === "samplerCube") {
+              x.push(s);
+              if (!A(s)) {
+                const d = b.inObject(s);
+                let e = "t";
+                if (a === "samplerCube") e = "tc";
+                d.uniform = new CGL.Uniform(O, e, s, v + T.length);
+                T.push(d);
+                r.push(d);
+                d.set(CGL.Texture.getTempTexture(y));
+                d.on("change", (e, t) => {
+                  if (!e) t.set(CGL.Texture.getTempTexture(y));
+                });
+                C++;
+              }
+            } else if (a === "vec3" || a === "vec2" || a === "vec4") {
+              let e = 2;
+              if (a === "vec4") e = 4;
+              if (a === "vec3") e = 3;
+              x.push(s + " X");
+              x.push(s + " Y");
+              if (e > 2) x.push(s + " Z");
+              if (e > 3) x.push(s + " W");
+              if (!A(s + " X")) {
+                const h = [];
+                const c = { name: s, num: e, changed: false };
+                S.push(c);
+                E(c);
+                const p = b.inFloat(s + " X", 0);
+                p.onChange = function () {
+                  this.changed = true;
+                }.bind(c);
+                _.push(p);
+                h.push(p);
+                c.x = p;
+                const f = b.inFloat(s + " Y", 0);
+                f.onChange = function () {
+                  this.changed = true;
+                }.bind(c);
+                _.push(f);
+                h.push(f);
+                c.y = f;
+                if (e > 2) {
+                  const m = b.inFloat(s + " Z", 0);
+                  m.onChange = function () {
+                    this.changed = true;
+                  }.bind(c);
+                  _.push(m);
+                  h.push(m);
+                  c.z = m;
+                }
+                if (e > 3) {
+                  const g = b.inFloat(s + " W", 0);
+                  g.onChange = function () {
+                    this.changed = true;
+                  }.bind(c);
+                  _.push(g);
+                  h.push(g);
+                  c.w = g;
+                }
+                b.setPortGroup(s, h);
+              }
+            }
+          }
+        }
+      }
+    }
+    b.setPortGroup("uniforms", r);
+  }
+  function g() {
+    if (!O) return;
+    let e = false;
+    l++;
+    if (l > 2) e = true;
+    O.setSource(i.get(), n.get(), e);
+    if (y.glVersion == 1) {
+      y.enableExtension("OES_standard_derivatives");
+      O.enableExtension("GL_OES_standard_derivatives");
+    }
+    C = 0;
+    x.length = 0;
+    m(i.get());
+    m(n.get());
+    for (let t = 0; t < T.length; t++)
+      for (let e = 0; e < x.length; e++)
+        if (T[t] && x.indexOf(T[t].name) == -1) {
+          T[t].remove();
+          T[t] = null;
+        }
+    for (let t = 0; t < _.length; t++)
+      for (let e = 0; e < x.length; e++)
+        if (_[t] && x.indexOf(_[t].name) == -1) {
+          _[t].remove();
+          _[t] = null;
+        }
+    for (let e = 0; e < S.length; e++) {
+      E(S[e]);
+      S[e].changed = true;
+    }
+    for (let e = 0; e < _.length; e++)
+      if (_[e] && _[e].uniform) _[e].uniform.needsUpdate = true;
+    O.compile();
+    b.refreshParams();
+    s.setRef(O);
+    u = false;
+    if (O.hasErrors()) b.setUiError("compile", "Shader has errors");
+    else b.setUiError("compile", null);
+    o.set(O.hasErrors());
+  }
+  function E(e) {
+    if (e.num == 2) e.uni = new CGL.Uniform(O, "2f", e.name, [0, 0]);
+    else if (e.num == 3) e.uni = new CGL.Uniform(O, "3f", e.name, [0, 0, 0]);
+    else if (e.num == 4) e.uni = new CGL.Uniform(O, "4f", e.name, [0, 0, 0, 0]);
+  }
+  function I() {
+    for (let e = 0; e < S.length; e++) {
+      const t = S[e];
+      if (t.changed) {
+        if (t.num === 2) t.uni.setValue([t.x.get(), t.y.get()]);
+        else if (t.num === 3) t.uni.setValue([t.x.get(), t.y.get(), t.z.get()]);
+        else if (t.num === 4)
+          t.uni.setValue([t.x.get(), t.y.get(), t.z.get(), t.w.get()]);
+        else if (t.num > 4) {
+          t.uni.setValue(t.port.get());
+        }
+        t.changed = false;
+      }
+    }
+  }
+};
+Ops.Gl.Shader.CustomShader_v2.prototype = new CABLES.Op();
+CABLES.OPS["a165fc89-a35b-4d39-8930-7345b098bd9d"] = {
+  f: Ops.Gl.Shader.CustomShader_v2,
+  objName: "Ops.Gl.Shader.CustomShader_v2",
+};
+Ops.Gl.CanvasInfo_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = t.outNumber("width"),
+    i = t.outNumber("height"),
+    r = t.outNumber("Pixel Ratio"),
+    a = t.outNumber("Pixel Width"),
+    s = t.outNumber("Pixel Height"),
+    o = t.inSwitch("Pixel Unit", ["Display", "CSS"], "Display"),
+    l = t.outNumber("Aspect Ratio"),
+    u = t.outBool("Landscape"),
+    c = t.outObject("Canvas", "element"),
+    d = t.outObject("Canvas Parent", "element");
+  let h = t.patch.cgl;
+  c.set(t.patch.cgl.canvas);
+  d.set(t.patch.cgl.canvas.parentElement);
+  h.on("resize", p);
+  o.onChange = p;
+  p();
+  function p() {
+    let e = 1;
+    if (o.get() == "CSS") e = t.patch.cgl.pixelDensity;
+    i.set(h.canvasHeight);
+    n.set(h.canvasWidth);
+    s.set(h.canvasHeight * t.patch.cgl.pixelDensity);
+    a.set(h.canvasWidth * t.patch.cgl.pixelDensity);
+    r.set(t.patch.cgl.pixelDensity);
+    l.set(h.canvasWidth / h.canvasHeight);
+    u.set(h.canvasWidth > h.canvasHeight ? 1 : 0);
+  }
+};
+Ops.Gl.CanvasInfo_v2.prototype = new CABLES.Op();
+CABLES.OPS["a249e025-ae2c-4fb1-99f1-f86bfe7d5fc4"] = {
+  f: Ops.Gl.CanvasInfo_v2,
+  objName: "Ops.Gl.CanvasInfo_v2",
+};
+Ops.Number.SwitchNumber = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  const t = n.inValueInt("Index");
+  const i = [];
+  const r = n.outNumber("Result");
+  t.onChange = a;
+  for (let t = 0; t < 16; t++) {
+    let e = n.inValue("Value " + t);
+    i.push(e);
+    e.onChange = a;
+  }
+  function a() {
+    if (t.get() >= 0 && i[t.get()]) {
+      r.set(i[t.get()].get());
+    }
+  }
+};
+Ops.Number.SwitchNumber.prototype = new CABLES.Op();
+CABLES.OPS["fbb89f72-f2e3-4d34-ad01-7d884a1bcdc0"] = {
+  f: Ops.Number.SwitchNumber,
+  objName: "Ops.Number.SwitchNumber",
+};
+Ops.Gl.Meshes.TextMesh_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {
+    textmesh_frag:
+      "{{MODULES_HEAD}}\n#define INSTANCING\nUNI sampler2D tex;\n#ifdef DO_MULTEX\nUNI sampler2D texMul;\n#endif\n#ifdef DO_MULTEX_MASK\nUNI sampler2D texMulMask;\n#endif\nIN vec2 texCoord;\nIN vec2 texPos;\nUNI float r;\nUNI float g;\nUNI float b;\nUNI float a;\nflatIN float frag_instIndex;\nvoid main()\n{\n{{MODULE_BEGIN_FRAG}}\nvec4 col=texture(tex,texCoord);\ncol.a=col.r;\ncol.r*=r;\ncol.g*=g;\ncol.b*=b;\ncol*=a;\nif(col.a==0.)discard;\n#ifdef DO_MULTEX\ncol*=texture(texMul,texPos);\n#endif\n#ifdef DO_MULTEX_MASK\ncol*=texture(texMulMask,texPos).r;\n#endif\n{{MODULE_COLOR}}\noutColor=col;\n}",
+    textmesh_vert:
+      "{{MODULES_HEAD}}\n\nUNI sampler2D tex;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\nUNI float scale;\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN mat4 instMat;\nIN vec2 attrTexOffsets;\nIN vec2 attrTexSize;\nIN vec2 attrTexPos;\nIN float attrVertIndex;\nIN float instanceIndex;\nflat OUT float frag_instIndex;\n\nOUT vec2 texPos;\n\nOUT vec2 texCoord;\nOUT vec4 modelPos;\n\nvoid main()\n{\n\n    texCoord=(attrTexCoord*(attrTexSize)) + attrTexOffsets;\n    mat4 instMVMat=instMat;\n    instMVMat[3][0]*=scale;\n\n    texPos=attrTexPos;\n\n    vec4 pos=vec4( vPosition.x*(attrTexSize.x/attrTexSize.y)*scale,vPosition.y*scale,vPosition.z*scale, 1. );\n\n    mat4 mvMatrix=viewMatrix * modelMatrix * instMVMat;\n    frag_instIndex=instanceIndex;\n\n    {{MODULE_VERTEX_POSITION}}\n\n    gl_Position = projMatrix * mvMatrix * pos;\n}\n\n",
+  });
+  const n = t.inTrigger("Render"),
+    v = t.inString("Text", "cables"),
+    i = t.inFloat("Scale Text", 1),
+    r = t.inValueFloat("Scale", 1),
+    c = t.inString("Font", "Arial"),
+    y = t.inValueSelect("align", ["left", "center", "right"], "center"),
+    a = t.inValueSelect(
+      "vertical align",
+      ["Top", "Middle", "Bottom"],
+      "Middle"
+    ),
+    _ = t.inValueFloat("Line Height", 1),
+    T = t.inValueFloat("Letter Spacing"),
+    o = t.inSwitch("filter", ["nearest", "linear", "mipmap"], "mipmap"),
+    l = t.inSwitch("Anisotropic", [0, 1, 2, 4, 8, 16], 0),
+    s = t.inTexture("Texture Color"),
+    u = t.inTexture("Texture Mask"),
+    D = t.outTrigger("Next"),
+    S = t.outTexture("texture"),
+    R = t.outNumber("Total Lines", 0),
+    B = t.outNumber("Width", 0),
+    U = t.outBoolNum("Font Available", 0);
+  const O = t.patch.cgl;
+  const d = vec3.create();
+  vec3.set(d, 1, 1, 1);
+  t.toWorkPortsNeedToBeLinked(n);
+  t.setPortGroup("Masking", [s, u]);
+  r.setUiAttribs({ title: "Line Scale" });
+  S.setUiAttribs({ hidePort: true });
+  const h = 1024;
+  let p = false;
+  let f = true;
+  y.onChange = v.onChange = _.onChange = V;
+  function V() {
+    f = true;
+  }
+  let m = null;
+  CABLES.OpTextureMeshCanvas = {};
+  let g = 0;
+  const F = null;
+  let A = null;
+  let w = true;
+  let C = true;
+  i.onChange = () => {
+    vec3.set(d, i.get(), i.get(), i.get());
+  };
+  l.onChange = o.onChange = () => {
+    x().texture = null;
+    C = true;
+  };
+  u.onChange = s.onChange = function () {
+    E.toggleDefine("DO_MULTEX", s.get());
+    E.toggleDefine("DO_MULTEX_MASK", u.get());
+  };
+  S.set(null);
+  c.onChange = function () {
+    C = true;
+    w = true;
+    b();
+  };
+  t.patch.on("fontLoaded", (e) => {
+    if (e == c.get()) {
+      C = true;
+      w = true;
+    }
+  });
+  function b() {
+    const e = p;
+    try {
+      p = document.fonts.check('20px "' + c.get() + '"');
+    } catch (e) {
+      t.logError(e);
+    }
+    if (!e && p) {
+      U.set(true);
+      C = true;
+      w = true;
+    }
+    if (!p) setTimeout(b, 250);
+  }
+  a.onChange = function () {
+    if (a.get() == "Middle") g = 0;
+    else if (a.get() == "Top") g = 1;
+    else if (a.get() == "Bottom") g = 2;
+  };
+  function x() {
+    m = "" + c.get();
+    if (CABLES.OpTextureMeshCanvas.hasOwnProperty(m))
+      return CABLES.OpTextureMeshCanvas[m];
+    const e = document.createElement("canvas");
+    e.dataset.font = c.get();
+    e.id = "texturetext_" + CABLES.generateUUID();
+    e.style.display = "none";
+    const t = document.getElementsByTagName("body")[0];
+    t.appendChild(e);
+    const n = e.getContext("2d");
+    CABLES.OpTextureMeshCanvas[m] = {
+      ctx: n,
+      canvas: e,
+      chars: {},
+      characters: "",
+      fontSize: 320,
+    };
+    return CABLES.OpTextureMeshCanvas[m];
+  }
+  t.onDelete = function () {
+    if (m && CABLES.OpTextureMeshCanvas[m])
+      CABLES.OpTextureMeshCanvas[m].canvas.remove();
+  };
+  const E = new CGL.Shader(O, "TextMesh", this);
+  E.setSource(e.textmesh_vert, e.textmesh_frag);
+  const G = new CGL.Uniform(E, "t", "tex", 0);
+  const H = new CGL.Uniform(E, "t", "texMul", 1);
+  const z = new CGL.Uniform(E, "t", "texMulMask", 2);
+  const q = new CGL.Uniform(E, "f", "scale", r);
+  const I = t.inValueSlider("r", 1),
+    k = t.inValueSlider("g", 1),
+    P = t.inValueSlider("b", 1),
+    W = t.inValueSlider("a", 1),
+    X = new CGL.Uniform(E, "f", "r", I),
+    Y = new CGL.Uniform(E, "f", "g", k),
+    K = new CGL.Uniform(E, "f", "b", P),
+    Q = new CGL.Uniform(E, "f", "a", W);
+  I.setUiAttribs({ colorPick: true });
+  t.setPortGroup("Display", [r, c]);
+  t.setPortGroup("Alignment", [y, a]);
+  t.setPortGroup("Color", [I, k, P, W]);
+  let L = 0;
+  const N = vec3.create();
+  let Z = -1;
+  let M = false;
+  n.onTriggered = function () {
+    if (f) {
+      $();
+      f = false;
+    }
+    const e = x();
+    if (e.lastChange != Z) {
+      w = true;
+      Z = e.lastChange;
+    }
+    if (C) J();
+    if (w) $();
+    if (A && A.numInstances > 0) {
+      O.pushBlendMode(CGL.BLEND_NORMAL, true);
+      O.pushShader(E);
+      O.setTexture(0, S.get().tex);
+      const t = s.get();
+      if (t) O.setTexture(1, t.tex);
+      const n = u.get();
+      if (n) O.setTexture(2, n.tex);
+      if (g === 2) vec3.set(N, 0, L, 0);
+      else if (g === 1) vec3.set(N, 0, 0, 0);
+      else if (g === 0) vec3.set(N, 0, L / 2, 0);
+      N[1] -= _.get();
+      O.pushModelMatrix();
+      mat4.translate(O.mMatrix, O.mMatrix, N);
+      mat4.scale(O.mMatrix, O.mMatrix, d);
+      if (!M) A.render(O.getShader());
+      O.popModelMatrix();
+      O.setTexture(0, null);
+      O.popShader();
+      O.popBlendMode();
+    }
+    D.trigger();
+  };
+  T.onChange = function () {
+    w = true;
+  };
+  function $() {
+    const e = String(v.get() + "");
+    if (!S.get()) return;
+    const a = x();
+    if (!a.geom) {
+      a.geom = new CGL.Geometry("textmesh");
+      a.geom.vertices = [1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0];
+      a.geom.texCoords = new Float32Array([1, 1, 0, 1, 1, 0, 0, 0]);
+      a.geom.verticesIndices = [0, 1, 2, 2, 1, 3];
+    }
+    if (!A) A = new CGL.Mesh(O, a.geom);
+    const s = e.split("\n");
+    R.set(s.length);
+    const o = [];
+    const l = [];
+    const u = [];
+    const c = [];
+    const d = mat4.create();
+    let h = 0;
+    let p = 0;
+    C = false;
+    for (let r = 0; r < s.length; r++) {
+      const f = s[r];
+      const m = f.length;
+      let t = 0;
+      let n = 0;
+      let i = 0;
+      for (let e = 0; e < m; e++) {
+        const g = f.substring(e, e + 1);
+        const b = a.chars[String(g)];
+        if (b) {
+          i += b.texCoordWidth / b.texCoordHeight;
+          i += T.get();
+        }
+      }
+      i -= T.get();
+      L = 0;
+      if (y.get() == "left") n = 0;
+      else if (y.get() == "right") n = i;
+      else if (y.get() == "center") n = i / 2;
+      L = (r + 1) * _.get();
+      for (let e = 0; e < m; e++) {
+        const g = f.substring(e, e + 1);
+        const b = a.chars[String(g)];
+        if (!b) {
+          C = true;
+          return;
+        } else {
+          c.push(
+            (t / i) * 0.99 + 0.005,
+            (1 - r / (s.length - 1)) * 0.99 + 0.005
+          );
+          l.push(b.texCoordX, 1 - b.texCoordY - b.texCoordHeight);
+          u.push(b.texCoordWidth, b.texCoordHeight);
+          mat4.identity(d);
+          mat4.translate(d, d, [t - n, 0 - r * _.get(), 0]);
+          t += b.texCoordWidth / b.texCoordHeight + T.get();
+          p = Math.max(p, t - n);
+          o.push(Array.prototype.slice.call(d));
+          h++;
+        }
+      }
+    }
+    const t = [].concat.apply([], o);
+    M = false;
+    if (t.length == 0) M = true;
+    const n = t.length / 16;
+    A.setNumInstances(n);
+    if (A.numInstances == 0) {
+      M = true;
+      return;
+    }
+    B.set(p * r.get());
+    A.setAttribute("instMat", new Float32Array(t), 16, { instanced: true });
+    A.setAttribute("attrTexOffsets", new Float32Array(l), 2, {
+      instanced: true,
+    });
+    A.setAttribute("attrTexSize", new Float32Array(u), 2, { instanced: true });
+    A.setAttribute("attrTexPos", new Float32Array(c), 2, { instanced: true });
+    w = false;
+    if (C) J();
+  }
+  function j(t, n) {
+    const i = x();
+    if (!n) i.chars = {};
+    const r = i.ctx;
+    r.font = t + "px " + c.get();
+    r.textAlign = "left";
+    let a = 0;
+    let s = 0;
+    const o = t * 1.4;
+    const e = { fits: true };
+    for (let e = 0; e < i.characters.length; e++) {
+      const l = String(i.characters.substring(e, e + 1));
+      const u = r.measureText(l).width;
+      if (s + u >= h) {
+        a += o + 2;
+        s = 0;
+      }
+      if (!n) {
+        i.chars[l] = {
+          str: l,
+          texCoordX: s / h,
+          texCoordY: a / h,
+          texCoordWidth: u / h,
+          texCoordHeight: o / h,
+        };
+        r.fillText(l, s, a + t);
+      }
+      s += u + 12;
+    }
+    if (a > h - o) {
+      e.fits = false;
+    }
+    e.spaceLeft = h - a;
+    return e;
+  }
+  function J() {
+    let e = CGL.Texture.FILTER_LINEAR;
+    if (o.get() == "nearest") e = CGL.Texture.FILTER_NEAREST;
+    if (o.get() == "mipmap") e = CGL.Texture.FILTER_MIPMAP;
+    const t = x();
+    let n = String(v.get());
+    if (n == null || n == undefined) n = "";
+    for (let e = 0; e < n.length; e++) {
+      const s = n.substring(e, e + 1);
+      if (t.characters.indexOf(s) == -1) {
+        t.characters += s;
+        C = true;
+      }
+    }
+    const i = t.ctx;
+    t.canvas.width = t.canvas.height = h;
+    if (!t.texture)
+      t.texture = CGL.Texture.createFromImage(O, t.canvas, {
+        filter: e,
+        anisotropic: parseFloat(l.get()),
+      });
+    t.texture.setSize(h, h);
+    i.fillStyle = "transparent";
+    i.clearRect(0, 0, h, h);
+    i.fillStyle = "rgba(255,255,255,255)";
+    let r = t.fontSize + 40;
+    let a = j(r, true);
+    while (!a.fits) {
+      r -= 5;
+      a = j(r, true);
+    }
+    j(r, false);
+    i.restore();
+    t.texture.initTexture(t.canvas, e);
+    t.texture.unpackAlpha = true;
+    S.set(t.texture);
+    t.lastChange = CABLES.now();
+    w = true;
+    C = false;
+  }
+};
+Ops.Gl.Meshes.TextMesh_v2.prototype = new CABLES.Op();
+CABLES.OPS["2390f6b3-2122-412e-8c8d-5c2f574e8bd1"] = {
+  f: Ops.Gl.Meshes.TextMesh_v2,
+  objName: "Ops.Gl.Meshes.TextMesh_v2",
+};
+Ops.Gl.Matrix.Transform = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  const t = n.inTrigger("render"),
+    i = n.inValue("posX", 0),
+    r = n.inValue("posY", 0),
+    a = n.inValue("posZ", 0),
+    s = n.inValue("scale", 1),
+    o = n.inValue("rotX", 0),
+    l = n.inValue("rotY", 0),
+    u = n.inValue("rotZ", 0),
+    c = n.outTrigger("trigger");
+  n.setPortGroup("Rotation", [o, l, u]);
+  n.setPortGroup("Position", [i, r, a]);
+  n.setPortGroup("Scale", [s]);
+  n.setUiAxisPorts(i, r, a);
+  n.toWorkPortsNeedToBeLinked(t, c);
+  const d = vec3.create();
+  const h = vec3.create();
+  const p = mat4.create();
+  mat4.identity(p);
+  let f = false,
+    m = false,
+    g = true,
+    b = true,
+    v = true;
+  o.onChange = l.onChange = u.onChange = A;
+  i.onChange = r.onChange = a.onChange = S;
+  s.onChange = O;
+  t.onTriggered = function () {
+    let e = false;
+    if (g) {
+      _();
+      e = true;
+    }
+    if (b) {
+      T();
+      e = true;
+    }
+    if (v) e = true;
+    if (e) y();
+    const t = n.patch.cg || n.patch.cgl;
+    t.pushModelMatrix();
+    mat4.multiply(t.mMatrix, t.mMatrix, p);
+    c.trigger();
+    t.popModelMatrix();
+    if (CABLES.UI) {
+      if (!i.isLinked() && !r.isLinked() && !a.isLinked()) {
+        gui.setTransform(n.id, i.get(), r.get(), a.get());
+        if (n.isCurrentUiOp())
+          gui.setTransformGizmo({ posX: i, posY: r, posZ: a });
+      }
+    }
+  };
+  function y() {
+    mat4.identity(p);
+    if (m) mat4.translate(p, p, d);
+    if (o.get() !== 0) mat4.rotateX(p, p, o.get() * CGL.DEG2RAD);
+    if (l.get() !== 0) mat4.rotateY(p, p, l.get() * CGL.DEG2RAD);
+    if (u.get() !== 0) mat4.rotateZ(p, p, u.get() * CGL.DEG2RAD);
+    if (f) mat4.scale(p, p, h);
+    v = false;
+  }
+  function _() {
+    m = false;
+    if (i.get() !== 0 || r.get() !== 0 || a.get() !== 0) m = true;
+    vec3.set(d, i.get(), r.get(), a.get());
+    g = false;
+  }
+  function T() {
+    f = true;
+    vec3.set(h, s.get(), s.get(), s.get());
+    b = false;
+  }
+  function S() {
+    g = true;
+  }
+  function O() {
+    b = true;
+  }
+  function A() {
+    v = true;
+  }
+  y();
+};
+Ops.Gl.Matrix.Transform.prototype = new CABLES.Op();
+CABLES.OPS["650baeb1-db2d-4781-9af6-ab4e9d4277be"] = {
+  f: Ops.Gl.Matrix.Transform,
+  objName: "Ops.Gl.Matrix.Transform",
+};
+Ops.Math.Compare.GreaterThan = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("number1"),
+    i = e.inValueFloat("number2"),
+    r = e.outBoolNum("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = i.onChange = a;
+  function a() {
+    r.set(n.get() > i.get());
+  }
+};
+Ops.Math.Compare.GreaterThan.prototype = new CABLES.Op();
+CABLES.OPS["b250d606-f7f8-44d3-b099-c29efff2608a"] = {
+  f: Ops.Math.Compare.GreaterThan,
+  objName: "Ops.Math.Compare.GreaterThan",
+};
+Ops.Array.InterpolateArrays = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Exe"),
+    o = e.inArray("Array 1"),
+    l = e.inArray("Array 2"),
+    u = e.inValueSlider("perc"),
+    c = e.outTrigger("Next"),
+    d = e.outArray("Result");
+  let h = true;
+  let p = [];
+  function i() {
+    h = true;
+  }
+  o.onChange = l.onChange = u.onChange = i;
+  n.onTriggered = r;
+  function r() {
+    let n = o.get();
+    let i = l.get();
+    let r;
+    let a;
+    let s;
+    if (!n || !i || n.length < i.length) {
+      d.set(null);
+      return;
+    }
+    if (h) {
+      if (p.length != n.length) p.length = n.length;
+      let t = u.get();
+      for (let e = 0; e < n.length; e++) {
+        r = n[e];
+        a = i[e];
+        s = (a - r) * t + r;
+        p[e] = s;
+      }
+      h = false;
+      d.setRef(p);
+    }
+    c.trigger();
+  }
+  o.onLinkChanged = l.onLinkChanged = function () {
+    let e = o.get();
+    let t = l.get();
+    if (!e || !t) {
+      d.set(null);
+      return;
+    }
+    let n = e[0];
+    let i = t[0];
+    if (typeof n === "string" || typeof i === "string") {
+      d.set(null);
+    }
+  };
+};
+Ops.Array.InterpolateArrays.prototype = new CABLES.Op();
+CABLES.OPS["09296117-7312-4f80-982b-7b4a81d22cf8"] = {
+  f: Ops.Array.InterpolateArrays,
+  objName: "Ops.Array.InterpolateArrays",
+};
+Ops.Array.Array3 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const a = e.inValueInt("Num Triplets", 100),
+    s = e.inValueFloat("X", 0),
+    o = e.inValueFloat("Y", 0),
+    l = e.inValueFloat("Z", 0),
+    u = e.outArray("Array", null, 3),
+    c = e.outNumber("Total points"),
+    d = e.outNumber("Array length");
+  a.onChange = s.onChange = o.onChange = l.onChange = n;
+  let h = [];
+  n();
+  function n() {
+    let t = Math.floor(a.get() * 3);
+    if (t < 0) t = 0;
+    if (h.length != t) h.length = t;
+    const n = s.get();
+    const i = o.get();
+    const r = l.get();
+    for (let e = 0; e < t; e += 3) {
+      h[e] = n;
+      h[e + 1] = i;
+      h[e + 2] = r;
+    }
+    u.setRef(h);
+    c.set(t / 3);
+    d.set(t);
+  }
+};
+Ops.Array.Array3.prototype = new CABLES.Op();
+CABLES.OPS["2766606a-3ea0-4204-8613-b8950a124435"] = {
+  f: Ops.Array.Array3,
+  objName: "Ops.Array.Array3",
+};
+Ops.Array.ArrayMerge_v3 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = 8;
+  const i = [];
+  for (let e = 0; e < n; e++) {
+    i[e] = t.inArray("Array " + e);
+    i[e].onChange = function () {
+      o();
+    };
+  }
+  const r = t.outArray("Result"),
+    a = t.outNumber("Array length");
+  let s = [];
+  function o() {
+    s.length = 0;
+    for (let e = 0; e < n; e++) {
+      const t = i[e].get();
+      if (t) s = s.concat(t);
+    }
+    r.setRef(s);
+    a.set(s.length);
+  }
+};
+Ops.Array.ArrayMerge_v3.prototype = new CABLES.Op();
+CABLES.OPS["753d053a-04a3-44c7-abf0-ae2676ced13e"] = {
+  f: Ops.Array.ArrayMerge_v3,
+  objName: "Ops.Array.ArrayMerge_v3",
+};
+Ops.Array.SmoothArray = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Execute"),
+    r = e.inArray("Array In"),
+    i = e.inBool("Separate inc/dec", false),
+    a = e.inValue("Inc factor", 4),
+    s = e.inValue("Dec factor", 4),
+    o = e.outTrigger("Next"),
+    l = e.outArray("Array Out");
+  let u = [];
+  let c = false;
+  let d = 0;
+  let h = [];
+  l.set(h);
+  let p;
+  let f;
+  let m = false;
+  g();
+  b();
+  function g() {
+    m = i.get();
+    if (!m) {
+      s.setUiAttribs({ greyout: true });
+      a.setUiAttribs({ title: "Inc/Dec factor" });
+    } else {
+      s.setUiAttribs({ greyout: false });
+      a.setUiAttribs({ title: "Inc factor" });
+    }
+    b();
+    y();
+  }
+  function b() {
+    p = a.get();
+    if (m == false) f = a.get();
+    else f = s.get();
+    if (p <= 0 || p != p) p = 1e-4;
+    if (f <= 0 || f != f) f = 1e-4;
+    if (p <= 1) p = 1;
+    if (f <= 1) f = 1;
+  }
+  r.onLinkChanged = () => {
+    if (r) r.copyLinkedUiAttrib("stride", l);
+  };
+  r.onChange = function () {
+    let t = r.get();
+    if (!t) return;
+    for (let e = 0; e < t.length; e++) {
+      u[e] = t[e] || 0;
+    }
+  };
+  let v = 0;
+  function y() {
+    let e = r.get();
+    if (!e) return;
+    if (h.length != e.length) {
+      h.length = e.length || 0;
+      c = true;
+    }
+    let n = 1;
+    if (CABLES.now() - d > 500 || d === 0) c = true;
+    else n = (CABLES.now() - d) / 17;
+    d = CABLES.now();
+    if (c) {
+      for (var i = 0; i < e.length; i++) {
+        h[i] = e[i];
+      }
+      c = false;
+    }
+    for (var i = 0; i < e.length; i++) {
+      let e = h[i];
+      let t = u[i] - e;
+      if (t >= 0) e += t / (f * n);
+      else e += t / (p * n);
+      if (e > 0 && e < 1e-9) e = 0;
+      if (!e) e = 0;
+      if (h[i] != e) {
+        h[i] = e;
+        v = e;
+      }
+    }
+    l.setRef(h);
+    o.trigger();
+  }
+  n.onTriggered = function () {
+    y();
+  };
+  a.onChange = s.onChange = b;
+  i.onChange = g;
+  y();
+};
+Ops.Array.SmoothArray.prototype = new CABLES.Op();
+CABLES.OPS["8fd2ed9b-02e5-4349-b7bc-6665ca240ffa"] = {
+  f: Ops.Array.SmoothArray,
+  objName: "Ops.Array.SmoothArray",
+};
+Ops.Array.Array_v3 = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const i = t.inValueInt("Array length", 10),
+    n = t.inSwitch("Mode select", ["Number", "1,2,3,4", "0-1"], "Number"),
+    r = t.inValueFloat("Default Value"),
+    a = t.inBool("Reverse", false),
+    s = t.outArray("Array"),
+    o = t.outNumber("Array length out");
+  let l = [];
+  let u = 0;
+  const c = 0;
+  const d = 1;
+  const h = 2;
+  n.onChange = p;
+  a.onChange = r.onChange = i.onChange = f;
+  p();
+  f();
+  function p() {
+    let e = n.get();
+    if (e === "Number") u = c;
+    else if (e === "1,2,3,4") u = d;
+    else if (e === "0-1") u = h;
+    r.setUiAttribs({ greyout: u !== c });
+    t.setUiAttrib({ extendTitle: n.get() });
+    f();
+  }
+  function f() {
+    l.length = 0;
+    let e = i.get();
+    let t = r.get();
+    let n;
+    if (u === c) {
+      for (n = 0; n < e; n++) {
+        l[n] = t;
+      }
+    } else if (u === d) {
+      for (n = 0; n < e; n++) {
+        l[n] = n;
+      }
+    } else if (u === h) {
+      if (e > 1) {
+        for (n = 0; n < e; n++) {
+          l[n] = n / (e - 1);
+        }
+      } else {
+        l = [0];
+      }
+    }
+    if (a.get()) l = l.reverse();
+    s.setRef(l);
+    o.set(l.length);
+  }
+};
+Ops.Array.Array_v3.prototype = new CABLES.Op();
+CABLES.OPS["e4d31a46-bf64-42a8-be34-4cbb2bbc2600"] = {
+  f: Ops.Array.Array_v3,
+  objName: "Ops.Array.Array_v3",
+};
+Ops.Array.SwitchArray = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  let t = n.inValueInt("Index");
+  let i = [];
+  let r = n.outArray("Result");
+  t.onChange = a;
+  for (let t = 0; t < 10; t++) {
+    let e = n.inArray("Array " + t);
+    i.push(e);
+    e.onChange = a;
+  }
+  function a() {
+    if (t.get() >= 0 && i[t.get()] && i[t.get()].isLinked()) {
+      r.setRef(i[t.get()].get());
+    } else r.setRef([]);
+  }
+};
+Ops.Array.SwitchArray.prototype = new CABLES.Op();
+CABLES.OPS["3fab881c-c2cf-42a0-9c42-2d8edfd93f57"] = {
+  f: Ops.Array.SwitchArray,
+  objName: "Ops.Array.SwitchArray",
+};
+Ops.User.srcphag.VideoJS = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const j = (n.attachments = {});
+  const e = n.inTrigger("Update"),
+    i = n.inUrl("file", "video"),
+    t = n.inValueBool("play"),
+    r = n.inValueBool("loop", true),
+    a = n.inValueSlider("Volume", 1),
+    s = n.inValueBool("mute", true),
+    o = n.inValueFloat("Update FPS", 30),
+    l = n.inSwitch("Filter", ["nearest", "linear"], "linear"),
+    u = n.inValueSelect(
+      "Wrap",
+      ["repeat", "mirrored repeat", "clamp to edge"],
+      "clamp to edge"
+    ),
+    c = n.inValueBool("flip", true),
+    d = n.inValueFloat("speed", 1),
+    h = n.inValueFloat("set time"),
+    p = n.inTriggerButton("Rewind"),
+    D = n.inValueBool("Preload", true),
+    R = n.inBool("Show Interaction needed Button", true),
+    B = n.outTrigger("Next"),
+    f = n.outTexture("texture", null, "texture"),
+    U = n.outNumber("duration"),
+    V = n.outNumber("progress"),
+    F = n.outBoolNum("Interaction Needed"),
+    G = n.outNumber("CurrentTime"),
+    m = n.outBoolNum("Loading"),
+    H = n.outBoolNum("Playing"),
+    g = n.outBoolNum("Can Play Through", false),
+    z = n.outNumber("Width"),
+    q = n.outNumber("Height"),
+    W = n.outNumber("Aspect Ratio"),
+    b = n.outBoolNum("Has Error"),
+    X = n.outBoolNum("Auto FPS", false),
+    v = n.outString("Error Message");
+  n.setPortGroup("Texture", [l, u, c, o]);
+  n.setPortGroup("Audio", [s, a]);
+  n.setPortGroup("Timing", [h, p, d]);
+  let y = false;
+  let _ = false;
+  let T = false;
+  let S = false;
+  let O = 0;
+  let A = 0;
+  let w = null;
+  let Y = null;
+  let K = true;
+  let C = true;
+  let x = 0;
+  const E = n.patch.cgl;
+  const I = document.createElement("video");
+  I.setAttribute("playsinline", "");
+  I.setAttribute("webkit-playsinline", "");
+  I.setAttribute("autoplay", "autoplay");
+  let k = videojs(I, {
+    controls: true,
+    autoplay: false,
+    preload: "auto",
+    muted: s.get(),
+    loop: r.get(),
+  });
+  X.set(!!I.requestVideoFrameCallback);
+  const P = CGL.Texture.getEmptyTexture(E);
+  n.toWorkPortsNeedToBeLinked(f);
+  f.setRef(CGL.Texture.getEmptyTexture(E));
+  t.onChange = N;
+  i.onChange = ne;
+  a.onChange = n.onMasterVolumeChanged = J;
+  l.onChange = u.onChange = () => {
+    if (w) w.delete();
+    w = null;
+  };
+  n.onDelete = () => {
+    if (w) w.delete();
+    I.remove();
+  };
+  e.onTriggered = () => {
+    if (performance.now() - x > 1e3 / o.get()) C = true;
+    if (C) {
+      Z();
+    }
+    H.set(!I.paused);
+    if (T && !I.paused && t.get()) {
+      T = false;
+      CABLES.interActionNeededButton.remove("videoplayer");
+    }
+    F.set(T);
+    B.trigger();
+  };
+  function Q() {
+    if (w) w.delete();
+    O = CGL.Texture.FILTER_NEAREST;
+    if (l.get() == "linear") O = CGL.Texture.FILTER_LINEAR;
+    if (u.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
+    if (u.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    if (u.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+    w = new CGL.Texture(E, { wrap: A, filter: O });
+  }
+  p.onTriggered = function () {
+    I.currentTime = 0;
+    f.setRef(P);
+    C = true;
+  };
+  h.onChange = function () {
+    I.currentTime = h.get() || 0;
+    C = true;
+  };
+  o.onChange = function () {
+    C = true;
+  };
+  function L() {
+    I.playbackRate = d.get();
+  }
+  function N() {
+    if (!_) {
+      M(true);
+    }
+    if (t.get()) {
+      I.currentTime = h.get() || 0;
+      const e = I.play();
+      if (e)
+        e.then(function () {
+          L();
+        }).catch(function (e) {
+          n.warn("exc", e);
+          n.log(e);
+          n.log(I);
+          if (I.paused && R.get()) {
+            T = true;
+            CABLES.interActionNeededButton.add(n.patch, "videoplayer", () => {
+              T = false;
+              I.play();
+              L();
+              CABLES.interActionNeededButton.remove("videoplayer");
+            });
+          }
+        });
+    } else I.pause();
+  }
+  d.onChange = function () {
+    try {
+      n.setUiError("playbackRate", null);
+      I.playbackRate = d.get();
+    } catch (e) {
+      n.setUiError(
+        "playbackRate",
+        "value for 'speed' not supported by browser",
+        1
+      );
+    }
+  };
+  r.onChange = function () {
+    I.loop = r.get();
+  };
+  s.onChange = function () {
+    I.muted = s.get();
+  };
+  function Z() {
+    const e = C;
+    x = performance.now();
+    if (!i.get()) {
+      w = null;
+      f.set(P);
+      return;
+    }
+    if (!y) return;
+    if (!w) Q();
+    if (w.width != I.videoWidth || w.height != I.videoHeight) {
+      n.log("video size", I.videoWidth, I.videoHeight);
+      w.setSize(I.videoWidth, I.videoHeight);
+    }
+    z.set(w.width);
+    q.set(w.height);
+    W.set(w.width / w.height);
+    if (!g.get()) return;
+    if (!y) return;
+    if (!I) return;
+    if (I.videoHeight <= 0) {
+      n.setUiError("videosize", "video width is 0!");
+      return;
+    }
+    if (I.videoWidth <= 0) {
+      n.setUiError("videosize", "video height is 0!");
+      return;
+    }
+    const t = I.currentTime / I.duration;
+    if (!isNaN(t)) V.set(t);
+    G.set(I.currentTime);
+    E.gl.bindTexture(E.gl.TEXTURE_2D, w.tex);
+    E.gl.pixelStorei(E.gl.UNPACK_FLIP_Y_WEBGL, c.get());
+    E.gl.texImage2D(
+      E.gl.TEXTURE_2D,
+      0,
+      E.gl.RGBA,
+      E.gl.RGBA,
+      E.gl.UNSIGNED_BYTE,
+      I
+    );
+    w._setFilter();
+    if (c.get()) E.gl.pixelStorei(E.gl.UNPACK_FLIP_Y_WEBGL, false);
+    K = false;
+    f.setRef(w);
+    C = false;
+    n.patch.cgl.profileData.profileVideosPlaying++;
+    if (I.readyState == 4) m.set(false);
+    else m.set(false);
+    if (I.requestVideoFrameCallback)
+      I.requestVideoFrameCallback(() => {
+        C = true;
+      });
+  }
+  function $() {
+    I.controls = false;
+    I.muted = s.get();
+    I.loop = r.get();
+    C = true;
+    g.set(true);
+  }
+  function J() {
+    I.volume = Math.min(
+      1,
+      Math.max(0, (a.get() || 0) * n.patch.config.masterVolume)
+    );
+  }
+  function ee() {
+    U.set(I.duration);
+    N();
+  }
+  function M(e) {
+    b.set(false);
+    v.set("");
+    g.set(false);
+    if (!i.get()) {
+      v.set(true);
+      return;
+    }
+    if (D.get() || e) {
+      clearTimeout(Y);
+      m.set(true);
+      let e = n.patch.getFilePath(i.get());
+      if (String(i.get()).indexOf("data:") === 0) e = i.get();
+      if (!e) return;
+      k.src({ src: e, type: "application/x-mpegURL" });
+      try {
+        k.playbackRate(d.get());
+      } catch (e) {
+        n.setUiError(
+          "playbackRate",
+          "value for 'speed' not supported by video.js",
+          1
+        );
+      }
+      k.loop(r.get());
+      k.muted(s.get());
+      if (!S) {
+        S = true;
+        k.on("canplaythrough", $);
+        k.on("loadedmetadata", ee);
+        k.on("playing", function () {
+          y = true;
+        });
+        k.on("error", function () {
+          b.set(true);
+          const e = k.error();
+          v.set(`Error ${e.code}/${e.message}`);
+          n.setUiError("onerror", `Could not load video / ${e.message}`, 2);
+        });
+      }
+      _ = true;
+    }
+  }
+  function te() {
+    setTimeout(M, 100);
+  }
+  function ne() {
+    if (!i.get()) return;
+    te();
+  }
+};
+Ops.User.srcphag.VideoJS.prototype = new CABLES.Op();
+CABLES.OPS["672dfc58-c9cf-477c-8c43-88db0abafb7e"] = {
+  f: Ops.User.srcphag.VideoJS,
+  objName: "Ops.User.srcphag.VideoJS",
+};
+Ops.Ui.VizTexture = function () {
+  CABLES.Op.apply(this, arguments);
+  const D = this;
+  const n = (D.attachments = {
+    viztex_frag:
+      "IN vec2 texCoord;\nUNI sampler2D tex;\nUNI samplerCube cubeMap;\nUNI float width;\nUNI float height;\nUNI float type;\nUNI float time;\nfloat LinearizeDepth(float d,float zNear,float zFar)\n{\nfloat z_n=2.*d-1.;\nreturn 2.*zNear/(zFar+zNear-z_n*(zFar-zNear));\n}\nvoid main()\n{\nvec4 col=vec4(vec3(0.),0.);\nvec4 colTex=texture(tex,texCoord);\nif(type==1.)\n{\nvec4 depth=vec4(0.);\nvec2 localST=texCoord;\nlocalST.y=1.-localST.y;\nlocalST.t=mod(localST.t*3.,1.);\nlocalST.s=mod(localST.s*4.,1.);\n#ifdef WEBGL2\n#define texCube texture\n#endif\n#ifdef WEBGL1\n#define texCube textureCube\n#endif\n\nif (texCoord.s*4.>1.&&texCoord.s*4.<2.)\n{\n\nif (texCoord.t*3.<1.)\n{\nvec3 dir=vec3(localST.s*2.-1.,-1.,-localST.t*2.+1.);\ndepth=texCube(cubeMap,dir);\n}\n\nelse if (texCoord.t*3.>2.)\n{\nvec3 dir=vec3(localST.s*2.-1.,1.,localST.t*2.-1.);\ndepth=texCube(cubeMap,dir);\n}\nelse\n{\nvec3 dir=vec3(localST.s*2.-1.,-localST.t*2.+1.,1.);\ndepth=texCube(cubeMap,dir);\n}\n}\n\nelse if (texCoord.t*3.>1.&&texCoord.t*3.<2.)\n{\nif (texCoord.x*4.<1.)\n{\nvec3 dir=vec3(-1.,-localST.t*2.+1.,localST.s*2.-1.);\ndepth=texCube(cubeMap,dir);\n}\nelse if (texCoord.x*4.<3.)\n{\nvec3 dir=vec3(1,-localST.t*2.+1.,-localST.s*2.+1.);\ndepth=texCube(cubeMap,dir);\n}\nelse \n{\nvec3 dir=vec3(-localST.s*2.+1.,-localST.t*2.+1.,-1.);\ndepth=texCube(cubeMap,dir);\n}\n}\n\ncolTex=vec4(depth);\n}\nif(type==2.)\n{\nfloat near=0.1;\nfloat far=50.;\nfloat depth=LinearizeDepth(colTex.r,near,far);\ncolTex.rgb=vec3(depth);\n}\n#ifdef ANIM_RANGE\nif(colTex.r>1.||colTex.r<0.)\ncolTex.r=mod(colTex.r,1.)*0.5+(sin(colTex.r+mod(colTex.r*3.,1.)+time*5.)*0.5+0.5)*0.5;\nif(colTex.g>1.||colTex.g<0.)\ncolTex.g=mod(colTex.g,1.)*0.5+(sin(colTex.g+mod(colTex.g*3.,1.)+time*5.)*0.5+0.5)*0.5;\nif(colTex.b>1.||colTex.b<0.)\ncolTex.b=mod(colTex.b,1.)*0.5+(sin(colTex.b+mod(colTex.b*3.,1.)+time*5.)*0.5+0.5)*0.5;\n#endif\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#ifdef MOD_RANGE\ncolTex.r=mod(colTex.r,1.0001);\ncolTex.g=mod(colTex.g,1.0001);\ncolTex.b=mod(colTex.b,1.0001);\n#endif\n#ifdef ALPHA_ONE\ncolTex.a=1.;\n#endif\n#ifdef ALPHA_INV\ncolTex.a=1.-colTex.a;\n#endif\noutColor=mix(col,colTex,colTex.a);\n}\n",
+    viztex_vert:
+      "IN vec3 vPosition;\nIN vec2 attrTexCoord;\nOUT vec2 texCoord;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nvoid main()\n{\n    texCoord=vec2(attrTexCoord.x,1.0-attrTexCoord.y);\n    vec4 pos = vec4( vPosition, 1. );\n    mat4 mvMatrix=viewMatrix * modelMatrix;\n    gl_Position = projMatrix * mvMatrix * pos;\n}",
+  });
+  const R = D.inTexture("Texture In"),
+    B = D.inBool("Show Info", false),
+    e = D.inSwitch("Visualize outside 0-1", ["Off", "Anim", "Modulo"], "Anim"),
+    t = D.inSwitch("Alpha", ["A", "1", "1-A"], "A"),
+    U = D.inBool("Show Color", false),
+    V = D.inFloatSlider("X", 0.5),
+    F = D.inFloatSlider("Y", 0.5),
+    i = D.outTexture("Texture Out"),
+    G = D.outString("Info");
+  D.setUiAttrib({ height: 150, resizable: true });
+  const H = new CABLES.Timer();
+  let r = null;
+  let z = null;
+  let q = null;
+  let W = "";
+  let a = true;
+  t.onChange = e.onChange = o;
+  U.onChange = s;
+  s();
+  if (CABLES.UI) {
+    H.play();
+  }
+  function s() {
+    V.setUiAttribs({ greyout: !U.get() });
+    F.setUiAttribs({ greyout: !U.get() });
+  }
+  R.onChange = () => {
+    const e = R.get();
+    i.setRef(e);
+    let t = "";
+    if (R.get() && R.isLinked()) t = R.links[0].getOtherPort(R).name;
+    D.setUiAttrib({ extendTitle: t });
+  };
+  function o() {
+    if (!r) return;
+    r.toggleDefine("MOD_RANGE", e.get() == "Modulo");
+    r.toggleDefine("ANIM_RANGE", e.get() == "Anim");
+    r.toggleDefine("ALPHA_INV", t.get() == "1-A");
+    r.toggleDefine("ALPHA_ONE", t.get() == "1");
+  }
+  D.renderVizLayerGl = (c, d) => {
+    if (!R.isLinked()) return;
+    if (!d.useGl) return;
+    const h = R;
+    const p = 5;
+    const f = p + 1;
+    const e = CABLES.UI.uiProfiler.start("previewlayer texture");
+    const m = h.op.patch.cgl;
+    if (!this._emptyCubemap)
+      this._emptyCubemap = CGL.Texture.getEmptyCubemapTexture(m);
+    h.op.patch.cgl.profileData.profileTexPreviews++;
+    const g = h.get() || CGL.Texture.getEmptyTexture(m);
+    if (!this._mesh) {
+      const t = new CGL.Geometry("vizTexture rect");
+      t.vertices = [1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1, 0];
+      t.texCoords = [1, 1, 0, 1, 1, 0, 0, 0];
+      t.verticesIndices = [0, 1, 2, 3, 1, 2];
+      this._mesh = new CGL.Mesh(m, t);
+    }
+    if (!this._shader) {
+      this._shader = new CGL.Shader(m, "glpreviewtex");
+      this._shader.setModules([
+        "MODULE_VERTEX_POSITION",
+        "MODULE_COLOR",
+        "MODULE_BEGIN_FRAG",
+      ]);
+      this._shader.setSource(n.viztex_vert, n.viztex_frag);
+      this._shaderTexUniform = new CGL.Uniform(this._shader, "t", "tex", p);
+      this._shaderTexCubemapUniform = new CGL.Uniform(
+        this._shader,
+        "tc",
+        "cubeMap",
+        f
+      );
+      r = this._shader;
+      o();
+      this._shaderTexUniformW = new CGL.Uniform(
+        this._shader,
+        "f",
+        "width",
+        g.width
+      );
+      this._shaderTexUniformH = new CGL.Uniform(
+        this._shader,
+        "f",
+        "height",
+        g.height
+      );
+      this._shaderTypeUniform = new CGL.Uniform(this._shader, "f", "type", 0);
+      this._shaderTimeUniform = new CGL.Uniform(this._shader, "f", "time", 0);
+    }
+    m.pushPMatrix();
+    const b = [g.width, g.height];
+    const v =
+      h.op.patch.cgl.canvasWidth > b[0] && h.op.patch.cgl.canvasHeight > b[1];
+    if (v) {
+      mat4.ortho(
+        m.pMatrix,
+        0,
+        h.op.patch.cgl.canvasWidth,
+        h.op.patch.cgl.canvasHeight,
+        0,
+        0.001,
+        11
+      );
+    } else mat4.ortho(m.pMatrix, -1, 1, 1, -1, 0.001, 11);
+    const y = m.getTexture(p);
+    const _ = m.getTexture(f);
+    let T = 0;
+    if (g) {
+      if (g.cubemap) T = 1;
+      if (g.textureType == CGL.Texture.TYPE_DEPTH) T = 2;
+      if (T == 0 || T == 2) {
+        m.setTexture(p, g.tex);
+        m.setTexture(f, this._emptyCubemap.cubemap, m.gl.TEXTURE_CUBE_MAP);
+      } else if (T == 1) {
+        m.setTexture(f, g.cubemap, m.gl.TEXTURE_CUBE_MAP);
+      }
+      H.update();
+      this._shaderTimeUniform.setValue(H.get());
+      this._shaderTypeUniform.setValue(T);
+      let t = [h.op.patch.cgl.canvasWidth, h.op.patch.cgl.canvasHeight];
+      m.gl.clearColor(0, 0, 0, 0);
+      m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
+      m.pushModelMatrix();
+      if (v) {
+        t = b;
+        mat4.translate(m.mMatrix, m.mMatrix, [b[0] / 2, b[1] / 2, 0]);
+        mat4.scale(m.mMatrix, m.mMatrix, [b[0] / 2, b[1] / 2, 0]);
+      }
+      this._mesh.render(this._shader);
+      m.popModelMatrix();
+      if (T == 0) m.setTexture(p, y);
+      if (T == 1) m.setTexture(f, _);
+      m.popPMatrix();
+      m.resetViewPort();
+      const S = [d.width, d.height];
+      const O = false;
+      if (g.width > g.height) S[1] = (d.width * b[1]) / b[0];
+      else {
+        S[1] = d.width * (b[1] / b[0]);
+        if (S[1] > d.height) {
+          const x = d.height / S[1];
+          S[0] *= x;
+          S[1] *= x;
+        }
+      }
+      const A = S[0] > b[0] && S[1] > b[1];
+      c.imageSmoothingEnabled = true;
+      c.fillStyle = "#ffffff";
+      c.fillRect(d.x, d.y - 10, 10, 10);
+      c.fillStyle = "#000000";
+      c.fillRect(d.x, d.y - 10, 5, 5);
+      c.fillRect(d.x + 5, d.y - 10 + 5, 5, 5);
+      let e = d.height;
+      let n = (10 * d.width) / e;
+      let i = e / 10;
+      let r = d.width / n;
+      for (let t = 0; t < n; t++)
+        for (let e = 0; e < 10; e++) {
+          if ((t + e) % 2 == 0) c.fillStyle = "#333333";
+          else c.fillStyle = "#393939";
+          c.fillRect(d.x + r * t, d.y + i * e, r, i);
+        }
+      c.fillStyle = "#222";
+      const w = (d.width - S[0]) / 2;
+      const C = (e - S[1]) / 2;
+      let a = d.x + (d.width - S[0]) / 2;
+      let s = d.y + (e - S[1]) / 2;
+      let o = S[0];
+      let l = S[1];
+      if (e - S[1] < 0) {
+        a = d.x + (d.width - (S[0] * e) / S[1]) / 2;
+        s = d.y;
+        o = (S[0] * e) / S[1];
+        l = e;
+      }
+      c.fillRect(d.x, d.y, a - d.x, e);
+      c.fillRect(d.x + o + a - d.x, d.y, o, e);
+      c.fillRect(d.x, d.y, d.width, C);
+      c.fillRect(d.x, d.y + S[1] + C, d.width, C);
+      if (
+        m.canvas &&
+        m.canvasWidth > 0 &&
+        m.canvasHeight > 0 &&
+        m.canvas.width > 0 &&
+        m.canvas.height > 0
+      ) {
+        try {
+          const E = o / t[0] > 3 || l / t[1] > 3;
+          const I = o / t[0] > 10 || l / t[1] > 10;
+          if (b[1] == 1) {
+            c.imageSmoothingEnabled = false;
+            c.drawImage(m.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
+            c.imageSmoothingEnabled = true;
+          } else if (b[0] == 1) {
+            c.imageSmoothingEnabled = false;
+            c.drawImage(m.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
+            c.imageSmoothingEnabled = true;
+          } else if (
+            S[0] != 0 &&
+            S[1] != 0 &&
+            d.width != 0 &&
+            e != 0 &&
+            o != 0 &&
+            l != 0
+          ) {
+            c.imageSmoothingEnabled = !E;
+            c.drawImage(m.canvas, 0, 0, t[0], t[1], a, s, o, l);
+          }
+          if (I) {
+            const k = o / t[0];
+            const P = l / t[1];
+            c.imageSmoothingEnabled = true;
+            c.lineWidth = 1;
+            c.globalAlpha = 0.5;
+            c.beginPath();
+            for (let e = 0; e <= t[0]; e++) {
+              c.moveTo(a + e * k, s);
+              c.lineTo(a + e * k, s + l);
+            }
+            for (let e = 0; e <= t[1]; e++) {
+              c.moveTo(a, s + e * P);
+              c.lineTo(a + o, s + e * P);
+            }
+            c.strokeStyle = "#555";
+            c.stroke();
+            c.globalAlpha = 1;
+          }
+        } catch (e) {
+          console.error("canvas drawimage exception...", e);
+        }
+      }
+      let u = "";
+      if (B.get()) {
+        if (h.get() && h.get().getInfoOneLine)
+          u += h.get().getInfoOneLine() + "\n";
+      }
+      if (U.get()) {
+        u += W + "\n";
+        const L = a + o * V.get();
+        const N = s + l * F.get();
+        c.fillStyle = "#000";
+        c.fillRect(L - 1, N - 10, 3, 20);
+        c.fillRect(L, N - 1, 20, 3);
+        c.fillStyle = "#fff";
+        c.fillRect(L - 1, N - 10, 1, 20);
+        c.fillRect(L - 10, N - 1, 20, 1);
+      }
+      D.setUiAttrib({ comment: u });
+      G.set(u);
+      if (U.get()) {
+        const M = m.gl;
+        const j = R.get();
+        if (!j) {
+          W = "";
+          return;
+        }
+        if (!z) z = M.createFramebuffer();
+        if (!q) q = new CGL.PixelReader();
+        M.bindFramebuffer(M.FRAMEBUFFER, z);
+        M.framebufferTexture2D(
+          M.FRAMEBUFFER,
+          M.COLOR_ATTACHMENT0,
+          M.TEXTURE_2D,
+          j.tex,
+          0
+        );
+        M.bindFramebuffer(M.FRAMEBUFFER, null);
+        q.read(
+          m,
+          z,
+          j.pixelFormat,
+          V.get() * j.width,
+          j.height - F.get() * j.height,
+          1,
+          1,
+          (e) => {
+            if (!CGL.Texture.isPixelFormatFloat(j.pixelFormat)) {
+              W = "Pixel Float: " + Math.floor((e[0] / 255) * 100) / 100;
+              if (!isNaN(e[1]))
+                W += ", " + Math.floor((e[1] / 255) * 100) / 100;
+              if (!isNaN(e[2]))
+                W += ", " + Math.floor((e[2] / 255) * 100) / 100;
+              if (!isNaN(e[3]))
+                W += ", " + Math.floor((e[3] / 255) * 100) / 100;
+              W += "\n";
+              if (j.pixelFormat.indexOf("ubyte") > 0) {
+                W += "Pixel UByte: ";
+                W += Math.round(e[0]);
+                if (!isNaN(e[1])) W += ", " + Math.round(e[1]);
+                if (!isNaN(e[2])) W += ", " + Math.round(e[2]);
+                if (!isNaN(e[3])) W += ", " + Math.round(e[3]);
+                W += "\n";
+              }
+            } else {
+              W =
+                "Pixel Float: " +
+                Math.round(e[0] * 100) / 100 +
+                ", " +
+                Math.round(e[1] * 100) / 100 +
+                ", " +
+                Math.round(e[2] * 100) / 100 +
+                ", " +
+                Math.round(e[3] * 100) / 100;
+              W += "\n";
+            }
+          }
+        );
+      }
+    }
+    m.gl.clearColor(0, 0, 0, 0);
+    m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
+    e.finish();
+  };
+};
+Ops.Ui.VizTexture.prototype = new CABLES.Op();
+CABLES.OPS["4ea2d7b0-ca74-45db-962b-4d1965ac20c0"] = {
+  f: Ops.Ui.VizTexture,
+  objName: "Ops.Ui.VizTexture",
+};
+Ops.Vars.VarSetArray_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inArray("Value", null);
+  e.varName = e.inDropDown("Variable", [], "", true);
+  new CABLES.VarSetOpWrapper(e, "array", n, e.varName);
+};
+Ops.Vars.VarSetArray_v2.prototype = new CABLES.Op();
+CABLES.OPS["8088290f-45d4-4312-b4ca-184d34ca4667"] = {
+  f: Ops.Vars.VarSetArray_v2,
+  objName: "Ops.Vars.VarSetArray_v2",
+};
+Ops.Color.HexToRGB_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const r = e.inString("Hex", "#ff0000"),
+    a = e.inValueBool("Bytes"),
+    s = e.outNumber("R"),
+    o = e.outNumber("G"),
+    l = e.outNumber("B");
+  function u(e) {
+    return parseInt(n(e).substring(0, 2), 16) || 0;
+  }
+  function c(e) {
+    return parseInt(n(e).substring(2, 4), 16) || 0;
+  }
+  function d(e) {
+    return parseInt(n(e).substring(4, 6), 16) || 0;
+  }
+  function n(e = "") {
+    return e.charAt(0) == "#" ? e.substring(1, 7) : e;
+  }
+  r.onChange = i;
+  a.onChange = i;
+  function i() {
+    let e = r.get() || "";
+    let t = u(e);
+    let n = c(e);
+    let i = d(e);
+    if (!a.get()) {
+      t /= 255;
+      n /= 255;
+      i /= 255;
+    }
+    s.set(t);
+    l.set(i);
+    o.set(n);
+  }
+};
+Ops.Color.HexToRGB_v2.prototype = new CABLES.Op();
+CABLES.OPS["9877f198-8dac-48e5-9310-244ef1a8dec5"] = {
+  f: Ops.Color.HexToRGB_v2,
+  objName: "Ops.Color.HexToRGB_v2",
+};
+Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {
+    maptexture_frag:
+      "IN vec2 MOD_tc;\n#ifdef MOD_MAP_TRIPLANAR\nIN vec2 MOD_tc1;\nIN vec2 MOD_tc2;\nIN vec3 MOD_blendingTri;\n#endif\n{{CGL.BLENDMODES3}}",
+    maptexture_vert:
+      "vec3 MOD_pos;\n\n#ifndef MOD_WORLDSPACE\n   MOD_pos=(vec4(vPosition,1.0)*1.0/MOD_scale).xyz;\n#endif\n#ifdef MOD_WORLDSPACE\n   MOD_pos=(mMatrix*pos).xyz*1.0/MOD_scale;\n#endif\n\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationX(MOD_rotX*MOD_DEG2RAD)).xyz;\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationY(MOD_rotY*MOD_DEG2RAD)).xyz;\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationZ(MOD_rotZ*MOD_DEG2RAD)).xyz;\n\n#ifdef MOD_MAP_XY\n    MOD_tc=MOD_pos.xy;\n#endif\n#ifdef MOD_MAP_XZ\n    MOD_tc=MOD_pos.xz;\n#endif\n#ifdef MOD_MAP_YZ\n    MOD_tc=MOD_pos.yz;\n#endif\n\nMOD_tc.xy+=vec2(0.5,0.5);\nMOD_tc.xy+=MOD_offset;\n\n\n#ifdef MOD_TARGET_POINTSIZE\n\n    gl_PointSize+=(texture(MOD_tex,MOD_tc).x*MOD_amount);\n\n#endif\n\n\n#ifdef MOD_MAP_TRIPLANAR\n    mapTriplanar((mMatrix*vec4(attrVertNormal,1.0)).xyz,MOD_pos);\n#endif\n\n",
+    maptexture_body_frag:
+      "#ifndef MOD_TARGET_POINTSIZE\nvec4 MOD_color;\n#ifdef MOD_MAP_TRIPLANAR\nvec4 xaxis=texture(MOD_tex,MOD_tc);\nvec4 yaxis=texture(MOD_tex,MOD_tc1);\nvec4 zaxis=texture(MOD_tex,MOD_tc2);\nMOD_color=xaxis*MOD_blendingTri.x+yaxis*MOD_blendingTri.y+zaxis*MOD_blendingTri.z;\nMOD_color.a=1.;\n#endif\nvec2 MOD_ntc=MOD_tc;\n#ifdef MOD_MAP_SCREEN\nMOD_ntc=(vec2(gl_FragCoord.x,gl_FragCoord.y)/vec2(MOD_viewPortW,MOD_viewPortH));\nMOD_ntc-=vec2(0.5,0.5);\nMOD_ntc*=1./MOD_scale;\nMOD_ntc+=vec2(0.5,0.5);\nMOD_ntc-=MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD\nMOD_ntc=texCoord*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD1\nMOD_ntc=texCoord1*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD2\nMOD_ntc=texCoord2*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_DISCARD\nif(MOD_ntc.x>0.&&MOD_ntc.x<1.&&MOD_ntc.y>0.&&MOD_ntc.y<1.)\n{\n#endif\n#ifndef MOD_MAP_TRIPLANAR\nMOD_color=texture(MOD_tex,MOD_ntc);\n#endif\n#ifdef MOD_USE_IMGALPHA\ncol.a=MOD_color.a;\n#endif\n#ifdef MOD_TARGET_COLOR\ncol=cgl_blendPixel(col,MOD_color,MOD_amount*col.a);\n#endif\n#ifdef MOD_TARGET_ALPHA\ncol.a=1.-MOD_color.r*MOD_amount;\n#endif\n#ifdef MOD_DISCARD\n}\n#endif\n#endif\n",
+    maptexture_body_vert:
+      "OUT vec2 MOD_tc;\n\nconst float MOD_DEG2RAD = 0.017453292519943;\n\n#ifdef MOD_MAP_TRIPLANAR\n\n    OUT vec2 MOD_tc1;\n    OUT vec2 MOD_tc2;\n    OUT vec3 MOD_blendingTri;\n\n    void mapTriplanar(vec3 wNorm,vec3 pos)\n    {\n        vec3 blending = abs( wNorm );\n        blending = normalize(max(blending, 0.1));\n        float b = (blending.x + blending.y + blending.z);\n        blending /= vec3(b);\n        MOD_blendingTri=blending;\n\n        MOD_tc = pos.yz;\n        MOD_tc1 = pos.xz;\n        MOD_tc2 = pos.xy;\n    }\n\n#endif\n\nmat4 MOD_rotationX( in float angle ) {\n\treturn mat4(\t1.0,\t\t0,\t\t\t0,\t\t\t0,\n\t\t\t \t\t0, \tcos(angle),\t-sin(angle),\t\t0,\n\t\t\t\t\t0, \tsin(angle),\t cos(angle),\t\t0,\n\t\t\t\t\t0, \t\t\t0,\t\t\t  0, \t\t1);\n}\n\nmat4 MOD_rotationY( in float angle ) {\n\treturn mat4(\tcos(angle),\t\t0,\t\tsin(angle),\t0,\n\t\t\t \t\t\t\t0,\t\t1.0,\t\t\t 0,\t0,\n\t\t\t\t\t-sin(angle),\t0,\t\tcos(angle),\t0,\n\t\t\t\t\t\t\t0, \t\t0,\t\t\t\t0,\t1);\n}\n\nmat4 MOD_rotationZ( in float angle ) {\n\treturn mat4(\tcos(angle),\t\t-sin(angle),\t0,\t0,\n\t\t\t \t\tsin(angle),\t\tcos(angle),\t\t0,\t0,\n\t\t\t\t\t\t\t0,\t\t\t\t0,\t\t1,\t0,\n\t\t\t\t\t\t\t0,\t\t\t\t0,\t\t0,\t1);\n}\n",
+  });
+  const n = e.inTrigger("render"),
+    i = e.outTrigger("trigger"),
+    r = e.inTexture("Texture"),
+    a = CGL.TextureEffect.AddBlendSelect(e, "blendMode"),
+    s = e.inValueSlider("Amount", 0.3),
+    o = e.inSwitch("Target", ["Color", "Pointsize", "Alpha"], "Color"),
+    l = e.inValue("Scale", 10),
+    u = e.inBool("Use Texture Alpha", false),
+    c = e.inFloat("Pos X", 0),
+    d = e.inFloat("Pos Y", 0),
+    h = e.inFloat("Rot X", 0),
+    p = e.inFloat("Rot Y", 0),
+    f = e.inFloat("Rot Z", 0),
+    m = e.inValueSelect(
+      "Mapping",
+      [
+        "Triplanar",
+        "XY",
+        "XZ",
+        "YZ",
+        "Screen",
+        "TexCoords 1",
+        "TexCoords 2",
+        "TexCoords 3",
+      ],
+      "XY"
+    ),
+    g = e.inValueBool("Discard"),
+    b = e.inValueBool("WorldSpace");
+  const v = e.patch.cgl;
+  n.onLinkChanged =
+    u.onChange =
+    o.onChange =
+    a.onChange =
+    g.onChange =
+    b.onChange =
+    r.onLinkChanged =
+    m.onChange =
+      O;
+  e.toWorkPortsNeedToBeLinked(r, i);
+  e.setPortGroup("Rotation", [h, p, f]);
+  e.setPortGroup("Position", [c, d]);
+  const y = new CGL.ShaderModifier(v, e.name, { opId: e.id });
+  y.addModule({
+    title: e.name,
+    name: "MODULE_VERTEX_POSITION",
+    srcHeadVert: t.maptexture_body_vert,
+    srcBodyVert: t.maptexture_vert,
+    attributes: [
+      { type: "vec2", name: "attrTexCoord1", nameFrag: "texCoord1" },
+      { type: "vec2", name: "attrTexCoord2", nameFrag: "texCoord2" },
+    ],
+  });
+  let _ = t.maptexture_frag;
+  y.addModule({
+    title: e.name,
+    name: "MODULE_COLOR",
+    srcHeadFrag: _,
+    srcBodyFrag: t.maptexture_body_frag,
+  });
+  y.addUniformBoth("f", "MOD_rotX", h);
+  y.addUniformBoth("f", "MOD_rotY", p);
+  y.addUniformBoth("f", "MOD_rotZ", f);
+  y.addUniformBoth("t", "MOD_tex");
+  y.addUniformBoth("f", "MOD_scale", l);
+  y.addUniformBoth("f", "MOD_amount", s);
+  y.addUniformBoth("2f", "MOD_offset", c, d);
+  const T = y.addUniformFrag("f", "MOD_viewPortW");
+  const S = y.addUniformFrag("f", "MOD_viewPortH");
+  CGL.TextureEffect.setupBlending(e, y, a, s);
+  O();
+  function O() {
+    y.toggleDefine("MOD_USE_IMGALPHA", u.get());
+    y.toggleDefine("MOD_WORLDSPACE", b.get());
+    y.toggleDefine("MOD_MAP_XY", m.get() == "XY");
+    y.toggleDefine("MOD_MAP_XZ", m.get() == "XZ");
+    y.toggleDefine("MOD_MAP_YZ", m.get() == "YZ");
+    y.toggleDefine("MOD_MAP_TEXCOORD", m.get() == "TexCoords 1");
+    y.toggleDefine("MOD_MAP_TEXCOORD1", m.get() == "TexCoords 2");
+    y.toggleDefine("MOD_MAP_TEXCOORD2", m.get() == "TexCoords 3");
+    y.toggleDefine("MOD_MAP_SCREEN", m.get() == "Screen");
+    y.toggleDefine("MOD_MAP_TRIPLANAR", m.get() == "Triplanar");
+    y.toggleDefine("MOD_DISCARD", g.get());
+    y.toggleDefine("MOD_BLEND_NORMAL", a.get() == "Normal");
+    y.toggleDefine("MOD_BLEND_ADD", a.get() == "Add");
+    y.toggleDefine("MOD_BLEND_MUL", a.get() == "Mul");
+    y.toggleDefine("MOD_BLEND_MUL", a.get() == "Mul");
+    y.toggleDefine("MOD_TARGET_ALPHA", o.get() == "Alpha");
+    y.toggleDefine("MOD_TARGET_COLOR", o.get() == "Color");
+    y.toggleDefine("MOD_TARGET_POINTSIZE", o.get() == "Pointsize");
+    if (o.get() == "Pointsize" && m.get() == "Screen")
+      e.setUiError(
+        "pointscreen",
+        "This combination of Mapping and Target is not possible",
+        1
+      );
+    else e.setUiError("pointscreen", null);
+    CGL.TextureEffect.setupBlending(e, y, a, s);
+  }
+  n.onTriggered = function () {
+    const e = v.getViewPort();
+    y.bind();
+    y.setUniformValue("MOD_viewPortW", e[2]);
+    y.setUniformValue("MOD_viewPortH", e[3]);
+    let t = r.get();
+    if (!t) t = CGL.Texture.getEmptyTexture(v).tex;
+    else t = t.tex;
+    y.pushTexture("MOD_tex", t);
+    i.trigger();
+    y.unbind();
+  };
+};
+Ops.Gl.ShaderEffects.TextureProjection_v2.prototype = new CABLES.Op();
+CABLES.OPS["9be647c2-7afd-40ed-b669-9826ea6a50ca"] = {
+  f: Ops.Gl.ShaderEffects.TextureProjection_v2,
+  objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
+};
+Ops.Vars.VarGetTexture_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.outTexture("Value");
+  e.varName = e.inValueSelect("Variable", [], "", true);
+  new CABLES.VarGetOpWrapper(e, "object", e.varName, n);
+};
+Ops.Vars.VarGetTexture_v2.prototype = new CABLES.Op();
+CABLES.OPS["5f8ce5fc-9787-45c9-9a83-0eebd2c6de15"] = {
+  f: Ops.Vars.VarGetTexture_v2,
+  objName: "Ops.Vars.VarGetTexture_v2",
+};
+Ops.Vars.VarGetArray_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.outArray("Value");
+  e.varName = e.inValueSelect("Variable", [], "", true);
+  new CABLES.VarGetOpWrapper(e, "array", e.varName, n);
+};
+Ops.Vars.VarGetArray_v2.prototype = new CABLES.Op();
+CABLES.OPS["afa79294-aa9c-43bc-a49a-cade000a1de5"] = {
+  f: Ops.Vars.VarGetArray_v2,
+  objName: "Ops.Vars.VarGetArray_v2",
 };
 Ops.Gl.GLTF.GltfScene_v4 = function () {
   CABLES.Op.apply(this, arguments);
@@ -33648,24 +36049,24 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
     start(e) {
-      if (m.frameStore.shadowPass) return;
+      if (f.frameStore.shadowPass) return;
       this.updateAnim(e);
-      const t = m.getViewPort()[2] / m.getViewPort()[3];
-      m.pushPMatrix();
-      m.pushViewMatrix();
+      const t = f.getViewPort()[2] / f.getViewPort()[3];
+      f.pushPMatrix();
+      f.pushViewMatrix();
       let n = mat4.create();
       mat4.invert(n, this.node.modelMatAbs());
       this.vMat = n;
-      mat4.identity(m.vMatrix);
-      mat4.mul(m.vMatrix, m.vMatrix, n);
+      mat4.identity(f.vMatrix);
+      mat4.mul(f.vMatrix, f.vMatrix, n);
     }
     end() {
-      if (m.frameStore.shadowPass) return;
-      m.popPMatrix();
-      m.popViewMatrix();
+      if (f.frameStore.shadowPass) return;
+      f.popPMatrix();
+      f.popViewMatrix();
     }
   };
-  const O = true;
+  const S = true;
   const R = class {
     constructor() {
       this.json = {};
@@ -33691,7 +36092,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   };
-  function S(e) {
+  function O(e) {
     if (window.TextDecoder) return new TextDecoder("utf-8").decode(e);
     let t, n, i, r;
     let a, s;
@@ -33732,12 +36133,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (i >= e.byteLength) {
       return;
     }
-    r.size = e.getUint32(i + 0, O);
-    r.type = S(t.subarray(i + 4, i + 4 + 4));
+    r.size = e.getUint32(i + 0, S);
+    r.type = O(t.subarray(i + 4, i + 4 + 4));
     if (r.type == "BIN\0") {
       r.dataView = new DataView(n, i + 8, r.size);
     } else if (r.type == "JSON") {
-      const a = S(t.subarray(i + 8, i + 8 + r.size));
+      const a = O(t.subarray(i + 8, i + 8 + r.size));
       try {
         const s = JSON.parse(a);
         r.data = s;
@@ -33791,9 +36192,9 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
             for (let e = 0; e < n; e++) {
               if (d[e].defaultEasing === CABLES.EASING_CUBICSPLINE) {
                 const p = t * n * 3 + e;
-                const m = d[e].setValue(l[t], c[p + n]);
-                m.bezTangIn = c[p];
-                m.bezTangOut = c[p + n * 2];
+                const f = d[e].setValue(l[t], c[p + n]);
+                f.bezTangIn = c[p];
+                f.bezTangOut = c[p + n * 2];
               } else {
                 d[e].setValue(l[t], c[t * n + e]);
               }
@@ -33828,7 +36229,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         V();
       }, 100);
     }
-    j();
+    M();
   }
   function F(e) {
     const t = 8;
@@ -33842,14 +36243,14 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!e) return;
     const i = new Uint8Array(e);
     let s = 0;
-    const o = S(i.subarray(s, 4));
+    const o = O(i.subarray(s, 4));
     s += 4;
     if (o != "glTF") return;
     a.timing.push(["dataview", Math.round(performance.now() - a.startTime)]);
     const l = new DataView(e);
-    const u = l.getUint32(s, O);
+    const u = l.getUint32(s, S);
     s += 4;
-    const c = l.getUint32(s, O);
+    const c = l.getUint32(s, S);
     s += 4;
     oe.set(u);
     const d = [];
@@ -33868,7 +36269,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
     a.chunks = d;
     const p = d[0].data.bufferViews;
-    const m = d[0].data.accessors;
+    const f = d[0].data.accessors;
     a.timing.push([
       "Parse buffers",
       Math.round(performance.now() - a.startTime),
@@ -33890,54 +36291,54 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
     T.setUiError("gltfdraco", null);
     if (p) {
-      for (n = 0; n < m.length; n++) {
-        const f = m[n];
-        const g = p[f.bufferView];
+      for (n = 0; n < f.length; n++) {
+        const m = f[n];
+        const g = p[m.bufferView];
         let i = 0;
-        if (f.type == "SCALAR") i = 1;
-        else if (f.type == "VEC2") i = 2;
-        else if (f.type == "VEC3") i = 3;
-        else if (f.type == "VEC4") i = 4;
-        else if (f.type == "MAT4") i = 16;
-        else console.error("unknown accessor type", f.type);
+        if (m.type == "SCALAR") i = 1;
+        else if (m.type == "VEC2") i = 2;
+        else if (m.type == "VEC3") i = 3;
+        else if (m.type == "VEC4") i = 4;
+        else if (m.type == "MAT4") i = 16;
+        else console.error("unknown accessor type", m.type);
         if (d[1].dataView) {
           if (g) {
-            const b = f.count * i;
-            let e = (g.byteOffset || 0) + (f.byteOffset || 0);
+            const b = m.count * i;
+            let e = (g.byteOffset || 0) + (m.byteOffset || 0);
             let t = g.byteStride || 0;
             let n = null;
-            if (f.componentType == 5126 || f.componentType == 5125) {
+            if (m.componentType == 5126 || m.componentType == 5125) {
               t = t || 4;
-              const v = f.componentType == 5125;
+              const v = m.componentType == 5125;
               if (v) n = new Uint32Array(b);
               else n = new Float32Array(b);
               n.cblStride = i;
               for (r = 0; r < b; r++) {
-                if (v) n[r] = d[1].dataView.getUint32(e, O);
-                else n[r] = d[1].dataView.getFloat32(e, O);
+                if (v) n[r] = d[1].dataView.getUint32(e, S);
+                else n[r] = d[1].dataView.getFloat32(e, S);
                 if (t != 4 && (r + 1) % i === 0) e += t - i * 4;
                 e += 4;
               }
-            } else if (f.componentType == 5123) {
+            } else if (m.componentType == 5123) {
               t = t || 2;
               n = new Uint16Array(b);
               n.cblStride = t;
               for (r = 0; r < b; r++) {
-                n[r] = d[1].dataView.getUint16(e, O);
+                n[r] = d[1].dataView.getUint16(e, S);
                 if (t != 2 && (r + 1) % i === 0) e += t - i * 2;
                 e += 2;
               }
-            } else if (f.componentType == 5121) {
+            } else if (m.componentType == 5121) {
               t = t || 1;
               n = new Uint8Array(b);
               n.cblStride = t;
               for (r = 0; r < b; r++) {
-                n[r] = d[1].dataView.getUint8(e, O);
+                n[r] = d[1].dataView.getUint8(e, S);
                 if (t != 1 && (r + 1) % i === 0) e += t - i * 1;
                 e += 1;
               }
             } else {
-              console.error("unknown component type", f.componentType);
+              console.error("unknown component type", m.componentType);
             }
             a.accBuffers.push(n);
           } else {
@@ -33952,7 +36353,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     a.json.meshes = a.json.meshes || [];
     if (a.json.meshes) {
       for (n = 0; n < a.json.meshes.length; n++) {
-        const y = new q(a, a.json.meshes[n]);
+        const y = new H(a, a.json.meshes[n]);
         a.meshes.push(y);
       }
     }
@@ -33977,7 +36378,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     for (n = 0; n < a.nodes.length; n++) {
       a.nodes[n].initSkin();
     }
-    E = true;
+    I = true;
     a.timing.push(["load anims", Math.round(performance.now() - a.startTime)]);
     if (a.json.animations) B(a);
     a.timing.push([
@@ -34065,7 +36466,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         const o = new Int8Array(r);
         let t = i.byteOffset || 0;
         for (let e = 0; e < r; e++) {
-          o[e] = a.chunks[1].dataView.getInt8(t, O);
+          o[e] = a.chunks[1].dataView.getInt8(t, S);
           t++;
         }
         const l = window.DracoDecoder;
@@ -34354,7 +36755,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   };
-  const q = class {
+  const H = class {
     constructor(t, n) {
       this.bounds = new CABLES.CG.BoundingBox();
       this.meshes = [];
@@ -34535,7 +36936,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       return this.absMat;
     }
     transform(e, n) {
-      if (!n && n != 0) n = I;
+      if (!n && n != 0) n = E;
       this._lastTimeTrans = n;
       ve++;
       if (!this._animTrans && !this._animRot && !this._animScale) {
@@ -34641,7 +37042,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
     return n.join(",");
   }
-  function H(n, i, r) {
+  function q(n, i, r) {
     if (!x) return;
     n += '<tr class="row">';
     let a = "";
@@ -34758,11 +37159,11 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n += "</tr>";
     if (i.children) {
       for (let e = 0; e < i.children.length; e++)
-        n = H(n, x.nodes[i.children[e]], r + 1);
+        n = q(n, x.nodes[i.children[e]], r + 1);
     }
     return n;
   }
-  function X(t, e) {
+  function W(t, e) {
     let n = "<tr>";
     n += " <td>" + e + "</td>";
     n += " <td>" + t.name + "</td>";
@@ -34828,7 +37229,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     s += " <th></th>";
     s += "</tr>";
     for (let e = 0; e < x.nodes.length; e++) {
-      if (!x.nodes[e].isChild) s = H(s, x.nodes[e], 1);
+      if (!x.nodes[e].isChild) s = q(s, x.nodes[e], 1);
     }
     s += "</table>";
     let n = 0;
@@ -34845,7 +37246,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       s += " <th></th>";
       s += "</tr>";
       for (let e = 0; e < x.json.materials.length; e++) {
-        s += X(x.json.materials[e], e);
+        s += W(x.json.materials[e], e);
       }
       s += "</table>";
     }
@@ -34927,9 +37328,9 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       s += "</td>";
       s += "</tr>";
       for (let n = 0; n < x.json.meshes[r].primitives.length; n++) {
-        const m = x.json.accessors[x.json.meshes[r].primitives[n].indices];
-        if (m) {
-          let e = m.bufferView;
+        const f = x.json.accessors[x.json.meshes[r].primitives[n].indices];
+        if (f) {
+          let e = f.bufferView;
           if (o.indexOf(e) == -1) {
             o.push(e);
             if (x.json.bufferViews[e])
@@ -34937,8 +37338,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
           }
         }
         for (let e in x.json.meshes[r].primitives[n].attributes) {
-          const f = x.json.meshes[r].primitives[n].attributes[e];
-          const g = x.json.accessors[f].bufferView;
+          const m = x.json.meshes[r].primitives[n].attributes[e];
+          const g = x.json.accessors[m].bufferView;
           if (o.indexOf(g) == -1) {
             o.push(g);
             if (x.json.bufferViews[g])
@@ -34953,9 +37354,9 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
           ) {
             for (let e in x.json.meshes[r].primitives[n].targets[t]) {
               const b = x.json.meshes[r].primitives[n].targets[t][e];
-              const m = x.json.accessors[b];
-              const g = m.bufferView;
-              console.log("accessor", m);
+              const f = x.json.accessors[b];
+              const g = f.bufferView;
+              console.log("accessor", f);
               if (o.indexOf(g) == -1)
                 if (x.json.bufferViews[g]) {
                   o.push(g);
@@ -35150,7 +37551,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     for (let e in a) {
       s += "<tr>";
       s += "<td>" + e + "</td>";
-      s += "<td>" + W(a[e]) + " </td>";
+      s += "<td>" + X(a[e]) + " </td>";
       s += "<td>" + Math.round((a[e] / h) * 100) + "% </td>";
       s += "<tr>";
       p -= a[e];
@@ -35158,7 +37559,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (p != 0) {
       s += "<tr>";
       s += "<td>unknown</td>";
-      s += "<td>" + W(p) + " </td>";
+      s += "<td>" + X(p) + " </td>";
       s += "<td>" + Math.round((p / h) * 100) + "% </td>";
       s += "<tr>";
     }
@@ -35220,7 +37621,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     );
     gui.maintabPanel.show(true);
   }
-  function W(e) {
+  function X(e) {
     if (e > 1024) return Math.round(e / 1024) + " kb";
     if (e > 1024 * 500) return Math.round(e / 1024) + " mb";
     else return e + " bytes";
@@ -35383,7 +37784,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
           a++;
         }
       }
-      this.tex = new CGL.Texture(m, {
+      this.tex = new CGL.Texture(f, {
         isFloatingPointTexture: true,
         name: "targetsTexture",
       });
@@ -35401,8 +37802,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     C = T.inUrl("glb File", [".glb"]),
     Z = T.inBool("Draw", true),
     n = T.inDropDown("Camera", ["None"], "None"),
-    J = T.inString("Animation", ""),
-    $ = T.inTriggerButton("Show Structure"),
+    $ = T.inString("Animation", ""),
+    J = T.inTriggerButton("Show Structure"),
     i = T.inSwitch("Center", ["None", "XYZ", "XZ"], "XYZ"),
     r = T.inBool("Rescale", true),
     a = T.inFloat("Rescale Size", 2.5),
@@ -35426,12 +37827,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     de = T.outObject("Json"),
     he = T.outArray("Anims"),
     pe = T.outArray("BoundingPoints"),
-    me = T.outObject("Bounds"),
-    fe = T.outTrigger("Finished"),
+    fe = T.outObject("Bounds"),
+    me = T.outTrigger("Finished"),
     ge = T.outBool("Loading");
   T.setPortGroup("Timing", [s, u, ee]);
-  let m = T.patch.cg || T.patch.cgl;
-  let f = null;
+  let f = T.patch.cg || T.patch.cgl;
+  let m = null;
   let be = false;
   let ve = 0;
   let g = false;
@@ -35439,25 +37840,25 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   let v = [];
   let x = null;
   let y = 0;
-  let I = 0;
-  let E = true;
+  let E = 0;
+  let I = true;
   let ye = null;
   let k = null;
   let P = null;
   const _e = vec3.create();
   let Te = 0;
-  let Oe = false;
+  let Se = false;
   const L = vec3.create();
-  C.onChange = ne.onChange = c.onChange = te.onChange = j;
-  $.onTriggered = e;
+  C.onChange = ne.onChange = c.onChange = te.onChange = M;
+  J.onTriggered = e;
   t.onChange = ke;
-  ie.onChange = Ee;
-  J.onChange = Le;
+  ie.onChange = Ie;
+  $.onChange = Le;
   i.onChange = Ae;
   T.toWorkPortsNeedToBeLinked(Q);
   t.setUiAttribs({ hideParam: true, hidePort: true });
   T.setPortGroup("Transform", [r, a, i]);
-  function Se() {
+  function Oe() {
     const t = ["None"];
     if (x) {
       for (let e = 0; e < x.nodes.length; e++) {
@@ -35469,7 +37870,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n.uiAttribs.values = t;
   }
   function Ae() {
-    Oe = i.get() != "None";
+    Se = i.get() != "None";
     if (x && x.bounds) {
       L.set(x.bounds.center);
       L[0] = -L[0];
@@ -35482,7 +37883,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     a.setUiAttribs({ greyout: !r.get() });
   };
   d.onChange = function () {
-    E = true;
+    I = true;
   };
   T.onDelete = function () {
     w();
@@ -35499,70 +37900,70 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
   }
   Q.onTriggered = function () {
-    m = T.patch.cg || T.patch.cgl;
+    f = T.patch.cg || T.patch.cgl;
     if (!g) return;
     if (!h.get()) return;
     if (be) {
-      if (!f) f = CGL.MESHES.getSimpleCube(m, "ErrorCube");
-      f.render(m.getShader());
+      if (!m) m = CGL.MESHES.getSimpleCube(f, "ErrorCube");
+      m.render(f.getShader());
     }
     ve = 0;
-    if (u.get()) I = T.patch.timer.getTime();
-    else I = Math.max(0, s.get());
+    if (u.get()) E = T.patch.timer.getTime();
+    else E = Math.max(0, s.get());
     if (ee.get()) {
-      I %= y;
-      if (I < Te) fe.trigger();
+      E %= y;
+      if (E < Te) me.trigger();
     } else {
-      if (y > 0 && I >= y) fe.trigger();
+      if (y > 0 && E >= y) me.trigger();
     }
-    Te = I;
-    m.pushModelMatrix();
-    ce.set(I || 0);
+    Te = E;
+    f.pushModelMatrix();
+    ce.set(E || 0);
     if (g && x && x.bounds) {
       if (r.get()) {
         let e = a.get() / x.bounds.maxAxis;
         x.scale = e;
         vec3.set(_e, e, e, e);
-        mat4.scale(m.mMatrix, m.mMatrix, _e);
+        mat4.scale(f.mMatrix, f.mMatrix, _e);
       }
-      if (Oe) {
-        mat4.translate(m.mMatrix, m.mMatrix, L);
+      if (Se) {
+        mat4.translate(f.mMatrix, f.mMatrix, L);
       }
     }
-    let e = m.frameStore.currentScene || null;
-    m.frameStore.currentScene = x;
+    let e = f.frameStore.currentScene || null;
+    f.frameStore.currentScene = x;
     ae.trigger();
     if (g) {
-      if (E) xe();
-      if (b) b.start(I);
+      if (I) xe();
+      if (b) b.start(E);
       if (x) {
-        x.time = I;
-        if (x.bounds && m.shouldDrawHelpers(T)) {
+        x.time = E;
+        if (x.bounds && f.shouldDrawHelpers(T)) {
           if (T.isCurrentUiOp())
-            m.pushShader(CABLES.GL_MARKER.getSelectedShader(m));
-          else m.pushShader(CABLES.GL_MARKER.getDefaultShader(m));
-          x.bounds.render(m, null, T);
-          m.popShader();
+            f.pushShader(CABLES.GL_MARKER.getSelectedShader(f));
+          else f.pushShader(CABLES.GL_MARKER.getDefaultShader(f));
+          x.bounds.render(f, null, T);
+          f.popShader();
         }
         if (Z.get()) {
           for (let e = 0; e < x.nodes.length; e++)
-            if (!x.nodes[e].isChild) x.nodes[e].render(m);
+            if (!x.nodes[e].isChild) x.nodes[e].render(f);
         } else {
           for (let e = 0; e < x.nodes.length; e++)
-            if (!x.nodes[e].isChild) x.nodes[e].render(m, false, true);
+            if (!x.nodes[e].isChild) x.nodes[e].render(f, false, true);
         }
       }
     }
     p.trigger();
-    m.frameStore.currentScene = e;
-    m.popModelMatrix();
+    f.frameStore.currentScene = e;
+    f.popModelMatrix();
     if (b) b.end();
   };
   function N() {
     if (!x) {
       g = true;
       be = true;
-      m.patch.loading.finished(k);
+      f.patch.loading.finished(k);
       T.setUiError("nogltf", "GLTF File not found");
       return;
     }
@@ -35575,7 +37976,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       "finishLoading()",
       Math.round(performance.now() - x.startTime),
     ]);
-    E = true;
+    I = true;
     ue.set(y);
     x.bounds = new CABLES.CG.BoundingBox();
     x.timing.push([
@@ -35587,19 +37988,19 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       t.updateMatrix();
       if (!t.isChild) t.calcBounds(x, null, x.bounds);
     }
-    if (x.bounds) me.set(x.bounds);
+    if (x.bounds) fe.set(x.bounds);
     x.timing.push([
       "calced bounds",
       Math.round(performance.now() - x.startTime),
     ]);
-    Ee();
+    Ie();
     x.timing.push([
       "hideNodesFromData",
       Math.round(performance.now() - x.startTime),
     ]);
     if (_) e();
     x.timing.push(["printinfo", Math.round(performance.now() - x.startTime)]);
-    Se();
+    Oe();
     we();
     pe.set(v);
     if (x) {
@@ -35611,18 +38012,18 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (x) {
       for (let e = 0; e < x.nodes.length; e++) {
         if (!x.nodes[e].isChild) {
-          x.nodes[e].render(m, false, true, true, false, true, 0);
+          x.nodes[e].render(f, false, true, true, false, true, 0);
         }
       }
       for (let e = 0; e < x.nodes.length; e++) {
         const t = x.nodes[e];
-        t.children = je(t.children);
+        t.children = Me(t.children);
       }
     }
     Ae();
     Le();
     ge.set(false);
-    m.patch.loading.finished(k);
+    f.patch.loading.finished(k);
     k = null;
     if (x.accBuffersDelete) {
       for (let e = 0; e < x.accBuffersDelete.length; e++) {
@@ -35634,7 +38035,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   }
   function Ce(e) {
     if (!h.get()) return;
-    if (!k) k = m.patch.loading.start("gltfScene", C.get(), T);
+    if (!k) k = f.patch.loading.start("gltfScene", C.get(), T);
     let t = C.get();
     if (!t || t == "null") return;
     let n = T.patch.getFilePath(String(C.get()));
@@ -35642,7 +38043,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (C.get() && !C.get().startsWith("data:")) {
       if (e === true) n += "?rnd=" + CABLES.generateUUID();
     }
-    E = true;
+    I = true;
     ge.set(true);
     fetch(n)
       .then((e) => {
@@ -35650,7 +38051,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       })
       .then((e) => {
         if (C.get() != t) {
-          m.patch.loading.finished(k);
+          f.patch.loading.finished(k);
           k = null;
           return;
         }
@@ -35661,7 +38062,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         N();
       })
       .catch((e) => {
-        if (k) m.patch.loading.finished(k);
+        if (k) f.patch.loading.finished(k);
         k = null;
         N();
         T.logError("gltf fetch error", e);
@@ -35670,20 +38071,20 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const i = new XMLHttpRequest();
     i.open("GET", n, true);
     i.responseType = "arraybuffer";
-    m.patch.loading.addAssetLoadingTask(() => {});
+    f.patch.loading.addAssetLoadingTask(() => {});
   }
   T.onFileChanged = function (e) {
     if (C.get() && C.get().indexOf(e) > -1) {
-      j(true);
+      M(true);
     }
   };
   h.onChange = () => {
-    if (h.get()) j();
+    if (h.get()) M();
     if (!h.get()) {
       x = null;
     }
   };
-  function j(e) {
+  function M(e) {
     clearTimeout(ye);
     ye = setTimeout(function () {
       Ce(e);
@@ -35693,7 +38094,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!x) return;
     x.shaders = {};
     if (d.links.length == 1 && d.get()) {
-      E = true;
+      I = true;
       const n = d.links[0].portOut.op;
       const i = n.getPort("Shader");
       const r = n.getPort("Material Name");
@@ -35730,10 +38131,10 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         }
       }
     }
-    E = false;
+    I = false;
     if (_) e();
   }
-  function Ie() {
+  function Ee() {
     const t = ie.get();
     if (!x || !P || !P.hiddenNodes) return;
     if (!t) {
@@ -35744,7 +38145,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       if (n) n.hidden = true;
     }
   }
-  function Ee() {
+  function Ie() {
     if (!P) ke();
     if (!x) return;
     x.unHideAll();
@@ -35755,13 +38156,13 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         else T.verbose("node to be hidden not found", e, t);
       }
     }
-    Ie();
+    Ee();
   }
   function ke() {
     P = t.get();
     if (!P || P === "") P = {};
     else P = JSON.parse(P);
-    if (x) Ee();
+    if (x) Ie();
     return P;
   }
   function Pe() {
@@ -35770,7 +38171,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   function Le() {
     if (x && x.nodes) {
       for (let e = 0; e < x.nodes.length; e++) {
-        x.nodes[e].setAnimAction(J.get());
+        x.nodes[e].setAnimAction($.get());
       }
     }
   }
@@ -35785,7 +38186,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   T.exposeTexture = function (e) {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfTexture");
     t.getPort("Name").set(e);
-    M(t, 1);
+    j(t, 1);
     T.patch.link(T, p.name, t, "Render");
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
@@ -35794,12 +38195,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const n = gui.corePatch().addOp("Ops.Gl.GLTF.GltfGeometry");
     n.getPort("Name").set(e);
     n.getPort("Submesh").set(t);
-    M(n, 1);
+    j(n, 1);
     T.patch.link(T, p.name, n, "Update");
     gui.patchView.testCollision(n);
     gui.patchView.centerSelectOp(n.id, true);
   };
-  function M(e, t) {
+  function j(e, t) {
     t = t || 1;
     e.setUiAttrib({
       subPatch: T.uiAttribs.subPatch,
@@ -35826,7 +38227,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
             const s = gui.corePatch().addOp("Ops.Gl.GLTF.GltfNode_v2");
             s.getPort("Node Name").set(t[e].name);
             T.patch.link(i, n, s, "Render");
-            M(s, e);
+            j(s, e);
             if (e == t.length - 1) {
               s.getPort("Transformation").set(false);
             } else {
@@ -35850,7 +38251,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       gui.serverOps.loadOpLibs(t, () => {
         let e = gui.corePatch().addOp(t);
         e.getPort("Node Name").set(n);
-        M(e);
+        j(e);
         T.patch.link(T, p.name, e, "Render");
         gui.patchView.testCollision(e);
         gui.patchView.centerSelectOp(e.id, true);
@@ -35862,7 +38263,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfSetMaterial");
     t.getPort("Material Name").set(e);
     T.patch.link(T, d.name, t, "Material");
-    M(t);
+    j(t);
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
     gui.closeModal();
@@ -35876,7 +38277,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       else delete P.hiddenNodes[e];
     Pe();
   };
-  function je(n) {
+  function Me(n) {
     const i = {},
       r = [];
     for (let e = 0, t = n.length; e < t; ++e) {
@@ -35893,4514 +38294,31 @@ CABLES.OPS["c9cbb226-46f7-4ca6-8dab-a9d0bdca4331"] = {
   f: Ops.Gl.GLTF.GltfScene_v4,
   objName: "Ops.Gl.GLTF.GltfScene_v4",
 };
-Ops.Math.Compare.Equals = function () {
+Ops.Ui.Area = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
   const t = (e.attachments = {});
-  const n = e.inValue("number1", 1),
-    i = e.inValue("number2", 1),
-    r = e.outBoolNum("result");
-  n.onChange = i.onChange = a;
-  a();
-  function a() {
-    r.set(n.get() == i.get());
-  }
-};
-Ops.Math.Compare.Equals.prototype = new CABLES.Op();
-CABLES.OPS["4dd3cc55-eebc-4187-9d4e-2e053a956fab"] = {
-  f: Ops.Math.Compare.Equals,
-  objName: "Ops.Math.Compare.Equals",
-};
-Ops.Math.Multiply = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("number1", 1),
-    i = e.inValueFloat("number2", 1),
-    r = e.outNumber("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  a();
-  function a() {
-    const e = n.get();
-    const t = i.get();
-    r.set(e * t);
-  }
-};
-Ops.Math.Multiply.prototype = new CABLES.Op();
-CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"] = {
-  f: Ops.Math.Multiply,
-  objName: "Ops.Math.Multiply",
-};
-Ops.Gl.Shader.BasicMaterial_v3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {
-    basicmaterial_frag:
-      "{{MODULES_HEAD}}\nIN vec2 texCoord;\n#ifdef VERTEX_COLORS\nIN vec4 vertCol;\n#endif\n#ifdef HAS_TEXTURES\nIN vec2 texCoordOrig;\n#ifdef HAS_TEXTURE_DIFFUSE\nUNI sampler2D tex;\n#endif\n#ifdef HAS_TEXTURE_OPACITY\nUNI sampler2D texOpacity;\n#endif\n#endif\nvoid main()\n{\n{{MODULE_BEGIN_FRAG}}\nvec4 col=color;\n#ifdef HAS_TEXTURES\nvec2 uv=texCoord;\n#ifdef CROP_TEXCOORDS\nif(uv.x<0.||uv.x>1.||uv.y<0.||uv.y>1.)discard;\n#endif\n#ifdef HAS_TEXTURE_DIFFUSE\ncol=texture(tex,uv);\n#ifdef COLORIZE_TEXTURE\ncol.r*=color.r;\ncol.g*=color.g;\ncol.b*=color.b;\n#endif\n#endif\ncol.a*=color.a;\n#ifdef HAS_TEXTURE_OPACITY\n#ifdef TRANSFORMALPHATEXCOORDS\nuv=texCoordOrig;\n#endif\n#ifdef ALPHA_MASK_IR\ncol.a*=1.-texture(texOpacity,uv).r;\n#endif\n#ifdef ALPHA_MASK_IALPHA\ncol.a*=1.-texture(texOpacity,uv).a;\n#endif\n#ifdef ALPHA_MASK_ALPHA\ncol.a*=texture(texOpacity,uv).a;\n#endif\n#ifdef ALPHA_MASK_LUMI\ncol.a*=dot(vec3(0.2126,0.7152,0.0722),texture(texOpacity,uv).rgb);\n#endif\n#ifdef ALPHA_MASK_R\ncol.a*=texture(texOpacity,uv).r;\n#endif\n#ifdef ALPHA_MASK_G\ncol.a*=texture(texOpacity,uv).g;\n#endif\n#ifdef ALPHA_MASK_B\ncol.a*=texture(texOpacity,uv).b;\n#endif\n\n#endif\n#endif\n{{MODULE_COLOR}}\n#ifdef DISCARDTRANS\nif(col.a<0.2)discard;\n#endif\n#ifdef VERTEX_COLORS\ncol*=vertCol;\n#endif\noutColor=col;\n}\n",
-    basicmaterial_vert:
-      "\n{{MODULES_HEAD}}\n\nOUT vec2 texCoord;\nOUT vec2 texCoordOrig;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\n#ifdef HAS_TEXTURES\n    UNI float diffuseRepeatX;\n    UNI float diffuseRepeatY;\n    UNI float texOffsetX;\n    UNI float texOffsetY;\n#endif\n\n#ifdef VERTEX_COLORS\n    in vec4 attrVertColor;\n    out vec4 vertCol;\n\n#endif\n\n\nvoid main()\n{\n    mat4 mMatrix=modelMatrix;\n    mat4 modelViewMatrix;\n\n    norm=attrVertNormal;\n    texCoordOrig=attrTexCoord;\n    texCoord=attrTexCoord;\n    #ifdef HAS_TEXTURES\n        texCoord.x=texCoord.x*diffuseRepeatX+texOffsetX;\n        texCoord.y=(1.0-texCoord.y)*diffuseRepeatY+texOffsetY;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        vertCol=attrVertColor;\n    #endif\n\n    vec4 pos = vec4(vPosition, 1.0);\n\n    #ifdef BILLBOARD\n       vec3 position=vPosition;\n       modelViewMatrix=viewMatrix*modelMatrix;\n\n       gl_Position = projMatrix * modelViewMatrix * vec4((\n           position.x * vec3(\n               modelViewMatrix[0][0],\n               modelViewMatrix[1][0],\n               modelViewMatrix[2][0] ) +\n           position.y * vec3(\n               modelViewMatrix[0][1],\n               modelViewMatrix[1][1],\n               modelViewMatrix[2][1]) ), 1.0);\n    #endif\n\n    {{MODULE_VERTEX_POSITION}}\n\n    #ifndef BILLBOARD\n        modelViewMatrix=viewMatrix * mMatrix;\n\n        {{MODULE_VERTEX_MODELVIEW}}\n\n    #endif\n\n    // mat4 modelViewMatrix=viewMatrix*mMatrix;\n\n    #ifndef BILLBOARD\n        // gl_Position = projMatrix * viewMatrix * modelMatrix * pos;\n        gl_Position = projMatrix * modelViewMatrix * pos;\n    #endif\n}\n",
-  });
-  const n = e.inTrigger("render");
-  const i = e.outTrigger("trigger");
-  const r = e.outObject("shader", null, "shader");
-  r.ignoreValueSerialize = true;
-  e.toWorkPortsNeedToBeLinked(n);
-  e.toWorkShouldNotBeChild(
-    "Ops.Gl.TextureEffects.ImageCompose",
-    CABLES.OP_PORT_TYPE_FUNCTION
-  );
-  const a = e.patch.cgl;
-  const s = new CGL.Shader(a, "basicmaterialnew", this);
-  s.addAttribute({ type: "vec3", name: "vPosition" });
-  s.addAttribute({ type: "vec2", name: "attrTexCoord" });
-  s.addAttribute({ type: "vec3", name: "attrVertNormal", nameFrag: "norm" });
-  s.addAttribute({ type: "float", name: "attrVertIndex" });
-  s.setModules([
-    "MODULE_VERTEX_POSITION",
-    "MODULE_COLOR",
-    "MODULE_BEGIN_FRAG",
-    "MODULE_VERTEX_MODELVIEW",
-  ]);
-  s.setSource(t.basicmaterial_vert, t.basicmaterial_frag);
-  r.setRef(s);
-  n.onTriggered = x;
-  const o = e.inValueSlider("r", Math.random());
-  const l = e.inValueSlider("g", Math.random());
-  const u = e.inValueSlider("b", Math.random());
-  const c = e.inValueSlider("a", 1);
-  o.setUiAttribs({ colorPick: true });
-  const d = s.addUniformFrag("4f", "color", o, l, u, c);
-  s.uniformColorDiffuse = d;
-  const h = e.inTexture("texture");
-  let p = null;
-  h.onChange = E;
-  const m = e.inValueBool("colorizeTexture", false);
-  const f = e.inValueBool("Vertex Colors", false);
-  const g = e.inTexture("textureOpacity");
-  let b = null;
-  const v = e.inSwitch(
-    "Alpha Mask Source",
-    ["Luminance", "R", "G", "B", "A", "1-A", "1-R"],
-    "Luminance"
-  );
-  v.setUiAttribs({ greyout: true });
-  g.onChange = I;
-  const y = e.inValueBool("Opacity TexCoords Transform", false);
-  const _ = e.inValueBool("Discard Transparent Pixels");
-  const T = e.inValue("diffuseRepeatX", 1),
-    O = e.inValue("diffuseRepeatY", 1),
-    S = e.inValue("Tex Offset X", 0),
-    A = e.inValue("Tex Offset Y", 0),
-    w = e.inBool("Crop TexCoords", false);
-  s.addUniformFrag("f", "diffuseRepeatX", T);
-  s.addUniformFrag("f", "diffuseRepeatY", O);
-  s.addUniformFrag("f", "texOffsetX", S);
-  s.addUniformFrag("f", "texOffsetY", A);
-  const C = e.inValueBool("billboard", false);
-  v.onChange =
-    C.onChange =
-    _.onChange =
-    y.onChange =
-    w.onChange =
-    f.onChange =
-    m.onChange =
-      P;
-  e.setPortGroup("Color", [o, l, u, c]);
-  e.setPortGroup("Color Texture", [h, f, m]);
-  e.setPortGroup("Opacity", [g, v, _, y]);
-  e.setPortGroup("Texture Transform", [T, O, S, A, w]);
-  I();
-  E();
-  e.preRender = function () {
-    s.bind();
-    x();
-  };
-  function x() {
-    if (!s) return;
-    a.pushShader(s);
-    s.popTextures();
-    if (p && h.get()) s.pushTexture(p, h.get());
-    if (b && g.get()) s.pushTexture(b, g.get());
-    i.trigger();
-    a.popShader();
-  }
-  function I() {
-    if (g.get()) {
-      if (b !== null) return;
-      s.removeUniform("texOpacity");
-      s.define("HAS_TEXTURE_OPACITY");
-      if (!b) b = new CGL.Uniform(s, "t", "texOpacity");
-    } else {
-      s.removeUniform("texOpacity");
-      s.removeDefine("HAS_TEXTURE_OPACITY");
-      b = null;
-    }
-    P();
-  }
-  function E() {
-    if (h.get()) {
-      if (!s.hasDefine("HAS_TEXTURE_DIFFUSE")) s.define("HAS_TEXTURE_DIFFUSE");
-      if (!p) p = new CGL.Uniform(s, "t", "texDiffuse");
-    } else {
-      s.removeUniform("texDiffuse");
-      s.removeDefine("HAS_TEXTURE_DIFFUSE");
-      p = null;
-    }
-    k();
-  }
-  function k() {
-    const e = h.isLinked() || g.isLinked();
-    T.setUiAttribs({ greyout: !e });
-    O.setUiAttribs({ greyout: !e });
-    S.setUiAttribs({ greyout: !e });
-    A.setUiAttribs({ greyout: !e });
-    m.setUiAttribs({ greyout: !e });
-    v.setUiAttribs({ greyout: !g.get() });
-    y.setUiAttribs({ greyout: !g.get() });
-    let t = true;
-    t = h.get() && !m.get();
-    o.setUiAttribs({ greyout: t });
-    l.setUiAttribs({ greyout: t });
-    u.setUiAttribs({ greyout: t });
-  }
-  function P() {
-    s.toggleDefine("VERTEX_COLORS", f.get());
-    s.toggleDefine("CROP_TEXCOORDS", w.get());
-    s.toggleDefine("COLORIZE_TEXTURE", m.get());
-    s.toggleDefine("TRANSFORMALPHATEXCOORDS", y.get());
-    s.toggleDefine("DISCARDTRANS", _.get());
-    s.toggleDefine("BILLBOARD", C.get());
-    s.toggleDefine("ALPHA_MASK_ALPHA", v.get() == "A");
-    s.toggleDefine("ALPHA_MASK_IALPHA", v.get() == "1-A");
-    s.toggleDefine("ALPHA_MASK_IR", v.get() == "1-R");
-    s.toggleDefine("ALPHA_MASK_LUMI", v.get() == "Luminance");
-    s.toggleDefine("ALPHA_MASK_R", v.get() == "R");
-    s.toggleDefine("ALPHA_MASK_G", v.get() == "G");
-    s.toggleDefine("ALPHA_MASK_B", v.get() == "B");
-    k();
-  }
-};
-Ops.Gl.Shader.BasicMaterial_v3.prototype = new CABLES.Op();
-CABLES.OPS["ec55d252-3843-41b1-b731-0482dbd9e72b"] = {
-  f: Ops.Gl.Shader.BasicMaterial_v3,
-  objName: "Ops.Gl.Shader.BasicMaterial_v3",
-};
-Ops.Anim.Timer_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const a = e.inValue("Speed", 1),
-    n = e.inValueBool("Play", true),
-    i = e.inTriggerButton("Reset"),
-    r = e.inValueBool("Sync to timeline", false),
-    s = e.outNumber("Time");
-  e.setPortGroup("Controls", [n, i, a]);
-  const o = new CABLES.Timer();
-  let l = null;
-  let u = 0;
-  let c = false;
-  n.onChange = d;
-  d();
-  function d() {
-    if (n.get()) {
-      o.play();
-      e.patch.addOnAnimFrame(e);
-    } else {
-      o.pause();
-      e.patch.removeOnAnimFrame(e);
-    }
-  }
-  i.onTriggered = h;
-  function h() {
-    u = 0;
-    l = null;
-    o.setTime(0);
-    s.set(0);
-  }
-  r.onChange = function () {
-    c = r.get();
-    n.setUiAttribs({ greyout: c });
-    i.setUiAttribs({ greyout: c });
-  };
-  e.onAnimFrame = function (e, t, n) {
-    if (o.isPlaying()) {
-      if (CABLES.overwriteTime !== undefined) {
-        s.set(CABLES.overwriteTime * a.get());
-      } else if (c) {
-        s.set(e * a.get());
-      } else {
-        o.update();
-        const i = o.get();
-        if (l === null) {
-          l = i;
-          return;
-        }
-        const r = Math.abs(i - l);
-        l = i;
-        u += r * a.get();
-        if (u != u) u = 0;
-        s.set(u);
-      }
-    }
-  };
-};
-Ops.Anim.Timer_v2.prototype = new CABLES.Op();
-CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"] = {
-  f: Ops.Anim.Timer_v2,
-  objName: "Ops.Anim.Timer_v2",
-};
-Ops.Math.Accumulator = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Trigger in"),
-    i = e.inValueFloat("Add to number", 0),
-    r = e.inValueFloat("Multiplier to add number", 1),
-    a = e.inValueFloat("Default Value", 1),
-    s = e.inTriggerButton("Set Default Value"),
-    o = e.outNumber("Current value");
-  let l = performance.now();
-  let u = 0;
-  let c = true;
-  s.onTriggered = d;
-  function d() {
-    u = a.get();
-    o.set(u);
-    c = true;
-  }
-  n.onTriggered = function () {
-    if (!c) {
-      let e = (performance.now() - l) / 100;
-      u += i.get() * e * r.get();
-      o.set(u);
-    }
-    l = performance.now();
-    c = false;
-  };
-};
-Ops.Math.Accumulator.prototype = new CABLES.Op();
-CABLES.OPS["460574ca-dca2-4283-8c37-57a8c446a51f"] = {
-  f: Ops.Math.Accumulator,
-  objName: "Ops.Math.Accumulator",
-};
-Ops.Vars.VarSetNumber_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("Value", 0);
-  e.varName = e.inDropDown("Variable", [], "", true);
-  new CABLES.VarSetOpWrapper(e, "number", n, e.varName);
-};
-Ops.Vars.VarSetNumber_v2.prototype = new CABLES.Op();
-CABLES.OPS["b5249226-6095-4828-8a1c-080654e192fa"] = {
-  f: Ops.Vars.VarSetNumber_v2,
-  objName: "Ops.Vars.VarSetNumber_v2",
-};
-Ops.Vars.VarSetString_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inString("Value", "New String");
-  e.varName = e.inDropDown("Variable", [], "", true);
-  new CABLES.VarSetOpWrapper(e, "string", n, e.varName);
-};
-Ops.Vars.VarSetString_v2.prototype = new CABLES.Op();
-CABLES.OPS["0b4d9229-8024-4a30-9cc0-f6653942c2e4"] = {
-  f: Ops.Vars.VarSetString_v2,
-  objName: "Ops.Vars.VarSetString_v2",
-};
-Ops.Cables.LoadingStatus_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const i = this;
-  const e = (i.attachments = {});
-  const t = i.inTrigger("exe"),
-    r = i.inValueBool("PreRender Ops"),
-    a = i.inBool("Play Timeline", true),
-    n = i.outTrigger("Next"),
-    s = i.outBoolNum("Finished Initial Loading", false),
-    o = i.outBoolNum("Loading"),
-    l = i.outNumber("Progress"),
-    u = i.outArray("Jobs"),
-    c = i.outTrigger("Trigger Loading Finished ");
-  const d = i.patch.cgl;
-  const h = i.patch;
-  let p = false;
-  const m = [];
-  let f = true;
-  let g = 0;
-  document.body.classList.add("cables-loading");
-  let b = d.patch.loading.start("loadingStatusInit", "loadingStatusInit", i);
-  i.patch.loading.on("finishedTask", v.bind(this));
-  i.patch.loading.on("startTask", v.bind(this));
-  function v() {
-    const e = i.patch.loading.getListJobs();
-    l.set(h.loading.getProgress());
-    let t = e.length === 0;
-    const n = !t;
-    if (n) {
-      u.set(i.patch.loading.getListJobs());
-    }
-    if (n) {
-      if (f) {
-        if (r.get()) i.patch.preRenderOps();
-        i.patch.timer.setTime(0);
-        if (a.get()) {
-          i.patch.timer.play();
-        } else {
-          i.patch.timer.pause();
-        }
-      }
-      f = false;
-      document.body.classList.remove("cables-loading");
-      document.body.classList.add("cables-loaded");
-    } else {
-      p = true;
-      u.set(i.patch.loading.getListJobs());
-      if (h.loading.getProgress() < 1) {
-        i.patch.timer.setTime(0);
-        i.patch.timer.pause();
-      }
-    }
-    s.set(p);
-    if (o.get() && t) c.trigger();
-    o.set(n);
-    i.setUiAttribs({ loading: n });
-  }
-  t.onTriggered = () => {
-    v();
-    n.trigger();
-    if (b) {
-      d.patch.loading.finished(b);
-      b = null;
-    }
-  };
-};
-Ops.Cables.LoadingStatus_v2.prototype = new CABLES.Op();
-CABLES.OPS["e62f7f4c-7436-437e-8451-6bc3c28545f7"] = {
-  f: Ops.Cables.LoadingStatus_v2,
-  objName: "Ops.Cables.LoadingStatus_v2",
-};
-Ops.Html.WindowHasFocus = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = t.outBoolNum("has focus"),
-    i = t.outBoolNum("Tab Visible", true);
-  const r = true;
-  n.set(t.patch.getDocument().hasFocus());
-  window.addEventListener("blur", s);
-  window.addEventListener("focus", a);
-  t.patch.getDocument().addEventListener("visibilitychange", o);
-  t.onDelete = function () {
-    t.patch.getDocument().removeEventListener("visibilitychange", o);
-  };
-  function a() {
-    n.set(true);
-  }
-  function s() {
-    n.set(false);
-  }
-  function o(e) {
-    i.set(!t.patch.getDocument().hidden);
-  }
-};
-Ops.Html.WindowHasFocus.prototype = new CABLES.Op();
-CABLES.OPS["6542896e-aa13-4b57-81e0-163597f4149a"] = {
-  f: Ops.Html.WindowHasFocus,
-  objName: "Ops.Html.WindowHasFocus",
-};
-Ops.Gl.ClearColor = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("render"),
-    i = e.outTrigger("trigger"),
-    r = e.inFloatSlider("r", 0.1),
-    a = e.inFloatSlider("g", 0.1),
-    s = e.inFloatSlider("b", 0.1),
-    o = e.inFloatSlider("a", 1);
-  r.setUiAttribs({ colorPick: true });
-  const l = e.patch.cgl;
-  n.onTriggered = function () {
-    l.gl.clearColor(r.get(), a.get(), s.get(), o.get());
-    l.gl.clear(l.gl.COLOR_BUFFER_BIT | l.gl.DEPTH_BUFFER_BIT);
-    i.trigger();
-  };
-};
-Ops.Gl.ClearColor.prototype = new CABLES.Op();
-CABLES.OPS["19b441eb-9f63-4f35-ba08-b87841517c4d"] = {
-  f: Ops.Gl.ClearColor,
-  objName: "Ops.Gl.ClearColor",
-};
-Ops.Array.SwitchArray = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const e = (n.attachments = {});
-  let t = n.inValueInt("Index");
-  let i = [];
-  let r = n.outArray("Result");
-  t.onChange = a;
-  for (let t = 0; t < 10; t++) {
-    let e = n.inArray("Array " + t);
-    i.push(e);
-    e.onChange = a;
-  }
-  function a() {
-    if (t.get() >= 0 && i[t.get()] && i[t.get()].isLinked()) {
-      r.setRef(i[t.get()].get());
-    } else r.setRef([]);
-  }
-};
-Ops.Array.SwitchArray.prototype = new CABLES.Op();
-CABLES.OPS["3fab881c-c2cf-42a0-9c42-2d8edfd93f57"] = {
-  f: Ops.Array.SwitchArray,
-  objName: "Ops.Array.SwitchArray",
-};
-Ops.Color.ColorValue = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueSlider("r", Math.random());
-  const i = e.inValueSlider("g", Math.random());
-  const r = e.inValueSlider("b", Math.random());
-  n.setUiAttribs({ colorPick: true });
-  const a = e.inValueSlider("a", 1);
-  const s = e.outNumber("outr");
-  const o = e.outNumber("outg");
-  const l = e.outNumber("outb");
-  const u = e.outNumber("outa");
-  const c = e.outNumber("Hex", "000000");
-  const d = e.outArray("Array");
-  n.onChange = i.onChange = r.onChange = a.onChange = p;
-  function h(e) {
-    let t = Math.round(e * 255).toString(16);
-    if (t.length === 1) {
-      t = "0" + t;
-    }
-    return t.toUpperCase();
-  }
-  function p() {
-    s.set(n.get());
-    o.set(i.get());
-    l.set(r.get());
-    u.set(a.get());
-    let e = h(n.get()) + h(i.get()) + h(r.get());
-    c.set(e);
-    d.set([n.get(), i.get(), r.get(), a.get()]);
-  }
-  p();
-};
-Ops.Color.ColorValue.prototype = new CABLES.Op();
-CABLES.OPS["7caa37c8-f2a7-49f2-a29c-96af362abca0"] = {
-  f: Ops.Color.ColorValue,
-  objName: "Ops.Color.ColorValue",
-};
-Ops.Vars.VarGetNumber_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.outNumber("Value");
-  e.varName = e.inValueSelect("Variable", [], "", true);
-  new CABLES.VarGetOpWrapper(e, "number", e.varName, n);
-};
-Ops.Vars.VarGetNumber_v2.prototype = new CABLES.Op();
-CABLES.OPS["421f5b52-c0fa-47c4-8b7a-012b9e1c864a"] = {
-  f: Ops.Vars.VarGetNumber_v2,
-  objName: "Ops.Vars.VarGetNumber_v2",
-};
-Ops.Array.ArrayGetNumber = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inArray("array"),
-    i = e.inValueInt("index"),
-    r = e.inFloat("Value Invalid Index", 0),
-    a = e.outNumber("value"),
-    s = e.outBoolNum("Valid Index", true);
-  n.ignoreValueSerialize = true;
-  i.onChange = n.onChange = o;
-  function o() {
-    if (n.get()) {
-      const e = n.get()[i.get()];
-      if (isNaN(e)) {
-        a.set(r.get());
-        s.set(false);
-      } else {
-        s.set(true);
-        a.set(parseFloat(e));
-      }
-    }
-  }
-};
-Ops.Array.ArrayGetNumber.prototype = new CABLES.Op();
-CABLES.OPS["d1189078-70cf-437d-9a37-b2ebe89acdaf"] = {
-  f: Ops.Array.ArrayGetNumber,
-  objName: "Ops.Array.ArrayGetNumber",
-};
-Ops.Trigger.TriggerSend = function () {
-  CABLES.Op.apply(this, arguments);
-  const i = this;
-  const e = (i.attachments = {});
-  const t = i.inTriggerButton("Trigger");
-  i.varName = i.inValueSelect("Named Trigger", [], "", true);
-  i.varName.onChange = r;
-  t.onTriggered = a;
-  i.patch.addEventListener("namedTriggersChanged", n);
-  n();
-  function n() {
-    if (CABLES.UI) {
-      let e = [];
-      const t = i.patch.namedTriggers;
-      e.push("+ create new one");
-      for (const n in t) e.push(n);
-      e = e.sort();
-      i.varName.uiAttribs.values = e;
-    }
-  }
+  const n = e.inString("Title", ""),
+    i = e.inTriggerButton("Delete");
+  n.setUiAttribs({ hidePort: true });
+  e.setUiAttrib({ hasArea: true });
+  e.init = n.onChange = e.onLoaded = r;
+  r();
   function r() {
     if (CABLES.UI) {
-      if (i.varName.get() == "+ create new one") {
-        new CABLES.UI.ModalDialog({
-          prompt: true,
-          title: "New Trigger",
-          text: "Enter a name for the new trigger",
-          promptValue: "",
-          promptOk: (e) => {
-            i.varName.set(e);
-            i.patch.namedTriggers[e] = i.patch.namedTriggers[e] || [];
-            n();
-          },
-        });
-        return;
-      }
-      i.refreshParams();
-    }
-    if (!i.patch.namedTriggers[i.varName.get()]) {
-      i.patch.namedTriggers[i.varName.get()] =
-        i.patch.namedTriggers[i.varName.get()] || [];
-      i.patch.emitEvent("namedTriggersChanged");
-    }
-    i.setTitle(">" + i.varName.get());
-    i.refreshParams();
-    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
-  }
-  function a() {
-    const t = i.patch.namedTriggers[i.varName.get()];
-    i.patch.emitEvent("namedTriggerSent", i.varName.get());
-    if (!t) {
-      i.setUiError("unknowntrigger", "unknown trigger");
-      return;
-    } else i.setUiError("unknowntrigger", null);
-    for (let e = 0; e < t.length; e++) {
-      t[e]();
-    }
-  }
-};
-Ops.Trigger.TriggerSend.prototype = new CABLES.Op();
-CABLES.OPS["ce1eaf2b-943b-4dc0-ab5e-ee11b63c9ed0"] = {
-  f: Ops.Trigger.TriggerSend,
-  objName: "Ops.Trigger.TriggerSend",
-};
-Ops.Ui.SubPatch = function () {
-  CABLES.Op.apply(this, arguments);
-  const u = this;
-  const e = (u.attachments = {});
-  u.dyn = u.addInPort(
-    new CABLES.Port(u, "create port", CABLES.OP_PORT_TYPE_DYNAMIC)
-  );
-  u.dynOut = u.addOutPort(
-    new CABLES.Port(u, "create port out", CABLES.OP_PORT_TYPE_DYNAMIC)
-  );
-  const t = u.addInPort(
-    new CABLES.Port(u, "dataStr", CABLES.OP_PORT_TYPE_VALUE, {
-      display: "readonly",
-    })
-  );
-  u.patchId = u.addInPort(
-    new CABLES.Port(u, "patchId", CABLES.OP_PORT_TYPE_VALUE, {
-      display: "readonly",
-    })
-  );
-  t.setUiAttribs({ hideParam: true });
-  u.patchId.setUiAttribs({ hidePort: true });
-  let c = { ports: [], portsOut: [] };
-  let n = CABLES.generateUUID();
-  u.patchId.set(n);
-  m();
-  p();
-  let d = false;
-  u.saveData = s;
-  u.init = () => {
-    u.setStorage({ subPatchVer: 1 });
-  };
-  u.patchId.onChange = function () {
-    if (!u.patch.isEditorMode()) return;
-    const t = u.patch.getSubPatchOps(n);
-    if (t.length === 2) {
-      if (u.patch.isEditorMode() && CABLES.UI.DEFAULTOPS.isInBlueprint(u))
-        CABLES.UI.undo.pause();
-      for (let e = 0; e < t.length; e++) {
-        u.patch.deleteOp(t[e].id);
-      }
-      if (u.patch.isEditorMode() && CABLES.UI.DEFAULTOPS.isInBlueprint(u))
-        CABLES.UI.undo.resume();
-    }
-  };
-  u.onLoaded = function () {};
-  u.onLoadedValueSet = function () {
-    c = JSON.parse(t.get());
-    if (!c) {
-      c = { ports: [], portsOut: [] };
-    }
-    a();
-  };
-  function i() {}
-  t.onChange = function () {
-    if (d) return;
-    if (!t.get()) return;
-    try {
-      i();
-    } catch (e) {
-      u.logError("cannot load subpatch data...");
-      u.logError(e);
-    }
-  };
-  function s() {
-    try {
-      t.set(JSON.stringify(c));
-    } catch (e) {
-      u.log(e);
-    }
-  }
-  u.addPortListener = h;
-  function h(n, e) {
-    if (!n.hasSubpatchLstener) {
-      n.hasSubpatchLstener = true;
-      n.addEventListener("onUiAttrChange", function (t) {
-        if (t.title) {
-          let e = 0;
-          for (e = 0; e < c.portsOut.length; e++)
-            if (c.portsOut[e].name == n.name) c.portsOut[e].title = t.title;
-          for (e = 0; e < c.ports.length; e++)
-            if (c.ports[e].name == n.name) c.ports[e].title = t.title;
-          s();
-        }
-      });
-    }
-    if (n.direction == CABLES.PORT_DIR_IN) {
-      if (n.type == CABLES.OP_PORT_TYPE_FUNCTION) {
-        n.onTriggered = function () {
-          if (e.isLinked()) e.trigger();
-        };
-      } else {
-        n.onChange = function () {
-          e.set(n.get());
-          if (!n.isLinked()) {
-            for (let e = 0; e < c.ports.length; e++) {
-              if (c.ports[e].name === n.name) {
-                c.ports[e].value = n.get();
-              }
-            }
-            s();
-          }
-        };
-      }
-    }
-  }
-  u.setupPorts = a;
-  function a() {
-    if (!u.patchId.get()) return;
-    const e = c.ports || [];
-    const t = c.portsOut || [];
-    let n = 0;
-    for (n = 0; n < e.length; n++) {
-      if (!u.getPortByName(e[n].name)) {
-        const i = u.addInPort(new CABLES.Port(u, e[n].name, e[n].type));
-        const r = m();
-        const a = r.addOutPort(new CABLES.Port(r, e[n].name, e[n].type));
-        i.ignoreValueSerialize = true;
-        i.setUiAttribs({ editableTitle: true });
-        if (e[n].title) {
-          i.setUiAttribs({ title: e[n].title });
-          a.setUiAttribs({ title: e[n].title });
-        }
-        if (e[n].objType) {
-          i.setUiAttribs({ objType: e[n].objType });
-          a.setUiAttribs({ objType: e[n].objType });
-        }
-        if (e[n].value) {
-          i.set(e[n].value);
-          a.set(e[n].value);
-        }
-        h(i, a);
-      }
-    }
-    for (n = 0; n < t.length; n++) {
-      if (!u.getPortByName(t[n].name)) {
-        const s = u.addOutPort(new CABLES.Port(u, t[n].name, t[n].type));
-        const o = p();
-        const l = o.addInPort(new CABLES.Port(o, t[n].name, t[n].type));
-        s.ignoreValueSerialize = true;
-        s.setUiAttribs({ editableTitle: true });
-        if (t[n].title) {
-          s.setUiAttribs({ title: t[n].title });
-          l.setUiAttribs({ title: t[n].title });
-        }
-        if (t[n].objType) {
-          s.setUiAttribs({ objType: t[n].objType });
-          l.setUiAttribs({ objType: t[n].objType });
-        }
-        h(l, s);
-      }
-    }
-    d = true;
-  }
-  u.addNewInPort = function (e, t, n) {
-    const i = "in" + c.ports.length + " " + e.op.name + " " + e.name;
-    const r = { name: i, type: e.type };
-    if (e.uiAttribs.objType) r.objType = e.uiAttribs.objType;
-    c.ports.push(r);
-    a();
-    return i;
-  };
-  u.dyn.onLinkChanged = function () {
-    if (u.dyn.isLinked()) {
-      const e = u.dyn.links[0].getOtherPort(u.dyn);
-      u.dyn.removeLinks();
-      e.removeLinkTo(u.dyn);
-      u.log("dyn link changed!!!");
-      const t = u.addNewInPort(e);
-      const n = gui.scene().link(e.op, e.getName(), u, t);
-      d = true;
-      s();
-    } else {
-      setTimeout(function () {
-        u.dyn.removeLinks();
-      }, 100);
-    }
-  };
-  u.addNewOutPort = function (e, t, n) {
-    const i = "out" + c.portsOut.length + " " + e.op.name + " " + e.name;
-    const r = { name: i, type: e.type };
-    if (e.uiAttribs.objType) r.objType = e.uiAttribs.objType;
-    c.portsOut.push(r);
-    a();
-    return i;
-  };
-  u.dynOut.onLinkChanged = function () {
-    if (u.dynOut.isLinked()) {
-      const e = u.dynOut.links[0].getOtherPort(u.dynOut);
-      u.dynOut.removeLinks();
-      if (e) {
-        e.removeLinkTo(u.dynOut);
-        const t = u.addNewOutPort(e);
-        gui.scene().link(e.op, e.getName(), u, t);
-      }
-      d = true;
-      s();
-    } else {
-      setTimeout(function () {
-        u.dynOut.removeLinks();
-      }, 100);
-      u.log("dynOut unlinked...");
-    }
-  };
-  function p() {
-    let e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchOutput");
-    if (!e) {
-      u.patch.addOp("Ops.Ui.PatchOutput", {
-        subPatch: u.patchId.get(),
-        translate: { x: 0, y: 0 },
-      });
-      e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchOutput");
-      if (!e) u.warn("no patchoutput!");
-    }
-    return e;
-  }
-  function m() {
-    let e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchInput");
-    if (!e) {
-      u.patch.addOp("Ops.Ui.PatchInput", {
-        subPatch: u.patchId.get(),
-        translate: { x: 0, y: 0 },
-      });
-      e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchInput");
-      if (!e) u.warn("no patchinput2!");
-    }
-    return e;
-  }
-  u.addSubLink = function (e, t) {
-    const n = c.ports.length;
-    const i = "in" + (n - 1) + " " + t.op.name + " " + t.name;
-    if (e.direction == CABLES.PORT_DIR_IN) {
-      gui.scene().link(e.op, e.getName(), m(), i);
-    } else {
-      const a = c.portsOut.length;
-      gui
-        .scene()
-        .link(
-          e.op,
-          e.getName(),
-          p(),
-          "out" + (a - 1) + " " + t.op.name + " " + t.name
-        );
-    }
-    const r = gui.patchView.getSubPatchBounds(u.patchId.get());
-    m().uiAttr({ translate: { x: r.minx, y: r.miny - 100 } });
-    p().uiAttr({ translate: { x: r.minx, y: r.maxy + 100 } });
-    s();
-    return i;
-  };
-  u.onDelete = function () {
-    for (let e = u.patch.ops.length - 1; e >= 0; e--)
-      if (
-        u.patch.ops[e] &&
-        u.patch.ops[e].uiAttribs &&
-        u.patch.ops[e].uiAttribs.subPatch == u.patchId.get()
-      )
-        u.patch.deleteOp(u.patch.ops[e].id);
-  };
-  u.rebuildListeners = () => {
-    u.log("rebuild listeners...");
-    const t = p();
-    for (let e = 0; e < t.portsIn.length; e++) {
-      if (t.portsIn[e].isLinked()) {
-        h(t.portsIn[e], this.portsOut[e]);
-      }
-    }
-  };
-};
-Ops.Ui.SubPatch.prototype = new CABLES.Op();
-CABLES.OPS["84d9a6f0-ed7a-466d-b386-225ed9e89c60"] = {
-  f: Ops.Ui.SubPatch,
-  objName: "Ops.Ui.SubPatch",
-};
-Ops.Math.Divide = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("number1", 1),
-    i = e.inValueFloat("number2", 2),
-    r = e.outNumber("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  a();
-  function a() {
-    r.set(n.get() / i.get());
-  }
-};
-Ops.Math.Divide.prototype = new CABLES.Op();
-CABLES.OPS["86fcfd8c-038d-4b91-9820-a08114f6b7eb"] = {
-  f: Ops.Math.Divide,
-  objName: "Ops.Math.Divide",
-};
-Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {
-    maptexture_frag:
-      "IN vec2 MOD_tc;\n#ifdef MOD_MAP_TRIPLANAR\nIN vec2 MOD_tc1;\nIN vec2 MOD_tc2;\nIN vec3 MOD_blendingTri;\n#endif\n{{CGL.BLENDMODES3}}",
-    maptexture_vert:
-      "vec3 MOD_pos;\n\n#ifndef MOD_WORLDSPACE\n   MOD_pos=(vec4(vPosition,1.0)*1.0/MOD_scale).xyz;\n#endif\n#ifdef MOD_WORLDSPACE\n   MOD_pos=(mMatrix*pos).xyz*1.0/MOD_scale;\n#endif\n\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationX(MOD_rotX*MOD_DEG2RAD)).xyz;\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationY(MOD_rotY*MOD_DEG2RAD)).xyz;\nMOD_pos=(vec4(MOD_pos,1.0)*MOD_rotationZ(MOD_rotZ*MOD_DEG2RAD)).xyz;\n\n#ifdef MOD_MAP_XY\n    MOD_tc=MOD_pos.xy;\n#endif\n#ifdef MOD_MAP_XZ\n    MOD_tc=MOD_pos.xz;\n#endif\n#ifdef MOD_MAP_YZ\n    MOD_tc=MOD_pos.yz;\n#endif\n\nMOD_tc.xy+=vec2(0.5,0.5);\nMOD_tc.xy+=MOD_offset;\n\n\n#ifdef MOD_TARGET_POINTSIZE\n\n    gl_PointSize+=(texture(MOD_tex,MOD_tc).x*MOD_amount);\n\n#endif\n\n\n#ifdef MOD_MAP_TRIPLANAR\n    mapTriplanar((mMatrix*vec4(attrVertNormal,1.0)).xyz,MOD_pos);\n#endif\n\n",
-    maptexture_body_frag:
-      "#ifndef MOD_TARGET_POINTSIZE\nvec4 MOD_color;\n#ifdef MOD_MAP_TRIPLANAR\nvec4 xaxis=texture(MOD_tex,MOD_tc);\nvec4 yaxis=texture(MOD_tex,MOD_tc1);\nvec4 zaxis=texture(MOD_tex,MOD_tc2);\nMOD_color=xaxis*MOD_blendingTri.x+yaxis*MOD_blendingTri.y+zaxis*MOD_blendingTri.z;\nMOD_color.a=1.;\n#endif\nvec2 MOD_ntc=MOD_tc;\n#ifdef MOD_MAP_SCREEN\nMOD_ntc=(vec2(gl_FragCoord.x,gl_FragCoord.y)/vec2(MOD_viewPortW,MOD_viewPortH));\nMOD_ntc-=vec2(0.5,0.5);\nMOD_ntc*=1./MOD_scale;\nMOD_ntc+=vec2(0.5,0.5);\nMOD_ntc-=MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD\nMOD_ntc=texCoord*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD1\nMOD_ntc=texCoord1*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_MAP_TEXCOORD2\nMOD_ntc=texCoord2*1./MOD_scale-MOD_offset;\n#endif\n#ifdef MOD_DISCARD\nif(MOD_ntc.x>0.&&MOD_ntc.x<1.&&MOD_ntc.y>0.&&MOD_ntc.y<1.)\n{\n#endif\n#ifndef MOD_MAP_TRIPLANAR\nMOD_color=texture(MOD_tex,MOD_ntc);\n#endif\n#ifdef MOD_USE_IMGALPHA\ncol.a=MOD_color.a;\n#endif\n#ifdef MOD_TARGET_COLOR\ncol=cgl_blendPixel(col,MOD_color,MOD_amount*col.a);\n#endif\n#ifdef MOD_TARGET_ALPHA\ncol.a=1.-MOD_color.r*MOD_amount;\n#endif\n#ifdef MOD_DISCARD\n}\n#endif\n#endif\n",
-    maptexture_body_vert:
-      "OUT vec2 MOD_tc;\n\nconst float MOD_DEG2RAD = 0.017453292519943;\n\n#ifdef MOD_MAP_TRIPLANAR\n\n    OUT vec2 MOD_tc1;\n    OUT vec2 MOD_tc2;\n    OUT vec3 MOD_blendingTri;\n\n    void mapTriplanar(vec3 wNorm,vec3 pos)\n    {\n        vec3 blending = abs( wNorm );\n        blending = normalize(max(blending, 0.1));\n        float b = (blending.x + blending.y + blending.z);\n        blending /= vec3(b);\n        MOD_blendingTri=blending;\n\n        MOD_tc = pos.yz;\n        MOD_tc1 = pos.xz;\n        MOD_tc2 = pos.xy;\n    }\n\n#endif\n\nmat4 MOD_rotationX( in float angle ) {\n\treturn mat4(\t1.0,\t\t0,\t\t\t0,\t\t\t0,\n\t\t\t \t\t0, \tcos(angle),\t-sin(angle),\t\t0,\n\t\t\t\t\t0, \tsin(angle),\t cos(angle),\t\t0,\n\t\t\t\t\t0, \t\t\t0,\t\t\t  0, \t\t1);\n}\n\nmat4 MOD_rotationY( in float angle ) {\n\treturn mat4(\tcos(angle),\t\t0,\t\tsin(angle),\t0,\n\t\t\t \t\t\t\t0,\t\t1.0,\t\t\t 0,\t0,\n\t\t\t\t\t-sin(angle),\t0,\t\tcos(angle),\t0,\n\t\t\t\t\t\t\t0, \t\t0,\t\t\t\t0,\t1);\n}\n\nmat4 MOD_rotationZ( in float angle ) {\n\treturn mat4(\tcos(angle),\t\t-sin(angle),\t0,\t0,\n\t\t\t \t\tsin(angle),\t\tcos(angle),\t\t0,\t0,\n\t\t\t\t\t\t\t0,\t\t\t\t0,\t\t1,\t0,\n\t\t\t\t\t\t\t0,\t\t\t\t0,\t\t0,\t1);\n}\n",
-  });
-  const n = e.inTrigger("render"),
-    i = e.outTrigger("trigger"),
-    r = e.inTexture("Texture"),
-    a = CGL.TextureEffect.AddBlendSelect(e, "blendMode"),
-    s = e.inValueSlider("Amount", 0.3),
-    o = e.inSwitch("Target", ["Color", "Pointsize", "Alpha"], "Color"),
-    l = e.inValue("Scale", 10),
-    u = e.inBool("Use Texture Alpha", false),
-    c = e.inFloat("Pos X", 0),
-    d = e.inFloat("Pos Y", 0),
-    h = e.inFloat("Rot X", 0),
-    p = e.inFloat("Rot Y", 0),
-    m = e.inFloat("Rot Z", 0),
-    f = e.inValueSelect(
-      "Mapping",
-      [
-        "Triplanar",
-        "XY",
-        "XZ",
-        "YZ",
-        "Screen",
-        "TexCoords 1",
-        "TexCoords 2",
-        "TexCoords 3",
-      ],
-      "XY"
-    ),
-    g = e.inValueBool("Discard"),
-    b = e.inValueBool("WorldSpace");
-  const v = e.patch.cgl;
-  n.onLinkChanged =
-    u.onChange =
-    o.onChange =
-    a.onChange =
-    g.onChange =
-    b.onChange =
-    r.onLinkChanged =
-    f.onChange =
-      S;
-  e.toWorkPortsNeedToBeLinked(r, i);
-  e.setPortGroup("Rotation", [h, p, m]);
-  e.setPortGroup("Position", [c, d]);
-  const y = new CGL.ShaderModifier(v, e.name, { opId: e.id });
-  y.addModule({
-    title: e.name,
-    name: "MODULE_VERTEX_POSITION",
-    srcHeadVert: t.maptexture_body_vert,
-    srcBodyVert: t.maptexture_vert,
-    attributes: [
-      { type: "vec2", name: "attrTexCoord1", nameFrag: "texCoord1" },
-      { type: "vec2", name: "attrTexCoord2", nameFrag: "texCoord2" },
-    ],
-  });
-  let _ = t.maptexture_frag;
-  y.addModule({
-    title: e.name,
-    name: "MODULE_COLOR",
-    srcHeadFrag: _,
-    srcBodyFrag: t.maptexture_body_frag,
-  });
-  y.addUniformBoth("f", "MOD_rotX", h);
-  y.addUniformBoth("f", "MOD_rotY", p);
-  y.addUniformBoth("f", "MOD_rotZ", m);
-  y.addUniformBoth("t", "MOD_tex");
-  y.addUniformBoth("f", "MOD_scale", l);
-  y.addUniformBoth("f", "MOD_amount", s);
-  y.addUniformBoth("2f", "MOD_offset", c, d);
-  const T = y.addUniformFrag("f", "MOD_viewPortW");
-  const O = y.addUniformFrag("f", "MOD_viewPortH");
-  CGL.TextureEffect.setupBlending(e, y, a, s);
-  S();
-  function S() {
-    y.toggleDefine("MOD_USE_IMGALPHA", u.get());
-    y.toggleDefine("MOD_WORLDSPACE", b.get());
-    y.toggleDefine("MOD_MAP_XY", f.get() == "XY");
-    y.toggleDefine("MOD_MAP_XZ", f.get() == "XZ");
-    y.toggleDefine("MOD_MAP_YZ", f.get() == "YZ");
-    y.toggleDefine("MOD_MAP_TEXCOORD", f.get() == "TexCoords 1");
-    y.toggleDefine("MOD_MAP_TEXCOORD1", f.get() == "TexCoords 2");
-    y.toggleDefine("MOD_MAP_TEXCOORD2", f.get() == "TexCoords 3");
-    y.toggleDefine("MOD_MAP_SCREEN", f.get() == "Screen");
-    y.toggleDefine("MOD_MAP_TRIPLANAR", f.get() == "Triplanar");
-    y.toggleDefine("MOD_DISCARD", g.get());
-    y.toggleDefine("MOD_BLEND_NORMAL", a.get() == "Normal");
-    y.toggleDefine("MOD_BLEND_ADD", a.get() == "Add");
-    y.toggleDefine("MOD_BLEND_MUL", a.get() == "Mul");
-    y.toggleDefine("MOD_BLEND_MUL", a.get() == "Mul");
-    y.toggleDefine("MOD_TARGET_ALPHA", o.get() == "Alpha");
-    y.toggleDefine("MOD_TARGET_COLOR", o.get() == "Color");
-    y.toggleDefine("MOD_TARGET_POINTSIZE", o.get() == "Pointsize");
-    if (o.get() == "Pointsize" && f.get() == "Screen")
-      e.setUiError(
-        "pointscreen",
-        "This combination of Mapping and Target is not possible",
-        1
-      );
-    else e.setUiError("pointscreen", null);
-    CGL.TextureEffect.setupBlending(e, y, a, s);
-  }
-  n.onTriggered = function () {
-    const e = v.getViewPort();
-    y.bind();
-    y.setUniformValue("MOD_viewPortW", e[2]);
-    y.setUniformValue("MOD_viewPortH", e[3]);
-    let t = r.get();
-    if (!t) t = CGL.Texture.getEmptyTexture(v).tex;
-    else t = t.tex;
-    y.pushTexture("MOD_tex", t);
-    i.trigger();
-    y.unbind();
-  };
-};
-Ops.Gl.ShaderEffects.TextureProjection_v2.prototype = new CABLES.Op();
-CABLES.OPS["9be647c2-7afd-40ed-b669-9826ea6a50ca"] = {
-  f: Ops.Gl.ShaderEffects.TextureProjection_v2,
-  objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
-};
-Ops.Vars.VarSetTexture_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTexture("Value", null);
-  e.varName = e.inDropDown("Variable", [], "", true);
-  new CABLES.VarSetOpWrapper(e, "object", n, e.varName);
-};
-Ops.Vars.VarSetTexture_v2.prototype = new CABLES.Op();
-CABLES.OPS["4fbfc71e-1429-439f-8591-ad35961252ed"] = {
-  f: Ops.Vars.VarSetTexture_v2,
-  objName: "Ops.Vars.VarSetTexture_v2",
-};
-Ops.Vars.VarGetTexture_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.outTexture("Value");
-  e.varName = e.inValueSelect("Variable", [], "", true);
-  new CABLES.VarGetOpWrapper(e, "object", e.varName, n);
-};
-Ops.Vars.VarGetTexture_v2.prototype = new CABLES.Op();
-CABLES.OPS["5f8ce5fc-9787-45c9-9a83-0eebd2c6de15"] = {
-  f: Ops.Vars.VarGetTexture_v2,
-  objName: "Ops.Vars.VarGetTexture_v2",
-};
-Ops.Gl.Performance = function () {
-  CABLES.Op.apply(this, arguments);
-  const s = this;
-  const D = (s.attachments = {});
-  const e = s.inTrigger("exe"),
-    o = s.inValueBool("Visible", true),
-    R = s.inValueBool("Measure GPU", true),
-    l = s.outTrigger("childs"),
-    t = s.inSwitch("Position", ["top", "bottom"], "top"),
-    n = s.inBool("Open", false),
-    B = s.inBool("Smooth Graph", true),
-    U = s.inFloat("Scale", 3),
-    u = s.inFloat("Size", 128),
-    V = s.outObject("Canvas"),
-    F = s.outNumber("FPS");
-  const i = s.patch.cgl;
-  const r = document.createElement("div");
-  let a = null;
-  let c = null;
-  let d = false;
-  let h = 0;
-  let p = 0;
-  let m = 0;
-  let f = 0;
-  let g = 0;
-  const b = [];
-  const v = [];
-  const y = [];
-  const _ = [];
-  let T = 0;
-  let O = 0;
-  let S = null;
-  let G = 0;
-  let q = 0;
-  const A = ["|", "/", "-", "\\"];
-  let w = true;
-  const z = "#007f9c";
-  const H = "#aaaaaa";
-  const X = "#222222";
-  const C = "#003f5c";
-  const x = "#7a5195";
-  const I = "#ef5675";
-  const E = "#ffa600";
-  let W = false;
-  let k = 0;
-  let P = 0;
-  let L = 0;
-  s.toWorkPortsNeedToBeLinked(e, l);
-  const Y = s.patch.cgl.gl;
-  const K = Y.getExtension("EXT_disjoint_timer_query_webgl2");
-  e.onLinkChanged = o.onChange = () => {
-    M();
-    Z();
-  };
-  t.onChange = Q;
-  u.onChange = j;
-  r.id = "performance";
-  r.style.position = "absolute";
-  r.style.left = "0px";
-  r.style.opacity = "0.8";
-  r.style.padding = "10px";
-  r.style.cursor = "pointer";
-  r.style.background = "#222";
-  r.style.color = "white";
-  r.style["font-family"] = "monospace";
-  r.style["font-size"] = "12px";
-  r.style["z-index"] = "99999";
-  r.innerHTML = "&nbsp;";
-  r.addEventListener("click", J);
-  const N = s.patch.cgl.canvas.parentElement;
-  N.appendChild(r);
-  j();
-  M();
-  Q();
-  Z();
-  s.onDelete = function () {
-    if (S) S.remove();
-    if (r) r.remove();
-  };
-  function Q() {
-    S.style["pointer-events"] = "none";
-    if (t.get() == "top") {
-      S.style.top = r.style.top = "0px";
-      S.style.bottom = r.style.bottom = "initial";
-    } else {
-      S.style.bottom = r.style.bottom = "0px";
-      S.style.top = r.style.top = "initial";
-    }
-  }
-  function Z() {
-    if (!o.get() || !e.isLinked()) {
-      r.style.display = "none";
-      r.style.opacity = 0;
-      S.style.display = "none";
-    } else {
-      r.style.display = "block";
-      r.style.opacity = 1;
-      S.style.display = "block";
-    }
-  }
-  function j() {
-    if (!S) return;
-    const t = Math.max(0, parseInt(u.get()));
-    S.width = t;
-    S.height = t;
-    r.style.left = t + "px";
-    b.length = 0;
-    v.length = 0;
-    y.length = 0;
-    _.length = 0;
-    for (let e = 0; e < t; e++) {
-      b[e] = -1;
-      v[e] = -1;
-      y[e] = -1;
-      _[e] = -1;
-    }
-  }
-  n.onChange = function () {
-    d = n.get();
-    M();
-  };
-  function J() {
-    if (!o.get()) return;
-    r.style.opacity = 1;
-    d = !d;
-    M();
-  }
-  function M() {
-    te();
-    if (!S) ee();
-    if (d) {
-      S.style.display = "block";
-      r.style.left = u.get() + "px";
-      r.style["min-height"] = "56px";
-    } else {
-      S.style.display = "none";
-      r.style.left = "0px";
-      r.style["min-height"] = "auto";
-    }
-  }
-  function $() {
-    const t = S.height;
-    const n = U.get();
-    c.fillStyle = X;
-    c.fillRect(0, 0, S.width, t);
-    c.fillStyle = C;
-    let i = 0;
-    const r = Math.max(0, parseInt(u.get()));
-    for (i = r; i >= 0; i--) {
-      if (b[i] > 30) c.fillStyle = z;
-      if (b[i] > 60) c.fillStyle = H;
-      c.fillRect(r - i, t - b[i] * n, 1, b[i] * n);
-      if (b[i] > 30) c.fillStyle = C;
-    }
-    for (i = r; i >= 0; i--) {
-      let e = 0;
-      c.fillStyle = x;
-      e = v[i];
-      c.fillRect(r - i, t - e * n, 1, v[i] * n);
-      c.fillStyle = I;
-      e += y[i];
-      c.fillRect(r - i, t - e * n, 1, y[i] * n);
-      c.fillStyle = E;
-      e += _[i];
-      c.fillRect(r - i, t - e * n, 1, _[i] * n);
-    }
-    for (let e = 10; e < t; e += 10) {
-      c.fillStyle = "#888";
-      const a = t - e * n;
-      c.fillRect(S.width - 5, a, 5, 1);
-      c.font = "8px arial";
-      c.fillText(e + "ms", S.width - 27, a + 3);
-    }
-    c.fillStyle = "#fff";
-    c.fillRect(S.width - 5, t - (1e3 / p) * n, 5, 1);
-    c.fillText(Math.round(1e3 / p) + "ms", S.width - 27, t - (1e3 / p) * n);
-  }
-  function ee() {
-    S = document.createElement("canvas");
-    S.id = "performance_" + s.patch.config.glCanvasId;
-    S.width = u.get();
-    S.height = u.get();
-    S.style.display = "block";
-    S.style.opacity = 0.9;
-    S.style.position = "absolute";
-    S.style.left = "0px";
-    S.style.cursor = "pointer";
-    S.style.top = "-64px";
-    S.style["z-index"] = "99998";
-    N.appendChild(S);
-    c = S.getContext("2d");
-    S.addEventListener("click", J);
-    j();
-  }
-  function te() {
-    if (!o.get()) return;
-    let e = "";
-    if (s.patch.cgl.profileData.profileShaderCompiles > 0)
-      e +=
-        "Shader compile (" +
-        s.patch.cgl.profileData.profileShaderCompileName +
-        ") ";
-    if (s.patch.cgl.profileData.profileShaderGetUniform > 0)
-      e +=
-        "Shader get uni loc! (" +
-        s.patch.cgl.profileData.profileShaderGetUniformName +
-        ")";
-    if (s.patch.cgl.profileData.profileTextureResize > 0)
-      e += "Texture resize! ";
-    if (s.patch.cgl.profileData.profileFrameBuffercreate > 0)
-      e += "Framebuffer create! ";
-    if (s.patch.cgl.profileData.profileEffectBuffercreate > 0)
-      e += "Effectbuffer create! ";
-    if (s.patch.cgl.profileData.profileTextureDelete > 0)
-      e += "Texture delete! ";
-    if (s.patch.cgl.profileData.profileNonTypedAttrib > 0)
-      e +=
-        "Not-Typed Buffer Attrib! " +
-        s.patch.cgl.profileData.profileNonTypedAttribNames;
-    if (s.patch.cgl.profileData.profileTextureNew > 0)
-      e += "new texture created! ";
-    if (s.patch.cgl.profileData.profileGenMipMap > 0)
-      e += "generating mip maps!";
-    if (e.length > 0) {
-      e = '| <span style="color:#f80;">WARNING: ' + e + "<span>";
-    }
-    let t = "";
-    if (d) {
-      t += '<span style="color:' + C + '">■</span> ' + p + " fps ";
-      t +=
-        '<span style="color:' +
-        x +
-        '">■</span> ' +
-        Math.round(P * 100) / 100 +
-        "ms mainloop ";
-      t +=
-        '<span style="color:' +
-        I +
-        '">■</span> ' +
-        Math.round(L * 100) / 100 +
-        "ms onframe ";
-      if (k)
-        t +=
-          '<span style="color:' +
-          E +
-          '">■</span> ' +
-          Math.round(k * 100) / 100 +
-          "ms GPU";
-      t += e;
-      r.innerHTML = t;
-    } else {
-      t += p + " fps / ";
-      t +=
-        "CPU: " +
-        Math.round(s.patch.cgl.profileData.profileOnAnimFrameOps * 100) / 100 +
-        "ms / ";
-      if (k) t += "GPU: " + Math.round(k * 100) / 100 + "ms  ";
-      r.innerHTML = t;
-    }
-    if (s.patch.loading.getProgress() != 1) {
-      r.innerHTML +=
-        "<br/>loading " +
-        Math.round(s.patch.loading.getProgress() * 100) +
-        "% " +
-        A[++q % A.length];
-    }
-    if (d) {
-      let t = 0;
-      T = 0;
-      g = 0;
-      for (let e = b.length; e > b.length - b.length / 3; e--) {
-        if (b[e] > -1) {
-          T += b[e];
-          t++;
-        }
-        if (v[e] > -1) g += v[e];
-      }
-      T /= t;
-      g /= t;
-      r.innerHTML +=
-        "<br/> " +
-        i.canvasWidth +
-        " x " +
-        i.canvasHeight +
-        " (x" +
-        i.pixelDensity +
-        ") ";
-      r.innerHTML +=
-        "<br/>frame avg: " +
-        Math.round(g * 100) / 100 +
-        " ms (" +
-        Math.round((g / T) * 100) +
-        "%) / " +
-        Math.round(T * 100) / 100 +
-        " ms";
-      r.innerHTML += " (self: " + Math.round(O * 100) / 100 + " ms) ";
-      r.innerHTML +=
-        "<br/>shader binds: " +
-        Math.ceil(s.patch.cgl.profileData.profileShaderBinds / p) +
-        " uniforms: " +
-        Math.ceil(s.patch.cgl.profileData.profileUniformCount / p) +
-        " mvp_uni_mat4: " +
-        Math.ceil(s.patch.cgl.profileData.profileMVPMatrixCount / p) +
-        " num glPrimitives: " +
-        Math.ceil(s.patch.cgl.profileData.profileMeshNumElements / p) +
-        " fenced pixelread: " +
-        Math.ceil(s.patch.cgl.profileData.profileFencedPixelRead) +
-        " mesh.setGeom: " +
-        s.patch.cgl.profileData.profileMeshSetGeom +
-        " videos: " +
-        s.patch.cgl.profileData.profileVideosPlaying +
-        " tex preview: " +
-        s.patch.cgl.profileData.profileTexPreviews;
-      r.innerHTML +=
-        " draw meshes: " +
-        Math.ceil(s.patch.cgl.profileData.profileMeshDraw / p) +
-        " framebuffer blit: " +
-        Math.ceil(s.patch.cgl.profileData.profileFramebuffer / p) +
-        " texeffect blit: " +
-        Math.ceil(s.patch.cgl.profileData.profileTextureEffect / p);
-      r.innerHTML +=
-        " all shader compiletime: " +
-        Math.round(s.patch.cgl.profileData.shaderCompileTime * 100) / 100;
-    }
-    s.patch.cgl.profileData.clear();
-  }
-  function ne(e) {
-    e.style.padding = "0px";
-    e.style.margin = "0px";
-  }
-  function ie(t, e, n, i) {
-    const r = 20;
-    t.usedAvg = t.usedAvg || t.used;
-    if (!t.ele || w) {
-      const s = document.createElement("div");
-      t.ele = s;
-      if (t.childs && t.childs.length > 0) s.style.height = "500px";
-      else s.style.height = r + "px";
-      s.style.overflow = "hidden";
-      s.style.display = "inline-block";
-      if (!t.isRoot) {
-        s.innerHTML =
-          '<div style="min-height:' +
-          r +
-          'px;width:100%;overflow:hidden;color:black;position:relative">&nbsp;' +
-          t.name +
-          "</div>";
-        s.style["background-color"] =
-          "rgb(" + t.colR + "," + t.colG + "," + t.colB + ")";
-        s.style["border-left"] = "1px solid black";
-      }
-      e.appendChild(s);
-    }
-    if (!t.isRoot) {
-      if (performance.now() - t.lastTime > 200) {
-        t.ele.style.display = "none";
-        t.hidden = true;
-      } else {
-        if (t.hidden) {
-          t.ele.style.display = "inline-block";
-          t.hidden = false;
-        }
-      }
-      t.ele.style.float = "left";
-      t.ele.style.width = Math.floor((t.usedAvg / n) * 98) + "%";
-    } else {
-      t.ele.style.width = "100%";
-      t.ele.style.clear = "both";
-      t.ele.style.float = "none";
-    }
-    if (t && t.childs && t.childs.length > 0) {
-      let e = 0;
-      for (var a = 0; a < t.childs.length; a++) {
-        t.childs[a].usedAvg =
-          (t.childs[a].usedAvg || t.childs[a].used) * 0.95 +
-          t.childs[a].used * 0.05;
-        e += t.childs[a].usedAvg;
-      }
-      for (var a = 0; a < t.childs.length; a++) {
-        ie(t.childs[a], t.ele, e, i + 1);
-      }
-    }
-  }
-  function re(t) {
-    for (let e = 0; e < t.childs.length; e++) re(t.childs[e]);
-    t.childs.length = 0;
-  }
-  function ae() {
-    if (!CGL.performanceMeasures) return;
-    if (!a) {
-      s.log("create measure ele");
-      a = document.createElement("div");
-      a.style.width = "100%";
-      a.style["background-color"] = "#444";
-      a.style.bottom = "10px";
-      a.style.height = "100px";
-      a.style.opacity = "1";
-      a.style.position = "absolute";
-      a.style["z-index"] = "99999";
-      a.innerHTML = "";
-      N.appendChild(a);
-    }
-    let t = 0;
-    const n = CGL.performanceMeasures[0];
-    for (let e = 0; e < n.childs.length; e++) t += n.childs[e].used;
-    ie(CGL.performanceMeasures[0], a, t, 0);
-    n.childs.length = 0;
-    re(CGL.performanceMeasures[0]);
-    CGL.performanceMeasures.length = 0;
-    w = false;
-  }
-  e.onTriggered = se;
-  function se() {
-    const e = performance.now();
-    h++;
-    if (K && R.get() && o.get())
-      s.patch.cgl.profileData.doProfileGlQuery = true;
-    else s.patch.cgl.profileData.doProfileGlQuery = false;
-    if (m === 0) m = Date.now();
-    if (Date.now() - m >= 1e3) {
-      p = h;
-      h = 0;
-      F.set(p);
-      if (o.get()) te();
-      m = Date.now();
-    }
-    const n = s.patch.cgl.profileData.glQueryData;
-    k = 0;
-    if (n) {
-      let t = 0;
-      for (let e in n) {
-        t++;
-        if (n[e].time) k += n[e].time;
-      }
-    }
-    if (o.get()) {
-      ae();
-      if (d && !s.patch.cgl.profileData.pause) {
-        b.push(s.patch.cgl.profileData.profileFrameDelta);
-        b.shift();
-        v.push(f);
-        v.shift();
-        y.push(
-          s.patch.cgl.profileData.profileOnAnimFrameOps -
-            s.patch.cgl.profileData.profileMainloopMs
-        );
-        y.shift();
-        _.push(k);
-        _.shift();
-        $();
-      }
-    }
-    G = performance.now();
-    O = performance.now() - e;
-    const t = performance.now();
-    V.setRef(S);
-    l.trigger();
-    const i = performance.now() - t;
-    const r = s.patch.cgl.profileData.profileMainloopMs;
-    const a =
-      s.patch.cgl.profileData.profileOnAnimFrameOps -
-      s.patch.cgl.profileData.profileMainloopMs;
-    if (B.get()) {
-      f = f * 0.9 + i * 0.1;
-      P = P * 0.5 + r * 0.5;
-      L = L * 0.5 + a * 0.5;
-    } else {
-      f = i;
-      P = r;
-      L = a;
-    }
-    s.patch.cgl.profileData.clearGlQuery();
-  }
-};
-Ops.Gl.Performance.prototype = new CABLES.Op();
-CABLES.OPS["9cd2d9de-000f-4a14-bd13-e7d5f057583c"] = {
-  f: Ops.Gl.Performance,
-  objName: "Ops.Gl.Performance",
-};
-Ops.Boolean.ToggleBool_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTriggerButton("trigger"),
-    i = e.inTriggerButton("reset"),
-    r = e.inBool("Default", false),
-    a = e.outTrigger("Next"),
-    s = e.outBoolNum("result");
-  let o = false;
-  e.onLoadedValueSet = () => {
-    o = r.get();
-    s.set(r.get());
-    a.trigger();
-  };
-  n.onTriggered = function () {
-    o = !o;
-    s.set(o);
-    a.trigger();
-  };
-  i.onTriggered = function () {
-    o = r.get();
-    s.set(o);
-    a.trigger();
-  };
-};
-Ops.Boolean.ToggleBool_v2.prototype = new CABLES.Op();
-CABLES.OPS["4313d9bb-96b6-43bc-9190-6068cfb2593c"] = {
-  f: Ops.Boolean.ToggleBool_v2,
-  objName: "Ops.Boolean.ToggleBool_v2",
-};
-Ops.Trigger.TriggerReceive = function () {
-  CABLES.Op.apply(this, arguments);
-  const i = this;
-  const e = (i.attachments = {});
-  const t = i.outTrigger("Triggered");
-  i.varName = i.inValueSelect("Named Trigger", [], "", true);
-  a();
-  i.patch.addEventListener("namedTriggersChanged", a);
-  let n = null;
-  function r() {
-    t.trigger();
-  }
-  function a() {
-    if (CABLES.UI) {
-      let t = [];
-      let n = i.patch.namedTriggers;
-      for (let e in n) t.push(e);
-      t = t.sort();
-      i.varName.uiAttribs.values = t;
-    }
-  }
-  i.varName.onChange = function () {
-    if (n) {
-      let e = i.patch.namedTriggers[n];
-      let t = e.indexOf(r);
-      if (t != -1) e.splice(t, 1);
-    }
-    i.setTitle(">" + i.varName.get());
-    i.patch.namedTriggers[i.varName.get()] =
-      i.patch.namedTriggers[i.varName.get()] || [];
-    let e = i.patch.namedTriggers[i.varName.get()];
-    e.push(r);
-    n = i.varName.get();
-    s();
-    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
-  };
-  i.on("uiParamPanel", s);
-  function s() {
-    if (!i.varName.get()) {
-      i.setUiError("unknowntrigger", "unknown trigger");
-    } else i.setUiError("unknowntrigger", null);
-  }
-};
-Ops.Trigger.TriggerReceive.prototype = new CABLES.Op();
-CABLES.OPS["0816c999-f2db-466b-9777-2814573574c5"] = {
-  f: Ops.Trigger.TriggerReceive,
-  objName: "Ops.Trigger.TriggerReceive",
-};
-Ops.Number.SwitchNumber = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const e = (n.attachments = {});
-  const t = n.inValueInt("Index");
-  const i = [];
-  const r = n.outNumber("Result");
-  t.onChange = a;
-  for (let t = 0; t < 16; t++) {
-    let e = n.inValue("Value " + t);
-    i.push(e);
-    e.onChange = a;
-  }
-  function a() {
-    if (t.get() >= 0 && i[t.get()]) {
-      r.set(i[t.get()].get());
-    }
-  }
-};
-Ops.Number.SwitchNumber.prototype = new CABLES.Op();
-CABLES.OPS["fbb89f72-f2e3-4d34-ad01-7d884a1bcdc0"] = {
-  f: Ops.Number.SwitchNumber,
-  objName: "Ops.Number.SwitchNumber",
-};
-Ops.String.String_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inString("value", ""),
-    i = e.outString("String");
-  n.onChange = function () {
-    if (!n.isLinked()) e.setUiAttrib({ extendTitle: n.get() });
-    i.set(n.get());
-  };
-};
-Ops.String.String_v2.prototype = new CABLES.Op();
-CABLES.OPS["d697ff82-74fd-4f31-8f54-295bc64e713d"] = {
-  f: Ops.String.String_v2,
-  objName: "Ops.String.String_v2",
-};
-Ops.Html.ElementClientRect = function () {
-  CABLES.Op.apply(this, arguments);
-  const r = this;
-  const e = (r.attachments = {});
-  const t = r.inTriggerButton("Update"),
-    a = r.inObject("Element", null, "element"),
-    s = r.inSwitch(
-      "Pixel Units",
-      ["CSS Pixels", "Display Pixels"],
-      "CSS Pixels"
-    ),
-    o = r.outNumber("X"),
-    l = r.outNumber("Y"),
-    u = r.outNumber("Width"),
-    c = r.outNumber("Height");
-  t.onTriggered = () => {
-    let e = a.get();
-    if (!e) {
-      o.set(0);
-      l.set(0);
-      u.set(0);
-      c.set(0);
-      return;
-    }
-    const t = e.getBoundingClientRect();
-    const n = r.patch.cgl.canvas.getBoundingClientRect();
-    let i = 1;
-    if (s.get() == "Display Pixels") {
-      i = r.patch.cgl.pixelDensity;
-    }
-    o.set(t.left * i - n.left * i);
-    l.set(t.top * i - n.top * i);
-    u.set(t.width * i);
-    c.set(t.height * i);
-  };
-};
-Ops.Html.ElementClientRect.prototype = new CABLES.Op();
-CABLES.OPS["7a046f98-2adc-4f8e-ad47-c600e3ef5bca"] = {
-  f: Ops.Html.ElementClientRect,
-  objName: "Ops.Html.ElementClientRect",
-};
-Ops.Html.QuerySelector_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const a = this;
-  const e = (a.attachments = {});
-  const t = a.inTriggerButton("Update"),
-    s = a.inString("Query"),
-    o = a.inValueSelect("Mode", ["document", "string input"], "document"),
-    l = a.inValueSelect("Type", ["text/html", "text/xml"], "text/html"),
-    u = a.inStringEditor("Document", "xml"),
-    c = a.outObject("Element");
-  if (o.get() === "document") {
-    u.setUiAttribs({ greyout: true });
-    l.set("text/html");
-    l.setUiAttribs({ greyout: true });
-  }
-  t.onTriggered = s.onChange = l.onChange = u.onChange = n;
-  o.onChange = i;
-  function n() {
-    a.setUiError("exc", null);
-    const n = s.get();
-    const i = u.get();
-    const e = o.get();
-    if (e === "string input" && i) {
-      let e = new DOMParser();
-      let t = null;
-      try {
-        t = e.parseFromString(i, l.get());
-        const r = t.querySelector(n);
-        c.set(r);
-      } catch (e) {
-        a.setUiError("exc", e.message, 1);
-        a.logWarn(e);
-      }
-    } else {
-      try {
-        const r = document.querySelector(n);
-        c.set(r);
-      } catch (e) {
-        a.setUiError("exc", e.message, 1);
-        a.logWarn(e);
-      }
-    }
-  }
-  function i() {
-    if (o.get() === "document") {
-      u.setUiAttribs({ greyout: true });
-      l.set("text/html");
-      l.setUiAttribs({ greyout: true });
-    } else {
-      u.setUiAttribs({ greyout: false });
-      l.setUiAttribs({ greyout: false });
-    }
-  }
-};
-Ops.Html.QuerySelector_v2.prototype = new CABLES.Op();
-CABLES.OPS["a1a2189b-564c-4dd7-b3d9-a6cebc0cd94e"] = {
-  f: Ops.Html.QuerySelector_v2,
-  objName: "Ops.Html.QuerySelector_v2",
-};
-Ops.Gl.CanvasInfo_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = t.outNumber("width"),
-    i = t.outNumber("height"),
-    r = t.outNumber("Pixel Ratio"),
-    a = t.outNumber("Pixel Width"),
-    s = t.outNumber("Pixel Height"),
-    o = t.inSwitch("Pixel Unit", ["Display", "CSS"], "Display"),
-    l = t.outNumber("Aspect Ratio"),
-    u = t.outBool("Landscape"),
-    c = t.outObject("Canvas", "element"),
-    d = t.outObject("Canvas Parent", "element");
-  let h = t.patch.cgl;
-  c.set(t.patch.cgl.canvas);
-  d.set(t.patch.cgl.canvas.parentElement);
-  h.on("resize", p);
-  o.onChange = p;
-  p();
-  function p() {
-    let e = 1;
-    if (o.get() == "CSS") e = t.patch.cgl.pixelDensity;
-    i.set(h.canvasHeight);
-    n.set(h.canvasWidth);
-    s.set(h.canvasHeight * t.patch.cgl.pixelDensity);
-    a.set(h.canvasWidth * t.patch.cgl.pixelDensity);
-    r.set(t.patch.cgl.pixelDensity);
-    l.set(h.canvasWidth / h.canvasHeight);
-    u.set(h.canvasWidth > h.canvasHeight ? 1 : 0);
-  }
-};
-Ops.Gl.CanvasInfo_v2.prototype = new CABLES.Op();
-CABLES.OPS["a249e025-ae2c-4fb1-99f1-f86bfe7d5fc4"] = {
-  f: Ops.Gl.CanvasInfo_v2,
-  objName: "Ops.Gl.CanvasInfo_v2",
-};
-Ops.Vars.VarGetArray_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.outArray("Value");
-  e.varName = e.inValueSelect("Variable", [], "", true);
-  new CABLES.VarGetOpWrapper(e, "array", e.varName, n);
-};
-Ops.Vars.VarGetArray_v2.prototype = new CABLES.Op();
-CABLES.OPS["afa79294-aa9c-43bc-a49a-cade000a1de5"] = {
-  f: Ops.Vars.VarGetArray_v2,
-  objName: "Ops.Vars.VarGetArray_v2",
-};
-Ops.Array.Array3GetNumbers = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inArray("Array", 3),
-    i = e.inValueInt("Index"),
-    r = e.outNumber("X"),
-    a = e.outNumber("Y"),
-    s = e.outNumber("Z");
-  n.onChange = i.onChange = o;
-  function o() {
-    let e = n.get();
-    if (!e) {
-      r.set(0);
-      a.set(0);
-      s.set(0);
-      return;
-    }
-    let t = Math.min(e.length - 3, i.get() * 3);
-    if (e) {
-      r.set(e[t + 0]);
-      a.set(e[t + 1]);
-      s.set(e[t + 2]);
-    }
-  }
-};
-Ops.Array.Array3GetNumbers.prototype = new CABLES.Op();
-CABLES.OPS["56882cc4-c40d-4dc0-bf7c-db1b5a7acad0"] = {
-  f: Ops.Array.Array3GetNumbers,
-  objName: "Ops.Array.Array3GetNumbers",
-};
-Ops.Gl.Matrix.ScreenPosTo3d_v3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Exec"),
-    r = e.inValue("X"),
-    a = e.inValue("Y"),
-    i = e.inSwitch("Input Type", ["Pixel", "-1 to 1"], "Pixel"),
-    s = e.outTrigger("Trigger out"),
-    o = e.outNumber("Result X"),
-    l = e.outNumber("Result Y");
-  const u = mat4.create();
-  const c = e.patch.cgl;
-  n.onTriggered = h;
-  let d = 0;
-  i.onChange = () => {
-    if (i.get() == "Pixel") d = 0;
-    else if (i.get() == "-1 to 1") d = 1;
-  };
-  function h() {
-    let e = 0;
-    let t = 0;
-    let n = c.canvas.clientWidth / c.canvas.clientHeight;
-    if (d === 0) {
-      e = (2 * r.get()) / c.canvas.clientWidth - 1;
-      t = (-2 * a.get()) / c.canvas.clientHeight + 1;
-    } else if (d === 1) {
-      e = r.get();
-      t = a.get();
-    }
-    let i = vec3.fromValues(e, t, 0);
-    mat4.mul(u, c.pMatrix, c.vMatrix);
-    mat4.invert(u, u);
-    vec3.transformMat4(i, i, u);
-    o.set(i[0] * 10);
-    l.set(i[1] * 10);
-    s.trigger();
-  }
-};
-Ops.Gl.Matrix.ScreenPosTo3d_v3.prototype = new CABLES.Op();
-CABLES.OPS["48d72532-afa6-40c9-a895-00a43635a94b"] = {
-  f: Ops.Gl.Matrix.ScreenPosTo3d_v3,
-  objName: "Ops.Gl.Matrix.ScreenPosTo3d_v3",
-};
-Ops.Trigger.RouteTriggerString_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = 24,
-    i = t.inTriggerButton("Execute"),
-    r = t.inString("Switch Value"),
-    a = t.outTrigger("Next Trigger"),
-    s = t.outNumber("Switched Index");
-  let o = -1;
-  const l = [];
-  const u = [];
-  for (let e = 0; e < n; e++) {
-    l[e] = t.outTrigger("Trigger " + e);
-    u[e] = t.inString("String " + e);
-    u[e].onChange = c;
-  }
-  t.onLoad = t.onInit = r.onChange = c;
-  function c() {
-    o = -1;
-    for (let e = 0; e < u.length; e++) {
-      if (u[e].get() == r.get()) {
-        o = e;
-        break;
-      }
+      gui.savedState.setUnSaved("areaOp", e.getSubPatch());
+      e.uiAttr({ comment_title: n.get() || " " });
+      e.name = n.get();
     }
   }
   i.onTriggered = () => {
-    if (o >= 0) l[o].trigger();
-    s.set(o);
-    a.trigger();
+    e.patch.deleteOp(e.id);
   };
 };
-Ops.Trigger.RouteTriggerString_v2.prototype = new CABLES.Op();
-CABLES.OPS["13bdac27-5da7-4311-890b-6a7e49d72040"] = {
-  f: Ops.Trigger.RouteTriggerString_v2,
-  objName: "Ops.Trigger.RouteTriggerString_v2",
-};
-Ops.Number.TriggerOnChangeNumber = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inFloat("Value"),
-    i = e.outTrigger("Next"),
-    r = e.outNumber("Number");
-  n.onChange = function () {
-    r.set(n.get());
-    i.trigger();
-  };
-};
-Ops.Number.TriggerOnChangeNumber.prototype = new CABLES.Op();
-CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"] = {
-  f: Ops.Number.TriggerOnChangeNumber,
-  objName: "Ops.Number.TriggerOnChangeNumber",
-};
-Ops.Gl.RenderToTexture_v3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const r = this;
-  const e = (r.attachments = {});
-  const t = r.inTrigger("render"),
-    n = r.inSwitch("Size", ["Canvas", "Manual"], "Canvas"),
-    i = r.inValueInt("texture width", 512),
-    a = r.inValueInt("texture height", 512),
-    s = r.inBool("Auto Aspect", true),
-    o = r.inSwitch("filter", ["nearest", "linear", "mipmap"], "linear"),
-    l = r.inSwitch("Wrap", ["Clamp", "Repeat", "Mirror"], "Repeat"),
-    u = r.inSwitch("MSAA", ["none", "2x", "4x", "8x"], "none"),
-    c = r.outTrigger("trigger"),
-    d = r.outTexture("texture"),
-    h = r.outTexture("textureDepth"),
-    p = r.inDropDown(
-      "Pixel Format",
-      CGL.Texture.PIXELFORMATS,
-      CGL.Texture.PFORMATSTR_RGBA8UB
-    ),
-    m = r.inValueBool("Depth", true),
-    f = r.inValueBool("Clear", true);
-  const g = r.patch.cgl;
-  let b = null;
-  let v = true;
-  r.setPortGroup("Size", [n, i, a, s]);
-  p.onChange =
-    m.onChange =
-    f.onChange =
-    o.onChange =
-    l.onChange =
-    u.onChange =
-      _;
-  n.onChange = y;
-  t.onTriggered = r.preRender = T;
-  y();
-  function y() {
-    i.setUiAttribs({ greyout: n.get() != "Manual" });
-    a.setUiAttribs({ greyout: n.get() != "Manual" });
-    s.setUiAttribs({ greyout: n.get() != "Manual" });
-  }
-  function _() {
-    v = true;
-  }
-  function T() {
-    CGL.TextureEffect.checkOpNotInTextureEffect(r);
-    if (!b || v) {
-      if (b) b.delete();
-      let n = CGL.Texture.WRAP_REPEAT;
-      if (l.get() == "Clamp") n = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-      else if (l.get() == "Mirror") n = CGL.Texture.WRAP_MIRRORED_REPEAT;
-      let i = CGL.Texture.FILTER_NEAREST;
-      if (o.get() == "nearest") i = CGL.Texture.FILTER_NEAREST;
-      else if (o.get() == "linear") i = CGL.Texture.FILTER_LINEAR;
-      else if (o.get() == "mipmap") i = CGL.Texture.FILTER_MIPMAP;
-      if (p.get().indexOf("loat") && o.get() == "mipmap")
-        r.setUiError(
-          "fpmipmap",
-          "Can't use mipmap and float texture at the same time"
-        );
-      else r.setUiError("fpmipmap", null);
-      if (g.glVersion >= 2) {
-        let e = true;
-        let t = 4;
-        if (u.get() == "none") {
-          t = 0;
-          e = false;
-        }
-        if (u.get() == "2x") t = 2;
-        if (u.get() == "4x") t = 4;
-        if (u.get() == "8x") t = 8;
-        b = new CGL.Framebuffer2(g, 8, 8, {
-          name: "render2texture " + r.id,
-          pixelFormat: p.get(),
-          multisampling: e,
-          multisamplingSamples: t,
-          wrap: n,
-          filter: i,
-          depth: m.get(),
-          clear: f.get(),
-        });
-      } else {
-        b = new CGL.Framebuffer(g, 8, 8, {
-          isFloatingPointTexture: false,
-          clear: f.get(),
-        });
-      }
-      if (b && b.valid) {
-        h.set(b.getTextureDepth());
-        v = false;
-      } else {
-        b = null;
-        v = true;
-      }
-    }
-    let e = s.get();
-    if (n.get() == "Canvas") {
-      e = true;
-      i.set(r.patch.cgl.checkTextureSize(g.canvasWidth));
-      a.set(r.patch.cgl.checkTextureSize(g.canvasHeight));
-    }
-    if (
-      b.getWidth() != r.patch.cgl.checkTextureSize(i.get()) ||
-      b.getHeight() != r.patch.cgl.checkTextureSize(a.get())
-    ) {
-      b.setSize(
-        r.patch.cgl.checkTextureSize(i.get()),
-        r.patch.cgl.checkTextureSize(a.get())
-      );
-    }
-    b.renderStart(g);
-    g.pushViewPort(0, 0, i.get(), a.get());
-    if (e) mat4.perspective(g.pMatrix, 45, i.get() / a.get(), 0.1, 1e3);
-    c.trigger();
-    b.renderEnd(g);
-    g.popViewPort();
-    h.setRef(b.getTextureDepth());
-    d.setRef(b.getTextureColor());
-  }
-};
-Ops.Gl.RenderToTexture_v3.prototype = new CABLES.Op();
-CABLES.OPS["41eec5c7-c480-477a-be81-04c3efac8357"] = {
-  f: Ops.Gl.RenderToTexture_v3,
-  objName: "Ops.Gl.RenderToTexture_v3",
-};
-Ops.Html.FontFile_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const r = this;
-  const e = (r.attachments = {});
-  const a = r.inUrl("file", [".otf", ".ttf", ".woff", ".woff2"]),
-    s = r.inString("family"),
-    o = r.inBool("Active", true),
-    l = r.outBoolNum("Loaded"),
-    u = r.outTrigger("Loaded Trigger");
-  let c = null;
-  let d;
-  let h = null;
-  let t = null;
-  let p = null;
-  let m = "";
-  a.onChange = function () {
-    l.set(false);
-    i(null);
-  };
-  o.onChange = s.onChange = () => {
-    n();
-  };
-  function n() {
-    clearTimeout(t);
-    t = setTimeout(() => {
-      i(null);
-    }, 50);
-  }
-  r.patch.on("windowChanged", (e) => {
-    d = null;
-    i(e.document);
-  });
-  function i(e) {
-    if (p) p.remove();
-    if (d) {
-      const t = h.fonts.delete(d);
-      d = null;
-      setTimeout(() => {
-        r.patch.emitEvent("fontLoaded", m);
-      }, 100);
-    }
-    if (!o.get()) return;
-    h = e || h || r.patch.cgl.canvas.ownerDocument || document;
-    if (c) c = r.patch.cgl.patch.loading.finished(c);
-    r.setUiError("loadingerror", null);
-    m = s.get();
-    if (a.get() && s.get()) {
-      if (h.fonts) {
-        let e = "url(" + r.patch.getFilePath(String(a.get())) + ")";
-        d = new FontFace(s.get(), e);
-        c = r.patch.cgl.patch.loading.start("FontFile", a.get(), r);
-        h.fonts.add(d);
-        d.loaded
-          .then(
-            (e) => {
-              l.set(true);
-              u.trigger();
-              c = r.patch.cgl.patch.loading.finished(c);
-              r.patch.emitEvent("fontLoaded", s.get());
-            },
-            (e) => {
-              r.setUiError(
-                "loadingerror",
-                "Font loading error: " + d.status + "(" + a.get() + ")"
-              );
-              c = r.patch.cgl.patch.loading.finished(c);
-              l.set(true);
-            }
-          )
-          .catch((e) => {
-            c = r.patch.cgl.patch.loading.finished(c);
-            console.error("catch ", e);
-          });
-        d.load();
-      } else {
-        const n = r.patch.getFilePath(String(a.get()));
-        const i =
-          "".endl() +
-          "@font-face".endl() +
-          "{".endl() +
-          '  font-family: "' +
-          s.get() +
-          '";'.endl() +
-          '  src: url("' +
-          n +
-          '") format("truetype");'.endl() +
-          "}";
-        p = document.createElement("style");
-        p.classList.add("cablesEle");
-        p.type = "text/css";
-        p.innerHTML = i;
-        document
-          .getElementsByTagName("head")
-          [document.getElementsByTagName("head").length - 1].appendChild(p);
-      }
-    }
-  }
-};
-Ops.Html.FontFile_v2.prototype = new CABLES.Op();
-CABLES.OPS["68177370-116e-4c76-aef3-3b10d68e7227"] = {
-  f: Ops.Html.FontFile_v2,
-  objName: "Ops.Html.FontFile_v2",
-};
-Ops.Gl.Texture_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const r = this;
-  const e = (r.attachments = {});
-  const a = r.inUrl("File", [".jpg", ".png", ".webp", ".jpeg", ".avif"]),
-    t = r.inSwitch("Filter", ["nearest", "linear", "mipmap"]),
-    n = r.inValueSelect(
-      "Wrap",
-      ["repeat", "mirrored repeat", "clamp to edge"],
-      "clamp to edge"
-    ),
-    i = r.inSwitch("Anisotropic", ["0", "1", "2", "4", "8", "16"], "0"),
-    s = r.inSwitch("Data Format", ["R", "RG", "RGB", "RGBA", "SRGBA"], "RGBA"),
-    o = r.inValueBool("Flip", false),
-    l = r.inValueBool("Pre Multiplied Alpha", false),
-    u = r.inValueBool("Active", true),
-    c = r.inBool("Save Memory", true),
-    d = r.outTexture("Texture"),
-    h = r.inBool("Add Cachebuster", false),
-    p = r.inTriggerButton("Reload"),
-    m = r.outNumber("Width"),
-    f = r.outNumber("Height"),
-    g = r.outNumber("Aspect Ratio"),
-    b = r.outBoolNum("Loaded", 0),
-    v = r.outBoolNum("Loading", 0);
-  const y = r.patch.cgl;
-  r.toWorkPortsNeedToBeLinked(d);
-  r.setPortGroup("Size", [m, f]);
-  let _ = null;
-  let T = null;
-  let O = null;
-  let S = CGL.Texture.FILTER_MIPMAP;
-  let A = CGL.Texture.WRAP_REPEAT;
-  let w = 0;
-  let C = 0;
-  l.setUiAttribs({ hidePort: true });
-  l.onChange = a.onChange = s.onChange = h.onChange = o.onChange = I;
-  i.onChange = t.onChange = P;
-  n.onChange = L;
-  t.set("mipmap");
-  n.set("repeat");
-  d.set(CGL.Texture.getEmptyTexture(y));
-  p.onTriggered = I;
-  u.onChange = function () {
-    if (u.get()) {
-      if (_ != a.get() || !O) I();
-      else d.set(O);
-    } else {
-      d.set(CGL.Texture.getEmptyTexture(y));
-      m.set(CGL.Texture.getEmptyTexture(y).width);
-      f.set(CGL.Texture.getEmptyTexture(y).height);
-      if (O) O.delete();
-      r.setUiAttrib({ extendTitle: "" });
-      O = null;
-    }
-  };
-  const x = function () {
-    const e = CGL.Texture.getTempTexture(y);
-    d.set(e);
-  };
-  function I(e) {
-    clearTimeout(C);
-    C = setTimeout(function () {
-      k(e);
-    }, 1);
-  }
-  function E() {
-    if (s.get() == "R") return CGL.Texture.PFORMATSTR_R8UB;
-    if (s.get() == "RG") return CGL.Texture.PFORMATSTR_RG8UB;
-    if (s.get() == "RGB") return CGL.Texture.PFORMATSTR_RGB8UB;
-    if (s.get() == "SRGBA") return CGL.Texture.PFORMATSTR_SRGBA8;
-    return CGL.Texture.PFORMATSTR_RGBA8UB;
-  }
-  function k(e) {
-    r.checkMainloopExists();
-    if (!u.get()) return;
-    if (T) T = y.patch.loading.finished(T);
-    T = y.patch.loading.start(r.objName, a.get(), r);
-    let t = r.patch.getFilePath(String(a.get()));
-    if (h.get() || e === true) t = CABLES.cacheBust(t);
-    if (String(a.get()).indexOf("data:") == 0) t = a.get();
-    let n = false;
-    _ = a.get();
-    if (a.get() && a.get().length > 1) {
-      b.set(false);
-      v.set(true);
-      const i = a.get();
-      r.setUiAttrib({ extendTitle: CABLES.basename(t) });
-      if (n) r.refreshParams();
-      y.patch.loading.addAssetLoadingTask(() => {
-        r.setUiError("urlerror", null);
-        CGL.Texture.load(
-          y,
-          t,
-          function (e, t) {
-            y.checkFrameStarted("texture inittexture");
-            if (a.get() != i) {
-              T = y.patch.loading.finished(T);
-              return;
-            }
-            if (O) O.delete();
-            if (e) {
-              const n = CGL.Texture.getErrorTexture(y);
-              d.setRef(n);
-              r.setUiError(
-                "urlerror",
-                'could not load texture: "' + a.get() + '"',
-                2
-              );
-              T = y.patch.loading.finished(T);
-              return;
-            }
-            m.set(t.width);
-            f.set(t.height);
-            g.set(t.width / t.height);
-            O = t;
-            d.setRef(O);
-            v.set(false);
-            b.set(true);
-            if (c.get()) O.image = null;
-            if (T) {
-              T = y.patch.loading.finished(T);
-            }
-            r.checkMainloopExists();
-          },
-          {
-            anisotropic: w,
-            wrap: A,
-            flip: o.get(),
-            unpackAlpha: l.get(),
-            pixelFormat: E(),
-            filter: S,
-          }
-        );
-        r.checkMainloopExists();
-      });
-    } else {
-      x();
-      T = y.patch.loading.finished(T);
-    }
-  }
-  function P() {
-    if (t.get() == "nearest") S = CGL.Texture.FILTER_NEAREST;
-    else if (t.get() == "linear") S = CGL.Texture.FILTER_LINEAR;
-    else if (t.get() == "mipmap") S = CGL.Texture.FILTER_MIPMAP;
-    else if (t.get() == "Anisotropic") S = CGL.Texture.FILTER_ANISOTROPIC;
-    i.setUiAttribs({ greyout: S != CGL.Texture.FILTER_MIPMAP });
-    w = parseFloat(i.get());
-    I();
-  }
-  function L() {
-    if (n.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
-    if (n.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
-    if (n.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    I();
-  }
-  r.onFileChanged = function (e) {
-    if (a.get() && a.get().indexOf(e) > -1) {
-      d.set(CGL.Texture.getEmptyTexture(r.patch.cgl));
-      d.set(CGL.Texture.getTempTexture(y));
-      k(true);
-    }
-  };
-};
-Ops.Gl.Texture_v2.prototype = new CABLES.Op();
-CABLES.OPS["790f3702-9833-464e-8e37-6f0f813f7e16"] = {
-  f: Ops.Gl.Texture_v2,
-  objName: "Ops.Gl.Texture_v2",
-};
-Ops.Gl.Textures.SwitchTextures_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = t.inTrigger("exec"),
-    i = this.inValueInt("num"),
-    r = t.inValueBool("Default Texture Transparent", true),
-    a = t.outTrigger("Next"),
-    s = this.outTexture("texture");
-  const o = t.patch.cgl;
-  const l = [];
-  let u = 0;
-  let c = -1;
-  let d = CGL.Texture.getEmptyTexture(o);
-  t.toWorkPortsNeedToBeLinked(n);
-  n.onTriggered = function () {
-    p();
-    a.trigger();
-  };
-  r.onChange = function () {
-    if (r.get()) d = CGL.Texture.getEmptyTexture(o);
-    else d = CGL.Texture.getTempTexture(o);
-    p(true);
-  };
-  for (let e = 0; e < 16; e++) {
-    const m = t.inTexture("texture" + e);
-    l.push(m);
-    m.onChange = h;
-  }
-  function h() {
-    p(true);
-  }
-  function p(e) {
-    u = parseInt(i.get(), 10);
-    if (!e) {
-      if (u == c) return;
-      if (u != u) return;
-    }
-    if (isNaN(u) || u < 0 || u > l.length - 1) u = 0;
-    if (l[u].get()) s.setRef(l[u].get());
-    else s.setRef(d);
-    c = u;
-  }
-};
-Ops.Gl.Textures.SwitchTextures_v2.prototype = new CABLES.Op();
-CABLES.OPS["a82ae429-ac07-4760-882b-595a857c7ae0"] = {
-  f: Ops.Gl.Textures.SwitchTextures_v2,
-  objName: "Ops.Gl.Textures.SwitchTextures_v2",
-};
-Ops.Number.Number = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("value"),
-    i = e.outNumber("result");
-  n.onChange = r;
-  function r() {
-    i.set(Number(n.get()));
-  }
-};
-Ops.Number.Number.prototype = new CABLES.Op();
-CABLES.OPS["8fb2bb5d-665a-4d0a-8079-12710ae453be"] = {
-  f: Ops.Number.Number,
-  objName: "Ops.Number.Number",
-};
-Ops.Trigger.GateTrigger = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Execute"),
-    i = e.inValueBool("Pass Through", true),
-    r = e.outTrigger("Trigger out");
-  n.onTriggered = function () {
-    if (i.get()) r.trigger();
-  };
-};
-Ops.Trigger.GateTrigger.prototype = new CABLES.Op();
-CABLES.OPS["65e8b8a2-ba13-485f-883a-2bcf377989da"] = {
-  f: Ops.Trigger.GateTrigger,
-  objName: "Ops.Trigger.GateTrigger",
-};
-Ops.String.StringContains_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inString("String"),
-    i = e.inString("SearchValue"),
-    r = e.outBoolNum("Found", false),
-    a = e.outNumber("Index", -1);
-  i.onChange = n.onChange = s;
-  s();
-  function s() {
-    if (n.get() && i.get() && i.get().length > 0) {
-      const e = n.get().indexOf(i.get());
-      a.set(e);
-      r.set(e > -1);
-    } else {
-      a.set(-1);
-      r.set(false);
-    }
-  }
-};
-Ops.String.StringContains_v2.prototype = new CABLES.Op();
-CABLES.OPS["2ca3e5d7-e6b4-46a7-8381-3fe1ad8b6879"] = {
-  f: Ops.String.StringContains_v2,
-  objName: "Ops.String.StringContains_v2",
-};
-Ops.Boolean.Or = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueBool("bool 1"),
-    i = e.inValueBool("bool 2"),
-    r = e.inValueBool("bool 3"),
-    a = e.inValueBool("bool 4"),
-    s = e.inValueBool("bool 5"),
-    o = e.inValueBool("bool 6"),
-    l = e.inValueBool("bool 7"),
-    u = e.inValueBool("bool 8"),
-    c = e.inValueBool("bool 9"),
-    d = e.inValueBool("bool 10"),
-    h = e.outBoolNum("result");
-  n.onChange =
-    i.onChange =
-    r.onChange =
-    a.onChange =
-    s.onChange =
-    o.onChange =
-    l.onChange =
-    u.onChange =
-    c.onChange =
-    d.onChange =
-      p;
-  function p() {
-    h.set(
-      n.get() ||
-        i.get() ||
-        r.get() ||
-        a.get() ||
-        s.get() ||
-        o.get() ||
-        l.get() ||
-        u.get() ||
-        c.get() ||
-        d.get()
-    );
-  }
-};
-Ops.Boolean.Or.prototype = new CABLES.Op();
-CABLES.OPS["b3b36238-4592-4e11-afe3-8361c4fd6be5"] = {
-  f: Ops.Boolean.Or,
-  objName: "Ops.Boolean.Or",
-};
-Ops.Extension.Deprecated.ToggleBoolValue = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueBool("in bool"),
-    i = e.outBoolNum("out bool");
-  n.changeAlways = true;
-  n.onChange = function () {
-    i.set(!(n.get() == true));
-  };
-};
-Ops.Extension.Deprecated.ToggleBoolValue.prototype = new CABLES.Op();
-CABLES.OPS["7b1abd02-3aad-4106-9848-7f4c3cfab6a9"] = {
-  f: Ops.Extension.Deprecated.ToggleBoolValue,
-  objName: "Ops.Extension.Deprecated.ToggleBoolValue",
-};
-Ops.Boolean.TriggerChangedFalse = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  let n = e.inValueBool("Value", false);
-  let i = e.outTrigger("Next");
-  let r = 0;
-  n.onChange = function () {
-    let e = n.get();
-    if (r && !e) {
-      r = false;
-      i.trigger();
-    } else {
-      r = true;
-    }
-  };
-};
-Ops.Boolean.TriggerChangedFalse.prototype = new CABLES.Op();
-CABLES.OPS["6387bcb0-6091-4199-8ab7-f96ad4aa3c7d"] = {
-  f: Ops.Boolean.TriggerChangedFalse,
-  objName: "Ops.Boolean.TriggerChangedFalse",
-};
-Ops.Boolean.TriggerChangedTrue = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  let n = e.inValueBool("Value", false);
-  let i = e.outTrigger("Next");
-  let r = 0;
-  n.onChange = function () {
-    let e = n.get();
-    if (!r && e) {
-      r = true;
-      i.trigger();
-    } else {
-      r = false;
-    }
-  };
-};
-Ops.Boolean.TriggerChangedTrue.prototype = new CABLES.Op();
-CABLES.OPS["385197e1-8b34-4d1c-897f-d1386d99e3b3"] = {
-  f: Ops.Boolean.TriggerChangedTrue,
-  objName: "Ops.Boolean.TriggerChangedTrue",
-};
-Ops.Trigger.DelayedTrigger = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("exe"),
-    i = e.inValueFloat("delay", 1),
-    r = e.inTriggerButton("Cancel"),
-    a = e.outTrigger("next"),
-    s = e.outBool("Delaying");
-  let o = null;
-  r.onTriggered = function () {
-    if (o) clearTimeout(o);
-    o = null;
-  };
-  n.onTriggered = function () {
-    s.set(true);
-    if (o) clearTimeout(o);
-    o = setTimeout(function () {
-      s.set(false);
-      o = null;
-      a.trigger();
-    }, i.get() * 1e3);
-  };
-};
-Ops.Trigger.DelayedTrigger.prototype = new CABLES.Op();
-CABLES.OPS["f4ff66b0-8500-46f7-9117-832aea0c2750"] = {
-  f: Ops.Trigger.DelayedTrigger,
-  objName: "Ops.Trigger.DelayedTrigger",
-};
-Ops.Math.Subtract = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValue("number1", 1),
-    i = e.inValue("number2", 1),
-    r = e.outNumber("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  a();
-  function a() {
-    let e = n.get() - i.get();
-    if (!isNaN(e)) r.set(e);
-  }
-};
-Ops.Math.Subtract.prototype = new CABLES.Op();
-CABLES.OPS["a4ffe852-d200-4b96-9347-68feb01122ca"] = {
-  f: Ops.Math.Subtract,
-  objName: "Ops.Math.Subtract",
-};
-Ops.Trigger.NumberByTrigger = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTriggerButton("0"),
-    i = e.inTriggerButton("1"),
-    r = e.inTriggerButton("2"),
-    a = e.inTriggerButton("3"),
-    s = e.inTriggerButton("4"),
-    o = e.inTriggerButton("5"),
-    l = e.inTriggerButton("6"),
-    u = e.inTriggerButton("7"),
-    c = e.outNumber("number");
-  c.changeAlways = true;
-  const d = e.outTrigger("Triggered");
-  n.onTriggered = function () {
-    c.set(0);
-    d.trigger();
-  };
-  i.onTriggered = function () {
-    c.set(1);
-    d.trigger();
-  };
-  r.onTriggered = function () {
-    c.set(2);
-    d.trigger();
-  };
-  a.onTriggered = function () {
-    c.set(3);
-    d.trigger();
-  };
-  s.onTriggered = function () {
-    c.set(4);
-    d.trigger();
-  };
-  o.onTriggered = function () {
-    c.set(5);
-    d.trigger();
-  };
-  l.onTriggered = function () {
-    c.set(6);
-    d.trigger();
-  };
-  u.onTriggered = function () {
-    c.set(7);
-    d.trigger();
-  };
-};
-Ops.Trigger.NumberByTrigger.prototype = new CABLES.Op();
-CABLES.OPS["43ed1123-1312-4383-b843-27b8ec540c09"] = {
-  f: Ops.Trigger.NumberByTrigger,
-  objName: "Ops.Trigger.NumberByTrigger",
-};
-Ops.Gl.Shader.ShaderToTexture = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Render"),
-    i = e.inObject("Shader", null, "shader"),
-    s = e.inValueBool("Use Viewport Size", true),
-    o = e.inValueInt("Width", 512),
-    l = e.inValueInt("Height", 512),
-    u = e.inValueSelect("filter", ["nearest", "linear", "mipmap"]),
-    c = e.inSwitch("Anisotropic", ["0", "1", "2", "4", "8", "16"], "0"),
-    d = e.inValueSelect(
-      "wrap",
-      ["clamp to edge", "repeat", "mirrored repeat"],
-      "clamp to edge"
-    ),
-    h = e.inValueBool("Floating Point", false),
-    p = e.inSwitch("Num Textures", ["1", "4"], "1"),
-    r = e.outTrigger("Next"),
-    a = e.outTexture("Texture"),
-    m = e.outTexture("Texture 2"),
-    f = e.outTexture("Texture 3"),
-    g = e.outTexture("Texture 4");
-  e.setPortGroup("Texture Size", [s, o, l]);
-  e.setPortGroup("Texture settings", [u, d, h, c]);
-  let b = 1;
-  const v = e.patch.cgl;
-  const y = [0, 0, 0, 0];
-  const _ = null;
-  const T = [];
-  let O = null;
-  let S = null;
-  o.onChange =
-    l.onChange =
-    h.onChange =
-    u.onChange =
-    p.onChange =
-    c.onChange =
-    d.onChange =
-      P;
-  s.onChange = k;
-  const A = false;
-  let w = null;
-  const C = null;
-  let x = true;
-  const I = CGL.MESHES.getSimpleRect(v, "shader2texture rect");
-  e.toWorkPortsNeedToBeLinked(i);
-  u.set("nearest");
-  k();
-  function E() {
-    if (u.get() == "mipmap" && h.get()) {
-      e.setUiError(
-        "warning",
-        "HDR and mipmap filtering at the same time is not possible"
-      );
-    } else {
-      e.setUiError("warning", null);
-    }
-  }
-  function k() {
-    c.setUiAttribs({ greyout: u.get() != "mipmap" });
-    o.setUiAttribs({ greyout: s.get() });
-    l.setUiAttribs({ greyout: s.get() });
-    o.set(v.getViewPort()[2]);
-    l.set(v.getViewPort()[3]);
-  }
-  function P() {
-    x = true;
-    E();
-  }
-  function L() {
-    if (S) S.dispose();
-    O = null;
-    S = null;
-  }
-  function N() {
-    x = false;
-    if (w) w.delete();
-    const e = T.length;
-    b = parseInt(p.get());
-    T.length = 0;
-    for (let e = 0; e < b; e++) T[e] = true;
-    if (e != T.length) {
-      L();
-    }
-    w = null;
-    let t = o.get();
-    let n = l.get();
-    if (s.get()) {
-      t = v.getViewPort()[2];
-      n = v.getViewPort()[3];
-    }
-    let i = CGL.Texture.FILTER_NEAREST;
-    if (u.get() == "linear") i = CGL.Texture.FILTER_LINEAR;
-    else if (u.get() == "mipmap") i = CGL.Texture.FILTER_MIPMAP;
-    let r = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    if (d.get() == "repeat") r = CGL.Texture.WRAP_REPEAT;
-    if (d.get() == "mirrored repeat") r = CGL.Texture.WRAP_MIRRORED_REPEAT;
-    const a = Math.min(v.maxAnisotropic, parseFloat(c.get()));
-    if (v.glVersion >= 2) {
-      w = new CGL.Framebuffer2(v, t, n, {
-        anisotropic: a,
-        isFloatingPointTexture: h.get(),
-        multisampling: false,
-        numRenderBuffers: b,
-        wrap: r,
-        filter: i,
-        depth: true,
-        multisamplingSamples: 0,
-        clear: true,
-      });
-    } else {
-      w = new CGL.Framebuffer(v, o.get(), l.get(), {
-        isFloatingPointTexture: h.get(),
-        filter: i,
-        wrap: r,
-      });
-    }
-  }
-  n.onTriggered = function () {
-    const e = v.getViewPort();
-    if (!w || x) N();
-    if (
-      s.get() &&
-      w &&
-      (e[2] != w.getTextureColor().width || e[3] != w.getTextureColor().height)
-    )
-      N();
-    if (!i.get() || !i.get().setDrawBuffers) return;
-    if (i.get() != O) {
-      O = i.get();
-      S = i.get().copy();
-      S.setDrawBuffers(T);
-    }
-    if (!S) {
-      a.set(null);
-      return;
-    }
-    y[0] = e[0];
-    y[1] = e[1];
-    y[2] = e[2];
-    y[3] = e[3];
-    w.renderStart(v);
-    v.pushPMatrix();
-    mat4.identity(v.pMatrix);
-    v.pushViewMatrix();
-    mat4.identity(v.vMatrix);
-    v.pushModelMatrix();
-    mat4.identity(v.mMatrix);
-    v.pushShader(i.get());
-    if (S.bindTextures) S.bindTextures();
-    v.pushBlend(false);
-    I.render(i.get());
-    v.popBlend();
-    v.popPMatrix();
-    v.popModelMatrix();
-    v.popViewMatrix();
-    w.renderEnd(v);
-    if (b >= 2) {
-      a.set(w.getTextureColorNum(0));
-      m.set(w.getTextureColorNum(1));
-      f.set(w.getTextureColorNum(2));
-      g.set(w.getTextureColorNum(3));
-    } else a.set(w.getTextureColor());
-    v.popShader();
-    v.gl.viewport(y[0], y[1], y[2], y[3]);
-    r.trigger();
-  };
-};
-Ops.Gl.Shader.ShaderToTexture.prototype = new CABLES.Op();
-CABLES.OPS["a3debb76-7d84-4548-9e7b-24891423dcce"] = {
-  f: Ops.Gl.Shader.ShaderToTexture,
-  objName: "Ops.Gl.Shader.ShaderToTexture",
-};
-Ops.Gl.Shader.CustomShader_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const b = this;
-  const e = (b.attachments = {});
-  const t = b.inTrigger("render"),
-    n = b.inStringEditor("Fragment Code"),
-    i = b.inStringEditor("Vertex Code"),
-    r = b.inValueBool("Use As Material", true),
-    a = b.outTrigger("trigger"),
-    s = b.outObject("Shader", null, "shader"),
-    o = b.outBool("Has Errors");
-  const v = 7;
-  const y = b.patch.cgl;
-  const _ = [];
-  const T = [];
-  const O = [];
-  b.toWorkPortsNeedToBeLinked(t);
-  n.setUiAttribs({ editorSyntax: "glsl" });
-  i.setUiAttribs({ editorSyntax: "glsl" });
-  const S = new CGL.Shader(y, "customshader", b);
-  S.setModules([
-    "MODULE_VERTEX_POSITION",
-    "MODULE_COLOR",
-    "MODULE_BEGIN_FRAG",
-    "MODULE_VERTEX_MODELVIEW",
-  ]);
-  b.setPortGroup("Source Code", [n, i]);
-  b.setPortGroup("Options", [r]);
-  n.set(CGL.Shader.getDefaultFragmentShader());
-  i.set(CGL.Shader.getDefaultVertexShader());
-  n.onChange = i.onChange = function () {
-    if (n.isLinked() && !n.get()) return;
-    u = true;
-  };
-  t.onTriggered = d;
-  let l = 0;
-  let u = true;
-  b.onLoadedValueSet = c;
-  function c(n) {
-    g();
-    if (!n) return;
-    for (let t = 0; t < _.length; t++)
-      for (let e = 0; e < n.portsIn.length; e++)
-        if (_[t] && _[t].name == n.portsIn[e].name) {
-          _[t].set(n.portsIn[e].value);
-          _[t].deSerializeSettings(n.portsIn[e]);
-        }
-  }
-  b.init = function () {
-    g();
-  };
-  function d() {
-    E();
-    if (u) g();
-    if (r.get()) y.pushShader(S);
-    h();
-    a.trigger();
-    S.popTextures();
-    if (r.get()) y.popShader();
-  }
-  function h() {
-    for (let e = 0; e < T.length; e++)
-      if (T[e] && T[e].get() && T[e].get().tex)
-        S.pushTexture(T[e].uniform, T[e].get().tex);
-      else S.pushTexture(T[e], CGL.Texture.getEmptyTexture(y));
-  }
-  function p() {
-    for (let e = 0; e < T.length; e++)
-      if (T[e] && T[e].get() && T[e].get().tex)
-        y.setTexture(0 + e + v, T[e].get().tex);
-  }
-  function A(t) {
-    for (let e = 0; e < _.length; e++) if (_[e] && _[e].name == t) return true;
-    for (let e = 0; e < T.length; e++) if (T[e] && T[e].name == t) return true;
-    return false;
-  }
-  const m = mat4.create();
-  const w = [
-    "modelMatrix",
-    "viewMatrix",
-    "normalMatrix",
-    "mvMatrix",
-    "projMatrix",
-    "inverseViewMatrix",
-    "camPos",
-  ];
-  let C = 0;
-  const x = [];
-  function f(e) {
-    const t = e.split("\n");
-    const r = [];
-    for (let e = 0; e < t.length; e++) {
-      const n = t[e].split(";");
-      for (let e = 0; e < n.length; e++) {
-        let i = n[e].split(" ");
-        for (let e = 0; e < i.length; e++) i[e] = (i[e] + "").trim();
-        if (i[0] === "UNI" || i[0] === "uniform") {
-          let t = i[2];
-          if (i.length > 4) for (let e = 3; e < i.length; e++) t += i[e];
-          i = i.filter(function (e) {
-            return e !== "";
-          });
-          const a = i[1];
-          let n = [t];
-          if (t.indexOf(",") > -1) n = t.split(",");
-          for (let e = 0; e < n.length; e++) {
-            if (w.indexOf(n[e]) > -1) continue;
-            const s = n[e].trim().replace(/\[\d+\]$/, "");
-            if (a === "float") {
-              x.push(s);
-              if (!A(s)) {
-                const o = n[e].trim().match(/\[\d+\]$/);
-                if (o) {
-                  const l = parseInt(o[0].trim().slice(1, -1));
-                  const u = b.inArray(s, []);
-                  u.uniform = new CGL.Uniform(S, "f[]", s, new Float32Array(l));
-                  _.push(u);
-                  r.push(u);
-                  const c = {
-                    name: s,
-                    num: l,
-                    port: u,
-                    uni: u.uniform,
-                    changed: false,
-                  };
-                  u.onChange = function () {
-                    this.changed = true;
-                  }.bind(c);
-                  O.push(c);
-                } else {
-                  const u = b.inFloat(s, 0);
-                  u.uniform = new CGL.Uniform(S, "f", s, u);
-                  _.push(u);
-                  r.push(u);
-                }
-              }
-            } else if (a === "int") {
-              x.push(s);
-              if (!A(s)) {
-                const u = b.inInt(s, 0);
-                u.uniform = new CGL.Uniform(S, "i", s, u);
-                _.push(u);
-                r.push(u);
-              }
-            } else if (a === "bool") {
-              x.push(s);
-              if (!A(s)) {
-                const u = b.inBool(s, false);
-                u.uniform = new CGL.Uniform(S, "b", s, u);
-                _.push(u);
-                r.push(u);
-              }
-            } else if (a === "mat4") {
-              x.push(s);
-              if (!A(s)) {
-                const u = b.inArray(s, 0);
-                u.uniform = new CGL.Uniform(S, "m4", s, u);
-                _.push(u);
-                r.push(u);
-                const c = {
-                  name: s,
-                  num: 16,
-                  port: u,
-                  uni: u.uniform,
-                  changed: false,
-                };
-                u.onChange = function () {
-                  this.changed = true;
-                }.bind(c);
-                O.push(c);
-              }
-            } else if (a === "sampler2D" || a === "samplerCube") {
-              x.push(s);
-              if (!A(s)) {
-                const d = b.inObject(s);
-                let e = "t";
-                if (a === "samplerCube") e = "tc";
-                d.uniform = new CGL.Uniform(S, e, s, v + T.length);
-                T.push(d);
-                r.push(d);
-                d.set(CGL.Texture.getTempTexture(y));
-                d.on("change", (e, t) => {
-                  if (!e) t.set(CGL.Texture.getTempTexture(y));
-                });
-                C++;
-              }
-            } else if (a === "vec3" || a === "vec2" || a === "vec4") {
-              let e = 2;
-              if (a === "vec4") e = 4;
-              if (a === "vec3") e = 3;
-              x.push(s + " X");
-              x.push(s + " Y");
-              if (e > 2) x.push(s + " Z");
-              if (e > 3) x.push(s + " W");
-              if (!A(s + " X")) {
-                const h = [];
-                const c = { name: s, num: e, changed: false };
-                O.push(c);
-                I(c);
-                const p = b.inFloat(s + " X", 0);
-                p.onChange = function () {
-                  this.changed = true;
-                }.bind(c);
-                _.push(p);
-                h.push(p);
-                c.x = p;
-                const m = b.inFloat(s + " Y", 0);
-                m.onChange = function () {
-                  this.changed = true;
-                }.bind(c);
-                _.push(m);
-                h.push(m);
-                c.y = m;
-                if (e > 2) {
-                  const f = b.inFloat(s + " Z", 0);
-                  f.onChange = function () {
-                    this.changed = true;
-                  }.bind(c);
-                  _.push(f);
-                  h.push(f);
-                  c.z = f;
-                }
-                if (e > 3) {
-                  const g = b.inFloat(s + " W", 0);
-                  g.onChange = function () {
-                    this.changed = true;
-                  }.bind(c);
-                  _.push(g);
-                  h.push(g);
-                  c.w = g;
-                }
-                b.setPortGroup(s, h);
-              }
-            }
-          }
-        }
-      }
-    }
-    b.setPortGroup("uniforms", r);
-  }
-  function g() {
-    if (!S) return;
-    let e = false;
-    l++;
-    if (l > 2) e = true;
-    S.setSource(i.get(), n.get(), e);
-    if (y.glVersion == 1) {
-      y.enableExtension("OES_standard_derivatives");
-      S.enableExtension("GL_OES_standard_derivatives");
-    }
-    C = 0;
-    x.length = 0;
-    f(i.get());
-    f(n.get());
-    for (let t = 0; t < T.length; t++)
-      for (let e = 0; e < x.length; e++)
-        if (T[t] && x.indexOf(T[t].name) == -1) {
-          T[t].remove();
-          T[t] = null;
-        }
-    for (let t = 0; t < _.length; t++)
-      for (let e = 0; e < x.length; e++)
-        if (_[t] && x.indexOf(_[t].name) == -1) {
-          _[t].remove();
-          _[t] = null;
-        }
-    for (let e = 0; e < O.length; e++) {
-      I(O[e]);
-      O[e].changed = true;
-    }
-    for (let e = 0; e < _.length; e++)
-      if (_[e] && _[e].uniform) _[e].uniform.needsUpdate = true;
-    S.compile();
-    b.refreshParams();
-    s.setRef(S);
-    u = false;
-    if (S.hasErrors()) b.setUiError("compile", "Shader has errors");
-    else b.setUiError("compile", null);
-    o.set(S.hasErrors());
-  }
-  function I(e) {
-    if (e.num == 2) e.uni = new CGL.Uniform(S, "2f", e.name, [0, 0]);
-    else if (e.num == 3) e.uni = new CGL.Uniform(S, "3f", e.name, [0, 0, 0]);
-    else if (e.num == 4) e.uni = new CGL.Uniform(S, "4f", e.name, [0, 0, 0, 0]);
-  }
-  function E() {
-    for (let e = 0; e < O.length; e++) {
-      const t = O[e];
-      if (t.changed) {
-        if (t.num === 2) t.uni.setValue([t.x.get(), t.y.get()]);
-        else if (t.num === 3) t.uni.setValue([t.x.get(), t.y.get(), t.z.get()]);
-        else if (t.num === 4)
-          t.uni.setValue([t.x.get(), t.y.get(), t.z.get(), t.w.get()]);
-        else if (t.num > 4) {
-          t.uni.setValue(t.port.get());
-        }
-        t.changed = false;
-      }
-    }
-  }
-};
-Ops.Gl.Shader.CustomShader_v2.prototype = new CABLES.Op();
-CABLES.OPS["a165fc89-a35b-4d39-8930-7345b098bd9d"] = {
-  f: Ops.Gl.Shader.CustomShader_v2,
-  objName: "Ops.Gl.Shader.CustomShader_v2",
-};
-Ops.Gl.Meshes.TextMesh_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {
-    textmesh_frag:
-      "{{MODULES_HEAD}}\n#define INSTANCING\nUNI sampler2D tex;\n#ifdef DO_MULTEX\nUNI sampler2D texMul;\n#endif\n#ifdef DO_MULTEX_MASK\nUNI sampler2D texMulMask;\n#endif\nIN vec2 texCoord;\nIN vec2 texPos;\nUNI float r;\nUNI float g;\nUNI float b;\nUNI float a;\nflatIN float frag_instIndex;\nvoid main()\n{\n{{MODULE_BEGIN_FRAG}}\nvec4 col=texture(tex,texCoord);\ncol.a=col.r;\ncol.r*=r;\ncol.g*=g;\ncol.b*=b;\ncol*=a;\nif(col.a==0.)discard;\n#ifdef DO_MULTEX\ncol*=texture(texMul,texPos);\n#endif\n#ifdef DO_MULTEX_MASK\ncol*=texture(texMulMask,texPos).r;\n#endif\n{{MODULE_COLOR}}\noutColor=col;\n}",
-    textmesh_vert:
-      "{{MODULES_HEAD}}\n\nUNI sampler2D tex;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\nUNI float scale;\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN mat4 instMat;\nIN vec2 attrTexOffsets;\nIN vec2 attrTexSize;\nIN vec2 attrTexPos;\nIN float attrVertIndex;\nIN float instanceIndex;\nflat OUT float frag_instIndex;\n\nOUT vec2 texPos;\n\nOUT vec2 texCoord;\nOUT vec4 modelPos;\n\nvoid main()\n{\n\n    texCoord=(attrTexCoord*(attrTexSize)) + attrTexOffsets;\n    mat4 instMVMat=instMat;\n    instMVMat[3][0]*=scale;\n\n    texPos=attrTexPos;\n\n    vec4 pos=vec4( vPosition.x*(attrTexSize.x/attrTexSize.y)*scale,vPosition.y*scale,vPosition.z*scale, 1. );\n\n    mat4 mvMatrix=viewMatrix * modelMatrix * instMVMat;\n    frag_instIndex=instanceIndex;\n\n    {{MODULE_VERTEX_POSITION}}\n\n    gl_Position = projMatrix * mvMatrix * pos;\n}\n\n",
-  });
-  const n = t.inTrigger("Render"),
-    v = t.inString("Text", "cables"),
-    i = t.inFloat("Scale Text", 1),
-    r = t.inValueFloat("Scale", 1),
-    c = t.inString("Font", "Arial"),
-    y = t.inValueSelect("align", ["left", "center", "right"], "center"),
-    a = t.inValueSelect(
-      "vertical align",
-      ["Top", "Middle", "Bottom"],
-      "Middle"
-    ),
-    _ = t.inValueFloat("Line Height", 1),
-    T = t.inValueFloat("Letter Spacing"),
-    o = t.inSwitch("filter", ["nearest", "linear", "mipmap"], "mipmap"),
-    l = t.inSwitch("Anisotropic", [0, 1, 2, 4, 8, 16], 0),
-    s = t.inTexture("Texture Color"),
-    u = t.inTexture("Texture Mask"),
-    D = t.outTrigger("Next"),
-    O = t.outTexture("texture"),
-    R = t.outNumber("Total Lines", 0),
-    B = t.outNumber("Width", 0),
-    U = t.outBoolNum("Font Available", 0);
-  const S = t.patch.cgl;
-  const d = vec3.create();
-  vec3.set(d, 1, 1, 1);
-  t.toWorkPortsNeedToBeLinked(n);
-  t.setPortGroup("Masking", [s, u]);
-  r.setUiAttribs({ title: "Line Scale" });
-  O.setUiAttribs({ hidePort: true });
-  const h = 1024;
-  let p = false;
-  let m = true;
-  y.onChange = v.onChange = _.onChange = V;
-  function V() {
-    m = true;
-  }
-  let f = null;
-  CABLES.OpTextureMeshCanvas = {};
-  let g = 0;
-  const F = null;
-  let A = null;
-  let w = true;
-  let C = true;
-  i.onChange = () => {
-    vec3.set(d, i.get(), i.get(), i.get());
-  };
-  l.onChange = o.onChange = () => {
-    x().texture = null;
-    C = true;
-  };
-  u.onChange = s.onChange = function () {
-    I.toggleDefine("DO_MULTEX", s.get());
-    I.toggleDefine("DO_MULTEX_MASK", u.get());
-  };
-  O.set(null);
-  c.onChange = function () {
-    C = true;
-    w = true;
-    b();
-  };
-  t.patch.on("fontLoaded", (e) => {
-    if (e == c.get()) {
-      C = true;
-      w = true;
-    }
-  });
-  function b() {
-    const e = p;
-    try {
-      p = document.fonts.check('20px "' + c.get() + '"');
-    } catch (e) {
-      t.logError(e);
-    }
-    if (!e && p) {
-      U.set(true);
-      C = true;
-      w = true;
-    }
-    if (!p) setTimeout(b, 250);
-  }
-  a.onChange = function () {
-    if (a.get() == "Middle") g = 0;
-    else if (a.get() == "Top") g = 1;
-    else if (a.get() == "Bottom") g = 2;
-  };
-  function x() {
-    f = "" + c.get();
-    if (CABLES.OpTextureMeshCanvas.hasOwnProperty(f))
-      return CABLES.OpTextureMeshCanvas[f];
-    const e = document.createElement("canvas");
-    e.dataset.font = c.get();
-    e.id = "texturetext_" + CABLES.generateUUID();
-    e.style.display = "none";
-    const t = document.getElementsByTagName("body")[0];
-    t.appendChild(e);
-    const n = e.getContext("2d");
-    CABLES.OpTextureMeshCanvas[f] = {
-      ctx: n,
-      canvas: e,
-      chars: {},
-      characters: "",
-      fontSize: 320,
-    };
-    return CABLES.OpTextureMeshCanvas[f];
-  }
-  t.onDelete = function () {
-    if (f && CABLES.OpTextureMeshCanvas[f])
-      CABLES.OpTextureMeshCanvas[f].canvas.remove();
-  };
-  const I = new CGL.Shader(S, "TextMesh", this);
-  I.setSource(e.textmesh_vert, e.textmesh_frag);
-  const G = new CGL.Uniform(I, "t", "tex", 0);
-  const q = new CGL.Uniform(I, "t", "texMul", 1);
-  const z = new CGL.Uniform(I, "t", "texMulMask", 2);
-  const H = new CGL.Uniform(I, "f", "scale", r);
-  const E = t.inValueSlider("r", 1),
-    k = t.inValueSlider("g", 1),
-    P = t.inValueSlider("b", 1),
-    X = t.inValueSlider("a", 1),
-    W = new CGL.Uniform(I, "f", "r", E),
-    Y = new CGL.Uniform(I, "f", "g", k),
-    K = new CGL.Uniform(I, "f", "b", P),
-    Q = new CGL.Uniform(I, "f", "a", X);
-  E.setUiAttribs({ colorPick: true });
-  t.setPortGroup("Display", [r, c]);
-  t.setPortGroup("Alignment", [y, a]);
-  t.setPortGroup("Color", [E, k, P, X]);
-  let L = 0;
-  const N = vec3.create();
-  let Z = -1;
-  let j = false;
-  n.onTriggered = function () {
-    if (m) {
-      J();
-      m = false;
-    }
-    const e = x();
-    if (e.lastChange != Z) {
-      w = true;
-      Z = e.lastChange;
-    }
-    if (C) $();
-    if (w) J();
-    if (A && A.numInstances > 0) {
-      S.pushBlendMode(CGL.BLEND_NORMAL, true);
-      S.pushShader(I);
-      S.setTexture(0, O.get().tex);
-      const t = s.get();
-      if (t) S.setTexture(1, t.tex);
-      const n = u.get();
-      if (n) S.setTexture(2, n.tex);
-      if (g === 2) vec3.set(N, 0, L, 0);
-      else if (g === 1) vec3.set(N, 0, 0, 0);
-      else if (g === 0) vec3.set(N, 0, L / 2, 0);
-      N[1] -= _.get();
-      S.pushModelMatrix();
-      mat4.translate(S.mMatrix, S.mMatrix, N);
-      mat4.scale(S.mMatrix, S.mMatrix, d);
-      if (!j) A.render(S.getShader());
-      S.popModelMatrix();
-      S.setTexture(0, null);
-      S.popShader();
-      S.popBlendMode();
-    }
-    D.trigger();
-  };
-  T.onChange = function () {
-    w = true;
-  };
-  function J() {
-    const e = String(v.get() + "");
-    if (!O.get()) return;
-    const a = x();
-    if (!a.geom) {
-      a.geom = new CGL.Geometry("textmesh");
-      a.geom.vertices = [1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0];
-      a.geom.texCoords = new Float32Array([1, 1, 0, 1, 1, 0, 0, 0]);
-      a.geom.verticesIndices = [0, 1, 2, 2, 1, 3];
-    }
-    if (!A) A = new CGL.Mesh(S, a.geom);
-    const s = e.split("\n");
-    R.set(s.length);
-    const o = [];
-    const l = [];
-    const u = [];
-    const c = [];
-    const d = mat4.create();
-    let h = 0;
-    let p = 0;
-    C = false;
-    for (let r = 0; r < s.length; r++) {
-      const m = s[r];
-      const f = m.length;
-      let t = 0;
-      let n = 0;
-      let i = 0;
-      for (let e = 0; e < f; e++) {
-        const g = m.substring(e, e + 1);
-        const b = a.chars[String(g)];
-        if (b) {
-          i += b.texCoordWidth / b.texCoordHeight;
-          i += T.get();
-        }
-      }
-      i -= T.get();
-      L = 0;
-      if (y.get() == "left") n = 0;
-      else if (y.get() == "right") n = i;
-      else if (y.get() == "center") n = i / 2;
-      L = (r + 1) * _.get();
-      for (let e = 0; e < f; e++) {
-        const g = m.substring(e, e + 1);
-        const b = a.chars[String(g)];
-        if (!b) {
-          C = true;
-          return;
-        } else {
-          c.push(
-            (t / i) * 0.99 + 0.005,
-            (1 - r / (s.length - 1)) * 0.99 + 0.005
-          );
-          l.push(b.texCoordX, 1 - b.texCoordY - b.texCoordHeight);
-          u.push(b.texCoordWidth, b.texCoordHeight);
-          mat4.identity(d);
-          mat4.translate(d, d, [t - n, 0 - r * _.get(), 0]);
-          t += b.texCoordWidth / b.texCoordHeight + T.get();
-          p = Math.max(p, t - n);
-          o.push(Array.prototype.slice.call(d));
-          h++;
-        }
-      }
-    }
-    const t = [].concat.apply([], o);
-    j = false;
-    if (t.length == 0) j = true;
-    const n = t.length / 16;
-    A.setNumInstances(n);
-    if (A.numInstances == 0) {
-      j = true;
-      return;
-    }
-    B.set(p * r.get());
-    A.setAttribute("instMat", new Float32Array(t), 16, { instanced: true });
-    A.setAttribute("attrTexOffsets", new Float32Array(l), 2, {
-      instanced: true,
-    });
-    A.setAttribute("attrTexSize", new Float32Array(u), 2, { instanced: true });
-    A.setAttribute("attrTexPos", new Float32Array(c), 2, { instanced: true });
-    w = false;
-    if (C) $();
-  }
-  function M(t, n) {
-    const i = x();
-    if (!n) i.chars = {};
-    const r = i.ctx;
-    r.font = t + "px " + c.get();
-    r.textAlign = "left";
-    let a = 0;
-    let s = 0;
-    const o = t * 1.4;
-    const e = { fits: true };
-    for (let e = 0; e < i.characters.length; e++) {
-      const l = String(i.characters.substring(e, e + 1));
-      const u = r.measureText(l).width;
-      if (s + u >= h) {
-        a += o + 2;
-        s = 0;
-      }
-      if (!n) {
-        i.chars[l] = {
-          str: l,
-          texCoordX: s / h,
-          texCoordY: a / h,
-          texCoordWidth: u / h,
-          texCoordHeight: o / h,
-        };
-        r.fillText(l, s, a + t);
-      }
-      s += u + 12;
-    }
-    if (a > h - o) {
-      e.fits = false;
-    }
-    e.spaceLeft = h - a;
-    return e;
-  }
-  function $() {
-    let e = CGL.Texture.FILTER_LINEAR;
-    if (o.get() == "nearest") e = CGL.Texture.FILTER_NEAREST;
-    if (o.get() == "mipmap") e = CGL.Texture.FILTER_MIPMAP;
-    const t = x();
-    let n = String(v.get());
-    if (n == null || n == undefined) n = "";
-    for (let e = 0; e < n.length; e++) {
-      const s = n.substring(e, e + 1);
-      if (t.characters.indexOf(s) == -1) {
-        t.characters += s;
-        C = true;
-      }
-    }
-    const i = t.ctx;
-    t.canvas.width = t.canvas.height = h;
-    if (!t.texture)
-      t.texture = CGL.Texture.createFromImage(S, t.canvas, {
-        filter: e,
-        anisotropic: parseFloat(l.get()),
-      });
-    t.texture.setSize(h, h);
-    i.fillStyle = "transparent";
-    i.clearRect(0, 0, h, h);
-    i.fillStyle = "rgba(255,255,255,255)";
-    let r = t.fontSize + 40;
-    let a = M(r, true);
-    while (!a.fits) {
-      r -= 5;
-      a = M(r, true);
-    }
-    M(r, false);
-    i.restore();
-    t.texture.initTexture(t.canvas, e);
-    t.texture.unpackAlpha = true;
-    O.set(t.texture);
-    t.lastChange = CABLES.now();
-    w = true;
-    C = false;
-  }
-};
-Ops.Gl.Meshes.TextMesh_v2.prototype = new CABLES.Op();
-CABLES.OPS["2390f6b3-2122-412e-8c8d-5c2f574e8bd1"] = {
-  f: Ops.Gl.Meshes.TextMesh_v2,
-  objName: "Ops.Gl.Meshes.TextMesh_v2",
-};
-Ops.Math.Compare.GreaterThan = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("number1"),
-    i = e.inValueFloat("number2"),
-    r = e.outBoolNum("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  function a() {
-    r.set(n.get() > i.get());
-  }
-};
-Ops.Math.Compare.GreaterThan.prototype = new CABLES.Op();
-CABLES.OPS["b250d606-f7f8-44d3-b099-c29efff2608a"] = {
-  f: Ops.Math.Compare.GreaterThan,
-  objName: "Ops.Math.Compare.GreaterThan",
-};
-Ops.Array.InterpolateArrays = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Exe"),
-    o = e.inArray("Array 1"),
-    l = e.inArray("Array 2"),
-    u = e.inValueSlider("perc"),
-    c = e.outTrigger("Next"),
-    d = e.outArray("Result");
-  let h = true;
-  let p = [];
-  function i() {
-    h = true;
-  }
-  o.onChange = l.onChange = u.onChange = i;
-  n.onTriggered = r;
-  function r() {
-    let n = o.get();
-    let i = l.get();
-    let r;
-    let a;
-    let s;
-    if (!n || !i || n.length < i.length) {
-      d.set(null);
-      return;
-    }
-    if (h) {
-      if (p.length != n.length) p.length = n.length;
-      let t = u.get();
-      for (let e = 0; e < n.length; e++) {
-        r = n[e];
-        a = i[e];
-        s = (a - r) * t + r;
-        p[e] = s;
-      }
-      h = false;
-      d.setRef(p);
-    }
-    c.trigger();
-  }
-  o.onLinkChanged = l.onLinkChanged = function () {
-    let e = o.get();
-    let t = l.get();
-    if (!e || !t) {
-      d.set(null);
-      return;
-    }
-    let n = e[0];
-    let i = t[0];
-    if (typeof n === "string" || typeof i === "string") {
-      d.set(null);
-    }
-  };
-};
-Ops.Array.InterpolateArrays.prototype = new CABLES.Op();
-CABLES.OPS["09296117-7312-4f80-982b-7b4a81d22cf8"] = {
-  f: Ops.Array.InterpolateArrays,
-  objName: "Ops.Array.InterpolateArrays",
-};
-Ops.Array.Array3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const a = e.inValueInt("Num Triplets", 100),
-    s = e.inValueFloat("X", 0),
-    o = e.inValueFloat("Y", 0),
-    l = e.inValueFloat("Z", 0),
-    u = e.outArray("Array", null, 3),
-    c = e.outNumber("Total points"),
-    d = e.outNumber("Array length");
-  a.onChange = s.onChange = o.onChange = l.onChange = n;
-  let h = [];
-  n();
-  function n() {
-    let t = Math.floor(a.get() * 3);
-    if (t < 0) t = 0;
-    if (h.length != t) h.length = t;
-    const n = s.get();
-    const i = o.get();
-    const r = l.get();
-    for (let e = 0; e < t; e += 3) {
-      h[e] = n;
-      h[e + 1] = i;
-      h[e + 2] = r;
-    }
-    u.setRef(h);
-    c.set(t / 3);
-    d.set(t);
-  }
-};
-Ops.Array.Array3.prototype = new CABLES.Op();
-CABLES.OPS["2766606a-3ea0-4204-8613-b8950a124435"] = {
-  f: Ops.Array.Array3,
-  objName: "Ops.Array.Array3",
-};
-Ops.Array.ArrayMerge_v3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = 8;
-  const i = [];
-  for (let e = 0; e < n; e++) {
-    i[e] = t.inArray("Array " + e);
-    i[e].onChange = function () {
-      o();
-    };
-  }
-  const r = t.outArray("Result"),
-    a = t.outNumber("Array length");
-  let s = [];
-  function o() {
-    s.length = 0;
-    for (let e = 0; e < n; e++) {
-      const t = i[e].get();
-      if (t) s = s.concat(t);
-    }
-    r.setRef(s);
-    a.set(s.length);
-  }
-};
-Ops.Array.ArrayMerge_v3.prototype = new CABLES.Op();
-CABLES.OPS["753d053a-04a3-44c7-abf0-ae2676ced13e"] = {
-  f: Ops.Array.ArrayMerge_v3,
-  objName: "Ops.Array.ArrayMerge_v3",
-};
-Ops.Array.SmoothArray = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Execute"),
-    r = e.inArray("Array In"),
-    i = e.inBool("Separate inc/dec", false),
-    a = e.inValue("Inc factor", 4),
-    s = e.inValue("Dec factor", 4),
-    o = e.outTrigger("Next"),
-    l = e.outArray("Array Out");
-  let u = [];
-  let c = false;
-  let d = 0;
-  let h = [];
-  l.set(h);
-  let p;
-  let m;
-  let f = false;
-  g();
-  b();
-  function g() {
-    f = i.get();
-    if (!f) {
-      s.setUiAttribs({ greyout: true });
-      a.setUiAttribs({ title: "Inc/Dec factor" });
-    } else {
-      s.setUiAttribs({ greyout: false });
-      a.setUiAttribs({ title: "Inc factor" });
-    }
-    b();
-    y();
-  }
-  function b() {
-    p = a.get();
-    if (f == false) m = a.get();
-    else m = s.get();
-    if (p <= 0 || p != p) p = 1e-4;
-    if (m <= 0 || m != m) m = 1e-4;
-    if (p <= 1) p = 1;
-    if (m <= 1) m = 1;
-  }
-  r.onLinkChanged = () => {
-    if (r) r.copyLinkedUiAttrib("stride", l);
-  };
-  r.onChange = function () {
-    let t = r.get();
-    if (!t) return;
-    for (let e = 0; e < t.length; e++) {
-      u[e] = t[e] || 0;
-    }
-  };
-  let v = 0;
-  function y() {
-    let e = r.get();
-    if (!e) return;
-    if (h.length != e.length) {
-      h.length = e.length || 0;
-      c = true;
-    }
-    let n = 1;
-    if (CABLES.now() - d > 500 || d === 0) c = true;
-    else n = (CABLES.now() - d) / 17;
-    d = CABLES.now();
-    if (c) {
-      for (var i = 0; i < e.length; i++) {
-        h[i] = e[i];
-      }
-      c = false;
-    }
-    for (var i = 0; i < e.length; i++) {
-      let e = h[i];
-      let t = u[i] - e;
-      if (t >= 0) e += t / (m * n);
-      else e += t / (p * n);
-      if (e > 0 && e < 1e-9) e = 0;
-      if (!e) e = 0;
-      if (h[i] != e) {
-        h[i] = e;
-        v = e;
-      }
-    }
-    l.setRef(h);
-    o.trigger();
-  }
-  n.onTriggered = function () {
-    y();
-  };
-  a.onChange = s.onChange = b;
-  i.onChange = g;
-  y();
-};
-Ops.Array.SmoothArray.prototype = new CABLES.Op();
-CABLES.OPS["8fd2ed9b-02e5-4349-b7bc-6665ca240ffa"] = {
-  f: Ops.Array.SmoothArray,
-  objName: "Ops.Array.SmoothArray",
-};
-Ops.Array.Array_v3 = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const i = t.inValueInt("Array length", 10),
-    n = t.inSwitch("Mode select", ["Number", "1,2,3,4", "0-1"], "Number"),
-    r = t.inValueFloat("Default Value"),
-    a = t.inBool("Reverse", false),
-    s = t.outArray("Array"),
-    o = t.outNumber("Array length out");
-  let l = [];
-  let u = 0;
-  const c = 0;
-  const d = 1;
-  const h = 2;
-  n.onChange = p;
-  a.onChange = r.onChange = i.onChange = m;
-  p();
-  m();
-  function p() {
-    let e = n.get();
-    if (e === "Number") u = c;
-    else if (e === "1,2,3,4") u = d;
-    else if (e === "0-1") u = h;
-    r.setUiAttribs({ greyout: u !== c });
-    t.setUiAttrib({ extendTitle: n.get() });
-    m();
-  }
-  function m() {
-    l.length = 0;
-    let e = i.get();
-    let t = r.get();
-    let n;
-    if (u === c) {
-      for (n = 0; n < e; n++) {
-        l[n] = t;
-      }
-    } else if (u === d) {
-      for (n = 0; n < e; n++) {
-        l[n] = n;
-      }
-    } else if (u === h) {
-      if (e > 1) {
-        for (n = 0; n < e; n++) {
-          l[n] = n / (e - 1);
-        }
-      } else {
-        l = [0];
-      }
-    }
-    if (a.get()) l = l.reverse();
-    s.setRef(l);
-    o.set(l.length);
-  }
-};
-Ops.Array.Array_v3.prototype = new CABLES.Op();
-CABLES.OPS["e4d31a46-bf64-42a8-be34-4cbb2bbc2600"] = {
-  f: Ops.Array.Array_v3,
-  objName: "Ops.Array.Array_v3",
-};
-Ops.Trigger.Sequence = function () {
-  CABLES.Op.apply(this, arguments);
-  const a = this;
-  const e = (a.attachments = {});
-  const t = a.inTrigger("exe"),
-    n = a.inTriggerButton("Clean up connections");
-  a.setUiAttrib({ resizable: true, resizableY: false, stretchPorts: true });
-  const i = [],
-    s = [],
-    r = 16;
-  let o = null,
-    l = [];
-  t.onTriggered = d;
-  n.onTriggered = h;
-  n.setUiAttribs({ hideParam: true, hidePort: true });
-  for (let t = 0; t < r; t++) {
-    const p = a.outTrigger("trigger " + t);
-    s.push(p);
-    p.onLinkChanged = c;
-    if (t < r - 1) {
-      let e = a.inTrigger("exe " + t);
-      e.onTriggered = d;
-      i.push(e);
-    }
-  }
-  u();
-  function u() {
-    l.length = 0;
-    for (let e = 0; e < s.length; e++) if (s[e].links.length > 0) l.push(s[e]);
-  }
-  function c() {
-    u();
-    clearTimeout(o);
-    o = setTimeout(() => {
-      let t = false;
-      for (let e = 0; e < s.length; e++) if (s[e].links.length > 1) t = true;
-      n.setUiAttribs({ hideParam: !t });
-      if (a.isCurrentUiOp()) a.refreshParams();
-    }, 60);
-  }
-  function d() {
-    for (let e = 0; e < l.length; e++) l[e].trigger();
-  }
-  function h() {
-    let i = 0;
-    for (let n = 0; n < s.length; n++) {
-      let t = [];
-      if (s[n].links.length > 1)
-        for (let e = 1; e < s[n].links.length; e++) {
-          while (s[i].links.length > 0) i++;
-          t.push(s[n].links[e]);
-          const r = s[n].links[e].getOtherPort(s[n]);
-          a.patch.link(a, "trigger " + i, r.op, r.name);
-          i++;
-        }
-      for (let e = 0; e < t.length; e++) t[e].remove();
-    }
-    c();
-    u();
-  }
-};
-Ops.Trigger.Sequence.prototype = new CABLES.Op();
-CABLES.OPS["a466bc1f-06e9-4595-8849-bffb9fe22f99"] = {
-  f: Ops.Trigger.Sequence,
-  objName: "Ops.Trigger.Sequence",
-};
-Ops.User.srcphag.VideoJS = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const M = (n.attachments = {});
-  const e = n.inTrigger("Update"),
-    i = n.inUrl("file", "video"),
-    t = n.inValueBool("play"),
-    r = n.inValueBool("loop", true),
-    a = n.inValueSlider("Volume", 1),
-    s = n.inValueBool("mute", true),
-    o = n.inValueFloat("Update FPS", 30),
-    l = n.inSwitch("Filter", ["nearest", "linear"], "linear"),
-    u = n.inValueSelect(
-      "Wrap",
-      ["repeat", "mirrored repeat", "clamp to edge"],
-      "clamp to edge"
-    ),
-    c = n.inValueBool("flip", true),
-    d = n.inValueFloat("speed", 1),
-    h = n.inValueFloat("set time"),
-    p = n.inTriggerButton("Rewind"),
-    D = n.inValueBool("Preload", true),
-    R = n.inBool("Show Interaction needed Button", true),
-    B = n.outTrigger("Next"),
-    m = n.outTexture("texture", null, "texture"),
-    U = n.outNumber("duration"),
-    V = n.outNumber("progress"),
-    F = n.outBoolNum("Interaction Needed"),
-    G = n.outNumber("CurrentTime"),
-    f = n.outBoolNum("Loading"),
-    q = n.outBoolNum("Playing"),
-    g = n.outBoolNum("Can Play Through", false),
-    z = n.outNumber("Width"),
-    H = n.outNumber("Height"),
-    X = n.outNumber("Aspect Ratio"),
-    b = n.outBoolNum("Has Error"),
-    W = n.outBoolNum("Auto FPS", false),
-    v = n.outString("Error Message");
-  n.setPortGroup("Texture", [l, u, c, o]);
-  n.setPortGroup("Audio", [s, a]);
-  n.setPortGroup("Timing", [h, p, d]);
-  let y = false;
-  let _ = false;
-  let T = false;
-  let O = false;
-  let S = 0;
-  let A = 0;
-  let w = null;
-  let Y = null;
-  let K = true;
-  let C = true;
-  let x = 0;
-  const I = n.patch.cgl;
-  const E = document.createElement("video");
-  E.setAttribute("playsinline", "");
-  E.setAttribute("webkit-playsinline", "");
-  E.setAttribute("autoplay", "autoplay");
-  let k = videojs(E, {
-    controls: true,
-    autoplay: false,
-    preload: "auto",
-    muted: s.get(),
-    loop: r.get(),
-  });
-  W.set(!!E.requestVideoFrameCallback);
-  const P = CGL.Texture.getEmptyTexture(I);
-  n.toWorkPortsNeedToBeLinked(m);
-  m.setRef(CGL.Texture.getEmptyTexture(I));
-  t.onChange = N;
-  i.onChange = ne;
-  a.onChange = n.onMasterVolumeChanged = $;
-  l.onChange = u.onChange = () => {
-    if (w) w.delete();
-    w = null;
-  };
-  n.onDelete = () => {
-    if (w) w.delete();
-    E.remove();
-  };
-  e.onTriggered = () => {
-    if (performance.now() - x > 1e3 / o.get()) C = true;
-    if (C) {
-      Z();
-    }
-    q.set(!E.paused);
-    if (T && !E.paused && t.get()) {
-      T = false;
-      CABLES.interActionNeededButton.remove("videoplayer");
-    }
-    F.set(T);
-    B.trigger();
-  };
-  function Q() {
-    if (w) w.delete();
-    S = CGL.Texture.FILTER_NEAREST;
-    if (l.get() == "linear") S = CGL.Texture.FILTER_LINEAR;
-    if (u.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
-    if (u.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
-    if (u.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    w = new CGL.Texture(I, { wrap: A, filter: S });
-  }
-  p.onTriggered = function () {
-    E.currentTime = 0;
-    m.setRef(P);
-    C = true;
-  };
-  h.onChange = function () {
-    E.currentTime = h.get() || 0;
-    C = true;
-  };
-  o.onChange = function () {
-    C = true;
-  };
-  function L() {
-    E.playbackRate = d.get();
-  }
-  function N() {
-    if (!_) {
-      j(true);
-    }
-    if (t.get()) {
-      E.currentTime = h.get() || 0;
-      const e = E.play();
-      if (e)
-        e.then(function () {
-          L();
-        }).catch(function (e) {
-          n.warn("exc", e);
-          n.log(e);
-          n.log(E);
-          if (E.paused && R.get()) {
-            T = true;
-            CABLES.interActionNeededButton.add(n.patch, "videoplayer", () => {
-              T = false;
-              E.play();
-              L();
-              CABLES.interActionNeededButton.remove("videoplayer");
-            });
-          }
-        });
-    } else E.pause();
-  }
-  d.onChange = function () {
-    try {
-      n.setUiError("playbackRate", null);
-      E.playbackRate = d.get();
-    } catch (e) {
-      n.setUiError(
-        "playbackRate",
-        "value for 'speed' not supported by browser",
-        1
-      );
-    }
-  };
-  r.onChange = function () {
-    E.loop = r.get();
-  };
-  s.onChange = function () {
-    E.muted = s.get();
-  };
-  function Z() {
-    const e = C;
-    x = performance.now();
-    if (!i.get()) {
-      w = null;
-      m.set(P);
-      return;
-    }
-    if (!y) return;
-    if (!w) Q();
-    if (w.width != E.videoWidth || w.height != E.videoHeight) {
-      n.log("video size", E.videoWidth, E.videoHeight);
-      w.setSize(E.videoWidth, E.videoHeight);
-    }
-    z.set(w.width);
-    H.set(w.height);
-    X.set(w.width / w.height);
-    if (!g.get()) return;
-    if (!y) return;
-    if (!E) return;
-    if (E.videoHeight <= 0) {
-      n.setUiError("videosize", "video width is 0!");
-      return;
-    }
-    if (E.videoWidth <= 0) {
-      n.setUiError("videosize", "video height is 0!");
-      return;
-    }
-    const t = E.currentTime / E.duration;
-    if (!isNaN(t)) V.set(t);
-    G.set(E.currentTime);
-    I.gl.bindTexture(I.gl.TEXTURE_2D, w.tex);
-    I.gl.pixelStorei(I.gl.UNPACK_FLIP_Y_WEBGL, c.get());
-    I.gl.texImage2D(
-      I.gl.TEXTURE_2D,
-      0,
-      I.gl.RGBA,
-      I.gl.RGBA,
-      I.gl.UNSIGNED_BYTE,
-      E
-    );
-    w._setFilter();
-    if (c.get()) I.gl.pixelStorei(I.gl.UNPACK_FLIP_Y_WEBGL, false);
-    K = false;
-    m.setRef(w);
-    C = false;
-    n.patch.cgl.profileData.profileVideosPlaying++;
-    if (E.readyState == 4) f.set(false);
-    else f.set(false);
-    if (E.requestVideoFrameCallback)
-      E.requestVideoFrameCallback(() => {
-        C = true;
-      });
-  }
-  function J() {
-    E.controls = false;
-    E.muted = s.get();
-    E.loop = r.get();
-    C = true;
-    g.set(true);
-  }
-  function $() {
-    E.volume = Math.min(
-      1,
-      Math.max(0, (a.get() || 0) * n.patch.config.masterVolume)
-    );
-  }
-  function ee() {
-    U.set(E.duration);
-    N();
-  }
-  function j(e) {
-    b.set(false);
-    v.set("");
-    g.set(false);
-    if (!i.get()) {
-      v.set(true);
-      return;
-    }
-    if (D.get() || e) {
-      clearTimeout(Y);
-      f.set(true);
-      let e = n.patch.getFilePath(i.get());
-      if (String(i.get()).indexOf("data:") === 0) e = i.get();
-      if (!e) return;
-      k.src({ src: e, type: "application/x-mpegURL" });
-      try {
-        k.playbackRate(d.get());
-      } catch (e) {
-        n.setUiError(
-          "playbackRate",
-          "value for 'speed' not supported by video.js",
-          1
-        );
-      }
-      k.loop(r.get());
-      k.muted(s.get());
-      if (!O) {
-        O = true;
-        k.on("canplaythrough", J);
-        k.on("loadedmetadata", ee);
-        k.on("playing", function () {
-          y = true;
-        });
-        k.on("error", function () {
-          b.set(true);
-          const e = k.error();
-          v.set(`Error ${e.code}/${e.message}`);
-          n.setUiError("onerror", `Could not load video / ${e.message}`, 2);
-        });
-      }
-      _ = true;
-    }
-  }
-  function te() {
-    setTimeout(j, 100);
-  }
-  function ne() {
-    if (!i.get()) return;
-    te();
-  }
-};
-Ops.User.srcphag.VideoJS.prototype = new CABLES.Op();
-CABLES.OPS["672dfc58-c9cf-477c-8c43-88db0abafb7e"] = {
-  f: Ops.User.srcphag.VideoJS,
-  objName: "Ops.User.srcphag.VideoJS",
-};
-Ops.Ui.VizTexture = function () {
-  CABLES.Op.apply(this, arguments);
-  const D = this;
-  const n = (D.attachments = {
-    viztex_frag:
-      "IN vec2 texCoord;\nUNI sampler2D tex;\nUNI samplerCube cubeMap;\nUNI float width;\nUNI float height;\nUNI float type;\nUNI float time;\nfloat LinearizeDepth(float d,float zNear,float zFar)\n{\nfloat z_n=2.*d-1.;\nreturn 2.*zNear/(zFar+zNear-z_n*(zFar-zNear));\n}\nvoid main()\n{\nvec4 col=vec4(vec3(0.),0.);\nvec4 colTex=texture(tex,texCoord);\nif(type==1.)\n{\nvec4 depth=vec4(0.);\nvec2 localST=texCoord;\nlocalST.y=1.-localST.y;\nlocalST.t=mod(localST.t*3.,1.);\nlocalST.s=mod(localST.s*4.,1.);\n#ifdef WEBGL2\n#define texCube texture\n#endif\n#ifdef WEBGL1\n#define texCube textureCube\n#endif\n\nif (texCoord.s*4.>1.&&texCoord.s*4.<2.)\n{\n\nif (texCoord.t*3.<1.)\n{\nvec3 dir=vec3(localST.s*2.-1.,-1.,-localST.t*2.+1.);\ndepth=texCube(cubeMap,dir);\n}\n\nelse if (texCoord.t*3.>2.)\n{\nvec3 dir=vec3(localST.s*2.-1.,1.,localST.t*2.-1.);\ndepth=texCube(cubeMap,dir);\n}\nelse\n{\nvec3 dir=vec3(localST.s*2.-1.,-localST.t*2.+1.,1.);\ndepth=texCube(cubeMap,dir);\n}\n}\n\nelse if (texCoord.t*3.>1.&&texCoord.t*3.<2.)\n{\nif (texCoord.x*4.<1.)\n{\nvec3 dir=vec3(-1.,-localST.t*2.+1.,localST.s*2.-1.);\ndepth=texCube(cubeMap,dir);\n}\nelse if (texCoord.x*4.<3.)\n{\nvec3 dir=vec3(1,-localST.t*2.+1.,-localST.s*2.+1.);\ndepth=texCube(cubeMap,dir);\n}\nelse \n{\nvec3 dir=vec3(-localST.s*2.+1.,-localST.t*2.+1.,-1.);\ndepth=texCube(cubeMap,dir);\n}\n}\n\ncolTex=vec4(depth);\n}\nif(type==2.)\n{\nfloat near=0.1;\nfloat far=50.;\nfloat depth=LinearizeDepth(colTex.r,near,far);\ncolTex.rgb=vec3(depth);\n}\n#ifdef ANIM_RANGE\nif(colTex.r>1.||colTex.r<0.)\ncolTex.r=mod(colTex.r,1.)*0.5+(sin(colTex.r+mod(colTex.r*3.,1.)+time*5.)*0.5+0.5)*0.5;\nif(colTex.g>1.||colTex.g<0.)\ncolTex.g=mod(colTex.g,1.)*0.5+(sin(colTex.g+mod(colTex.g*3.,1.)+time*5.)*0.5+0.5)*0.5;\nif(colTex.b>1.||colTex.b<0.)\ncolTex.b=mod(colTex.b,1.)*0.5+(sin(colTex.b+mod(colTex.b*3.,1.)+time*5.)*0.5+0.5)*0.5;\n#endif\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#ifdef MOD_RANGE\ncolTex.r=mod(colTex.r,1.0001);\ncolTex.g=mod(colTex.g,1.0001);\ncolTex.b=mod(colTex.b,1.0001);\n#endif\n#ifdef ALPHA_ONE\ncolTex.a=1.;\n#endif\n#ifdef ALPHA_INV\ncolTex.a=1.-colTex.a;\n#endif\noutColor=mix(col,colTex,colTex.a);\n}\n",
-    viztex_vert:
-      "IN vec3 vPosition;\nIN vec2 attrTexCoord;\nOUT vec2 texCoord;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nvoid main()\n{\n    texCoord=vec2(attrTexCoord.x,1.0-attrTexCoord.y);\n    vec4 pos = vec4( vPosition, 1. );\n    mat4 mvMatrix=viewMatrix * modelMatrix;\n    gl_Position = projMatrix * mvMatrix * pos;\n}",
-  });
-  const R = D.inTexture("Texture In"),
-    B = D.inBool("Show Info", false),
-    e = D.inSwitch("Visualize outside 0-1", ["Off", "Anim", "Modulo"], "Anim"),
-    t = D.inSwitch("Alpha", ["A", "1", "1-A"], "A"),
-    U = D.inBool("Show Color", false),
-    V = D.inFloatSlider("X", 0.5),
-    F = D.inFloatSlider("Y", 0.5),
-    i = D.outTexture("Texture Out"),
-    G = D.outString("Info");
-  D.setUiAttrib({ height: 150, resizable: true });
-  const q = new CABLES.Timer();
-  let r = null;
-  let z = null;
-  let H = null;
-  let X = "";
-  let a = true;
-  t.onChange = e.onChange = o;
-  U.onChange = s;
-  s();
-  if (CABLES.UI) {
-    q.play();
-  }
-  function s() {
-    V.setUiAttribs({ greyout: !U.get() });
-    F.setUiAttribs({ greyout: !U.get() });
-  }
-  R.onChange = () => {
-    const e = R.get();
-    i.setRef(e);
-    let t = "";
-    if (R.get() && R.isLinked()) t = R.links[0].getOtherPort(R).name;
-    D.setUiAttrib({ extendTitle: t });
-  };
-  function o() {
-    if (!r) return;
-    r.toggleDefine("MOD_RANGE", e.get() == "Modulo");
-    r.toggleDefine("ANIM_RANGE", e.get() == "Anim");
-    r.toggleDefine("ALPHA_INV", t.get() == "1-A");
-    r.toggleDefine("ALPHA_ONE", t.get() == "1");
-  }
-  D.renderVizLayerGl = (c, d) => {
-    if (!R.isLinked()) return;
-    if (!d.useGl) return;
-    const h = R;
-    const p = 5;
-    const m = p + 1;
-    const e = CABLES.UI.uiProfiler.start("previewlayer texture");
-    const f = h.op.patch.cgl;
-    if (!this._emptyCubemap)
-      this._emptyCubemap = CGL.Texture.getEmptyCubemapTexture(f);
-    h.op.patch.cgl.profileData.profileTexPreviews++;
-    const g = h.get() || CGL.Texture.getEmptyTexture(f);
-    if (!this._mesh) {
-      const t = new CGL.Geometry("vizTexture rect");
-      t.vertices = [1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1, 0];
-      t.texCoords = [1, 1, 0, 1, 1, 0, 0, 0];
-      t.verticesIndices = [0, 1, 2, 3, 1, 2];
-      this._mesh = new CGL.Mesh(f, t);
-    }
-    if (!this._shader) {
-      this._shader = new CGL.Shader(f, "glpreviewtex");
-      this._shader.setModules([
-        "MODULE_VERTEX_POSITION",
-        "MODULE_COLOR",
-        "MODULE_BEGIN_FRAG",
-      ]);
-      this._shader.setSource(n.viztex_vert, n.viztex_frag);
-      this._shaderTexUniform = new CGL.Uniform(this._shader, "t", "tex", p);
-      this._shaderTexCubemapUniform = new CGL.Uniform(
-        this._shader,
-        "tc",
-        "cubeMap",
-        m
-      );
-      r = this._shader;
-      o();
-      this._shaderTexUniformW = new CGL.Uniform(
-        this._shader,
-        "f",
-        "width",
-        g.width
-      );
-      this._shaderTexUniformH = new CGL.Uniform(
-        this._shader,
-        "f",
-        "height",
-        g.height
-      );
-      this._shaderTypeUniform = new CGL.Uniform(this._shader, "f", "type", 0);
-      this._shaderTimeUniform = new CGL.Uniform(this._shader, "f", "time", 0);
-    }
-    f.pushPMatrix();
-    const b = [g.width, g.height];
-    const v =
-      h.op.patch.cgl.canvasWidth > b[0] && h.op.patch.cgl.canvasHeight > b[1];
-    if (v) {
-      mat4.ortho(
-        f.pMatrix,
-        0,
-        h.op.patch.cgl.canvasWidth,
-        h.op.patch.cgl.canvasHeight,
-        0,
-        0.001,
-        11
-      );
-    } else mat4.ortho(f.pMatrix, -1, 1, 1, -1, 0.001, 11);
-    const y = f.getTexture(p);
-    const _ = f.getTexture(m);
-    let T = 0;
-    if (g) {
-      if (g.cubemap) T = 1;
-      if (g.textureType == CGL.Texture.TYPE_DEPTH) T = 2;
-      if (T == 0 || T == 2) {
-        f.setTexture(p, g.tex);
-        f.setTexture(m, this._emptyCubemap.cubemap, f.gl.TEXTURE_CUBE_MAP);
-      } else if (T == 1) {
-        f.setTexture(m, g.cubemap, f.gl.TEXTURE_CUBE_MAP);
-      }
-      q.update();
-      this._shaderTimeUniform.setValue(q.get());
-      this._shaderTypeUniform.setValue(T);
-      let t = [h.op.patch.cgl.canvasWidth, h.op.patch.cgl.canvasHeight];
-      f.gl.clearColor(0, 0, 0, 0);
-      f.gl.clear(f.gl.COLOR_BUFFER_BIT | f.gl.DEPTH_BUFFER_BIT);
-      f.pushModelMatrix();
-      if (v) {
-        t = b;
-        mat4.translate(f.mMatrix, f.mMatrix, [b[0] / 2, b[1] / 2, 0]);
-        mat4.scale(f.mMatrix, f.mMatrix, [b[0] / 2, b[1] / 2, 0]);
-      }
-      this._mesh.render(this._shader);
-      f.popModelMatrix();
-      if (T == 0) f.setTexture(p, y);
-      if (T == 1) f.setTexture(m, _);
-      f.popPMatrix();
-      f.resetViewPort();
-      const O = [d.width, d.height];
-      const S = false;
-      if (g.width > g.height) O[1] = (d.width * b[1]) / b[0];
-      else {
-        O[1] = d.width * (b[1] / b[0]);
-        if (O[1] > d.height) {
-          const x = d.height / O[1];
-          O[0] *= x;
-          O[1] *= x;
-        }
-      }
-      const A = O[0] > b[0] && O[1] > b[1];
-      c.imageSmoothingEnabled = true;
-      c.fillStyle = "#ffffff";
-      c.fillRect(d.x, d.y - 10, 10, 10);
-      c.fillStyle = "#000000";
-      c.fillRect(d.x, d.y - 10, 5, 5);
-      c.fillRect(d.x + 5, d.y - 10 + 5, 5, 5);
-      let e = d.height;
-      let n = (10 * d.width) / e;
-      let i = e / 10;
-      let r = d.width / n;
-      for (let t = 0; t < n; t++)
-        for (let e = 0; e < 10; e++) {
-          if ((t + e) % 2 == 0) c.fillStyle = "#333333";
-          else c.fillStyle = "#393939";
-          c.fillRect(d.x + r * t, d.y + i * e, r, i);
-        }
-      c.fillStyle = "#222";
-      const w = (d.width - O[0]) / 2;
-      const C = (e - O[1]) / 2;
-      let a = d.x + (d.width - O[0]) / 2;
-      let s = d.y + (e - O[1]) / 2;
-      let o = O[0];
-      let l = O[1];
-      if (e - O[1] < 0) {
-        a = d.x + (d.width - (O[0] * e) / O[1]) / 2;
-        s = d.y;
-        o = (O[0] * e) / O[1];
-        l = e;
-      }
-      c.fillRect(d.x, d.y, a - d.x, e);
-      c.fillRect(d.x + o + a - d.x, d.y, o, e);
-      c.fillRect(d.x, d.y, d.width, C);
-      c.fillRect(d.x, d.y + O[1] + C, d.width, C);
-      if (
-        f.canvas &&
-        f.canvasWidth > 0 &&
-        f.canvasHeight > 0 &&
-        f.canvas.width > 0 &&
-        f.canvas.height > 0
-      ) {
-        try {
-          const I = o / t[0] > 3 || l / t[1] > 3;
-          const E = o / t[0] > 10 || l / t[1] > 10;
-          if (b[1] == 1) {
-            c.imageSmoothingEnabled = false;
-            c.drawImage(f.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
-            c.imageSmoothingEnabled = true;
-          } else if (b[0] == 1) {
-            c.imageSmoothingEnabled = false;
-            c.drawImage(f.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
-            c.imageSmoothingEnabled = true;
-          } else if (
-            O[0] != 0 &&
-            O[1] != 0 &&
-            d.width != 0 &&
-            e != 0 &&
-            o != 0 &&
-            l != 0
-          ) {
-            c.imageSmoothingEnabled = !I;
-            c.drawImage(f.canvas, 0, 0, t[0], t[1], a, s, o, l);
-          }
-          if (E) {
-            const k = o / t[0];
-            const P = l / t[1];
-            c.imageSmoothingEnabled = true;
-            c.lineWidth = 1;
-            c.globalAlpha = 0.5;
-            c.beginPath();
-            for (let e = 0; e <= t[0]; e++) {
-              c.moveTo(a + e * k, s);
-              c.lineTo(a + e * k, s + l);
-            }
-            for (let e = 0; e <= t[1]; e++) {
-              c.moveTo(a, s + e * P);
-              c.lineTo(a + o, s + e * P);
-            }
-            c.strokeStyle = "#555";
-            c.stroke();
-            c.globalAlpha = 1;
-          }
-        } catch (e) {
-          console.error("canvas drawimage exception...", e);
-        }
-      }
-      let u = "";
-      if (B.get()) {
-        if (h.get() && h.get().getInfoOneLine)
-          u += h.get().getInfoOneLine() + "\n";
-      }
-      if (U.get()) {
-        u += X + "\n";
-        const L = a + o * V.get();
-        const N = s + l * F.get();
-        c.fillStyle = "#000";
-        c.fillRect(L - 1, N - 10, 3, 20);
-        c.fillRect(L, N - 1, 20, 3);
-        c.fillStyle = "#fff";
-        c.fillRect(L - 1, N - 10, 1, 20);
-        c.fillRect(L - 10, N - 1, 20, 1);
-      }
-      D.setUiAttrib({ comment: u });
-      G.set(u);
-      if (U.get()) {
-        const j = f.gl;
-        const M = R.get();
-        if (!M) {
-          X = "";
-          return;
-        }
-        if (!z) z = j.createFramebuffer();
-        if (!H) H = new CGL.PixelReader();
-        j.bindFramebuffer(j.FRAMEBUFFER, z);
-        j.framebufferTexture2D(
-          j.FRAMEBUFFER,
-          j.COLOR_ATTACHMENT0,
-          j.TEXTURE_2D,
-          M.tex,
-          0
-        );
-        j.bindFramebuffer(j.FRAMEBUFFER, null);
-        H.read(
-          f,
-          z,
-          M.pixelFormat,
-          V.get() * M.width,
-          M.height - F.get() * M.height,
-          1,
-          1,
-          (e) => {
-            if (!CGL.Texture.isPixelFormatFloat(M.pixelFormat)) {
-              X = "Pixel Float: " + Math.floor((e[0] / 255) * 100) / 100;
-              if (!isNaN(e[1]))
-                X += ", " + Math.floor((e[1] / 255) * 100) / 100;
-              if (!isNaN(e[2]))
-                X += ", " + Math.floor((e[2] / 255) * 100) / 100;
-              if (!isNaN(e[3]))
-                X += ", " + Math.floor((e[3] / 255) * 100) / 100;
-              X += "\n";
-              if (M.pixelFormat.indexOf("ubyte") > 0) {
-                X += "Pixel UByte: ";
-                X += Math.round(e[0]);
-                if (!isNaN(e[1])) X += ", " + Math.round(e[1]);
-                if (!isNaN(e[2])) X += ", " + Math.round(e[2]);
-                if (!isNaN(e[3])) X += ", " + Math.round(e[3]);
-                X += "\n";
-              }
-            } else {
-              X =
-                "Pixel Float: " +
-                Math.round(e[0] * 100) / 100 +
-                ", " +
-                Math.round(e[1] * 100) / 100 +
-                ", " +
-                Math.round(e[2] * 100) / 100 +
-                ", " +
-                Math.round(e[3] * 100) / 100;
-              X += "\n";
-            }
-          }
-        );
-      }
-    }
-    f.gl.clearColor(0, 0, 0, 0);
-    f.gl.clear(f.gl.COLOR_BUFFER_BIT | f.gl.DEPTH_BUFFER_BIT);
-    e.finish();
-  };
-};
-Ops.Ui.VizTexture.prototype = new CABLES.Op();
-CABLES.OPS["4ea2d7b0-ca74-45db-962b-4d1965ac20c0"] = {
-  f: Ops.Ui.VizTexture,
-  objName: "Ops.Ui.VizTexture",
-};
-Ops.Vars.VarSetArray_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inArray("Value", null);
-  e.varName = e.inDropDown("Variable", [], "", true);
-  new CABLES.VarSetOpWrapper(e, "array", n, e.varName);
-};
-Ops.Vars.VarSetArray_v2.prototype = new CABLES.Op();
-CABLES.OPS["8088290f-45d4-4312-b4ca-184d34ca4667"] = {
-  f: Ops.Vars.VarSetArray_v2,
-  objName: "Ops.Vars.VarSetArray_v2",
-};
-Ops.Color.HexToRGB_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const r = e.inString("Hex", "#ff0000"),
-    a = e.inValueBool("Bytes"),
-    s = e.outNumber("R"),
-    o = e.outNumber("G"),
-    l = e.outNumber("B");
-  function u(e) {
-    return parseInt(n(e).substring(0, 2), 16) || 0;
-  }
-  function c(e) {
-    return parseInt(n(e).substring(2, 4), 16) || 0;
-  }
-  function d(e) {
-    return parseInt(n(e).substring(4, 6), 16) || 0;
-  }
-  function n(e = "") {
-    return e.charAt(0) == "#" ? e.substring(1, 7) : e;
-  }
-  r.onChange = i;
-  a.onChange = i;
-  function i() {
-    let e = r.get() || "";
-    let t = u(e);
-    let n = c(e);
-    let i = d(e);
-    if (!a.get()) {
-      t /= 255;
-      n /= 255;
-      i /= 255;
-    }
-    s.set(t);
-    l.set(i);
-    o.set(n);
-  }
-};
-Ops.Color.HexToRGB_v2.prototype = new CABLES.Op();
-CABLES.OPS["9877f198-8dac-48e5-9310-244ef1a8dec5"] = {
-  f: Ops.Color.HexToRGB_v2,
-  objName: "Ops.Color.HexToRGB_v2",
+Ops.Ui.Area.prototype = new CABLES.Op();
+CABLES.OPS["38f79614-b0de-4960-8da5-2827e7f43415"] = {
+  f: Ops.Ui.Area,
+  objName: "Ops.Ui.Area",
 };
 window.addEventListener("load", function (e) {
   CABLES.jsLoaded = new Event("CABLES.jsLoaded");
@@ -40465,7 +38383,7 @@ window.addEventListener("load", function (e) {
           "-ms-fullscreen",
         ],
       ],
-      q = G[0],
+      H = G[0],
       z = 0;
     z < G.length;
     z++
@@ -40475,21 +38393,21 @@ window.addEventListener("load", function (e) {
       break;
     }
   if (D) {
-    for (var H = 0; H < D.length; H++) F[q[H]] = D[H];
-    F.prefixed = D[0] !== q[0];
+    for (var q = 0; q < D.length; q++) F[H[q]] = D[q];
+    F.prefixed = D[0] !== H[0];
   }
-  var X = [],
-    W = function (a, s) {
+  var W = [],
+    X = function (a, s) {
       return function (e, t, n) {
         var i,
           r = s.levels[t],
           t = new RegExp("^(" + r + ")$");
         "log" !== e && n.unshift(e.toUpperCase() + ":"),
           n.unshift(a + ":"),
-          X &&
-            (X.push([].concat(n)),
-            (i = X.length - 1e3),
-            X.splice(0, 0 < i ? i : 0)),
+          W &&
+            (W.push([].concat(n)),
+            (i = W.length - 1e3),
+            W.splice(0, 0 < i ? i : 0)),
           !window.console ||
             ((i =
               !(i = window.console[e]) && "debug" === e
@@ -40507,7 +38425,7 @@ window.addEventListener("load", function (e) {
         a("log", r, t);
       }
       var r = "info",
-        a = W(n, i);
+        a = X(n, i);
       return (
         (i.createLogger = function (e) {
           return t(n + ": " + e);
@@ -40530,20 +38448,20 @@ window.addEventListener("load", function (e) {
           return r;
         }),
         ((i.history = function () {
-          return X ? [].concat(X) : [];
+          return W ? [].concat(W) : [];
         }).filter = function (t) {
-          return (X || []).filter(function (e) {
+          return (W || []).filter(function (e) {
             return new RegExp(".*" + t + ".*").test(e[0]);
           });
         }),
         (i.history.clear = function () {
-          X && (X.length = 0);
+          W && (W.length = 0);
         }),
         (i.history.disable = function () {
-          null !== X && ((X.length = 0), (X = null));
+          null !== W && ((W.length = 0), (W = null));
         }),
         (i.history.enable = function () {
-          null === X && (X = []);
+          null === W && (W = []);
         }),
         (i.error = function () {
           for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++)
@@ -40597,11 +38515,11 @@ window.addEventListener("load", function (e) {
       e.exports = t;
     }),
     Z = Object.prototype.toString,
-    J = function (e) {
+    $ = function (e) {
       return ee(e) ? Object.keys(e) : [];
     };
-  function $(t, n) {
-    J(t).forEach(function (e) {
+  function J(t, n) {
+    $(t).forEach(function (e) {
       return n(t[e], e);
     });
   }
@@ -40616,7 +38534,7 @@ window.addEventListener("load", function (e) {
       ? Q.apply(void 0, [n].concat(t))
       : (t.forEach(function (e) {
           e &&
-            $(e, function (e, t) {
+            J(e, function (e, t) {
               n[t] = e;
             });
         }),
@@ -40668,16 +38586,16 @@ window.addEventListener("load", function (e) {
         : v),
     he = /Safari/i.test(i) && !ue && !re && !le,
     pe = /Windows/i.test(i),
-    me = Boolean(
+    fe = Boolean(
       _e() &&
         ("ontouchstart" in window ||
           window.navigator.maxTouchPoints ||
           (window.DocumentTouch &&
             window.document instanceof window.DocumentTouch))
     ),
-    a = /iPad/i.test(i) || (he && me && !/iPhone/i.test(i)),
-    fe = /iPhone/i.test(i) && !a,
-    ge = fe || a || n,
+    a = /iPad/i.test(i) || (he && fe && !/iPhone/i.test(i)),
+    me = /iPhone/i.test(i) && !a,
+    ge = me || a || n,
     be = (he || ge) && !ue,
     s = Object.freeze({
       __proto__: null,
@@ -40693,9 +38611,9 @@ window.addEventListener("load", function (e) {
       IE_VERSION: de,
       IS_SAFARI: he,
       IS_WINDOWS: pe,
-      TOUCH_ENABLED: me,
+      TOUCH_ENABLED: fe,
       IS_IPAD: a,
-      IS_IPHONE: fe,
+      IS_IPHONE: me,
       IS_IOS: ge,
       IS_ANY_SAFARI: be,
     });
@@ -40712,14 +38630,14 @@ window.addEventListener("load", function (e) {
   function Te(e) {
     return ee(e) && 1 === e.nodeType;
   }
-  function Oe() {
+  function Se() {
     try {
       return window.parent !== window.self;
     } catch (e) {
       return !0;
     }
   }
-  function Se(n) {
+  function Oe(n) {
     return function (e, t) {
       if (!ve(e)) return document[n](null);
       t = Te((t = ve(t) ? document.querySelector(t) : t)) ? t : document;
@@ -40750,7 +38668,7 @@ window.addEventListener("load", function (e) {
       Object.getOwnPropertyNames(t).forEach(function (e) {
         r.setAttribute(e, t[e]);
       }),
-      i && qe(r, i),
+      i && He(r, i),
       r
     );
   }
@@ -40781,7 +38699,7 @@ window.addEventListener("load", function (e) {
       e
     );
   }
-  function Ie(e, t) {
+  function Ee(e, t) {
     return e
       ? (e.classList
           ? e.classList.remove(t)
@@ -40796,7 +38714,7 @@ window.addEventListener("load", function (e) {
       : (d.warn("removeClass was called with an element that doesn't exist"),
         null);
   }
-  function Ee(e, t, n) {
+  function Ie(e, t, n) {
     var i = Ce(e, t);
     if (
       (n =
@@ -40804,7 +38722,7 @@ window.addEventListener("load", function (e) {
           ? !i
           : n) !== i
     )
-      return (n ? xe : Ie)(e, t), e;
+      return (n ? xe : Ee)(e, t), e;
   }
   function ke(n, i) {
     Object.getOwnPropertyNames(i).forEach(function (e) {
@@ -40833,10 +38751,10 @@ window.addEventListener("load", function (e) {
   function Ne(e, t, n) {
     e.setAttribute(t, n);
   }
-  function je(e, t) {
+  function Me(e, t) {
     e.removeAttribute(t);
   }
-  function Me() {
+  function je() {
     document.body.focus(),
       (document.onselectstart = function () {
         return !1;
@@ -40930,7 +38848,7 @@ window.addEventListener("load", function (e) {
         })
     );
   }
-  function qe(t, e) {
+  function He(t, e) {
     return (
       Ge(e).forEach(function (e) {
         return t.appendChild(e);
@@ -40939,9 +38857,9 @@ window.addEventListener("load", function (e) {
     );
   }
   function ze(e, t) {
-    return qe(Fe(e), t);
+    return He(Fe(e), t);
   }
-  function He(e) {
+  function qe(e) {
     return (
       (void 0 === e.button && void 0 === e.buttons) ||
       (0 === e.button && void 0 === e.buttons) ||
@@ -40949,27 +38867,27 @@ window.addEventListener("load", function (e) {
       (0 === e.button && 1 === e.buttons)
     );
   }
-  var Xe,
-    We = Se("querySelector"),
-    Ye = Se("querySelectorAll"),
+  var We,
+    Xe = Oe("querySelector"),
+    Ye = Oe("querySelectorAll"),
     Ke = Object.freeze({
       __proto__: null,
       isReal: _e,
       isEl: Te,
-      isInFrame: Oe,
+      isInFrame: Se,
       createEl: c,
       textContent: Ae,
       prependTo: we,
       hasClass: Ce,
       addClass: xe,
-      removeClass: Ie,
-      toggleClass: Ee,
+      removeClass: Ee,
+      toggleClass: Ie,
       setAttributes: ke,
       getAttributes: Pe,
       getAttribute: Le,
       setAttribute: Ne,
-      removeAttribute: je,
-      blockTextSelection: Me,
+      removeAttribute: Me,
+      blockTextSelection: je,
       unblockTextSelection: De,
       getBoundingClientRect: Re,
       findPosition: Be,
@@ -40977,15 +38895,15 @@ window.addEventListener("load", function (e) {
       isTextNode: Ve,
       emptyEl: Fe,
       normalizeContent: Ge,
-      appendContent: qe,
+      appendContent: He,
       insertContent: ze,
-      isSingleLeftClick: He,
-      $: We,
+      isSingleLeftClick: qe,
+      $: Xe,
       $$: Ye,
     }),
     Qe = !1,
     Ze = function () {
-      if (!1 !== Xe.options.autoSetup) {
+      if (!1 !== We.options.autoSetup) {
         var e = Array.prototype.slice.call(
             document.getElementsByTagName("video")
           ),
@@ -41000,26 +38918,26 @@ window.addEventListener("load", function (e) {
           for (var r = 0, a = i.length; r < a; r++) {
             var s = i[r];
             if (!s || !s.getAttribute) {
-              Je(1);
+              $e(1);
               break;
             }
             void 0 === s.player &&
               null !== s.getAttribute("data-setup") &&
-              Xe(s);
+              We(s);
           }
-        else Qe || Je(1);
+        else Qe || $e(1);
       }
     };
-  function Je(e, t) {
-    _e() && (t && (Xe = t), window.setTimeout(Ze, e));
+  function $e(e, t) {
+    _e() && (t && (We = t), window.setTimeout(Ze, e));
   }
-  function $e() {
-    (Qe = !0), window.removeEventListener("load", $e);
+  function Je() {
+    (Qe = !0), window.removeEventListener("load", Je);
   }
   _e() &&
     ("complete" === document.readyState
-      ? $e()
-      : window.addEventListener("load", $e));
+      ? Je()
+      : window.addEventListener("load", Je));
   function et(e) {
     var t = document.createElement("style");
     return (t.className = e), t;
@@ -41261,14 +39179,14 @@ window.addEventListener("load", function (e) {
       e
     );
   }
-  function mt(t, n) {
+  function ft(t, n) {
     var i = window.performance.now();
     return function () {
       var e = window.performance.now();
       n <= e - i && (t.apply(void 0, arguments), (i = e));
     };
   }
-  function ft(i, r, a, s) {
+  function mt(i, r, a, s) {
     var o;
     function e() {
       var e = this,
@@ -41364,7 +39282,7 @@ window.addEventListener("load", function (e) {
           "; must be a DOM node or evented object."
       );
   }
-  function Ot(e, t, n) {
+  function St(e, t, n) {
     if (!_t(e))
       throw new Error(
         "Invalid event type for " +
@@ -41374,7 +39292,7 @@ window.addEventListener("load", function (e) {
           "; must be a non-empty string or array."
       );
   }
-  function St(e, t, n) {
+  function Ot(e, t, n) {
     if ("function" != typeof e)
       throw new Error(
         "Invalid listener for " + yt(t) + "#" + n + "; must be a function."
@@ -41389,8 +39307,8 @@ window.addEventListener("load", function (e) {
         : ((i = t[0]), (r = t[1]), t[2]);
     return (
       Tt(i, e, n),
-      Ot(r, e, n),
-      St(t, e, n),
+      St(r, e, n),
+      Ot(t, e, n),
       { isTargetingSelf: a, target: i, type: r, listener: (t = u(e, t)) }
     );
   }
@@ -41488,8 +39406,8 @@ window.addEventListener("load", function (e) {
           ? l(this.eventBusEl_, e, t)
           : ((t = t),
             Tt((e = e), this, "off"),
-            Ot(t, this, "off"),
-            St(n, this, "off"),
+            St(t, this, "off"),
+            Ot(n, this, "off"),
             (n = u(this, n)),
             this.off("dispose", n),
             e.nodeName
@@ -41510,7 +39428,7 @@ window.addEventListener("load", function (e) {
         return dt(this.eventBusEl_, e, t);
       },
     };
-  function It(e, t) {
+  function Et(e, t) {
     t = (t = void 0 === t ? {} : t).eventBusKey;
     if (t) {
       if (!e[t].nodeName)
@@ -41537,13 +39455,13 @@ window.addEventListener("load", function (e) {
       e
     );
   }
-  var Et = {
+  var It = {
     state: {},
     setState: function (e) {
       var n,
         i = this;
       return (
-        $((e = "function" == typeof e ? e() : e), function (e, t) {
+        J((e = "function" == typeof e ? e() : e), function (e, t) {
           i.state[t] !== e && ((n = n || {})[t] = { from: i.state[t], to: e }),
             (i.state[t] = e);
         }),
@@ -41554,7 +39472,7 @@ window.addEventListener("load", function (e) {
   };
   function kt(e, t) {
     return (
-      h(e, Et),
+      h(e, It),
       (e.state = h({}, e.state, t)),
       "function" == typeof e.handleStateChanged &&
         Ct(e) &&
@@ -41576,14 +39494,14 @@ window.addEventListener("load", function (e) {
           return e.toUpperCase();
         });
   }
-  function m() {
+  function f() {
     for (var n = {}, e = arguments.length, t = new Array(e), i = 0; i < e; i++)
       t[i] = arguments[i];
     return (
       t.forEach(function (e) {
         e &&
-          $(e, function (e, t) {
-            te(e) ? (te(n[t]) || (n[t] = {}), (n[t] = m(n[t], e))) : (n[t] = e);
+          J(e, function (e, t) {
+            te(e) ? (te(n[t]) || (n[t] = {}), (n[t] = f(n[t], e))) : (n[t] = e);
           });
       }),
       n
@@ -41637,7 +39555,7 @@ window.addEventListener("load", function (e) {
           e
         );
       })(),
-    f = K(function (e, t) {
+    m = K(function (e, t) {
       function n(e) {
         if (
           (!e ||
@@ -41753,15 +39671,15 @@ window.addEventListener("load", function (e) {
       for (a in i) o[i[a]] = a;
       for (s in r) i[s] = r[s];
     });
-  f.code, f.codes, f.aliases, f.names, f.title;
+  m.code, m.codes, m.aliases, m.names, m.title;
   var g = (function () {
     function s(e, t, n) {
       var i = this;
       !e && this.play ? (this.player_ = e = this) : (this.player_ = e),
         (this.isDisposed_ = !1),
         (this.parentComponent_ = null),
-        (this.options_ = m({}, this.options_)),
-        (t = this.options_ = m(this.options_, t)),
+        (this.options_ = f({}, this.options_)),
+        (t = this.options_ = f(this.options_, t)),
         (this.id_ = t.id || (t.el && t.el.id)),
         this.id_ ||
           ((e = (e && e.id && e.id()) || "no_player"),
@@ -41776,7 +39694,7 @@ window.addEventListener("load", function (e) {
             return i.addClass(e);
           }),
         !1 !== t.evented &&
-          (It(this, { eventBusKey: this.el_ ? "el_" : null }),
+          (Et(this, { eventBusKey: this.el_ ? "el_" : null }),
           (this.handleLanguagechange = this.handleLanguagechange.bind(this)),
           this.on(this.player_, "languagechange", this.handleLanguagechange)),
         kt(this, this.constructor.defaultState),
@@ -41824,7 +39742,7 @@ window.addEventListener("load", function (e) {
         return this.player_;
       }),
       (e.options = function (e) {
-        return e && (this.options_ = m(this.options_, e)), this.options_;
+        return e && (this.options_ = f(this.options_, e)), this.options_;
       }),
       (e.el = function () {
         return this.el_;
@@ -41998,7 +39916,7 @@ window.addEventListener("load", function (e) {
           }, 1);
       }),
       (e.$ = function (e, t) {
-        return We(e, t || this.contentEl());
+        return Xe(e, t || this.contentEl());
       }),
       (e.$$ = function (e, t) {
         return Ye(e, t || this.contentEl());
@@ -42010,10 +39928,10 @@ window.addEventListener("load", function (e) {
         xe(this.el_, e);
       }),
       (e.removeClass = function (e) {
-        Ie(this.el_, e);
+        Ee(this.el_, e);
       }),
       (e.toggleClass = function (e, t) {
-        Ee(this.el_, e, t);
+        Ie(this.el_, e, t);
       }),
       (e.show = function () {
         this.removeClass("vjs-hidden");
@@ -42034,7 +39952,7 @@ window.addEventListener("load", function (e) {
         Ne(this.el_, e, t);
       }),
       (e.removeAttribute = function (e) {
-        je(this.el_, e);
+        Me(this.el_, e);
       }),
       (e.width = function (e, t) {
         return this.dimension("width", e, t);
@@ -42093,7 +40011,7 @@ window.addEventListener("load", function (e) {
       }),
       (e.handleKeyDown = function (e) {
         this.player_ &&
-          (f.isEventKey(e, "Tab") || e.stopPropagation(),
+          (m.isEventKey(e, "Tab") || e.stopPropagation(),
           this.player_.handleKeyDown(e));
       }),
       (e.handleKeyPress = function (e) {
@@ -42286,7 +40204,7 @@ window.addEventListener("load", function (e) {
     (e.prototype = Object.create(t.prototype)),
       ((e.prototype.constructor = e).__proto__ = t);
   };
-  function jt(e, t, n, i) {
+  function Mt(e, t, n, i) {
     return (
       (function (e, t, n) {
         if ("number" != typeof t || t < 0 || n < t)
@@ -42303,7 +40221,7 @@ window.addEventListener("load", function (e) {
       n[i][t]
     );
   }
-  function Mt(e) {
+  function jt(e) {
     var t =
       void 0 === e || 0 === e.length
         ? {
@@ -42317,8 +40235,8 @@ window.addEventListener("load", function (e) {
           }
         : {
             length: e.length,
-            start: jt.bind(null, "start", 0, e),
-            end: jt.bind(null, "end", 1, e),
+            start: Mt.bind(null, "start", 0, e),
+            end: Mt.bind(null, "end", 1, e),
           };
     return (
       window.Symbol &&
@@ -42331,10 +40249,10 @@ window.addEventListener("load", function (e) {
   }
   function Dt(e, t) {
     return Array.isArray(e)
-      ? Mt(e)
+      ? jt(e)
       : void 0 === e || void 0 === t
-      ? Mt()
-      : Mt([[e, t]]);
+      ? jt()
+      : jt([[e, t]]);
   }
   function Rt(e, t) {
     var n,
@@ -42392,7 +40310,7 @@ window.addEventListener("load", function (e) {
   function Gt(e) {
     Ft(e) && e.then(null, function (e) {});
   }
-  function qt(i) {
+  function Ht(i) {
     return [
       "kind",
       "label",
@@ -42426,7 +40344,7 @@ window.addEventListener("load", function (e) {
         });
       return Array.prototype.map
         .call(t, function (e) {
-          var t = qt(e.track);
+          var t = Ht(e.track);
           return e.src && (t.src = e.src), t;
         })
         .concat(
@@ -42434,10 +40352,10 @@ window.addEventListener("load", function (e) {
             .call(e.textTracks(), function (e) {
               return -1 === n.indexOf(e);
             })
-            .map(qt)
+            .map(Ht)
         );
     },
-    Ht = function (e, n) {
+    qt = function (e, n) {
       return (
         e.forEach(function (e) {
           var t = n.addRemoteTextTrack(e).track;
@@ -42450,8 +40368,8 @@ window.addEventListener("load", function (e) {
         n.textTracks()
       );
     },
-    Xt = "vjs-modal-dialog",
-    Wt = (function (i) {
+    Wt = "vjs-modal-dialog",
+    Xt = (function (i) {
       function e(e, t) {
         var n = i.call(this, e, t) || this;
         return (
@@ -42466,11 +40384,11 @@ window.addEventListener("load", function (e) {
           n.content(n.options_.content),
           (n.contentEl_ = c(
             "div",
-            { className: Xt + "-content" },
+            { className: Wt + "-content" },
             { role: "document" }
           )),
           (n.descEl_ = c("p", {
-            className: Xt + "-description vjs-control-text",
+            className: Wt + "-description vjs-control-text",
             id: n.el().getAttribute("aria-describedby"),
           })),
           Ae(n.descEl_, n.description()),
@@ -42502,7 +40420,7 @@ window.addEventListener("load", function (e) {
             i.prototype.dispose.call(this);
         }),
         (t.buildCSSClass = function () {
-          return Xt + " vjs-hidden " + i.prototype.buildCSSClass.call(this);
+          return Wt + " vjs-hidden " + i.prototype.buildCSSClass.call(this);
         }),
         (t.label = function () {
           return this.localize(this.options_.label || "Modal Window");
@@ -42623,10 +40541,10 @@ window.addEventListener("load", function (e) {
         }),
         (t.handleKeyDown = function (e) {
           if (
-            (e.stopPropagation(), f.isEventKey(e, "Escape") && this.closeable())
+            (e.stopPropagation(), m.isEventKey(e, "Escape") && this.closeable())
           )
             return e.preventDefault(), void this.close();
-          if (f.isEventKey(e, "Tab")) {
+          if (m.isEventKey(e, "Tab")) {
             for (
               var t,
                 n = this.focusableEls_(),
@@ -42671,8 +40589,8 @@ window.addEventListener("load", function (e) {
         e
       );
     })(g);
-  (Wt.prototype.options_ = { pauseOnOpen: !0, temporary: !0 }),
-    g.registerComponent("ModalDialog", Wt);
+  (Xt.prototype.options_ = { pauseOnOpen: !0, temporary: !0 }),
+    g.registerComponent("ModalDialog", Xt);
   var Yt,
     Kt = (function (i) {
       function e(e) {
@@ -42744,7 +40662,7 @@ window.addEventListener("load", function (e) {
     for (var n = 0; n < e.length; n++)
       Object.keys(e[n]).length && t.id !== e[n].id && (e[n].selected = !1);
   }
-  function Jt(e) {
+  function $t(e) {
     var t = [
         "protocol",
         "hostname",
@@ -42765,7 +40683,7 @@ window.addEventListener("load", function (e) {
       i
     );
   }
-  function $t(e) {
+  function Jt(e) {
     var t;
     return (
       e.match(/^https?:\/\//) ||
@@ -42786,7 +40704,7 @@ window.addEventListener("load", function (e) {
   function tn(e, t) {
     return (
       void 0 === t && (t = window.location),
-      (":" === (e = Jt(e)).protocol ? t : e).protocol + e.host !==
+      (":" === (e = $t(e)).protocol ? t : e).protocol + e.host !==
         t.protocol + t.host
     );
   }
@@ -43058,8 +40976,8 @@ window.addEventListener("load", function (e) {
     })(gt),
     cn = Object.freeze({
       __proto__: null,
-      parseUrl: Jt,
-      getAbsoluteURL: $t,
+      parseUrl: $t,
+      getAbsoluteURL: Jt,
       getFileExtension: en,
       isCrossOrigin: tn,
     }),
@@ -43116,7 +41034,7 @@ window.addEventListener("load", function (e) {
       }
     );
   };
-  var mn = function (e) {
+  var fn = function (e) {
       var i = {};
       return (
         e &&
@@ -43136,7 +41054,7 @@ window.addEventListener("load", function (e) {
         i
       );
     },
-    fn = bn,
+    mn = bn,
     n = bn;
   function gn(e, t, n) {
     var i = e;
@@ -43173,7 +41091,7 @@ window.addEventListener("load", function (e) {
             } catch (e) {}
             return null;
           })(u);
-      if (f)
+      if (m)
         try {
           e = JSON.parse(e);
         } catch (e) {}
@@ -43210,7 +41128,7 @@ window.addEventListener("load", function (e) {
                 rawRequest: u,
               }),
               u.getAllResponseHeaders &&
-                (t.headers = mn(u.getAllResponseHeaders())))
+                (t.headers = fn(u.getAllResponseHeaders())))
             : (n = new Error("Internal XMLHttpRequest Error")),
           a(n, t, t.body)
         );
@@ -43228,8 +41146,8 @@ window.addEventListener("load", function (e) {
       d = (u.method = i.method || "GET"),
       h = i.body || i.data,
       p = (u.headers = i.headers || {}),
-      m = !!i.sync,
-      f = !1,
+      f = !!i.sync,
+      m = !1,
       g = {
         body: void 0,
         headers: {},
@@ -43241,7 +41159,7 @@ window.addEventListener("load", function (e) {
     if (
       ("json" in i &&
         !1 !== i.json &&
-        ((f = !0),
+        ((m = !0),
         p.accept || p.Accept || (p.Accept = "application/json"),
         "GET" !== d &&
           "HEAD" !== d &&
@@ -43259,9 +41177,9 @@ window.addEventListener("load", function (e) {
         o = !0;
       }),
       (u.ontimeout = t),
-      u.open(d, c, !m, i.username, i.password),
-      m || (u.withCredentials = !!i.withCredentials),
-      !m &&
+      u.open(d, c, !f, i.username, i.password),
+      f || (u.withCredentials = !!i.withCredentials),
+      !f &&
         0 < i.timeout &&
         (l = setTimeout(function () {
           var e;
@@ -43301,7 +41219,7 @@ window.addEventListener("load", function (e) {
         return ((t = gn(e, t, n)).method = i.toUpperCase()), vn(t);
       };
     }),
-    (fn.default = n);
+    (mn.default = n);
   function yn(e, t) {
     var n = new window.WebVTT.Parser(
         window,
@@ -43336,7 +41254,7 @@ window.addEventListener("load", function (e) {
     (e = tn(e)) && (t.cors = e),
       (e = "use-credentials" === i.tech_.crossOrigin()) &&
         (t.withCredentials = e),
-      fn(
+      mn(
         t,
         u(this, function (e, t, n) {
           return e
@@ -43361,7 +41279,7 @@ window.addEventListener("load", function (e) {
       var t;
       if (!(e = void 0 === e ? {} : e).tech)
         throw new Error("A tech was not provided.");
-      var e = m(e, {
+      var e = f(e, {
           kind: ln[e.kind] || "subtitles",
           language: e.language || e.srclang || "",
         }),
@@ -43504,7 +41422,7 @@ window.addEventListener("load", function (e) {
   Tn.prototype.allowedEvents_ = { cuechange: "cuechange" };
   (r = (function (i) {
     function e(e) {
-      var t = m((e = void 0 === e ? {} : e), { kind: on[e.kind] || "" }),
+      var t = f((e = void 0 === e ? {} : e), { kind: on[e.kind] || "" }),
         e = i.call(this, t) || this,
         n = !1;
       return (
@@ -43527,7 +41445,7 @@ window.addEventListener("load", function (e) {
   })(ie)),
     (he = (function (i) {
       function e(e) {
-        var t = m((e = void 0 === e ? {} : e), { kind: sn[e.kind] || "" }),
+        var t = f((e = void 0 === e ? {} : e), { kind: sn[e.kind] || "" }),
           e = i.call(this, t) || this,
           n = !1;
         return (
@@ -43585,15 +41503,15 @@ window.addEventListener("load", function (e) {
     (a.LOADING = 1),
     (a.LOADED = 2),
     (a.ERROR = 3);
-  var On = {
+  var Sn = {
     audio: { ListClass: nn, TrackClass: r, capitalName: "Audio" },
     video: { ListClass: rn, TrackClass: he, capitalName: "Video" },
     text: { ListClass: t, TrackClass: Tn, capitalName: "Text" },
   };
-  Object.keys(On).forEach(function (e) {
-    (On[e].getterName = e + "Tracks"), (On[e].privateName = e + "Tracks_");
+  Object.keys(Sn).forEach(function (e) {
+    (Sn[e].getterName = e + "Tracks"), (Sn[e].privateName = e + "Tracks_");
   });
-  var Sn = {
+  var On = {
       remoteText: {
         ListClass: t,
         TrackClass: Tn,
@@ -43609,10 +41527,10 @@ window.addEventListener("load", function (e) {
         privateName: "remoteTextTrackEls_",
       },
     },
-    An = Q({}, On, Sn);
-  (Sn.names = Object.keys(Sn)),
-    (On.names = Object.keys(On)),
-    (An.names = [].concat(Sn.names).concat(On.names));
+    An = Q({}, Sn, On);
+  (On.names = Object.keys(On)),
+    (Sn.names = Object.keys(Sn)),
+    (An.names = [].concat(On.names).concat(Sn.names));
   var _ =
       "undefined" != typeof e ? e : "undefined" != typeof window ? window : {},
     T =
@@ -43634,7 +41552,7 @@ window.addEventListener("load", function (e) {
       (this.code = e.code),
       (this.message = t || e.message);
   }
-  function In(e) {
+  function En(e) {
     function t(e, t, n, i) {
       return 3600 * (0 | e) + 60 * (0 | t) + (0 | n) + (0 | i) / 1e3;
     }
@@ -43647,7 +41565,7 @@ window.addEventListener("load", function (e) {
         : t(0, e[1], e[2], e[4])
       : null;
   }
-  function En() {
+  function In() {
     this.values = wn(null);
   }
   function kn(e, t, n, i) {
@@ -43662,7 +41580,7 @@ window.addEventListener("load", function (e) {
   function Pn(t, e, s) {
     var n = t;
     function i() {
-      var e = In(t);
+      var e = En(t);
       if (null === e)
         throw new xn(xn.Errors.BadTimeStamp, "Malformed timestamp: " + n);
       return (t = t.replace(/^[^\sa-zA-Z-]+/, "")), e;
@@ -43680,7 +41598,7 @@ window.addEventListener("load", function (e) {
       (e.endTime = i()),
       r(),
       (function (e, t) {
-        var a = new En();
+        var a = new In();
         kn(
           e,
           function (e, t) {
@@ -43760,7 +41678,7 @@ window.addEventListener("load", function (e) {
     BadSignature: { code: 0, message: "Malformed WebVTT signature." },
     BadTimeStamp: { code: 1, message: "Malformed time stamp." },
   }),
-    (En.prototype = {
+    (In.prototype = {
       set: function (e, t) {
         this.get(e) || "" === t || (this.values[e] = t);
       },
@@ -43807,7 +41725,7 @@ window.addEventListener("load", function (e) {
       v: "span",
       lang: "span",
     },
-    jn = {
+    Mn = {
       white: "rgba(255,255,255,1)",
       lime: "rgba(0,255,0,1)",
       cyan: "rgba(0,255,255,1)",
@@ -43817,7 +41735,7 @@ window.addEventListener("load", function (e) {
       blue: "rgba(0,0,255,1)",
       black: "rgba(0,0,0,1)",
     },
-    Mn = { v: "title", lang: "lang" },
+    jn = { v: "title", lang: "lang" },
     Dn = { rt: "ruby" };
   function Rn(e, t) {
     for (
@@ -43833,7 +41751,7 @@ window.addEventListener("load", function (e) {
         d,
         h = e.document.createElement("div"),
         p = h,
-        m = [];
+        f = [];
       null !==
       (n = (function () {
         if (!t) return null;
@@ -43853,7 +41771,7 @@ window.addEventListener("load", function (e) {
             )
           )
         : "/" !== n[1]
-        ? (a = In(n.substr(1, n.length - 2)))
+        ? (a = En(n.substr(1, n.length - 2)))
           ? ((i = e.document.createProcessingInstruction("timestamp", a)),
             p.appendChild(i))
           : (r = n.match(/^<([^.\s/0-9>]+)(\.[^\s\\>]+)?([^>\\]+)?(\\?)>?$/)) &&
@@ -43863,7 +41781,7 @@ window.addEventListener("load", function (e) {
             (d = Nn[u]),
             (i = d
               ? ((d = e.document.createElement(d)),
-                (u = Mn[u]) && c && (d[u] = c.trim()),
+                (u = jn[u]) && c && (d[u] = c.trim()),
                 d)
               : null) &&
               ((o = p),
@@ -43872,17 +41790,17 @@ window.addEventListener("load", function (e) {
                   ((a = r[2].split(".")).forEach(function (e) {
                     var t = /^bg_/.test(e),
                       e = t ? e.slice(3) : e;
-                    jn.hasOwnProperty(e) &&
-                      ((e = jn[e]),
+                    Mn.hasOwnProperty(e) &&
+                      ((e = Mn[e]),
                       (i.style[t ? "background-color" : "color"] = e));
                   }),
                   (i.className = a.join(" "))),
-                m.push(r[1]),
+                f.push(r[1]),
                 p.appendChild(i),
                 (p = i))))
-        : m.length &&
-          m[m.length - 1] === n.substr(2).replace(">", "") &&
-          (m.pop(), (p = p.parentNode));
+        : f.length &&
+          f[f.length - 1] === n.substr(2).replace(">", "") &&
+          (f.pop(), (p = p.parentNode));
     return h;
   }
   var Bn = [
@@ -44120,7 +42038,7 @@ window.addEventListener("load", function (e) {
       (this.width = e.width || n),
       (this.lineHeight = void 0 !== r ? r : e.lineHeight);
   }
-  function qn(e, t, o, l) {
+  function Hn(e, t, o, l) {
     var n,
       i = new Gn(t),
       r = t.cue,
@@ -44335,7 +42253,7 @@ window.addEventListener("load", function (e) {
           (t = r[n]),
             (e = new Fn(i, t, l)),
             a.appendChild(e.div),
-            qn(0, e, o, s),
+            Hn(0, e, o, s),
             (t.displayState = e.div),
             s.push(Gn.getSimpleBoxPosition(e));
       })();
@@ -44380,7 +42298,7 @@ window.addEventListener("load", function (e) {
                   var n;
                   "X-TIMESTAMP-MAP" === e &&
                     ((t = t),
-                    (n = new En()),
+                    (n = new In()),
                     kn(
                       t,
                       function (e, t) {
@@ -44389,7 +42307,7 @@ window.addEventListener("load", function (e) {
                             n.integer(e + "S", t);
                             break;
                           case "LOCA":
-                            n.set(e + "L", In(t));
+                            n.set(e + "L", En(t));
                         }
                       },
                       /[^\d]:/,
@@ -44409,7 +42327,7 @@ window.addEventListener("load", function (e) {
                   var r;
                   "Region" === e &&
                     ((t = t),
-                    (r = new En()),
+                    (r = new In()),
                     kn(
                       t,
                       function (e, t) {
@@ -44427,7 +42345,7 @@ window.addEventListener("load", function (e) {
                           case "viewportanchor":
                             var n = t.split(",");
                             if (2 !== n.length) break;
-                            var i = new En();
+                            var i = new In();
                             if (
                               (i.percent("x", n[0]),
                               i.percent("y", n[1]),
@@ -44542,9 +42460,9 @@ window.addEventListener("load", function (e) {
         return t.onflush && t.onflush(), this;
       },
     });
-  var Hn = zn,
-    Xn = { "": 1, lr: 1, rl: 1 },
-    Wn = {
+  var qn = zn,
+    Wn = { "": 1, lr: 1, rl: 1 },
+    Xn = {
       start: 1,
       center: 1,
       end: 1,
@@ -44555,7 +42473,7 @@ window.addEventListener("load", function (e) {
       "line-right": 1,
     };
   function Yn(e) {
-    return "string" == typeof e && !!Wn[e.toLowerCase()] && e.toLowerCase();
+    return "string" == typeof e && !!Xn[e.toLowerCase()] && e.toLowerCase();
   }
   function Kn(e, t, n) {
     this.hasBeenReset = !1;
@@ -44570,8 +42488,8 @@ window.addEventListener("load", function (e) {
       d = "auto",
       h = "start",
       p = "auto",
-      m = "auto",
-      f = 100,
+      f = "auto",
+      m = 100,
       g = "center";
     Object.defineProperties(this, {
       id: {
@@ -44640,7 +42558,7 @@ window.addEventListener("load", function (e) {
         set: function (e) {
           e =
             "string" == typeof (e = e) &&
-            !!Xn[e.toLowerCase()] &&
+            !!Wn[e.toLowerCase()] &&
             e.toLowerCase();
           if (!1 === e)
             throw new SyntaxError(
@@ -44695,22 +42613,22 @@ window.addEventListener("load", function (e) {
       positionAlign: {
         enumerable: !0,
         get: function () {
-          return m;
+          return f;
         },
         set: function (e) {
           e = Yn(e);
-          e && ((m = e), (this.hasBeenReset = !0));
+          e && ((f = e), (this.hasBeenReset = !0));
         },
       },
       size: {
         enumerable: !0,
         get: function () {
-          return f;
+          return m;
         },
         set: function (e) {
           if (e < 0 || 100 < e)
             throw new Error("Size must be between 0 and 100.");
-          (f = e), (this.hasBeenReset = !0);
+          (m = e), (this.hasBeenReset = !0);
         },
       },
       align: {
@@ -44735,10 +42653,10 @@ window.addEventListener("load", function (e) {
   };
   var Qn = Kn,
     Zn = { "": !0, up: !0 };
-  function Jn(e) {
+  function $n(e) {
     return "number" == typeof e && 0 <= e && e <= 100;
   }
-  function $n() {
+  function Jn() {
     var t = 100,
       n = 3,
       i = 0,
@@ -44753,7 +42671,7 @@ window.addEventListener("load", function (e) {
           return t;
         },
         set: function (e) {
-          if (!Jn(e)) throw new Error("Width must be between 0 and 100.");
+          if (!$n(e)) throw new Error("Width must be between 0 and 100.");
           t = e;
         },
       },
@@ -44774,7 +42692,7 @@ window.addEventListener("load", function (e) {
           return r;
         },
         set: function (e) {
-          if (!Jn(e))
+          if (!$n(e))
             throw new Error("RegionAnchorX must be between 0 and 100.");
           r = e;
         },
@@ -44785,7 +42703,7 @@ window.addEventListener("load", function (e) {
           return i;
         },
         set: function (e) {
-          if (!Jn(e))
+          if (!$n(e))
             throw new Error("RegionAnchorY must be between 0 and 100.");
           i = e;
         },
@@ -44796,7 +42714,7 @@ window.addEventListener("load", function (e) {
           return s;
         },
         set: function (e) {
-          if (!Jn(e))
+          if (!$n(e))
             throw new Error("ViewportAnchorY must be between 0 and 100.");
           s = e;
         },
@@ -44807,7 +42725,7 @@ window.addEventListener("load", function (e) {
           return a;
         },
         set: function (e) {
-          if (!Jn(e))
+          if (!$n(e))
             throw new Error("ViewportAnchorX must be between 0 and 100.");
           a = e;
         },
@@ -44828,7 +42746,7 @@ window.addEventListener("load", function (e) {
     });
   }
   var ei = K(function (e) {
-    e = e.exports = { WebVTT: Hn, VTTCue: Qn, VTTRegion: $n };
+    e = e.exports = { WebVTT: qn, VTTCue: Qn, VTTRegion: Jn };
     (dn.vttjs = e), (dn.WebVTT = e.WebVTT);
     var t = e.VTTCue,
       n = e.VTTRegion,
@@ -44843,7 +42761,7 @@ window.addEventListener("load", function (e) {
       dn.VTTCue || e.shim();
   });
   ei.WebVTT, ei.VTTCue, ei.VTTRegion;
-  var O = (function (i) {
+  var S = (function (i) {
     function n(t, e) {
       var n;
       return (
@@ -44974,7 +42892,7 @@ window.addEventListener("load", function (e) {
           });
       }),
       (e.dispose = function () {
-        this.clearTracks(On.names),
+        this.clearTracks(Sn.names),
           this.manualProgress && this.manualProgressOff(),
           this.manualTimeUpdates && this.manualTimeUpdatesOff(),
           i.prototype.dispose.call(this);
@@ -45019,11 +42937,11 @@ window.addEventListener("load", function (e) {
       }),
       (e.initTrackListeners = function () {
         var r = this;
-        On.names.forEach(function (e) {
+        Sn.names.forEach(function (e) {
           function t() {
             r.trigger(e + "trackchange");
           }
-          var n = On[e],
+          var n = Sn[e],
             i = r[n.getterName]();
           i.addEventListener("removetrack", t),
             i.addEventListener("addtrack", t),
@@ -45110,8 +43028,8 @@ window.addEventListener("load", function (e) {
         })(this, e, t, n);
       }),
       (e.createRemoteTextTrack = function (e) {
-        e = m(e, { tech: this });
-        return new Sn.remoteTextEl.TrackClass(e);
+        e = f(e, { tech: this });
+        return new On.remoteTextEl.TrackClass(e);
       }),
       (e.addRemoteTextTrack = function (e, t) {
         var n = this,
@@ -45222,23 +43140,23 @@ window.addEventListener("load", function (e) {
   })(g);
   An.names.forEach(function (e) {
     var t = An[e];
-    O.prototype[t.getterName] = function () {
+    S.prototype[t.getterName] = function () {
       return (
         (this[t.privateName] = this[t.privateName] || new t.ListClass()),
         this[t.privateName]
       );
     };
   }),
-    (O.prototype.featuresVolumeControl = !0),
-    (O.prototype.featuresMuteControl = !0),
-    (O.prototype.featuresFullscreenResize = !1),
-    (O.prototype.featuresPlaybackRate = !1),
-    (O.prototype.featuresProgressEvents = !1),
-    (O.prototype.featuresSourceset = !1),
-    (O.prototype.featuresTimeupdateEvents = !1),
-    (O.prototype.featuresNativeTextTracks = !1),
-    (O.prototype.featuresVideoFrameCallback = !1),
-    (O.withSourceHandlers = function (r) {
+    (S.prototype.featuresVolumeControl = !0),
+    (S.prototype.featuresMuteControl = !0),
+    (S.prototype.featuresFullscreenResize = !1),
+    (S.prototype.featuresPlaybackRate = !1),
+    (S.prototype.featuresProgressEvents = !1),
+    (S.prototype.featuresSourceset = !1),
+    (S.prototype.featuresTimeupdateEvents = !1),
+    (S.prototype.featuresNativeTextTracks = !1),
+    (S.prototype.featuresVideoFrameCallback = !1),
+    (S.withSourceHandlers = function (r) {
       (r.registerSourceHandler = function (e, t) {
         var n = (n = r.sourceHandlers) || (r.sourceHandlers = []);
         void 0 === t && (t = n.length), n.splice(t, 0, e);
@@ -45288,9 +43206,9 @@ window.addEventListener("load", function (e) {
               (this.sourceHandler_ = null));
         });
     }),
-    g.registerComponent("Tech", O),
-    O.registerTech("Tech", O),
-    (O.defaultTechOrder_ = []);
+    g.registerComponent("Tech", S),
+    S.registerTech("Tech", S),
+    (S.defaultTechOrder_ = []);
   var ti = {},
     ni = {},
     ii = {};
@@ -45382,9 +43300,9 @@ window.addEventListener("load", function (e) {
         }),
         t)
       : "string" == typeof e && e.trim()
-      ? [mi({ src: e })]
+      ? [fi({ src: e })]
       : ee(e) && "string" == typeof e.src && e.src && e.src.trim()
-      ? [mi(e)]
+      ? [fi(e)]
       : []);
   }
   var pi = {
@@ -45410,20 +43328,20 @@ window.addEventListener("load", function (e) {
     svg: "image/svg+xml",
     webp: "image/webp",
   };
-  function mi(e) {
+  function fi(e) {
     var t;
     return e.type || ((t = di(e.src)) && (e.type = t)), e;
   }
   n = (function (l) {
     function e(e, t, n) {
-      var i = m({ createEl: !1 }, t),
+      var i = f({ createEl: !1 }, t),
         n = l.call(this, e, i, n) || this;
       if (t.playerOptions.sources && 0 !== t.playerOptions.sources.length)
         e.src(t.playerOptions.sources);
       else
         for (var r = 0, a = t.playerOptions.techOrder; r < a.length; r++) {
           var s = p(a[r]),
-            o = O.getTech(s);
+            o = S.getTech(s);
           if ((o = !s ? g.getComponent(s) : o) && o.isSupported()) {
             e.loadTech_(s);
             break;
@@ -45542,7 +43460,7 @@ window.addEventListener("load", function (e) {
           this.options_.clickHandler.call(this, arguments);
       }),
       (t.handleKeyDown = function (e) {
-        f.isEventKey(e, "Space") || f.isEventKey(e, "Enter")
+        m.isEventKey(e, "Space") || m.isEventKey(e, "Enter")
           ? (e.preventDefault(), e.stopPropagation(), this.trigger("click"))
           : i.prototype.handleKeyDown.call(this, e);
       }),
@@ -45599,7 +43517,7 @@ window.addEventListener("load", function (e) {
         );
       })(ie)
     );
-  var fi = "#222",
+  var mi = "#222",
     gi = {
       monospace: "monospace",
       sansSerif: "sans-serif",
@@ -45789,17 +43707,17 @@ window.addEventListener("load", function (e) {
               t.edgeStyle &&
                 ("dropshadow" === t.edgeStyle
                   ? (r.firstChild.style.textShadow =
-                      "2px 2px 3px #222, 2px 2px 4px #222, 2px 2px 5px " + fi)
+                      "2px 2px 3px #222, 2px 2px 4px #222, 2px 2px 5px " + mi)
                   : "raised" === t.edgeStyle
                   ? (r.firstChild.style.textShadow =
-                      "1px 1px #222, 2px 2px #222, 3px 3px " + fi)
+                      "1px 1px #222, 2px 2px #222, 3px 3px " + mi)
                   : "depressed" === t.edgeStyle
                   ? (r.firstChild.style.textShadow =
-                      "1px 1px #ccc, 0 1px #ccc, -1px -1px #222, 0 -1px " + fi)
+                      "1px 1px #ccc, 0 1px #ccc, -1px -1px #222, 0 -1px " + mi)
                   : "uniform" === t.edgeStyle &&
                     (r.firstChild.style.textShadow =
                       "0 0 4px #222, 0 0 4px #222, 0 0 4px #222, 0 0 4px " +
-                      fi)),
+                      mi)),
               t.fontPercent &&
                 1 !== t.fontPercent &&
                 ((a = window.parseFloat(r.style.fontSize)),
@@ -45911,7 +43829,7 @@ window.addEventListener("load", function (e) {
           this.el_.setAttribute("disabled", "disabled");
       }),
       (n.handleKeyDown = function (e) {
-        f.isEventKey(e, "Space") || f.isEventKey(e, "Enter")
+        m.isEventKey(e, "Space") || m.isEventKey(e, "Enter")
           ? e.stopPropagation()
           : t.prototype.handleKeyDown.call(this, e);
       }),
@@ -45989,7 +43907,7 @@ window.addEventListener("load", function (e) {
             this.trigger({ type: "close", bubbles: !1 });
           }),
           (t.handleKeyDown = function (e) {
-            f.isEventKey(e, "Esc")
+            m.isEventKey(e, "Esc")
               ? (e.preventDefault(), e.stopPropagation(), this.trigger("click"))
               : n.prototype.handleKeyDown.call(this, e);
           }),
@@ -46069,7 +43987,7 @@ window.addEventListener("load", function (e) {
     );
   }
   var Ti = _i;
-  function Oi(e, t) {
+  function Si(e, t) {
     return Ti(e, (t = void 0 === t ? e : t));
   }
   t = (function (i) {
@@ -46117,7 +44035,7 @@ window.addEventListener("load", function (e) {
       }),
       (t.updateTextNode_ = function (e) {
         var t = this;
-        (e = Oi((e = void 0 === e ? 0 : e))),
+        (e = Si((e = void 0 === e ? 0 : e))),
           this.formattedTime_ !== e &&
             ((this.formattedTime_ = e),
             this.requestNamedAnimationFrame(
@@ -46378,7 +44296,7 @@ window.addEventListener("load", function (e) {
   })(yi);
   (_.prototype.controlText_ = "Seek to live, currently playing live"),
     g.registerComponent("SeekToLive", _);
-  function Si(e, t, n) {
+  function Oi(e, t, n) {
     return (e = Number(e)), Math.min(n, Math.max(t, isNaN(e) ? t : e));
   }
   T = (function (i) {
@@ -46469,7 +44387,7 @@ window.addEventListener("load", function (e) {
         var t = this.bar.el_.ownerDocument;
         "mousedown" === e.type && e.preventDefault(),
           "touchstart" !== e.type || ue || e.preventDefault(),
-          Me(),
+          je(),
           this.addClass("vjs-sliding"),
           this.trigger("slideractive"),
           this.on(t, "mousemove", this.handleMouseMove_),
@@ -46505,16 +44423,16 @@ window.addEventListener("load", function (e) {
         }
       }),
       (t.getProgress = function () {
-        return Number(Si(this.getPercent(), 0, 1).toFixed(4));
+        return Number(Oi(this.getPercent(), 0, 1).toFixed(4));
       }),
       (t.calculateDistance = function (e) {
         e = Ue(this.el_, e);
         return this.vertical() ? e.y : e.x;
       }),
       (t.handleKeyDown = function (e) {
-        f.isEventKey(e, "Left") || f.isEventKey(e, "Down")
+        m.isEventKey(e, "Left") || m.isEventKey(e, "Down")
           ? (e.preventDefault(), e.stopPropagation(), this.stepBack())
-          : f.isEventKey(e, "Right") || f.isEventKey(e, "Up")
+          : m.isEventKey(e, "Right") || m.isEventKey(e, "Up")
           ? (e.preventDefault(), e.stopPropagation(), this.stepForward())
           : i.prototype.handleKeyDown.call(this, e);
       }),
@@ -46533,7 +44451,7 @@ window.addEventListener("load", function (e) {
   })(g);
   g.registerComponent("Slider", T);
   function Ai(e, t) {
-    return Si((e / t) * 100, 0, 100).toFixed(2) + "%";
+    return Oi((e / t) * 100, 0, 100).toFixed(2) + "%";
   }
   g.registerComponent(
     "LoadProgressBar",
@@ -46616,7 +44534,7 @@ window.addEventListener("load", function (e) {
       (function (n) {
         function e(e, t) {
           t = n.call(this, e, t) || this;
-          return (t.update = mt(u(y(t), t.update), 30)), t;
+          return (t.update = ft(u(y(t), t.update), 30)), t;
         }
         b(e, n);
         var t = e.prototype;
@@ -46659,8 +44577,8 @@ window.addEventListener("load", function (e) {
                     ? ((t = (e = o.player_.liveTracker.liveWindow()) - r * e) <
                       1
                         ? ""
-                        : "-") + Oi(t, e)
-                    : Oi(a, n)),
+                        : "-") + Si(t, e)
+                    : Si(a, n)),
                   o.update(i, r, n),
                   s && s();
               }
@@ -46673,7 +44591,7 @@ window.addEventListener("load", function (e) {
   v = (function (n) {
     function e(e, t) {
       t = n.call(this, e, t) || this;
-      return (t.update = mt(u(y(t), t.update), 30)), t;
+      return (t.update = ft(u(y(t), t.update), 30)), t;
     }
     b(e, n);
     var t = e.prototype;
@@ -46704,7 +44622,7 @@ window.addEventListener("load", function (e) {
   n = (function (n) {
     function e(e, t) {
       t = n.call(this, e, t) || this;
-      return (t.update = mt(u(y(t), t.update), 30)), t;
+      return (t.update = ft(u(y(t), t.update), 30)), t;
     }
     b(e, n);
     var t = e.prototype;
@@ -46737,7 +44655,7 @@ window.addEventListener("load", function (e) {
       (t.setEventHandlers_ = function () {
         var t = this;
         (this.update_ = u(this, this.update)),
-          (this.update = mt(this.update_, 30)),
+          (this.update = ft(this.update_, 30)),
           this.on(
             this.player_,
             ["ended", "durationchange", "timeupdate"],
@@ -46813,7 +44731,7 @@ window.addEventListener("load", function (e) {
                     "aria-valuetext",
                     i.localize(
                       "progress bar timing: currentTime={1} duration={2}",
-                      [Oi(e, n), Oi(n, n)],
+                      [Si(e, n), Si(n, n)],
                       "{1} of {2}"
                     )
                   ),
@@ -46849,14 +44767,14 @@ window.addEventListener("load", function (e) {
         );
       }),
       (t.handleMouseDown = function (e) {
-        He(e) &&
+        qe(e) &&
           (e.stopPropagation(),
           (this.videoWasPlaying = !this.player_.paused()),
           this.player_.pause(),
           a.prototype.handleMouseDown.call(this, e));
       }),
       (t.handleMouseMove = function (e, t) {
-        if ((void 0 === t && (t = !1), He(e))) {
+        if ((void 0 === t && (t = !1), qe(e))) {
           t || this.player_.scrubbing() || this.player_.scrubbing(!0);
           var n = this.calculateDistance(e),
             i = this.player_.liveTracker;
@@ -46912,28 +44830,28 @@ window.addEventListener("load", function (e) {
       (t.handleKeyDown = function (e) {
         var t,
           n = this.player_.liveTracker;
-        f.isEventKey(e, "Space") || f.isEventKey(e, "Enter")
+        m.isEventKey(e, "Space") || m.isEventKey(e, "Enter")
           ? (e.preventDefault(), e.stopPropagation(), this.handleAction(e))
-          : f.isEventKey(e, "Home")
+          : m.isEventKey(e, "Home")
           ? (e.preventDefault(), e.stopPropagation(), this.userSeek_(0))
-          : f.isEventKey(e, "End")
+          : m.isEventKey(e, "End")
           ? (e.preventDefault(),
             e.stopPropagation(),
             n && n.isLive()
               ? this.userSeek_(n.liveCurrentTime())
               : this.userSeek_(this.player_.duration()))
-          : /^[0-9]$/.test(f(e))
+          : /^[0-9]$/.test(m(e))
           ? (e.preventDefault(),
             e.stopPropagation(),
-            (t = (10 * (f.codes[f(e)] - f.codes[0])) / 100),
+            (t = (10 * (m.codes[m(e)] - m.codes[0])) / 100),
             n && n.isLive()
               ? this.userSeek_(n.seekableStart() + n.liveWindow() * t)
               : this.userSeek_(this.player_.duration() * t))
-          : f.isEventKey(e, "PgDn")
+          : m.isEventKey(e, "PgDn")
           ? (e.preventDefault(),
             e.stopPropagation(),
             this.userSeek_(this.player_.currentTime() - 60))
-          : f.isEventKey(e, "PgUp")
+          : m.isEventKey(e, "PgUp")
           ? (e.preventDefault(),
             e.stopPropagation(),
             this.userSeek_(this.player_.currentTime() + 60))
@@ -46972,8 +44890,8 @@ window.addEventListener("load", function (e) {
     function e(e, t) {
       var n = i.call(this, e, t) || this;
       return (
-        (n.handleMouseMove = mt(u(y(n), n.handleMouseMove), 30)),
-        (n.throttledHandleMouseSeek = mt(u(y(n), n.handleMouseSeek), 30)),
+        (n.handleMouseMove = ft(u(y(n), n.handleMouseMove), 30)),
+        (n.throttledHandleMouseSeek = ft(u(y(n), n.handleMouseSeek), 30)),
         (n.handleMouseUpHandler_ = function (e) {
           return n.handleMouseUp(e);
         }),
@@ -47004,7 +44922,7 @@ window.addEventListener("load", function (e) {
           (t || n) &&
             ((r = Be((i = a.el()))),
             (e = Ue(i, e).x),
-            (e = Si(e, 0, 1)),
+            (e = Oi(e, 0, 1)),
             n && n.update(r, e),
             t && t.update(r, a.getProgress())));
       }),
@@ -47196,7 +45114,7 @@ window.addEventListener("load", function (e) {
       (function (n) {
         function e(e, t) {
           t = n.call(this, e, t) || this;
-          return (t.update = mt(u(y(t), t.update), 30)), t;
+          return (t.update = ft(u(y(t), t.update), 30)), t;
         }
         b(e, n);
         var t = e.prototype;
@@ -47243,7 +45161,7 @@ window.addEventListener("load", function (e) {
   t = (function (n) {
     function e(e, t) {
       t = n.call(this, e, t) || this;
-      return (t.update = mt(u(y(t), t.update), 30)), t;
+      return (t.update = ft(u(y(t), t.update), 30)), t;
     }
     b(e, n);
     var t = e.prototype;
@@ -47301,7 +45219,7 @@ window.addEventListener("load", function (e) {
         );
       }),
       (t.handleMouseDown = function (e) {
-        He(e) && i.prototype.handleMouseDown.call(this, e);
+        qe(e) && i.prototype.handleMouseDown.call(this, e);
       }),
       (t.handleMouseMove = function (e) {
         var t,
@@ -47313,9 +45231,9 @@ window.addEventListener("load", function (e) {
           (n = this.vertical()),
           (i = Ue(i, e)),
           (i = n ? i.y : i.x),
-          (i = Si(i, 0, 1)),
+          (i = Oi(i, 0, 1)),
           r.update(t, i, n)),
-          He(e) &&
+          qe(e) &&
             (this.checkMuted(), this.player_.volume(this.calculateDistance(e)));
       }),
       (t.checkMuted = function () {
@@ -47375,7 +45293,7 @@ window.addEventListener("load", function (e) {
             ? i.removeClass("vjs-hidden")
             : i.addClass("vjs-hidden");
         }),
-        (n.throttledHandleMouseMove = mt(u(y(n), n.handleMouseMove), 30)),
+        (n.throttledHandleMouseMove = ft(u(y(n), n.handleMouseMove), 30)),
         (n.handleMouseUpHandler_ = function (e) {
           return n.handleMouseUp(e);
         }),
@@ -47484,7 +45402,7 @@ window.addEventListener("load", function (e) {
             : e < 0.33
             ? (t = 1)
             : e < 0.67 && (t = 2);
-        for (var n = 0; n < 4; n++) Ie(this.el_, "vjs-vol-" + n);
+        for (var n = 0; n < 4; n++) Ee(this.el_, "vjs-vol-" + n);
         xe(this.el_, "vjs-vol-" + t);
       }),
       (t.updateControlText_ = function () {
@@ -47566,7 +45484,7 @@ window.addEventListener("load", function (e) {
         this.handleMouseOut(), i.prototype.dispose.call(this);
       }),
       (t.handleVolumeControlKeyUp = function (e) {
-        f.isEventKey(e, "Esc") && this.muteToggle.focus();
+        m.isEventKey(e, "Esc") && this.muteToggle.focus();
       }),
       (t.handleMouseOver = function (e) {
         this.addClass("vjs-hover"),
@@ -47577,7 +45495,7 @@ window.addEventListener("load", function (e) {
           l(document, "keyup", this.handleKeyPressHandler_);
       }),
       (t.handleKeyPress = function (e) {
-        f.isEventKey(e, "Esc") && this.handleMouseOut();
+        m.isEventKey(e, "Esc") && this.handleMouseOut();
       }),
       e
     );
@@ -47669,9 +45587,9 @@ window.addEventListener("load", function (e) {
               this.menuButton_.focus()));
       }),
       (t.handleKeyDown = function (e) {
-        f.isEventKey(e, "Left") || f.isEventKey(e, "Down")
+        m.isEventKey(e, "Left") || m.isEventKey(e, "Down")
           ? (e.preventDefault(), e.stopPropagation(), this.stepForward())
-          : (f.isEventKey(e, "Right") || f.isEventKey(e, "Up")) &&
+          : (m.isEventKey(e, "Right") || m.isEventKey(e, "Up")) &&
             (e.preventDefault(), e.stopPropagation(), this.stepBack());
       }),
       (t.stepForward = function () {
@@ -47819,24 +45737,24 @@ window.addEventListener("load", function (e) {
         this.menuButton_.blur();
       }),
       (t.handleKeyDown = function (e) {
-        f.isEventKey(e, "Esc") || f.isEventKey(e, "Tab")
+        m.isEventKey(e, "Esc") || m.isEventKey(e, "Tab")
           ? (this.buttonPressed_ && this.unpressButton(),
-            f.isEventKey(e, "Tab") ||
+            m.isEventKey(e, "Tab") ||
               (e.preventDefault(), this.menuButton_.focus()))
-          : (f.isEventKey(e, "Up") || f.isEventKey(e, "Down")) &&
+          : (m.isEventKey(e, "Up") || m.isEventKey(e, "Down")) &&
             (this.buttonPressed_ || (e.preventDefault(), this.pressButton()));
       }),
       (t.handleMenuKeyUp = function (e) {
-        (f.isEventKey(e, "Esc") || f.isEventKey(e, "Tab")) &&
+        (m.isEventKey(e, "Esc") || m.isEventKey(e, "Tab")) &&
           this.removeClass("vjs-hover");
       }),
       (t.handleSubmenuKeyPress = function (e) {
         this.handleSubmenuKeyDown(e);
       }),
       (t.handleSubmenuKeyDown = function (e) {
-        (f.isEventKey(e, "Esc") || f.isEventKey(e, "Tab")) &&
+        (m.isEventKey(e, "Esc") || m.isEventKey(e, "Tab")) &&
           (this.buttonPressed_ && this.unpressButton(),
-          f.isEventKey(e, "Tab") ||
+          m.isEventKey(e, "Tab") ||
             (e.preventDefault(), this.menuButton_.focus()));
       }),
       (t.pressButton = function () {
@@ -47845,7 +45763,7 @@ window.addEventListener("load", function (e) {
           this.menu.show(),
           this.menu.lockShowing(),
           this.menuButton_.el_.setAttribute("aria-expanded", "true"),
-          (ge && Oe()) || this.menu.focus());
+          (ge && Se()) || this.menu.focus());
       }),
       (t.unpressButton = function () {
         this.enabled_ &&
@@ -47932,7 +45850,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.handleKeyDown = function (t) {
           Ci.some(function (e) {
-            return f.isEventKey(t, e);
+            return m.isEventKey(t, e);
           }) || i.prototype.handleKeyDown.call(this, t);
         }),
         (t.handleClick = function (e) {
@@ -48036,7 +45954,7 @@ window.addEventListener("load", function (e) {
     );
   })(o);
   g.registerComponent("TextTrackMenuItem", xi);
-  var Ii = (function (n) {
+  var Ei = (function (n) {
     function e(e, t) {
       return (
         (t.track = {
@@ -48095,7 +46013,7 @@ window.addEventListener("load", function (e) {
       e
     );
   })(xi);
-  g.registerComponent("OffTextTrackMenuItem", Ii);
+  g.registerComponent("OffTextTrackMenuItem", Ei);
   a = (function (n) {
     function e(e, t) {
       return (
@@ -48110,7 +46028,7 @@ window.addEventListener("load", function (e) {
         void 0 === t && (t = xi),
           this.label_ && (n = this.label_ + " off"),
           (e = void 0 === e ? [] : e).push(
-            new Ii(this.player_, {
+            new Ei(this.player_, {
               kinds: this.kinds_,
               kind: this.kind_,
               label: n,
@@ -48138,7 +46056,7 @@ window.addEventListener("load", function (e) {
     );
   })(rn);
   g.registerComponent("TextTrackButton", a);
-  var Ei = (function (a) {
+  var Ii = (function (a) {
     function e(e, t) {
       var n = t.track,
         i = t.cue,
@@ -48162,7 +46080,7 @@ window.addEventListener("load", function (e) {
       e
     );
   })(o);
-  g.registerComponent("ChaptersTrackMenuItem", Ei);
+  g.registerComponent("ChaptersTrackMenuItem", Ii);
   t = (function (r) {
     function e(e, t, n) {
       var i = r.call(this, e, t, n) || this;
@@ -48249,7 +46167,7 @@ window.addEventListener("load", function (e) {
         if (!t) return e;
         for (var n = 0, i = t.length; n < i; n++) {
           var r = t[n],
-            r = new Ei(this.player_, { track: this.track_, cue: r });
+            r = new Ii(this.player_, { track: this.track_, cue: r });
           e.push(r);
         }
         return e;
@@ -48796,15 +46714,15 @@ window.addEventListener("load", function (e) {
       }),
       e
     );
-  })(Wt);
-  (e.prototype.options_ = Q({}, Wt.prototype.options_, {
+  })(Xt);
+  (e.prototype.options_ = Q({}, Xt.prototype.options_, {
     pauseOnOpen: !1,
     fillAlways: !0,
     temporary: !1,
     uncloseable: !0,
   })),
     g.registerComponent("ErrorDisplay", e);
-  var ji = "vjs-text-track-settings",
+  var Mi = "vjs-text-track-settings",
     _ = ["#000", "Black"],
     a = ["#00F", "Blue"],
     v = ["#0FF", "Cyan"],
@@ -48816,7 +46734,7 @@ window.addEventListener("load", function (e) {
     t = ["1", "Opaque"],
     T = ["0.5", "Semi-Transparent"],
     e = ["0", "Transparent"],
-    Mi = {
+    ji = {
       backgroundColor: {
         selector: ".vjs-bg-color > select",
         id: "captions-background-color-%s",
@@ -48902,7 +46820,7 @@ window.addEventListener("load", function (e) {
   function Di(e, t) {
     if ((e = t ? t(e) : e) && "none" !== e) return e;
   }
-  (Mi.windowColor.options = Mi.backgroundColor.options),
+  (ji.windowColor.options = ji.backgroundColor.options),
     g.registerComponent(
       "TextTrackSettings",
       (function (i) {
@@ -48929,7 +46847,7 @@ window.addEventListener("load", function (e) {
             n.on(n.$(".vjs-default-button"), "click", function () {
               n.setDefaults(), n.updateDisplay();
             }),
-            $(Mi, function (e) {
+            J(ji, function (e) {
               n.on(n.$(e.selector), "change", n.updateDisplay);
             }),
             n.options_.persistTextTrackSettings && n.restoreSettings(),
@@ -48945,7 +46863,7 @@ window.addEventListener("load", function (e) {
           (t.createElSelect_ = function (e, t, n) {
             var i = this;
             void 0 === t && (t = ""), void 0 === n && (n = "label");
-            var e = Mi[e],
+            var e = ji[e],
               r = e.id.replace("%s", this.id_),
               a = [t, r].join(" ").trim();
             return [
@@ -49094,14 +47012,14 @@ window.addEventListener("load", function (e) {
                 return void 0 !== t && (e[n] = t), e;
               }),
               void 0 === (e = {}) && (e = 0),
-              J((n = Mi)).reduce(function (e, t) {
+              $((n = ji)).reduce(function (e, t) {
                 return i(e, n[t], t);
               }, e)
             );
           }),
           (t.setValues = function (n) {
             var i = this;
-            $(Mi, function (e, t) {
+            J(ji, function (e, t) {
               !(function (e, t, n) {
                 if (t)
                   for (var i = 0; i < e.options.length; i++)
@@ -49114,7 +47032,7 @@ window.addEventListener("load", function (e) {
           }),
           (t.setDefaults = function () {
             var n = this;
-            $(Mi, function (e) {
+            J(ji, function (e) {
               var t = e.hasOwnProperty("default") ? e.default : 0;
               n.$(e.selector).selectedIndex = t;
             });
@@ -49122,7 +47040,7 @@ window.addEventListener("load", function (e) {
           (t.restoreSettings = function () {
             var e;
             try {
-              e = JSON.parse(window.localStorage.getItem(ji));
+              e = JSON.parse(window.localStorage.getItem(Mi));
             } catch (e) {
               d.warn(e);
             }
@@ -49133,8 +47051,8 @@ window.addEventListener("load", function (e) {
               var e = this.getValues();
               try {
                 Object.keys(e).length
-                  ? window.localStorage.setItem(ji, JSON.stringify(e))
-                  : window.localStorage.removeItem(ji);
+                  ? window.localStorage.setItem(Mi, JSON.stringify(e))
+                  : window.localStorage.removeItem(Mi);
               } catch (e) {
                 d.warn(e);
               }
@@ -49153,7 +47071,7 @@ window.addEventListener("load", function (e) {
           }),
           e
         );
-      })(Wt)
+      })(Xt)
     ),
     g.registerComponent(
       "ResizeManager",
@@ -49161,7 +47079,7 @@ window.addEventListener("load", function (e) {
         function e(e, t) {
           var n,
             i = t.ResizeObserver || window.ResizeObserver,
-            r = m(
+            r = f(
               {
                 createEl: !(i = null === t.ResizeObserver ? !1 : i),
                 reportTouchActivity: !1,
@@ -49173,7 +47091,7 @@ window.addEventListener("load", function (e) {
               t.ResizeObserver || window.ResizeObserver),
             (n.loadListener_ = null),
             (n.resizeObserver_ = null),
-            (n.debouncedHandler_ = ft(
+            (n.debouncedHandler_ = mt(
               function () {
                 n.resizeHandler();
               },
@@ -49248,7 +47166,7 @@ window.addEventListener("load", function (e) {
     "LiveTracker",
     (function (i) {
       function e(e, t) {
-        var t = m(Ri, t, { createEl: !1 }),
+        var t = f(Ri, t, { createEl: !1 }),
           n = i.call(this, e, t) || this;
         return (
           (n.handleVisibilityChange_ = function (e) {
@@ -49487,7 +47405,7 @@ window.addEventListener("load", function (e) {
       ["append", "appendChild", "insertAdjacentHTML"].forEach(function (e) {
         s[e] && ((t[e] = s[e]), (s[e] = n(t[e])));
       }),
-      Object.defineProperty(s, "innerHTML", m(e, { set: n(e.set) })),
+      Object.defineProperty(s, "innerHTML", f(e, { set: n(e.set) })),
       (s.resetSourceWatch_ = function () {
         (s.resetSourceWatch_ = null),
           Object.keys(t).forEach(function (e) {
@@ -49501,13 +47419,13 @@ window.addEventListener("load", function (e) {
     var i, t, r, a;
     n.featuresSourceset &&
       ((i = n.el()).resetSourceset_ ||
-        ((t = Ui([n.el(), window.HTMLMediaElement.prototype, Hi], "src")),
+        ((t = Ui([n.el(), window.HTMLMediaElement.prototype, qi], "src")),
         (r = i.setAttribute),
         (a = i.load),
         Object.defineProperty(
           i,
           "src",
-          m(t, {
+          f(t, {
             set: function (e) {
               e = t.set.call(i, e);
               return n.triggerSourceset(i.src), e;
@@ -49551,7 +47469,7 @@ window.addEventListener("load", function (e) {
       (e = void 0 === e ? !0 : e) && (a.set = r), Object.defineProperty(t, n, a)
     );
   }
-  var qi,
+  var Hi,
     zi = Object.defineProperty({}, "innerHTML", {
       get: function () {
         return this.cloneNode(!0).innerHTML;
@@ -49568,17 +47486,17 @@ window.addEventListener("load", function (e) {
         );
       },
     }),
-    Hi = Object.defineProperty({}, "src", {
+    qi = Object.defineProperty({}, "src", {
       get: function () {
         return this.hasAttribute("src")
-          ? $t(window.Element.prototype.getAttribute.call(this, "src"))
+          ? Jt(window.Element.prototype.getAttribute.call(this, "src"))
           : "";
       },
       set: function (e) {
         return window.Element.prototype.setAttribute.call(this, "src", e), e;
       },
     }),
-    S = (function (u) {
+    O = (function (u) {
       function s(e, t) {
         var n = u.call(this, e, t) || this,
           t = e.source,
@@ -49618,7 +47536,7 @@ window.addEventListener("load", function (e) {
               "Text Tracks are being loaded from another origin but the crossorigin attribute isn't used.\nThis may prevent text tracks from loading."
             ),
           n.restoreMetadataTracksInIOSNativePlayer_(),
-          (me || fe || se) &&
+          (fe || me || se) &&
             !0 === e.nativeControlsForTouch &&
             n.setControls(!0),
           n.proxyWebkitFullscreen_(),
@@ -49698,7 +47616,7 @@ window.addEventListener("load", function (e) {
           var e,
             t,
             i = this,
-            r = On[n],
+            r = Sn[n],
             a = this.el()[r.getterName],
             s = this[r.getterName]();
           this["featuresNative" + r.capitalName + "Tracks"] &&
@@ -49725,7 +47643,7 @@ window.addEventListener("load", function (e) {
                     srcElement: s,
                   };
                   s.trigger(t),
-                    "text" === n && i[Sn.remoteText.getterName]().trigger(t);
+                    "text" === n && i[On.remoteText.getterName]().trigger(t);
                 },
                 addtrack: function (e) {
                   s.addTrack(e.track);
@@ -49748,7 +47666,7 @@ window.addEventListener("load", function (e) {
         }),
         (e.proxyNativeTracks_ = function () {
           var t = this;
-          On.names.forEach(function (e) {
+          Sn.names.forEach(function (e) {
             t.proxyNativeTracksForType_(e);
           });
         }),
@@ -49763,8 +47681,8 @@ window.addEventListener("load", function (e) {
                 s.disposeMediaElement(t),
                 (t = e))
               : ((t = document.createElement("video")),
-                (e = m({}, this.options_.tag && Pe(this.options_.tag))),
-                (me && !0 === this.options_.nativeControlsForTouch) ||
+                (e = f({}, this.options_.tag && Pe(this.options_.tag))),
+                (fe && !0 === this.options_.nativeControlsForTouch) ||
                   delete e.controls,
                 ke(t, h(e, { id: this.options_.techId, class: "vjs-tech" }))),
             (t.playerId = this.options_.playerId)),
@@ -49780,7 +47698,7 @@ window.addEventListener("load", function (e) {
           ) {
             var r = n[i],
               a = this.options_[r];
-            "undefined" != typeof a && (a ? Ne(t, r, r) : je(t, r), (t[r] = a));
+            "undefined" != typeof a && (a ? Ne(t, r, r) : Me(t, r), (t[r] = a));
           }
           return t;
         }),
@@ -49993,8 +47911,8 @@ window.addEventListener("load", function (e) {
         }),
         s
       );
-    })(O);
-  Gi(S, "TEST_VID", function () {
+    })(S);
+  Gi(O, "TEST_VID", function () {
     if (_e()) {
       var e = document.createElement("video"),
         t = document.createElement("track");
@@ -50007,30 +47925,30 @@ window.addEventListener("load", function (e) {
       );
     }
   }),
-    (S.isSupported = function () {
+    (O.isSupported = function () {
       try {
-        S.TEST_VID.volume = 0.5;
+        O.TEST_VID.volume = 0.5;
       } catch (e) {
         return !1;
       }
-      return !(!S.TEST_VID || !S.TEST_VID.canPlayType);
+      return !(!O.TEST_VID || !O.TEST_VID.canPlayType);
     }),
-    (S.canPlayType = function (e) {
-      return S.TEST_VID.canPlayType(e);
+    (O.canPlayType = function (e) {
+      return O.TEST_VID.canPlayType(e);
     }),
-    (S.canPlaySource = function (e, t) {
-      return S.canPlayType(e.type);
+    (O.canPlaySource = function (e, t) {
+      return O.canPlayType(e.type);
     }),
-    (S.canControlVolume = function () {
+    (O.canControlVolume = function () {
       try {
-        var e = S.TEST_VID.volume;
-        S.TEST_VID.volume = e / 2 + 0.1;
-        var t = e !== S.TEST_VID.volume;
+        var e = O.TEST_VID.volume;
+        O.TEST_VID.volume = e / 2 + 0.1;
+        var t = e !== O.TEST_VID.volume;
         return t && ge
           ? (window.setTimeout(function () {
-              S &&
-                S.prototype &&
-                (S.prototype.featuresVolumeControl = e !== S.TEST_VID.volume);
+              O &&
+                O.prototype &&
+                (O.prototype.featuresVolumeControl = e !== O.TEST_VID.volume);
             }),
             !1)
           : t;
@@ -50038,32 +47956,32 @@ window.addEventListener("load", function (e) {
         return !1;
       }
     }),
-    (S.canMuteVolume = function () {
+    (O.canMuteVolume = function () {
       try {
-        var e = S.TEST_VID.muted;
+        var e = O.TEST_VID.muted;
         return (
-          (S.TEST_VID.muted = !e),
-          S.TEST_VID.muted
-            ? Ne(S.TEST_VID, "muted", "muted")
-            : je(S.TEST_VID, "muted"),
-          e !== S.TEST_VID.muted
+          (O.TEST_VID.muted = !e),
+          O.TEST_VID.muted
+            ? Ne(O.TEST_VID, "muted", "muted")
+            : Me(O.TEST_VID, "muted"),
+          e !== O.TEST_VID.muted
         );
       } catch (e) {
         return !1;
       }
     }),
-    (S.canControlPlaybackRate = function () {
+    (O.canControlPlaybackRate = function () {
       if (re && ue && ce < 58) return !1;
       try {
-        var e = S.TEST_VID.playbackRate;
+        var e = O.TEST_VID.playbackRate;
         return (
-          (S.TEST_VID.playbackRate = e / 2 + 0.1), e !== S.TEST_VID.playbackRate
+          (O.TEST_VID.playbackRate = e / 2 + 0.1), e !== O.TEST_VID.playbackRate
         );
       } catch (e) {
         return !1;
       }
     }),
-    (S.canOverrideAttributes = function () {
+    (O.canOverrideAttributes = function () {
       try {
         var e = function () {};
         Object.defineProperty(document.createElement("video"), "src", {
@@ -50087,16 +48005,16 @@ window.addEventListener("load", function (e) {
       }
       return !0;
     }),
-    (S.supportsNativeTextTracks = function () {
+    (O.supportsNativeTextTracks = function () {
       return be || (ge && ue);
     }),
-    (S.supportsNativeVideoTracks = function () {
-      return !(!S.TEST_VID || !S.TEST_VID.videoTracks);
+    (O.supportsNativeVideoTracks = function () {
+      return !(!O.TEST_VID || !O.TEST_VID.videoTracks);
     }),
-    (S.supportsNativeAudioTracks = function () {
-      return !(!S.TEST_VID || !S.TEST_VID.audioTracks);
+    (O.supportsNativeAudioTracks = function () {
+      return !(!O.TEST_VID || !O.TEST_VID.audioTracks);
     }),
-    (S.Events = [
+    (O.Events = [
       "loadstart",
       "suspend",
       "abort",
@@ -50132,39 +48050,39 @@ window.addEventListener("load", function (e) {
       var t = e[0],
         n = e[1];
       Gi(
-        S.prototype,
+        O.prototype,
         t,
         function () {
-          return S[n]();
+          return O[n]();
         },
         !0
       );
     }),
-    (S.prototype.featuresVolumeControl = S.canControlVolume()),
-    (S.prototype.movingMediaElementInDOM = !ge),
-    (S.prototype.featuresFullscreenResize = !0),
-    (S.prototype.featuresProgressEvents = !0),
-    (S.prototype.featuresTimeupdateEvents = !0),
-    (S.prototype.featuresVideoFrameCallback = !(
-      !S.TEST_VID || !S.TEST_VID.requestVideoFrameCallback
+    (O.prototype.featuresVolumeControl = O.canControlVolume()),
+    (O.prototype.movingMediaElementInDOM = !ge),
+    (O.prototype.featuresFullscreenResize = !0),
+    (O.prototype.featuresProgressEvents = !0),
+    (O.prototype.featuresTimeupdateEvents = !0),
+    (O.prototype.featuresVideoFrameCallback = !(
+      !O.TEST_VID || !O.TEST_VID.requestVideoFrameCallback
     )),
-    (S.patchCanPlayType = function () {
+    (O.patchCanPlayType = function () {
       4 <= ae &&
         !oe &&
         !ue &&
-        ((qi = S.TEST_VID && S.TEST_VID.constructor.prototype.canPlayType),
-        (S.TEST_VID.constructor.prototype.canPlayType = function (e) {
+        ((Hi = O.TEST_VID && O.TEST_VID.constructor.prototype.canPlayType),
+        (O.TEST_VID.constructor.prototype.canPlayType = function (e) {
           return e && /^application\/(?:x-|vnd\.apple\.)mpegurl/i.test(e)
             ? "maybe"
-            : qi.call(this, e);
+            : Hi.call(this, e);
         }));
     }),
-    (S.unpatchCanPlayType = function () {
-      var e = S.TEST_VID.constructor.prototype.canPlayType;
-      return qi && (S.TEST_VID.constructor.prototype.canPlayType = qi), e;
+    (O.unpatchCanPlayType = function () {
+      var e = O.TEST_VID.constructor.prototype.canPlayType;
+      return Hi && (O.TEST_VID.constructor.prototype.canPlayType = Hi), e;
     }),
-    S.patchCanPlayType(),
-    (S.disposeMediaElement = function (e) {
+    O.patchCanPlayType(),
+    (O.disposeMediaElement = function (e) {
       if (e) {
         for (e.parentNode && e.parentNode.removeChild(e); e.hasChildNodes(); )
           e.removeChild(e.firstChild);
@@ -50177,7 +48095,7 @@ window.addEventListener("load", function (e) {
             })();
       }
     }),
-    (S.resetMediaElement = function (e) {
+    (O.resetMediaElement = function (e) {
       if (e) {
         for (var t = e.querySelectorAll("source"), n = t.length; n--; )
           e.removeChild(t[n]);
@@ -50198,13 +48116,13 @@ window.addEventListener("load", function (e) {
       "loop",
       "playsinline",
     ].forEach(function (e) {
-      S.prototype[e] = function () {
+      O.prototype[e] = function () {
         return this.el_[e] || this.el_.hasAttribute(e);
       };
     }),
     ["muted", "defaultMuted", "autoplay", "loop", "playsinline"].forEach(
       function (t) {
-        S.prototype["set" + p(t)] = function (e) {
+        O.prototype["set" + p(t)] = function (e) {
           (this.el_[t] = e)
             ? this.el_.setAttribute(t, t)
             : this.el_.removeAttribute(t);
@@ -50232,7 +48150,7 @@ window.addEventListener("load", function (e) {
       "videoHeight",
       "crossOrigin",
     ].forEach(function (e) {
-      S.prototype[e] = function () {
+      O.prototype[e] = function () {
         return this.el_[e];
       };
     }),
@@ -50246,39 +48164,39 @@ window.addEventListener("load", function (e) {
       "disablePictureInPicture",
       "crossOrigin",
     ].forEach(function (t) {
-      S.prototype["set" + p(t)] = function (e) {
+      O.prototype["set" + p(t)] = function (e) {
         this.el_[t] = e;
       };
     }),
     ["pause", "load", "play"].forEach(function (e) {
-      S.prototype[e] = function () {
+      O.prototype[e] = function () {
         return this.el_[e]();
       };
     }),
-    O.withSourceHandlers(S),
-    (S.nativeSourceHandler = {}),
-    (S.nativeSourceHandler.canPlayType = function (e) {
+    S.withSourceHandlers(O),
+    (O.nativeSourceHandler = {}),
+    (O.nativeSourceHandler.canPlayType = function (e) {
       try {
-        return S.TEST_VID.canPlayType(e);
+        return O.TEST_VID.canPlayType(e);
       } catch (e) {
         return "";
       }
     }),
-    (S.nativeSourceHandler.canHandleSource = function (e, t) {
-      if (e.type) return S.nativeSourceHandler.canPlayType(e.type);
+    (O.nativeSourceHandler.canHandleSource = function (e, t) {
+      if (e.type) return O.nativeSourceHandler.canPlayType(e.type);
       if (e.src) {
         e = en(e.src);
-        return S.nativeSourceHandler.canPlayType("video/" + e);
+        return O.nativeSourceHandler.canPlayType("video/" + e);
       }
       return "";
     }),
-    (S.nativeSourceHandler.handleSource = function (e, t, n) {
+    (O.nativeSourceHandler.handleSource = function (e, t, n) {
       t.setSrc(e.src);
     }),
-    (S.nativeSourceHandler.dispose = function () {}),
-    S.registerSourceHandler(S.nativeSourceHandler),
-    O.registerTech("Html5", S);
-  var Xi = [
+    (O.nativeSourceHandler.dispose = function () {}),
+    O.registerSourceHandler(O.nativeSourceHandler),
+    S.registerTech("Html5", O);
+  var Wi = [
       "progress",
       "abort",
       "suspend",
@@ -50291,7 +48209,7 @@ window.addEventListener("load", function (e) {
       "volumechange",
       "texttrackchange",
     ],
-    Wi = {
+    Xi = {
       canplay: "CanPlay",
       canplaythrough: "CanPlayThrough",
       playing: "Playing",
@@ -50415,7 +48333,7 @@ window.addEventListener("load", function (e) {
             }),
           (i.scrubbing_ = !1),
           (i.el_ = i.createEl()),
-          It(y(i), { eventBusKey: "el_" }),
+          Et(y(i), { eventBusKey: "el_" }),
           i.fsApi_.requestFullscreen &&
             (ct(
               document,
@@ -50424,7 +48342,7 @@ window.addEventListener("load", function (e) {
             ),
             i.on(i.fsApi_.fullscreenchange, i.boundDocumentFullscreenChange_)),
           i.fluid_ && i.on(["playerreset", "resize"], i.boundUpdateStyleEl_);
-        n = m(i.options_);
+        n = f(i.options_);
         t.plugins &&
           Object.keys(t.plugins).forEach(function (e) {
             i[e](t.plugins[e]);
@@ -50444,7 +48362,7 @@ window.addEventListener("load", function (e) {
             : i.el_.setAttribute("aria-label", i.localize("Video Player")),
           i.isAudio() && i.addClass("vjs-audio"),
           i.flexNotSupported_() && i.addClass("vjs-no-flex"),
-          me && i.addClass("vjs-touch-enabled"),
+          fe && i.addClass("vjs-touch-enabled"),
           ge || i.addClass("vjs-workinghover"),
           (o.players[i.id_] = y(i));
         e = R.split(".")[0];
@@ -50556,8 +48474,8 @@ window.addEventListener("load", function (e) {
             (n.player = t.player = this).addClass("vjs-paused"),
             !0 !== window.VIDEOJS_NO_DYNAMIC_STYLE &&
               ((this.styleEl_ = et("vjs-styles-dimensions")),
-              (r = We(".vjs-styles-defaults")),
-              (a = We("head")).insertBefore(
+              (r = Xe(".vjs-styles-defaults")),
+              (a = Xe("head")).insertBefore(
                 this.styleEl_,
                 r ? r.nextSibling : a.firstChild
               )),
@@ -50700,7 +48618,7 @@ window.addEventListener("load", function (e) {
             r = e.charAt(0).toLowerCase() + e.slice(1);
           "Html5" !== i &&
             this.tag &&
-            (O.getTech("Html5").disposeMediaElement(this.tag),
+            (S.getTech("Html5").disposeMediaElement(this.tag),
             (this.tag.player = null),
             (this.tag = null)),
             (this.techName_ = i),
@@ -50741,7 +48659,7 @@ window.addEventListener("load", function (e) {
               t.src === this.cache_.src &&
               0 < this.cache_.currentTime &&
               (s.startTime = this.cache_.currentTime);
-          e = O.getTech(e);
+          e = S.getTech(e);
           if (!e)
             throw new Error(
               "No Tech named '" +
@@ -50752,20 +48670,20 @@ window.addEventListener("load", function (e) {
             );
           (this.tech_ = new e(s)),
             this.tech_.ready(u(this, this.handleTechReady_), !0),
-            Ht(this.textTracksJson_ || [], this.tech_),
-            Xi.forEach(function (t) {
+            qt(this.textTracksJson_ || [], this.tech_),
+            Wi.forEach(function (t) {
               n.on(n.tech_, t, function (e) {
                 return n["handleTech" + p(t) + "_"](e);
               });
             }),
-            Object.keys(Wi).forEach(function (t) {
+            Object.keys(Xi).forEach(function (t) {
               n.on(n.tech_, t, function (e) {
                 0 === n.tech_.playbackRate() && n.tech_.seeking()
                   ? n.queuedCallbacks_.push({
-                      callback: n["handleTech" + Wi[t] + "_"].bind(n),
+                      callback: n["handleTech" + Xi[t] + "_"].bind(n),
                       event: e,
                     })
-                  : n["handleTech" + Wi[t] + "_"](e);
+                  : n["handleTech" + Xi[t] + "_"](e);
               });
             }),
             this.on(this.tech_, "loadstart", function (e) {
@@ -50950,7 +48868,7 @@ window.addEventListener("load", function (e) {
                 }
                 return di(t);
               })(this, t)),
-            (this.cache_.source = m({}, e, { src: t, type: n }));
+            (this.cache_.source = f({}, e, { src: t, type: n }));
           for (
             var n = this.cache_.sources.filter(function (e) {
                 return e.src && e.src === t;
@@ -51499,7 +49417,7 @@ window.addEventListener("load", function (e) {
             this.trigger("enterFullWindow");
         }),
         (e.fullWindowOnEscKey = function (e) {
-          f.isEventKey(e, "Esc") &&
+          m.isEventKey(e, "Esc") &&
             !0 === this.isFullscreen() &&
             (this.isFullWindow ? this.exitFullWindow() : this.exitFullscreen());
         }),
@@ -51508,7 +49426,7 @@ window.addEventListener("load", function (e) {
             (this.isFullWindow = !1),
             l(document, "keydown", this.boundFullWindowOnEscKey_),
             (document.documentElement.style.overflow = this.docOrigOverflow),
-            Ie(document.body, "vjs-full-window"),
+            Ee(document.body, "vjs-full-window"),
             this.trigger("exitFullWindow");
         }),
         (e.disablePictureInPicture = function (e) {
@@ -51568,19 +49486,19 @@ window.addEventListener("load", function (e) {
             i =
               void 0 === i
                 ? function (e) {
-                    return f.isEventKey(e, "m");
+                    return m.isEventKey(e, "m");
                   }
                 : i,
             t = t.playPauseKey,
             t =
               void 0 === t
                 ? function (e) {
-                    return f.isEventKey(e, "k") || f.isEventKey(e, "Space");
+                    return m.isEventKey(e, "k") || m.isEventKey(e, "Space");
                   }
                 : t;
           (void 0 === n
             ? function (e) {
-                return f.isEventKey(e, "f");
+                return m.isEventKey(e, "f");
               }
             : n
           ).call(this, e)
@@ -51601,7 +49519,7 @@ window.addEventListener("load", function (e) {
         (e.canPlayType = function (e) {
           for (var t, n = 0, i = this.options_.techOrder; n < i.length; n++) {
             var r = i[n],
-              a = O.getTech(r);
+              a = S.getTech(r);
             if ((a = a || g.getComponent(r))) {
               if (a.isSupported() && (t = a.canPlayType(e))) return t;
             } else
@@ -51629,7 +49547,7 @@ window.addEventListener("load", function (e) {
             i = this,
             r = this.options_.techOrder
               .map(function (e) {
-                return [e, O.getTech(e)];
+                return [e, S.getTech(e)];
               })
               .filter(function (e) {
                 var t = e[0],
@@ -52132,22 +50050,22 @@ window.addEventListener("load", function (e) {
             Ct(this) && this.trigger("languagechange"));
         }),
         (e.languages = function () {
-          return m(o.prototype.options_.languages, this.languages_);
+          return f(o.prototype.options_.languages, this.languages_);
         }),
         (e.toJSON = function () {
-          var e = m(this.options_),
+          var e = f(this.options_),
             t = e.tracks;
           e.tracks = [];
           for (var n = 0; n < t.length; n++) {
             var i = t[n];
-            ((i = m(i)).player = void 0), (e.tracks[n] = i);
+            ((i = f(i)).player = void 0), (e.tracks[n] = i);
           }
           return e;
         }),
         (e.createModal = function (e, t) {
           var n = this;
           (t = t || {}).content = e || "";
-          var i = new Wt(this, t);
+          var i = new Xt(this, t);
           return (
             this.addChild(i),
             i.on("dispose", function () {
@@ -52213,7 +50131,7 @@ window.addEventListener("load", function (e) {
           e &&
             "object" == typeof e &&
             (this.reset(),
-            (this.cache_.media = m(e)),
+            (this.cache_.media = f(e)),
             (n = (r = this.cache_.media).artwork),
             (i = r.poster),
             (e = r.src),
@@ -52228,7 +50146,7 @@ window.addEventListener("load", function (e) {
             this.ready(t));
         }),
         (e.getMedia = function () {
-          if (this.cache_.media) return m(this.cache_.media);
+          if (this.cache_.media) return f(this.cache_.media);
           var e = this.poster(),
             t = {
               src: this.currentSources(),
@@ -52323,7 +50241,7 @@ window.addEventListener("load", function (e) {
     (A.players = {});
   t = window.navigator;
   (A.prototype.options_ = {
-    techOrder: O.defaultTechOrder_,
+    techOrder: S.defaultTechOrder_,
     html5: {},
     inactivityTimeout: 2e3,
     playbackRates: [],
@@ -52360,7 +50278,7 @@ window.addEventListener("load", function (e) {
         };
       }
     ),
-    Xi.forEach(function (e) {
+    Wi.forEach(function (e) {
       A.prototype["handleTech" + p(e) + "_"] = function () {
         return this.trigger(e);
       };
@@ -52379,11 +50297,11 @@ window.addEventListener("load", function (e) {
     }
     n.exports = i;
   });
-  function Ji(e) {
+  function $i(e) {
     return or.hasOwnProperty(e);
   }
-  function $i(e) {
-    return Ji(e) ? or[e] : void 0;
+  function Ji(e) {
+    return $i(e) ? or[e] : void 0;
   }
   function er(e, t, n) {
     (n = (n ? "before" : "") + "pluginsetup"),
@@ -52467,7 +50385,7 @@ window.addEventListener("load", function (e) {
           );
         (this.player = e),
           this.log || (this.log = this.player.log.createLogger(this.name)),
-          It(this),
+          Et(this),
           delete this.trigger,
           kt(this, this.constructor.defaultState),
           lr(e, this.name),
@@ -52506,7 +50424,7 @@ window.addEventListener("load", function (e) {
             (t[e] = nr(e, or[e]));
         }),
         (n.isBasic = function (e) {
-          e = "string" == typeof e ? $i(e) : e;
+          e = "string" == typeof e ? Ji(e) : e;
           return (
             "function" == typeof e && !n.prototype.isPrototypeOf(e.prototype)
           );
@@ -52520,7 +50438,7 @@ window.addEventListener("load", function (e) {
                 typeof e +
                 "."
             );
-          if (Ji(e))
+          if ($i(e))
             d.warn(
               'A plugin named "' +
                 e +
@@ -52551,33 +50469,33 @@ window.addEventListener("load", function (e) {
         }),
         (n.deregisterPlugin = function (e) {
           if (e === ar) throw new Error("Cannot de-register base plugin.");
-          Ji(e) && (delete or[e], delete A.prototype[e]);
+          $i(e) && (delete or[e], delete A.prototype[e]);
         }),
         (n.getPlugins = function (e) {
           var n;
           return (
             (e = void 0 === e ? Object.keys(or) : e).forEach(function (e) {
-              var t = $i(e);
+              var t = Ji(e);
               t && ((n = n || {})[e] = t);
             }),
             n
           );
         }),
         (n.getPluginVersion = function (e) {
-          e = $i(e);
+          e = Ji(e);
           return (e && e.VERSION) || "";
         }),
         n
       );
     })();
-  (ur.getPlugin = $i),
+  (ur.getPlugin = Ji),
     (ur.BASE_PLUGIN_NAME = ar),
     ur.registerPlugin(ar, ur),
     (A.prototype.usingPlugin = function (e) {
       return !!this[sr] && !0 === this[sr][e];
     }),
     (A.prototype.hasPlugin = function (e) {
-      return !!Ji(e);
+      return !!$i(e);
     });
   var cr = function (e, t) {
       if ("function" != typeof t && null !== t)
@@ -52604,7 +50522,7 @@ window.addEventListener("load", function (e) {
         n && r.ready(n),
         r
       );
-    var i = "string" == typeof e ? We("#" + dr(e)) : e;
+    var i = "string" == typeof e ? Xe("#" + dr(e)) : e;
     if (!Te(i))
       throw new TypeError("The element or ID supplied is not valid. (videojs)");
     (i.ownerDocument.defaultView && i.ownerDocument.body.contains(i)) ||
@@ -52616,9 +50534,9 @@ window.addEventListener("load", function (e) {
             : i
         ).cloneNode(!0)),
       U("beforesetup").forEach(function (e) {
-        e = e(i, m(t));
+        e = e(i, f(t));
         ee(e) && !Array.isArray(e)
-          ? (t = m(t, e))
+          ? (t = f(t, e))
           : d.error("please return an object in beforesetup hooks");
       });
     var r = new (g.getComponent("Player"))(i, t, n);
@@ -52647,14 +50565,14 @@ window.addEventListener("load", function (e) {
     (w.removeHook = V),
     !0 !== window.VIDEOJS_NO_DYNAMIC_STYLE &&
       _e() &&
-      ((mr = We(".vjs-styles-defaults")) ||
-        ((mr = et("vjs-styles-defaults")),
-        (t = We("head")) && t.insertBefore(mr, t.firstChild),
+      ((fr = Xe(".vjs-styles-defaults")) ||
+        ((fr = et("vjs-styles-defaults")),
+        (t = Xe("head")) && t.insertBefore(fr, t.firstChild),
         tt(
-          mr,
+          fr,
           "\n      .video-js {\n        width: 300px;\n        height: 150px;\n      }\n\n      .vjs-fluid:not(.vjs-audio-only-mode) {\n        padding-top: 56.25%\n      }\n    "
         ))),
-    Je(1, w),
+    $e(1, w),
     (w.VERSION = R),
     (w.options = A.prototype.options_),
     (w.getPlayers = function () {
@@ -52666,7 +50584,7 @@ window.addEventListener("load", function (e) {
         var n = dr(e),
           i = t[n];
         if (i) return i;
-        n = We("#" + n);
+        n = Xe("#" + n);
       } else n = e;
       if (Te(n)) {
         (e = n.player), (n = n.playerId);
@@ -52683,7 +50601,7 @@ window.addEventListener("load", function (e) {
     (w.players = A.players),
     (w.getComponent = g.getComponent),
     (w.registerComponent = function (e, t) {
-      O.isTech(t) &&
+      S.isTech(t) &&
         d.warn(
           "The " +
             e +
@@ -52691,8 +50609,8 @@ window.addEventListener("load", function (e) {
         ),
         g.registerComponent.call(g, e, t);
     }),
-    (w.getTech = O.getTech),
-    (w.registerTech = O.registerTech),
+    (w.getTech = S.getTech),
+    (w.registerTech = S.registerTech),
     (w.use = function (e, t) {
       (ti[e] = ti[e] || []), ti[e].push(t);
     }),
@@ -52707,7 +50625,7 @@ window.addEventListener("load", function (e) {
       enumerable: !0,
     }),
     (w.browser = s),
-    (w.TOUCH_ENABLED = me),
+    (w.TOUCH_ENABLED = fe),
     (w.extend = function (e, t) {
       var n,
         i = function () {
@@ -52725,7 +50643,7 @@ window.addEventListener("load", function (e) {
         r.hasOwnProperty(n) && (i.prototype[n] = r[n]);
       return i;
     }),
-    (w.mergeOptions = m),
+    (w.mergeOptions = f),
     (w.bind = u),
     (w.registerPlugin = ur.registerPlugin),
     (w.deregisterPlugin = ur.deregisterPlugin),
@@ -52744,28 +50662,28 @@ window.addEventListener("load", function (e) {
       var n;
       return (
         (e = ("" + e).toLowerCase()),
-        (w.options.languages = m(w.options.languages, (((n = {})[e] = t), n))),
+        (w.options.languages = f(w.options.languages, (((n = {})[e] = t), n))),
         w.options.languages[e]
       );
     }),
     (w.log = d),
     (w.createLogger = Y),
     (w.createTimeRange = w.createTimeRanges = Dt),
-    (w.formatTime = Oi),
+    (w.formatTime = Si),
     (w.setFormatTime = function (e) {
       Ti = e;
     }),
     (w.resetFormatTime = function () {
       Ti = _i;
     }),
-    (w.parseUrl = Jt),
+    (w.parseUrl = $t),
     (w.isCrossOrigin = tn),
     (w.EventTarget = gt),
     (w.on = ct),
     (w.one = ht),
     (w.off = l),
     (w.trigger = dt),
-    (w.xhr = fn),
+    (w.xhr = mn),
     (w.TextTrack = Tn),
     (w.AudioTrack = r),
     (w.VideoTrack = he),
@@ -52886,7 +50804,7 @@ window.addEventListener("load", function (e) {
         (e.exports = s);
     }),
     pr = "http://example.com",
-    mr = (function () {
+    fr = (function () {
       function e() {
         this.listeners = {};
       }
@@ -52932,7 +50850,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(),
-    fr = function (e) {
+    mr = function (e) {
       return window.atob
         ? window.atob(e)
         : Buffer.from(e, "base64").toString("binary");
@@ -53056,7 +50974,7 @@ window.addEventListener("load", function (e) {
         (i = i.trim()),
           Dr.forEach(function (e) {
             var t,
-              n = Mr[e].exec(i.toLowerCase());
+              n = jr[e].exec(i.toLowerCase());
             !n ||
               n.length <= 1 ||
               ((r = e),
@@ -53069,10 +50987,10 @@ window.addEventListener("load", function (e) {
       a
     );
   }
-  function Or(e) {
-    return Mr.audio.test((e = void 0 === e ? "" : e).trim().toLowerCase());
-  }
   function Sr(e) {
+    return jr.audio.test((e = void 0 === e ? "" : e).trim().toLowerCase());
+  }
+  function Or(e) {
     if (e && "string" == typeof e) {
       var t = e
           .toLowerCase()
@@ -53081,24 +50999,24 @@ window.addEventListener("load", function (e) {
             return _r(e.trim());
           }),
         n = "video";
-      1 === t.length && Or(t[0])
+      1 === t.length && Sr(t[0])
         ? (n = "audio")
         : 1 === t.length &&
           ((i = t[0]),
-          Mr.text.test((i = void 0 === i ? "" : i).trim().toLowerCase())) &&
+          jr.text.test((i = void 0 === i ? "" : i).trim().toLowerCase())) &&
           (n = "application");
       var i = "mp4";
       return (
         t.every(function (e) {
-          return Mr.mp4.test(e);
+          return jr.mp4.test(e);
         })
           ? (i = "mp4")
           : t.every(function (e) {
-              return Mr.webm.test(e);
+              return jr.webm.test(e);
             })
           ? (i = "webm")
           : t.every(function (e) {
-              return Mr.ogg.test(e);
+              return jr.ogg.test(e);
             }) && (i = "ogg"),
         n + "/" + i + ';codecs="' + e + '"'
       );
@@ -53109,7 +51027,7 @@ window.addEventListener("load", function (e) {
       void 0 === e && (e = ""),
       (window.MediaSource &&
         window.MediaSource.isTypeSupported &&
-        window.MediaSource.isTypeSupported(Sr(e))) ||
+        window.MediaSource.isTypeSupported(Or(e))) ||
         !1
     );
   }
@@ -53120,7 +51038,7 @@ window.addEventListener("load", function (e) {
       .every(function (e) {
         e = e.trim();
         for (var t = 0; t < Rr.length; t++)
-          if (Mr["muxer" + Rr[t]].test(e)) return !0;
+          if (jr["muxer" + Rr[t]].test(e)) return !0;
         return !1;
       });
   }
@@ -53152,9 +51070,9 @@ window.addEventListener("load", function (e) {
           (e && e.byteLength) || 0
         ));
   }
-  function Ir(e, t) {
+  function Er(e, t) {
     var n = void 0 !== (t = (void 0 === t ? {} : t).le) && t;
-    e = I(
+    e = E(
       (e =
         ("bigint" != typeof e && "number" != typeof e) ||
         ("number" == typeof e && e != e)
@@ -53169,12 +51087,12 @@ window.addEventListener("load", function (e) {
       a++
     ) {
       var s = n ? a : Math.abs(a + 1 - r.length);
-      (r[s] = Number((e / Gr[a]) & I(255))),
+      (r[s] = Number((e / Gr[a]) & E(255))),
         e < 0 && ((r[s] = Math.abs(~r[s])), (r[s] -= 0 === a ? 1 : 2));
     }
     return r;
   }
-  function Er(e, t) {
+  function Ir(e, t) {
     if (
       "string" !=
       typeof (e =
@@ -53210,7 +51128,7 @@ window.addEventListener("load", function (e) {
       r = !window.location && !/\/\//i.test(e);
     if (
       (n
-        ? (e = new window.URL(e, window.location || qr))
+        ? (e = new window.URL(e, window.location || Hr))
         : /\/\//i.test(e) ||
           (e = hr.buildAbsoluteURL(
             (window.location && window.location.href) || "",
@@ -53220,7 +51138,7 @@ window.addEventListener("load", function (e) {
     ) {
       n = new URL(t, e);
       return r
-        ? n.href.slice(qr.length)
+        ? n.href.slice(Hr.length)
         : i
         ? n.href.slice(n.protocol.length)
         : n.href;
@@ -53246,7 +51164,7 @@ window.addEventListener("load", function (e) {
         }),
         e
       );
-    })(mr),
+    })(fr),
     Lr = String.fromCharCode(9),
     Nr = (function (t) {
       function e() {
@@ -53618,8 +51536,8 @@ window.addEventListener("load", function (e) {
         }),
         e
       );
-    })(mr),
-    jr = (function (t) {
+    })(fr),
+    Mr = (function (t) {
       function e() {
         var e = t.call(this) || this;
         (e.lineStream = new Pr()),
@@ -53760,7 +51678,7 @@ window.addEventListener("load", function (e) {
                                         },
                                         pssh: (function (e) {
                                           for (
-                                            var t = fr(e),
+                                            var t = mr(e),
                                               n = new Uint8Array(t.length),
                                               i = 0;
                                             i < t.length;
@@ -54091,8 +52009,8 @@ window.addEventListener("load", function (e) {
         }),
         e
       );
-    })(mr),
-    Mr = {
+    })(fr),
+    jr = {
       mp4: /^(av0?1|avc0?[1234]|vp0?9|flac|opus|mp3|mp4a|mp4v|stpp.ttml.im1t)/,
       webm: /^(vp0?[89]|av0?1|opus|vorbis)/,
       ogg: /^(vp0?[89]|theora|flac|opus|vorbis)/,
@@ -54109,19 +52027,19 @@ window.addEventListener("load", function (e) {
     Ur = /^(audio|video|application)\/(x-|vnd\.apple\.)?mpegurl/i,
     Vr = /^application\/dash\+xml/i,
     Fr = xr,
-    I = window.BigInt || Number,
+    E = window.BigInt || Number,
     Gr = [
-      I("0x1"),
-      I("0x100"),
-      I("0x10000"),
-      I("0x1000000"),
-      I("0x100000000"),
-      I("0x10000000000"),
-      I("0x1000000000000"),
-      I("0x100000000000000"),
-      I("0x10000000000000000"),
+      E("0x1"),
+      E("0x100"),
+      E("0x10000"),
+      E("0x1000000"),
+      E("0x100000000"),
+      E("0x10000000000"),
+      E("0x1000000000000"),
+      E("0x100000000000000"),
+      E("0x10000000000000000"),
     ],
-    qr = "http://example.com";
+    Hr = "http://example.com";
   function zr(e) {
     for (
       var t =
@@ -54137,31 +52055,31 @@ window.addEventListener("load", function (e) {
       n[i] = t.charCodeAt(i);
     return n;
   }
-  function Hr(e, t) {
+  function qr(e, t) {
     return (t = void 0 === t ? Object : t) && "function" == typeof t.freeze
       ? t.freeze(e)
       : e;
   }
-  var Xr = Hr({
+  var Wr = qr({
       HTML: "text/html",
       isHTML: function (e) {
-        return e === Xr.HTML;
+        return e === Wr.HTML;
       },
       XML_APPLICATION: "application/xml",
       XML_TEXT: "text/xml",
       XML_XHTML_APPLICATION: "application/xhtml+xml",
       XML_SVG_IMAGE: "image/svg+xml",
     }),
-    Wr = Hr({
+    Xr = qr({
       HTML: "http://www.w3.org/1999/xhtml",
       isHTML: function (e) {
-        return e === Wr.HTML;
+        return e === Xr.HTML;
       },
       SVG: "http://www.w3.org/2000/svg",
       XML: "http://www.w3.org/XML/1998/namespace",
       XMLNS: "http://www.w3.org/2000/xmlns/",
     }),
-    Yr = { freeze: Hr, MIME_TYPE: Xr, NAMESPACE: Wr },
+    Yr = { freeze: qr, MIME_TYPE: Wr, NAMESPACE: Xr },
     Kr = Yr.NAMESPACE;
   function Qr(e) {
     return "" !== e;
@@ -54169,12 +52087,12 @@ window.addEventListener("load", function (e) {
   function Zr(e, t) {
     return e.hasOwnProperty(t) || (e[t] = !0), e;
   }
-  function Jr(e) {
+  function $r(e) {
     if (!e) return [];
     e = (e = e) ? e.split(/[\t\n\f\r ]+/).filter(Qr) : [];
     return Object.keys(e.reduce(Zr, {}));
   }
-  function $r(e, t) {
+  function Jr(e, t) {
     for (var n in e) t[n] = e[n];
   }
   function ea(e, t) {
@@ -54182,7 +52100,7 @@ window.addEventListener("load", function (e) {
       i = e.prototype;
     i instanceof t ||
       (((n = function () {}).prototype = t.prototype),
-      $r(i, (n = new n())),
+      Jr(i, (n = new n())),
       (e.prototype = i = n)),
       i.constructor != e && (i.constructor = e);
   }
@@ -54198,26 +52116,26 @@ window.addEventListener("load", function (e) {
     ua = (s.DOCUMENT_TYPE_NODE = 10),
     ca = (s.DOCUMENT_FRAGMENT_NODE = 11),
     r = ((s.NOTATION_NODE = 12), {}),
-    E = {};
-  (r.INDEX_SIZE_ERR = ((E[1] = "Index size error"), 1)),
-    (r.DOMSTRING_SIZE_ERR = ((E[2] = "DOMString size error"), 2));
-  r.HIERARCHY_REQUEST_ERR = ((E[3] = "Hierarchy request error"), 3);
-  (r.WRONG_DOCUMENT_ERR = ((E[4] = "Wrong document"), 4)),
-    (r.INVALID_CHARACTER_ERR = ((E[5] = "Invalid character"), 5)),
-    (r.NO_DATA_ALLOWED_ERR = ((E[6] = "No data allowed"), 6)),
-    (r.NO_MODIFICATION_ALLOWED_ERR = ((E[7] = "No modification allowed"), 7));
-  r.NOT_FOUND_ERR = ((E[8] = "Not found"), 8);
-  r.NOT_SUPPORTED_ERR = ((E[9] = "Not supported"), 9);
+    I = {};
+  (r.INDEX_SIZE_ERR = ((I[1] = "Index size error"), 1)),
+    (r.DOMSTRING_SIZE_ERR = ((I[2] = "DOMString size error"), 2));
+  r.HIERARCHY_REQUEST_ERR = ((I[3] = "Hierarchy request error"), 3);
+  (r.WRONG_DOCUMENT_ERR = ((I[4] = "Wrong document"), 4)),
+    (r.INVALID_CHARACTER_ERR = ((I[5] = "Invalid character"), 5)),
+    (r.NO_DATA_ALLOWED_ERR = ((I[6] = "No data allowed"), 6)),
+    (r.NO_MODIFICATION_ALLOWED_ERR = ((I[7] = "No modification allowed"), 7));
+  r.NOT_FOUND_ERR = ((I[8] = "Not found"), 8);
+  r.NOT_SUPPORTED_ERR = ((I[9] = "Not supported"), 9);
   var da;
-  r.INUSE_ATTRIBUTE_ERR = ((E[10] = "Attribute in use"), 10);
+  r.INUSE_ATTRIBUTE_ERR = ((I[10] = "Attribute in use"), 10);
   function ha(e, t) {
     var n;
     return (
       t instanceof Error
         ? (n = t)
         : ((n = this),
-          Error.call(this, E[e]),
-          (this.message = E[e]),
+          Error.call(this, I[e]),
+          (this.message = I[e]),
           Error.captureStackTrace && Error.captureStackTrace(this, ha)),
       (n.code = e),
       t && (this.message = this.message + ": " + t),
@@ -54225,16 +52143,16 @@ window.addEventListener("load", function (e) {
     );
   }
   function pa() {}
-  function ma(e, t) {
-    (this._node = e), (this._refresh = t), fa(this);
+  function fa(e, t) {
+    (this._node = e), (this._refresh = t), ma(this);
   }
-  function fa(e) {
+  function ma(e) {
     var t,
       n = e._node._inc || e._node.ownerDocument._inc;
     e._inc != n &&
       ((t = e._refresh(e._node)),
-      Ha(e, "length", t.length),
-      $r(t, e),
+      qa(e, "length", t.length),
+      Jr(t, e),
       (e._inc = n));
   }
   function ga() {}
@@ -54269,14 +52187,14 @@ window.addEventListener("load", function (e) {
       "&#" + e.charCodeAt() + ";"
     );
   }
-  function Oa(e, t) {
+  function Sa(e, t) {
     if (t(e)) return 1;
     if ((e = e.firstChild))
       do {
-        if (Oa(e, t)) return 1;
+        if (Sa(e, t)) return 1;
       } while ((e = e.nextSibling));
   }
-  function Sa() {}
+  function Oa() {}
   function Aa(e, t, n) {
     e && e._inc++,
       n.namespaceURI === Kr.XMLNS &&
@@ -54325,16 +52243,16 @@ window.addEventListener("load", function (e) {
       t
     );
   }
-  function Ia() {
+  function Ea() {
     this._nsMap = {};
   }
-  function Ea() {}
+  function Ia() {}
   function ka() {}
   function Pa() {}
   function La() {}
   function Na() {}
-  function ja() {}
   function Ma() {}
+  function ja() {}
   function Da() {}
   function Ra() {}
   function Ba() {}
@@ -54371,7 +52289,7 @@ window.addEventListener("load", function (e) {
       return 1;
     }
   }
-  function qa(e, t, n) {
+  function Ha(e, t, n) {
     e.push(" ", t, '="', n.replace(/[<&"]/g, Ta), '"');
   }
   function za(e, t, n, i, r) {
@@ -54410,24 +52328,24 @@ window.addEventListener("load", function (e) {
               }
         }
         t.push("<", u);
-        for (var m = 0; m < s; m++)
-          "xmlns" == (f = a.item(m)).prefix
-            ? r.push({ prefix: f.localName, namespace: f.value })
-            : "xmlns" == f.nodeName &&
-              r.push({ prefix: "", namespace: f.value });
-        for (var f, g, b, m = 0; m < s; m++)
-          Ga((f = a.item(m)), 0, r) &&
-            (qa(
+        for (var f = 0; f < s; f++)
+          "xmlns" == (m = a.item(f)).prefix
+            ? r.push({ prefix: m.localName, namespace: m.value })
+            : "xmlns" == m.nodeName &&
+              r.push({ prefix: "", namespace: m.value });
+        for (var m, g, b, f = 0; f < s; f++)
+          Ga((m = a.item(f)), 0, r) &&
+            (Ha(
               t,
-              (g = f.prefix || "") ? "xmlns:" + g : "xmlns",
-              (b = f.namespaceURI)
+              (g = m.prefix || "") ? "xmlns:" + g : "xmlns",
+              (b = m.namespaceURI)
             ),
             r.push({ prefix: g, namespace: b })),
-            za(f, t, n, i, r);
+            za(m, t, n, i, r);
         if (
           (l === u &&
             Ga(e, 0, r) &&
-            (qa(
+            (Ha(
               t,
               (g = e.prefix || "") ? "xmlns:" + g : "xmlns",
               (b = e.namespaceURI)
@@ -54449,7 +52367,7 @@ window.addEventListener("load", function (e) {
           za(o, t, n, i, r.slice()), (o = o.nextSibling);
         return;
       case na:
-        return qa(t, e.name, e.value), 0;
+        return Ha(t, e.name, e.value), 0;
       case ia:
         return t.push(e.data.replace(/[<&]/g, Ta).replace(/]]>/g, "]]&gt;"));
       case ra:
@@ -54477,16 +52395,16 @@ window.addEventListener("load", function (e) {
         t.push("??", e.nodeName);
     }
   }
-  function Ha(e, t, n) {
+  function qa(e, t, n) {
     e[t] = n;
   }
-  (r.INVALID_STATE_ERR = ((E[11] = "Invalid state"), 11)),
-    (r.SYNTAX_ERR = ((E[12] = "Syntax error"), 12)),
-    (r.INVALID_MODIFICATION_ERR = ((E[13] = "Invalid modification"), 13)),
-    (r.NAMESPACE_ERR = ((E[14] = "Invalid namespace"), 14)),
-    (r.INVALID_ACCESS_ERR = ((E[15] = "Invalid access"), 15)),
+  (r.INVALID_STATE_ERR = ((I[11] = "Invalid state"), 11)),
+    (r.SYNTAX_ERR = ((I[12] = "Syntax error"), 12)),
+    (r.INVALID_MODIFICATION_ERR = ((I[13] = "Invalid modification"), 13)),
+    (r.NAMESPACE_ERR = ((I[14] = "Invalid namespace"), 14)),
+    (r.INVALID_ACCESS_ERR = ((I[15] = "Invalid access"), 15)),
     (ha.prototype = Error.prototype),
-    $r(r, ha),
+    Jr(r, ha),
     (pa.prototype = {
       length: 0,
       item: function (e) {
@@ -54497,10 +52415,10 @@ window.addEventListener("load", function (e) {
         return n.join("");
       },
     }),
-    (ma.prototype.item = function (e) {
-      return fa(this), this[e];
+    (fa.prototype.item = function (e) {
+      return ma(this), this[e];
     }),
-    ea(ma, pa),
+    ea(fa, pa),
     (ga.prototype = {
       length: 0,
       item: pa.prototype.item,
@@ -54546,7 +52464,7 @@ window.addEventListener("load", function (e) {
         return !0;
       },
       createDocument: function (e, t, n) {
-        var i = new Sa();
+        var i = new Oa();
         return (
           (i.implementation = this),
           (i.childNodes = new pa()),
@@ -54557,7 +52475,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createDocumentType: function (e, t, n) {
-        var i = new ja();
+        var i = new Ma();
         return (
           (i.name = e),
           (i.nodeName = e),
@@ -54656,9 +52574,9 @@ window.addEventListener("load", function (e) {
         return null == this.lookupPrefix(e);
       },
     }),
-    $r(s, k),
-    $r(s, k.prototype),
-    (Sa.prototype = {
+    Jr(s, k),
+    Jr(s, k.prototype),
+    (Oa.prototype = {
       nodeName: "#document",
       nodeType: la,
       doctype: null,
@@ -54709,7 +52627,7 @@ window.addEventListener("load", function (e) {
       getElementById: function (t) {
         var n = null;
         return (
-          Oa(this.documentElement, function (e) {
+          Sa(this.documentElement, function (e) {
             if (e.nodeType == ta && e.getAttribute("id") == t)
               return (n = e), !0;
           }),
@@ -54717,18 +52635,18 @@ window.addEventListener("load", function (e) {
         );
       },
       getElementsByClassName: function (s) {
-        var o = Jr(s);
-        return new ma(this, function (r) {
+        var o = $r(s);
+        return new fa(this, function (r) {
           var a = [];
           return (
             0 < o.length &&
-              Oa(r.documentElement, function (e) {
+              Sa(r.documentElement, function (e) {
                 var t, n, i;
                 e === r ||
                   e.nodeType !== ta ||
                   ((t = e.getAttribute("class")) &&
                     ((n = s === t) ||
-                      ((t = Jr(t)),
+                      ((t = $r(t)),
                       (n = o.every(
                         ((i = t),
                         function (e) {
@@ -54742,7 +52660,7 @@ window.addEventListener("load", function (e) {
         });
       },
       createElement: function (e) {
-        var t = new Ia();
+        var t = new Ea();
         return (
           (t.ownerDocument = this),
           (t.nodeName = e),
@@ -54778,7 +52696,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createAttribute: function (e) {
-        var t = new Ea();
+        var t = new Ia();
         return (
           (t.ownerDocument = this),
           (t.name = e),
@@ -54793,7 +52711,7 @@ window.addEventListener("load", function (e) {
         return (t.ownerDocument = this), (t.nodeName = e), t;
       },
       createElementNS: function (e, t) {
-        var n = new Ia(),
+        var n = new Ea(),
           i = t.split(":"),
           r = (n.attributes = new ga());
         return (
@@ -54809,7 +52727,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createAttributeNS: function (e, t) {
-        var n = new Ea(),
+        var n = new Ia(),
           i = t.split(":");
         return (
           (n.ownerDocument = this),
@@ -54824,8 +52742,8 @@ window.addEventListener("load", function (e) {
         );
       },
     }),
-    ea(Sa, k),
-    (Sa.prototype.getElementsByTagName = (Ia.prototype = {
+    ea(Oa, k),
+    (Oa.prototype.getElementsByTagName = (Ea.prototype = {
       nodeType: ta,
       hasAttribute: function (e) {
         return null != this.getAttributeNode(e);
@@ -54891,10 +52809,10 @@ window.addEventListener("load", function (e) {
         return this.attributes.getNamedItemNS(e, t);
       },
       getElementsByTagName: function (i) {
-        return new ma(this, function (t) {
+        return new fa(this, function (t) {
           var n = [];
           return (
-            Oa(t, function (e) {
+            Sa(t, function (e) {
               e === t ||
                 e.nodeType != ta ||
                 ("*" !== i && e.tagName != i) ||
@@ -54905,10 +52823,10 @@ window.addEventListener("load", function (e) {
         });
       },
       getElementsByTagNameNS: function (i, r) {
-        return new ma(this, function (t) {
+        return new fa(this, function (t) {
           var n = [];
           return (
-            Oa(t, function (e) {
+            Sa(t, function (e) {
               e === t ||
                 e.nodeType !== ta ||
                 ("*" !== i && e.namespaceURI !== i) ||
@@ -54920,10 +52838,10 @@ window.addEventListener("load", function (e) {
         });
       },
     }).getElementsByTagName),
-    (Sa.prototype.getElementsByTagNameNS = Ia.prototype.getElementsByTagNameNS),
-    ea(Ia, k),
-    (Ea.prototype.nodeType = na),
+    (Oa.prototype.getElementsByTagNameNS = Ea.prototype.getElementsByTagNameNS),
     ea(Ea, k),
+    (Ia.prototype.nodeType = na),
+    ea(Ia, k),
     (ka.prototype = {
       data: "",
       substringData: function (e, t) {
@@ -54938,7 +52856,7 @@ window.addEventListener("load", function (e) {
         this.replaceData(e, 0, t);
       },
       appendChild: function (e) {
-        throw new Error(E[3]);
+        throw new Error(I[3]);
       },
       deleteData: function (e, t) {
         this.replaceData(e, t, "");
@@ -54969,10 +52887,10 @@ window.addEventListener("load", function (e) {
     ea(La, ka),
     (Na.prototype = { nodeName: "#cdata-section", nodeType: ra }),
     ea(Na, ka),
-    (ja.prototype.nodeType = ua),
-    ea(ja, k),
-    (Ma.prototype.nodeType = 12),
+    (Ma.prototype.nodeType = ua),
     ea(Ma, k),
+    (ja.prototype.nodeType = 12),
+    ea(ja, k),
     (Da.prototype.nodeType = 6),
     ea(Da, k),
     (Ra.prototype.nodeType = aa),
@@ -55001,9 +52919,9 @@ window.addEventListener("load", function (e) {
             return t.nodeValue;
         }
       }),
-      Object.defineProperty(ma.prototype, "length", {
+      Object.defineProperty(fa.prototype, "length", {
         get: function () {
-          return fa(this), this.$$length;
+          return ma(this), this.$$length;
         },
       }),
       Object.defineProperty(k.prototype, "textContent", {
@@ -55023,20 +52941,20 @@ window.addEventListener("load", function (e) {
           }
         },
       }),
-      (Ha = function (e, t, n) {
+      (qa = function (e, t, n) {
         e["$$" + t] = n;
       }));
   } catch (D) {}
   var he = {
-      DocumentType: ja,
+      DocumentType: Ma,
       DOMException: ha,
       DOMImplementation: _a,
-      Element: Ia,
+      Element: Ea,
       Node: k,
       NodeList: pa,
       XMLSerializer: Va,
     },
-    Xa = K(function (e, t) {
+    Wa = K(function (e, t) {
       var n = Yr.freeze;
       (t.XML_ENTITIES = n({
         amp: "&",
@@ -55290,23 +53208,23 @@ window.addEventListener("load", function (e) {
         })),
         (t.entityMap = t.HTML_ENTITIES);
     });
-  Xa.XML_ENTITIES, Xa.HTML_ENTITIES, Xa.entityMap;
-  var Wa = Yr.NAMESPACE,
+  Wa.XML_ENTITIES, Wa.HTML_ENTITIES, Wa.entityMap;
+  var Xa = Yr.NAMESPACE,
     cn =
       /[A-Z_a-z\xC0-\xD6\xD8-\xF6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]/,
-    mr = new RegExp(
+    fr = new RegExp(
       "[\\-\\.0-9" +
         cn.source.slice(1, -1) +
         "\\u00B7\\u0300-\\u036F\\u203F-\\u2040]"
     ),
     Ya = new RegExp(
-      "^" + cn.source + mr.source + "*(?::" + cn.source + mr.source + "*)?$"
+      "^" + cn.source + fr.source + "*(?::" + cn.source + fr.source + "*)?$"
     ),
     Ka = 0,
     Qa = 1,
     Za = 2,
-    Ja = 3,
-    $a = 4,
+    $a = 3,
+    Ja = 4,
     es = 5,
     ts = 6,
     ns = 7;
@@ -55334,12 +53252,12 @@ window.addEventListener("load", function (e) {
         !1 !== o &&
           (null == r && ((r = {}), os(n, (n = {}))),
           (n[o] = r[o] = l),
-          (s.uri = Wa.XMLNS),
+          (s.uri = Xa.XMLNS),
           t.startPrefixMapping(o, l));
     }
     for (var u, a = e.length; a--; )
       (u = (s = e[a]).prefix) &&
-        ("xml" === u && (s.uri = Wa.XML),
+        ("xml" === u && (s.uri = Xa.XML),
         "xmlns" !== u && (s.uri = n[u || ""]));
     var c,
       d =
@@ -55377,11 +53295,11 @@ window.addEventListener("load", function (e) {
             }
             function t(e) {
               var t;
-              m < e &&
-                ((t = n.substring(m, e).replace(/&#?\w+;/g, s)),
-                d && o(m),
-                r.characters(t, 0, e - m),
-                (m = e));
+              f < e &&
+                ((t = n.substring(f, e).replace(/&#?\w+;/g, s)),
+                d && o(f),
+                r.characters(t, 0, e - f),
+                (f = e));
             }
             function o(e, t) {
               for (; u <= e && (t = c.exec(n)); )
@@ -55394,21 +53312,21 @@ window.addEventListener("load", function (e) {
               d = r.locator,
               h = [{ currentNSMap: e }],
               p = {},
-              m = 0;
+              f = 0;
             for (;;) {
               try {
-                var f,
+                var m,
                   g,
-                  b = n.indexOf("<", m);
+                  b = n.indexOf("<", f);
                 if (b < 0)
                   return (
-                    n.substr(m).match(/^\s*$/) ||
-                    ((f = r.doc),
-                    (g = f.createTextNode(n.substr(m))),
-                    f.appendChild(g),
+                    n.substr(f).match(/^\s*$/) ||
+                    ((m = r.doc),
+                    (g = m.createTextNode(n.substr(f))),
+                    m.appendChild(g),
                     (r.currentElement = g))
                   );
-                switch ((m < b && t(b), n.charAt(b + 1))) {
+                switch ((f < b && t(b), n.charAt(b + 1))) {
                   case "/":
                     var v = n.indexOf(">", b + 3),
                       y = n.substring(b + 2, v).replace(/[ \t\n\r]+$/g, ""),
@@ -55424,14 +53342,14 @@ window.addEventListener("load", function (e) {
                         a.error("end tag name: " + y + " maybe not complete"),
                         (v = b + 1 + y.length));
                     var T = _.localNSMap,
-                      O = _.tagName == y;
+                      S = _.tagName == y;
                     if (
-                      O ||
+                      S ||
                       (_.tagName && _.tagName.toLowerCase() == y.toLowerCase())
                     ) {
                       if ((r.endElement(_.uri, _.localName, y), T))
-                        for (var S in T) r.endPrefixMapping(S);
-                      O ||
+                        for (var O in T) r.endPrefixMapping(O);
+                      S ||
                         a.fatalError(
                           "end tag name: " +
                             y +
@@ -55522,18 +53440,18 @@ window.addEventListener("load", function (e) {
                           var c = e.charAt(l);
                           switch (c) {
                             case "=":
-                              if (u === Qa) (o = e.slice(t, l)), (u = Ja);
+                              if (u === Qa) (o = e.slice(t, l)), (u = $a);
                               else {
                                 if (u !== Za)
                                   throw new Error(
                                     "attribute equal must after attrName"
                                   );
-                                u = Ja;
+                                u = $a;
                               }
                               break;
                             case "'":
                             case '"':
-                              if (u === Ja || u === Qa) {
+                              if (u === $a || u === Qa) {
                                 if (
                                   (u === Qa &&
                                     (a.warning(
@@ -55550,7 +53468,7 @@ window.addEventListener("load", function (e) {
                                   s(o, d, t - 1),
                                   (u = es);
                               } else {
-                                if (u != $a)
+                                if (u != Ja)
                                   throw new Error(
                                     'attribute value must after "="'
                                   );
@@ -55575,7 +53493,7 @@ window.addEventListener("load", function (e) {
                                 case ts:
                                 case ns:
                                   (u = ns), (i.closed = !0);
-                                case $a:
+                                case Ja:
                                 case Qa:
                                 case Za:
                                   break;
@@ -55599,20 +53517,20 @@ window.addEventListener("load", function (e) {
                                 case ts:
                                 case ns:
                                   break;
-                                case $a:
+                                case Ja:
                                 case Qa:
                                   "/" === (d = e.slice(t, l)).slice(-1) &&
                                     ((i.closed = !0), (d = d.slice(0, -1)));
                                 case Za:
                                   u === Za && (d = o),
-                                    u == $a
+                                    u == Ja
                                       ? (a.warning(
                                           'attribute "' +
                                             d +
                                             '" missed quot(")!'
                                         ),
                                         s(o, d.replace(/&#?\w+;/g, r), t))
-                                      : ((Wa.isHTML(n[""]) &&
+                                      : ((Xa.isHTML(n[""]) &&
                                           d.match(
                                             /^(?:disabled|checked|selected)$/i
                                           )) ||
@@ -55625,7 +53543,7 @@ window.addEventListener("load", function (e) {
                                           ),
                                         s(d, d, t));
                                   break;
-                                case Ja:
+                                case $a:
                                   throw new Error("attribute value missed!!");
                               }
                               return l;
@@ -55640,7 +53558,7 @@ window.addEventListener("load", function (e) {
                                   case Qa:
                                     (o = e.slice(t, l)), (u = Za);
                                     break;
-                                  case $a:
+                                  case Ja:
                                     var d = e
                                       .slice(t, l)
                                       .replace(/&#?\w+;/g, r);
@@ -55655,7 +53573,7 @@ window.addEventListener("load", function (e) {
                                 switch (u) {
                                   case Za:
                                     i.tagName,
-                                      (Wa.isHTML(n[""]) &&
+                                      (Xa.isHTML(n[""]) &&
                                         o.match(
                                           /^(?:disabled|checked|selected)$/i
                                         )) ||
@@ -55677,8 +53595,8 @@ window.addEventListener("load", function (e) {
                                   case ts:
                                     (u = Qa), (t = l);
                                     break;
-                                  case Ja:
-                                    (u = $a), (t = l);
+                                  case $a:
+                                    (u = Ja), (t = l);
                                     break;
                                   case ns:
                                     throw new Error(
@@ -55704,15 +53622,15 @@ window.addEventListener("load", function (e) {
                         i.nbsp || a.warning("unclosed xml attribute")),
                       d && C)
                     ) {
-                      for (var x = as(d, {}), I = 0; I < C; I++) {
-                        var E = A[I];
-                        o(E.offset), (E.locator = as(d, {}));
+                      for (var x = as(d, {}), E = 0; E < C; E++) {
+                        var I = A[E];
+                        o(I.offset), (I.locator = as(d, {}));
                       }
                       (r.locator = x),
                         ss(A, r, w) && h.push(A),
                         (r.locator = d);
                     } else ss(A, r, w) && h.push(A);
-                    Wa.isHTML(A.uri) && !A.closed
+                    Xa.isHTML(A.uri) && !A.closed
                       ? (v = (function (e, t, n, i, r) {
                           if (/^(?:script|textarea)$/i.test(n)) {
                             var a = e.indexOf("</" + n + ">", t),
@@ -55733,7 +53651,7 @@ window.addEventListener("load", function (e) {
                 if (e instanceof is) throw e;
                 a.error("element parse error: " + e), (v = -1);
               }
-              m < v ? (m = v) : t(Math.max(b, m) + 1);
+              f < v ? (f = v) : t(Math.max(b, f) + 1);
             }
           })(e, t, n, i, this.errorHandler),
           i.endDocument();
@@ -55774,10 +53692,10 @@ window.addEventListener("load", function (e) {
   function ps(e) {
     this.options = e || { locator: {} };
   }
-  function ms() {
+  function fs() {
     this.cdata = !1;
   }
-  function fs(e, t) {
+  function ms(e, t) {
     (t.lineNumber = e.lineNumber), (t.columnNumber = e.columnNumber);
   }
   function gs(e) {
@@ -55805,17 +53723,17 @@ window.addEventListener("load", function (e) {
   (ps.prototype.parseFromString = function (e, t) {
     var n = this.options,
       i = new hs(),
-      r = n.domBuilder || new ms(),
+      r = n.domBuilder || new fs(),
       a = n.errorHandler,
       s = n.locator,
       o = n.xmlns || {},
       l = /\/x?html?$/.test(t),
-      t = l ? Xa.HTML_ENTITIES : Xa.XML_ENTITIES;
+      t = l ? Wa.HTML_ENTITIES : Wa.XML_ENTITIES;
     return (
       s && r.setDocumentLocator(s),
       (i.errorHandler = (function (i, e, r) {
         if (!i) {
-          if (e instanceof ms) return e;
+          if (e instanceof fs) return e;
           i = e;
         }
         var a = {},
@@ -55847,7 +53765,7 @@ window.addEventListener("load", function (e) {
       r.doc
     );
   }),
-    (ms.prototype = {
+    (fs.prototype = {
       startDocument: function () {
         (this.doc = new us().createDocument(null, null, null)),
           this.locator && (this.doc.documentURI = this.locator.systemId);
@@ -55858,13 +53776,13 @@ window.addEventListener("load", function (e) {
           s = i.length;
         vs(this, a),
           (this.currentElement = a),
-          this.locator && fs(this.locator, a);
+          this.locator && ms(this.locator, a);
         for (var o = 0; o < s; o++) {
           var e = i.getURI(o),
             l = i.getValue(o),
             n = i.getQName(o),
             u = r.createAttributeNS(e, n);
-          this.locator && fs(i.getLocator(o), u),
+          this.locator && ms(i.getLocator(o), u),
             (u.value = u.nodeValue = l),
             a.setAttributeNode(u);
         }
@@ -55877,7 +53795,7 @@ window.addEventListener("load", function (e) {
       endPrefixMapping: function (e) {},
       processingInstruction: function (e, t) {
         t = this.doc.createProcessingInstruction(e, t);
-        this.locator && fs(this.locator, t), vs(this, t);
+        this.locator && ms(this.locator, t), vs(this, t);
       },
       ignorableWhitespace: function (e, t, n) {},
       characters: function (e, t, n) {
@@ -55889,7 +53807,7 @@ window.addEventListener("load", function (e) {
           this.currentElement
             ? this.currentElement.appendChild(i)
             : /^\s*$/.test(e) && this.doc.appendChild(i),
-          this.locator && fs(this.locator, i));
+          this.locator && ms(this.locator, i));
       },
       skippedEntity: function (e) {},
       endDocument: function () {
@@ -55901,7 +53819,7 @@ window.addEventListener("load", function (e) {
       comment: function (e, t, n) {
         e = bs.apply(this, arguments);
         e = this.doc.createComment(e);
-        this.locator && fs(this.locator, e), vs(this, e);
+        this.locator && ms(this.locator, e), vs(this, e);
       },
       startCDATA: function () {
         this.cdata = !0;
@@ -55914,7 +53832,7 @@ window.addEventListener("load", function (e) {
         i &&
           i.createDocumentType &&
           ((n = i.createDocumentType(e, t, n)),
-          this.locator && fs(this.locator, n),
+          this.locator && ms(this.locator, n),
           vs(this, n),
           (this.doc.doctype = n));
       },
@@ -55927,7 +53845,7 @@ window.addEventListener("load", function (e) {
     "endDTD,startEntity,endEntity,attributeDecl,elementDecl,externalEntityDecl,internalEntityDecl,resolveEntity,getExternalSubset,notationDecl,unparsedEntityDecl".replace(
       /\w+/g,
       function (e) {
-        ms.prototype[e] = function () {
+        fs.prototype[e] = function () {
           return null;
         };
       }
@@ -55962,12 +53880,12 @@ window.addEventListener("load", function (e) {
       return e.concat(t);
     }, []);
   }
-  function Os(e) {
+  function Ss(e) {
     if (!e.length) return [];
     for (var t = [], n = 0; n < e.length; n++) t.push(e[n]);
     return t;
   }
-  function Ss(e, t) {
+  function Os(e, t) {
     for (var n = 0; n < e.length; n++) if (t(e[n])) return n;
     return -1;
   }
@@ -56058,7 +53976,7 @@ window.addEventListener("load", function (e) {
       [r]
     );
   }
-  function Is(e, t, n) {
+  function Es(e, t, n) {
     for (
       var i = e.sidx.map || null,
         r = e.sidx.duration,
@@ -56073,22 +53991,22 @@ window.addEventListener("load", function (e) {
         d = e.sidx.timeline,
         h = d,
         p = e.mediaSequence || 0,
-        m =
+        f =
           "bigint" == typeof t.firstOffset
             ? window.BigInt(s) + t.firstOffset
             : s + t.firstOffset,
-        f = 0;
-      f < l.length;
-      f++
+        m = 0;
+      m < l.length;
+      m++
     ) {
-      var g = t.references[f],
+      var g = t.references[m],
         b = g.referencedSize,
         v = g.subsegmentDuration,
         g = void 0,
         g =
-          "bigint" == typeof m
-            ? m + window.BigInt(b) - window.BigInt(1)
-            : m + b - 1,
+          "bigint" == typeof f
+            ? f + window.BigInt(b) - window.BigInt(1)
+            : f + b - 1,
         g = xs({
           baseUrl: n,
           timescale: o,
@@ -56098,18 +54016,18 @@ window.addEventListener("load", function (e) {
           number: p,
           duration: v,
           sourceDuration: r,
-          indexRange: m + "-" + g,
+          indexRange: f + "-" + g,
           type: c,
         })[0];
       i && (g.map = i),
         u.push(g),
-        (m += "bigint" == typeof m ? window.BigInt(b) : b),
+        (f += "bigint" == typeof f ? window.BigInt(b) : b),
         (h += v / o),
         p++;
     }
     return (e.segments = u), e;
   }
-  function Es(e) {
+  function Is(e) {
     return (
       (n = function (e) {
         return e.timeline;
@@ -56164,7 +54082,7 @@ window.addEventListener("load", function (e) {
       i = t.playlists.concat(ks(t)),
       e = n.playlists.concat(ks(n));
     return (
-      (n.timelineStarts = Es([t.timelineStarts, n.timelineStarts])),
+      (n.timelineStarts = Is([t.timelineStarts, n.timelineStarts])),
       (i = {
         oldPlaylists: i,
         newPlaylists: e,
@@ -56174,7 +54092,7 @@ window.addEventListener("load", function (e) {
       (e = i.newPlaylists),
       (a = i.timelineStarts),
       e.forEach(function (t) {
-        t.discontinuitySequence = Ss(a, function (e) {
+        t.discontinuitySequence = Os(a, function (e) {
           return e.timeline === t.timeline;
         });
         var e = (function (e, t) {
@@ -56184,7 +54102,7 @@ window.addEventListener("load", function (e) {
         })(r, t.attributes.NAME);
         if (e && !t.sidx) {
           var n = t.segments[0],
-            i = Ss(e.segments, function (e) {
+            i = Os(e.segments, function (e) {
               return Math.abs(e.presentationTime - n.presentationTime) < 1 / 60;
             });
           if (-1 === i)
@@ -56229,7 +54147,7 @@ window.addEventListener("load", function (e) {
     );
     var t;
   }
-  function js(e) {
+  function Ms(e) {
     return _s(
       e.reduce(function (e, t) {
         var n,
@@ -56263,12 +54181,12 @@ window.addEventListener("load", function (e) {
       );
     });
   }
-  function Ms(e, t) {
+  function js(e, t) {
     var n = Ns(e.sidx);
-    return (n = n && t[n] && t[n].sidx) && Is(e, n, e.sidx.resolvedUri), e;
+    return (n = n && t[n] && t[n].sidx) && Es(e, n, e.sidx.resolvedUri), e;
   }
   function Ds(e, h, p) {
-    var m;
+    var f;
     return (
       void 0 === h && (h = {}),
       void 0 === p && (p = !1),
@@ -56296,7 +54214,7 @@ window.addEventListener("load", function (e) {
           u,
           c,
           d,
-          l = Ms(
+          l = js(
             ((s = p),
             (o = (a = t).attributes),
             (l = a.segments),
@@ -56333,11 +54251,11 @@ window.addEventListener("load", function (e) {
           );
         return (
           e[r].playlists.push(l),
-          "undefined" == typeof m && "main" === n && ((m = t).default = !0),
+          "undefined" == typeof f && "main" === n && ((f = t).default = !0),
           e
         );
       }, {})),
-      m || (e[Object.keys(e)[0]].default = !0),
+      f || (e[Object.keys(e)[0]].default = !0),
       e
     );
   }
@@ -56409,9 +54327,9 @@ window.addEventListener("load", function (e) {
       s = d.type,
       o = d.suggestedPresentationDelay,
       l = d.minimumUpdatePeriod,
-      u = js(t.filter(Bs)).map(Rs),
-      c = js(t.filter(Us)),
-      e = js(t.filter(Vs)),
+      u = Ms(t.filter(Bs)).map(Rs),
+      c = Ms(t.filter(Us)),
+      e = Ms(t.filter(Vs)),
       d = t
         .map(function (e) {
           return e.attributes.captionServices;
@@ -56430,7 +54348,7 @@ window.addEventListener("load", function (e) {
         duration: a,
         playlists: (function (e, t) {
           if ((void 0 === t && (t = {}), !Object.keys(t).length)) return e;
-          for (var n in e) e[n] = Ms(e[n], t);
+          for (var n in e) e[n] = js(e[n], t);
           return e;
         })(u, i),
       };
@@ -56455,7 +54373,7 @@ window.addEventListener("load", function (e) {
                   uri: "",
                 }),
               e[n].playlists.push(
-                Ms(
+                js(
                   (function (e) {
                     var t = e.attributes,
                       n = e.segments,
@@ -56504,12 +54422,12 @@ window.addEventListener("load", function (e) {
         return e.timelineStarts;
       });
     return (
-      (a.timelineStarts = Es(u)),
+      (a.timelineStarts = Is(u)),
       (e = e),
       (p = a.timelineStarts),
       e.forEach(function (t) {
         (t.mediaSequence = 0),
-          (t.discontinuitySequence = Ss(p, function (e) {
+          (t.discontinuitySequence = Os(p, function (e) {
             return e.timeline === t.timeline;
           })),
           t.segments &&
@@ -56544,7 +54462,7 @@ window.addEventListener("load", function (e) {
       r ? Ls({ oldManifest: r, newManifest: a }) : a
     );
   }
-  function qs(e, t) {
+  function Hs(e, t) {
     for (
       var n,
         i,
@@ -56558,8 +54476,8 @@ window.addEventListener("load", function (e) {
         d = void 0 === (u = e.media) ? "" : u,
         h = e.sourceDuration,
         p = void 0 === (u = e.timescale) ? 1 : u,
-        m = void 0 === (u = e.startNumber) ? 1 : u,
-        f = e.periodStart,
+        f = void 0 === (u = e.startNumber) ? 1 : u,
+        m = e.periodStart,
         g = [],
         b = -1,
         v = 0;
@@ -56569,36 +54487,36 @@ window.addEventListener("load", function (e) {
       var y = t[v],
         _ = y.d,
         T = y.r || 0,
-        O = y.t || 0;
-      b < 0 && (b = O), O && b < O && (b = O);
-      var S,
+        S = y.t || 0;
+      b < 0 && (b = S), S && b < S && (b = S);
+      var O,
         A = void 0;
       A =
         T < 0
-          ? (S = v + 1) === t.length
+          ? (O = v + 1) === t.length
             ? "dynamic" === l && 0 < c && 0 < d.indexOf("$Number$")
               ? ((n = b),
                 (i = _),
                 (y = o = s = a = r = void 0),
-                (r = (O = e).NOW),
-                (a = O.clientOffset),
-                (s = O.availabilityStartTime),
-                (o = O.timescale),
-                (y = O.periodStart),
-                (O = O.minimumUpdatePeriod),
+                (r = (S = e).NOW),
+                (a = S.clientOffset),
+                (s = S.availabilityStartTime),
+                (o = S.timescale),
+                (y = S.periodStart),
+                (S = S.minimumUpdatePeriod),
                 Math.ceil(
                   (((r + a) / 1e3 +
-                    (void 0 === O ? 0 : O) -
+                    (void 0 === S ? 0 : S) -
                     (s + (void 0 === y ? 0 : y))) *
                     (void 0 === o ? 1 : o) -
                     n) /
                     i
                 ))
               : (h * p - b) / _
-            : (t[S].t - b) / _
+            : (t[O].t - b) / _
           : T + 1;
-      for (var w = m + g.length + A, C = m + g.length; C < w; )
-        g.push({ number: C, duration: _ / p, time: b, timeline: f }),
+      for (var w = f + g.length + A, C = f + g.length; C < w; )
+        g.push({ number: C, duration: _ / p, time: b, timeline: m }),
           (b += _),
           C++;
     }
@@ -56620,7 +54538,7 @@ window.addEventListener("load", function (e) {
     );
     var r;
   }
-  function Hs(r, e) {
+  function qs(r, e) {
     var a = { RepresentationID: r.id, Bandwidth: r.bandwidth || 0 },
       t = void 0 === (t = r.initialization) ? { sourceURL: "", range: "" } : t,
       s = As({
@@ -56632,7 +54550,7 @@ window.addEventListener("load", function (e) {
     (e = r).duration || t
       ? e.duration
         ? Cs(e)
-        : qs(e, t)
+        : Hs(e, t)
       : [
           {
             number: e.startNumber || 1,
@@ -56657,7 +54575,7 @@ window.addEventListener("load", function (e) {
       };
     });
   }
-  function Xs(r, e) {
+  function Ws(r, e) {
     var t = r.duration,
       n = void 0 === (n = r.segmentUrls) ? [] : n,
       a = r.periodStart;
@@ -56681,7 +54599,7 @@ window.addEventListener("load", function (e) {
       });
     return (
       t && (i = Cs(r)),
-      (i = e ? qs(r, e) : i)
+      (i = e ? Hs(r, e) : i)
         .map(function (e, t) {
           if (s[t]) {
             var n = s[t],
@@ -56701,15 +54619,15 @@ window.addEventListener("load", function (e) {
         })
     );
   }
-  function Ws(e) {
+  function Xs(e) {
     var t,
       n = e.attributes,
       i = e.segmentInfo;
     i.template
-      ? ((a = Hs), (t = P(n, i.template)))
+      ? ((a = qs), (t = P(n, i.template)))
       : i.base
       ? ((a = xs), (t = P(n, i.base)))
-      : i.list && ((a = Xs), (t = P(n, i.list)));
+      : i.list && ((a = Ws), (t = P(n, i.list)));
     var r = { attributes: n };
     if (!a) return r;
     var a,
@@ -56731,7 +54649,7 @@ window.addEventListener("load", function (e) {
     );
   }
   function L(e, t) {
-    return Os(e.childNodes).filter(function (e) {
+    return Ss(e.childNodes).filter(function (e) {
       return e.tagName === t;
     });
   }
@@ -56763,8 +54681,8 @@ window.addEventListener("load", function (e) {
   }
   function N(e) {
     return e && e.attributes
-      ? Os(e.attributes).reduce(function (e, t) {
-          var n = Oo[t.name] || Oo.DEFAULT;
+      ? Ss(e.attributes).reduce(function (e, t) {
+          var n = So[t.name] || So.DEFAULT;
           return (e[t.name] = n(t.value)), e;
         }, {})
       : {};
@@ -56809,7 +54727,7 @@ window.addEventListener("load", function (e) {
       s
     );
   }
-  function Js(l, u, c) {
+  function $s(l, u, c) {
     return function (e) {
       var t = N(e),
         n = Qs(u, L(e, "BaseURL")),
@@ -56875,7 +54793,7 @@ window.addEventListener("load", function (e) {
       var r = L(e, "ContentProtection").reduce(function (e, t) {
         var n = N(t);
         n.schemeIdUri && (n.schemeIdUri = n.schemeIdUri.toLowerCase());
-        var i = So[n.schemeIdUri];
+        var i = Oo[n.schemeIdUri];
         return (
           i &&
             ((e[i] = { attributes: n }),
@@ -56909,7 +54827,7 @@ window.addEventListener("load", function (e) {
       );
     };
   }
-  function $s(e, t) {
+  function Js(e, t) {
     var n = (t = void 0 === t ? {} : t),
       i = void 0 === (a = n.manifestUri) ? "" : a,
       t = void 0 === (r = n.NOW) ? Date.now() : r,
@@ -56962,7 +54880,7 @@ window.addEventListener("load", function (e) {
                 (i.periodDuration = e.attributes.duration);
               var r = L(e.node, "AdaptationSet"),
                 e = Zs(e.node);
-              return Ts(r.map(Js(i, n, e)));
+              return Ts(r.map($s(i, n, e)));
             })
           )
         ),
@@ -56970,7 +54888,7 @@ window.addEventListener("load", function (e) {
     );
   }
   function eo(e) {
-    if ("" === e) throw new Error(mo);
+    if ("" === e) throw new Error(fo);
     var t,
       n,
       i = new ho();
@@ -56982,13 +54900,13 @@ window.addEventListener("load", function (e) {
           : null;
     } catch (e) {}
     if (!n || (n && 0 < n.getElementsByTagName("parsererror").length))
-      throw new Error(fo);
+      throw new Error(mo);
     return n;
   }
   function to(e, t) {
     void 0 === t && (t = {});
-    var n = $s(eo(e), t),
-      e = n.representationInfo.map(Ws);
+    var n = Js(eo(e), t),
+      e = n.representationInfo.map(Xs);
     return Gs({
       dashPlaylists: e,
       locations: n.locations,
@@ -57046,7 +54964,7 @@ window.addEventListener("load", function (e) {
     );
   }
   function ro(e) {
-    return "string" == typeof e ? Er(e) : e;
+    return "string" == typeof e ? Ir(e) : e;
   }
   function ao(e, t, n) {
     var i;
@@ -57076,12 +54994,12 @@ window.addEventListener("load", function (e) {
   function so(e, t, n, i) {
     void 0 === n && (n = !0), void 0 === i && (i = !1);
     var r = (function (e) {
-        for (var t = 1, n = 0; n < Eo.length && !(e & Eo[n]); n++) t++;
+        for (var t = 1, n = 0; n < Io.length && !(e & Io[n]); n++) t++;
         return t;
       })(e[t]),
       a = e.subarray(t, t + r);
     return (
-      n && ((a = Array.prototype.slice.call(e, t, t + r))[0] ^= Eo[r - 1]),
+      n && ((a = Array.prototype.slice.call(e, t, t + r))[0] ^= Io[r - 1]),
       {
         length: r,
         value: (function (i, e) {
@@ -57096,14 +55014,14 @@ window.addEventListener("load", function (e) {
               i,
               function (e, t, n) {
                 n = r ? n : Math.abs(n + 1 - i.length);
-                return e + I(t) * Gr[n];
+                return e + E(t) * Gr[n];
               },
-              I(0)
+              E(0)
             ));
           return (
             !e ||
-              ((e = Gr[i.length] / I(2) - I(1)) < (t = I(t)) &&
-                ((t -= e), (t -= e), (t -= I(2)))),
+              ((e = Gr[i.length] / E(2) - E(1)) < (t = E(t)) &&
+                ((t -= e), (t -= e), (t -= E(2)))),
             Number(t)
           );
         })(a, { signed: i }),
@@ -57115,7 +55033,7 @@ window.addEventListener("load", function (e) {
     return "string" == typeof e
       ? e.match(/.{1,2}/g).map(oo)
       : "number" == typeof e
-      ? Ir(e)
+      ? Er(e)
       : e;
   }
   function lo(e, t, n) {
@@ -57175,14 +55093,14 @@ window.addEventListener("load", function (e) {
     return e.subarray(0, 0);
   }
   var ho = {
-      __DOMHandler: ms,
+      __DOMHandler: fs,
       DOMParser: ps,
       DOMImplementation: he.DOMImplementation,
       XMLSerializer: he.XMLSerializer,
     }.DOMParser,
     po = "INVALID_NUMBER_OF_PERIOD",
-    mo = "DASH_EMPTY_MANIFEST",
-    fo = "DASH_INVALID_XML",
+    fo = "DASH_EMPTY_MANIFEST",
+    mo = "DASH_INVALID_XML",
     go = "NO_BASE_URL",
     bo = "SEGMENT_TIME_UNSPECIFIED",
     vo = "UNSUPPORTED_UTC_TIMING_SCHEME",
@@ -57228,7 +55146,7 @@ window.addEventListener("load", function (e) {
     },
     _o = ["AUDIO", "SUBTITLES"],
     To = /\$([A-z]*)(?:(%0)([0-9]+)d)?\$/g,
-    Oo = {
+    So = {
       mediaPresentationDuration: Ks,
       availabilityStartTime: function (e) {
         return (
@@ -57278,7 +55196,7 @@ window.addEventListener("load", function (e) {
         return e;
       },
     },
-    So = {
+    Oo = {
       "urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b": "org.w3.clearkey",
       "urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed": "com.widevine.alpha",
       "urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95":
@@ -57324,7 +55242,7 @@ window.addEventListener("load", function (e) {
       return n;
     },
     xo = C([73, 68, 51]),
-    Io = {
+    Eo = {
       EBML: C([26, 69, 223, 163]),
       DocType: C([66, 130]),
       Segment: C([24, 83, 128, 103]),
@@ -57348,7 +55266,7 @@ window.addEventListener("load", function (e) {
       Block: C([161]),
       SimpleBlock: C([163]),
     },
-    Eo = [128, 64, 32, 16, 8, 4, 2, 1],
+    Io = [128, 64, 32, 16, 8, 4, 2, 1],
     ko = C([0, 0, 0, 1]),
     Po = C([0, 0, 1]),
     Lo = C([0, 0, 3]),
@@ -57368,7 +55286,7 @@ window.addEventListener("load", function (e) {
       moov: C([109, 111, 111, 118]),
       moof: C([109, 111, 111, 102]),
     },
-    jo = {
+    Mo = {
       aac: function (e) {
         var t = io(e);
         return x(e, [255, 16], { offset: t, mask: [255, 22] });
@@ -57378,17 +55296,17 @@ window.addEventListener("load", function (e) {
         return x(e, [255, 2], { offset: t, mask: [255, 6] });
       },
       webm: function (e) {
-        e = uo(e, [Io.EBML, Io.DocType])[0];
+        e = uo(e, [Eo.EBML, Eo.DocType])[0];
         return x(e, No.webm);
       },
       mkv: function (e) {
-        e = uo(e, [Io.EBML, Io.DocType])[0];
+        e = uo(e, [Eo.EBML, Eo.DocType])[0];
         return x(e, No.matroska);
       },
       mp4: function (e) {
         return (
-          !jo["3gp"](e) &&
-          !jo.mov(e) &&
+          !Mo["3gp"](e) &&
+          !Mo.mov(e) &&
           (!(!x(e, No.mp4, { offset: 4 }) && !x(e, No.fmp4, { offset: 4 })) ||
             !(!x(e, No.moof, { offset: 4 }) && !x(e, No.moov, { offset: 4 })) ||
             void 0)
@@ -57432,22 +55350,22 @@ window.addEventListener("load", function (e) {
         return co(e, "h265", [32, 33], 3).length;
       },
     },
-    Mo = Object.keys(jo)
+    jo = Object.keys(Mo)
       .filter(function (e) {
         return "ts" !== e && "h264" !== e && "h265" !== e;
       })
       .concat(["ts", "h264", "h265"]);
-  Mo.forEach(function (e) {
-    var t = jo[e];
-    jo[e] = function (e) {
+  jo.forEach(function (e) {
+    var t = Mo[e];
+    Mo[e] = function (e) {
       return t(C(e));
     };
   });
   function Do(e) {
     e = C(e);
-    for (var t = 0; t < Mo.length; t++) {
-      var n = Mo[t];
-      if (mu[n](e)) return n;
+    for (var t = 0; t < jo.length; t++) {
+      var n = jo[t];
+      if (fu[n](e)) return n;
     }
     return "";
   }
@@ -57481,7 +55399,7 @@ window.addEventListener("load", function (e) {
     for (var n = 0; n < e.length; n++) t.push(e.start(n) + " => " + e.end(n));
     return t.join(", ");
   }
-  function qo(e) {
+  function Ho(e) {
     for (var t = [], n = 0; n < e.length; n++)
       t.push({ start: e.start(n), end: e.end(n) });
     return t;
@@ -57489,7 +55407,7 @@ window.addEventListener("load", function (e) {
   function zo(e) {
     if (e && e.length && e.end) return e.end(e.length - 1);
   }
-  function Ho(e, t) {
+  function qo(e, t) {
     var n = 0;
     if (!e || !e.length) return n;
     for (var i = 0; i < e.length; i++) {
@@ -57499,7 +55417,7 @@ window.addEventListener("load", function (e) {
     }
     return n;
   }
-  function Xo(t, e) {
+  function Wo(t, e) {
     if (!e.preload) return e.duration;
     var n = 0;
     return (
@@ -57512,7 +55430,7 @@ window.addEventListener("load", function (e) {
       n
     );
   }
-  function Wo(e) {
+  function Xo(e) {
     return (e.segments || []).reduce(function (n, i, r) {
       return (
         i.parts
@@ -57590,7 +55508,7 @@ window.addEventListener("load", function (e) {
       for (; i--; ) {
         if ("undefined" != typeof (r = e.segments[i]).end)
           return { result: n + r.end, precise: !0 };
-        if (((n += Xo(e, r)), "undefined" != typeof r.start))
+        if (((n += Wo(e, r)), "undefined" != typeof r.start))
           return { result: n + r.start, precise: !0 };
       }
       return { result: n, precise: !1 };
@@ -57605,7 +55523,7 @@ window.addEventListener("load", function (e) {
           ) {
             if ("undefined" != typeof (n = e.segments[r]).start)
               return { result: n.start - i, precise: !0 };
-            if (((i += Xo(e, n)), "undefined" != typeof n.end))
+            if (((i += Wo(e, n)), "undefined" != typeof n.end))
               return { result: n.end - i, precise: !0 };
           }
           return { result: -1, precise: !1 };
@@ -57613,7 +55531,7 @@ window.addEventListener("load", function (e) {
       ? t.result
       : i.result + n;
   }
-  function Jo(e, t, n) {
+  function $o(e, t, n) {
     if (!e) return 0;
     if (("number" != typeof n && (n = 0), "undefined" == typeof t)) {
       if (e.totalDuration) return e.totalDuration;
@@ -57621,7 +55539,7 @@ window.addEventListener("load", function (e) {
     }
     return Zo(e, t, n);
   }
-  function $o(e) {
+  function Jo(e) {
     var t = e.defaultDuration,
       n = e.durationList,
       i = e.startIndex,
@@ -57637,7 +55555,7 @@ window.addEventListener("load", function (e) {
   function el(e, t, n, i) {
     return e && e.segments
       ? e.endList
-        ? Jo(e)
+        ? $o(e)
         : null === t
         ? null
         : ((t = Zo(e, e.mediaSequence + e.segments.length, (t = t || 0))),
@@ -57700,7 +55618,7 @@ window.addEventListener("load", function (e) {
       var t = (function (e) {
         var t = n.playlists[e],
           e = t.attributes && t.attributes.CODECS;
-        return (e && e.split(",").every(Or)) ||
+        return (e && e.split(",").every(Sr)) ||
           ol(n, function (e) {
             return sl(t, e);
           })
@@ -57812,7 +55730,7 @@ window.addEventListener("load", function (e) {
     }
     return s;
   }
-  function ml(e, t) {
+  function fl(e, t) {
     !e.resolvedUri && e.uri && (e.resolvedUri = gu(t, e.uri)),
       e.key && !e.key.resolvedUri && (e.key.resolvedUri = gu(t, e.key.uri)),
       e.map && !e.map.resolvedUri && (e.map.resolvedUri = gu(t, e.map.uri)),
@@ -57831,7 +55749,7 @@ window.addEventListener("load", function (e) {
           e.resolvedUri || (e.resolvedUri = gu(t, e.uri));
         });
   }
-  function fl(e) {
+  function ml(e) {
     var t = e.segments || [],
       n = e.preloadSegment;
     if (n && n.parts && n.parts.length) {
@@ -57859,7 +55777,7 @@ window.addEventListener("load", function (e) {
       i = n.playlists[a.id];
     if (!i) return null;
     if (t(i, a)) return null;
-    a.segments = fl(a);
+    a.segments = ml(a);
     var s = Tu(i, a);
     if (
       (s.preloadSegment && !a.preloadSegment && delete s.preloadSegment,
@@ -57877,7 +55795,7 @@ window.addEventListener("load", function (e) {
       );
     }
     s.segments.forEach(function (e) {
-      ml(e, s.resolvedUri);
+      fl(e, s.resolvedUri);
     });
     for (var o = 0; o < n.playlists.length; o++)
       n.playlists[o].id === a.id && (n.playlists[o] = s);
@@ -57934,7 +55852,7 @@ window.addEventListener("load", function (e) {
       e = Au({ timeout: 45e3 }, e);
       var t = a.beforeRequest || w.Vhs.xhr.beforeRequest;
       !t || "function" != typeof t || ((t = t(e)) && (e = t));
-      var i = (!0 === w.Vhs.xhr.original ? Su : w.Vhs.xhr)(e, function (e, t) {
+      var i = (!0 === w.Vhs.xhr.original ? Ou : w.Vhs.xhr)(e, function (e, t) {
           return yl(i, e, t, n);
         }),
         r = i.abort;
@@ -57967,13 +55885,13 @@ window.addEventListener("load", function (e) {
       n
     );
   }
-  function Ol(e, t) {
+  function Sl(e, t) {
     return (
       (e = e.toString(16)),
       "00".substring(0, 2 - e.length) + e + (t % 2 ? " " : "")
     );
   }
-  function Sl(e) {
+  function Ol(e) {
     return 32 <= e && e < 126 ? String.fromCharCode(e) : ".";
   }
   function Al(n) {
@@ -58008,17 +55926,17 @@ window.addEventListener("load", function (e) {
       n +=
         t
           .slice(16 * i, 16 * i + 16)
-          .map(Ol)
+          .map(Sl)
           .join("") +
         " " +
         t
           .slice(16 * i, 16 * i + 16)
-          .map(Sl)
+          .map(Ol)
           .join("") +
         "\n";
     return n;
   }
-  function Il(e) {
+  function El(e) {
     var t = e.playlist,
       n = e.time,
       i = void 0 === n ? void 0 : n;
@@ -58073,7 +55991,7 @@ window.addEventListener("load", function (e) {
         : n({ message: "valid programTime was not found" })
       : n({ message: "getProgramTime: playlist and time must be provided" });
   }
-  function El(e) {
+  function Il(e) {
     var t = e.programTime,
       n = e.playlist,
       i = e.retryCount,
@@ -58137,7 +56055,7 @@ window.addEventListener("load", function (e) {
                   ? u({ message: t + " is not buffered yet. Try again" })
                   : (a(i.estimatedStart + e),
                     void l.one("seeked", function () {
-                      El({
+                      Il({
                         programTime: t,
                         playlist: n,
                         retryCount: r - 1,
@@ -58202,7 +56120,7 @@ window.addEventListener("load", function (e) {
               }),
               r
             );
-          })(s, Er(n, !0))),
+          })(s, Ir(n, !0))),
           (a = a || io(s)),
           s.length < 10 || (a && s.length < a + 2))
         )
@@ -58287,10 +56205,10 @@ window.addEventListener("load", function (e) {
     }
     return i;
   }
-  function jl(e) {
+  function Ml(e) {
     return (e.on = e.addEventListener), (e.off = e.removeEventListener), e;
   }
-  function Ml(n) {
+  function jl(n) {
     var i = n.transmuxer,
       e = n.bytes,
       t = n.audioAppendStart,
@@ -58304,8 +56222,8 @@ window.addEventListener("load", function (e) {
       d = n.onAudioSegmentTimingInfo,
       h = n.onId3,
       p = n.onCaptions,
-      m = n.onDone,
-      f = n.onEndedTimeline,
+      f = n.onDone,
+      m = n.onEndedTimeline,
       g = n.onTransmuxerLog,
       b = n.isEndOfTimeline,
       v = { buffer: [] },
@@ -58349,16 +56267,16 @@ window.addEventListener("load", function (e) {
         "id3Frame" === e.data.action &&
           h([e.data.id3Frame], e.data.id3Frame.dispatchType),
         "caption" === e.data.action && p(e.data.caption),
-        "endedtimeline" === e.data.action && ((y = !1), f()),
+        "endedtimeline" === e.data.action && ((y = !1), m()),
         "log" === e.data.action && g(e.data.log),
         "transmuxed" === e.data.type &&
           (y ||
             ((i.onmessage = null),
-            (e = (t = { transmuxedData: v, callback: m }).transmuxedData),
+            (e = (t = { transmuxedData: v, callback: f }).transmuxedData),
             (t = t.callback),
             (e.buffer = []),
             t(e),
-            Iu(i))));
+            Eu(i))));
     }),
       t && i.postMessage({ action: "setAudioAppendStart", appendStart: t }),
       Array.isArray(r) &&
@@ -58376,7 +56294,7 @@ window.addEventListener("load", function (e) {
       i.postMessage({ action: "flush" });
   }
   function Dl(e, t) {
-    e.postMessage({ action: t }), Iu(e);
+    e.postMessage({ action: t }), Eu(e);
   }
   function Rl(e, t) {
     if (!t.currentTransmux) return (t.currentTransmux = e), Dl(t, e), 0;
@@ -58384,7 +56302,7 @@ window.addEventListener("load", function (e) {
   }
   function Bl(e) {
     if (!e.transmuxer.currentTransmux)
-      return (e.transmuxer.currentTransmux = e), void Ml(e);
+      return (e.transmuxer.currentTransmux = e), void jl(e);
     e.transmuxer.transmuxQueue.push(e);
   }
   function Ul(n) {
@@ -58480,7 +56398,7 @@ window.addEventListener("load", function (e) {
       return o(null, a);
     };
   }
-  function ql(n, i) {
+  function Hl(n, i) {
     var e = Do(n.map.bytes);
     if ("mp4" !== e) {
       var t = n.map.resolvedUri || n.map.uri;
@@ -58548,7 +56466,7 @@ window.addEventListener("load", function (e) {
       );
     };
   }
-  function Hl(e) {
+  function ql(e) {
     var n = e.segment,
       t = e.bytes,
       i = e.trackInfoFn,
@@ -58563,8 +56481,8 @@ window.addEventListener("load", function (e) {
       h = e.doneFn,
       p = e.onTransmuxerLog,
       e = (n.map && n.map.tracks) || {},
-      m = Boolean(e.audio && e.video),
-      f = r.bind(null, n, "audio", "start"),
+      f = Boolean(e.audio && e.video),
+      m = r.bind(null, n, "audio", "start"),
       g = r.bind(null, n, "audio", "end"),
       b = r.bind(null, n, "video", "start"),
       v = r.bind(null, n, "video", "end");
@@ -58577,25 +56495,25 @@ window.addEventListener("load", function (e) {
         n.bytes = t = e.data;
         e = e.result;
         e &&
-          (i(n, { hasAudio: e.hasAudio, hasVideo: e.hasVideo, isMuxed: m }),
+          (i(n, { hasAudio: e.hasAudio, hasVideo: e.hasVideo, isMuxed: f }),
           (i = null),
-          e.hasAudio && !m && f(e.audioStart),
+          e.hasAudio && !f && m(e.audioStart),
           e.hasVideo && b(e.videoStart),
-          (b = f = null)),
+          (b = m = null)),
           Bl({
             bytes: t,
             transmuxer: n.transmuxer,
             audioAppendStart: n.audioAppendStart,
             gopsToAlignWith: n.gopsToAlignWith,
-            remux: m,
+            remux: f,
             onData: function (e) {
               (e.type = "combined" === e.type ? "video" : e.type), d(n, e);
             },
             onTrackInfo: function (e) {
-              i && (m && (e.isMuxed = !0), i(n, e));
+              i && (f && (e.isMuxed = !0), i(n, e));
             },
             onAudioTimingInfo: function (e) {
-              f && "undefined" != typeof e.start && (f(e.start), (f = null)),
+              m && "undefined" != typeof e.start && (m(e.start), (m = null)),
                 g && "undefined" != typeof e.end && g(e.end);
             },
             onVideoTimingInfo: function (e) {
@@ -58628,7 +56546,7 @@ window.addEventListener("load", function (e) {
       },
     });
   }
-  function Xl(e) {
+  function Wl(e) {
     var n = e.segment,
       i = e.bytes,
       t = e.trackInfoFn,
@@ -58642,49 +56560,49 @@ window.addEventListener("load", function (e) {
       d = e.dataFn,
       h = e.doneFn,
       p = e.onTransmuxerLog,
-      m = new Uint8Array(i);
-    if (0 < ao(m, ["moof"]).length) {
+      f = new Uint8Array(i);
+    if (0 < ao(f, ["moof"]).length) {
       n.isFmp4 = !0;
-      var f = n.map.tracks,
-        g = { isFmp4: !0, hasVideo: !!f.video, hasAudio: !!f.audio };
-      f.audio &&
-        f.audio.codec &&
-        "enca" !== f.audio.codec &&
-        (g.audioCodec = f.audio.codec),
-        f.video &&
-          f.video.codec &&
-          "encv" !== f.video.codec &&
-          (g.videoCodec = f.video.codec),
-        f.video && f.audio && (g.isMuxed = !0),
+      var m = n.map.tracks,
+        g = { isFmp4: !0, hasVideo: !!m.video, hasAudio: !!m.audio };
+      m.audio &&
+        m.audio.codec &&
+        "enca" !== m.audio.codec &&
+        (g.audioCodec = m.audio.codec),
+        m.video &&
+          m.video.codec &&
+          "encv" !== m.video.codec &&
+          (g.videoCodec = m.video.codec),
+        m.video && m.audio && (g.isMuxed = !0),
         t(n, g);
       var b = function (e) {
-        d(n, { data: m, type: g.hasAudio && !g.isMuxed ? "audio" : "video" }),
+        d(n, { data: f, type: g.hasAudio && !g.isMuxed ? "audio" : "video" }),
           e && e.length && l(n, e),
           h(null, n, {});
       };
       Ul({
         action: "probeMp4StartTime",
         timescales: n.map.timescales,
-        data: m,
+        data: f,
         transmuxer: n.transmuxer,
         callback: function (e) {
           var t = e.data,
             e = e.startTime;
           (i = t.buffer),
-            (n.bytes = m = t),
+            (n.bytes = f = t),
             g.hasAudio && !g.isMuxed && r(n, "audio", "start", e),
             g.hasVideo && r(n, "video", "start", e),
-            f.video && t.byteLength && n.transmuxer
+            m.video && t.byteLength && n.transmuxer
               ? Ul({
                   action: "pushMp4Captions",
                   endAction: "mp4Captions",
                   transmuxer: n.transmuxer,
-                  data: m,
+                  data: f,
                   timescales: n.map.timescales,
-                  trackIds: [f.video.id],
+                  trackIds: [m.video.id],
                   callback: function (e) {
                     (i = e.data.buffer),
-                      (n.bytes = m = e.data),
+                      (n.bytes = f = e.data),
                       e.logs.forEach(function (e) {
                         p(w.mergeOptions(e, { stream: "mp4CaptionParser" }));
                       }),
@@ -58696,11 +56614,11 @@ window.addEventListener("load", function (e) {
       });
     } else if (n.transmuxer) {
       if (
-        ("undefined" == typeof n.container && (n.container = Do(m)),
+        ("undefined" == typeof n.container && (n.container = Do(f)),
         "ts" !== n.container && "aac" !== n.container)
       )
         return t(n, { hasAudio: !1, hasVideo: !1 }), h(null, n, {}), 0;
-      Hl({
+      ql({
         segment: n,
         bytes: i,
         trackInfoFn: t,
@@ -58717,7 +56635,7 @@ window.addEventListener("load", function (e) {
       });
     } else h(null, n, {});
   }
-  function Wl(e, n) {
+  function Xl(e, n) {
     var i = e.id,
       t = e.key,
       r = e.encryptedBytes,
@@ -58739,38 +56657,38 @@ window.addEventListener("load", function (e) {
   }
   function Yl(e) {
     var n = e.activeXhrs,
-      f = e.decryptionWorker,
+      m = e.decryptionWorker,
       g = e.trackInfoFn,
       b = e.timingInfoFn,
       v = e.videoSegmentTimingInfoFn,
       y = e.audioSegmentTimingInfoFn,
       _ = e.id3Fn,
       T = e.captionsFn,
-      O = e.isEndOfTimeline,
-      S = e.endedTimelineFn,
+      S = e.isEndOfTimeline,
+      O = e.endedTimelineFn,
       A = e.dataFn,
       w = e.doneFn,
       C = e.onTransmuxerLog,
       i = 0,
       r = !1;
-    return function (e, m) {
+    return function (e, f) {
       if (!r) {
-        if (e) return (r = !0), Vl(n), w(e, m);
+        if (e) return (r = !0), Vl(n), w(e, f);
         if ((i += 1) === n.length) {
           var t = function () {
-            if (m.encryptedBytes)
+            if (f.encryptedBytes)
               return (
                 (t = (e = {
-                  decryptionWorker: f,
-                  segment: m,
+                  decryptionWorker: m,
+                  segment: f,
                   trackInfoFn: g,
                   timingInfoFn: b,
                   videoSegmentTimingInfoFn: v,
                   audioSegmentTimingInfoFn: y,
                   id3Fn: _,
                   captionsFn: T,
-                  isEndOfTimeline: O,
-                  endedTimelineFn: S,
+                  isEndOfTimeline: S,
+                  endedTimelineFn: O,
                   dataFn: A,
                   doneFn: w,
                   onTransmuxerLog: C,
@@ -58787,7 +56705,7 @@ window.addEventListener("load", function (e) {
                 (d = e.dataFn),
                 (h = e.doneFn),
                 (p = e.onTransmuxerLog),
-                void Wl(
+                void Xl(
                   {
                     id: n.requestId,
                     key: n.key,
@@ -58796,7 +56714,7 @@ window.addEventListener("load", function (e) {
                   },
                   function (e) {
                     (n.bytes = e),
-                      Xl({
+                      Wl({
                         segment: n,
                         bytes: n.bytes,
                         trackInfoFn: i,
@@ -58815,37 +56733,37 @@ window.addEventListener("load", function (e) {
                 )
               );
             var e, t, n, i, r, a, s, o, l, u, c, d, h, p;
-            Xl({
-              segment: m,
-              bytes: m.bytes,
+            Wl({
+              segment: f,
+              bytes: f.bytes,
               trackInfoFn: g,
               timingInfoFn: b,
               videoSegmentTimingInfoFn: v,
               audioSegmentTimingInfoFn: y,
               id3Fn: _,
               captionsFn: T,
-              isEndOfTimeline: O,
-              endedTimelineFn: S,
+              isEndOfTimeline: S,
+              endedTimelineFn: O,
               dataFn: A,
               doneFn: w,
               onTransmuxerLog: C,
             });
           };
           if (
-            ((m.endOfAllRequests = Date.now()),
-            m.map && m.map.encryptedBytes && !m.map.bytes)
+            ((f.endOfAllRequests = Date.now()),
+            f.map && f.map.encryptedBytes && !f.map.bytes)
           )
-            return Wl(
+            return Xl(
               {
-                decryptionWorker: f,
-                id: m.requestId + "-init",
-                encryptedBytes: m.map.encryptedBytes,
-                key: m.map.key,
+                decryptionWorker: m,
+                id: f.requestId + "-init",
+                encryptedBytes: f.map.encryptedBytes,
+                key: f.map.key,
               },
               function (e) {
-                (m.map.bytes = e),
-                  ql(m, function (e) {
-                    return e ? (Vl(n), w(e, m)) : void t();
+                (f.map.bytes = e),
+                  Hl(f, function (e) {
+                    return e ? (Vl(n), w(e, f)) : void t();
                   });
               }
             );
@@ -58907,8 +56825,8 @@ window.addEventListener("load", function (e) {
       d = e.timingInfoFn,
       h = e.videoSegmentTimingInfoFn,
       p = e.audioSegmentTimingInfoFn,
-      m = e.id3Fn,
-      f = e.captionsFn,
+      f = e.id3Fn,
+      m = e.captionsFn,
       g = e.isEndOfTimeline,
       b = e.endedTimelineFn,
       v = e.dataFn,
@@ -58922,8 +56840,8 @@ window.addEventListener("load", function (e) {
         timingInfoFn: d,
         videoSegmentTimingInfoFn: h,
         audioSegmentTimingInfoFn: p,
-        id3Fn: m,
-        captionsFn: f,
+        id3Fn: f,
+        captionsFn: m,
         isEndOfTimeline: g,
         endedTimelineFn: b,
         dataFn: v,
@@ -58972,7 +56890,7 @@ window.addEventListener("load", function (e) {
             e = new Uint8Array(t.response);
             if (n.map.key) return (n.map.encryptedBytes = e), i(null, n);
             (n.map.bytes = e),
-              ql(n, function (e) {
+              Hl(n, function (e) {
                 return e
                   ? ((e.xhr = t), (e.status = t.status), i(e, n))
                   : void i(null, n);
@@ -58997,8 +56915,8 @@ window.addEventListener("load", function (e) {
           timingInfoFn: d,
           videoSegmentTimingInfoFn: h,
           audioSegmentTimingInfoFn: p,
-          id3Fn: m,
-          captionsFn: f,
+          id3Fn: f,
+          captionsFn: m,
           isEndOfTimeline: g,
           endedTimelineFn: b,
           dataFn: v,
@@ -59036,7 +56954,7 @@ window.addEventListener("load", function (e) {
         e.mediaGroups.AUDIO[t.AUDIO]
     );
   }
-  function Jl(e) {
+  function $l(e) {
     var i = {};
     return (
       e.forEach(function (e) {
@@ -59047,7 +56965,7 @@ window.addEventListener("load", function (e) {
       }),
       Object.keys(i).forEach(function (e) {
         return 1 < i[e].length
-          ? (ju(
+          ? (Mu(
               "multiple " +
                 e +
                 " codecs found as attributes: " +
@@ -59060,14 +56978,14 @@ window.addEventListener("load", function (e) {
       i
     );
   }
-  function $l(e) {
+  function Jl(e) {
     var t = 0;
     return e.audio && t++, e.video && t++, t;
   }
   function eu(e, t) {
     var n,
       i = t.attributes || {},
-      r = Jl(
+      r = $l(
         (function (e) {
           e = e.attributes || {};
           if (e.CODECS) return Tr(e.CODECS);
@@ -59084,7 +57002,7 @@ window.addEventListener("load", function (e) {
           for (n in i) if (!i[n].uri && !i[n].playlists) return !0;
           return !1;
         })(e, t) &&
-        (n = Jl(
+        (n = $l(
           (function (e, t) {
             if (!e.mediaGroups.AUDIO || !t) return null;
             var n,
@@ -59176,7 +57094,7 @@ window.addEventListener("load", function (e) {
               return !yu.isDisabled(e.playlist);
             })
           : u).filter(function (e) {
-          return e.bandwidth * j.BANDWIDTH_VARIANCE < t;
+          return e.bandwidth * M.BANDWIDTH_VARIANCE < t;
         }),
         c = e[e.length - 1],
         o = e.filter(function (e) {
@@ -59188,11 +57106,11 @@ window.addEventListener("load", function (e) {
           r = o ? "bandwidthBestRep" : "sortedPlaylistReps";
           return (
             u[0] && (r = "enabledPlaylistReps"),
-            Mu("choosing " + tu(d) + " using " + r + " with options", s),
+            ju("choosing " + tu(d) + " using " + r + " with options", s),
             d.playlist
           );
         }
-        return Mu("could not choose a playlist with options", s), null;
+        return ju("could not choose a playlist with options", s), null;
       }
       d = e.filter(function (e) {
         return e.width && e.height;
@@ -59202,7 +57120,7 @@ window.addEventListener("load", function (e) {
       });
       var h,
         p,
-        m,
+        f,
         e = d.filter(function (e) {
           return e.width === n && e.height === i;
         }),
@@ -59221,22 +57139,22 @@ window.addEventListener("load", function (e) {
           return e.bandwidth === c.bandwidth;
         })[0])),
         a.experimentalLeastPixelDiffSelector &&
-          ((f = d.map(function (e) {
+          ((m = d.map(function (e) {
             return (
               (e.pixelDiff = Math.abs(e.width - n) + Math.abs(e.height - i)), e
             );
           })),
-          iu(f, function (e, t) {
+          iu(m, function (e, t) {
             return e.pixelDiff === t.pixelDiff
               ? t.bandwidth - e.bandwidth
               : e.pixelDiff - t.pixelDiff;
           }),
-          (m = f[0]));
-      var f = m || p || e || o || u[0] || l[0];
-      if (f && f.playlist) {
+          (f = m[0]));
+      var m = f || p || e || o || u[0] || l[0];
+      if (m && m.playlist) {
         l = "sortedPlaylistReps";
         return (
-          m
+          f
             ? (l = "leastPixelDiffRep")
             : p
             ? (l = "resolutionPlusOneRep")
@@ -59245,11 +57163,11 @@ window.addEventListener("load", function (e) {
             : o
             ? (l = "bandwidthBestRep")
             : u[0] && (l = "enabledPlaylistReps"),
-          Mu("choosing " + tu(f) + " using " + l + " with options", s),
-          f.playlist
+          ju("choosing " + tu(m) + " using " + l + " with options", s),
+          m.playlist
         );
       }
-      return Mu("could not choose a playlist with options", s), null;
+      return ju("could not choose a playlist with options", s), null;
     }
   }
   function su(e) {
@@ -59451,8 +57369,8 @@ window.addEventListener("load", function (e) {
         ". For HLS content, a duration in excess of the target duration may result in playback issues. See the HLS specification section on EXT-X-TARGETDURATION for more details: https://tools.ietf.org/html/draft-pantos-http-live-streaming-23#section-4.3.3.1";
     return s || t ? { severity: s ? "warn" : "info", message: a } : null;
   }
-  var mu = jo,
-    fu = 9e4,
+  var fu = Mo,
+    mu = 9e4,
     gu = function (e, t) {
       if (/^[a-z]+:/i.test(t)) return t;
       /^data:/.test(e) && (e = (window.location && window.location.href) || "");
@@ -59482,7 +57400,7 @@ window.addEventListener("load", function (e) {
     vu = w.createTimeRange,
     yu = {
       liveEdgeDelay: Qo,
-      duration: Jo,
+      duration: $o,
       seekable: function (e, t, n) {
         var i = t || 0,
           n = el(e, t, !0, n);
@@ -59497,7 +57415,7 @@ window.addEventListener("load", function (e) {
             a = e.startTime,
             s = e.experimentalExactManifestTimings,
             o = n - a,
-            l = Wo(t),
+            l = Xo(t),
             u = 0,
             c = 0;
           c < l.length;
@@ -59526,7 +57444,7 @@ window.addEventListener("load", function (e) {
                 segmentIndex: p.segmentIndex,
                 startTime:
                   a -
-                  $o({
+                  Jo({
                     defaultDuration: t.targetDuration,
                     durationList: l,
                     startIndex: u,
@@ -59541,7 +57459,7 @@ window.addEventListener("load", function (e) {
           };
         }
         if (u < 0) {
-          for (var m = u; m < 0; m++)
+          for (var f = u; f < 0; f++)
             if ((o -= t.targetDuration) < 0)
               return {
                 partIndex: (l[0] && l[0].partIndex) || null,
@@ -59550,8 +57468,8 @@ window.addEventListener("load", function (e) {
               };
           u = 0;
         }
-        for (var f = u; f < l.length; f++) {
-          var g = l[f];
+        for (var m = u; m < l.length; m++) {
+          var g = l[m];
           if (((o -= g.duration), s)) {
             if (0 < o) continue;
           } else if (0 <= o - bu) continue;
@@ -59560,11 +57478,11 @@ window.addEventListener("load", function (e) {
             segmentIndex: g.segmentIndex,
             startTime:
               a +
-              $o({
+              Jo({
                 defaultDuration: t.targetDuration,
                 durationList: l,
                 startIndex: u,
-                endIndex: f,
+                endIndex: m,
               }),
           };
         }
@@ -59595,12 +57513,12 @@ window.addEventListener("load", function (e) {
       isLowestEnabledRendition: al,
       isAudioOnly: ll,
       playlistMatch: sl,
-      segmentDurationWithParts: Xo,
+      segmentDurationWithParts: Wo,
     },
     _u = w.log,
     Tu = w.mergeOptions,
     s = w.EventTarget,
-    Ou = (function (a) {
+    Su = (function (a) {
       function e(e, t, n) {
         var i;
         if ((void 0 === n && (n = {}), (i = a.call(this) || this), !e))
@@ -59718,7 +57636,7 @@ window.addEventListener("load", function (e) {
               r = e.customTagMappers,
               r = void 0 === r ? [] : r,
               e = e.experimentalLLHLS,
-              s = new jr();
+              s = new Mr();
             t && s.on("warn", t),
               n && s.on("info", n),
               a.forEach(function (e) {
@@ -59982,9 +57900,9 @@ window.addEventListener("load", function (e) {
               (this.master = e),
               hl(this.master, this.srcUri()),
               e.playlists.forEach(function (t) {
-                (t.segments = fl(t)),
+                (t.segments = ml(t)),
                   t.segments.forEach(function (e) {
-                    ml(e, t.resolvedUri);
+                    fl(e, t.resolvedUri);
                   });
               }),
               this.trigger("loadedplaylist"),
@@ -60019,7 +57937,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(s),
-    Su = w.xhr,
+    Ou = w.xhr,
     Au = w.mergeOptions,
     cn = Object.freeze({
       __proto__: null,
@@ -60037,7 +57955,7 @@ window.addEventListener("load", function (e) {
         return i;
       },
     }),
-    mr = w.EventTarget,
+    fr = w.EventTarget,
     wu = w.mergeOptions,
     Cu = (function (a) {
       function e(e, t, n, i) {
@@ -60114,7 +58032,7 @@ window.addEventListener("load", function (e) {
                   }
                   return (
                     (e[u] = { sidxInfo: a.sidx, sidx: n }),
-                    Is(a, n, a.sidx.resolvedUri),
+                    Es(a, n, a.sidx.resolvedUri),
                     r(!0)
                   );
                 }
@@ -60405,7 +58323,7 @@ window.addEventListener("load", function (e) {
                   n &&
                     n[r] &&
                     n[r].sidx &&
-                    Is(o, n[r].sidx, o.sidx.resolvedUri));
+                    Es(o, n[r].sidx, o.sidx.resolvedUri));
                 o = bl(s, o, Ll);
                 o && ((s = o), (a = !1));
               }
@@ -60510,8 +58428,8 @@ window.addEventListener("load", function (e) {
         }),
         e
       );
-    })(mr),
-    j = {
+    })(fr),
+    M = {
       GOAL_BUFFER_LENGTH: 30,
       MAX_GOAL_BUFFER_LENGTH: 60,
       BACK_BUFFER_LENGTH: 30,
@@ -60536,7 +58454,7 @@ window.addEventListener("load", function (e) {
               return n.append(t), URL.createObjectURL(n.getBlob());
             }
           })(i),
-          t = jl(new Worker(e));
+          t = Ml(new Worker(e));
         t.objURL = e;
         var n = t.terminate;
         return (
@@ -60552,7 +58470,7 @@ window.addEventListener("load", function (e) {
     he = function (e) {
       return (
         "var browserWorkerPolyFill = " +
-        jl.toString() +
+        Ml.toString() +
         ";\nbrowserWorkerPolyFill(self);\n" +
         e
       );
@@ -60648,17 +58566,17 @@ window.addEventListener("load", function (e) {
             V,
             F,
             G,
-            q,
-            z,
             H,
-            X,
+            z,
+            q,
             W,
+            X,
             Y,
             K,
             Q,
             Z,
-            J,
             $,
+            J,
             ee,
             u,
             te,
@@ -60675,8 +58593,8 @@ window.addEventListener("load", function (e) {
             de,
             he,
             pe,
-            me,
             fe,
+            me,
             ge,
             be,
             n = e,
@@ -60842,7 +58760,7 @@ window.addEventListener("load", function (e) {
             (Y = function (e) {
               return l(u.hdlr, se[e]);
             }),
-            (W = function (e) {
+            (X = function (e) {
               var t = new Uint8Array([
                 0,
                 0,
@@ -60878,8 +58796,8 @@ window.addEventListener("load", function (e) {
                 l(u.mdhd, t)
               );
             }),
-            (X = function (e) {
-              return l(u.mdia, W(e), Y(e.type), V(e));
+            (W = function (e) {
+              return l(u.mdia, X(e), Y(e.type), V(e));
             }),
             (U = function (e) {
               return l(
@@ -60904,22 +58822,22 @@ window.addEventListener("load", function (e) {
                 Q(e)
               );
             }),
-            (S = function (e, t) {
-              for (var n = [], i = t.length; i--; ) n[i] = J(t[i]);
+            (O = function (e, t) {
+              for (var n = [], i = t.length; i--; ) n[i] = $(t[i]);
               return l.apply(null, [u.moof, U(e)].concat(n));
             }),
             (F = function (e) {
               for (var t = e.length, n = []; t--; ) n[t] = z(e[t]);
               return l.apply(
                 null,
-                [u.moov, q(4294967295)].concat(n).concat(G(e))
+                [u.moov, H(4294967295)].concat(n).concat(G(e))
               );
             }),
             (G = function (e) {
-              for (var t = e.length, n = []; t--; ) n[t] = $(e[t]);
+              for (var t = e.length, n = []; t--; ) n[t] = J(e[t]);
               return l.apply(null, [u.mvex].concat(n));
             }),
-            (q = function (e) {
+            (H = function (e) {
               e = new Uint8Array([
                 0,
                 0,
@@ -61054,7 +58972,7 @@ window.addEventListener("load", function (e) {
               return l(
                 u.stsd,
                 new Uint8Array([0, 0, 0, 0, 0, 0, 0, 1]),
-                ("video" === e.type ? pe : me)(e)
+                ("video" === e.type ? pe : fe)(e)
               );
             }),
             (pe = function (e) {
@@ -61199,7 +59117,7 @@ window.addEventListener("load", function (e) {
                 l.apply(null, t)
               );
             }),
-            (me = function (e) {
+            (fe = function (e) {
               return l(
                 u.mp4a,
                 new Uint8Array([
@@ -61235,7 +59153,7 @@ window.addEventListener("load", function (e) {
                 R(e)
               );
             }),
-            (H = function (e) {
+            (q = function (e) {
               e = new Uint8Array([
                 0,
                 0,
@@ -61324,7 +59242,7 @@ window.addEventListener("load", function (e) {
               ]);
               return l(u.tkhd, e);
             }),
-            (J = function (e) {
+            ($ = function (e) {
               var t,
                 n = l(
                   u.tfhd,
@@ -61382,10 +59300,10 @@ window.addEventListener("load", function (e) {
             }),
             (z = function (e) {
               return (
-                (e.duration = e.duration || 4294967295), l(u.trak, H(e), X(e))
+                (e.duration = e.duration || 4294967295), l(u.trak, q(e), W(e))
               );
             }),
-            ($ = function (e) {
+            (J = function (e) {
               var t = new Uint8Array([
                 0,
                 0,
@@ -61414,7 +59332,7 @@ window.addEventListener("load", function (e) {
               ]);
               return "video" !== e.type && (t[t.length - 1] = 0), l(u.trex, t);
             }),
-            (fe = function (e, t) {
+            (me = function (e, t) {
               var n = 0,
                 i = 0,
                 r = 0,
@@ -61449,7 +59367,7 @@ window.addEventListener("load", function (e) {
                 s = e.samples || [];
               for (
                 t += 20 + 16 * s.length,
-                  t = fe(s, t),
+                  t = me(s, t),
                   (i = new Uint8Array(t.length + 16 * s.length)).set(t),
                   n = t.length,
                   a = 0;
@@ -61487,7 +59405,7 @@ window.addEventListener("load", function (e) {
                 s = e.samples || [];
               for (
                 t += 20 + 8 * s.length,
-                  t = fe(s, t),
+                  t = me(s, t),
                   (n = new Uint8Array(t.length + 8 * s.length)).set(t),
                   i = t.length,
                   a = 0;
@@ -61541,7 +59459,7 @@ window.addEventListener("load", function (e) {
           function Te() {
             var e, n;
             return (
-              Oe ||
+              Se ||
                 ((e = {
                   96e3: [a, [227, 64], r(154), [56]],
                   88200: [a, [231], r(170), [56]],
@@ -61602,7 +59520,7 @@ window.addEventListener("load", function (e) {
                   8e3: [Pe, r(268), [3, 121, 16], r(47), [7]],
                 }),
                 (n = e),
-                (Oe = Object.keys(n).reduce(function (e, t) {
+                (Se = Object.keys(n).reduce(function (e, t) {
                   return (
                     (e[t] = new Uint8Array(
                       n[t].reduce(function (e, t) {
@@ -61612,14 +59530,14 @@ window.addEventListener("load", function (e) {
                     e
                   );
                 }, {}))),
-              Oe
+              Se
             );
           }
-          var Oe,
-            Se = function (e) {
+          var Se,
+            Oe = function (e) {
               return l(u.mdat, e);
             },
-            Ae = S,
+            Ae = O,
             we = function (e) {
               var t = B(),
                 n = F(e),
@@ -61711,7 +59629,7 @@ window.addEventListener("load", function (e) {
                 r
               );
             },
-            Ie = function (e) {
+            Ee = function (e) {
               var t;
               return (
                 !e[0][0].keyFrame &&
@@ -61725,7 +59643,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             },
-            Ee = function (e, t) {
+            Ie = function (e, t) {
               for (var n, i, r, a = t || 0, s = [], o = 0; o < e.length; o++)
                 for (i = e[o], n = 0; n < i.length; n++)
                   (r = i[n]), (a += (r = _e(r, a)).size), s.push(r);
@@ -61763,23 +59681,23 @@ window.addEventListener("load", function (e) {
             Ne = function (e, t) {
               return e * t;
             },
-            je = function (e) {
+            Me = function (e) {
               return e / 9e4;
             },
-            Me = function (e, t) {
+            je = function (e, t) {
               return e / t;
             },
             h = 9e4,
             De = Le,
-            s = je,
+            s = Me,
             Re = function (e, t) {
-              return Le(Me(e, t));
+              return Le(je(e, t));
             },
             Be = function (e, t) {
-              return Ne(je(e), t);
+              return Ne(Me(e), t);
             },
             Ue = function (e, t, n) {
-              return je(n ? e : e - t);
+              return Me(n ? e : e - t);
             },
             Ve = function (e, t, n, i) {
               var r,
@@ -61829,7 +59747,7 @@ window.addEventListener("load", function (e) {
                 (t = e[i]), n.push({ size: t.data.byteLength, duration: 1024 });
               return n;
             },
-            qe = function (e) {
+            He = function (e) {
               for (
                 var t,
                   n = 0,
@@ -61854,7 +59772,7 @@ window.addEventListener("load", function (e) {
                 delete e.minSegmentPts,
                 delete e.maxSegmentPts;
             },
-            He = function (e, t) {
+            qe = function (e, t) {
               var n = e.minSegmentDts;
               return (
                 t || (n -= e.timelineStartInfo.dts),
@@ -61866,7 +59784,7 @@ window.addEventListener("load", function (e) {
                 t
               );
             },
-            Xe = function (e, t) {
+            We = function (e, t) {
               "number" == typeof t.pts &&
                 (void 0 === e.timelineStartInfo.pts &&
                   (e.timelineStartInfo.pts = t.pts),
@@ -61886,7 +59804,7 @@ window.addEventListener("load", function (e) {
                     ? (e.maxSegmentDts = t.dts)
                     : (e.maxSegmentDts = Math.max(e.maxSegmentDts, t.dts)));
             },
-            We = function (e) {
+            Xe = function (e) {
               for (
                 var t = 0,
                   n = { payloadType: -1, payloadSize: 0 },
@@ -61968,7 +59886,7 @@ window.addEventListener("load", function (e) {
                   new v(1, 1),
                 ]),
                 this.parse708captions_ &&
-                  (this.cc708Stream_ = new f({
+                  (this.cc708Stream_ = new m({
                     captionServices: t.captionServices,
                   })),
                 this.reset(),
@@ -61995,7 +59913,7 @@ window.addEventListener("load", function (e) {
             var t, n;
             if (
               "sei_rbsp" === e.nalUnitType &&
-              (t = We(e.escapedRBSP)).payload &&
+              (t = Xe(e.escapedRBSP)).payload &&
               t.payloadType === Ze &&
               (n = Ye(t))
             )
@@ -62085,7 +60003,7 @@ window.addEventListener("load", function (e) {
           function d(e) {
             (this.windowNum = e), this.reset();
           }
-          var Je = {
+          var $e = {
             127: 9834,
             4128: 32,
             4129: 160,
@@ -62168,7 +60086,7 @@ window.addEventListener("load", function (e) {
                 ((e = this.rows[this.rowIdx]),
                 (this.rows[this.rowIdx] = e.substr(0, e.length - 1)));
             });
-          function m(e, t, n) {
+          function f(e, t, n) {
             (this.serviceNum = e),
               (this.text = ""),
               (this.currentWindow = new d(-1)),
@@ -62176,17 +60094,17 @@ window.addEventListener("load", function (e) {
               (this.stream = n),
               "string" == typeof t && this.createTextDecoder(t);
           }
-          (m.prototype.init = function (e, t) {
+          (f.prototype.init = function (e, t) {
             this.startPts = e;
             for (var n = 0; n < 8; n++)
               (this.windows[n] = new d(n)),
                 "function" == typeof t &&
                   (this.windows[n].beforeRowOverflow = t);
           }),
-            (m.prototype.setCurrentWindow = function (e) {
+            (f.prototype.setCurrentWindow = function (e) {
               this.currentWindow = this.windows[e];
             }),
-            (m.prototype.createTextDecoder = function (t) {
+            (f.prototype.createTextDecoder = function (t) {
               if ("undefined" == typeof TextDecoder)
                 this.stream.trigger("log", {
                   level: "warn",
@@ -62207,7 +60125,7 @@ window.addEventListener("load", function (e) {
                   });
                 }
             });
-          var f = function e(t) {
+          var m = function e(t) {
             (t = t || {}), e.prototype.init.call(this);
             var n,
               i = this,
@@ -62225,12 +60143,12 @@ window.addEventListener("load", function (e) {
                   i.add708Bytes(e);
               });
           };
-          (f.prototype = new n()),
-            (f.prototype.new708Packet = function () {
+          (m.prototype = new n()),
+            (m.prototype.new708Packet = function () {
               null !== this.current708Packet && this.push708Packet(),
                 (this.current708Packet = { data: [], ptsVals: [] });
             }),
-            (f.prototype.add708Bytes = function (e) {
+            (m.prototype.add708Bytes = function (e) {
               var t = e.ccData,
                 n = t >>> 8,
                 t = 255 & t;
@@ -62238,7 +60156,7 @@ window.addEventListener("load", function (e) {
                 this.current708Packet.data.push(n),
                 this.current708Packet.data.push(t);
             }),
-            (f.prototype.push708Packet = function () {
+            (m.prototype.push708Packet = function () {
               var e,
                 t = this.current708Packet,
                 n = t.data,
@@ -62251,7 +60169,7 @@ window.addEventListener("load", function (e) {
                   this.pushServiceBlock(i, r, e),
                   0 < e && (r += e - 1);
             }),
-            (f.prototype.pushServiceBlock = function (e, t, n) {
+            (m.prototype.pushServiceBlock = function (e, t, n) {
               for (
                 var i,
                   r = t,
@@ -62301,27 +60219,27 @@ window.addEventListener("load", function (e) {
                     ? s.currentWindow.clearText()
                     : 141 === i && r++;
             }),
-            (f.prototype.extendedCommands = function (e, t) {
+            (m.prototype.extendedCommands = function (e, t) {
               var n = this.current708Packet.data[++e];
               return (e = c(n) ? this.handleText(e, t, { isExtended: !0 }) : e);
             }),
-            (f.prototype.getPts = function (e) {
+            (m.prototype.getPts = function (e) {
               return this.current708Packet.ptsVals[Math.floor(e / 2)];
             }),
-            (f.prototype.initService = function (t, e) {
+            (m.prototype.initService = function (t, e) {
               var n,
                 i = "SERVICE" + t,
                 r = this;
               return (
                 i in this.serviceEncodings && (n = this.serviceEncodings[i]),
-                (this.services[t] = new m(t, n, r)),
+                (this.services[t] = new f(t, n, r)),
                 this.services[t].init(this.getPts(e), function (e) {
                   r.flushDisplayed(e, r.services[t]);
                 }),
                 this.services[t]
               );
             }),
-            (f.prototype.handleText = function (e, t, n) {
+            (m.prototype.handleText = function (e, t, n) {
               var i,
                 r = n && n.isExtended,
                 a = n && n.isMultiByte,
@@ -62334,7 +60252,7 @@ window.addEventListener("load", function (e) {
                   t.textDecoder_ && !r
                     ? (a ? ((i = [l, n]), e++) : (i = [l]),
                       t.textDecoder_.decode(new Uint8Array(i)))
-                    : ((u = Je[(l = o | l)] || l),
+                    : ((u = $e[(l = o | l)] || l),
                       4096 & l && l === u ? "" : String.fromCharCode(u));
               return (
                 s.pendingNewLine && !s.isEmpty() && s.newLine(this.getPts(e)),
@@ -62343,7 +60261,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.multiByteCharacter = function (e, t) {
+            (m.prototype.multiByteCharacter = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e + 1],
                 n = n[e + 2];
@@ -62352,11 +60270,11 @@ window.addEventListener("load", function (e) {
                   ? this.handleText(++e, t, { isMultiByte: !0 })
                   : e);
             }),
-            (f.prototype.setCurrentWindow = function (e, t) {
+            (m.prototype.setCurrentWindow = function (e, t) {
               var n = this.current708Packet.data[e];
               return t.setCurrentWindow(7 & n), e;
             }),
-            (f.prototype.defineWindow = function (e, t) {
+            (m.prototype.defineWindow = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e];
               t.setCurrentWindow(7 & i);
@@ -62383,7 +60301,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.setWindowAttributes = function (e, t) {
+            (m.prototype.setWindowAttributes = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e],
                 t = t.currentWindow.winAttr,
@@ -62411,7 +60329,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.flushDisplayed = function (e, t) {
+            (m.prototype.flushDisplayed = function (e, t) {
               for (var n = [], i = 0; i < 8; i++)
                 t.windows[i].visible &&
                   !t.windows[i].isEmpty() &&
@@ -62421,7 +60339,7 @@ window.addEventListener("load", function (e) {
                 this.pushCaption(t),
                 (t.startPts = e);
             }),
-            (f.prototype.pushCaption = function (e) {
+            (m.prototype.pushCaption = function (e) {
               "" !== e.text &&
                 (this.trigger("data", {
                   startPts: e.startPts,
@@ -62432,7 +60350,7 @@ window.addEventListener("load", function (e) {
                 (e.text = ""),
                 (e.startPts = e.endPts));
             }),
-            (f.prototype.displayWindows = function (e, t) {
+            (m.prototype.displayWindows = function (e, t) {
               var n = this.current708Packet.data[++e],
                 i = this.getPts(e);
               this.flushDisplayed(i, t);
@@ -62440,7 +60358,7 @@ window.addEventListener("load", function (e) {
                 n & (1 << r) && (t.windows[r].visible = 1);
               return e;
             }),
-            (f.prototype.hideWindows = function (e, t) {
+            (m.prototype.hideWindows = function (e, t) {
               var n = this.current708Packet.data[++e],
                 i = this.getPts(e);
               this.flushDisplayed(i, t);
@@ -62448,7 +60366,7 @@ window.addEventListener("load", function (e) {
                 n & (1 << r) && (t.windows[r].visible = 0);
               return e;
             }),
-            (f.prototype.toggleWindows = function (e, t) {
+            (m.prototype.toggleWindows = function (e, t) {
               var n = this.current708Packet.data[++e],
                 i = this.getPts(e);
               this.flushDisplayed(i, t);
@@ -62456,7 +60374,7 @@ window.addEventListener("load", function (e) {
                 n & (1 << r) && (t.windows[r].visible ^= 1);
               return e;
             }),
-            (f.prototype.clearWindows = function (e, t) {
+            (m.prototype.clearWindows = function (e, t) {
               var n = this.current708Packet.data[++e],
                 i = this.getPts(e);
               this.flushDisplayed(i, t);
@@ -62464,14 +60382,14 @@ window.addEventListener("load", function (e) {
                 n & (1 << r) && t.windows[r].clearText();
               return e;
             }),
-            (f.prototype.deleteWindows = function (e, t) {
+            (m.prototype.deleteWindows = function (e, t) {
               var n = this.current708Packet.data[++e],
                 i = this.getPts(e);
               this.flushDisplayed(i, t);
               for (var r = 0; r < 8; r++) n & (1 << r) && t.windows[r].reset();
               return e;
             }),
-            (f.prototype.setPenAttributes = function (e, t) {
+            (m.prototype.setPenAttributes = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e],
                 t = t.currentWindow.penAttr,
@@ -62488,7 +60406,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.setPenColor = function (e, t) {
+            (m.prototype.setPenColor = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e],
                 t = t.currentWindow.penColor,
@@ -62510,7 +60428,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.setPenLocation = function (e, t) {
+            (m.prototype.setPenLocation = function (e, t) {
               var n = this.current708Packet.data,
                 i = n[e],
                 r = t.currentWindow.penLoc;
@@ -62523,20 +60441,20 @@ window.addEventListener("load", function (e) {
                 e
               );
             }),
-            (f.prototype.reset = function (e, t) {
+            (m.prototype.reset = function (e, t) {
               var n = this.getPts(e);
               return (
                 this.flushDisplayed(n, t), this.initService(t.serviceNum, e)
               );
             });
           function g(e) {
-            return null === e ? "" : ((e = $e[e] || e), String.fromCharCode(e));
+            return null === e ? "" : ((e = Je[e] || e), String.fromCharCode(e));
           }
           function b() {
             for (var e = [], t = 15; t--; ) e.push("");
             return e;
           }
-          var $e = {
+          var Je = {
               42: 225,
               92: 233,
               94: 237,
@@ -62887,7 +60805,7 @@ window.addEventListener("load", function (e) {
               e += 8589934592 * n;
             return e;
           }
-          var y = { CaptionStream: o, Cea608Stream: v, Cea708Stream: f },
+          var y = { CaptionStream: o, Cea608Stream: v, Cea708Stream: m },
             _ = {
               H264_STREAM_TYPE: 27,
               ADTS_STREAM_TYPE: 15,
@@ -62927,10 +60845,10 @@ window.addEventListener("load", function (e) {
           function T(e, t, n) {
             return decodeURIComponent(nt(e, t, n));
           }
-          function O(e) {
+          function S(e) {
             return (e[0] << 21) | (e[1] << 14) | (e[2] << 7) | e[3];
           }
-          var S = e,
+          var O = e,
             o = tt,
             it = {
               TXXX: function (e) {
@@ -63002,7 +60920,7 @@ window.addEventListener("load", function (e) {
                     (u.push(e),
                     (c += e.data.byteLength),
                     1 === u.length &&
-                      ((l = O(e.data.subarray(6, 10))), (l += 10)),
+                      ((l = S(e.data.subarray(6, 10))), (l += 10)),
                     !(c < l))
                   ) {
                     for (
@@ -63023,10 +60941,10 @@ window.addEventListener("load", function (e) {
                     (n = 10),
                       64 & t.data[5] &&
                         ((n += 4),
-                        (n += O(t.data.subarray(10, 14))),
-                        (l -= O(t.data.subarray(16, 20))));
+                        (n += S(t.data.subarray(10, 14))),
+                        (l -= S(t.data.subarray(16, 20))));
                     do {
-                      if ((i = O(t.data.subarray(n + 4, n + 8))) < 1)
+                      if ((i = S(t.data.subarray(n + 4, n + 8))) < 1)
                         return void this.trigger("log", {
                           level: "warn",
                           message:
@@ -63071,7 +60989,7 @@ window.addEventListener("load", function (e) {
           var A,
             at,
             e = rt,
-            S = S,
+            O = O,
             st = function () {
               var r = new Uint8Array(188),
                 a = 0;
@@ -63338,7 +61256,7 @@ window.addEventListener("load", function (e) {
               TransportPacketStream: st,
               TransportParseStream: A,
               ElementaryStream: at,
-              TimestampRolloverStream: S,
+              TimestampRolloverStream: O,
               CaptionStream: y.CaptionStream,
               Cea608Stream: y.Cea608Stream,
               Cea708Stream: y.Cea708Stream,
@@ -63436,7 +61354,7 @@ window.addEventListener("load", function (e) {
           var dt,
             ht,
             pt = ct,
-            mt = function (i) {
+            ft = function (i) {
               var r = i.byteLength,
                 a = 0,
                 s = 0;
@@ -63594,7 +61512,7 @@ window.addEventListener("load", function (e) {
                 a,
                 s,
                 o,
-                f,
+                m,
                 t = new x();
               dt.prototype.init.call(this),
                 ((n = this).push = function (e) {
@@ -63655,7 +61573,7 @@ window.addEventListener("load", function (e) {
                 (this.endTimeline = function () {
                   t.endTimeline();
                 }),
-                (f = function (e, t) {
+                (m = function (e, t) {
                   for (var n = 8, i = 8, r = 0; r < e; r++)
                     n =
                       0 ===
@@ -63688,10 +61606,10 @@ window.addEventListener("load", function (e) {
                     l = 0,
                     u = 0,
                     c = [1, 1],
-                    d = new mt(e),
+                    d = new ft(e),
                     h = d.readUnsignedByte(),
                     p = d.readUnsignedByte(),
-                    m = d.readUnsignedByte();
+                    f = d.readUnsignedByte();
                   if (
                     (d.skipUnsignedExpGolomb(),
                     ht[h] &&
@@ -63702,7 +61620,7 @@ window.addEventListener("load", function (e) {
                       d.readBoolean()))
                   )
                     for (r = 3 !== n ? 8 : 12, a = 0; a < r; a++)
-                      d.readBoolean() && f(a < 6 ? 16 : 64, d);
+                      d.readBoolean() && m(a < 6 ? 16 : 64, d);
                   if (
                     (d.skipUnsignedExpGolomb(),
                     0 === (i = d.readUnsignedExpGolomb()))
@@ -63792,7 +61710,7 @@ window.addEventListener("load", function (e) {
                   }
                   return {
                     profileIdc: h,
-                    levelIdc: m,
+                    levelIdc: f,
                     profileCompatibility: p,
                     width: 16 * (e + 1) - 2 * s - 2 * o,
                     height: (2 - i) * (n + 1) * 16 - 2 * l - 2 * u,
@@ -63800,7 +61718,7 @@ window.addEventListener("load", function (e) {
                   };
                 });
             }).prototype = new n());
-          function ft(e, t) {
+          function mt(e, t) {
             var n =
               0 <=
               (n =
@@ -63818,7 +61736,7 @@ window.addEventListener("load", function (e) {
               e[t + 1] !== "D".charCodeAt(0) ||
               e[t + 2] !== "3".charCodeAt(0)
               ? t
-              : gt(e, (t += ft(e, t)));
+              : gt(e, (t += mt(e, t)));
           }
           function bt(e) {
             return (e[0] << 21) | (e[1] << 14) | (e[2] << 7) | e[3];
@@ -63838,7 +61756,7 @@ window.addEventListener("load", function (e) {
                   16 == (22 & e[t + 1])
                 );
               },
-              parseId3TagSize: ft,
+              parseId3TagSize: mt,
               parseAdtsSize: function (e, t) {
                 var n = (224 & e[t + 5]) >> 5,
                   i = e[t + 4] << 3;
@@ -63966,7 +61884,7 @@ window.addEventListener("load", function (e) {
           function Tt(e, t) {
             (t.stream = e), this.trigger("log", t);
           }
-          function Ot(e, t) {
+          function St(e, t) {
             for (var n = Object.keys(t), i = 0; i < n.length; i++) {
               var r = n[i];
               "headOfPipeline" !== r &&
@@ -63974,7 +61892,7 @@ window.addEventListener("load", function (e) {
                 t[r].on("log", Tt.bind(e, r));
             }
           }
-          function St(e, t) {
+          function Ot(e, t) {
             var n;
             if (e.length === t.length) {
               for (n = 0; n < e.length; n++) if (e[n] !== t[n]) return;
@@ -63991,16 +61909,16 @@ window.addEventListener("load", function (e) {
           }
           var wt,
             Ct,
-            I,
+            E,
             xt = _t,
-            It = [
+            Et = [
               "audioobjecttype",
               "channelcount",
               "samplerate",
               "samplingfrequencyindex",
               "samplesize",
             ],
-            Et = [
+            It = [
               "width",
               "height",
               "profileIdc",
@@ -64011,17 +61929,17 @@ window.addEventListener("load", function (e) {
             kt = e.H264Stream,
             Pt = yt.isLikelyAacData,
             Lt = h,
-            E = function (a, s) {
+            I = function (a, s) {
               var o = [],
                 l = 0,
                 u = 0,
                 c = 1 / 0,
                 d = (s = s || {}).firstSequenceNumber || 0;
-              E.prototype.init.call(this),
+              I.prototype.init.call(this),
                 (this.push = function (t) {
-                  Xe(a, t),
+                  We(a, t),
                     a &&
-                      It.forEach(function (e) {
+                      Et.forEach(function (e) {
                         a[e] = t[e];
                       }),
                     o.push(t);
@@ -64039,10 +61957,10 @@ window.addEventListener("load", function (e) {
                   var e, t, n, i, r;
                   0 !== o.length &&
                     ((e = Fe(o, a, l)),
-                    (a.baseMediaDecodeTime = He(a, s.keepOriginalTimestamps)),
+                    (a.baseMediaDecodeTime = qe(a, s.keepOriginalTimestamps)),
                     (r = Ve(a, e, u, c)),
                     (a.samples = Ge(e)),
-                    (t = Se(qe(e))),
+                    (t = Oe(He(e))),
                     (o = []),
                     (i = Ae(d, [a])),
                     (n = new Uint8Array(i.byteLength + t.byteLength)),
@@ -64075,7 +61993,7 @@ window.addEventListener("load", function (e) {
                   p(a), (o = []), this.trigger("reset");
                 });
             };
-          (E.prototype = new n()),
+          (I.prototype = new n()),
             ((wt = function (s, a) {
               var t,
                 n,
@@ -64086,12 +62004,12 @@ window.addEventListener("load", function (e) {
                 delete s.minPTS,
                 (this.gopCache_ = []),
                 (this.push = function (e) {
-                  Xe(s, e),
+                  We(s, e),
                     "seq_parameter_set_rbsp" !== e.nalUnitType ||
                       t ||
                       ((t = e.config),
                       (s.sps = [e.data]),
-                      Et.forEach(function (e) {
+                      It.forEach(function (e) {
                         s[e] = t[e];
                       }, this)),
                     "pic_parameter_set_rbsp" !== e.nalUnitType ||
@@ -64123,7 +62041,7 @@ window.addEventListener("load", function (e) {
                           (t.pts = n.pts),
                           (t.dts = n.dts),
                           (t.duration += n.duration))
-                        : (t = Ie(t))),
+                        : (t = Ee(t))),
                     u.length)
                   ) {
                     var r = a.alignGopsAtEnd
@@ -64146,10 +62064,10 @@ window.addEventListener("load", function (e) {
                       );
                     p(s), (t = r);
                   }
-                  Xe(s, t),
-                    (s.samples = Ee(t)),
-                    (e = Se(ke(t))),
-                    (s.baseMediaDecodeTime = He(s, a.keepOriginalTimestamps)),
+                  We(s, t),
+                    (s.samples = Ie(t)),
+                    (e = Oe(ke(t))),
+                    (s.baseMediaDecodeTime = qe(s, a.keepOriginalTimestamps)),
                     this.trigger(
                       "processedGopsInfo",
                       t.map(function (e) {
@@ -64216,9 +62134,9 @@ window.addEventListener("load", function (e) {
                   )
                     (n = (i = this.gopCache_[a]).gop),
                       s.pps &&
-                        St(s.pps[0], i.pps[0]) &&
+                        Ot(s.pps[0], i.pps[0]) &&
                         s.sps &&
-                        St(s.sps[0], i.sps[0]) &&
+                        Ot(s.sps[0], i.sps[0]) &&
                         (n.dts < s.timelineStartInfo.dts ||
                           (-1e4 <= (n = e.dts - n.dts - n.duration) &&
                             n <= 45e3 &&
@@ -64302,7 +62220,7 @@ window.addEventListener("load", function (e) {
                   u = e;
                 });
             }).prototype = new n()),
-            ((I = function (e, t) {
+            ((E = function (e, t) {
               (this.numberOfTracks = 0),
                 (this.metadataStream = t),
                 "undefined" != typeof (e = e || {}).remux
@@ -64318,7 +62236,7 @@ window.addEventListener("load", function (e) {
                 (this.pendingMetadata = []),
                 (this.pendingBytes = 0),
                 (this.emittedTracks = 0),
-                I.prototype.init.call(this),
+                E.prototype.init.call(this),
                 (this.push = function (e) {
                   return e.text
                     ? this.pendingCaptions.push(e)
@@ -64336,7 +62254,7 @@ window.addEventListener("load", function (e) {
                       ));
                 });
             }).prototype = new n()),
-            (I.prototype.flush = function (e) {
+            (E.prototype.flush = function (e) {
               var t,
                 n,
                 i,
@@ -64364,12 +62282,12 @@ window.addEventListener("load", function (e) {
               if (
                 (this.videoTrack
                   ? ((s = this.videoTrack.timelineStartInfo.pts),
-                    Et.forEach(function (e) {
+                    It.forEach(function (e) {
                       a.info[e] = this.videoTrack[e];
                     }, this))
                   : this.audioTrack &&
                     ((s = this.audioTrack.timelineStartInfo.pts),
-                    It.forEach(function (e) {
+                    Et.forEach(function (e) {
                       a.info[e] = this.audioTrack[e];
                     }, this)),
                 this.videoTrack || this.audioTrack)
@@ -64425,7 +62343,7 @@ window.addEventListener("load", function (e) {
               this.emittedTracks >= this.numberOfTracks &&
                 (this.trigger("done"), (this.emittedTracks = 0));
             }),
-            (I.prototype.setRemux = function (e) {
+            (E.prototype.setRemux = function (e) {
               this.remuxTracks = e;
             }),
             ((Ct = function (i) {
@@ -64447,7 +62365,7 @@ window.addEventListener("load", function (e) {
                     (t.timedMetadataTimestampRolloverStream =
                       new C.TimestampRolloverStream("timed-metadata")),
                     (t.adtsStream = new pt()),
-                    (t.coalesceStream = new I(i, t.metadataStream)),
+                    (t.coalesceStream = new E(i, t.metadataStream)),
                     (t.headOfPipeline = t.aacStream),
                     t.aacStream
                       .pipe(t.audioTimestampRolloverStream)
@@ -64470,7 +62388,7 @@ window.addEventListener("load", function (e) {
                           type: "audio",
                         }),
                         t.coalesceStream.numberOfTracks++,
-                        (t.audioSegmentStream = new E(a, i)),
+                        (t.audioSegmentStream = new I(a, i)),
                         t.audioSegmentStream.on(
                           "log",
                           s.getLogTrigger_("audioSegmentStream")
@@ -64495,7 +62413,7 @@ window.addEventListener("load", function (e) {
                       "done",
                       this.trigger.bind(this, "done")
                     ),
-                    Ot(this, t);
+                    St(this, t);
                 }),
                 (this.setupTsPipeline = function () {
                   var n = {};
@@ -64509,7 +62427,7 @@ window.addEventListener("load", function (e) {
                     (n.adtsStream = new pt()),
                     (n.h264Stream = new kt()),
                     (n.captionStream = new C.CaptionStream(i)),
-                    (n.coalesceStream = new I(i, n.metadataStream)),
+                    (n.coalesceStream = new E(i, n.metadataStream)),
                     (n.headOfPipeline = n.packetStream),
                     n.packetStream
                       .pipe(n.parseStream)
@@ -64584,7 +62502,7 @@ window.addEventListener("load", function (e) {
                           a &&
                             !n.audioSegmentStream &&
                             (n.coalesceStream.numberOfTracks++,
-                            (n.audioSegmentStream = new E(a, i)),
+                            (n.audioSegmentStream = new I(a, i)),
                             n.audioSegmentStream.on(
                               "log",
                               s.getLogTrigger_("audioSegmentStream")
@@ -64622,7 +62540,7 @@ window.addEventListener("load", function (e) {
                       "done",
                       this.trigger.bind(this, "done")
                     ),
-                    Ot(this, n);
+                    St(this, n);
                 }),
                 (this.setBaseMediaDecodeTime = function (e) {
                   var t = this.transmuxPipeline_;
@@ -64710,7 +62628,7 @@ window.addEventListener("load", function (e) {
                   s = e.mdat,
                   o = e.traf,
                   l = P(o, ["tfhd"]),
-                  u = Ht(l[0]),
+                  u = qt(l[0]),
                   e = u.trackId,
                   l = P(o, ["tfdt"]),
                   l = 0 < l.length ? Gt(l[0]).baseMediaDecodeTime : 0,
@@ -64733,8 +62651,8 @@ window.addEventListener("load", function (e) {
                         void 0 === e.compositionTimeOffset &&
                           (e.compositionTimeOffset = 0),
                         "bigint" == typeof t
-                          ? ((e.pts = t + Xt.BigInt(e.compositionTimeOffset)),
-                            (t += Xt.BigInt(e.duration)))
+                          ? ((e.pts = t + Wt.BigInt(e.compositionTimeOffset)),
+                            (t += Wt.BigInt(e.duration)))
                           : ((e.pts = t + e.compositionTimeOffset),
                             (t += e.duration));
                     }),
@@ -64766,7 +62684,7 @@ window.addEventListener("load", function (e) {
                                 nalUnitType: "sei_rbsp",
                                 size: i,
                                 data: l,
-                                escapedRBSP: Wt(l),
+                                escapedRBSP: Xt(l),
                                 trackId: n,
                               };
                             if (u) (l.pts = u.pts), (l.dts = u.dts), (r = u);
@@ -64796,11 +62714,11 @@ window.addEventListener("load", function (e) {
               d
             );
           }
-          function jt(e) {
+          function Mt(e) {
             var t = 31 & e[1];
             return (t <<= 8), (t |= e[2]);
           }
-          function Mt(e) {
+          function jt(e) {
             return !!(64 & e[1]);
           }
           function Dt(e) {
@@ -64826,9 +62744,9 @@ window.addEventListener("load", function (e) {
           var Bt = {
               Transmuxer: Ct,
               VideoSegmentStream: wt,
-              AudioSegmentStream: E,
-              AUDIO_PROPERTIES: It,
-              VIDEO_PROPERTIES: Et,
+              AudioSegmentStream: I,
+              AUDIO_PROPERTIES: Et,
+              VIDEO_PROPERTIES: It,
               generateSegmentTimingInfo: At,
             },
             e = function (e) {
@@ -64880,7 +62798,7 @@ window.addEventListener("load", function (e) {
                 t
               );
             },
-            qt = function (e) {
+            Ht = function (e) {
               return {
                 isLeading: (12 & e[0]) >>> 2,
                 dependsOn: 3 & e[0],
@@ -64911,7 +62829,7 @@ window.addEventListener("load", function (e) {
                 r && ((n.dataOffset = i.getInt32(d)), (d += 4)),
                   a &&
                     c &&
-                    ((t = { flags: qt(e.subarray(d, d + 4)) }),
+                    ((t = { flags: Ht(e.subarray(d, d + 4)) }),
                     (d += 4),
                     s && ((t.duration = i.getUint32(d)), (d += 4)),
                     o && ((t.size = i.getUint32(d)), (d += 4)),
@@ -64928,7 +62846,7 @@ window.addEventListener("load", function (e) {
                 (t = {}),
                   s && ((t.duration = i.getUint32(d)), (d += 4)),
                   o && ((t.size = i.getUint32(d)), (d += 4)),
-                  l && ((t.flags = qt(e.subarray(d, d + 4))), (d += 4)),
+                  l && ((t.flags = Ht(e.subarray(d, d + 4))), (d += 4)),
                   u &&
                     (1 === n.version
                       ? (t.compositionTimeOffset = i.getInt32(d))
@@ -64937,7 +62855,7 @@ window.addEventListener("load", function (e) {
                   n.samples.push(t);
               return n;
             },
-            Ht = function (e) {
+            qt = function (e) {
               var t = new DataView(e.buffer, e.byteOffset, e.byteLength),
                 n = {
                   version: e[0],
@@ -64981,8 +62899,8 @@ window.addEventListener("load", function (e) {
                 : "undefined" != typeof self
                 ? self
                 : {},
-            Xt = n,
-            Wt = Qe,
+            Wt = n,
+            Xt = Qe,
             Yt = y.CaptionStream,
             Kt = function () {
               var t,
@@ -65115,7 +63033,7 @@ window.addEventListener("load", function (e) {
                   t = 1 === r[0] ? Zt(r.subarray(4, 12)) : t.getUint32(4);
                 return (
                   "bigint" == typeof t
-                    ? (n = t / Xt.BigInt(i))
+                    ? (n = t / Wt.BigInt(i))
                     : "number" != typeof t || isNaN(t) || (n = t / i),
                   (e =
                     (n = n < Number.MAX_SAFE_INTEGER ? Number(n) : n) < e
@@ -65150,7 +63068,7 @@ window.addEventListener("load", function (e) {
                 i
               );
             },
-            Jt = function (e) {
+            $t = function (e) {
               var t = 0 === e[0] ? 12 : 20;
               return Qt(
                 (e[t] << 24) | (e[1 + t] << 16) | (e[2 + t] << 8) | e[3 + t]
@@ -65200,28 +63118,28 @@ window.addEventListener("load", function (e) {
                             : (t.codec = "mp4a.40.2"))
                         : (t.codec = t.codec.toLowerCase())));
                   e = P(e, ["mdia", "mdhd"])[0];
-                  e && (t.timescale = Jt(e)), s.push(t);
+                  e && (t.timescale = $t(e)), s.push(t);
                 }),
                 s
               );
             },
-            $t = Qe,
+            Jt = Qe,
             en = i,
             N = o,
-            j = {};
-          (j.ts = {
+            M = {};
+          (M.ts = {
             parseType: function (e, t) {
-              e = jt(e);
+              e = Mt(e);
               return 0 === e ? "pat" : e === t ? "pmt" : t ? "pes" : null;
             },
             parsePat: function (e) {
-              var t = Mt(e),
+              var t = jt(e),
                 n = 4 + Dt(e);
               return t && (n += e[n] + 1), ((31 & e[n + 10]) << 8) | e[n + 11];
             },
             parsePmt: function (e) {
               var t = {},
-                n = Mt(e),
+                n = jt(e),
                 i = 4 + Dt(e);
               if ((n && (i += e[i] + 1), 1 & e[i + 5])) {
                 for (
@@ -65237,9 +63155,9 @@ window.addEventListener("load", function (e) {
                 return t;
               }
             },
-            parsePayloadUnitStartIndicator: Mt,
+            parsePayloadUnitStartIndicator: jt,
             parsePesType: function (e, t) {
-              switch (t[jt(e)]) {
+              switch (t[Mt(e)]) {
                 case _.H264_STREAM_TYPE:
                   return "video";
                 case _.ADTS_STREAM_TYPE:
@@ -65251,7 +63169,7 @@ window.addEventListener("load", function (e) {
               }
             },
             parsePesTime: function (e) {
-              if (!Mt(e)) return null;
+              if (!jt(e)) return null;
               var t = 4 + Dt(e);
               if (t >= e.byteLength) return null;
               var n = null,
@@ -65337,19 +63255,19 @@ window.addEventListener("load", function (e) {
               );
             },
           }),
-            (j.aac = yt);
+            (M.aac = yt);
           function tn(e, t, n) {
             for (var i, r, a, s, o = 0, l = 188, u = !1; l <= e.byteLength; )
               if (71 !== e[o] || (71 !== e[l] && l !== e.byteLength)) o++, l++;
               else {
                 if (
                   ((i = e.subarray(o, l)),
-                  "pes" === j.ts.parseType(i, t.pid) &&
-                    ((r = j.ts.parsePesType(i, t.table)),
-                    (a = j.ts.parsePayloadUnitStartIndicator(i)),
+                  "pes" === M.ts.parseType(i, t.pid) &&
+                    ((r = M.ts.parsePesType(i, t.table)),
+                    (a = M.ts.parsePayloadUnitStartIndicator(i)),
                     "audio" === r &&
                       a &&
-                      (s = j.ts.parsePesTime(i)) &&
+                      (s = M.ts.parsePesTime(i)) &&
                       ((s.type = "audio"), n.audio.push(s), (u = !0))),
                   u)
                 )
@@ -65361,12 +63279,12 @@ window.addEventListener("load", function (e) {
               else {
                 if (
                   ((i = e.subarray(o, l)),
-                  "pes" === j.ts.parseType(i, t.pid) &&
-                    ((r = j.ts.parsePesType(i, t.table)),
-                    (a = j.ts.parsePayloadUnitStartIndicator(i)),
+                  "pes" === M.ts.parseType(i, t.pid) &&
+                    ((r = M.ts.parsePesType(i, t.table)),
+                    (a = M.ts.parsePayloadUnitStartIndicator(i)),
                     "audio" === r &&
                       a &&
-                      (s = j.ts.parsePesTime(i)) &&
+                      (s = M.ts.parsePesTime(i)) &&
                       ((s.type = "audio"), n.audio.push(s), (u = !0))),
                   u)
                 )
@@ -65382,12 +63300,12 @@ window.addEventListener("load", function (e) {
               for (var n, i = 0, r = 188; r < e.byteLength; )
                 if (71 !== e[i] || 71 !== e[r]) i++, r++;
                 else {
-                  switch (((n = e.subarray(i, r)), j.ts.parseType(n, t.pid))) {
+                  switch (((n = e.subarray(i, r)), M.ts.parseType(n, t.pid))) {
                     case "pat":
-                      t.pid = j.ts.parsePat(n);
+                      t.pid = M.ts.parsePat(n);
                       break;
                     case "pmt":
-                      var a = j.ts.parsePmt(n);
+                      var a = M.ts.parsePmt(n);
                       (t.table = t.table || {}),
                         Object.keys(a).forEach(function (e) {
                           t.table[e] = a[e];
@@ -65414,7 +63332,7 @@ window.addEventListener("load", function (e) {
                             d = 0,
                             h = 188,
                             p = !1,
-                            m = { data: [], size: 0 };
+                            f = { data: [], size: 0 };
                           h < e.byteLength;
 
                         )
@@ -65422,36 +63340,36 @@ window.addEventListener("load", function (e) {
                           else {
                             if (
                               ((i = e.subarray(d, h)),
-                              "pes" === j.ts.parseType(i, t.pid))
+                              "pes" === M.ts.parseType(i, t.pid))
                             )
                               if (
-                                ((r = j.ts.parsePesType(i, t.table)),
-                                (a = j.ts.parsePayloadUnitStartIndicator(i)),
+                                ((r = M.ts.parsePesType(i, t.table)),
+                                (a = M.ts.parsePayloadUnitStartIndicator(i)),
                                 "video" === r &&
                                   (a &&
                                     !p &&
-                                    (s = j.ts.parsePesTime(i)) &&
+                                    (s = M.ts.parsePesTime(i)) &&
                                     ((s.type = "video"),
                                     n.video.push(s),
                                     (p = !0)),
                                   !n.firstKeyFrame))
                               ) {
-                                if (a && 0 !== m.size) {
+                                if (a && 0 !== f.size) {
                                   for (
-                                    o = new Uint8Array(m.size), l = 0;
-                                    m.data.length;
+                                    o = new Uint8Array(f.size), l = 0;
+                                    f.data.length;
 
                                   )
-                                    (u = m.data.shift()),
+                                    (u = f.data.shift()),
                                       o.set(u, l),
                                       (l += u.byteLength);
-                                  !j.ts.videoPacketContainsKeyFrame(o) ||
-                                    ((c = j.ts.parsePesTime(o)) &&
+                                  !M.ts.videoPacketContainsKeyFrame(o) ||
+                                    ((c = M.ts.parsePesTime(o)) &&
                                       ((n.firstKeyFrame = c),
                                       (n.firstKeyFrame.type = "video"))),
-                                    (m.size = 0);
+                                    (f.size = 0);
                                 }
-                                m.data.push(i), (m.size += i.byteLength);
+                                f.data.push(i), (f.size += i.byteLength);
                               }
                             if (p && n.firstKeyFrame) break;
                             (d += 188), (h += 188);
@@ -65461,12 +63379,12 @@ window.addEventListener("load", function (e) {
                           else {
                             if (
                               ((i = e.subarray(d, h)),
-                              "pes" === j.ts.parseType(i, t.pid) &&
-                                ((r = j.ts.parsePesType(i, t.table)),
-                                (a = j.ts.parsePayloadUnitStartIndicator(i)),
+                              "pes" === M.ts.parseType(i, t.pid) &&
+                                ((r = M.ts.parsePesType(i, t.table)),
+                                (a = M.ts.parsePayloadUnitStartIndicator(i)),
                                 "video" === r &&
                                   a &&
-                                  (s = j.ts.parsePesTime(i)) &&
+                                  (s = M.ts.parsePesTime(i)) &&
                                   ((s.type = "video"),
                                   n.video.push(s),
                                   (p = !0))),
@@ -65485,12 +63403,12 @@ window.addEventListener("load", function (e) {
                 }
             return i;
           }
-          var M = h,
+          var j = h,
             rn = function (e, t) {
               var n,
                 i,
                 r = (
-                  j.aac.isLikelyAacData(e)
+                  M.aac.isLikelyAacData(e)
                     ? function (e) {
                         for (
                           var t,
@@ -65503,21 +63421,21 @@ window.addEventListener("load", function (e) {
                           3 <= e.length - o;
 
                         ) {
-                          switch (j.aac.parseType(e, o)) {
+                          switch (M.aac.parseType(e, o)) {
                             case "timed-metadata":
                               if (e.length - o < 10) {
                                 n = !0;
                                 break;
                               }
                               if (
-                                (s = j.aac.parseId3TagSize(e, o)) > e.length
+                                (s = M.aac.parseId3TagSize(e, o)) > e.length
                               ) {
                                 n = !0;
                                 break;
                               }
                               null === a &&
                                 ((t = e.subarray(o, o + s)),
-                                (a = j.aac.parseAacTimestamp(t))),
+                                (a = M.aac.parseAacTimestamp(t))),
                                 (o += s);
                               break;
                             case "audio":
@@ -65525,13 +63443,13 @@ window.addEventListener("load", function (e) {
                                 n = !0;
                                 break;
                               }
-                              if ((s = j.aac.parseAdtsSize(e, o)) > e.length) {
+                              if ((s = M.aac.parseAdtsSize(e, o)) > e.length) {
                                 n = !0;
                                 break;
                               }
                               null === r &&
                                 ((t = e.subarray(o, o + s)),
-                                (r = j.aac.parseSampleRate(t))),
+                                (r = M.aac.parseSampleRate(t))),
                                 i++,
                                 (o += s);
                               break;
@@ -65541,7 +63459,7 @@ window.addEventListener("load", function (e) {
                           if (n) return null;
                         }
                         if (null === r || null === a) return null;
-                        var l = M / r;
+                        var l = j / r;
                         return {
                           audio: [
                             { type: "audio", dts: a, pts: a },
@@ -65564,8 +63482,8 @@ window.addEventListener("load", function (e) {
                     t.audio.forEach(function (e) {
                       (e.dts = N(e.dts, n)),
                         (e.pts = N(e.pts, n)),
-                        (e.dtsTime = e.dts / M),
-                        (e.ptsTime = e.pts / M);
+                        (e.dtsTime = e.dts / j),
+                        (e.ptsTime = e.pts / j);
                     })),
                   t.video &&
                     t.video.length &&
@@ -65574,14 +63492,14 @@ window.addEventListener("load", function (e) {
                     t.video.forEach(function (e) {
                       (e.dts = N(e.dts, i)),
                         (e.pts = N(e.pts, i)),
-                        (e.dtsTime = e.dts / M),
-                        (e.ptsTime = e.pts / M);
+                        (e.dtsTime = e.dts / j),
+                        (e.ptsTime = e.pts / j);
                     }),
                     t.firstKeyFrame &&
                       (((t = t.firstKeyFrame).dts = N(t.dts, i)),
                       (t.pts = N(t.pts, i)),
-                      (t.dtsTime = t.dts / M),
-                      (t.ptsTime = t.pts / M))),
+                      (t.dtsTime = t.dts / j),
+                      (t.ptsTime = t.pts / j))),
                   r)
                 : null;
             },
@@ -65707,7 +63625,7 @@ window.addEventListener("load", function (e) {
                 (t.probeMp4StartTime = function (e) {
                   var t = e.timescales,
                     e = e.data,
-                    t = $t(t, e);
+                    t = Jt(t, e);
                   this.self.postMessage(
                     { action: "probeMp4StartTime", startTime: t, data: e },
                     [e.buffer]
@@ -65794,15 +63712,15 @@ window.addEventListener("load", function (e) {
         })
       )
     ),
-    Iu = function (e) {
+    Eu = function (e) {
       (e.currentTransmux = null),
         e.transmuxQueue.length &&
           ((e.currentTransmux = e.transmuxQueue.shift()),
           "function" == typeof e.currentTransmux
             ? e.currentTransmux()
-            : Ml(e.currentTransmux));
+            : jl(e.currentTransmux));
     },
-    Eu = function (e) {
+    Iu = function (e) {
       Rl("reset", e);
     },
     ku = function (e) {
@@ -65822,9 +63740,9 @@ window.addEventListener("load", function (e) {
     Pu = 2,
     Lu = -101,
     Nu = -102,
-    ju = Bo("CodecUtils"),
-    Mu = Bo("PlaylistSelector"),
-    mr = function () {
+    Mu = Bo("CodecUtils"),
+    ju = Bo("PlaylistSelector"),
+    fr = function () {
       var e = (this.useDevicePixelRatio && window.devicePixelRatio) || 1;
       return au(
         this.playlists.master,
@@ -66019,7 +63937,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.endOfStream = function () {
           (this.ended_ = !0),
-            this.transmuxer_ && Eu(this.transmuxer_),
+            this.transmuxer_ && Iu(this.transmuxer_),
             (this.gopBuffer_.length = 0),
             this.pause(),
             this.trigger("ended");
@@ -66166,7 +64084,7 @@ window.addEventListener("load", function (e) {
           (this.fetchAtBuffer_ = !1), this.resyncLoader();
         }),
         (t.resyncLoader = function () {
-          this.transmuxer_ && Eu(this.transmuxer_),
+          this.transmuxer_ && Iu(this.transmuxer_),
             (this.mediaIndex = null),
             (this.partIndex = null),
             (this.syncPoint_ = null),
@@ -66201,8 +64119,8 @@ window.addEventListener("load", function (e) {
             (!i && "main" !== this.loaderType_) ||
               ((this.gopBuffer_ = (function (e, t, n, i) {
                 for (
-                  var r = Math.ceil((t - i) * fu),
-                    a = Math.ceil((n - i) * fu),
+                  var r = Math.ceil((t - i) * mu),
+                    a = Math.ceil((n - i) * mu),
                     i = e.slice(),
                     s = e.length;
                   s-- && !(e[s].pts <= a);
@@ -66268,7 +64186,7 @@ window.addEventListener("load", function (e) {
         (t.chooseNextRequest_ = function () {
           var e = this.buffered_(),
             t = zo(e) || 0,
-            n = Ho(e, this.currentTime_()),
+            n = qo(e, this.currentTime_()),
             i = !this.hasPlayed_() && 1 <= n,
             r = n >= this.goalBufferLength_(),
             e = this.playlist_.segments;
@@ -66401,7 +64319,7 @@ window.addEventListener("load", function (e) {
                 if ("undefined" == typeof t || null === t || !e.length)
                   return [];
                 for (
-                  var i = Math.ceil((t - n + 3) * fu), r = 0;
+                  var i = Math.ceil((t - n + 3) * mu), r = 0;
                   r < e.length && !(e[r].pts > i);
                   r++
                 );
@@ -66498,7 +64416,7 @@ window.addEventListener("load", function (e) {
                     r.playlist.uri === this.playlist_.uri ||
                     p < (e <= bu ? 1 : 0.5) ||
                     ((this.bandwidth =
-                      r.playlist.attributes.BANDWIDTH * j.BANDWIDTH_VARIANCE +
+                      r.playlist.attributes.BANDWIDTH * M.BANDWIDTH_VARIANCE +
                       1),
                     this.trigger("earlyabort"))))));
         }),
@@ -66582,12 +64500,12 @@ window.addEventListener("load", function (e) {
                         d = b[e],
                         h = d.startTime,
                         p = d.endTime,
-                        m = d.captions,
-                        f = v.inbandTextTracks_;
+                        f = d.captions,
+                        m = v.inbandTextTracks_;
                       v.logger_(
                         "adding cues from " + h + " -> " + p + " for " + e
                       ),
-                        (t = f),
+                        (t = m),
                         (n = v.vhs_.tech_),
                         t[(i = e)] ||
                           (n.trigger({ type: "usage", name: "vhs-608" }),
@@ -66614,17 +64532,17 @@ window.addEventListener("load", function (e) {
                                 },
                                 !1
                               ).track))),
-                        ou(h, p, f[e]),
-                        (u = (m = {
-                          captionArray: m,
-                          inbandTextTracks: f,
+                        ou(h, p, m[e]),
+                        (u = (f = {
+                          captionArray: f,
+                          inbandTextTracks: m,
                           timestampOffset: g,
                         }).inbandTextTracks),
-                        (f = m.captionArray),
-                        (c = m.timestampOffset),
-                        f &&
+                        (m = f.captionArray),
+                        (c = f.timestampOffset),
+                        m &&
                           ((l = window.WebKitDataCue || window.VTTCue),
-                          f.forEach(function (e) {
+                          m.forEach(function (e) {
                             var t = e.stream;
                             u[t].addCue(
                               new l(e.startTime + c, e.endTime + c, e.text)
@@ -66841,12 +64759,12 @@ window.addEventListener("load", function (e) {
           1 < s.length &&
             this.logger_(
               "On QUOTA_EXCEEDED_ERR, found gaps in the audio buffer: " +
-                qo(s).join(", ")
+                Ho(s).join(", ")
             ),
             1 < o.length &&
               this.logger_(
                 "On QUOTA_EXCEEDED_ERR, found gaps in the video buffer: " +
-                  qo(o).join(", ")
+                  Ho(o).join(", ")
               );
           var l = s.length ? s.start(0) : 0,
             u = s.length ? s.end(s.length - 1) : 0,
@@ -66858,9 +64776,9 @@ window.addEventListener("load", function (e) {
                 "On QUOTA_EXCEEDED_ERR, single segment too large to append to buffer, triggering an error. Appended byte length: " +
                   a.byteLength +
                   ", audio buffer: " +
-                  qo(s).join(", ") +
+                  Ho(s).join(", ") +
                   ", video buffer: " +
-                  qo(o).join(", ") +
+                  Ho(o).join(", ") +
                   ", "
               ),
               this.error({
@@ -67074,7 +64992,7 @@ window.addEventListener("load", function (e) {
               ((t = this.seekable_()),
               (n = this.currentTime_()),
               (i = this.playlist_.targetDuration || 10),
-              (r = n - j.BACK_BUFFER_LENGTH),
+              (r = n - M.BACK_BUFFER_LENGTH),
               t.length && (r = Math.max(r, t.start(0))),
               Math.min(n - i, r));
           0 < r && this.remove(0, r);
@@ -67511,7 +65429,7 @@ window.addEventListener("load", function (e) {
   function Gu(e, t) {
     return e && t && -1 !== Array.prototype.indexOf.call(e.sourceBuffers, t);
   }
-  function qu(e) {
+  function Hu(e) {
     var t = e.type,
       n = e.sourceUpdater,
       i = e.action,
@@ -67529,17 +65447,17 @@ window.addEventListener("load", function (e) {
         Vu(n, i);
     };
   }
-  function Hu(e) {
+  function qu(e) {
     return decodeURIComponent(escape(String.fromCharCode.apply(null, e)));
   }
-  function Xu(e, t) {
+  function Wu(e, t) {
     e.abort(),
       e.pause(),
       t &&
         t.activePlaylistLoader &&
         (t.activePlaylistLoader.pause(), (t.activePlaylistLoader = null));
   }
-  function Wu(e, t) {
+  function Xu(e, t) {
     (t.activePlaylistLoader = e).load();
   }
   function Yu(e, t) {
@@ -67614,11 +65532,11 @@ window.addEventListener("load", function (e) {
             (a && e && a.id === e.id) ||
               ((i.lastGroup_ = a),
               (i.lastTrack_ = r),
-              Xu(t, i),
+              Wu(t, i),
               a &&
                 !a.isMasterPlaylist &&
                 (a.playlistLoader
-                  ? (t.resyncLoader(), Wu(a.playlistLoader, i))
+                  ? (t.resyncLoader(), Xu(a.playlistLoader, i))
                   : s && n.resetEverything()));
           })),
         (s[e].onGroupChanging =
@@ -67643,7 +65561,7 @@ window.addEventListener("load", function (e) {
               l = r.lastTrack_;
             if (
               (!l || !a || l.id !== a.id) &&
-              ((r.lastGroup_ = s), (r.lastTrack_ = a), Xu(n, r), s)
+              ((r.lastGroup_ = s), (r.lastTrack_ = a), Wu(n, r), s)
             ) {
               if (s.isMasterPlaylist) {
                 if (!a || !l || a.id === l.id) return;
@@ -67668,7 +65586,7 @@ window.addEventListener("load", function (e) {
               }
               o !== s.playlistLoader &&
                 (n.track && n.track(a), n.resetEverything()),
-                Wu(s.playlistLoader, r);
+                Xu(s.playlistLoader, r);
             }
           })),
         (s[e].getActiveGroup =
@@ -67791,8 +65709,8 @@ window.addEventListener("load", function (e) {
         l(), Zu(t, e);
       });
   }
-  var Ju,
-    $u = ["video", "audio"],
+  var $u,
+    Ju = ["video", "audio"],
     ec = function (i, r, a) {
       return function (e, t) {
         var n = t[e + "Buffer"];
@@ -67894,7 +65812,7 @@ window.addEventListener("load", function (e) {
     oc = function (i, r) {
       return function (e) {
         var t = Bu(i),
-          n = Sr(r);
+          n = Or(r);
         e.logger_("Adding " + i + "Buffer with codec " + r + " to mediaSource");
         n = e.mediaSource.addSourceBuffer(n);
         n.addEventListener("updateend", e["on" + t + "UpdateEnd_"]),
@@ -67925,7 +65843,7 @@ window.addEventListener("load", function (e) {
     uc = function (r) {
       return function (e, t) {
         var n = t[e + "Buffer"],
-          i = Sr(r);
+          i = Or(r);
         Gu(t.mediaSource, n) &&
           t.codecs[e] !== r &&
           (t.logger_(
@@ -67994,7 +65912,7 @@ window.addEventListener("load", function (e) {
             ((this.triggeredReady_ = !0), this.trigger("ready"));
         }),
         (t.addSourceBuffer = function (e, t) {
-          qu({
+          Hu({
             type: "mediaSource",
             sourceUpdater: this,
             action: oc(e, t),
@@ -68002,11 +65920,11 @@ window.addEventListener("load", function (e) {
           });
         }),
         (t.abort = function (e) {
-          qu({ type: e, sourceUpdater: this, action: sc(e), name: "abort" });
+          Hu({ type: e, sourceUpdater: this, action: sc(e), name: "abort" });
         }),
         (t.removeSourceBuffer = function (e) {
           this.canRemoveSourceBuffer()
-            ? qu({
+            ? Hu({
                 type: "mediaSource",
                 sourceUpdater: this,
                 action: lc(e),
@@ -68035,7 +65953,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.changeType = function (e, t) {
           this.canChangeType()
-            ? qu({
+            ? Hu({
                 type: e,
                 sourceUpdater: this,
                 action: uc(t),
@@ -68070,7 +65988,7 @@ window.addEventListener("load", function (e) {
                 "delayed audio append of " + a.length + " until video append"
               )
             );
-          qu({
+          Hu({
             type: r,
             sourceUpdater: this,
             action: ec(a, i || { mediaIndex: -1 }, t),
@@ -68147,7 +66065,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.setDuration = function (e, t) {
           void 0 === t && (t = Ru),
-            qu({
+            Hu({
               type: "mediaSource",
               sourceUpdater: this,
               action: ac(e),
@@ -68157,7 +66075,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.endOfStream = function (e, t) {
           void 0 === t && (t = Ru),
-            qu({
+            Hu({
               type: "mediaSource",
               sourceUpdater: this,
               action: rc(
@@ -68171,7 +66089,7 @@ window.addEventListener("load", function (e) {
         (t.removeAudio = function (e, t, n) {
           void 0 === n && (n = Ru),
             this.audioBuffered().length && 0 !== this.audioBuffered().end(0)
-              ? qu({
+              ? Hu({
                   type: "audio",
                   sourceUpdater: this,
                   action: tc(e, t),
@@ -68183,7 +66101,7 @@ window.addEventListener("load", function (e) {
         (t.removeVideo = function (e, t, n) {
           void 0 === n && (n = Ru),
             this.videoBuffered().length && 0 !== this.videoBuffered().end(0)
-              ? qu({
+              ? Hu({
                   type: "video",
                   sourceUpdater: this,
                   action: tc(e, t),
@@ -68200,7 +66118,7 @@ window.addEventListener("load", function (e) {
             "undefined" != typeof e &&
               this.audioBuffer &&
               this.audioTimestampOffset_ !== e &&
-              (qu({
+              (Hu({
                 type: "audio",
                 sourceUpdater: this,
                 action: nc(e),
@@ -68215,7 +66133,7 @@ window.addEventListener("load", function (e) {
             "undefined" != typeof e &&
               this.videoBuffer &&
               this.videoTimestampOffset !== e &&
-              (qu({
+              (Hu({
                 type: "video",
                 sourceUpdater: this,
                 action: nc(e),
@@ -68227,7 +66145,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.audioQueueCallback = function (e) {
           this.audioBuffer &&
-            qu({
+            Hu({
               type: "audio",
               sourceUpdater: this,
               action: ic(e),
@@ -68236,7 +66154,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.videoQueueCallback = function (e) {
           this.videoBuffer &&
-            qu({
+            Hu({
               type: "video",
               sourceUpdater: this,
               action: ic(e),
@@ -68246,7 +66164,7 @@ window.addEventListener("load", function (e) {
         (t.dispose = function () {
           var t = this;
           this.trigger("dispose"),
-            $u.forEach(function (e) {
+            Ju.forEach(function (e) {
               t.abort(e),
                 t.canRemoveSourceBuffer()
                   ? t.removeSourceBuffer(e)
@@ -68507,9 +66425,9 @@ window.addEventListener("load", function (e) {
               w.log.warn("Error encountered when parsing cues: " + e.message);
             }),
             t.segment.map &&
-              ((i = t.segment.map.bytes), e && (i = Hu(i)), n.parse(i));
+              ((i = t.segment.map.bytes), e && (i = qu(i)), n.parse(i));
           var i = t.bytes;
-          e && (i = Hu(i)), n.parse(i), n.flush();
+          e && (i = qu(i)), n.parse(i), n.flush();
         }),
         (t.updateTimeMapping_ = function (e, t, n) {
           var i,
@@ -68518,7 +66436,7 @@ window.addEventListener("load", function (e) {
           t &&
             (e.cues.length
               ? ((r = e.timestampmap),
-                (i = r.MPEGTS / fu - r.LOCAL + t.mapping),
+                (i = r.MPEGTS / mu - r.LOCAL + t.mapping),
                 e.cues.forEach(function (e) {
                   (e.startTime += i), (e.endTime += i);
                 }),
@@ -68548,7 +66466,7 @@ window.addEventListener("load", function (e) {
           if (!Object.keys(e.timelineToDatetimeMappings).length) return null;
           var a = null,
             s = null,
-            o = Wo(t);
+            o = Xo(t);
           r = r || 0;
           for (var l = 0; l < o.length; l++) {
             var u = o[t.endList || 0 === r ? l : o.length - (l + 1)],
@@ -68577,7 +66495,7 @@ window.addEventListener("load", function (e) {
           var a = null,
             s = null;
           r = r || 0;
-          for (var o = Wo(t), l = 0; l < o.length; l++) {
+          for (var o = Xo(t), l = 0; l < o.length; l++) {
             var u = o[t.endList || 0 === r ? l : o.length - (l + 1)],
               c = u.segment,
               d = (u.part && u.part.start) || (c && c.start);
@@ -68632,7 +66550,7 @@ window.addEventListener("load", function (e) {
         },
       },
     ],
-    mc = (function (n) {
+    fc = (function (n) {
       function e(e) {
         var t = n.call(this) || this;
         return (
@@ -68661,7 +66579,7 @@ window.addEventListener("load", function (e) {
             0 < t.segmentIndex && (t.time *= -1),
             Math.abs(
               t.time +
-                $o({
+                Jo({
                   defaultDuration: e.targetDuration,
                   durationList: e.segments,
                   startIndex: t.segmentIndex,
@@ -68831,14 +66749,14 @@ window.addEventListener("load", function (e) {
                 (r =
                   o < 0
                     ? n.start -
-                      $o({
+                      Jo({
                         defaultDuration: t.targetDuration,
                         durationList: t.segments,
                         startIndex: e.mediaIndex,
                         endIndex: a,
                       })
                     : n.end +
-                      $o({
+                      Jo({
                         defaultDuration: t.targetDuration,
                         durationList: t.segments,
                         startIndex: e.mediaIndex + 1,
@@ -68853,7 +66771,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(w.EventTarget),
-    fc = (function (t) {
+    mc = (function (t) {
       function e() {
         var e = t.call(this) || this;
         return (
@@ -69022,7 +66940,7 @@ window.addEventListener("load", function (e) {
               );
             })();
           var c = null,
-            f = (function () {
+            m = (function () {
               function e(e) {
                 var t, n, i;
                 (c =
@@ -69046,11 +66964,11 @@ window.addEventListener("load", function (e) {
                         d = u[4],
                         h = [],
                         p = [],
-                        m = 0;
-                      m < 256;
-                      m++
+                        f = 0;
+                      f < 256;
+                      f++
                     )
-                      p[(h[m] = (m << 1) ^ (283 * (m >> 7))) ^ m] = m;
+                      p[(h[f] = (f << 1) ^ (283 * (f >> 7))) ^ f] = f;
                     for (e = t = 0; !c[e]; e ^= n || 1, t = p[t] || 1)
                       for (
                         s =
@@ -69079,14 +66997,14 @@ window.addEventListener("load", function (e) {
                           (257 * n) ^
                           (16843008 * e),
                           a = (257 * h[r]) ^ (16843008 * r),
-                          m = 0;
-                        m < 4;
-                        m++
+                          f = 0;
+                        f < 4;
+                        f++
                       )
-                        (l[m][e] = a = (a << 24) ^ (a >>> 8)),
-                          (u[m][r] = s = (s << 24) ^ (s >>> 8));
-                    for (m = 0; m < 5; m++)
-                      (l[m] = l[m].slice(0)), (u[m] = u[m].slice(0));
+                        (l[f][e] = a = (a << 24) ^ (a >>> 8)),
+                          (u[f][r] = s = (s << 24) ^ (s >>> 8));
+                    for (f = 0; f < 5; f++)
+                      (l[f] = l[f].slice(0)), (u[f] = u[f].slice(0));
                     return o;
                   })()),
                   (this._tables = [
@@ -69146,8 +67064,8 @@ window.addEventListener("load", function (e) {
                       d = i ^ u[1],
                       h = n ^ u[2],
                       p = t ^ u[3],
-                      m = u.length / 4 - 2,
-                      f = 4,
+                      f = u.length / 4 - 2,
+                      m = 4,
                       t = this._tables[1],
                       g = t[0],
                       b = t[1],
@@ -69155,7 +67073,7 @@ window.addEventListener("load", function (e) {
                       y = t[3],
                       _ = t[4],
                       T = 0;
-                    T < m;
+                    T < f;
                     T++
                   )
                     (s =
@@ -69163,26 +67081,26 @@ window.addEventListener("load", function (e) {
                       b[(d >> 16) & 255] ^
                       v[(h >> 8) & 255] ^
                       y[255 & p] ^
-                      u[f]),
+                      u[m]),
                       (o =
                         g[d >>> 24] ^
                         b[(h >> 16) & 255] ^
                         v[(p >> 8) & 255] ^
                         y[255 & c] ^
-                        u[f + 1]),
+                        u[m + 1]),
                       (l =
                         g[h >>> 24] ^
                         b[(p >> 16) & 255] ^
                         v[(c >> 8) & 255] ^
                         y[255 & d] ^
-                        u[f + 2]),
+                        u[m + 2]),
                       (p =
                         g[p >>> 24] ^
                         b[(c >> 16) & 255] ^
                         v[(d >> 8) & 255] ^
                         y[255 & h] ^
-                        u[f + 3]),
-                      (f += 4),
+                        u[m + 3]),
+                      (m += 4),
                       (c = s),
                       (d = o),
                       (h = l);
@@ -69192,7 +67110,7 @@ window.addEventListener("load", function (e) {
                       (_[(d >> 16) & 255] << 16) ^
                       (_[(h >> 8) & 255] << 8) ^
                       _[255 & p] ^
-                      u[f++]),
+                      u[m++]),
                       (s = c),
                       (c = d),
                       (d = h),
@@ -69284,26 +67202,26 @@ window.addEventListener("load", function (e) {
                             e.byteOffset,
                             e.byteLength >> 2
                           ),
-                          l = new f(Array.prototype.slice.call(t)),
+                          l = new m(Array.prototype.slice.call(t)),
                           e = new Uint8Array(e.byteLength),
                           u = new Int32Array(e.buffer),
                           c = n[0],
                           d = n[1],
                           h = n[2],
                           p = n[3],
-                          m = 0;
-                        m < o.length;
-                        m += 4
+                          f = 0;
+                        f < o.length;
+                        f += 4
                       )
-                        (i = g(o[m])),
-                          (r = g(o[m + 1])),
-                          (a = g(o[m + 2])),
-                          (s = g(o[m + 3])),
-                          l.decrypt(i, r, a, s, u, m),
-                          (u[m] = g(u[m] ^ c)),
-                          (u[m + 1] = g(u[m + 1] ^ d)),
-                          (u[m + 2] = g(u[m + 2] ^ h)),
-                          (u[m + 3] = g(u[m + 3] ^ p)),
+                        (i = g(o[f])),
+                          (r = g(o[f + 1])),
+                          (a = g(o[f + 2])),
+                          (s = g(o[f + 3])),
+                          l.decrypt(i, r, a, s, u, f),
+                          (u[f] = g(u[f] ^ c)),
+                          (u[f + 1] = g(u[f + 1] ^ d)),
+                          (u[f + 2] = g(u[f + 2] ^ h)),
+                          (u[f + 3] = g(u[f + 3] ^ p)),
                           (c = i),
                           (d = r),
                           (h = a),
@@ -69396,7 +67314,7 @@ window.addEventListener("load", function (e) {
           var e = o.segmentLoaders[s],
             t = o.mediaTypes[s],
             n = o.blacklistCurrentPlaylist;
-          Xu(e, t);
+          Wu(e, t);
           var i = t.activeTrack(),
             e = t.activeGroup(),
             e = (
@@ -69425,7 +67343,7 @@ window.addEventListener("load", function (e) {
           w.log.warn(
             "Problem encountered loading the subtitle track.Disabling subtitle track."
           ),
-            Xu(e, t);
+            Wu(e, t);
           e = t.activeTrack();
           e && (e.mode = "disabled"), t.onTrackChanged();
         };
@@ -69480,37 +67398,37 @@ window.addEventListener("load", function (e) {
           d = u.tracks,
           h = u.logger_,
           p = t.masterPlaylistLoader,
-          m = ll(p.master);
+          f = ll(p.master);
         for (n in ((l[e] && 0 !== Object.keys(l[e]).length) ||
           ((l[e] = { main: { default: { default: !0 } } }),
-          m && (l[e].main.default.playlists = p.master.playlists)),
+          f && (l[e].main.default.playlists = p.master.playlists)),
         l[e]))
-          for (var f in (c[n] || (c[n] = []), l[e][n])) {
-            var g = l[e][n][f],
+          for (var m in (c[n] || (c[n] = []), l[e][n])) {
+            var g = l[e][n][m],
               b = void 0,
-              b = m
+              b = f
                 ? (h(
                     "AUDIO group '" +
                       n +
                       "' label '" +
-                      f +
+                      m +
                       "' is a master playlist"
                   ),
                   (g.isMasterPlaylist = !0),
                   null)
                 : "vhs-json" === a && g.playlists
-                ? new Ou(g.playlists[0], r, o)
+                ? new Su(g.playlists[0], r, o)
                 : g.resolvedUri
-                ? new Ou(g.resolvedUri, r, o)
+                ? new Su(g.resolvedUri, r, o)
                 : g.playlists && "dash" === a
                 ? new Cu(g.playlists[0], r, o, p)
                 : null,
-              g = w.mergeOptions({ id: f, playlistLoader: b }, g);
+              g = w.mergeOptions({ id: m, playlistLoader: b }, g);
             vc[e](e, g.playlistLoader, t),
               c[n].push(g),
-              "undefined" == typeof d[f] &&
+              "undefined" == typeof d[m] &&
                 ((g = new w.AudioTrack({
-                  id: f,
+                  id: m,
                   kind:
                     ((i = void 0),
                     (i = (b = g).default ? "main" : "alternative"),
@@ -69525,9 +67443,9 @@ window.addEventListener("load", function (e) {
                   enabled: !1,
                   language: g.language,
                   default: g.default,
-                  label: f,
+                  label: m,
                 })),
-                (d[f] = g));
+                (d[m] = g));
           }
         s.on("error", bc[e](e, t));
       },
@@ -69546,39 +67464,39 @@ window.addEventListener("load", function (e) {
         for (n in l[e])
           for (var p in (c[n] || (c[n] = []), l[e][n]))
             if (!l[e][n][p].forced) {
-              var m = l[e][n][p],
-                f = void 0;
-              if ("hls" === a) f = new Ou(m.resolvedUri, r, o);
+              var f = l[e][n][p],
+                m = void 0;
+              if ("hls" === a) m = new Su(f.resolvedUri, r, o);
               else if ("dash" === a) {
                 if (
-                  !m.playlists.filter(function (e) {
+                  !f.playlists.filter(function (e) {
                     return e.excludeUntil !== 1 / 0;
                   }).length
                 )
                   return;
-                f = new Cu(m.playlists[0], r, o, h);
+                m = new Cu(f.playlists[0], r, o, h);
               } else
                 "vhs-json" === a &&
-                  (f = new Ou(
-                    m.playlists ? m.playlists[0] : m.resolvedUri,
+                  (m = new Su(
+                    f.playlists ? f.playlists[0] : f.resolvedUri,
                     r,
                     o
                   ));
-              (m = w.mergeOptions({ id: p, playlistLoader: f }, m)),
-                vc[e](e, m.playlistLoader, t),
-                c[n].push(m),
+              (f = w.mergeOptions({ id: p, playlistLoader: m }, f)),
+                vc[e](e, f.playlistLoader, t),
+                c[n].push(f),
                 "undefined" == typeof d[p] &&
-                  ((m = i.addRemoteTextTrack(
+                  ((f = i.addRemoteTextTrack(
                     {
                       id: p,
                       kind: "subtitles",
-                      default: m.default && m.autoselect,
-                      language: m.language,
+                      default: f.default && f.autoselect,
+                      language: f.language,
                       label: p,
                     },
                     !1
                   ).track),
-                  (d[p] = m));
+                  (d[p] = f));
             }
         s.on("error", bc[e](e, t));
       },
@@ -69651,7 +67569,7 @@ window.addEventListener("load", function (e) {
       "mediaBytesTransferred",
       "mediaAppends",
     ],
-    Oc = (function (v) {
+    Sc = (function (v) {
       function e(e) {
         var t = v.call(this) || this,
           n = e.src,
@@ -69666,8 +67584,8 @@ window.addEventListener("load", function (e) {
           d = e.sourceType,
           h = e.cacheEncryptionKeys,
           p = e.experimentalBufferBasedABR,
-          m = e.experimentalLeastPixelDiffSelector,
-          f = e.captionServices;
+          f = e.experimentalLeastPixelDiffSelector,
+          m = e.captionServices;
         if (!n)
           throw new Error(
             "A non-empty playlist URL or JSON manifest string is required"
@@ -69675,9 +67593,9 @@ window.addEventListener("load", function (e) {
         var g,
           b = e.maxPlaylistRetries;
         (null !== b && "undefined" != typeof b) || (b = 1 / 0),
-          (Ju = o),
+          ($u = o),
           (t.experimentalBufferBasedABR = Boolean(p)),
-          (t.experimentalLeastPixelDiffSelector = Boolean(m)),
+          (t.experimentalLeastPixelDiffSelector = Boolean(f)),
           (t.withCredentials = r),
           (t.tech_ = a),
           (t.vhs_ = a.vhs),
@@ -69725,7 +67643,7 @@ window.addEventListener("load", function (e) {
           t.mediaSource.addEventListener("sourceended", t.handleSourceEnded_),
           (t.seekable_ = w.createTimeRanges()),
           (t.hasPlayed_ = !1),
-          (t.syncController_ = new mc(e)),
+          (t.syncController_ = new fc(e)),
           (t.segmentMetadataTrack_ = a.addRemoteTextTrack(
             { kind: "metadata", label: "segment-metadata" },
             !1
@@ -69733,12 +67651,12 @@ window.addEventListener("load", function (e) {
           (t.decrypter_ = new gc()),
           (t.sourceUpdater_ = new cc(t.mediaSource)),
           (t.inbandTextTracks_ = {}),
-          (t.timelineChangeController_ = new fc());
+          (t.timelineChangeController_ = new mc());
         h = {
           vhs: t.vhs_,
           parse708captions: e.parse708captions,
           useDtsForTimestampOffset: e.useDtsForTimestampOffset,
-          captionServices: f,
+          captionServices: m,
           mediaSource: t.mediaSource,
           currentTime: t.tech_.currentTime.bind(t.tech_),
           seekable: function () {
@@ -69766,7 +67684,7 @@ window.addEventListener("load", function (e) {
           timelineChangeController: t.timelineChangeController_,
           experimentalExactManifestTimings: e.experimentalExactManifestTimings,
         };
-        (t.masterPlaylistLoader_ = new ("dash" === t.sourceType_ ? Cu : Ou)(
+        (t.masterPlaylistLoader_ = new ("dash" === t.sourceType_ ? Cu : Su)(
           n,
           t.vhs_,
           t.requestOptions_
@@ -70045,7 +67963,7 @@ window.addEventListener("load", function (e) {
             Object.keys(i.SUBTITLES).length &&
               (this.tech_.trigger({ type: "usage", name: "vhs-webvtt" }),
               this.tech_.trigger({ type: "usage", name: "hls-webvtt" })),
-            Ju.Playlist.isAes(t) &&
+            $u.Playlist.isAes(t) &&
               (this.tech_.trigger({ type: "usage", name: "vhs-aes" }),
               this.tech_.trigger({ type: "usage", name: "hls-aes" })),
             e.length &&
@@ -70106,10 +68024,10 @@ window.addEventListener("load", function (e) {
                       " as current playlist is live llhls, but currentTime isn't in buffered."
                   ),
                   !1);
-            (n = Ho(n, i)),
+            (n = qo(n, i)),
               (i = l
-                ? j.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE
-                : j.MAX_BUFFER_LOW_WATER_LINE);
+                ? M.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE
+                : M.MAX_BUFFER_LOW_WATER_LINE);
             if (o < i)
               return (
                 u(
@@ -70344,7 +68262,7 @@ window.addEventListener("load", function (e) {
           if (!this.seekable().length) return !1;
           var t = this.syncController_.getExpiredTime(e, this.duration());
           if (null === t) return !1;
-          var n = Ju.Playlist.playlistEnd(e, t),
+          var n = $u.Playlist.playlistEnd(e, t),
             e = this.tech_.currentTime(),
             t = this.tech_.buffered();
           if (!t.length) return n - e <= 0.1;
@@ -70488,7 +68406,7 @@ window.addEventListener("load", function (e) {
             ? e.endList
               ? this.mediaSource
                 ? this.mediaSource.duration
-                : Ju.Playlist.duration(e)
+                : $u.Playlist.duration(e)
               : 1 / 0
             : 0;
         }),
@@ -70505,10 +68423,10 @@ window.addEventListener("load", function (e) {
                 var i,
                   r,
                   a = this.masterPlaylistLoader_.master,
-                  s = Ju.Playlist.seekable(
+                  s = $u.Playlist.seekable(
                     t,
                     n,
-                    Ju.Playlist.liveEdgeDelay(a, t)
+                    $u.Playlist.liveEdgeDelay(a, t)
                   );
                 if (0 !== s.length) {
                   if (this.mediaTypes_.AUDIO.activePlaylistLoader) {
@@ -70524,10 +68442,10 @@ window.addEventListener("load", function (e) {
                       return;
                     if (
                       0 ===
-                      (e = Ju.Playlist.seekable(
+                      (e = $u.Playlist.seekable(
                         t,
                         n,
-                        Ju.Playlist.liveEdgeDelay(a, t)
+                        $u.Playlist.liveEdgeDelay(a, t)
                       )).length
                     )
                       return;
@@ -70585,7 +68503,7 @@ window.addEventListener("load", function (e) {
               : void 0;
           }
           (e = this.tech_.buffered()),
-            (t = Ju.Playlist.duration(this.masterPlaylistLoader_.media()));
+            (t = $u.Playlist.duration(this.masterPlaylistLoader_.media()));
           0 < e.length && (t = Math.max(t, e.end(e.length - 1))),
             this.mediaSource.duration !== t &&
               this.sourceUpdater_.setDuration(t);
@@ -70789,8 +68707,8 @@ window.addEventListener("load", function (e) {
           var r = this,
             a = [],
             s = this.master().playlists,
-            e = Jl(Tr(e)),
-            o = $l(e),
+            e = $l(Tr(e)),
+            o = Jl(e),
             l = (e.video && Tr(e.video)[0]) || null,
             u = (e.audio && Tr(e.audio)[0]) || null;
           Object.keys(s).forEach(function (e) {
@@ -70802,7 +68720,7 @@ window.addEventListener("load", function (e) {
               (a.push(i.id),
               (t = []),
               (n = eu(r.masterPlaylistLoader_.master, i)),
-              (e = $l(n)),
+              (e = Jl(n)),
               (n.audio || n.video) &&
                 (e !== o && t.push('codec count "' + e + '" !== "' + o + '"'),
                 r.sourceUpdater_.canChangeType() ||
@@ -70882,26 +68800,26 @@ window.addEventListener("load", function (e) {
         }),
         (t.goalBufferLength = function () {
           var e = this.tech_.currentTime(),
-            t = j.GOAL_BUFFER_LENGTH,
-            n = j.GOAL_BUFFER_LENGTH_RATE,
-            i = Math.max(t, j.MAX_GOAL_BUFFER_LENGTH);
+            t = M.GOAL_BUFFER_LENGTH,
+            n = M.GOAL_BUFFER_LENGTH_RATE,
+            i = Math.max(t, M.MAX_GOAL_BUFFER_LENGTH);
           return Math.min(t + e * n, i);
         }),
         (t.bufferLowWaterLine = function () {
           var e = this.tech_.currentTime(),
-            t = j.BUFFER_LOW_WATER_LINE,
-            n = j.BUFFER_LOW_WATER_LINE_RATE,
-            i = Math.max(t, j.MAX_BUFFER_LOW_WATER_LINE),
-            r = Math.max(t, j.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE);
+            t = M.BUFFER_LOW_WATER_LINE,
+            n = M.BUFFER_LOW_WATER_LINE_RATE,
+            i = Math.max(t, M.MAX_BUFFER_LOW_WATER_LINE),
+            r = Math.max(t, M.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE);
           return Math.min(t + e * n, this.experimentalBufferBasedABR ? r : i);
         }),
         (t.bufferHighWaterLine = function () {
-          return j.BUFFER_HIGH_WATER_LINE;
+          return M.BUFFER_HIGH_WATER_LINE;
         }),
         e
       );
     })(w.EventTarget),
-    Sc = ["seeking", "seeked", "pause", "playing", "error"],
+    Oc = ["seeking", "seeked", "pause", "playing", "error"],
     Ac = (function () {
       function e(e) {
         var n = this;
@@ -70966,14 +68884,14 @@ window.addEventListener("load", function (e) {
           this.tech_.on("seeked", this.clearSeekingAppendCheck_),
           this.tech_.on("seeking", this.watchForBadSeeking_),
           this.tech_.on("waiting", r),
-          this.tech_.on(Sc, a),
+          this.tech_.on(Oc, a),
           this.tech_.on("canplay", i),
           this.tech_.one("play", t),
           (this.dispose = function () {
             n.clearSeekingAppendCheck_(),
               n.logger_("dispose"),
               n.tech_.off("waiting", r),
-              n.tech_.off(Sc, a),
+              n.tech_.off(Oc, a),
               n.tech_.off("canplay", i),
               n.tech_.off("play", t),
               n.tech_.off("seeking", n.watchForBadSeeking_),
@@ -71031,7 +68949,7 @@ window.addEventListener("load", function (e) {
                     " " +
                     e +
                     " appends that did not increase buffer (possible stalled download)",
-                  { playlistId: n.playlist_ && n.playlist_.id, buffered: qo(i) }
+                  { playlistId: n.playlist_ && n.playlist_.id, buffered: Ho(i) }
                 ),
                 this[e + "StalledDownloads_"] < 10 ||
                   (this.logger_(e + " loader stalled download exclusion"),
@@ -71113,7 +69031,7 @@ window.addEventListener("load", function (e) {
             l < o.length;
             l++
           )
-            if (o[l]) if (Ho(o[l], n) < s) return !1;
+            if (o[l]) if (qo(o[l], n) < s) return !1;
           r = Fo(r, n);
           return (
             0 !== r.length &&
@@ -71321,11 +69239,11 @@ window.addEventListener("load", function (e) {
         );
       },
     },
-    M = {
-      PlaylistLoader: Ou,
+    j = {
+      PlaylistLoader: Su,
       Playlist: yu,
       utils: cn,
-      STANDARD_PLAYLIST_SELECTOR: mr,
+      STANDARD_PLAYLIST_SELECTOR: fr,
       INITIAL_PLAYLIST_SELECTOR: function () {
         var t = this,
           e = this.playlists.master.playlists.filter(yu.isEnabled);
@@ -71336,7 +69254,7 @@ window.addEventListener("load", function (e) {
           })[0] || null
         );
       },
-      lastBandwidthSelector: mr,
+      lastBandwidthSelector: fr,
       movingAverageBandwidthSelector: function (t) {
         var n = -1,
           i = -1;
@@ -71383,14 +69301,14 @@ window.addEventListener("load", function (e) {
       },
       xhr: _l(),
     };
-  Object.keys(j).forEach(function (t) {
-    Object.defineProperty(M, t, {
+  Object.keys(M).forEach(function (t) {
+    Object.defineProperty(j, t, {
       get: function () {
         return (
           w.log.warn(
             "using Vhs." + t + " is UNSAFE be sure you know what you are doing"
           ),
-          j[t]
+          M[t]
         );
       },
       set: function (e) {
@@ -71401,7 +69319,7 @@ window.addEventListener("load", function (e) {
             ? w.log.warn(
                 "value of Vhs." + t + " must be greater than or equal to 0"
               )
-            : (j[t] = e);
+            : (M[t] = e);
       },
     });
   });
@@ -71414,12 +69332,12 @@ window.addEventListener("load", function (e) {
     (e.selectedIndex_ = i), e.trigger({ selectedIndex: i, type: "change" });
   }
   var xc = "videojs-vhs";
-  M.canPlaySource = function () {
+  j.canPlaySource = function () {
     return w.log.warn(
       "HLS is no longer a tech. Please remove it from your player's techOrder."
     );
   };
-  function Ic(e) {
+  function Ec(e) {
     var i = e.player,
       t = e.sourceKeySystems,
       n = e.audioMedia,
@@ -71457,7 +69375,7 @@ window.addEventListener("load", function (e) {
       Promise.race([Promise.all(a), Promise.race(s)])
     );
   }
-  function Ec(e) {
+  function Ic(e) {
     var t = e.player;
     return (
       !!(e = (function (e, t, n) {
@@ -71466,14 +69384,14 @@ window.addEventListener("load", function (e) {
         t &&
           t.attributes &&
           t.attributes.CODECS &&
-          (i = Jl(Tr(t.attributes.CODECS))),
+          (i = $l(Tr(t.attributes.CODECS))),
           n &&
             n.attributes &&
             n.attributes.CODECS &&
             (i.audio = n.attributes.CODECS);
         var r,
-          a = Sr(i.video),
-          s = Sr(i.audio),
+          a = Or(i.video),
+          s = Or(i.audio),
           o = {};
         for (r in e)
           (o[r] = {}),
@@ -71503,7 +69421,7 @@ window.addEventListener("load", function (e) {
       return null;
     }
   }
-  (M.supportsNativeHls = (function () {
+  (j.supportsNativeHls = (function () {
     if (!document || !document.createElement) return !1;
     var t = document.createElement("video");
     if (!w.getTech("Html5").isSupported()) return !1;
@@ -71519,7 +69437,7 @@ window.addEventListener("load", function (e) {
       return /maybe|probably/i.test(t.canPlayType(e));
     });
   })()),
-    (M.supportsNativeDash =
+    (j.supportsNativeDash =
       !!(
         document &&
         document.createElement &&
@@ -71528,12 +69446,12 @@ window.addEventListener("load", function (e) {
       /maybe|probably/i.test(
         document.createElement("video").canPlayType("application/dash+xml")
       )),
-    (M.supportsTypeNatively = function (e) {
+    (j.supportsTypeNatively = function (e) {
       return "hls" === e
-        ? M.supportsNativeHls
-        : "dash" === e && M.supportsNativeDash;
+        ? j.supportsNativeHls
+        : "dash" === e && j.supportsNativeDash;
     }),
-    (M.isSupported = function () {
+    (j.isSupported = function () {
       return w.log.warn(
         "HLS is no longer a tech. Please remove it from your player's techOrder."
       );
@@ -71698,10 +69616,10 @@ window.addEventListener("load", function (e) {
                   name: "hls-throughput-from-local-storage",
                 }))),
             "number" != typeof this.options_.bandwidth &&
-              (this.options_.bandwidth = j.INITIAL_BANDWIDTH),
+              (this.options_.bandwidth = M.INITIAL_BANDWIDTH),
             (this.options_.enableLowInitialPlaylist =
               this.options_.enableLowInitialPlaylist &&
-              this.options_.bandwidth === j.INITIAL_BANDWIDTH),
+              this.options_.bandwidth === M.INITIAL_BANDWIDTH),
             [
               "withCredentials",
               "useDevicePixelRatio",
@@ -71741,7 +69659,7 @@ window.addEventListener("load", function (e) {
                 ? JSON.parse(e.substring(e.indexOf(",") + 1))
                 : e),
             (this.options_.tech = this.tech_),
-            (this.options_.externVhs = M),
+            (this.options_.externVhs = j),
             (this.options_.sourceType = Cr(t)),
             (this.options_.seekTo = function (e) {
               i.tech_.setCurrentTime(e);
@@ -71750,7 +69668,7 @@ window.addEventListener("load", function (e) {
               w.log.warn(
                 "smoothQualityChange is deprecated and will be removed in the next major version"
               ),
-            (this.masterPlaylistController_ = new Oc(this.options_)),
+            (this.masterPlaylistController_ = new Sc(this.options_)),
             (t = w.mergeOptions(
               { liveRangeSafeTimeDelta: 0.1 },
               this.options_,
@@ -71774,13 +69692,13 @@ window.addEventListener("load", function (e) {
                 e.error(t);
             }),
             (t = this.options_.experimentalBufferBasedABR
-              ? M.movingAverageBandwidthSelector(0.55)
-              : M.STANDARD_PLAYLIST_SELECTOR),
+              ? j.movingAverageBandwidthSelector(0.55)
+              : j.STANDARD_PLAYLIST_SELECTOR),
             (this.masterPlaylistController_.selectPlaylist = (
               this.selectPlaylist || t
             ).bind(this)),
             (this.masterPlaylistController_.selectInitialPlaylist =
-              M.INITIAL_PLAYLIST_SELECTOR.bind(this)),
+              j.INITIAL_PLAYLIST_SELECTOR.bind(this)),
             (this.playlists =
               this.masterPlaylistController_.masterPlaylistLoader_),
             (this.mediaSource = this.masterPlaylistController_.mediaSource),
@@ -71939,7 +69857,7 @@ window.addEventListener("load", function (e) {
               },
               buffered: {
                 get: function () {
-                  return qo(i.tech_.buffered());
+                  return Ho(i.tech_.buffered());
                 },
                 enumerable: !0,
               },
@@ -71981,7 +69899,7 @@ window.addEventListener("load", function (e) {
               },
               seekable: {
                 get: function () {
-                  return qo(i.tech_.seekable());
+                  return Ho(i.tech_.seekable());
                 },
                 enumerable: !0,
               },
@@ -72065,7 +69983,7 @@ window.addEventListener("load", function (e) {
               this.masterPlaylistController_.mediaTypes_.AUDIO
                 .activePlaylistLoader;
           this.logger_("waiting for EME key session creation"),
-            Ic({
+            Ec({
               player: this.player_,
               sourceKeySystems: this.source_.keySystems,
               audioMedia: e && e.media(),
@@ -72094,7 +70012,7 @@ window.addEventListener("load", function (e) {
             e =
               this.masterPlaylistController_.mediaTypes_.AUDIO
                 .activePlaylistLoader,
-            e = Ec({
+            e = Ic({
               player: this.player_,
               sourceKeySystems: this.source_.keySystems,
               media: this.playlists.media(),
@@ -72198,7 +70116,7 @@ window.addEventListener("load", function (e) {
             r.prototype.dispose.call(this);
         }),
         (t.convertToProgramTime = function (e, t) {
-          return Il({
+          return El({
             playlist: this.masterPlaylistController_.media(),
             time: e,
             callback: t,
@@ -72208,7 +70126,7 @@ window.addEventListener("load", function (e) {
           return (
             void 0 === n && (n = !0),
             void 0 === i && (i = 2),
-            El({
+            Il({
               programTime: e,
               playlist: this.masterPlaylistController_.media(),
               retryCount: i,
@@ -72259,7 +70177,7 @@ window.addEventListener("load", function (e) {
           n = (n = void 0 === n ? {} : n).overrideNative,
           n = void 0 !== n && n,
           e = Cr(e);
-        return e && (!M.supportsTypeNatively(e) || n || t) ? "maybe" : "";
+        return e && (!j.supportsTypeNatively(e) || n || t) ? "maybe" : "";
       },
     };
   return (
@@ -72289,16 +70207,16 @@ window.addEventListener("load", function (e) {
       },
       configurable: !0,
     }),
-    (w.Vhs = M),
+    (w.Vhs = j),
     Object.defineProperty(w, "Hls", {
       get: function () {
         return (
-          w.log.warn("videojs.Hls is deprecated. Use videojs.Vhs instead."), M
+          w.log.warn("videojs.Hls is deprecated. Use videojs.Vhs instead."), j
         );
       },
       configurable: !0,
     }),
-    w.use || (w.registerComponent("Hls", M), w.registerComponent("Vhs", M)),
+    w.use || (w.registerComponent("Hls", j), w.registerComponent("Vhs", j)),
     (w.options.vhs = w.options.vhs || {}),
     (w.options.hls = w.options.hls || {}),
     (w.getPlugin && w.getPlugin("reloadSourceOnError")) ||
@@ -72644,6 +70562,213 @@ window.addEventListener("load", function (e) {
   CABLES.VarGetOpWrapper = n;
   ((this.CABLES = this.CABLES || {}).COREMODULES =
     this.CABLES.COREMODULES || {}).Vargetset = e.Cables;
+})();
+(() => {
+  "use strict";
+  var e = {};
+  class t {
+    constructor(e, t) {
+      this.initiator = e;
+      this._options = t;
+    }
+    stack(e) {
+      console.info("[" + this.initiator + "] ", e);
+      console.log(new Error().stack);
+    }
+    groupCollapsed(e) {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 0 },
+            ...arguments
+          )) ||
+        !CABLES.logSilent
+      )
+        console.log("[" + this.initiator + "]", ...arguments);
+      console.groupCollapsed("[" + this.initiator + "] " + e);
+    }
+    table(e) {
+      console.table(e);
+    }
+    groupEnd() {
+      console.groupEnd();
+    }
+    error() {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 2 },
+            ...arguments
+          )) ||
+        !CABLES.UI
+      ) {
+        console.error("[" + this.initiator + "]", ...arguments);
+      }
+      if (!CABLES.UI && this._options && this._options.onError) {
+        this._options.onError(this.initiator, ...arguments);
+      }
+    }
+    errorGui() {
+      if (CABLES.UI)
+        CABLES.UI.logFilter.filterLog(
+          { initiator: this.initiator, level: 2 },
+          ...arguments
+        );
+    }
+    warn() {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 1 },
+            ...arguments
+          )) ||
+        !CABLES.logSilent
+      )
+        console.warn("[" + this.initiator + "]", ...arguments);
+    }
+    verbose() {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 0 },
+            ...arguments
+          )) ||
+        !CABLES.logSilent
+      )
+        console.log("[" + this.initiator + "]", ...arguments);
+    }
+    info() {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 0 },
+            ...arguments
+          )) ||
+        !CABLES.logSilent
+      )
+        console.info("[" + this.initiator + "]", ...arguments);
+    }
+    log() {
+      if (
+        (CABLES.UI &&
+          CABLES.UI.logFilter.filterLog(
+            { initiator: this.initiator, level: 0 },
+            ...arguments
+          )) ||
+        !CABLES.logSilent
+      )
+        console.log("[" + this.initiator + "]", ...arguments);
+    }
+    logGui() {
+      if (CABLES.UI)
+        CABLES.UI.logFilter.filterLog(
+          { initiator: this.initiator, level: 0 },
+          ...arguments
+        );
+    }
+    userInteraction(e) {}
+  }
+  class n {
+    constructor() {
+      this._log = new t("LoadingStatus");
+      this.pixelData = null;
+      this._finishedFence = true;
+      this._size = 0;
+      this._pbo = null;
+    }
+    _fence(a) {
+      const s = a.gl;
+      this._finishedFence = false;
+      return new Promise(function (t, n) {
+        if (a.aborted) return;
+        let i = s.fenceSync(s.SYNC_GPU_COMMANDS_COMPLETE, 0);
+        if (!i) return;
+        s.flush();
+        function r() {
+          if (a.aborted) return;
+          const e = s.clientWaitSync(i, 0, 0);
+          if (e == s.WAIT_FAILED) {
+            console.error("fence wait failed");
+            if (n) n();
+          } else if (e == s.TIMEOUT_EXPIRED) {
+            return setTimeout(r, 0);
+          } else if (e == s.CONDITION_SATISFIED) {
+            t();
+            s.deleteSync(i);
+          } else if (e == s.ALREADY_SIGNALED) {
+            t();
+            s.deleteSync(i);
+          } else {
+            this._log.log("unknown fence status", e);
+          }
+        }
+        r();
+      });
+    }
+    read(e, t, n, i, r, a, s, o) {
+      if (CABLES.UI)
+        if (!CABLES.UI.loaded || performance.now() - CABLES.UI.loadedTime < 1e3)
+          return;
+      if (!this._finishedFence) return;
+      const l = e.gl;
+      let u = 1;
+      if (e.aborted) return;
+      if (!t) return;
+      if (n === CGL.Texture.TYPE_FLOAT) n = CGL.Texture.PFORMATSTR_RGBA32F;
+      let c = CGL.Texture.isPixelFormatFloat(n);
+      if (c) u = 4;
+      if (CGL.Texture.isPixelFormatHalfFloat(n)) u = 2;
+      const d = CGL.Texture.setUpGlPixelFormat(e, n);
+      const h = d.numColorChannels * a * s;
+      if (a == 0 || s == 0 || h == 0) return;
+      if (!this._pixelData || this._size != h * u) {
+        if (c) this._pixelData = new Float32Array(h);
+        else this._pixelData = new Uint8Array(h);
+        this._size = h * u;
+      }
+      let p = l.UNSIGNED_BYTE;
+      if (c) p = l.FLOAT;
+      if (this._size == 0 || !this._pixelData) {
+        this._log.error("readpixel size 0", this._size, a, s);
+        return;
+      }
+      if (this._finishedFence) {
+        this._pbo = l.createBuffer();
+        l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
+        l.bufferData(
+          l.PIXEL_PACK_BUFFER,
+          this._pixelData.byteLength,
+          l.DYNAMIC_READ
+        );
+        l.bindFramebuffer(l.FRAMEBUFFER, t);
+        l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
+        e.profileData.profileFencedPixelRead++;
+        if (this._size != h * u)
+          this._log.error("buffer size invalid", h, a, s, u);
+        l.readPixels(i, r, a, s, d.glDataFormat, d.glDataType, 0);
+        l.bindBuffer(l.PIXEL_PACK_BUFFER, null);
+        l.bindFramebuffer(l.FRAMEBUFFER, null);
+      }
+      let f = this._pixelData.byteLength;
+      if (this._finishedFence && this._pbo)
+        this._fence(e).then((e) => {
+          this._wasTriggered = false;
+          this._finishedFence = true;
+          if (!e && this._pixelData && this._pixelData.byteLength == f) {
+            l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
+            l.getBufferSubData(l.PIXEL_PACK_BUFFER, 0, this._pixelData);
+            l.bindBuffer(l.PIXEL_PACK_BUFFER, null);
+            if (o) o(this._pixelData);
+          }
+          l.deleteBuffer(this._pbo);
+          this._pbo = null;
+        });
+      return true;
+    }
+  }
+  CGL.PixelReader = n;
+  ((this.CGL = this.CGL || {}).COREMODULES =
+    this.CGL.COREMODULES || {}).Pixelreader = e.Pixelreader;
 })();
 (() => {
   "use strict";
@@ -73031,207 +71156,58 @@ window.addEventListener("load", function (e) {
 (() => {
   "use strict";
   var e = {};
-  class t {
-    constructor(e, t) {
-      this.initiator = e;
-      this._options = t;
-    }
-    stack(e) {
-      console.info("[" + this.initiator + "] ", e);
-      console.log(new Error().stack);
-    }
-    groupCollapsed(e) {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 0 },
-            ...arguments
-          )) ||
-        !CABLES.logSilent
-      )
-        console.log("[" + this.initiator + "]", ...arguments);
-      console.groupCollapsed("[" + this.initiator + "] " + e);
-    }
-    table(e) {
-      console.table(e);
-    }
-    groupEnd() {
-      console.groupEnd();
-    }
-    error() {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 2 },
-            ...arguments
-          )) ||
-        !CABLES.UI
-      ) {
-        console.error("[" + this.initiator + "]", ...arguments);
+  const t = class {
+    constructor(n, e) {
+      e = e || {};
+      this._op = n;
+      n.patchId = n.addInPort(
+        new CABLES.Port(n, "patchId", CABLES.OP_PORT_TYPE_STRING, {
+          display: "readonly",
+          hidePort: true,
+          hideParam: true,
+        })
+      );
+      n.setUiAttribs({ subPatchOp: { version: 2 } });
+      if (n.uiAttribs.parentOfSubpatch) {
+        n.patchId.set(n.uiAttribs.parentOfSubpatch);
+      } else {
+        if (e.subId) n.patchId.set(e.subId);
+        else n.patchId.set(CABLES.generateUUID());
       }
-      if (!CABLES.UI && this._options && this._options.onError) {
-        this._options.onError(this.initiator, ...arguments);
-      }
-    }
-    errorGui() {
-      if (CABLES.UI)
-        CABLES.UI.logFilter.filterLog(
-          { initiator: this.initiator, level: 2 },
-          ...arguments
-        );
-    }
-    warn() {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 1 },
-            ...arguments
-          )) ||
-        !CABLES.logSilent
-      )
-        console.warn("[" + this.initiator + "]", ...arguments);
-    }
-    verbose() {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 0 },
-            ...arguments
-          )) ||
-        !CABLES.logSilent
-      )
-        console.log("[" + this.initiator + "]", ...arguments);
-    }
-    info() {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 0 },
-            ...arguments
-          )) ||
-        !CABLES.logSilent
-      )
-        console.info("[" + this.initiator + "]", ...arguments);
-    }
-    log() {
-      if (
-        (CABLES.UI &&
-          CABLES.UI.logFilter.filterLog(
-            { initiator: this.initiator, level: 0 },
-            ...arguments
-          )) ||
-        !CABLES.logSilent
-      )
-        console.log("[" + this.initiator + "]", ...arguments);
-    }
-    logGui() {
-      if (CABLES.UI)
-        CABLES.UI.logFilter.filterLog(
-          { initiator: this.initiator, level: 0 },
-          ...arguments
-        );
-    }
-    userInteraction(e) {}
-  }
-  class n {
-    constructor() {
-      this._log = new t("LoadingStatus");
-      this.pixelData = null;
-      this._finishedFence = true;
-      this._size = 0;
-      this._pbo = null;
-    }
-    _fence(a) {
-      const s = a.gl;
-      this._finishedFence = false;
-      return new Promise(function (t, n) {
-        if (a.aborted) return;
-        let i = s.fenceSync(s.SYNC_GPU_COMMANDS_COMPLETE, 0);
-        if (!i) return;
-        s.flush();
-        function r() {
-          if (a.aborted) return;
-          const e = s.clientWaitSync(i, 0, 0);
-          if (e == s.WAIT_FAILED) {
-            console.error("fence wait failed");
-            if (n) n();
-          } else if (e == s.TIMEOUT_EXPIRED) {
-            return setTimeout(r, 0);
-          } else if (e == s.CONDITION_SATISFIED) {
-            t();
-            s.deleteSync(i);
-          } else if (e == s.ALREADY_SIGNALED) {
-            t();
-            s.deleteSync(i);
-          } else {
-            this._log.log("unknown fence status", e);
-          }
-        }
-        r();
+      n.patchId.onChange = () => {
+        if (e.subId) n.patchId.value = e.subId;
+      };
+      n.init = () => {
+        n.setStorage({ subPatchVer: 2 });
+      };
+      n.loadDependencies = (e, t) => {
+        if (CABLES.UI) {
+          gui.serverOps.loadProjectDependencies(e, () => {
+            if (t) t();
+          });
+        } else if (t) t();
+      };
+      n.on("delete", () => {
+        if (n.patch.clearSubPatchCache)
+          n.patch.clearSubPatchCache(this.patchId);
+        const t = n.patch.ops;
+        for (let e = t.length - 1; e >= 0; e--)
+          if (
+            t[e] &&
+            t[e].uiAttribs &&
+            t[e].uiAttribs.subPatch == n.patchId.get()
+          )
+            n.patch.deleteOp(t[e].id);
       });
+      this._op.isExposableSubpatchOp = () => {
+        return true;
+      };
     }
-    read(e, t, n, i, r, a, s, o) {
-      if (CABLES.UI)
-        if (!CABLES.UI.loaded || performance.now() - CABLES.UI.loadedTime < 1e3)
-          return;
-      if (!this._finishedFence) return;
-      const l = e.gl;
-      let u = 1;
-      if (e.aborted) return;
-      if (!t) return;
-      if (n === CGL.Texture.TYPE_FLOAT) n = CGL.Texture.PFORMATSTR_RGBA32F;
-      let c = CGL.Texture.isPixelFormatFloat(n);
-      if (c) u = 4;
-      if (CGL.Texture.isPixelFormatHalfFloat(n)) u = 2;
-      const d = CGL.Texture.setUpGlPixelFormat(e, n);
-      const h = d.numColorChannels * a * s;
-      if (a == 0 || s == 0 || h == 0) return;
-      if (!this._pixelData || this._size != h * u) {
-        if (c) this._pixelData = new Float32Array(h);
-        else this._pixelData = new Uint8Array(h);
-        this._size = h * u;
-      }
-      let p = l.UNSIGNED_BYTE;
-      if (c) p = l.FLOAT;
-      if (this._size == 0 || !this._pixelData) {
-        this._log.error("readpixel size 0", this._size, a, s);
-        return;
-      }
-      if (this._finishedFence) {
-        this._pbo = l.createBuffer();
-        l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
-        l.bufferData(
-          l.PIXEL_PACK_BUFFER,
-          this._pixelData.byteLength,
-          l.DYNAMIC_READ
-        );
-        l.bindFramebuffer(l.FRAMEBUFFER, t);
-        l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
-        e.profileData.profileFencedPixelRead++;
-        if (this._size != h * u)
-          this._log.error("buffer size invalid", h, a, s, u);
-        l.readPixels(i, r, a, s, d.glDataFormat, d.glDataType, 0);
-        l.bindBuffer(l.PIXEL_PACK_BUFFER, null);
-        l.bindFramebuffer(l.FRAMEBUFFER, null);
-      }
-      let m = this._pixelData.byteLength;
-      if (this._finishedFence && this._pbo)
-        this._fence(e).then((e) => {
-          this._wasTriggered = false;
-          this._finishedFence = true;
-          if (!e && this._pixelData && this._pixelData.byteLength == m) {
-            l.bindBuffer(l.PIXEL_PACK_BUFFER, this._pbo);
-            l.getBufferSubData(l.PIXEL_PACK_BUFFER, 0, this._pixelData);
-            l.bindBuffer(l.PIXEL_PACK_BUFFER, null);
-            if (o) o(this._pixelData);
-          }
-          l.deleteBuffer(this._pbo);
-          this._pbo = null;
-        });
-      return true;
+    get patchId() {
+      return this._op.patchId.get();
     }
-  }
-  CGL.PixelReader = n;
-  ((this.CGL = this.CGL || {}).COREMODULES =
-    this.CGL.COREMODULES || {}).Pixelreader = e.Pixelreader;
+  };
+  CABLES.SubPatchOp = t;
+  ((this.CABLES = this.CABLES || {}).COREMODULES =
+    this.CABLES.COREMODULES || {}).Subpatchop = e.Cables;
 })();

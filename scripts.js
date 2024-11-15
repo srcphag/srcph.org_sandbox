@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollToPlugin);
 function handleScrollProgress(progress, variableName) {
   CABLES.patch.setVariable(variableName, progress);
   // console.log(variableName + String(progress));
-  console.log(progress);
+  // console.log(progress);
 }
 
 function setPSR(variable, values) {
