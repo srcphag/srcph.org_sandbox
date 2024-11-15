@@ -1,9 +1,7 @@
 //Set context
 const currentURL = window.location.href;
 var pageContext;
-const path = "https://d89r2n-5000.csb.app/";
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-const proxiedAssetUrl = proxyUrl + path;
+const path = "https://cdn.jsdelivr.net/gh/srcphag/srcph.org_sandbox@main/";
 
 if (currentURL.includes("works")) {
   pageContext = "works";
