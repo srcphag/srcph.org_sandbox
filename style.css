@@ -4,15 +4,17 @@
   --bck2: #f2f5fa;
   --black: #141414;
   --blue: rgb(0, 0, 256);
-  --textSize0: 14px;
+  --textSize0: 12px;
   --fLight: 100;
   --fRegular: 400;
   --fBold: 600;
 
   --mainMargin: 42px;
   --mainPadding: 36px;
+  --q1Margin: 24px;
 
   --headerHeight: 65px;
+  --indexWorkMargin: 300px;
 
   --mainHeight: calc(100vh - 110px);
   --mainWidth: calc(100vw - ((var(--mainMargin) * 2) + var(--mainPadding)));
@@ -44,7 +46,12 @@ a {
   color: var(--black);
   text-decoration: none;
 }
-
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 24px;
+}
 #glcanvas {
   display: block;
   top: 0;
@@ -53,16 +60,27 @@ a {
   z-index: 1;
   mix-blend-mode: multiply;
 }
-.canvasmask{
+.canvasmask {
   background-color: #ffffff;
   z-index: 6;
 }
+.backgroundmask {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 6;
+}
+#backgroundMask1 {
+  height: 0vh;
+  right: 0;
+  left: calc(((var(--mainWidth) / 6) * 2));
+  bottom: 0;
+}
 #canvasMask1 {
   height: 100vh;
-  left: calc((var(--mainWidth)/6) + var(--mainMargin) + var(--mainPadding));
-  right: calc(var(--mainMargin) + (var(--mainWidth)/6));
+  left: calc((var(--mainWidth) / 6) + var(--mainMargin) + var(--mainPadding));
+  /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+  right: calc(var(--mainMargin));
   position: absolute;
-  
 }
 #canvasMask2 {
   position: fixed;
@@ -76,15 +94,24 @@ a {
   position: fixed;
   height: 55vh;
   width: calc((var(--mainWidth) / 6));
-  left:calc(var(--mainMargin) + var(--mainPadding));
+  left: calc(var(--mainMargin) + var(--mainPadding));
 }
 #canvasMask4 {
   position: fixed;
   height: 65vh;
   width: calc((var(--mainWidth) / 6) + var(--mainPadding));
-  left:calc((var(--mainWidth) / 6)  + var(--mainPadding));
+  left: calc((var(--mainWidth) / 6) + var(--mainPadding));
 }
-
+#canvasMask5 {
+  position: absolute;
+  height: calc(100vh + var(--indexWorkMargin));
+  left: calc(
+    ((var(--mainWidth) / 6) * 2) + var(--mainMargin) + var(--mainPadding)
+  );
+  /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+  right: 0px;
+  top: -2px;
+}
 .srcshape {
   position: fixed;
   top: 0;
@@ -155,7 +182,7 @@ nav a {
 /* indexPage */
 
 [context="index"] main,
-[context="index"] #contact {
+[context="index"] #about {
   /* width: calc(100vw - (var(--mainMargin) + var(--mainPadding))); */
   padding-left: calc(var(--mainMargin) + var(--mainPadding));
   padding-right: var(--mainMargin);
@@ -175,9 +202,12 @@ nav a {
 [context="index"] #work {
   min-height: 110vh;
 }
+[context="index"] #about {
+  mix-blend-mode: multiply;
+}
 
 [context="index"] #work #workList {
-  margin: 0 0 10vh 0;
+  margin-bottom: var(--indexWorkMargin);
 }
 
 [context="index"] #header {
@@ -186,12 +216,43 @@ nav a {
   z-index: 4;
   mix-blend-mode: multiply;
 }
-[context="index"] .collection-list {
+[context="index"] #workList .w-dyn-items,
+[context="index"] #aboutList .w-dyn-item {
   display: grid;
-
   grid-template-columns: repeat(6, calc(100% / 6));
   /* grid-template-columns: repeat(6, calc(var(--mainWidth) / 6));
   grid-template-rows: repeat(auto, calc(var(--mainWidth) / 6)); */
+}
+[context="index"] #aboutList .w-dyn-item {
+  height: 100vh;
+}
+[context="index"] #aboutList {
+  height: 100%;
+  color: var(--black);
+}
+
+[context="index"] #curriculum {
+  grid-column: 4 / 6; /* Start at 4, end before 6 (so 4 and 5) */
+  grid-row: 1;
+}
+[context="index"] #curriculum .w-richtext {
+  position: relative;
+  top: 150px;
+}
+[context="index"] #links {
+  grid-column: 5 / 7;
+  grid-row: 1;
+  padding-right: 260px;
+}
+[context="index"] #links #linksWrapper {
+  position: relative;
+  top: 60vh;
+}
+[context="index"] #links #linksContact {
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  align-items: flex-end;
 }
 
 [context="index"] .collection-list .work {
@@ -209,7 +270,23 @@ nav a {
 [context="index"] .videojs-work {
   width: 100%;
   height: 100%;
+}
+[context="index"] .videojs-about {
+  width: 100%;
   object-fit: cover;
+  position: relative;
+  top: var(--headerHeight);
+}
+
+[context="index"] .collection-list .work .video .videojs-work video {
+  height: 100%;
+  overflow: hidden;
+}
+[context="index"] .videojs-about video {
+  width: 100%;
+}
+[context="index"] .w-dyn-item #image {
+  grid-area: 1/3;
 }
 
 [context="index"] .vjs-poster {
@@ -217,11 +294,6 @@ nav a {
   background-position: center;
   width: 100%;
   height: 100%;
-}
-
-[context="index"] .collection-list .work .video .videojs-work video {
-  height: 100%;
-  overflow: hidden;
 }
 
 [context="index"] #logo {
@@ -248,7 +320,7 @@ nav a {
 }
 
 [context="index"] #deco1 {
-  display:none;
+  display: none;
   position: fixed;
   top: 50vh;
   left: 60px;
@@ -258,8 +330,8 @@ nav a {
   background-color: #a2a2a2;
 }
 
-[context="index"] .deco{
-  z-index:7;
+[context="index"] .deco {
+  z-index: 7;
 }
 [context="index"] #deco2,
 [context="index"] #deco3 {
@@ -276,11 +348,11 @@ nav a {
 }
 
 [context="index"] #text1 {
-  z-index:7;
+  z-index: 7;
   position: fixed;
   width: 400px;
   top: 55vh;
-  left: calc((var(--mainWidth) / 6)  + var(--mainPadding));
+  left: calc((var(--mainWidth) / 6) + var(--mainPadding));
   margin-top: 25px;
   color: var(--black);
   font-size: var(--textSize0);
@@ -350,7 +422,7 @@ nav a {
 }
 
 [context="index"] main .work:hover {
-  filter: grayscale(0)  contrast(1);
+  filter: grayscale(0) contrast(1);
   transition: filter 0.1s ease;
 }
 
@@ -382,7 +454,6 @@ nav a {
   position: relative;
 }
 
-[context="index"] #contact,
 [context="works"] main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -396,70 +467,40 @@ nav a {
   top: 55vh;
 }
 
-[context="index"] #contact {
+[context="index"] #about {
   color: var(--bck1);
   z-index: 6;
   height: 100vh;
-  padding-top: 200px;
 }
 
-[context="index"] #contact .w-dyn-list {
-  grid-column: span 2 / 7;
-  display: flex;
-  align-items: center;
-}
-
-[context="index"] #contact .w-dyn-list .w-dyn-item {
-  display: flex;
-  flex-direction: row;
-}
-
-[context="index"] #contact a {
-  color: var(--bck1);
+[context="index"] #about a {
+  color: var(--black);
   text-decoration: none;
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-[context="index"] #contact a:hover {
+[context="index"] #about a:hover {
   text-decoration: underline;
 }
 
-
-[context="index"] #contact #image .w-embed {
-  position: relative;
-  bottom: 100px;
-  z-index: 1;
-}
-
-/* [context="index"] #contact #image img {
-  aspect-ratio: 1 / 1;
-  height: max-content;
-  padding: 0 0 0 0;
-  filter: grayscale(100%);
-  margin: unset;
-  position: relative;
-  bottom: 100px;
-  z-index: 1;
-} */
-
-[context="index"] #contact #textContact {
+[context="index"] #about #textabout {
   font-size: 20px;
   font-weight: var(--fLight);
   opacity: 0;
 }
 
-[context="index"] #contact #linksContact {
+[context="index"] #about #linksabout {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 40px;
 }
-[context="index"] #contact #linksContact > * {
+[context="index"] #about #linksabout > * {
   opacity: 0;
 }
 
-[context="index"] #contact #linksContact::before {
+[context="index"] #about #linksabout::before {
   content: "";
   display: block;
   width: 32px;
@@ -468,7 +509,7 @@ nav a {
   margin-bottom: 20px;
 }
 
-[context="index"] #contact #deco4 {
+[context="index"] #about #deco4 {
   background-color: var(--bck1);
   height: 2px;
   display: flex;
@@ -478,7 +519,7 @@ nav a {
   grid-row-end: 1;
 }
 
-[context="index"] #contact #deco5 {
+[context="index"] #about #deco5 {
   background-color: var(--bck1);
   grid-area: 1/7;
   width: 100%;
@@ -493,6 +534,8 @@ nav a {
 /* workPage */
 
 body[context="works"] {
+  font-size: var(--textSize0);
+  font-weight: 200;
   /* opacity: 0; */
 }
 
@@ -589,7 +632,7 @@ body[context="works"] {
   position: relative;
   padding: 0 0 0 0;
   grid-area: 2/1;
-  margin: 10px 0 30px 0 !important;
+  margin: 10px 0 30px 0;
 }
 
 [context="works"] main h2 {
@@ -723,7 +766,83 @@ body[context="works"] {
 /* filter: invert(1) grayscale(1) brightness(2); */
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+  [context="works"] main {
+    grid-template-columns: none;
+    left: var(--q1Margin);
+    right: 0px;
+    top: 50vh;
+    background-color: var(--bck0);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   [context="works"] #background,
+  [context="works"] .infoheader {
+    display: none;
+  }
+
+  [context="works"] main #col1 {
+    grid-area: 1/1;
+  }
+  [context="works"] #col1 .infowrapper,
+  [context="works"] #col2 .infowrapper {
+    padding: 0;
+    margin: 0;
+    padding-left: var(--mainPadding);
+    background-color: transparent;
+  }
+  [context="works"] #col1 .infowrapper > *:not(h1) {
+    padding-left: var(--mainPadding);
+  }
+  [context="works"] main h1#title {
+    position: fixed;
+    top: 50vh;
+    margin-bottom: unset;
+    margin-top: 15px;
+  }
+  [context="works"] #col2 .infowrapper {
+    padding-left: calc(var(--mainPadding) * 3);
+    padding-right: var(--q1Margin);
+  }
+  [context="works"] main #col2 {
+    grid-area: 1/1;
+  }
+  [context="works"] main #col2 p {
+    margin-top: 0;
+  }
+  [context="works"] main #col6 {
+    display: none;
+  }
+  [context="works"] #logo {
+    left: var(--q1Margin);
+  }
+  [context="works"] #logo #logoPlayer {
+    transform: scale(0.75);
+    transform-origin: center left;
+  }
+  [context="works"] #playerControls {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 50vh;
+    left: 0;
+    margin: auto;
+    width: unset;
+    height: unset;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  [context="works"] #playerControls > div {
+    width: 14px;
+    height: 22.4px;
+    margin-right: var(--q1Margin);
+    margin-bottom: 10px;
+  }
+
+  /* [context="works"] #background,
   [context="index"] #background {
     width: 100vw;
     height: calc(100vh - 70px);
@@ -819,7 +938,7 @@ body[context="works"] {
 
   [context="works"] #playerControls #area1 {
     display: none !important;
-  }
+  } */
 }
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
   [context="index"] #background,
@@ -833,7 +952,7 @@ body[context="works"] {
     left: 28px;
     display: flex;
   }
-  [context="index"] #contact,
+  [context="index"] #about,
   [context="index"] main .collection-list {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -846,9 +965,7 @@ body[context="works"] {
     width: var(--mainWidthMq2);
     left: 28px;
   }
-  [context="index"] #contact {
-    height: 110vh;
-  }
+
   [context="index"] #background {
     width: calc(100vw - 28px);
     left: 28px;
@@ -856,15 +973,15 @@ body[context="works"] {
   [context="index"] main .work .title {
     opacity: 1;
   }
-  [context="index"] #contact #image {
+  [context="index"] #about #image {
     grid-area: 1/3;
   }
-  [context="index"] #contact #deco5 {
+  [context="index"] #about #deco5 {
     grid-area: 1/3;
     bottom: 100px;
     right: -30px;
   }
-  [context="index"] #contact .w-dyn-list {
+  [context="index"] #about .w-dyn-list {
     grid-column: span 2 / 3;
   }
 }

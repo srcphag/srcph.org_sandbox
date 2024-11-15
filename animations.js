@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     });
 
     ScrollTrigger.create({
-      trigger: "#contact",
+      trigger: "#about",
       start: "top 50%",
       end: "bottom 100%",
       onUpdate: (self) => handleScrollProgress(self.progress, "aboutScroll"),
@@ -31,8 +31,8 @@ window.addEventListener("load", function () {
         scrub: 1,
         trigger: "#workList",
         start: "bottom 0%",
-        endTrigger: "#contact",
-        end: "bottom bottom",
+        endTrigger: "#about",
+        end: "bottom 0%",
       },
     });
 
@@ -41,31 +41,34 @@ window.addEventListener("load", function () {
     if (mq3.matches) {
       tl1.to("#logo", { translateY: "-50vh" }),
         tl1.to("#text1", { translateY: "-70vh", opacity: 0 }, "<"),
-        tl1.to("#canvasMask4", { translateY: "-70vh"}, "<"),
+        tl1.to("#canvasMask4", { translateY: "-70vh" }, "<"),
         tl1.to("#deco1", { opacity: 0 }, "<"),
         tl1.to("#deco2", { opacity: 0 }, "<"),
         tl1.to("#deco3", { opacity: 0 }, "<"),
-        tl1.to("#canvasMask3", { translateY: "-50vh"}, "<");
+        tl1.to("#canvasMask3", { translateY: "-50vh" }, "<");
 
-      tl2.to("#textContact", { opacity: 1 }, "<"),
-        tl2.to("#image img", { opacity: 1, left: "-30px" }, "<"),
-        tl2.to("#linksContact a", { opacity: 1, stagger: 0.2 }, "<50%"),
+      tl2.to("#about", { opacity: 1 }),
+        // tl2.to("#image", { opacity: 1, left: "-30px" }, "<"),
+        tl2.to("#backgroundMask1", { height: "60vh" }, "<"),
+        tl2.to("#linksabout a", { opacity: 1, stagger: 0.2 }, "<50%"),
         //    Snapping
 
         ScrollTrigger.create({
           onEnter: () => {
             //   console.log("onEnter");
             CABLES.patch.setVariable("stringTexture", "works");
+            CABLES.patch.setVariable("mainColor", "works");
           },
           onLeave: () => {
             //   console.log("onLeave");
-            // gsap.to(window, { scrollTo: "#contact", duration: 2 });
-            // CABLES.patch.setVariable("stringTexture", "let's work together");
+            // gsap.to(window, { scrollTo: "#about", duration: 2 });
+            CABLES.patch.setVariable("stringTexture", "about");
           },
           onEnterBack: () => {
-            //   console.log("onenterBack");
+            CABLES.patch.setVariable("stringTexture", "works");
           },
           onLeaveBack: () => {
+            CABLES.patch.setVariable("stringTexture", "mediaDesign");
             //   console.log("onLeaveBack");
             // gsap.to(window, { scrollTo: "#void", duration: 2 });
             // CABLES.patch.setVariable("stringTexture", "media design");
@@ -95,9 +98,9 @@ window.addEventListener("load", function () {
         tl1.to("#deco2", { opacity: 0 }, "<"),
         tl1.to("#deco3", { opacity: 0 }, "<");
 
-      tl2.to("#textContact", { opacity: 1 }, "<"),
+      tl2.to("#textabout", { opacity: 1 }, "<"),
         tl2.to("#image img", { opacity: 1, left: "-30px" }, "<"),
-        tl2.to("#linksContact a", { opacity: 1, stagger: 0.2 }, "<50%");
+        tl2.to("#linksabout a", { opacity: 1, stagger: 0.2 }, "<50%");
     }
 
     // FadeIn work Elements

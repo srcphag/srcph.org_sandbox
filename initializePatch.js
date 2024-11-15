@@ -67,6 +67,12 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       aboutScroll: 0,
       videoPlay: isPlaying,
       videoMuted: 1,
+      indexPSR_mq3: [0.5, -0.5, 0, 3.2, -40, -20, 50],
+      indexWorkPSR_mq3: [0.5, 0, 0, 5, 180, 50, 30],
+      indexAboutPSR_mq3: [-0.5, 0, 0, 4, 250, 50, 50],
+      // WorkPage
+      workPSR_mq3: [-1, -1, 0, 10, 90, 0, 0],
+      workPSR_mq1: [-3.52, -1.67, 0, 15, 330, 0, -8.45],
     },
     patch: CABLES.exportedPatch,
     prefixAssetPath: path,
@@ -100,7 +106,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       // Set the CABLES variable
       CABLES.patch.setVariable("videoPlay", isPlaying ? 1 : 0);
       CABLES.patch.setVariable("videoMuted", 0);
-      console.log(isPlaying);
+      // console.log(isPlaying);
     });
   }
   if (pageContext == "index") {

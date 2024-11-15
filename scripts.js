@@ -2,6 +2,8 @@ const logo = document.getElementById("logo");
 const gridItems = document.querySelectorAll(".work");
 var mainColor;
 
+var workPSR_mq3 = [1, 0, 0, 10, 138, -28, 0];
+
 //Smooth Animation
 
 const lenis = new Lenis({
@@ -28,7 +30,12 @@ gsap.registerPlugin(ScrollToPlugin);
 function handleScrollProgress(progress, variableName) {
   CABLES.patch.setVariable(variableName, progress);
   // console.log(variableName + String(progress));
-  // console.log(progress)
+  console.log(progress);
+}
+
+function setPSR(variable, values) {
+  CABLES.patch.setVariable(variable, values);
+  console.log(values);
 }
 
 function getRandomInt(min, max) {
@@ -48,15 +55,17 @@ function getElementPosition(elementId) {
 // Track position of the mask
 
 const workList = document.getElementById("workList");
-const targetElement = document.getElementById("canvasMask1");
+const mask1 = document.getElementById("canvasMask1");
+const mask5 = document.getElementById("canvasMask5");
 
 function updatePosition() {
-  if (workList && targetElement) {
+  if (workList && mask1 && mask5) {
     const rect = workList.getBoundingClientRect();
     var WorkHeight = workList.offsetHeight;
-  
-    targetElement.style.transform = `translateY(${rect.top + window.scrollY}px)`;
-    targetElement.style.height = `${WorkHeight}px`;  // Remove the extra parentheses
+
+    mask1.style.transform = `translateY(${rect.top + window.scrollY}px)`;
+    mask1.style.height = `${WorkHeight}px`;
+    mask5.style.transform = `translateY(${rect.bottom + window.scrollY}px)`;
   }
 }
 
@@ -105,6 +114,7 @@ if (pageContext == "index") {
     autoplay: true,
     preload: "auto",
     muted: true,
+    loop: true,
   });
 
   //// mq3
@@ -247,79 +257,81 @@ if (pageContext == "works") {
   });
   window.addEventListener("load", function () {
     CABLES.patch.setVariable("videoUrl", imageUrls[0]);
+    // console.log("videoUrl", imageUrls[0]);
   });
+  if (mq3.matches) {
+    const imageListContainer = document.getElementById("imageList");
 
-  const imageListContainer = document.getElementById("imageList");
+    let currentImageIndex = 0;
 
-  let currentImageIndex = 0;
+    function updateActiveItem(index) {
+      const listItems = imageListContainer.querySelectorAll("li");
+      listItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+      listItems[index].classList.add("active");
+    }
 
-  function updateActiveItem(index) {
-    const listItems = imageListContainer.querySelectorAll("li");
-    listItems.forEach((item) => {
-      item.classList.remove("active");
-    });
-    listItems[index].classList.add("active");
-  }
-
-  function showNextImage() {
-    currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
-    updateActiveItem(currentImageIndex);
-    // console.log(imageUrls[currentImageIndex]);
-    CABLES.patch.setVariable("imageUrl", imageUrls[currentImageIndex]);
-  }
-
-  // Iterate through the arrays and create list items
-  for (let i = 0; i < imageUrls.length; i++) {
-    const listItem = document.createElement("li");
-
-    const anchor = document.createElement("a");
-    anchor.setAttribute("data-url", imageUrls[i]); // Store URL in a custom attribute
-    anchor.textContent = imageAlt[i];
-
-    listItem.appendChild(anchor);
-    imageListContainer.appendChild(listItem);
-
-    anchor.addEventListener("click", (event) => {
-      event.preventDefault();
-      const clickedImageUrl = event.target.getAttribute("data-url"); // Retrieve URL from custom attribute
-      currentImageIndex = imageUrls.indexOf(clickedImageUrl);
+    function showNextImage() {
+      currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
       updateActiveItem(currentImageIndex);
-      CABLES.patch.setVariable("imageUrl", clickedImageUrl);
-    });
-  }
-  updateActiveItem(currentImageIndex);
+      // console.log(imageUrls[currentImageIndex]);
+      CABLES.patch.setVariable("imageUrl", imageUrls[currentImageIndex]);
+    }
 
-  // Function to handle intersection observer callback
-  function handleIntersection(entries) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const url = entry.target.dataset.media;
-        const index = imageUrls.indexOf(url);
-        if (index !== -1) {
-          currentImageIndex = index;
-          updateActiveItem(currentImageIndex);
-          CABLES.patch.setVariable("imageUrl", imageUrls[currentImageIndex]);
+    // Iterate through the arrays and create list items
+    for (let i = 0; i < imageUrls.length; i++) {
+      const listItem = document.createElement("li");
+
+      const anchor = document.createElement("a");
+      anchor.setAttribute("data-url", imageUrls[i]); // Store URL in a custom attribute
+      anchor.textContent = imageAlt[i];
+
+      listItem.appendChild(anchor);
+      imageListContainer.appendChild(listItem);
+
+      anchor.addEventListener("click", (event) => {
+        event.preventDefault();
+        const clickedImageUrl = event.target.getAttribute("data-url"); // Retrieve URL from custom attribute
+        currentImageIndex = imageUrls.indexOf(clickedImageUrl);
+        updateActiveItem(currentImageIndex);
+        CABLES.patch.setVariable("imageUrl", clickedImageUrl);
+      });
+    }
+    updateActiveItem(currentImageIndex);
+
+    // Function to handle intersection observer callback
+    function handleIntersection(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const url = entry.target.dataset.media;
+          const index = imageUrls.indexOf(url);
+          if (index !== -1) {
+            currentImageIndex = index;
+            updateActiveItem(currentImageIndex);
+            // CABLES.patch.setVariable("imageUrl", imageUrls[currentImageIndex]);
+          }
         }
-      }
+      });
+      console.log(imageUrls[currentImageIndex]);
+    }
+
+    // Use Intersection Observer to detect when an image enters the viewport
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
     });
-    console.log(imageUrls[currentImageIndex]);
+
+    // Observe each image element
+    imageUrls.forEach((url) => {
+      const container = document.createElement("div");
+      container.setAttribute("data-media", url); // Set a data attribute for each URL
+      container.style.height = "100vh"; // Ensure divs are the full height of the viewport
+      container.style.visibility = "hidden";
+      container.classList.add("galleryVoid");
+      document.body.appendChild(container);
+      observer.observe(container);
+    });
   }
-
-  // Use Intersection Observer to detect when an image enters the viewport
-  const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.5,
-  });
-
-  // Observe each image element
-  imageUrls.forEach((url) => {
-    const container = document.createElement("div");
-    container.setAttribute("data-media", url); // Set a data attribute for each URL
-    container.style.height = "100vh"; // Ensure divs are the full height of the viewport
-    container.style.visibility = "hidden";
-    container.classList.add("galleryVoid");
-    document.body.appendChild(container);
-    observer.observe(container);
-  });
 
   var timeline = new TimelineMax();
   timeline
@@ -344,45 +356,63 @@ if (pageContext == "works") {
     },
   });
 
-  const playerControls = document.getElementById("playerControls");
-  let timeout;
-  let isHovering = false;
+  // VideoControls
+  if (mq3.matches) {
+    const playerControls = document.getElementById("playerControls");
+    let timeout;
+    let isHovering = false;
 
-  // Function to show controls
-  function showControls() {
-    playerControls.style.opacity = "1";
-    // Reset timer
-    clearTimeout(timeout);
-    // Only set hide timer if not hovering
-    if (!isHovering) {
+    function showControls() {
+      playerControls.style.opacity = "1";
+      // Reset timer
+      clearTimeout(timeout);
+      // Only set hide timer if not hovering
+      if (!isHovering) {
+        timeout = setTimeout(hideControls, 2000);
+      }
+    }
+
+    function hideControls() {
+      if (!isHovering) {
+        // Only hide if not hovering
+        playerControls.style.opacity = "0";
+      }
+    }
+
+    // Add necessary CSS
+    playerControls.style.transition = "opacity 0.3s ease";
+    playerControls.style.opacity = "0";
+
+    // Event listeners for mouse movement
+    document.addEventListener("mousemove", showControls);
+
+    // Mouse enter/leave for controls
+    playerControls.addEventListener("mouseenter", () => {
+      isHovering = true;
+      showControls();
+      clearTimeout(timeout); // Cancel any pending hide
+    });
+
+    playerControls.addEventListener("mouseleave", () => {
+      isHovering = false;
       timeout = setTimeout(hideControls, 2000);
-    }
+    });
   }
 
-  function hideControls() {
-    if (!isHovering) {
-      // Only hide if not hovering
-      playerControls.style.opacity = "0";
-    }
-  }
+  const mainElement = document.querySelector("main");
 
-  // Add necessary CSS
-  playerControls.style.transition = "opacity 0.3s ease";
-  playerControls.style.opacity = "0";
+  mainElement.addEventListener("scroll", () => {
+    let verticalScrollValue = mainElement.scrollTop;
 
-  // Event listeners for mouse movement
-  document.addEventListener("mousemove", showControls);
-
-  // Mouse enter/leave for controls
-  playerControls.addEventListener("mouseenter", () => {
-    isHovering = true;
-    showControls();
-    clearTimeout(timeout); // Cancel any pending hide
-  });
-
-  playerControls.addEventListener("mouseleave", () => {
-    isHovering = false;
-    timeout = setTimeout(hideControls, 2000);
+    CABLES.patch.setVariable("workPSR_mq1", [
+      -3.52,
+      -1.67,
+      0,
+      15,
+      330 + verticalScrollValue * 0.1,
+      0,
+      -8.45 + verticalScrollValue * 0.05,
+    ]);
   });
 }
 
