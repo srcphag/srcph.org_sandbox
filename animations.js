@@ -25,6 +25,14 @@ window.addEventListener("load", function () {
         end: "top 0%",
       },
     });
+    const tl1_mq1 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 1,
+        trigger: "#workList",
+        start: "top bottom", // Starts when top of workList hits bottom of viewport
+        end: "top 60px", // Ends when top of workList hits top of viewport
+      },
+    });
 
     const tl2 = gsap.timeline({
       scrollTrigger: {
@@ -91,16 +99,26 @@ window.addEventListener("load", function () {
 
     //// mq2
 
-    if (mq2.matches) {
-      tl1.to("#logo", { translateY: "-50vh" }),
-        tl1.to("#text1", { translateY: "-70vh", opacity: 0 }, "<"),
-        tl1.to("#deco1", { opacity: 0 }, "<"),
-        tl1.to("#deco2", { opacity: 0 }, "<"),
-        tl1.to("#deco3", { opacity: 0 }, "<");
-
-      tl2.to("#textabout", { opacity: 1 }, "<"),
-        tl2.to("#image img", { opacity: 1, left: "-30px" }, "<"),
-        tl2.to("#linksabout a", { opacity: 1, stagger: 0.2 }, "<50%");
+    if (mq2.matches || mq1.matches) {
+      tl1_mq1
+        .to("#logo", { translateY: "-50vh" })
+        .to("#logoPlayer", { scale: "0.75" }, "<") // starts with logo
+        .from(
+          "#text1",
+          {
+            translateY: "0",
+            opacity: 1,
+          },
+          "<"
+        ) // start with the others
+        .to(
+          "#text1",
+          {
+            opacity: 0,
+            // duration: 0.2,
+          },
+          "<"
+        );
     }
 
     // FadeIn work Elements

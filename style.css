@@ -52,6 +52,12 @@ ol {
   margin-bottom: 10px;
   padding-left: 24px;
 }
+.navbar {
+  height: 65px;
+}
+.navbar > div {
+  height: 65px;
+}
 #glcanvas {
   display: block;
   top: 0;
@@ -389,6 +395,9 @@ nav a {
   max-height: 100%;
   /* align-items: flex-end; */
 }
+[context="index"] main .work .description {
+  display: none;
+}
 
 [context="index"] main .work .workelement {
   width: 100%;
@@ -533,27 +542,17 @@ nav a {
 
 /* workPage */
 
-body[context="works"] {
-  font-size: var(--textSize0);
-  font-weight: 200;
-  /* opacity: 0; */
-}
-
 [context="works"] #multiplier,
 #multiplier .galleryelement {
   display: none;
 }
 
 [context="works"] nav.nav-menu a {
-  color: var(--bck0);
+  color: var(--black);
 }
 
 [context="works"] .srcshape {
   z-index: 5;
-}
-
-[context="works"] nav {
-  display: none;
 }
 
 [context="works"] main {
@@ -599,6 +598,10 @@ body[context="works"] {
   margin-top: 65px;
 }
 
+[context="works"] #col1 .infowrapper > *:not(h1) {
+  padding-left: var(--mainPadding);
+}
+
 [context="works"] main #col6 {
   grid-area: 1/6;
   justify-content: flex-end;
@@ -642,6 +645,7 @@ body[context="works"] {
 [context="works"] .heading {
   font-size: var(--textSize0);
   margin: 0;
+  margin-top: 10px;
   line-height: 24px;
 }
 
@@ -762,10 +766,140 @@ body[context="works"] {
   opacity: 0;
 }
 
-/* filter to set the logo in white */
-/* filter: invert(1) grayscale(1) brightness(2); */
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  body {
+    font-size: var(--textSize0);
+    font-weight: 200;
+    /* opacity: 0; */
+  }
+  [context="index"] #canvasMask1 {
+    left: calc(var(--mainMargin) + var(--mainPadding));
+  }
+  [context="index"] #canvasMask4 {
+    width: calc((var(--mainWidth)) + var(--mainPadding));
+  }
 
+  [context="index"] #workList .w-dyn-items,
+  [context="index"] #aboutList .w-dyn-item {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    /* grid-template-columns: repeat(6, calc(var(--mainWidth) / 6));
+  grid-template-rows: repeat(auto, calc(var(--mainWidth) / 6)); */
+  }
+
+  [context="works"] main {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    display: grid;
+  }
+  [context="works"] main #col6 {
+    grid-area: 1 / 3;
+  }
+  [context="works"] #col1 .infowrapper > *:not(h1) {
+    padding-left: var(--mainPadding);
+  }
+  [context="works"] main #col1 .infoheader {
+    width: calc(
+      (var(--mainWidth) / 3) + var(--mainPadding) + var(--mainMargin)
+    );
+  }
+  [context="works"] main #col2 .infowrapper {
+    padding: 0;
+    overflow: scroll;
+    max-height: 35vh;
+  }
+  [context="works"] main #description {
+    padding: 0 20px;
+  }
+
+  nav.nav-menu {
+    align-items: center;
+    display: flex;
+    margin-right: var(--mainMargin);
+    align-items: center;
+  }
+  nav.nav-menu a {
+    padding: 0 8px;
+    color: var(--black);
+  }
+  [context="works"] #logo {
+    left: calc((var(--mainPadding)) + var(--mainMargin));
+  }
+  [context="works"] #logo #logoPlayer {
+    transform: scale(0.8);
+    transform-origin: center left;
+  }
+  [context="works"] div#deco2 {
+    left: 5px;
+    top: 5px;
+    padding: unset !important;
+  }
+}
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+  [context="index"] #workList .w-dyn-items,
+  [context="index"] #aboutList .w-dyn-item {
+    display: flex;
+    flex-direction: column;
+  }
+  [context="index"] main {
+    padding-left: var(--q1Margin);
+    padding-right: var(--q1Margin);
+  }
+  [context="index"] #logo {
+    left: 32px;
+  }
+  [context="index"] #background {
+    left: var(--q1Margin);
+    right: var(--q1Margin);
+  }
+  [context="index"] #void {
+    height: 0;
+    margin-bottom: unset;
+  }
+  [context="index"] #work {
+    mix-blend-mode: unset;
+  }
+
+  [context="index"] #canvasMask1,
+  [context="index"] #canvasMask4 {
+    left: var(--q1Margin);
+    right: var(--q1Margin);
+  }
+  [context="index"] #canvasMask4 {
+    width: unset;
+  }
+  [context="index"] main .work {
+    margin: 0 0 30vh 0;
+  }
+  /* [context="index"] main .work {
+  } */
+  .visibleImage {
+    filter: grayscale(0) contrast(1) !important;
+  }
+  .visibleTitle {
+    opacity: 1 !important;
+  }
+  .visibleDescription {
+    opacity: 1 !important;
+  }
+  [context="index"] main .work .description,
+  [context="index"] main .work .title,
+  [context="index"] main .work .image {
+    transition: opacity 1s ease;
+  }
+  [context="index"] main .work .description {
+    display: flex;
+    color: var(--black);
+    font-weight: 200;
+    padding-left: var(--mainPadding);
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    opacity: 0;
+  }
+
   [context="works"] main {
     grid-template-columns: none;
     left: var(--q1Margin);
@@ -781,10 +915,6 @@ body[context="works"] {
   [context="works"] #background,
   [context="works"] .infoheader {
     display: none;
-  }
-
-  [context="works"] main #col1 {
-    grid-area: 1/1;
   }
   [context="works"] #col1 .infowrapper,
   [context="works"] #col2 .infowrapper {
@@ -802,12 +932,25 @@ body[context="works"] {
     margin-bottom: unset;
     margin-top: 15px;
   }
+  [context="index"] main .work .title {
+    color: var(--black);
+    opacity: 0;
+    height: 30px;
+  }
+  [context="index"] main .work .title div {
+    display: inline-block;
+    background-color: var(--bck0);
+    padding: 0 5px;
+    height: 100%;
+    display: flex;
+    /* vertical-align: middle; */
+    align-items: center;
+    width: fit-content;
+    padding-right: 50px;
+  }
   [context="works"] #col2 .infowrapper {
     padding-left: calc(var(--mainPadding) * 3);
     padding-right: var(--q1Margin);
-  }
-  [context="works"] main #col2 {
-    grid-area: 1/1;
   }
   [context="works"] main #col2 p {
     margin-top: 0;
@@ -818,8 +961,9 @@ body[context="works"] {
   [context="works"] #logo {
     left: var(--q1Margin);
   }
-  [context="works"] #logo #logoPlayer {
-    transform: scale(0.75);
+  [context="works"] #logo #logoPlayer,
+  [context="index"] #logo #logoPlayer {
+    transform: scale(0.9);
     transform-origin: center left;
   }
   [context="works"] #playerControls {
@@ -842,147 +986,16 @@ body[context="works"] {
     margin-bottom: 10px;
   }
 
-  /* [context="works"] #background,
-  [context="index"] #background {
-    width: 100vw;
-    height: calc(100vh - 70px);
-    position: fixed;
-    top: 50px;
-    left: 10px;
-  }
-
-  .navbar,
-  .container-3 {
-    height: 50px;
-  }
-
-  [context="index"] #work,
-  [context="works"] main {
-    width: 100vw;
-    padding: 0 30px;
-    left: 0;
-    grid-template-columns: unset;
-    grid-template-rows: unset;
-    min-height: unset;
-  }
-
-  [context="works"] main #col1,
-  [context="works"] main #col2,
-  [context="works"] main #row3 {
-    height: unset;
-  }
-  [context="works"] main #col1 {
-    grid-area: 1/1;
-  }
-  [context="works"] main #col2 {
-    grid-area: 2/1;
-    height: unset;
-    left: unset;
-  }
-  [context="works"] main #row3 {
-    grid-area: unset;
-    margin: unset;
-    position: absolute;
-    font-size: 10px !important;
-    left: 90vw;
-    top: 10vh;
-    line-height: 15px;
-  }
-
-  [context="index"] #logoPlayer {
-    height: 50px;
-  }
-
-  [context="index"] .text-block {
-    left: 30px;
-    top: 503px;
-    font-size: 12px;
-  }
-
-  [context="index"] main .work {
-    margin: 0 0 80px 0;
-  }
-
-  [context="works"] #logo,
-  [context="index"] #logo {
-    width: 150px;
-    height: 50px;
-    left: 8px;
-    top: 2px;
-    filter: grayscale(1) invert(1);
-  }
-
-  .nav-menu {
-    margin-right: 8px;
-    display: flex !important;
+  [context="works"] nav,
+  [context="index"] nav {
     align-items: center;
-  }
-
-  .nav-menu a.nav-link {
-    padding: 0 10px 0 10px;
-    font-weight: var(--fLight);
-    font-size: 13px;
-  }
-  .w-nav-button {
-    display: none !important;
-  }
-
-  [context="works"] #playerControls {
-    display: flex !important;
-    top: unset;
-    bottom: 0;
-    width: 50vw;
-    height: 50px;
-    justify-content: center;
-  }
-
-  [context="works"] #playerControls #area1 {
-    display: none !important;
-  } */
-}
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
-  [context="index"] #background,
-  [context="works"] #background {
-    width: calc(100vw - 28px);
-    left: 28px;
-  }
-  [context="index"] #logo,
-  [context="works"] #logo {
-    width: 180px;
-    left: 28px;
     display: flex;
+    margin-right: var(--q1Margin);
   }
-  [context="index"] #about,
-  [context="index"] main .collection-list {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: row;
-    display: grid;
-  }
-  [context="index"] #work {
-    width: var(--mainWidthMq2);
-    left: 28px;
-  }
-
-  [context="index"] #background {
-    width: calc(100vw - 28px);
-    left: 28px;
-  }
-  [context="index"] main .work .title {
-    opacity: 1;
-  }
-  [context="index"] #about #image {
-    grid-area: 1/3;
-  }
-  [context="index"] #about #deco5 {
-    grid-area: 1/3;
-    bottom: 100px;
-    right: -30px;
-  }
-  [context="index"] #about .w-dyn-list {
-    grid-column: span 2 / 3;
+  [context="works"] nav.nav-menu a,
+  [context="index"] nav.nav-menu a {
+    padding: 0 8px;
+    color: var(--black);
   }
 }
 

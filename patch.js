@@ -24585,8 +24585,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -1 },
-        { name: "Movement Y", value: 0 },
+        { name: "Movement X", value: -26 },
+        { name: "Movement Y", value: -3 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -24947,7 +24947,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "width", value: 608 },
+        { name: "width", value: 410 },
         { name: "height", value: 943 },
       ],
       objName: "Ops.Gl.MainLoop",
@@ -25006,7 +25006,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect", value: 0.6447507953340403 },
+        { name: "Aspect", value: 0.43478260869565216 },
       ],
       objName: "Ops.Gl.Matrix.Camera",
     },
@@ -25209,8 +25209,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -1 },
-        { name: "Movement Y", value: 0 },
+        { name: "Movement X", value: -26 },
+        { name: "Movement Y", value: -3 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -25364,6 +25364,12 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "trigger",
           links: [
             {
+              portIn: "in0 Ops.Trigger.RouteTriggerString_v2 Trigger 0",
+              portOut: "trigger",
+              objIn: "425b037e-4043-4a0d-8402-af6e284f76b4",
+              objOut: "5cuc5vqu0",
+            },
+            {
               portIn: "render",
               portOut: "trigger",
               objIn: "84fqupsq5",
@@ -25388,9 +25394,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "trigger",
           links: [
             {
-              portIn: "render",
+              portIn: "in0 Ops.Trigger.RouteTriggerString_v2 Trigger 1",
               portOut: "trigger",
-              objIn: "84fqupsq5",
+              objIn: "c3020432-d72e-41bb-8274-dbd55ba98235",
               objOut: "7e4ey2fi4",
             },
           ],
@@ -25501,12 +25507,6 @@ CABLES.exportedPatches["GgjVeu"] = {
       objName: "Ops.Vars.VarGetNumber_v2",
     },
     {
-      id: "j2v7lizv8",
-      uiAttribs: {},
-      portsIn: [{ name: "Variable", value: "textTexture" }],
-      objName: "Ops.Vars.VarSetTexture_v2",
-    },
-    {
       id: "jvioe1871",
       uiAttribs: {},
       portsIn: [
@@ -25525,8 +25525,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "hdbfyi4so",
       uiAttribs: {},
       portsIn: [
-        { name: "Visible", value: 1 },
-        { name: "Measure GPU", value: 1 },
+        { name: "Visible", value: 0 },
+        { name: "Measure GPU", value: 0 },
         { name: "Position index", value: 1 },
         { name: "Position", value: "bottom" },
         { name: "Open", value: 0 },
@@ -25546,7 +25546,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "FPS", value: 60 },
+        { name: "FPS", value: 56 },
       ],
       objName: "Ops.Gl.Performance",
     },
@@ -25554,7 +25554,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "wuo33hidd",
       uiAttribs: {},
       portsIn: [
-        { name: "Value", value: "mq1" },
+        { name: "Value", value: "mq2" },
         { name: "Variable", value: "mediaQuery" },
       ],
       objName: "Ops.Vars.VarSetString_v2",
@@ -25793,14 +25793,14 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "String 23", value: "" },
       ],
       portsOut: [
-        { name: "Switched Index", value: 0 },
+        { name: "Switched Index", value: 1 },
         {
           name: "Trigger 0",
           links: [
             {
-              portIn: "2uzay3xk0",
+              portIn: "9mnoq6ams",
               portOut: "Trigger 0",
-              objIn: "d4y1qau5o",
+              objIn: "f7f6u50bu",
               objOut: "val0mhtoj",
             },
           ],
@@ -25809,15 +25809,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Trigger 1",
           links: [
             {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portIn: "9mnoq6ams",
               portOut: "Trigger 1",
-              objIn: "hmrwm30er",
-              objOut: "val0mhtoj",
-            },
-            {
-              portIn: "2uzay3xk0",
-              portOut: "Trigger 1",
-              objIn: "5md9tus12",
+              objIn: "etqhlcubj",
               objOut: "val0mhtoj",
             },
           ],
@@ -25826,9 +25820,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Trigger 2",
           links: [
             {
-              portIn: "2uzay3xk0",
+              portIn: "9mnoq6ams",
               portOut: "Trigger 2",
-              objIn: "0yzwf3yhr",
+              objIn: "f6ly76vsv",
               objOut: "val0mhtoj",
             },
           ],
@@ -25867,6 +25861,17 @@ CABLES.exportedPatches["GgjVeu"] = {
       ],
       portsOut: [
         {
+          name: "Next Trigger",
+          links: [
+            {
+              portIn: "Exe",
+              portOut: "Next Trigger",
+              objIn: "0co9dzwpn",
+              objOut: "uqyteclc3",
+            },
+          ],
+        },
+        {
           name: "Switched Index",
           links: [
             {
@@ -25878,11 +25883,11 @@ CABLES.exportedPatches["GgjVeu"] = {
           ],
         },
         {
-          name: "Trigger 2",
+          name: "Trigger 0",
           links: [
             {
               portIn: "in0 Accumulator Trigger in",
-              portOut: "Trigger 2",
+              portOut: "Trigger 0",
               objIn: "xciwr2lx9",
               objOut: "uqyteclc3",
             },
@@ -25941,12 +25946,6 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "5cuc5vqu0",
               objOut: "o6iq01n0j",
             },
-            {
-              portIn: "in0 Ops.Trigger.RouteTriggerString_v2 Trigger 0",
-              portOut: "Trigger 0",
-              objIn: "425b037e-4043-4a0d-8402-af6e284f76b4",
-              objOut: "o6iq01n0j",
-            },
           ],
         },
         {
@@ -25958,35 +25957,10 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "7e4ey2fi4",
               objOut: "o6iq01n0j",
             },
-            {
-              portIn: "in0 Ops.Trigger.RouteTriggerString_v2 Trigger 1",
-              portOut: "Trigger 1",
-              objIn: "c3020432-d72e-41bb-8274-dbd55ba98235",
-              objOut: "o6iq01n0j",
-            },
           ],
         },
       ],
       objName: "Ops.Trigger.RouteTriggerString_v2",
-    },
-    {
-      id: "d2zyvti8g",
-      uiAttribs: {},
-      portsIn: [{ name: "Named Trigger", value: "mainLoop" }],
-      portsOut: [
-        {
-          name: "Triggered",
-          links: [
-            {
-              portIn: "Exe",
-              portOut: "Triggered",
-              objIn: "0co9dzwpn",
-              objOut: "d2zyvti8g",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Trigger.TriggerReceive",
     },
     {
       id: "o9o1lvbn5",
@@ -26185,7 +26159,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Number", value: 0 },
+        { name: "Number", value: -0.9658536585365853 },
       ],
       objName: "Ops.Number.TriggerOnChangeNumber",
     },
@@ -26274,7 +26248,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         {
           name: "dataStr",
           value:
-            '{"ports":[{"name":"in0 Ops.Trigger.RouteTriggerString_v2 Trigger 0","type":1}],"portsOut":[{"name":"out0 var set Value","type":2,"objType":"texture"}]}',
+            '{"ports":[{"name":"in0 Ops.Trigger.RouteTriggerString_v2 Trigger 0","type":1}],"portsOut":[{"name":"out0 var set Value","type":2,"objType":"texture"},{"name":"out1 TextMesh Next","type":1}]}',
         },
         { name: "patchId", value: "8aabf450-104c-4af6-a226-3166d810c3b7" },
       ],
@@ -26547,6 +26521,12 @@ CABLES.exportedPatches["GgjVeu"] = {
               objOut: "wm3l5lbrt",
             },
             {
+              portIn: "in2 SwitchTextures texture",
+              portOut: "texture",
+              objIn: "gpxi4rlmc",
+              objOut: "wm3l5lbrt",
+            },
+            {
               portIn: "textureInput",
               portOut: "texture",
               objIn: "r3u33h3hs",
@@ -26607,8 +26587,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Passive Events", value: 0 },
       ],
       portsOut: [
-        { name: "x", value: 0 },
-        { name: "y", value: 0 },
+        { name: "x", value: -0.9658536585365853 },
+        { name: "y", value: -1 },
         {
           name: "click",
           links: [
@@ -26622,8 +26602,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -1 },
-        { name: "Movement Y", value: 0 },
+        { name: "Movement X", value: -26 },
+        { name: "Movement Y", value: -3 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -27106,7 +27086,10 @@ CABLES.exportedPatches["GgjVeu"] = {
     {
       id: "ltmbqybsn",
       uiAttribs: { subPatch: "2154fd20-4fef-42fd-bef2-ef39e6975cdf" },
-      portsIn: [{ name: "create port", value: 0 }],
+      portsIn: [
+        { name: "create port", value: 0 },
+        { name: "out4 CustomShader textureInput", value: 0 },
+      ],
       objName: "Ops.Ui.PatchOutput",
     },
     {
@@ -27118,7 +27101,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         {
           name: "dataStr",
           value:
-            '{"ports":[{"name":"in0 + number2","type":0,"value":0},{"name":"in1 SwitchTextures Next","type":1}],"portsOut":[{"name":"out0 Ops.Gl.ShaderEffects.TransformTextureCoordinates Repeat X","type":0},{"name":"out1 Ops.Gl.ShaderEffects.TransformTextureCoordinates Translate X","type":0},{"name":"out2 CustomShader render","type":1},{"name":"out3 CanvasInfo Aspect Ratio","type":0}]}',
+            '{"ports":[{"name":"in0 + number2","type":0,"value":0},{"name":"in1 SwitchTextures Next","type":1},{"name":"in2 SwitchTextures texture","type":2,"objType":"texture"}],"portsOut":[{"name":"out0 Ops.Gl.ShaderEffects.TransformTextureCoordinates Repeat X","type":0},{"name":"out1 Ops.Gl.ShaderEffects.TransformTextureCoordinates Translate X","type":0},{"name":"out2 CustomShader render","type":1},{"name":"out3 CanvasInfo Aspect Ratio","type":0},{"name":"out4 CustomShader textureInput","type":2}]}',
         },
         { name: "patchId", value: "2154fd20-4fef-42fd-bef2-ef39e6975cdf" },
       ],
@@ -27255,8 +27238,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
       portsIn: [
         { name: "Use Viewport Size", value: 1 },
-        { name: "Width", value: 1402 },
-        { name: "Height", value: 805 },
+        { name: "Width", value: 728 },
+        { name: "Height", value: 943 },
         { name: "filter index", value: 1 },
         { name: "filter", value: "linear" },
         { name: "Anisotropic index", value: 0 },
@@ -27268,6 +27251,17 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Num Textures", value: "1" },
       ],
       portsOut: [
+        {
+          name: "Next",
+          links: [
+            {
+              portIn: "out1 ShaderToTexture Next",
+              portOut: "Next",
+              objIn: "c2dfdfab-f08f-46c6-8599-9c62d64da7c1",
+              objOut: "vthhei9c5",
+            },
+          ],
+        },
         {
           name: "Texture",
           links: [
@@ -27289,7 +27283,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         {
           name: "Fragment Code",
           value:
-            "IN vec2 texCoord;\r\nUNI vec2 offset;  // Offset in X and Y directions\r\nUNI vec2 repeat;  // Repeat in X and Y directions\r\nUNI sampler2D textureInput;\r\nUNI vec2 resolution;  // Screen resolution\r\n{{MODULES_HEAD}}\r\n\r\nvoid main()\r\n{\r\n    // Get texture dimensions\r\n    vec2 textureSize = vec2(textureSize(textureInput, 0));\r\n    \r\n    // Calculate aspect ratios\r\n    float screenAspect = resolution.x / resolution.y;\r\n    float textureAspect = textureSize.x / textureSize.y;\r\n    \r\n    // Calculate how many times we need to repeat vertically\r\n    float verticalRepeat = screenAspect / textureAspect;\r\n    \r\n    // Modify UV coordinates\r\n    vec2 uv = texCoord;\r\n    uv.x = uv.x; // Keep x as is to fit width\r\n    uv.y = uv.y * verticalRepeat; // Scale y to maintain aspect and repeat\r\n    \r\n    // Apply offset\r\n    uv = uv * repeat + offset;\r\n    \r\n    // Wrap UV coordinates to ensure they stay within the [0, 1] range\r\n    uv = fract(uv);\r\n    \r\n    {{MODULE_COLOR}}\r\n    outColor = texture(textureInput, uv);\r\n}",
+            "IN vec2 texCoord;\r\nUNI vec2 offset;  // Offset in X and Y directions\r\nUNI vec2 repeat;  // Repeat in X and Y directions\r\nUNI sampler2D textureInput;\r\n{{MODULES_HEAD}}\r\nvoid main()\r\n{\r\n    vec2 uv = texCoord * repeat + offset; // Apply offset and repeat\r\n    // Wrap UV coordinates to ensure they stay within the [0, 1] range\r\n    uv = fract(uv);\r\n    {{MODULE_COLOR}}\r\n    outColor = texture(textureInput, uv); // Sample the texture using modified coordinates\r\n}",
         },
         {
           name: "Vertex Code",
@@ -27297,10 +27291,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             "{{MODULES_HEAD}}\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\nIN vec3 attrTangent,attrBiTangent;\n\nIN float attrVertIndex;\n\nOUT vec2 texCoord;\nOUT vec3 norm;\nUNI mat4 projMatrix;\nUNI mat4 viewMatrix;\nUNI mat4 modelMatrix;\n\nvoid main()\n{\n    texCoord=attrTexCoord;\n    norm=attrVertNormal;\n    vec4 pos=vec4(vPosition,  1.0);\n    vec3 tangent=attrTangent;\n    vec3 bitangent=attrBiTangent;\n    mat4 mMatrix=modelMatrix;\n    gl_PointSize=10.0;\n\n    {{MODULE_VERTEX_POSITION}}\n    gl_Position = projMatrix * (viewMatrix*mMatrix) * pos;\n}\n",
         },
         { name: "Use As Material", value: 0 },
-        { name: "offset Y", value: 0 },
         { name: "repeat Y", value: 1 },
-        { name: "resolution X", value: 0 },
-        { name: "resolution Y", value: 0 },
       ],
       portsOut: [
         {
@@ -27310,6 +27301,17 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "Render",
               portOut: "trigger",
               objIn: "vthhei9c5",
+              objOut: "v38pi7nzw",
+            },
+          ],
+        },
+        {
+          name: "Shader",
+          links: [
+            {
+              portIn: "object port 2",
+              portOut: "Shader",
+              objIn: "vyl1eomnh",
               objOut: "v38pi7nzw",
             },
           ],
@@ -27326,10 +27328,10 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Pixel Unit", value: "Display" },
       ],
       portsOut: [
-        { name: "width", value: 608 },
+        { name: "width", value: 410 },
         { name: "height", value: 943 },
         { name: "Pixel Ratio", value: 1 },
-        { name: "Pixel Width", value: 608 },
+        { name: "Pixel Width", value: 410 },
         { name: "Pixel Height", value: 943 },
         {
           name: "Aspect Ratio",
@@ -27372,12 +27374,6 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "lcig881l8",
               objOut: "ece3100d-56f4-40e1-bd04-711aba30c988",
             },
-            {
-              portIn: "exec",
-              portOut: "in0 Ops.Trigger.RouteTriggerString_v2 Trigger 1",
-              objIn: "wm3l5lbrt",
-              objOut: "ece3100d-56f4-40e1-bd04-711aba30c988",
-            },
           ],
         },
       ],
@@ -27398,7 +27394,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         {
           name: "dataStr",
           value:
-            '{"ports":[{"name":"in0 Ops.Trigger.RouteTriggerString_v2 Trigger 1","type":1}],"portsOut":[{"name":"out0 ImageCompose texture_out","type":2,"objType":"texture"}]}',
+            '{"ports":[{"name":"in0 Ops.Trigger.RouteTriggerString_v2 Trigger 1","type":1}],"portsOut":[{"name":"out0 ImageCompose texture_out","type":2,"objType":"texture"},{"name":"out1 ShaderToTexture Next","type":1}]}',
         },
         { name: "patchId", value: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
       ],
@@ -27411,6 +27407,17 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "Value",
               portOut: "out0 ImageCompose texture_out",
               objIn: "bw5x42j1o",
+              objOut: "c3020432-d72e-41bb-8274-dbd55ba98235",
+            },
+          ],
+        },
+        {
+          name: "out1 ShaderToTexture Next",
+          links: [
+            {
+              portIn: "render",
+              portOut: "out1 ShaderToTexture Next",
+              objIn: "84fqupsq5",
               objOut: "c3020432-d72e-41bb-8274-dbd55ba98235",
             },
           ],
@@ -27472,34 +27479,6 @@ CABLES.exportedPatches["GgjVeu"] = {
       objName: "Ops.Vars.VarGetNumber_v2",
     },
     {
-      id: "8cb39b08-233c-41df-9989-8c042077a031",
-      uiAttribs: { subPatch: "8aabf450-104c-4af6-a226-3166d810c3b7" },
-      portsIn: [{ name: "Variable", value: "aboutScroll" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "Value",
-              objIn: "f6581a46-e715-49b1-a33c-568d6fafd195",
-              objOut: "8cb39b08-233c-41df-9989-8c042077a031",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetNumber_v2",
-    },
-    {
-      id: "8ddd41ca-6590-44ae-921e-e7a6d4100a9e",
-      uiAttribs: { subPatch: "8aabf450-104c-4af6-a226-3166d810c3b7" },
-      portsOut: [
-        { name: "Switched Value", value: 0 },
-        { name: "Highest Index", value: 0 },
-      ],
-      objName: "Ops.Trigger.RouteTrigger",
-    },
-    {
       id: "23hn8lq74",
       uiAttribs: { subPatch: "8aabf450-104c-4af6-a226-3166d810c3b7" },
       portsIn: [
@@ -27522,6 +27501,17 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "a", value: 1 },
       ],
       portsOut: [
+        {
+          name: "Next",
+          links: [
+            {
+              portIn: "out1 TextMesh Next",
+              portOut: "Next",
+              objIn: "633fcfd6-3b60-4199-8456-600c4268674b",
+              objOut: "23hn8lq74",
+            },
+          ],
+        },
         { name: "Total Lines", value: 1 },
         { name: "Width", value: 2.388928558280409 },
         { name: "Font Available", value: 1 },
@@ -27554,25 +27544,6 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
       ],
       objName: "Ops.Gl.Matrix.Transform",
-    },
-    {
-      id: "f6581a46-e715-49b1-a33c-568d6fafd195",
-      uiAttribs: { subPatch: "8aabf450-104c-4af6-a226-3166d810c3b7" },
-      portsIn: [{ name: "number2", value: 0 }],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "Switch Value",
-              portOut: "result",
-              objIn: "8ddd41ca-6590-44ae-921e-e7a6d4100a9e",
-              objOut: "f6581a46-e715-49b1-a33c-568d6fafd195",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Compare.GreaterThan",
     },
     {
       id: "mmolwn8pn",
@@ -27967,9 +27938,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           ],
         },
         { name: "duration", value: 119.933333 },
-        { name: "progress", value: 4909284951974386e-20 },
+        { name: "progress", value: 0.11710149579775879 },
         { name: "Interaction Needed", value: 0 },
-        { name: "CurrentTime", value: 0.005888 },
+        { name: "CurrentTime", value: 14.044685 },
         {
           name: "Loading",
           links: [
@@ -27996,9 +27967,29 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Has Error", value: 0 },
+        {
+          name: "Has Error",
+          links: [
+            {
+              portIn: "Number",
+              portOut: "Has Error",
+              objIn: "wmgl08wis",
+              objOut: "lcig881l8",
+            },
+          ],
+        },
         { name: "Auto FPS", value: 1 },
-        { name: "Error Message", value: "" },
+        {
+          name: "Error Message",
+          links: [
+            {
+              portIn: "String",
+              portOut: "Error Message",
+              objIn: "wmgl08wis",
+              objOut: "lcig881l8",
+            },
+          ],
+        },
       ],
       objName: "Ops.User.srcphag.VideoJS",
     },
@@ -28365,25 +28356,6 @@ CABLES.exportedPatches["GgjVeu"] = {
       objName: "Ops.Color.ColorValue",
     },
     {
-      id: "pccezmhqh",
-      uiAttribs: { subPatch: "oq0mm5hrc" },
-      portsIn: [{ name: "Variable", value: "nContext" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Index",
-              portOut: "Value",
-              objIn: "plo7uwjmn",
-              objOut: "pccezmhqh",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetNumber_v2",
-    },
-    {
       id: "ls1owm8vb",
       uiAttribs: { subPatch: "oq0mm5hrc" },
       portsIn: [
@@ -28463,7 +28435,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "Execute",
               portOut: "in0 Ops.Gl.Matrix.TransformView trigger",
-              objIn: "i9cbbcylx",
+              objIn: "3ms5xb3ej",
               objOut: "q5hgcc873",
             },
           ],
@@ -28533,56 +28505,6 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
       ],
       objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
-    },
-    {
-      id: "jtmhl9aod",
-      uiAttribs: { subPatch: "oq0mm5hrc" },
-      portsIn: [{ name: "Variable", value: "nContext" }],
-      portsOut: [
-        {
-          name: "Value",
-          links: [
-            {
-              portIn: "Switch Value",
-              portOut: "Value",
-              objIn: "i9cbbcylx",
-              objOut: "jtmhl9aod",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Vars.VarGetNumber_v2",
-    },
-    {
-      id: "i9cbbcylx",
-      uiAttribs: { subPatch: "oq0mm5hrc" },
-      portsOut: [
-        { name: "Switched Value", value: 1 },
-        {
-          name: "Trigger 0",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 0",
-              objIn: "x1nx2ee3j",
-              objOut: "i9cbbcylx",
-            },
-          ],
-        },
-        {
-          name: "Trigger 1",
-          links: [
-            {
-              portIn: "render",
-              portOut: "Trigger 1",
-              objIn: "99lxruhzw",
-              objOut: "i9cbbcylx",
-            },
-          ],
-        },
-        { name: "Highest Index", value: 1 },
-      ],
-      objName: "Ops.Trigger.RouteTrigger",
     },
     {
       id: "e50oqab02",
@@ -28971,7 +28893,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "byk06hys1",
               portOut: "Value",
-              objIn: "0yzwf3yhr",
+              objIn: "endi7stic",
               objOut: "chc44agoc",
             },
           ],
@@ -29462,7 +29384,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "byk06hys1",
               portOut: "Value",
-              objIn: "d4y1qau5o",
+              objIn: "zrb6otfz8",
               objOut: "3sqb5827s",
             },
           ],
@@ -29760,7 +29682,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         {
           name: "Fragment Code",
           value:
-            "IN vec2 texCoord;\r\nUNI vec2 offset;\r\nUNI vec2 repeat;\r\nUNI sampler2D textureInput;\r\n{{MODULES_HEAD}}\r\n\r\nvoid main()\r\n{\r\n    // Start with original texture coordinates\r\n    vec2 uv = texCoord;\r\n    \r\n    // Flip Y before repetition so pattern starts from top\r\n    uv.y = 1.0 - uv.y;\r\n    \r\n    // Create vertical repetition\r\n    uv.y *= repeat.y;\r\n    \r\n    // Apply offset\r\n    uv += offset;\r\n    \r\n    // Wrap coordinates\r\n    uv = fract(uv);\r\n    \r\n    // Flip Y again to maintain correct image orientation\r\n    uv.y = 1.0 - uv.y;\r\n    \r\n    {{MODULE_COLOR}}\r\n    outColor = texture(textureInput, uv);\r\n}",
+            "IN vec2 texCoord;\r\nUNI vec2 offset;\r\nUNI vec2 repeat;\r\nUNI bool wrapMode;  // Add this uniform\r\nUNI sampler2D textureInput;\r\n{{MODULES_HEAD}}\r\nvoid main()\r\n{\r\n    // Start with original texture coordinates\r\n    vec2 uv = texCoord;\r\n    \r\n    // Flip Y before repetition so pattern starts from top\r\n    uv.y = 1.0 - uv.y;\r\n    \r\n    // Create vertical repetition\r\n    uv.y *= repeat.y;\r\n    \r\n    // Apply offset\r\n    uv += offset;\r\n    \r\n    // Switch between wrap and clamp modes\r\n    uv = wrapMode ? fract(uv) : clamp(uv, 0.0, 1.0);\r\n    \r\n    // Flip Y again to maintain correct image orientation\r\n    uv.y = 1.0 - uv.y;\r\n    \r\n    {{MODULE_COLOR}}\r\n    outColor = texture(textureInput, uv);\r\n}",
         },
         {
           name: "Vertex Code",
@@ -29768,9 +29690,8 @@ CABLES.exportedPatches["GgjVeu"] = {
             "{{MODULES_HEAD}}\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\nIN vec3 attrTangent,attrBiTangent;\n\nIN float attrVertIndex;\n\nOUT vec2 texCoord;\nOUT vec3 norm;\nUNI mat4 projMatrix;\nUNI mat4 viewMatrix;\nUNI mat4 modelMatrix;\n\nvoid main()\n{\n    texCoord=attrTexCoord;\n    norm=attrVertNormal;\n    vec4 pos=vec4(vPosition,  1.0);\n    vec3 tangent=attrTangent;\n    vec3 bitangent=attrBiTangent;\n    mat4 mMatrix=modelMatrix;\n    gl_PointSize=10.0;\n\n    {{MODULE_VERTEX_POSITION}}\n    gl_Position = projMatrix * (viewMatrix*mMatrix) * pos;\n}\n",
         },
         { name: "Use As Material", value: 0 },
-        { name: "offset X", value: 0 },
-        { name: "offset Y", value: 0 },
         { name: "repeat X", value: 1 },
+        { name: "wrapMode", value: 0 },
       ],
       portsOut: [
         {
@@ -29788,9 +29709,15 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Shader",
           links: [
             {
-              portIn: "Shader",
+              portIn: "object port 0",
               portOut: "Shader",
-              objIn: "vthhei9c5",
+              objIn: "vyl1eomnh",
+              objOut: "r3u33h3hs",
+            },
+            {
+              portIn: "object port 1",
+              portOut: "Shader",
+              objIn: "vyl1eomnh",
               objOut: "r3u33h3hs",
             },
           ],
@@ -29859,7 +29786,17 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Switched Index", value: 0 },
+        {
+          name: "Switched Index",
+          links: [
+            {
+              portIn: "Object Index",
+              portOut: "Switched Index",
+              objIn: "vyl1eomnh",
+              objOut: "b0hk8u9bi",
+            },
+          ],
+        },
         {
           name: "Trigger 0",
           links: [
@@ -29877,7 +29814,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "render",
               portOut: "Trigger 1",
-              objIn: "v38pi7nzw",
+              objIn: "r3u33h3hs",
               objOut: "b0hk8u9bi",
             },
           ],
@@ -29899,7 +29836,6 @@ CABLES.exportedPatches["GgjVeu"] = {
     {
       id: "exw5m949c",
       uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
-      portsIn: [{ name: "number1", value: 1 }],
       portsOut: [
         {
           name: "result",
@@ -29921,7 +29857,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       portsIn: [
         { name: "Num Triplets", value: 1 },
         { name: "X", value: 0.41 },
-        { name: "Y", value: -6.73 },
+        { name: "Y", value: 6.17 },
         { name: "Z", value: 0 },
       ],
       portsOut: [
@@ -29974,7 +29910,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Array length", value: 1 },
         { name: "Mode select index", value: 0 },
         { name: "Mode select", value: "Number" },
-        { name: "Default Value", value: 8.88 },
+        { name: "Default Value", value: 12.37 },
         { name: "Reverse", value: 0 },
       ],
       portsOut: [
@@ -29998,8 +29934,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       uiAttribs: {},
       portsIn: [
         { name: "Num Triplets", value: 1 },
-        { name: "X", value: 250.28 },
-        { name: "Y", value: -45.93 },
+        { name: "X", value: 233.71 },
+        { name: "Y", value: -64.86 },
         { name: "Z", value: 0 },
       ],
       portsOut: [
@@ -30165,88 +30101,13 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "byk06hys1",
               portOut: "Value",
-              objIn: "5md9tus12",
+              objIn: "skimtac44",
               objOut: "wktp2kjaz",
             },
           ],
         },
       ],
       objName: "Ops.Vars.VarGetArray_v2",
-    },
-    {
-      id: "0yzwf3yhr",
-      uiAttribs: {},
-      storage: { blueprintVer: 2, subPatchVer: 2 },
-      portsIn: [
-        { name: "2uzay3xk0", title: "render" },
-        { name: "byk06hys1", title: "Array" },
-        { name: "patchId", value: "bp2sub_0yzwf3yhr" },
-      ],
-      portsOut: [
-        {
-          name: "driq8l4om",
-          title: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "driq8l4om",
-              objIn: "hmrwm30er",
-              objOut: "0yzwf3yhr",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
-    },
-    {
-      id: "5md9tus12",
-      uiAttribs: {},
-      storage: { blueprintVer: 2, subPatchVer: 2 },
-      portsIn: [
-        { name: "2uzay3xk0", title: "render" },
-        { name: "byk06hys1", title: "Array" },
-        { name: "patchId", value: "bp2sub_5md9tus12" },
-      ],
-      portsOut: [
-        {
-          name: "driq8l4om",
-          title: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "driq8l4om",
-              objIn: "hmrwm30er",
-              objOut: "5md9tus12",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
-    },
-    {
-      id: "d4y1qau5o",
-      uiAttribs: {},
-      storage: { blueprintVer: 2, subPatchVer: 2 },
-      portsIn: [
-        { name: "2uzay3xk0", title: "render" },
-        { name: "byk06hys1", title: "Array" },
-        { name: "patchId", value: "bp2sub_d4y1qau5o" },
-      ],
-      portsOut: [
-        {
-          name: "driq8l4om",
-          title: "trigger",
-          links: [
-            {
-              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
-              portOut: "driq8l4om",
-              objIn: "hmrwm30er",
-              objOut: "d4y1qau5o",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
     },
     {
       id: "sgxfp2dh9",
@@ -30512,8 +30373,499 @@ CABLES.exportedPatches["GgjVeu"] = {
       ],
       objName: "Ops.Vars.VarGetArray_v2",
     },
+    {
+      id: "endi7stic",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_endi7stic" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "endi7stic",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "skimtac44",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_skimtac44" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "skimtac44",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "zrb6otfz8",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "patchId", value: "bp2sub_zrb6otfz8" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "zrb6otfz8",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "j2v7lizv8",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "textTexture" }],
+      objName: "Ops.Vars.VarSetTexture_v2",
+    },
+    {
+      id: "3ms5xb3ej",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "String 0", value: "index" },
+        { name: "String 1", value: "works" },
+        { name: "String 2", value: "" },
+        { name: "String 3", value: "" },
+        { name: "String 4", value: "" },
+        { name: "String 5", value: "" },
+        { name: "String 6", value: "" },
+        { name: "String 7", value: "" },
+        { name: "String 8", value: "" },
+        { name: "String 9", value: "" },
+        { name: "String 10", value: "" },
+        { name: "String 11", value: "" },
+        { name: "String 12", value: "" },
+        { name: "String 13", value: "" },
+        { name: "String 14", value: "" },
+        { name: "String 15", value: "" },
+        { name: "String 16", value: "" },
+        { name: "String 17", value: "" },
+        { name: "String 18", value: "" },
+        { name: "String 19", value: "" },
+        { name: "String 20", value: "" },
+        { name: "String 21", value: "" },
+        { name: "String 22", value: "" },
+        { name: "String 23", value: "" },
+      ],
+      portsOut: [
+        {
+          name: "Switched Index",
+          links: [
+            {
+              portIn: "Index",
+              portOut: "Switched Index",
+              objIn: "plo7uwjmn",
+              objOut: "3ms5xb3ej",
+            },
+          ],
+        },
+        {
+          name: "Trigger 0",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 0",
+              objIn: "x1nx2ee3j",
+              objOut: "3ms5xb3ej",
+            },
+          ],
+        },
+        {
+          name: "Trigger 1",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 1",
+              objIn: "99lxruhzw",
+              objOut: "3ms5xb3ej",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Trigger.RouteTriggerString_v2",
+    },
+    {
+      id: "f31jfdtdj",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [{ name: "Variable", value: "pageContext" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Switch Value",
+              portOut: "Value",
+              objIn: "3ms5xb3ej",
+              objOut: "f31jfdtdj",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetString",
+    },
+    {
+      id: "vyl1eomnh",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsOut: [
+        {
+          name: "object out",
+          links: [
+            {
+              portIn: "Shader",
+              portOut: "object out",
+              objIn: "vthhei9c5",
+              objOut: "vyl1eomnh",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Json.SwitchObject",
+    },
+    {
+      id: "1rkhd6ijv",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Variable", value: "videoAspectRatio" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "number1",
+              portOut: "Value",
+              objIn: "exw5m949c",
+              objOut: "1rkhd6ijv",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "wmgl08wis",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      objName: "Ops.Debug.ConsoleLog",
+    },
+    {
+      id: "233hz90n3",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "imageTextureOffset" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "rad5pr04g",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 0 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "kh45ej5sc",
+              objOut: "rad5pr04g",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "x17czuoyb",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: -0.28 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "kh45ej5sc",
+              objOut: "x17czuoyb",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "kh45ej5sc",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 0", value: 0 },
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "233hz90n3",
+              objOut: "kh45ej5sc",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Array.ArrayPack",
+    },
+    {
+      id: "i0q70ilkb",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Variable", value: "imageTextureOffset" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "array",
+              portOut: "Value",
+              objIn: "69llqqm87",
+              objOut: "i0q70ilkb",
+            },
+            {
+              portIn: "array",
+              portOut: "Value",
+              objIn: "y97ci5q96",
+              objOut: "i0q70ilkb",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "69llqqm87",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [
+        { name: "index", value: 0 },
+        { name: "Value Invalid Index", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "value",
+          links: [
+            {
+              portIn: "offset X",
+              portOut: "value",
+              objIn: "r3u33h3hs",
+              objOut: "69llqqm87",
+            },
+          ],
+        },
+        { name: "Valid Index", value: 1 },
+      ],
+      objName: "Ops.Array.ArrayGetNumber",
+    },
+    {
+      id: "y97ci5q96",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [
+        { name: "index", value: 1 },
+        { name: "Value Invalid Index", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "value",
+          links: [
+            {
+              portIn: "offset Y",
+              portOut: "value",
+              objIn: "r3u33h3hs",
+              objOut: "y97ci5q96",
+            },
+            {
+              portIn: "offset Y",
+              portOut: "value",
+              objIn: "v38pi7nzw",
+              objOut: "y97ci5q96",
+            },
+          ],
+        },
+        { name: "Valid Index", value: 1 },
+      ],
+      objName: "Ops.Array.ArrayGetNumber",
+    },
+    {
+      id: "8gblxjhc4",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "imageTextureWrap" }],
+      objName: "Ops.Vars.VarSetNumber_v2",
+    },
+    {
+      id: "gadc7j33d",
+      uiAttribs: {},
+      portsIn: [{ name: "value", value: 0 }],
+      portsOut: [
+        {
+          name: "result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "result",
+              objIn: "8gblxjhc4",
+              objOut: "gadc7j33d",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Boolean.Boolean",
+    },
+    {
+      id: "u0nnkefhg",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Variable", value: "imageTextureWrap" }],
+      portsOut: [{ name: "Value", value: 0 }],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "etqhlcubj",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "9mnoq6ams", title: "Reset" },
+        { name: "x51l5mx3z", value: 0.5, title: "number1" },
+        { name: "via20ae2r", value: 0, title: "number1" },
+        { name: "eq3wcir2y", value: 0, title: "number1" },
+        { name: "patchId", value: "bp2sub_etqhlcubj" },
+      ],
+      portsOut: [
+        { name: "fei1jpjm5", value: 18.984519248760467, title: "Result" },
+        { name: "o1i9iyfw1", value: 0, title: "Result" },
+        { name: "arp1806j4", value: 0, title: "result" },
+        {
+          name: "scw0zze34",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "scw0zze34",
+              objIn: "skimtac44",
+              objOut: "etqhlcubj",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.AutoTransform",
+    },
+    {
+      id: "f6ly76vsv",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "9mnoq6ams", title: "Reset" },
+        { name: "x51l5mx3z", value: 0.5, title: "number1" },
+        { name: "via20ae2r", value: 0, title: "number1" },
+        { name: "eq3wcir2y", value: 0, title: "number1" },
+        { name: "patchId", value: "bp2sub_f6ly76vsv" },
+      ],
+      portsOut: [
+        { name: "fei1jpjm5", value: 0, title: "Result" },
+        { name: "o1i9iyfw1", value: 0, title: "Result" },
+        { name: "arp1806j4", value: 0, title: "result" },
+        {
+          name: "scw0zze34",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "scw0zze34",
+              objIn: "endi7stic",
+              objOut: "f6ly76vsv",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.AutoTransform",
+    },
+    {
+      id: "f7f6u50bu",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "9mnoq6ams", title: "Reset" },
+        { name: "x51l5mx3z", value: 0.5, title: "number1" },
+        { name: "via20ae2r", value: 0, title: "number1" },
+        { name: "eq3wcir2y", value: 0, title: "number1" },
+        { name: "patchId", value: "bp2sub_f7f6u50bu" },
+      ],
+      portsOut: [
+        { name: "fei1jpjm5", value: 0, title: "Result" },
+        { name: "o1i9iyfw1", value: 0, title: "Result" },
+        { name: "arp1806j4", value: 0, title: "result" },
+        {
+          name: "scw0zze34",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "scw0zze34",
+              objIn: "zrb6otfz8",
+              objOut: "f7f6u50bu",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.AutoTransform",
+    },
   ],
-  export: { time: "2024-11-16 00:22", service: "html", exportNumber: 1 },
+  export: { time: "2024-11-17 17:40", service: "html", exportNumber: 12 },
 };
 if (!CABLES.exportedPatch) {
   CABLES.exportedPatch = CABLES.exportedPatches["GgjVeu"];
@@ -30526,11 +30878,13 @@ Ops.Gl = Ops.Gl || {};
 Ops.Ui = Ops.Ui || {};
 Ops.Anim = Ops.Anim || {};
 Ops.Html = Ops.Html || {};
+Ops.Json = Ops.Json || {};
 Ops.Math = Ops.Math || {};
 Ops.User = Ops.User || {};
 Ops.Vars = Ops.Vars || {};
 Ops.Array = Ops.Array || {};
 Ops.Color = Ops.Color || {};
+Ops.Debug = Ops.Debug || {};
 Ops.Patch = Ops.Patch || {};
 Ops.Cables = Ops.Cables || {};
 Ops.Number = Ops.Number || {};
@@ -30544,7 +30898,6 @@ Ops.Gl.Matrix = Ops.Gl.Matrix || {};
 Ops.Gl.Meshes = Ops.Gl.Meshes || {};
 Ops.Gl.Shader = Ops.Gl.Shader || {};
 Ops.Gl.Textures = Ops.Gl.Textures || {};
-Ops.Math.Compare = Ops.Math.Compare || {};
 Ops.User.srcphag = Ops.User.srcphag || {};
 Ops.Devices.Mouse = Ops.Devices.Mouse || {};
 Ops.Patch.PGgjVeu = Ops.Patch.PGgjVeu || {};
@@ -30557,7 +30910,7 @@ Ops.Patch.PGgjVeu.TransfromFromArray = function () {
     inc_gen_ports_js:
       'const port_2uzay3xk0=op.inTrigger("2uzay3xk0");\nport_2uzay3xk0.setUiAttribs({title:"render",});\n\nconst port_byk06hys1=op.inArray("byk06hys1");\nport_byk06hys1.setUiAttribs({title:"Array",});\n\nconst port_driq8l4om=op.outTrigger("driq8l4om");\nport_driq8l4om.setUiAttribs({title:"trigger",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_2uzay3xk0 = addedOps[i].outTrigger("innerOut_2uzay3xk0");\ninnerOut_2uzay3xk0.setUiAttribs({title:"render"});\nport_2uzay3xk0.onTriggered = () => { innerOut_2uzay3xk0.trigger(); };\n\nconst innerOut_byk06hys1 = addedOps[i].outArray("innerOut_byk06hys1");\ninnerOut_byk06hys1.setUiAttribs({title:"Array"});\nport_byk06hys1.on("change", (a,v) => { innerOut_byk06hys1.setRef(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_driq8l4om = addedOps[i].inTrigger("innerIn_driq8l4om");\ninnerIn_driq8l4om.setUiAttribs({title:"trigger"});\ninnerIn_driq8l4om.onTriggered = () => { port_driq8l4om.trigger(); };\n\n}\n}\n};\n',
     subpatch_json:
-      '{"ops":[{"id":"bp0-0","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsOut":[{"name":"trigger","links":[{"portIn":"innerIn_driq8l4om","portOut":"trigger","objIn":"bp0-3","objOut":"bp0-0"}]}],"objName":"Ops.Gl.Matrix.TransformView"},{"id":"bp0-1","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"Index","value":0}],"portsOut":[{"name":"X","links":[{"portIn":"posX","portOut":"X","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Y","links":[{"portIn":"posY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Z","links":[{"portIn":"posZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-1"}]}],"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp0-2","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsOut":[{"name":"innerOut_2uzay3xk0","title":"render","links":[{"portIn":"render","portOut":"innerOut_2uzay3xk0","objIn":"bp0-0","objOut":"bp0-2"}]},{"name":"innerOut_byk06hys1","title":"Array","links":[{"portIn":"Array","portOut":"innerOut_byk06hys1","objIn":"bp0-1","objOut":"bp0-2"},{"portIn":"array","portOut":"innerOut_byk06hys1","objIn":"bp0-4","objOut":"bp0-2"},{"portIn":"Array","portOut":"innerOut_byk06hys1","objIn":"bp0-5","objOut":"bp0-2"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp0-3","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"innerIn_driq8l4om","title":"trigger"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp0-4","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"index","value":3},{"name":"Value Invalid Index","value":0}],"portsOut":[{"name":"value","links":[{"portIn":"scale","portOut":"value","objIn":"bp0-0","objOut":"bp0-4"}]},{"name":"Valid Index","value":0}],"objName":"Ops.Array.ArrayGetNumber"},{"id":"bp0-5","uiAttribs":{"subPatch":"l7yi9v6s5"},"storage":{},"portsIn":[{"name":"Index","value":4}],"portsOut":[{"name":"X","links":[{"portIn":"rotX","portOut":"X","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Y","links":[{"portIn":"rotY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Z","links":[{"portIn":"rotZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-5"}]}],"objName":"Ops.Array.Array3GetNumbers"}]}',
+      '{"ops":[{"id":"bp0-0","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsOut":[{"name":"trigger","links":[{"portIn":"innerIn_driq8l4om","portOut":"trigger","objIn":"bp0-3","objOut":"bp0-0"}]}],"objName":"Ops.Gl.Matrix.TransformView"},{"id":"bp0-1","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsIn":[{"name":"Index","value":0}],"portsOut":[{"name":"X","links":[{"portIn":"posX","portOut":"X","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Y","links":[{"portIn":"posY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-1"}]},{"name":"Z","links":[{"portIn":"posZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-1"}]}],"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp0-2","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsOut":[{"name":"innerOut_2uzay3xk0","title":"render","links":[{"portIn":"Execute","portOut":"innerOut_2uzay3xk0","objIn":"bp0-6","objOut":"bp0-2"}]},{"name":"innerOut_byk06hys1","title":"Array","links":[{"portIn":"Array In","portOut":"innerOut_byk06hys1","objIn":"bp0-6","objOut":"bp0-2"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp0-3","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsIn":[{"name":"innerIn_driq8l4om","title":"trigger"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp0-4","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsIn":[{"name":"index","value":3},{"name":"Value Invalid Index","value":0}],"portsOut":[{"name":"value","links":[{"portIn":"scale","portOut":"value","objIn":"bp0-0","objOut":"bp0-4"}]},{"name":"Valid Index","value":0}],"objName":"Ops.Array.ArrayGetNumber"},{"id":"bp0-5","uiAttribs":{"subPatch":"j4veambpu"},"storage":{},"portsIn":[{"name":"Index","value":4}],"portsOut":[{"name":"X","links":[{"portIn":"rotX","portOut":"X","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Y","links":[{"portIn":"rotY","portOut":"Y","objIn":"bp0-0","objOut":"bp0-5"}]},{"name":"Z","links":[{"portIn":"rotZ","portOut":"Z","objIn":"bp0-0","objOut":"bp0-5"}]}],"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp0-6","uiAttribs":{"subPatch":"j4veambpu"},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":30,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Next","links":[{"portIn":"render","portOut":"Next","objIn":"bp0-0","objOut":"bp0-6"}]},{"name":"Array Out","links":[{"portIn":"Array","portOut":"Array Out","objIn":"bp0-1","objOut":"bp0-6"},{"portIn":"array","portOut":"Array Out","objIn":"bp0-4","objOut":"bp0-6"},{"portIn":"Array","portOut":"Array Out","objIn":"bp0-5","objOut":"bp0-6"}]}],"storage":{"ref":"bp0-6"},"objName":"Ops.Array.SmoothArray"}]}',
   });
   const a = e.inTrigger("2uzay3xk0");
   a.setUiAttribs({ title: "render" });
@@ -30616,6 +30969,111 @@ Ops.Patch.PGgjVeu.TransfromFromArray.prototype = new CABLES.Op();
 CABLES.OPS["fe53a267-5d09-45e5-a791-f1a574055dc4"] = {
   f: Ops.Patch.PGgjVeu.TransfromFromArray,
   objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+};
+Ops.Patch.PGgjVeu.AutoTransform = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const n = (e.attachments = {
+    inc_gen_ports_js:
+      'const port_9mnoq6ams=op.inTrigger("9mnoq6ams");\nport_9mnoq6ams.setUiAttribs({title:"Reset",display:"button",});\n\nconst port_x51l5mx3z=op.inFloat("x51l5mx3z",1);\nport_x51l5mx3z.setUiAttribs({title:"number1",});\n\nconst port_via20ae2r=op.inFloat("via20ae2r",1);\nport_via20ae2r.setUiAttribs({title:"number1",});\n\nconst port_eq3wcir2y=op.inFloat("eq3wcir2y",1);\nport_eq3wcir2y.setUiAttribs({title:"number1",});\n\nconst port_fei1jpjm5=op.outNumber("fei1jpjm5");\nport_fei1jpjm5.setUiAttribs({title:"Result",});\n\nconst port_o1i9iyfw1=op.outNumber("o1i9iyfw1");\nport_o1i9iyfw1.setUiAttribs({title:"Result",});\n\nconst port_arp1806j4=op.outNumber("arp1806j4");\nport_arp1806j4.setUiAttribs({title:"result",});\n\nconst port_scw0zze34=op.outTrigger("scw0zze34");\nport_scw0zze34.setUiAttribs({title:"Next",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_9mnoq6ams = addedOps[i].outTrigger("innerOut_9mnoq6ams");\ninnerOut_9mnoq6ams.setUiAttribs({title:"Reset"});\nport_9mnoq6ams.onTriggered = () => { innerOut_9mnoq6ams.trigger(); };\n\nconst innerOut_x51l5mx3z = addedOps[i].outNumber("innerOut_x51l5mx3z");\ninnerOut_x51l5mx3z.set(port_x51l5mx3z.get() );\ninnerOut_x51l5mx3z.setUiAttribs({title:"number1"});\nport_x51l5mx3z.on("change", (a,v) => { innerOut_x51l5mx3z.set(a); });\n\nconst innerOut_via20ae2r = addedOps[i].outNumber("innerOut_via20ae2r");\ninnerOut_via20ae2r.set(port_via20ae2r.get() );\ninnerOut_via20ae2r.setUiAttribs({title:"number1"});\nport_via20ae2r.on("change", (a,v) => { innerOut_via20ae2r.set(a); });\n\nconst innerOut_eq3wcir2y = addedOps[i].outNumber("innerOut_eq3wcir2y");\ninnerOut_eq3wcir2y.set(port_eq3wcir2y.get() );\ninnerOut_eq3wcir2y.setUiAttribs({title:"number1"});\nport_eq3wcir2y.on("change", (a,v) => { innerOut_eq3wcir2y.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_fei1jpjm5 = addedOps[i].inFloat("innerIn_fei1jpjm5");\ninnerIn_fei1jpjm5.setUiAttribs({title:"Result"});\ninnerIn_fei1jpjm5.on("change", (a,v) => { port_fei1jpjm5.set(a); });\n\nconst innerIn_o1i9iyfw1 = addedOps[i].inFloat("innerIn_o1i9iyfw1");\ninnerIn_o1i9iyfw1.setUiAttribs({title:"Result"});\ninnerIn_o1i9iyfw1.on("change", (a,v) => { port_o1i9iyfw1.set(a); });\n\nconst innerIn_arp1806j4 = addedOps[i].inFloat("innerIn_arp1806j4");\ninnerIn_arp1806j4.setUiAttribs({title:"result"});\ninnerIn_arp1806j4.on("change", (a,v) => { port_arp1806j4.set(a); });\n\nconst innerIn_scw0zze34 = addedOps[i].inTrigger("innerIn_scw0zze34");\ninnerIn_scw0zze34.setUiAttribs({title:"Next"});\ninnerIn_scw0zze34.onTriggered = () => { port_scw0zze34.trigger(); };\n\n}\n}\n};\n',
+    subpatch_json:
+      '{"ops":[{"id":"bp1-0","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"number2","portOut":"Time","objIn":"bp1-6","objOut":"bp1-0"},{"portIn":"number2","portOut":"Time","objIn":"bp1-7","objOut":"bp1-0"},{"portIn":"number2","portOut":"Time","objIn":"bp1-9","objOut":"bp1-0"}]}],"objName":"Ops.Anim.Timer_v2"},{"id":"bp1-1","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Next","links":[{"portIn":"render","portOut":"Next","objIn":"bp1-10","objOut":"bp1-1"}]},{"name":"Result","links":[{"portIn":"rotX","portOut":"Result","objIn":"bp1-10","objOut":"bp1-1"},{"portIn":"innerIn_fei1jpjm5","portOut":"Result","objIn":"bp1-5","objOut":"bp1-1"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp1-2","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"rotY","portOut":"Result","objIn":"bp1-10","objOut":"bp1-2"},{"portIn":"innerIn_o1i9iyfw1","portOut":"Result","objIn":"bp1-5","objOut":"bp1-2"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp1-3","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsOut":[{"name":"has focus","links":[{"portIn":"Speed","portOut":"has focus","objIn":"bp1-0","objOut":"bp1-3"}]},{"name":"Tab Visible","links":[{"portIn":"Play","portOut":"Tab Visible","objIn":"bp1-0","objOut":"bp1-3"}]}],"objName":"Ops.Html.WindowHasFocus"},{"id":"bp1-4","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsOut":[{"name":"innerOut_9mnoq6ams","title":"Reset","links":[{"portIn":"Update","portOut":"innerOut_9mnoq6ams","objIn":"bp1-1","objOut":"bp1-4"},{"portIn":"Update","portOut":"innerOut_9mnoq6ams","objIn":"bp1-2","objOut":"bp1-4"},{"portIn":"Update","portOut":"innerOut_9mnoq6ams","objIn":"bp1-8","objOut":"bp1-4"}]},{"name":"innerOut_x51l5mx3z","title":"number1","links":[{"portIn":"number1","portOut":"innerOut_x51l5mx3z","objIn":"bp1-6","objOut":"bp1-4"}]},{"name":"innerOut_via20ae2r","title":"number1","links":[{"portIn":"number1","portOut":"innerOut_via20ae2r","objIn":"bp1-7","objOut":"bp1-4"}]},{"name":"innerOut_eq3wcir2y","title":"number1","links":[{"portIn":"number1","portOut":"innerOut_eq3wcir2y","objIn":"bp1-9","objOut":"bp1-4"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp1-5","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"innerIn_fei1jpjm5","title":"Result"},{"name":"innerIn_o1i9iyfw1","title":"Result"},{"name":"innerIn_arp1806j4","title":"result"},{"name":"innerIn_scw0zze34","title":"Next"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp1-6","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp1-1","objOut":"bp1-6"}]}],"objName":"Ops.Math.Multiply"},{"id":"bp1-7","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp1-2","objOut":"bp1-7"}]}],"objName":"Ops.Math.Multiply"},{"id":"bp1-8","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"rotZ","portOut":"Result","objIn":"bp1-10","objOut":"bp1-8"},{"portIn":"innerIn_arp1806j4","portOut":"Result","objIn":"bp1-5","objOut":"bp1-8"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp1-9","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp1-8","objOut":"bp1-9"}]}],"objName":"Ops.Math.Multiply"},{"id":"bp1-10","uiAttribs":{"subPatch":"r76ei0eyq"},"storage":{},"portsIn":[{"name":"posX","value":0},{"name":"posY","value":0},{"name":"posZ","value":0},{"name":"scale","value":1}],"portsOut":[{"name":"trigger","links":[{"portIn":"innerIn_scw0zze34","portOut":"trigger","objIn":"bp1-5","objOut":"bp1-10"}]}],"objName":"Ops.Gl.Matrix.TransformView"}]}',
+  });
+  const c = e.inTrigger("9mnoq6ams");
+  c.setUiAttribs({ title: "Reset", display: "button" });
+  const d = e.inFloat("x51l5mx3z", 1);
+  d.setUiAttribs({ title: "number1" });
+  const h = e.inFloat("via20ae2r", 1);
+  h.setUiAttribs({ title: "number1" });
+  const p = e.inFloat("eq3wcir2y", 1);
+  p.setUiAttribs({ title: "number1" });
+  const f = e.outNumber("fei1jpjm5");
+  f.setUiAttribs({ title: "Result" });
+  const m = e.outNumber("o1i9iyfw1");
+  m.setUiAttribs({ title: "Result" });
+  const g = e.outNumber("arp1806j4");
+  g.setUiAttribs({ title: "result" });
+  const b = e.outTrigger("scw0zze34");
+  b.setUiAttribs({ title: "Next" });
+  e.initInnerPorts = function (t) {
+    for (let e = 0; e < t.length; e++) {
+      if (t[e].innerInput) {
+        const n = t[e].outTrigger("innerOut_9mnoq6ams");
+        n.setUiAttribs({ title: "Reset" });
+        c.onTriggered = () => {
+          n.trigger();
+        };
+        const i = t[e].outNumber("innerOut_x51l5mx3z");
+        i.set(d.get());
+        i.setUiAttribs({ title: "number1" });
+        d.on("change", (e, t) => {
+          i.set(e);
+        });
+        const r = t[e].outNumber("innerOut_via20ae2r");
+        r.set(h.get());
+        r.setUiAttribs({ title: "number1" });
+        h.on("change", (e, t) => {
+          r.set(e);
+        });
+        const a = t[e].outNumber("innerOut_eq3wcir2y");
+        a.set(p.get());
+        a.setUiAttribs({ title: "number1" });
+        p.on("change", (e, t) => {
+          a.set(e);
+        });
+      }
+      if (t[e].innerOutput) {
+        const s = t[e].inFloat("innerIn_fei1jpjm5");
+        s.setUiAttribs({ title: "Result" });
+        s.on("change", (e, t) => {
+          f.set(e);
+        });
+        const o = t[e].inFloat("innerIn_o1i9iyfw1");
+        o.setUiAttribs({ title: "Result" });
+        o.on("change", (e, t) => {
+          m.set(e);
+        });
+        const l = t[e].inFloat("innerIn_arp1806j4");
+        l.setUiAttribs({ title: "result" });
+        l.on("change", (e, t) => {
+          g.set(e);
+        });
+        const u = t[e].inTrigger("innerIn_scw0zze34");
+        u.setUiAttribs({ title: "Next" });
+        u.onTriggered = () => {
+          b.trigger();
+        };
+      }
+    }
+  };
+  const i = "bp2sub_" + e.id;
+  new CABLES.SubPatchOp(e, { subId: i });
+  t();
+  function t() {
+    if (!n || !n.subpatch_json) return;
+    const t = JSON.parse(n.subpatch_json);
+    CABLES.Patch.replaceOpIds(t, {
+      parentSubPatchId: i,
+      prefixHash: i,
+      oldIdAsRef: true,
+      doNotUnlinkLostLinks: true,
+    });
+    for (let e = 0; e < t.ops.length; e++) {
+      t.ops[e].uiAttribs.blueprintSubpatch2 = true;
+    }
+    e.loadDependencies(t, () => {
+      e.patch.deSerialize(t, { opsCreated: e.initInnerPorts });
+      if (CABLES.UI) gui.savedState.setSaved("blueprintloaded", i);
+      e.patch.emitEvent("subpatchExpose", i);
+      e.setStorage({ blueprintVer: 2 });
+      e.patch.emitEvent("subpatchExpose", i);
+    });
+  }
+};
+Ops.Patch.PGgjVeu.AutoTransform.prototype = new CABLES.Op();
+CABLES.OPS["36b9d4ca-c0a7-4aeb-8ac1-0e5d1b5fcb96"] = {
+  f: Ops.Patch.PGgjVeu.AutoTransform,
+  objName: "Ops.Patch.PGgjVeu.AutoTransform",
 };
 Ops.Gl.Matrix.TransformView = function () {
   CABLES.Op.apply(this, arguments);
@@ -30685,20 +31143,20 @@ Ops.Gl.Matrix.TransformView = function () {
     f = false;
     if (s.get() !== 0) f = true;
     vec3.set(h, s.get(), s.get(), s.get());
-    O = false;
-  }
-  function S() {
-    g = true;
+    S = false;
   }
   function O() {
+    g = true;
+  }
+  function S() {
     b = true;
   }
   function A() {
     v = true;
   }
   o.onChange = l.onChange = u.onChange = A;
-  s.onChange = O;
-  i.onChange = r.onChange = a.onChange = S;
+  s.onChange = S;
+  i.onChange = r.onChange = a.onChange = O;
   o.set(0);
   l.set(0);
   u.set(0);
@@ -30801,10 +31259,315 @@ CABLES.OPS["d1189078-70cf-437d-9a37-b2ebe89acdaf"] = {
   f: Ops.Array.ArrayGetNumber,
   objName: "Ops.Array.ArrayGetNumber",
 };
+Ops.Array.SmoothArray = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Execute"),
+    r = e.inArray("Array In"),
+    i = e.inBool("Separate inc/dec", false),
+    a = e.inValue("Inc factor", 4),
+    s = e.inValue("Dec factor", 4),
+    o = e.outTrigger("Next"),
+    l = e.outArray("Array Out");
+  let u = [];
+  let c = false;
+  let d = 0;
+  let h = [];
+  l.set(h);
+  let p;
+  let f;
+  let m = false;
+  g();
+  b();
+  function g() {
+    m = i.get();
+    if (!m) {
+      s.setUiAttribs({ greyout: true });
+      a.setUiAttribs({ title: "Inc/Dec factor" });
+    } else {
+      s.setUiAttribs({ greyout: false });
+      a.setUiAttribs({ title: "Inc factor" });
+    }
+    b();
+    y();
+  }
+  function b() {
+    p = a.get();
+    if (m == false) f = a.get();
+    else f = s.get();
+    if (p <= 0 || p != p) p = 1e-4;
+    if (f <= 0 || f != f) f = 1e-4;
+    if (p <= 1) p = 1;
+    if (f <= 1) f = 1;
+  }
+  r.onLinkChanged = () => {
+    if (r) r.copyLinkedUiAttrib("stride", l);
+  };
+  r.onChange = function () {
+    let t = r.get();
+    if (!t) return;
+    for (let e = 0; e < t.length; e++) {
+      u[e] = t[e] || 0;
+    }
+  };
+  let v = 0;
+  function y() {
+    let e = r.get();
+    if (!e) return;
+    if (h.length != e.length) {
+      h.length = e.length || 0;
+      c = true;
+    }
+    let n = 1;
+    if (CABLES.now() - d > 500 || d === 0) c = true;
+    else n = (CABLES.now() - d) / 17;
+    d = CABLES.now();
+    if (c) {
+      for (var i = 0; i < e.length; i++) {
+        h[i] = e[i];
+      }
+      c = false;
+    }
+    for (var i = 0; i < e.length; i++) {
+      let e = h[i];
+      let t = u[i] - e;
+      if (t >= 0) e += t / (f * n);
+      else e += t / (p * n);
+      if (e > 0 && e < 1e-9) e = 0;
+      if (!e) e = 0;
+      if (h[i] != e) {
+        h[i] = e;
+        v = e;
+      }
+    }
+    l.setRef(h);
+    o.trigger();
+  }
+  n.onTriggered = function () {
+    y();
+  };
+  a.onChange = s.onChange = b;
+  i.onChange = g;
+  y();
+};
+Ops.Array.SmoothArray.prototype = new CABLES.Op();
+CABLES.OPS["8fd2ed9b-02e5-4349-b7bc-6665ca240ffa"] = {
+  f: Ops.Array.SmoothArray,
+  objName: "Ops.Array.SmoothArray",
+};
+Ops.Anim.Timer_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const a = e.inValue("Speed", 1),
+    n = e.inValueBool("Play", true),
+    i = e.inTriggerButton("Reset"),
+    r = e.inValueBool("Sync to timeline", false),
+    s = e.outNumber("Time");
+  e.setPortGroup("Controls", [n, i, a]);
+  const o = new CABLES.Timer();
+  let l = null;
+  let u = 0;
+  let c = false;
+  n.onChange = d;
+  d();
+  function d() {
+    if (n.get()) {
+      o.play();
+      e.patch.addOnAnimFrame(e);
+    } else {
+      o.pause();
+      e.patch.removeOnAnimFrame(e);
+    }
+  }
+  i.onTriggered = h;
+  function h() {
+    u = 0;
+    l = null;
+    o.setTime(0);
+    s.set(0);
+  }
+  r.onChange = function () {
+    c = r.get();
+    n.setUiAttribs({ greyout: c });
+    i.setUiAttribs({ greyout: c });
+  };
+  e.onAnimFrame = function (e, t, n) {
+    if (o.isPlaying()) {
+      if (CABLES.overwriteTime !== undefined) {
+        s.set(CABLES.overwriteTime * a.get());
+      } else if (c) {
+        s.set(e * a.get());
+      } else {
+        o.update();
+        const i = o.get();
+        if (l === null) {
+          l = i;
+          return;
+        }
+        const r = Math.abs(i - l);
+        l = i;
+        u += r * a.get();
+        if (u != u) u = 0;
+        s.set(u);
+      }
+    }
+  };
+};
+Ops.Anim.Timer_v2.prototype = new CABLES.Op();
+CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"] = {
+  f: Ops.Anim.Timer_v2,
+  objName: "Ops.Anim.Timer_v2",
+};
+Ops.Anim.Smooth = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Update"),
+    i = e.inBool("Separate inc/dec", false),
+    r = e.inValue("Value"),
+    a = e.outTrigger("Next"),
+    s = e.inValue("Inc factor", 4),
+    o = e.inValue("Dec factor", 4),
+    l = e.outNumber("Result", 0);
+  let u = 0;
+  let c = 0;
+  let d = 0;
+  let h = 0;
+  e.toWorkPortsNeedToBeLinked(n);
+  let p;
+  let f;
+  let m = 4;
+  let g = true;
+  let b = 0;
+  const v = 0;
+  const y = 1;
+  _();
+  T();
+  i.setUiAttribs({ hidePort: true });
+  s.onChange = o.onChange = T;
+  i.onChange = _;
+  O();
+  function _() {
+    const e = i.get();
+    if (!e) b = v;
+    else b = y;
+    if (b == v) {
+      o.setUiAttribs({ greyout: true });
+      s.setUiAttribs({ title: "Inc/Dec factor" });
+    } else if (b == y) {
+      o.setUiAttribs({ greyout: false });
+      s.setUiAttribs({ title: "Inc factor" });
+    }
+    T();
+    O();
+  }
+  function T() {
+    if (b == v) {
+      p = s.get();
+      f = s.get();
+    } else if (b == y) {
+      p = s.get();
+      f = o.get();
+    }
+    if (p <= 0.2 || p != p) p = 0.2;
+    if (f <= 0.2 || f != f) f = 0.2;
+  }
+  r.onChange = function () {
+    g = false;
+    let e = c;
+    c = r.get();
+  };
+  s.onChange = function () {
+    T();
+  };
+  function O() {
+    let e = 1;
+    if (performance.now() - h > 500 || h === 0) u = r.get() || 0;
+    else e = (performance.now() - h) / (performance.now() - h);
+    h = performance.now();
+    if (u != u) u = 0;
+    if (m <= 0) m = 1e-4;
+    const t = c - u;
+    if (t >= 0) u += t / (f * e);
+    else u += t / (p * e);
+    if (Math.abs(t) < 1e-5) u = c;
+    if (m != m) u = 0;
+    if (u != u || u == -Infinity || u == Infinity) u = r.get();
+    if (d != u) {
+      l.set(u);
+      d = u;
+    }
+    if (u == c && !g) {
+      g = true;
+      l.set(u);
+    }
+    a.trigger();
+  }
+  n.onTriggered = function () {
+    O();
+  };
+};
+Ops.Anim.Smooth.prototype = new CABLES.Op();
+CABLES.OPS["5677b5b5-753a-4fbf-9e91-64c81ec68a2f"] = {
+  f: Ops.Anim.Smooth,
+  objName: "Ops.Anim.Smooth",
+};
+Ops.Html.WindowHasFocus = function () {
+  CABLES.Op.apply(this, arguments);
+  const t = this;
+  const e = (t.attachments = {});
+  const n = t.outBoolNum("has focus"),
+    i = t.outBoolNum("Tab Visible", true);
+  const r = true;
+  n.set(t.patch.getDocument().hasFocus());
+  window.addEventListener("blur", s);
+  window.addEventListener("focus", a);
+  t.patch.getDocument().addEventListener("visibilitychange", o);
+  t.onDelete = function () {
+    t.patch.getDocument().removeEventListener("visibilitychange", o);
+  };
+  function a() {
+    n.set(true);
+  }
+  function s() {
+    n.set(false);
+  }
+  function o(e) {
+    i.set(!t.patch.getDocument().hidden);
+  }
+};
+Ops.Html.WindowHasFocus.prototype = new CABLES.Op();
+CABLES.OPS["6542896e-aa13-4b57-81e0-163597f4149a"] = {
+  f: Ops.Html.WindowHasFocus,
+  objName: "Ops.Html.WindowHasFocus",
+};
+Ops.Math.Multiply = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValueFloat("number1", 1),
+    i = e.inValueFloat("number2", 1),
+    r = e.outNumber("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = i.onChange = a;
+  a();
+  function a() {
+    const e = n.get();
+    const t = i.get();
+    r.set(e * t);
+  }
+};
+Ops.Math.Multiply.prototype = new CABLES.Op();
+CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"] = {
+  f: Ops.Math.Multiply,
+  objName: "Ops.Math.Multiply",
+};
 Ops.Devices.Mouse.Mouse_v3 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const j = (e.attachments = {});
+  const M = (e.attachments = {});
   const t = e.inSwitch(
       "Coordinates",
       ["-1 to 1", "Pixel Display", "Pixel", "0 to 1"],
@@ -30832,10 +31595,10 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
   let b = 1;
   let v = null;
   let y = null;
-  s.onChange = r.onChange = M;
+  s.onChange = r.onChange = j;
   t.onChange = R;
   e.onDelete = N;
-  M();
+  j();
   e.on("loadedValueSet", _);
   function _() {
     if (b == 0) {
@@ -30898,11 +31661,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
   }
   i.onChange = function () {
     N();
-    M();
+    j();
   };
   o.onChange = function () {
     if (v) N();
-    if (o.get()) M();
+    if (o.get()) j();
   };
   function R() {
     if (t.get() == "Pixel") b = 0;
@@ -30910,11 +31673,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     else if (t.get() == "0 to 1") b = 2;
     else if (t.get() == "Pixel Display") b = 3;
   }
-  function S(e) {
+  function O(e) {
     h.set(false);
     p.set(T(e));
   }
-  function O(e) {
+  function S(e) {
     if (!T(e)) return;
     h.set(true);
   }
@@ -30934,7 +31697,7 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     h.set(false);
     p.set(T(e));
   }
-  function E(e) {
+  function I(e) {
     let t = e.clientX;
     let n = e.clientY;
     if (r.get() != "Document") {
@@ -30949,18 +31712,18 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     if (a.get()) n = y.clientHeight - n;
     D(t / g.pixelDensity, n / g.pixelDensity);
   }
-  function I(e) {
+  function E(e) {
     p.set(T(e));
-    E(e);
+    I(e);
     f.set(e.movementX / g.pixelDensity);
     m.set(e.movementY / g.pixelDensity);
   }
   function k(e) {
-    if (event.touches && event.touches.length > 0) E(e.touches[0]);
+    if (event.touches && event.touches.length > 0) I(e.touches[0]);
   }
   function P(e) {
     h.set(true);
-    if (e.touches && e.touches.length > 0) O(e.touches[0]);
+    if (e.touches && e.touches.length > 0) S(e.touches[0]);
   }
   function L(e) {
     h.set(false);
@@ -30972,15 +31735,15 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     v.removeEventListener("touchstart", P);
     v.removeEventListener("touchmove", k);
     v.removeEventListener("click", C);
-    v.removeEventListener("mousemove", I);
+    v.removeEventListener("mousemove", E);
     v.removeEventListener("mouseleave", x);
-    v.removeEventListener("mousedown", O);
+    v.removeEventListener("mousedown", S);
     v.removeEventListener("mouseup", A);
-    v.removeEventListener("mouseenter", S);
+    v.removeEventListener("mouseenter", O);
     v.removeEventListener("contextmenu", w);
     v = null;
   }
-  function M() {
+  function j() {
     if (v || !o.get()) N();
     if (!o.get()) return;
     v = y = g.canvas;
@@ -30997,11 +31760,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
       v.addEventListener("touchstart", P, e);
       v.addEventListener("touchmove", k, e);
     }
-    v.addEventListener("mousemove", I, e);
+    v.addEventListener("mousemove", E, e);
     v.addEventListener("mouseleave", x, e);
-    v.addEventListener("mousedown", O, e);
+    v.addEventListener("mousedown", S, e);
     v.addEventListener("mouseup", A, e);
-    v.addEventListener("mouseenter", S, e);
+    v.addEventListener("mouseenter", O, e);
     v.addEventListener("contextmenu", w, e);
     v.addEventListener("click", C, e);
   }
@@ -31106,100 +31869,6 @@ Ops.Math.Sum.prototype = new CABLES.Op();
 CABLES.OPS["c8fb181e-0b03-4b41-9e55-06b6267bc634"] = {
   f: Ops.Math.Sum,
   objName: "Ops.Math.Sum",
-};
-Ops.Anim.Smooth = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Update"),
-    i = e.inBool("Separate inc/dec", false),
-    r = e.inValue("Value"),
-    a = e.outTrigger("Next"),
-    s = e.inValue("Inc factor", 4),
-    o = e.inValue("Dec factor", 4),
-    l = e.outNumber("Result", 0);
-  let u = 0;
-  let c = 0;
-  let d = 0;
-  let h = 0;
-  e.toWorkPortsNeedToBeLinked(n);
-  let p;
-  let f;
-  let m = 4;
-  let g = true;
-  let b = 0;
-  const v = 0;
-  const y = 1;
-  _();
-  T();
-  i.setUiAttribs({ hidePort: true });
-  s.onChange = o.onChange = T;
-  i.onChange = _;
-  S();
-  function _() {
-    const e = i.get();
-    if (!e) b = v;
-    else b = y;
-    if (b == v) {
-      o.setUiAttribs({ greyout: true });
-      s.setUiAttribs({ title: "Inc/Dec factor" });
-    } else if (b == y) {
-      o.setUiAttribs({ greyout: false });
-      s.setUiAttribs({ title: "Inc factor" });
-    }
-    T();
-    S();
-  }
-  function T() {
-    if (b == v) {
-      p = s.get();
-      f = s.get();
-    } else if (b == y) {
-      p = s.get();
-      f = o.get();
-    }
-    if (p <= 0.2 || p != p) p = 0.2;
-    if (f <= 0.2 || f != f) f = 0.2;
-  }
-  r.onChange = function () {
-    g = false;
-    let e = c;
-    c = r.get();
-  };
-  s.onChange = function () {
-    T();
-  };
-  function S() {
-    let e = 1;
-    if (performance.now() - h > 500 || h === 0) u = r.get() || 0;
-    else e = (performance.now() - h) / (performance.now() - h);
-    h = performance.now();
-    if (u != u) u = 0;
-    if (m <= 0) m = 1e-4;
-    const t = c - u;
-    if (t >= 0) u += t / (f * e);
-    else u += t / (p * e);
-    if (Math.abs(t) < 1e-5) u = c;
-    if (m != m) u = 0;
-    if (u != u || u == -Infinity || u == Infinity) u = r.get();
-    if (d != u) {
-      l.set(u);
-      d = u;
-    }
-    if (u == c && !g) {
-      g = true;
-      l.set(u);
-    }
-    a.trigger();
-  }
-  n.onTriggered = function () {
-    S();
-  };
-};
-Ops.Anim.Smooth.prototype = new CABLES.Op();
-CABLES.OPS["5677b5b5-753a-4fbf-9e91-64c81ec68a2f"] = {
-  f: Ops.Anim.Smooth,
-  objName: "Ops.Anim.Smooth",
 };
 Ops.Trigger.TriggerOnChangeString = function () {
   CABLES.Op.apply(this, arguments);
@@ -31387,16 +32056,16 @@ Ops.Gl.MainLoop = function () {
   c.onChange = w;
   setTimeout(w, 100);
   let T = null;
-  let S = true;
   let O = true;
+  let S = true;
   window.addEventListener("blur", () => {
-    S = false;
+    O = false;
   });
   window.addEventListener("focus", () => {
-    S = true;
+    O = true;
   });
   document.addEventListener("visibilitychange", () => {
-    O = !document.hidden;
+    S = !document.hidden;
   });
   x();
   f.mainloopOp = this;
@@ -31407,8 +32076,8 @@ Ops.Gl.MainLoop = function () {
   function A() {
     if (o.get() && i.patch.loading.getProgress() < 1) return 5;
     if (s.get()) {
-      if (!O) return 10;
-      if (!S) return 30;
+      if (!S) return 10;
+      if (!O) return 30;
     }
     return t.get();
   }
@@ -31525,7 +32194,7 @@ CABLES.OPS["b0472a1d-db16-4ba6-8787-f300fbdc77bb"] = {
 Ops.Gl.Matrix.Camera = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const j = (e.attachments = {});
+  const M = (e.attachments = {});
   const t = e.inTrigger("render");
   const n = e.outTrigger("trigger");
   const i = e.inValueSelect(
@@ -31551,25 +32220,25 @@ Ops.Gl.Matrix.Camera = function () {
   const y = e.inValue("pan", 0);
   const _ = e.inValue("roll", 0);
   const T = e.outNumber("Aspect");
-  const S = e.outArray("Look At Array");
-  const O = e.patch.cgl;
+  const O = e.outArray("Look At Array");
+  const S = e.patch.cgl;
   let A = 0;
   const w = vec3.create();
   const C = vec3.create();
   const x = vec3.create();
-  const E = mat4.create();
-  mat4.identity(E);
-  const I = [];
+  const I = mat4.create();
+  mat4.identity(I);
+  const E = [];
   const k = vec3.create();
   const P = mat4.create();
   mat4.identity(P);
   let L = true;
   t.onTriggered = function () {
-    if (O.frameStore.shadowPass) return n.trigger();
+    if (S.frameStore.shadowPass) return n.trigger();
     if (!o.get()) A = l.get();
-    else A = O.getViewPort()[2] / O.getViewPort()[3];
+    else A = S.getViewPort()[2] / S.getViewPort()[3];
     T.set(A);
-    O.pushViewMatrix();
+    S.pushViewMatrix();
     if (L) {
       mat4.identity(P);
       vec3.set(k, m.get(), g.get(), b.get());
@@ -31580,14 +32249,14 @@ Ops.Gl.Matrix.Camera = function () {
       if (_.get() !== 0) mat4.rotateZ(P, P, _.get() * CGL.DEG2RAD);
       L = false;
     }
-    mat4.multiply(O.vMatrix, O.vMatrix, P);
-    O.pushPMatrix();
-    O.pushViewMatrix();
+    mat4.multiply(S.vMatrix, S.vMatrix, P);
+    S.pushPMatrix();
+    S.pushViewMatrix();
     if (i.get() == "prespective") {
-      mat4.perspective(O.pMatrix, s.get() * 0.0174533, A, r.get(), a.get());
+      mat4.perspective(S.pMatrix, s.get() * 0.0174533, A, r.get(), a.get());
     } else if (i.get() == "ortogonal") {
       mat4.ortho(
-        O.pMatrix,
+        S.pMatrix,
         -1 * (s.get() / 14),
         1 * (s.get() / 14),
         (-1 * (s.get() / 14)) / A,
@@ -31596,25 +32265,25 @@ Ops.Gl.Matrix.Camera = function () {
         a.get()
       );
     }
-    I[0] = u.get();
-    I[1] = c.get();
-    I[2] = d.get();
-    I[3] = h.get();
-    I[4] = p.get();
-    I[5] = f.get();
-    I[6] = 0;
-    I[7] = 1;
-    I[8] = 0;
-    S.setRef(I);
+    E[0] = u.get();
+    E[1] = c.get();
+    E[2] = d.get();
+    E[3] = h.get();
+    E[4] = p.get();
+    E[5] = f.get();
+    E[6] = 0;
+    E[7] = 1;
+    E[8] = 0;
+    O.setRef(E);
     vec3.set(w, 0, 1, 0);
     vec3.set(C, u.get(), c.get(), d.get());
     vec3.set(x, h.get(), p.get(), f.get());
-    mat4.lookAt(E, C, x, w);
-    mat4.multiply(O.vMatrix, O.vMatrix, E);
+    mat4.lookAt(I, C, x, w);
+    mat4.multiply(S.vMatrix, S.vMatrix, I);
     n.trigger();
-    O.popViewMatrix();
-    O.popPMatrix();
-    O.popViewMatrix();
+    S.popViewMatrix();
+    S.popPMatrix();
+    S.popViewMatrix();
     if (e.isCurrentUiOp()) gui.setTransformGizmo({ posX: m, posY: g, posZ: b });
   };
   const N = function () {
@@ -31624,15 +32293,15 @@ Ops.Gl.Matrix.Camera = function () {
       l.setUiAttribs({ greyout: true });
     }
   };
-  const M = function () {
+  const j = function () {
     L = true;
   };
-  m.onChange = M;
-  g.onChange = M;
-  b.onChange = M;
-  v.onChange = M;
-  y.onChange = M;
-  _.onChange = M;
+  m.onChange = j;
+  g.onChange = j;
+  b.onChange = j;
+  v.onChange = j;
+  y.onChange = j;
+  _.onChange = j;
   o.onChange = N;
   N();
 };
@@ -31640,70 +32309,6 @@ Ops.Gl.Matrix.Camera.prototype = new CABLES.Op();
 CABLES.OPS["b24dbfdc-485c-49d2-92a1-7258efd9239a"] = {
   f: Ops.Gl.Matrix.Camera,
   objName: "Ops.Gl.Matrix.Camera",
-};
-Ops.Anim.Timer_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const a = e.inValue("Speed", 1),
-    n = e.inValueBool("Play", true),
-    i = e.inTriggerButton("Reset"),
-    r = e.inValueBool("Sync to timeline", false),
-    s = e.outNumber("Time");
-  e.setPortGroup("Controls", [n, i, a]);
-  const o = new CABLES.Timer();
-  let l = null;
-  let u = 0;
-  let c = false;
-  n.onChange = d;
-  d();
-  function d() {
-    if (n.get()) {
-      o.play();
-      e.patch.addOnAnimFrame(e);
-    } else {
-      o.pause();
-      e.patch.removeOnAnimFrame(e);
-    }
-  }
-  i.onTriggered = h;
-  function h() {
-    u = 0;
-    l = null;
-    o.setTime(0);
-    s.set(0);
-  }
-  r.onChange = function () {
-    c = r.get();
-    n.setUiAttribs({ greyout: c });
-    i.setUiAttribs({ greyout: c });
-  };
-  e.onAnimFrame = function (e, t, n) {
-    if (o.isPlaying()) {
-      if (CABLES.overwriteTime !== undefined) {
-        s.set(CABLES.overwriteTime * a.get());
-      } else if (c) {
-        s.set(e * a.get());
-      } else {
-        o.update();
-        const i = o.get();
-        if (l === null) {
-          l = i;
-          return;
-        }
-        const r = Math.abs(i - l);
-        l = i;
-        u += r * a.get();
-        if (u != u) u = 0;
-        s.set(u);
-      }
-    }
-  };
-};
-Ops.Anim.Timer_v2.prototype = new CABLES.Op();
-CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"] = {
-  f: Ops.Anim.Timer_v2,
-  objName: "Ops.Anim.Timer_v2",
 };
 Ops.Math.Accumulator = function () {
   CABLES.Op.apply(this, arguments);
@@ -31835,35 +32440,6 @@ Ops.Cables.LoadingStatus_v2.prototype = new CABLES.Op();
 CABLES.OPS["e62f7f4c-7436-437e-8451-6bc3c28545f7"] = {
   f: Ops.Cables.LoadingStatus_v2,
   objName: "Ops.Cables.LoadingStatus_v2",
-};
-Ops.Html.WindowHasFocus = function () {
-  CABLES.Op.apply(this, arguments);
-  const t = this;
-  const e = (t.attachments = {});
-  const n = t.outBoolNum("has focus"),
-    i = t.outBoolNum("Tab Visible", true);
-  const r = true;
-  n.set(t.patch.getDocument().hasFocus());
-  window.addEventListener("blur", s);
-  window.addEventListener("focus", a);
-  t.patch.getDocument().addEventListener("visibilitychange", o);
-  t.onDelete = function () {
-    t.patch.getDocument().removeEventListener("visibilitychange", o);
-  };
-  function a() {
-    n.set(true);
-  }
-  function s() {
-    n.set(false);
-  }
-  function o(e) {
-    i.set(!t.patch.getDocument().hidden);
-  }
-};
-Ops.Html.WindowHasFocus.prototype = new CABLES.Op();
-CABLES.OPS["6542896e-aa13-4b57-81e0-163597f4149a"] = {
-  f: Ops.Html.WindowHasFocus,
-  objName: "Ops.Html.WindowHasFocus",
 };
 Ops.Gl.ClearColor = function () {
   CABLES.Op.apply(this, arguments);
@@ -32066,19 +32642,19 @@ Ops.Gl.Performance = function () {
   const y = [];
   const _ = [];
   let T = 0;
-  let S = 0;
-  let O = null;
+  let O = 0;
+  let S = null;
   let G = 0;
-  let H = 0;
+  let q = 0;
   const A = ["|", "/", "-", "\\"];
   let w = true;
   const z = "#007f9c";
-  const q = "#aaaaaa";
+  const H = "#aaaaaa";
   const W = "#222222";
   const C = "#003f5c";
   const x = "#7a5195";
-  const E = "#ef5675";
-  const I = "#ffa600";
+  const I = "#ef5675";
+  const E = "#ffa600";
   let X = false;
   let k = 0;
   let P = 0;
@@ -32087,11 +32663,11 @@ Ops.Gl.Performance = function () {
   const Y = s.patch.cgl.gl;
   const K = Y.getExtension("EXT_disjoint_timer_query_webgl2");
   e.onLinkChanged = o.onChange = () => {
-    j();
+    M();
     Z();
   };
   t.onChange = Q;
-  u.onChange = M;
+  u.onChange = j;
   r.id = "performance";
   r.style.position = "absolute";
   r.style.left = "0px";
@@ -32107,40 +32683,40 @@ Ops.Gl.Performance = function () {
   r.addEventListener("click", $);
   const N = s.patch.cgl.canvas.parentElement;
   N.appendChild(r);
-  M();
   j();
+  M();
   Q();
   Z();
   s.onDelete = function () {
-    if (O) O.remove();
+    if (S) S.remove();
     if (r) r.remove();
   };
   function Q() {
-    O.style["pointer-events"] = "none";
+    S.style["pointer-events"] = "none";
     if (t.get() == "top") {
-      O.style.top = r.style.top = "0px";
-      O.style.bottom = r.style.bottom = "initial";
+      S.style.top = r.style.top = "0px";
+      S.style.bottom = r.style.bottom = "initial";
     } else {
-      O.style.bottom = r.style.bottom = "0px";
-      O.style.top = r.style.top = "initial";
+      S.style.bottom = r.style.bottom = "0px";
+      S.style.top = r.style.top = "initial";
     }
   }
   function Z() {
     if (!o.get() || !e.isLinked()) {
       r.style.display = "none";
       r.style.opacity = 0;
-      O.style.display = "none";
+      S.style.display = "none";
     } else {
       r.style.display = "block";
       r.style.opacity = 1;
-      O.style.display = "block";
+      S.style.display = "block";
     }
   }
-  function M() {
-    if (!O) return;
+  function j() {
+    if (!S) return;
     const t = Math.max(0, parseInt(u.get()));
-    O.width = t;
-    O.height = t;
+    S.width = t;
+    S.height = t;
     r.style.left = t + "px";
     b.length = 0;
     v.length = 0;
@@ -32155,38 +32731,38 @@ Ops.Gl.Performance = function () {
   }
   n.onChange = function () {
     d = n.get();
-    j();
+    M();
   };
   function $() {
     if (!o.get()) return;
     r.style.opacity = 1;
     d = !d;
-    j();
+    M();
   }
-  function j() {
+  function M() {
     te();
-    if (!O) ee();
+    if (!S) ee();
     if (d) {
-      O.style.display = "block";
+      S.style.display = "block";
       r.style.left = u.get() + "px";
       r.style["min-height"] = "56px";
     } else {
-      O.style.display = "none";
+      S.style.display = "none";
       r.style.left = "0px";
       r.style["min-height"] = "auto";
     }
   }
   function J() {
-    const t = O.height;
+    const t = S.height;
     const n = U.get();
     c.fillStyle = W;
-    c.fillRect(0, 0, O.width, t);
+    c.fillRect(0, 0, S.width, t);
     c.fillStyle = C;
     let i = 0;
     const r = Math.max(0, parseInt(u.get()));
     for (i = r; i >= 0; i--) {
       if (b[i] > 30) c.fillStyle = z;
-      if (b[i] > 60) c.fillStyle = q;
+      if (b[i] > 60) c.fillStyle = H;
       c.fillRect(r - i, t - b[i] * n, 1, b[i] * n);
       if (b[i] > 30) c.fillStyle = C;
     }
@@ -32195,40 +32771,40 @@ Ops.Gl.Performance = function () {
       c.fillStyle = x;
       e = v[i];
       c.fillRect(r - i, t - e * n, 1, v[i] * n);
-      c.fillStyle = E;
+      c.fillStyle = I;
       e += y[i];
       c.fillRect(r - i, t - e * n, 1, y[i] * n);
-      c.fillStyle = I;
+      c.fillStyle = E;
       e += _[i];
       c.fillRect(r - i, t - e * n, 1, _[i] * n);
     }
     for (let e = 10; e < t; e += 10) {
       c.fillStyle = "#888";
       const a = t - e * n;
-      c.fillRect(O.width - 5, a, 5, 1);
+      c.fillRect(S.width - 5, a, 5, 1);
       c.font = "8px arial";
-      c.fillText(e + "ms", O.width - 27, a + 3);
+      c.fillText(e + "ms", S.width - 27, a + 3);
     }
     c.fillStyle = "#fff";
-    c.fillRect(O.width - 5, t - (1e3 / p) * n, 5, 1);
-    c.fillText(Math.round(1e3 / p) + "ms", O.width - 27, t - (1e3 / p) * n);
+    c.fillRect(S.width - 5, t - (1e3 / p) * n, 5, 1);
+    c.fillText(Math.round(1e3 / p) + "ms", S.width - 27, t - (1e3 / p) * n);
   }
   function ee() {
-    O = document.createElement("canvas");
-    O.id = "performance_" + s.patch.config.glCanvasId;
-    O.width = u.get();
-    O.height = u.get();
-    O.style.display = "block";
-    O.style.opacity = 0.9;
-    O.style.position = "absolute";
-    O.style.left = "0px";
-    O.style.cursor = "pointer";
-    O.style.top = "-64px";
-    O.style["z-index"] = "99998";
-    N.appendChild(O);
-    c = O.getContext("2d");
-    O.addEventListener("click", $);
-    M();
+    S = document.createElement("canvas");
+    S.id = "performance_" + s.patch.config.glCanvasId;
+    S.width = u.get();
+    S.height = u.get();
+    S.style.display = "block";
+    S.style.opacity = 0.9;
+    S.style.position = "absolute";
+    S.style.left = "0px";
+    S.style.cursor = "pointer";
+    S.style.top = "-64px";
+    S.style["z-index"] = "99998";
+    N.appendChild(S);
+    c = S.getContext("2d");
+    S.addEventListener("click", $);
+    j();
   }
   function te() {
     if (!o.get()) return;
@@ -32273,14 +32849,14 @@ Ops.Gl.Performance = function () {
         "ms mainloop ";
       t +=
         '<span style="color:' +
-        E +
+        I +
         '">■</span> ' +
         Math.round(L * 100) / 100 +
         "ms onframe ";
       if (k)
         t +=
           '<span style="color:' +
-          I +
+          E +
           '">■</span> ' +
           Math.round(k * 100) / 100 +
           "ms GPU";
@@ -32300,7 +32876,7 @@ Ops.Gl.Performance = function () {
         "<br/>loading " +
         Math.round(s.patch.loading.getProgress() * 100) +
         "% " +
-        A[++H % A.length];
+        A[++q % A.length];
     }
     if (d) {
       let t = 0;
@@ -32331,7 +32907,7 @@ Ops.Gl.Performance = function () {
         "%) / " +
         Math.round(T * 100) / 100 +
         " ms";
-      r.innerHTML += " (self: " + Math.round(S * 100) / 100 + " ms) ";
+      r.innerHTML += " (self: " + Math.round(O * 100) / 100 + " ms) ";
       r.innerHTML +=
         "<br/>shader binds: " +
         Math.ceil(s.patch.cgl.profileData.profileShaderBinds / p) +
@@ -32489,9 +33065,9 @@ Ops.Gl.Performance = function () {
       }
     }
     G = performance.now();
-    S = performance.now() - e;
+    O = performance.now() - e;
     const t = performance.now();
-    V.setRef(O);
+    V.setRef(S);
     l.trigger();
     const i = performance.now() - t;
     const r = s.patch.cgl.profileData.profileMainloopMs;
@@ -32882,54 +33458,6 @@ CABLES.OPS["13bdac27-5da7-4311-890b-6a7e49d72040"] = {
   f: Ops.Trigger.RouteTriggerString_v2,
   objName: "Ops.Trigger.RouteTriggerString_v2",
 };
-Ops.Trigger.TriggerReceive = function () {
-  CABLES.Op.apply(this, arguments);
-  const i = this;
-  const e = (i.attachments = {});
-  const t = i.outTrigger("Triggered");
-  i.varName = i.inValueSelect("Named Trigger", [], "", true);
-  a();
-  i.patch.addEventListener("namedTriggersChanged", a);
-  let n = null;
-  function r() {
-    t.trigger();
-  }
-  function a() {
-    if (CABLES.UI) {
-      let t = [];
-      let n = i.patch.namedTriggers;
-      for (let e in n) t.push(e);
-      t = t.sort();
-      i.varName.uiAttribs.values = t;
-    }
-  }
-  i.varName.onChange = function () {
-    if (n) {
-      let e = i.patch.namedTriggers[n];
-      let t = e.indexOf(r);
-      if (t != -1) e.splice(t, 1);
-    }
-    i.setTitle(">" + i.varName.get());
-    i.patch.namedTriggers[i.varName.get()] =
-      i.patch.namedTriggers[i.varName.get()] || [];
-    let e = i.patch.namedTriggers[i.varName.get()];
-    e.push(r);
-    n = i.varName.get();
-    s();
-    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
-  };
-  i.on("uiParamPanel", s);
-  function s() {
-    if (!i.varName.get()) {
-      i.setUiError("unknowntrigger", "unknown trigger");
-    } else i.setUiError("unknowntrigger", null);
-  }
-};
-Ops.Trigger.TriggerReceive.prototype = new CABLES.Op();
-CABLES.OPS["0816c999-f2db-466b-9777-2814573574c5"] = {
-  f: Ops.Trigger.TriggerReceive,
-  objName: "Ops.Trigger.TriggerReceive",
-};
 Ops.Number.TriggerOnChangeNumber = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
@@ -32946,27 +33474,6 @@ Ops.Number.TriggerOnChangeNumber.prototype = new CABLES.Op();
 CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"] = {
   f: Ops.Number.TriggerOnChangeNumber,
   objName: "Ops.Number.TriggerOnChangeNumber",
-};
-Ops.Math.Multiply = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("number1", 1),
-    i = e.inValueFloat("number2", 1),
-    r = e.outNumber("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  a();
-  function a() {
-    const e = n.get();
-    const t = i.get();
-    r.set(e * t);
-  }
-};
-Ops.Math.Multiply.prototype = new CABLES.Op();
-CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"] = {
-  f: Ops.Math.Multiply,
-  objName: "Ops.Math.Multiply",
 };
 Ops.Gl.RenderToTexture_v3 = function () {
   CABLES.Op.apply(this, arguments);
@@ -33135,7 +33642,7 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
   s.uniformColorDiffuse = d;
   const h = e.inTexture("texture");
   let p = null;
-  h.onChange = I;
+  h.onChange = E;
   const f = e.inValueBool("colorizeTexture", false);
   const m = e.inValueBool("Vertex Colors", false);
   const g = e.inTexture("textureOpacity");
@@ -33146,17 +33653,17 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     "Luminance"
   );
   v.setUiAttribs({ greyout: true });
-  g.onChange = E;
+  g.onChange = I;
   const y = e.inValueBool("Opacity TexCoords Transform", false);
   const _ = e.inValueBool("Discard Transparent Pixels");
   const T = e.inValue("diffuseRepeatX", 1),
-    S = e.inValue("diffuseRepeatY", 1),
-    O = e.inValue("Tex Offset X", 0),
+    O = e.inValue("diffuseRepeatY", 1),
+    S = e.inValue("Tex Offset X", 0),
     A = e.inValue("Tex Offset Y", 0),
     w = e.inBool("Crop TexCoords", false);
   s.addUniformFrag("f", "diffuseRepeatX", T);
-  s.addUniformFrag("f", "diffuseRepeatY", S);
-  s.addUniformFrag("f", "texOffsetX", O);
+  s.addUniformFrag("f", "diffuseRepeatY", O);
+  s.addUniformFrag("f", "texOffsetX", S);
   s.addUniformFrag("f", "texOffsetY", A);
   const C = e.inValueBool("billboard", false);
   v.onChange =
@@ -33170,9 +33677,9 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
   e.setPortGroup("Color", [o, l, u, c]);
   e.setPortGroup("Color Texture", [h, m, f]);
   e.setPortGroup("Opacity", [g, v, _, y]);
-  e.setPortGroup("Texture Transform", [T, S, O, A, w]);
-  E();
+  e.setPortGroup("Texture Transform", [T, O, S, A, w]);
   I();
+  E();
   e.preRender = function () {
     s.bind();
     x();
@@ -33186,7 +33693,7 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     i.trigger();
     a.popShader();
   }
-  function E() {
+  function I() {
     if (g.get()) {
       if (b !== null) return;
       s.removeUniform("texOpacity");
@@ -33199,7 +33706,7 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     }
     P();
   }
-  function I() {
+  function E() {
     if (h.get()) {
       if (!s.hasDefine("HAS_TEXTURE_DIFFUSE")) s.define("HAS_TEXTURE_DIFFUSE");
       if (!p) p = new CGL.Uniform(s, "t", "texDiffuse");
@@ -33213,8 +33720,8 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
   function k() {
     const e = h.isLinked() || g.isLinked();
     T.setUiAttribs({ greyout: !e });
-    S.setUiAttribs({ greyout: !e });
     O.setUiAttribs({ greyout: !e });
+    S.setUiAttribs({ greyout: !e });
     A.setUiAttribs({ greyout: !e });
     f.setUiAttribs({ greyout: !e });
     v.setUiAttribs({ greyout: !g.get() });
@@ -33380,43 +33887,43 @@ Ops.Gl.Texture_v2 = function () {
   r.setPortGroup("Size", [f, m]);
   let _ = null;
   let T = null;
-  let S = null;
-  let O = CGL.Texture.FILTER_MIPMAP;
+  let O = null;
+  let S = CGL.Texture.FILTER_MIPMAP;
   let A = CGL.Texture.WRAP_REPEAT;
   let w = 0;
   let C = 0;
   l.setUiAttribs({ hidePort: true });
-  l.onChange = a.onChange = s.onChange = h.onChange = o.onChange = E;
+  l.onChange = a.onChange = s.onChange = h.onChange = o.onChange = I;
   i.onChange = t.onChange = P;
   n.onChange = L;
   t.set("mipmap");
   n.set("repeat");
   d.set(CGL.Texture.getEmptyTexture(y));
-  p.onTriggered = E;
+  p.onTriggered = I;
   u.onChange = function () {
     if (u.get()) {
-      if (_ != a.get() || !S) E();
-      else d.set(S);
+      if (_ != a.get() || !O) I();
+      else d.set(O);
     } else {
       d.set(CGL.Texture.getEmptyTexture(y));
       f.set(CGL.Texture.getEmptyTexture(y).width);
       m.set(CGL.Texture.getEmptyTexture(y).height);
-      if (S) S.delete();
+      if (O) O.delete();
       r.setUiAttrib({ extendTitle: "" });
-      S = null;
+      O = null;
     }
   };
   const x = function () {
     const e = CGL.Texture.getTempTexture(y);
     d.set(e);
   };
-  function E(e) {
+  function I(e) {
     clearTimeout(C);
     C = setTimeout(function () {
       k(e);
     }, 1);
   }
-  function I() {
+  function E() {
     if (s.get() == "R") return CGL.Texture.PFORMATSTR_R8UB;
     if (s.get() == "RG") return CGL.Texture.PFORMATSTR_RG8UB;
     if (s.get() == "RGB") return CGL.Texture.PFORMATSTR_RGB8UB;
@@ -33450,7 +33957,7 @@ Ops.Gl.Texture_v2 = function () {
               T = y.patch.loading.finished(T);
               return;
             }
-            if (S) S.delete();
+            if (O) O.delete();
             if (e) {
               const n = CGL.Texture.getErrorTexture(y);
               d.setRef(n);
@@ -33465,11 +33972,11 @@ Ops.Gl.Texture_v2 = function () {
             f.set(t.width);
             m.set(t.height);
             g.set(t.width / t.height);
-            S = t;
-            d.setRef(S);
+            O = t;
+            d.setRef(O);
             v.set(false);
             b.set(true);
-            if (c.get()) S.image = null;
+            if (c.get()) O.image = null;
             if (T) {
               T = y.patch.loading.finished(T);
             }
@@ -33480,8 +33987,8 @@ Ops.Gl.Texture_v2 = function () {
             wrap: A,
             flip: o.get(),
             unpackAlpha: l.get(),
-            pixelFormat: I(),
-            filter: O,
+            pixelFormat: E(),
+            filter: S,
           }
         );
         r.checkMainloopExists();
@@ -33492,19 +33999,19 @@ Ops.Gl.Texture_v2 = function () {
     }
   }
   function P() {
-    if (t.get() == "nearest") O = CGL.Texture.FILTER_NEAREST;
-    else if (t.get() == "linear") O = CGL.Texture.FILTER_LINEAR;
-    else if (t.get() == "mipmap") O = CGL.Texture.FILTER_MIPMAP;
-    else if (t.get() == "Anisotropic") O = CGL.Texture.FILTER_ANISOTROPIC;
-    i.setUiAttribs({ greyout: O != CGL.Texture.FILTER_MIPMAP });
+    if (t.get() == "nearest") S = CGL.Texture.FILTER_NEAREST;
+    else if (t.get() == "linear") S = CGL.Texture.FILTER_LINEAR;
+    else if (t.get() == "mipmap") S = CGL.Texture.FILTER_MIPMAP;
+    else if (t.get() == "Anisotropic") S = CGL.Texture.FILTER_ANISOTROPIC;
+    i.setUiAttribs({ greyout: S != CGL.Texture.FILTER_MIPMAP });
     w = parseFloat(i.get());
-    E();
+    I();
   }
   function L() {
     if (n.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
     if (n.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
     if (n.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    E();
+    I();
   }
   r.onFileChanged = function (e) {
     if (a.get() && a.get().indexOf(e) > -1) {
@@ -33865,6 +34372,54 @@ CABLES.OPS["43ed1123-1312-4383-b843-27b8ec540c09"] = {
   f: Ops.Trigger.NumberByTrigger,
   objName: "Ops.Trigger.NumberByTrigger",
 };
+Ops.Trigger.TriggerReceive = function () {
+  CABLES.Op.apply(this, arguments);
+  const i = this;
+  const e = (i.attachments = {});
+  const t = i.outTrigger("Triggered");
+  i.varName = i.inValueSelect("Named Trigger", [], "", true);
+  a();
+  i.patch.addEventListener("namedTriggersChanged", a);
+  let n = null;
+  function r() {
+    t.trigger();
+  }
+  function a() {
+    if (CABLES.UI) {
+      let t = [];
+      let n = i.patch.namedTriggers;
+      for (let e in n) t.push(e);
+      t = t.sort();
+      i.varName.uiAttribs.values = t;
+    }
+  }
+  i.varName.onChange = function () {
+    if (n) {
+      let e = i.patch.namedTriggers[n];
+      let t = e.indexOf(r);
+      if (t != -1) e.splice(t, 1);
+    }
+    i.setTitle(">" + i.varName.get());
+    i.patch.namedTriggers[i.varName.get()] =
+      i.patch.namedTriggers[i.varName.get()] || [];
+    let e = i.patch.namedTriggers[i.varName.get()];
+    e.push(r);
+    n = i.varName.get();
+    s();
+    i.patch.emitEvent("opTriggerNameChanged", i, i.varName.get());
+  };
+  i.on("uiParamPanel", s);
+  function s() {
+    if (!i.varName.get()) {
+      i.setUiError("unknowntrigger", "unknown trigger");
+    } else i.setUiError("unknowntrigger", null);
+  }
+};
+Ops.Trigger.TriggerReceive.prototype = new CABLES.Op();
+CABLES.OPS["0816c999-f2db-466b-9777-2814573574c5"] = {
+  f: Ops.Trigger.TriggerReceive,
+  objName: "Ops.Trigger.TriggerReceive",
+};
 Ops.Gl.Shader.ShaderToTexture = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
@@ -33895,8 +34450,8 @@ Ops.Gl.Shader.ShaderToTexture = function () {
   const y = [0, 0, 0, 0];
   const _ = null;
   const T = [];
-  let S = null;
   let O = null;
+  let S = null;
   o.onChange =
     l.onChange =
     h.onChange =
@@ -33910,11 +34465,11 @@ Ops.Gl.Shader.ShaderToTexture = function () {
   let w = null;
   const C = null;
   let x = true;
-  const E = CGL.MESHES.getSimpleRect(v, "shader2texture rect");
+  const I = CGL.MESHES.getSimpleRect(v, "shader2texture rect");
   e.toWorkPortsNeedToBeLinked(i);
   u.set("nearest");
   k();
-  function I() {
+  function E() {
     if (u.get() == "mipmap" && h.get()) {
       e.setUiError(
         "warning",
@@ -33933,12 +34488,12 @@ Ops.Gl.Shader.ShaderToTexture = function () {
   }
   function P() {
     x = true;
-    I();
+    E();
   }
   function L() {
-    if (O) O.dispose();
-    S = null;
+    if (S) S.dispose();
     O = null;
+    S = null;
   }
   function N() {
     x = false;
@@ -33994,12 +34549,12 @@ Ops.Gl.Shader.ShaderToTexture = function () {
     )
       N();
     if (!i.get() || !i.get().setDrawBuffers) return;
-    if (i.get() != S) {
-      S = i.get();
-      O = i.get().copy();
-      O.setDrawBuffers(T);
+    if (i.get() != O) {
+      O = i.get();
+      S = i.get().copy();
+      S.setDrawBuffers(T);
     }
-    if (!O) {
+    if (!S) {
       a.set(null);
       return;
     }
@@ -34015,9 +34570,9 @@ Ops.Gl.Shader.ShaderToTexture = function () {
     v.pushModelMatrix();
     mat4.identity(v.mMatrix);
     v.pushShader(i.get());
-    if (O.bindTextures) O.bindTextures();
+    if (S.bindTextures) S.bindTextures();
     v.pushBlend(false);
-    E.render(i.get());
+    I.render(i.get());
     v.popBlend();
     v.popPMatrix();
     v.popModelMatrix();
@@ -34054,12 +34609,12 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
   const y = b.patch.cgl;
   const _ = [];
   const T = [];
-  const S = [];
+  const O = [];
   b.toWorkPortsNeedToBeLinked(t);
   n.setUiAttribs({ editorSyntax: "glsl" });
   i.setUiAttribs({ editorSyntax: "glsl" });
-  const O = new CGL.Shader(y, "customshader", b);
-  O.setModules([
+  const S = new CGL.Shader(y, "customshader", b);
+  S.setModules([
     "MODULE_VERTEX_POSITION",
     "MODULE_COLOR",
     "MODULE_BEGIN_FRAG",
@@ -34091,19 +34646,19 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
     g();
   };
   function d() {
-    I();
+    E();
     if (u) g();
-    if (r.get()) y.pushShader(O);
+    if (r.get()) y.pushShader(S);
     h();
     a.trigger();
-    O.popTextures();
+    S.popTextures();
     if (r.get()) y.popShader();
   }
   function h() {
     for (let e = 0; e < T.length; e++)
       if (T[e] && T[e].get() && T[e].get().tex)
-        O.pushTexture(T[e].uniform, T[e].get().tex);
-      else O.pushTexture(T[e], CGL.Texture.getEmptyTexture(y));
+        S.pushTexture(T[e].uniform, T[e].get().tex);
+      else S.pushTexture(T[e], CGL.Texture.getEmptyTexture(y));
   }
   function p() {
     for (let e = 0; e < T.length; e++)
@@ -34154,7 +34709,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 if (o) {
                   const l = parseInt(o[0].trim().slice(1, -1));
                   const u = b.inArray(s, []);
-                  u.uniform = new CGL.Uniform(O, "f[]", s, new Float32Array(l));
+                  u.uniform = new CGL.Uniform(S, "f[]", s, new Float32Array(l));
                   _.push(u);
                   r.push(u);
                   const c = {
@@ -34167,10 +34722,10 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                   u.onChange = function () {
                     this.changed = true;
                   }.bind(c);
-                  S.push(c);
+                  O.push(c);
                 } else {
                   const u = b.inFloat(s, 0);
-                  u.uniform = new CGL.Uniform(O, "f", s, u);
+                  u.uniform = new CGL.Uniform(S, "f", s, u);
                   _.push(u);
                   r.push(u);
                 }
@@ -34179,7 +34734,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               x.push(s);
               if (!A(s)) {
                 const u = b.inInt(s, 0);
-                u.uniform = new CGL.Uniform(O, "i", s, u);
+                u.uniform = new CGL.Uniform(S, "i", s, u);
                 _.push(u);
                 r.push(u);
               }
@@ -34187,7 +34742,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               x.push(s);
               if (!A(s)) {
                 const u = b.inBool(s, false);
-                u.uniform = new CGL.Uniform(O, "b", s, u);
+                u.uniform = new CGL.Uniform(S, "b", s, u);
                 _.push(u);
                 r.push(u);
               }
@@ -34195,7 +34750,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               x.push(s);
               if (!A(s)) {
                 const u = b.inArray(s, 0);
-                u.uniform = new CGL.Uniform(O, "m4", s, u);
+                u.uniform = new CGL.Uniform(S, "m4", s, u);
                 _.push(u);
                 r.push(u);
                 const c = {
@@ -34208,7 +34763,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 u.onChange = function () {
                   this.changed = true;
                 }.bind(c);
-                S.push(c);
+                O.push(c);
               }
             } else if (a === "sampler2D" || a === "samplerCube") {
               x.push(s);
@@ -34216,7 +34771,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 const d = b.inObject(s);
                 let e = "t";
                 if (a === "samplerCube") e = "tc";
-                d.uniform = new CGL.Uniform(O, e, s, v + T.length);
+                d.uniform = new CGL.Uniform(S, e, s, v + T.length);
                 T.push(d);
                 r.push(d);
                 d.set(CGL.Texture.getTempTexture(y));
@@ -34236,8 +34791,8 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               if (!A(s + " X")) {
                 const h = [];
                 const c = { name: s, num: e, changed: false };
-                S.push(c);
-                E(c);
+                O.push(c);
+                I(c);
                 const p = b.inFloat(s + " X", 0);
                 p.onChange = function () {
                   this.changed = true;
@@ -34280,14 +34835,14 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
     b.setPortGroup("uniforms", r);
   }
   function g() {
-    if (!O) return;
+    if (!S) return;
     let e = false;
     l++;
     if (l > 2) e = true;
-    O.setSource(i.get(), n.get(), e);
+    S.setSource(i.get(), n.get(), e);
     if (y.glVersion == 1) {
       y.enableExtension("OES_standard_derivatives");
-      O.enableExtension("GL_OES_standard_derivatives");
+      S.enableExtension("GL_OES_standard_derivatives");
     }
     C = 0;
     x.length = 0;
@@ -34305,28 +34860,28 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
           _[t].remove();
           _[t] = null;
         }
-    for (let e = 0; e < S.length; e++) {
-      E(S[e]);
-      S[e].changed = true;
+    for (let e = 0; e < O.length; e++) {
+      I(O[e]);
+      O[e].changed = true;
     }
     for (let e = 0; e < _.length; e++)
       if (_[e] && _[e].uniform) _[e].uniform.needsUpdate = true;
-    O.compile();
+    S.compile();
     b.refreshParams();
-    s.setRef(O);
+    s.setRef(S);
     u = false;
-    if (O.hasErrors()) b.setUiError("compile", "Shader has errors");
+    if (S.hasErrors()) b.setUiError("compile", "Shader has errors");
     else b.setUiError("compile", null);
-    o.set(O.hasErrors());
+    o.set(S.hasErrors());
   }
-  function E(e) {
-    if (e.num == 2) e.uni = new CGL.Uniform(O, "2f", e.name, [0, 0]);
-    else if (e.num == 3) e.uni = new CGL.Uniform(O, "3f", e.name, [0, 0, 0]);
-    else if (e.num == 4) e.uni = new CGL.Uniform(O, "4f", e.name, [0, 0, 0, 0]);
+  function I(e) {
+    if (e.num == 2) e.uni = new CGL.Uniform(S, "2f", e.name, [0, 0]);
+    else if (e.num == 3) e.uni = new CGL.Uniform(S, "3f", e.name, [0, 0, 0]);
+    else if (e.num == 4) e.uni = new CGL.Uniform(S, "4f", e.name, [0, 0, 0, 0]);
   }
-  function I() {
-    for (let e = 0; e < S.length; e++) {
-      const t = S[e];
+  function E() {
+    for (let e = 0; e < O.length; e++) {
+      const t = O[e];
       if (t.changed) {
         if (t.num === 2) t.uni.setValue([t.x.get(), t.y.get()]);
         else if (t.num === 3) t.uni.setValue([t.x.get(), t.y.get(), t.z.get()]);
@@ -34433,17 +34988,17 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     s = t.inTexture("Texture Color"),
     u = t.inTexture("Texture Mask"),
     D = t.outTrigger("Next"),
-    S = t.outTexture("texture"),
+    O = t.outTexture("texture"),
     R = t.outNumber("Total Lines", 0),
     B = t.outNumber("Width", 0),
     U = t.outBoolNum("Font Available", 0);
-  const O = t.patch.cgl;
+  const S = t.patch.cgl;
   const d = vec3.create();
   vec3.set(d, 1, 1, 1);
   t.toWorkPortsNeedToBeLinked(n);
   t.setPortGroup("Masking", [s, u]);
   r.setUiAttribs({ title: "Line Scale" });
-  S.setUiAttribs({ hidePort: true });
+  O.setUiAttribs({ hidePort: true });
   const h = 1024;
   let p = false;
   let f = true;
@@ -34466,10 +35021,10 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     C = true;
   };
   u.onChange = s.onChange = function () {
-    E.toggleDefine("DO_MULTEX", s.get());
-    E.toggleDefine("DO_MULTEX_MASK", u.get());
+    I.toggleDefine("DO_MULTEX", s.get());
+    I.toggleDefine("DO_MULTEX_MASK", u.get());
   };
-  S.set(null);
+  O.set(null);
   c.onChange = function () {
     C = true;
     w = true;
@@ -34524,28 +35079,28 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     if (m && CABLES.OpTextureMeshCanvas[m])
       CABLES.OpTextureMeshCanvas[m].canvas.remove();
   };
-  const E = new CGL.Shader(O, "TextMesh", this);
-  E.setSource(e.textmesh_vert, e.textmesh_frag);
-  const G = new CGL.Uniform(E, "t", "tex", 0);
-  const H = new CGL.Uniform(E, "t", "texMul", 1);
-  const z = new CGL.Uniform(E, "t", "texMulMask", 2);
-  const q = new CGL.Uniform(E, "f", "scale", r);
-  const I = t.inValueSlider("r", 1),
+  const I = new CGL.Shader(S, "TextMesh", this);
+  I.setSource(e.textmesh_vert, e.textmesh_frag);
+  const G = new CGL.Uniform(I, "t", "tex", 0);
+  const q = new CGL.Uniform(I, "t", "texMul", 1);
+  const z = new CGL.Uniform(I, "t", "texMulMask", 2);
+  const H = new CGL.Uniform(I, "f", "scale", r);
+  const E = t.inValueSlider("r", 1),
     k = t.inValueSlider("g", 1),
     P = t.inValueSlider("b", 1),
     W = t.inValueSlider("a", 1),
-    X = new CGL.Uniform(E, "f", "r", I),
-    Y = new CGL.Uniform(E, "f", "g", k),
-    K = new CGL.Uniform(E, "f", "b", P),
-    Q = new CGL.Uniform(E, "f", "a", W);
-  I.setUiAttribs({ colorPick: true });
+    X = new CGL.Uniform(I, "f", "r", E),
+    Y = new CGL.Uniform(I, "f", "g", k),
+    K = new CGL.Uniform(I, "f", "b", P),
+    Q = new CGL.Uniform(I, "f", "a", W);
+  E.setUiAttribs({ colorPick: true });
   t.setPortGroup("Display", [r, c]);
   t.setPortGroup("Alignment", [y, a]);
-  t.setPortGroup("Color", [I, k, P, W]);
+  t.setPortGroup("Color", [E, k, P, W]);
   let L = 0;
   const N = vec3.create();
   let Z = -1;
-  let M = false;
+  let j = false;
   n.onTriggered = function () {
     if (f) {
       $();
@@ -34559,25 +35114,25 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     if (C) J();
     if (w) $();
     if (A && A.numInstances > 0) {
-      O.pushBlendMode(CGL.BLEND_NORMAL, true);
-      O.pushShader(E);
-      O.setTexture(0, S.get().tex);
+      S.pushBlendMode(CGL.BLEND_NORMAL, true);
+      S.pushShader(I);
+      S.setTexture(0, O.get().tex);
       const t = s.get();
-      if (t) O.setTexture(1, t.tex);
+      if (t) S.setTexture(1, t.tex);
       const n = u.get();
-      if (n) O.setTexture(2, n.tex);
+      if (n) S.setTexture(2, n.tex);
       if (g === 2) vec3.set(N, 0, L, 0);
       else if (g === 1) vec3.set(N, 0, 0, 0);
       else if (g === 0) vec3.set(N, 0, L / 2, 0);
       N[1] -= _.get();
-      O.pushModelMatrix();
-      mat4.translate(O.mMatrix, O.mMatrix, N);
-      mat4.scale(O.mMatrix, O.mMatrix, d);
-      if (!M) A.render(O.getShader());
-      O.popModelMatrix();
-      O.setTexture(0, null);
-      O.popShader();
-      O.popBlendMode();
+      S.pushModelMatrix();
+      mat4.translate(S.mMatrix, S.mMatrix, N);
+      mat4.scale(S.mMatrix, S.mMatrix, d);
+      if (!j) A.render(S.getShader());
+      S.popModelMatrix();
+      S.setTexture(0, null);
+      S.popShader();
+      S.popBlendMode();
     }
     D.trigger();
   };
@@ -34586,7 +35141,7 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
   };
   function $() {
     const e = String(v.get() + "");
-    if (!S.get()) return;
+    if (!O.get()) return;
     const a = x();
     if (!a.geom) {
       a.geom = new CGL.Geometry("textmesh");
@@ -34594,7 +35149,7 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
       a.geom.texCoords = new Float32Array([1, 1, 0, 1, 1, 0, 0, 0]);
       a.geom.verticesIndices = [0, 1, 2, 2, 1, 3];
     }
-    if (!A) A = new CGL.Mesh(O, a.geom);
+    if (!A) A = new CGL.Mesh(S, a.geom);
     const s = e.split("\n");
     R.set(s.length);
     const o = [];
@@ -34648,12 +35203,12 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
       }
     }
     const t = [].concat.apply([], o);
-    M = false;
-    if (t.length == 0) M = true;
+    j = false;
+    if (t.length == 0) j = true;
     const n = t.length / 16;
     A.setNumInstances(n);
     if (A.numInstances == 0) {
-      M = true;
+      j = true;
       return;
     }
     B.set(p * r.get());
@@ -34666,7 +35221,7 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     w = false;
     if (C) J();
   }
-  function j(t, n) {
+  function M(t, n) {
     const i = x();
     if (!n) i.chars = {};
     const r = i.ctx;
@@ -34718,7 +35273,7 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     const i = t.ctx;
     t.canvas.width = t.canvas.height = h;
     if (!t.texture)
-      t.texture = CGL.Texture.createFromImage(O, t.canvas, {
+      t.texture = CGL.Texture.createFromImage(S, t.canvas, {
         filter: e,
         anisotropic: parseFloat(l.get()),
       });
@@ -34727,16 +35282,16 @@ Ops.Gl.Meshes.TextMesh_v2 = function () {
     i.clearRect(0, 0, h, h);
     i.fillStyle = "rgba(255,255,255,255)";
     let r = t.fontSize + 40;
-    let a = j(r, true);
+    let a = M(r, true);
     while (!a.fits) {
       r -= 5;
-      a = j(r, true);
+      a = M(r, true);
     }
-    j(r, false);
+    M(r, false);
     i.restore();
     t.texture.initTexture(t.canvas, e);
     t.texture.unpackAlpha = true;
-    S.set(t.texture);
+    O.set(t.texture);
     t.lastChange = CABLES.now();
     w = true;
     C = false;
@@ -34775,8 +35330,8 @@ Ops.Gl.Matrix.Transform = function () {
     b = true,
     v = true;
   o.onChange = l.onChange = u.onChange = A;
-  i.onChange = r.onChange = a.onChange = S;
-  s.onChange = O;
+  i.onChange = r.onChange = a.onChange = O;
+  s.onChange = S;
   t.onTriggered = function () {
     let e = false;
     if (g) {
@@ -34822,10 +35377,10 @@ Ops.Gl.Matrix.Transform = function () {
     vec3.set(h, s.get(), s.get(), s.get());
     b = false;
   }
-  function S() {
+  function O() {
     g = true;
   }
-  function O() {
+  function S() {
     b = true;
   }
   function A() {
@@ -34837,24 +35392,6 @@ Ops.Gl.Matrix.Transform.prototype = new CABLES.Op();
 CABLES.OPS["650baeb1-db2d-4781-9af6-ab4e9d4277be"] = {
   f: Ops.Gl.Matrix.Transform,
   objName: "Ops.Gl.Matrix.Transform",
-};
-Ops.Math.Compare.GreaterThan = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValueFloat("number1"),
-    i = e.inValueFloat("number2"),
-    r = e.outBoolNum("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = i.onChange = a;
-  function a() {
-    r.set(n.get() > i.get());
-  }
-};
-Ops.Math.Compare.GreaterThan.prototype = new CABLES.Op();
-CABLES.OPS["b250d606-f7f8-44d3-b099-c29efff2608a"] = {
-  f: Ops.Math.Compare.GreaterThan,
-  objName: "Ops.Math.Compare.GreaterThan",
 };
 Ops.Array.InterpolateArrays = function () {
   CABLES.Op.apply(this, arguments);
@@ -34982,103 +35519,6 @@ CABLES.OPS["753d053a-04a3-44c7-abf0-ae2676ced13e"] = {
   f: Ops.Array.ArrayMerge_v3,
   objName: "Ops.Array.ArrayMerge_v3",
 };
-Ops.Array.SmoothArray = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Execute"),
-    r = e.inArray("Array In"),
-    i = e.inBool("Separate inc/dec", false),
-    a = e.inValue("Inc factor", 4),
-    s = e.inValue("Dec factor", 4),
-    o = e.outTrigger("Next"),
-    l = e.outArray("Array Out");
-  let u = [];
-  let c = false;
-  let d = 0;
-  let h = [];
-  l.set(h);
-  let p;
-  let f;
-  let m = false;
-  g();
-  b();
-  function g() {
-    m = i.get();
-    if (!m) {
-      s.setUiAttribs({ greyout: true });
-      a.setUiAttribs({ title: "Inc/Dec factor" });
-    } else {
-      s.setUiAttribs({ greyout: false });
-      a.setUiAttribs({ title: "Inc factor" });
-    }
-    b();
-    y();
-  }
-  function b() {
-    p = a.get();
-    if (m == false) f = a.get();
-    else f = s.get();
-    if (p <= 0 || p != p) p = 1e-4;
-    if (f <= 0 || f != f) f = 1e-4;
-    if (p <= 1) p = 1;
-    if (f <= 1) f = 1;
-  }
-  r.onLinkChanged = () => {
-    if (r) r.copyLinkedUiAttrib("stride", l);
-  };
-  r.onChange = function () {
-    let t = r.get();
-    if (!t) return;
-    for (let e = 0; e < t.length; e++) {
-      u[e] = t[e] || 0;
-    }
-  };
-  let v = 0;
-  function y() {
-    let e = r.get();
-    if (!e) return;
-    if (h.length != e.length) {
-      h.length = e.length || 0;
-      c = true;
-    }
-    let n = 1;
-    if (CABLES.now() - d > 500 || d === 0) c = true;
-    else n = (CABLES.now() - d) / 17;
-    d = CABLES.now();
-    if (c) {
-      for (var i = 0; i < e.length; i++) {
-        h[i] = e[i];
-      }
-      c = false;
-    }
-    for (var i = 0; i < e.length; i++) {
-      let e = h[i];
-      let t = u[i] - e;
-      if (t >= 0) e += t / (f * n);
-      else e += t / (p * n);
-      if (e > 0 && e < 1e-9) e = 0;
-      if (!e) e = 0;
-      if (h[i] != e) {
-        h[i] = e;
-        v = e;
-      }
-    }
-    l.setRef(h);
-    o.trigger();
-  }
-  n.onTriggered = function () {
-    y();
-  };
-  a.onChange = s.onChange = b;
-  i.onChange = g;
-  y();
-};
-Ops.Array.SmoothArray.prototype = new CABLES.Op();
-CABLES.OPS["8fd2ed9b-02e5-4349-b7bc-6665ca240ffa"] = {
-  f: Ops.Array.SmoothArray,
-  objName: "Ops.Array.SmoothArray",
-};
 Ops.Array.Array_v3 = function () {
   CABLES.Op.apply(this, arguments);
   const t = this;
@@ -35166,7 +35606,7 @@ CABLES.OPS["3fab881c-c2cf-42a0-9c42-2d8edfd93f57"] = {
 Ops.User.srcphag.VideoJS = function () {
   CABLES.Op.apply(this, arguments);
   const n = this;
-  const j = (n.attachments = {});
+  const M = (n.attachments = {});
   const e = n.inTrigger("Update"),
     i = n.inUrl("file", "video"),
     t = n.inValueBool("play"),
@@ -35193,10 +35633,10 @@ Ops.User.srcphag.VideoJS = function () {
     F = n.outBoolNum("Interaction Needed"),
     G = n.outNumber("CurrentTime"),
     m = n.outBoolNum("Loading"),
-    H = n.outBoolNum("Playing"),
+    q = n.outBoolNum("Playing"),
     g = n.outBoolNum("Can Play Through", false),
     z = n.outNumber("Width"),
-    q = n.outNumber("Height"),
+    H = n.outNumber("Height"),
     W = n.outNumber("Aspect Ratio"),
     b = n.outBoolNum("Has Error"),
     X = n.outBoolNum("Auto FPS", false),
@@ -35207,30 +35647,30 @@ Ops.User.srcphag.VideoJS = function () {
   let y = false;
   let _ = false;
   let T = false;
-  let S = false;
-  let O = 0;
+  let O = false;
+  let S = 0;
   let A = 0;
   let w = null;
   let Y = null;
   let K = true;
   let C = true;
   let x = 0;
-  const E = n.patch.cgl;
-  const I = document.createElement("video");
-  I.setAttribute("playsinline", "");
-  I.setAttribute("webkit-playsinline", "");
-  I.setAttribute("autoplay", "autoplay");
-  let k = videojs(I, {
+  const I = n.patch.cgl;
+  const E = document.createElement("video");
+  E.setAttribute("playsinline", "");
+  E.setAttribute("webkit-playsinline", "");
+  E.setAttribute("autoplay", "autoplay");
+  let k = videojs(E, {
     controls: true,
     autoplay: false,
     preload: "auto",
     muted: s.get(),
     loop: r.get(),
   });
-  X.set(!!I.requestVideoFrameCallback);
-  const P = CGL.Texture.getEmptyTexture(E);
+  X.set(!!E.requestVideoFrameCallback);
+  const P = CGL.Texture.getEmptyTexture(I);
   n.toWorkPortsNeedToBeLinked(f);
-  f.setRef(CGL.Texture.getEmptyTexture(E));
+  f.setRef(CGL.Texture.getEmptyTexture(I));
   t.onChange = N;
   i.onChange = ne;
   a.onChange = n.onMasterVolumeChanged = J;
@@ -35240,15 +35680,15 @@ Ops.User.srcphag.VideoJS = function () {
   };
   n.onDelete = () => {
     if (w) w.delete();
-    I.remove();
+    E.remove();
   };
   e.onTriggered = () => {
     if (performance.now() - x > 1e3 / o.get()) C = true;
     if (C) {
       Z();
     }
-    H.set(!I.paused);
-    if (T && !I.paused && t.get()) {
+    q.set(!E.paused);
+    if (T && !E.paused && t.get()) {
       T = false;
       CABLES.interActionNeededButton.remove("videoplayer");
     }
@@ -35257,58 +35697,58 @@ Ops.User.srcphag.VideoJS = function () {
   };
   function Q() {
     if (w) w.delete();
-    O = CGL.Texture.FILTER_NEAREST;
-    if (l.get() == "linear") O = CGL.Texture.FILTER_LINEAR;
+    S = CGL.Texture.FILTER_NEAREST;
+    if (l.get() == "linear") S = CGL.Texture.FILTER_LINEAR;
     if (u.get() == "repeat") A = CGL.Texture.WRAP_REPEAT;
     if (u.get() == "mirrored repeat") A = CGL.Texture.WRAP_MIRRORED_REPEAT;
     if (u.get() == "clamp to edge") A = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    w = new CGL.Texture(E, { wrap: A, filter: O });
+    w = new CGL.Texture(I, { wrap: A, filter: S });
   }
   p.onTriggered = function () {
-    I.currentTime = 0;
+    E.currentTime = 0;
     f.setRef(P);
     C = true;
   };
   h.onChange = function () {
-    I.currentTime = h.get() || 0;
+    E.currentTime = h.get() || 0;
     C = true;
   };
   o.onChange = function () {
     C = true;
   };
   function L() {
-    I.playbackRate = d.get();
+    E.playbackRate = d.get();
   }
   function N() {
     if (!_) {
-      M(true);
+      j(true);
     }
     if (t.get()) {
-      I.currentTime = h.get() || 0;
-      const e = I.play();
+      E.currentTime = h.get() || 0;
+      const e = E.play();
       if (e)
         e.then(function () {
           L();
         }).catch(function (e) {
           n.warn("exc", e);
           n.log(e);
-          n.log(I);
-          if (I.paused && R.get()) {
+          n.log(E);
+          if (E.paused && R.get()) {
             T = true;
             CABLES.interActionNeededButton.add(n.patch, "videoplayer", () => {
               T = false;
-              I.play();
+              E.play();
               L();
               CABLES.interActionNeededButton.remove("videoplayer");
             });
           }
         });
-    } else I.pause();
+    } else E.pause();
   }
   d.onChange = function () {
     try {
       n.setUiError("playbackRate", null);
-      I.playbackRate = d.get();
+      E.playbackRate = d.get();
     } catch (e) {
       n.setUiError(
         "playbackRate",
@@ -35318,10 +35758,10 @@ Ops.User.srcphag.VideoJS = function () {
     }
   };
   r.onChange = function () {
-    I.loop = r.get();
+    E.loop = r.get();
   };
   s.onChange = function () {
-    I.muted = s.get();
+    E.muted = s.get();
   };
   function Z() {
     const e = C;
@@ -35333,68 +35773,68 @@ Ops.User.srcphag.VideoJS = function () {
     }
     if (!y) return;
     if (!w) Q();
-    if (w.width != I.videoWidth || w.height != I.videoHeight) {
-      n.log("video size", I.videoWidth, I.videoHeight);
-      w.setSize(I.videoWidth, I.videoHeight);
+    if (w.width != E.videoWidth || w.height != E.videoHeight) {
+      n.log("video size", E.videoWidth, E.videoHeight);
+      w.setSize(E.videoWidth, E.videoHeight);
     }
     z.set(w.width);
-    q.set(w.height);
+    H.set(w.height);
     W.set(w.width / w.height);
     if (!g.get()) return;
     if (!y) return;
-    if (!I) return;
-    if (I.videoHeight <= 0) {
+    if (!E) return;
+    if (E.videoHeight <= 0) {
       n.setUiError("videosize", "video width is 0!");
       return;
     }
-    if (I.videoWidth <= 0) {
+    if (E.videoWidth <= 0) {
       n.setUiError("videosize", "video height is 0!");
       return;
     }
-    const t = I.currentTime / I.duration;
+    const t = E.currentTime / E.duration;
     if (!isNaN(t)) V.set(t);
-    G.set(I.currentTime);
-    E.gl.bindTexture(E.gl.TEXTURE_2D, w.tex);
-    E.gl.pixelStorei(E.gl.UNPACK_FLIP_Y_WEBGL, c.get());
-    E.gl.texImage2D(
-      E.gl.TEXTURE_2D,
+    G.set(E.currentTime);
+    I.gl.bindTexture(I.gl.TEXTURE_2D, w.tex);
+    I.gl.pixelStorei(I.gl.UNPACK_FLIP_Y_WEBGL, c.get());
+    I.gl.texImage2D(
+      I.gl.TEXTURE_2D,
       0,
-      E.gl.RGBA,
-      E.gl.RGBA,
-      E.gl.UNSIGNED_BYTE,
-      I
+      I.gl.RGBA,
+      I.gl.RGBA,
+      I.gl.UNSIGNED_BYTE,
+      E
     );
     w._setFilter();
-    if (c.get()) E.gl.pixelStorei(E.gl.UNPACK_FLIP_Y_WEBGL, false);
+    if (c.get()) I.gl.pixelStorei(I.gl.UNPACK_FLIP_Y_WEBGL, false);
     K = false;
     f.setRef(w);
     C = false;
     n.patch.cgl.profileData.profileVideosPlaying++;
-    if (I.readyState == 4) m.set(false);
+    if (E.readyState == 4) m.set(false);
     else m.set(false);
-    if (I.requestVideoFrameCallback)
-      I.requestVideoFrameCallback(() => {
+    if (E.requestVideoFrameCallback)
+      E.requestVideoFrameCallback(() => {
         C = true;
       });
   }
   function $() {
-    I.controls = false;
-    I.muted = s.get();
-    I.loop = r.get();
+    E.controls = false;
+    E.muted = s.get();
+    E.loop = r.get();
     C = true;
     g.set(true);
   }
   function J() {
-    I.volume = Math.min(
+    E.volume = Math.min(
       1,
       Math.max(0, (a.get() || 0) * n.patch.config.masterVolume)
     );
   }
   function ee() {
-    U.set(I.duration);
+    U.set(E.duration);
     N();
   }
-  function M(e) {
+  function j(e) {
     b.set(false);
     v.set("");
     g.set(false);
@@ -35420,8 +35860,8 @@ Ops.User.srcphag.VideoJS = function () {
       }
       k.loop(r.get());
       k.muted(s.get());
-      if (!S) {
-        S = true;
+      if (!O) {
+        O = true;
         k.on("canplaythrough", $);
         k.on("loadedmetadata", ee);
         k.on("playing", function () {
@@ -35438,7 +35878,7 @@ Ops.User.srcphag.VideoJS = function () {
     }
   }
   function te() {
-    setTimeout(M, 100);
+    setTimeout(j, 100);
   }
   function ne() {
     if (!i.get()) return;
@@ -35469,17 +35909,17 @@ Ops.Ui.VizTexture = function () {
     i = D.outTexture("Texture Out"),
     G = D.outString("Info");
   D.setUiAttrib({ height: 150, resizable: true });
-  const H = new CABLES.Timer();
+  const q = new CABLES.Timer();
   let r = null;
   let z = null;
-  let q = null;
+  let H = null;
   let W = "";
   let a = true;
   t.onChange = e.onChange = o;
   U.onChange = s;
   s();
   if (CABLES.UI) {
-    H.play();
+    q.play();
   }
   function s() {
     V.setUiAttribs({ greyout: !U.get() });
@@ -35577,8 +36017,8 @@ Ops.Ui.VizTexture = function () {
       } else if (T == 1) {
         m.setTexture(f, g.cubemap, m.gl.TEXTURE_CUBE_MAP);
       }
-      H.update();
-      this._shaderTimeUniform.setValue(H.get());
+      q.update();
+      this._shaderTimeUniform.setValue(q.get());
       this._shaderTypeUniform.setValue(T);
       let t = [h.op.patch.cgl.canvasWidth, h.op.patch.cgl.canvasHeight];
       m.gl.clearColor(0, 0, 0, 0);
@@ -35595,18 +36035,18 @@ Ops.Ui.VizTexture = function () {
       if (T == 1) m.setTexture(f, _);
       m.popPMatrix();
       m.resetViewPort();
-      const S = [d.width, d.height];
-      const O = false;
-      if (g.width > g.height) S[1] = (d.width * b[1]) / b[0];
+      const O = [d.width, d.height];
+      const S = false;
+      if (g.width > g.height) O[1] = (d.width * b[1]) / b[0];
       else {
-        S[1] = d.width * (b[1] / b[0]);
-        if (S[1] > d.height) {
-          const x = d.height / S[1];
-          S[0] *= x;
-          S[1] *= x;
+        O[1] = d.width * (b[1] / b[0]);
+        if (O[1] > d.height) {
+          const x = d.height / O[1];
+          O[0] *= x;
+          O[1] *= x;
         }
       }
-      const A = S[0] > b[0] && S[1] > b[1];
+      const A = O[0] > b[0] && O[1] > b[1];
       c.imageSmoothingEnabled = true;
       c.fillStyle = "#ffffff";
       c.fillRect(d.x, d.y - 10, 10, 10);
@@ -35624,22 +36064,22 @@ Ops.Ui.VizTexture = function () {
           c.fillRect(d.x + r * t, d.y + i * e, r, i);
         }
       c.fillStyle = "#222";
-      const w = (d.width - S[0]) / 2;
-      const C = (e - S[1]) / 2;
-      let a = d.x + (d.width - S[0]) / 2;
-      let s = d.y + (e - S[1]) / 2;
-      let o = S[0];
-      let l = S[1];
-      if (e - S[1] < 0) {
-        a = d.x + (d.width - (S[0] * e) / S[1]) / 2;
+      const w = (d.width - O[0]) / 2;
+      const C = (e - O[1]) / 2;
+      let a = d.x + (d.width - O[0]) / 2;
+      let s = d.y + (e - O[1]) / 2;
+      let o = O[0];
+      let l = O[1];
+      if (e - O[1] < 0) {
+        a = d.x + (d.width - (O[0] * e) / O[1]) / 2;
         s = d.y;
-        o = (S[0] * e) / S[1];
+        o = (O[0] * e) / O[1];
         l = e;
       }
       c.fillRect(d.x, d.y, a - d.x, e);
       c.fillRect(d.x + o + a - d.x, d.y, o, e);
       c.fillRect(d.x, d.y, d.width, C);
-      c.fillRect(d.x, d.y + S[1] + C, d.width, C);
+      c.fillRect(d.x, d.y + O[1] + C, d.width, C);
       if (
         m.canvas &&
         m.canvasWidth > 0 &&
@@ -35648,8 +36088,8 @@ Ops.Ui.VizTexture = function () {
         m.canvas.height > 0
       ) {
         try {
-          const E = o / t[0] > 3 || l / t[1] > 3;
-          const I = o / t[0] > 10 || l / t[1] > 10;
+          const I = o / t[0] > 3 || l / t[1] > 3;
+          const E = o / t[0] > 10 || l / t[1] > 10;
           if (b[1] == 1) {
             c.imageSmoothingEnabled = false;
             c.drawImage(m.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
@@ -35659,17 +36099,17 @@ Ops.Ui.VizTexture = function () {
             c.drawImage(m.canvas, 0, 0, t[0], t[1], d.x, d.y, d.width, e);
             c.imageSmoothingEnabled = true;
           } else if (
-            S[0] != 0 &&
-            S[1] != 0 &&
+            O[0] != 0 &&
+            O[1] != 0 &&
             d.width != 0 &&
             e != 0 &&
             o != 0 &&
             l != 0
           ) {
-            c.imageSmoothingEnabled = !E;
+            c.imageSmoothingEnabled = !I;
             c.drawImage(m.canvas, 0, 0, t[0], t[1], a, s, o, l);
           }
-          if (I) {
+          if (E) {
             const k = o / t[0];
             const P = l / t[1];
             c.imageSmoothingEnabled = true;
@@ -35711,33 +36151,33 @@ Ops.Ui.VizTexture = function () {
       D.setUiAttrib({ comment: u });
       G.set(u);
       if (U.get()) {
-        const M = m.gl;
-        const j = R.get();
-        if (!j) {
+        const j = m.gl;
+        const M = R.get();
+        if (!M) {
           W = "";
           return;
         }
-        if (!z) z = M.createFramebuffer();
-        if (!q) q = new CGL.PixelReader();
-        M.bindFramebuffer(M.FRAMEBUFFER, z);
-        M.framebufferTexture2D(
-          M.FRAMEBUFFER,
-          M.COLOR_ATTACHMENT0,
-          M.TEXTURE_2D,
-          j.tex,
+        if (!z) z = j.createFramebuffer();
+        if (!H) H = new CGL.PixelReader();
+        j.bindFramebuffer(j.FRAMEBUFFER, z);
+        j.framebufferTexture2D(
+          j.FRAMEBUFFER,
+          j.COLOR_ATTACHMENT0,
+          j.TEXTURE_2D,
+          M.tex,
           0
         );
-        M.bindFramebuffer(M.FRAMEBUFFER, null);
-        q.read(
+        j.bindFramebuffer(j.FRAMEBUFFER, null);
+        H.read(
           m,
           z,
-          j.pixelFormat,
-          V.get() * j.width,
-          j.height - F.get() * j.height,
+          M.pixelFormat,
+          V.get() * M.width,
+          M.height - F.get() * M.height,
           1,
           1,
           (e) => {
-            if (!CGL.Texture.isPixelFormatFloat(j.pixelFormat)) {
+            if (!CGL.Texture.isPixelFormatFloat(M.pixelFormat)) {
               W = "Pixel Float: " + Math.floor((e[0] / 255) * 100) / 100;
               if (!isNaN(e[1]))
                 W += ", " + Math.floor((e[1] / 255) * 100) / 100;
@@ -35746,7 +36186,7 @@ Ops.Ui.VizTexture = function () {
               if (!isNaN(e[3]))
                 W += ", " + Math.floor((e[3] / 255) * 100) / 100;
               W += "\n";
-              if (j.pixelFormat.indexOf("ubyte") > 0) {
+              if (M.pixelFormat.indexOf("ubyte") > 0) {
                 W += "Pixel UByte: ";
                 W += Math.round(e[0]);
                 if (!isNaN(e[1])) W += ", " + Math.round(e[1]);
@@ -35887,7 +36327,7 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
     b.onChange =
     r.onLinkChanged =
     m.onChange =
-      O;
+      S;
   e.toWorkPortsNeedToBeLinked(r, i);
   e.setPortGroup("Rotation", [h, p, f]);
   e.setPortGroup("Position", [c, d]);
@@ -35917,10 +36357,10 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
   y.addUniformBoth("f", "MOD_amount", s);
   y.addUniformBoth("2f", "MOD_offset", c, d);
   const T = y.addUniformFrag("f", "MOD_viewPortW");
-  const S = y.addUniformFrag("f", "MOD_viewPortH");
+  const O = y.addUniformFrag("f", "MOD_viewPortH");
   CGL.TextureEffect.setupBlending(e, y, a, s);
-  O();
-  function O() {
+  S();
+  function S() {
     y.toggleDefine("MOD_USE_IMGALPHA", u.get());
     y.toggleDefine("MOD_WORLDSPACE", b.get());
     y.toggleDefine("MOD_MAP_XY", m.get() == "XY");
@@ -36066,7 +36506,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       f.popViewMatrix();
     }
   };
-  const S = true;
+  const O = true;
   const R = class {
     constructor() {
       this.json = {};
@@ -36092,7 +36532,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   };
-  function O(e) {
+  function S(e) {
     if (window.TextDecoder) return new TextDecoder("utf-8").decode(e);
     let t, n, i, r;
     let a, s;
@@ -36133,12 +36573,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (i >= e.byteLength) {
       return;
     }
-    r.size = e.getUint32(i + 0, S);
-    r.type = O(t.subarray(i + 4, i + 4 + 4));
+    r.size = e.getUint32(i + 0, O);
+    r.type = S(t.subarray(i + 4, i + 4 + 4));
     if (r.type == "BIN\0") {
       r.dataView = new DataView(n, i + 8, r.size);
     } else if (r.type == "JSON") {
-      const a = O(t.subarray(i + 8, i + 8 + r.size));
+      const a = S(t.subarray(i + 8, i + 8 + r.size));
       try {
         const s = JSON.parse(a);
         r.data = s;
@@ -36229,7 +36669,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         V();
       }, 100);
     }
-    M();
+    j();
   }
   function F(e) {
     const t = 8;
@@ -36243,14 +36683,14 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!e) return;
     const i = new Uint8Array(e);
     let s = 0;
-    const o = O(i.subarray(s, 4));
+    const o = S(i.subarray(s, 4));
     s += 4;
     if (o != "glTF") return;
     a.timing.push(["dataview", Math.round(performance.now() - a.startTime)]);
     const l = new DataView(e);
-    const u = l.getUint32(s, S);
+    const u = l.getUint32(s, O);
     s += 4;
-    const c = l.getUint32(s, S);
+    const c = l.getUint32(s, O);
     s += 4;
     oe.set(u);
     const d = [];
@@ -36314,8 +36754,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
               else n = new Float32Array(b);
               n.cblStride = i;
               for (r = 0; r < b; r++) {
-                if (v) n[r] = d[1].dataView.getUint32(e, S);
-                else n[r] = d[1].dataView.getFloat32(e, S);
+                if (v) n[r] = d[1].dataView.getUint32(e, O);
+                else n[r] = d[1].dataView.getFloat32(e, O);
                 if (t != 4 && (r + 1) % i === 0) e += t - i * 4;
                 e += 4;
               }
@@ -36324,7 +36764,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
               n = new Uint16Array(b);
               n.cblStride = t;
               for (r = 0; r < b; r++) {
-                n[r] = d[1].dataView.getUint16(e, S);
+                n[r] = d[1].dataView.getUint16(e, O);
                 if (t != 2 && (r + 1) % i === 0) e += t - i * 2;
                 e += 2;
               }
@@ -36333,7 +36773,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
               n = new Uint8Array(b);
               n.cblStride = t;
               for (r = 0; r < b; r++) {
-                n[r] = d[1].dataView.getUint8(e, S);
+                n[r] = d[1].dataView.getUint8(e, O);
                 if (t != 1 && (r + 1) % i === 0) e += t - i * 1;
                 e += 1;
               }
@@ -36353,7 +36793,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     a.json.meshes = a.json.meshes || [];
     if (a.json.meshes) {
       for (n = 0; n < a.json.meshes.length; n++) {
-        const y = new H(a, a.json.meshes[n]);
+        const y = new q(a, a.json.meshes[n]);
         a.meshes.push(y);
       }
     }
@@ -36378,7 +36818,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     for (n = 0; n < a.nodes.length; n++) {
       a.nodes[n].initSkin();
     }
-    I = true;
+    E = true;
     a.timing.push(["load anims", Math.round(performance.now() - a.startTime)]);
     if (a.json.animations) B(a);
     a.timing.push([
@@ -36466,7 +36906,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         const o = new Int8Array(r);
         let t = i.byteOffset || 0;
         for (let e = 0; e < r; e++) {
-          o[e] = a.chunks[1].dataView.getInt8(t, S);
+          o[e] = a.chunks[1].dataView.getInt8(t, O);
           t++;
         }
         const l = window.DracoDecoder;
@@ -36755,7 +37195,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   };
-  const H = class {
+  const q = class {
     constructor(t, n) {
       this.bounds = new CABLES.CG.BoundingBox();
       this.meshes = [];
@@ -36936,7 +37376,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       return this.absMat;
     }
     transform(e, n) {
-      if (!n && n != 0) n = E;
+      if (!n && n != 0) n = I;
       this._lastTimeTrans = n;
       ve++;
       if (!this._animTrans && !this._animRot && !this._animScale) {
@@ -37042,7 +37482,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
     return n.join(",");
   }
-  function q(n, i, r) {
+  function H(n, i, r) {
     if (!x) return;
     n += '<tr class="row">';
     let a = "";
@@ -37159,7 +37599,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n += "</tr>";
     if (i.children) {
       for (let e = 0; e < i.children.length; e++)
-        n = q(n, x.nodes[i.children[e]], r + 1);
+        n = H(n, x.nodes[i.children[e]], r + 1);
     }
     return n;
   }
@@ -37229,7 +37669,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     s += " <th></th>";
     s += "</tr>";
     for (let e = 0; e < x.nodes.length; e++) {
-      if (!x.nodes[e].isChild) s = q(s, x.nodes[e], 1);
+      if (!x.nodes[e].isChild) s = H(s, x.nodes[e], 1);
     }
     s += "</table>";
     let n = 0;
@@ -37840,25 +38280,25 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   let v = [];
   let x = null;
   let y = 0;
-  let E = 0;
-  let I = true;
+  let I = 0;
+  let E = true;
   let ye = null;
   let k = null;
   let P = null;
   const _e = vec3.create();
   let Te = 0;
-  let Se = false;
+  let Oe = false;
   const L = vec3.create();
-  C.onChange = ne.onChange = c.onChange = te.onChange = M;
+  C.onChange = ne.onChange = c.onChange = te.onChange = j;
   J.onTriggered = e;
   t.onChange = ke;
-  ie.onChange = Ie;
+  ie.onChange = Ee;
   $.onChange = Le;
   i.onChange = Ae;
   T.toWorkPortsNeedToBeLinked(Q);
   t.setUiAttribs({ hideParam: true, hidePort: true });
   T.setPortGroup("Transform", [r, a, i]);
-  function Oe() {
+  function Se() {
     const t = ["None"];
     if (x) {
       for (let e = 0; e < x.nodes.length; e++) {
@@ -37870,7 +38310,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n.uiAttribs.values = t;
   }
   function Ae() {
-    Se = i.get() != "None";
+    Oe = i.get() != "None";
     if (x && x.bounds) {
       L.set(x.bounds.center);
       L[0] = -L[0];
@@ -37883,7 +38323,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     a.setUiAttribs({ greyout: !r.get() });
   };
   d.onChange = function () {
-    I = true;
+    E = true;
   };
   T.onDelete = function () {
     w();
@@ -37908,17 +38348,17 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       m.render(f.getShader());
     }
     ve = 0;
-    if (u.get()) E = T.patch.timer.getTime();
-    else E = Math.max(0, s.get());
+    if (u.get()) I = T.patch.timer.getTime();
+    else I = Math.max(0, s.get());
     if (ee.get()) {
-      E %= y;
-      if (E < Te) me.trigger();
+      I %= y;
+      if (I < Te) me.trigger();
     } else {
-      if (y > 0 && E >= y) me.trigger();
+      if (y > 0 && I >= y) me.trigger();
     }
-    Te = E;
+    Te = I;
     f.pushModelMatrix();
-    ce.set(E || 0);
+    ce.set(I || 0);
     if (g && x && x.bounds) {
       if (r.get()) {
         let e = a.get() / x.bounds.maxAxis;
@@ -37926,7 +38366,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         vec3.set(_e, e, e, e);
         mat4.scale(f.mMatrix, f.mMatrix, _e);
       }
-      if (Se) {
+      if (Oe) {
         mat4.translate(f.mMatrix, f.mMatrix, L);
       }
     }
@@ -37934,10 +38374,10 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     f.frameStore.currentScene = x;
     ae.trigger();
     if (g) {
-      if (I) xe();
-      if (b) b.start(E);
+      if (E) xe();
+      if (b) b.start(I);
       if (x) {
-        x.time = E;
+        x.time = I;
         if (x.bounds && f.shouldDrawHelpers(T)) {
           if (T.isCurrentUiOp())
             f.pushShader(CABLES.GL_MARKER.getSelectedShader(f));
@@ -37976,7 +38416,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       "finishLoading()",
       Math.round(performance.now() - x.startTime),
     ]);
-    I = true;
+    E = true;
     ue.set(y);
     x.bounds = new CABLES.CG.BoundingBox();
     x.timing.push([
@@ -37993,14 +38433,14 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       "calced bounds",
       Math.round(performance.now() - x.startTime),
     ]);
-    Ie();
+    Ee();
     x.timing.push([
       "hideNodesFromData",
       Math.round(performance.now() - x.startTime),
     ]);
     if (_) e();
     x.timing.push(["printinfo", Math.round(performance.now() - x.startTime)]);
-    Oe();
+    Se();
     we();
     pe.set(v);
     if (x) {
@@ -38017,7 +38457,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
       for (let e = 0; e < x.nodes.length; e++) {
         const t = x.nodes[e];
-        t.children = Me(t.children);
+        t.children = je(t.children);
       }
     }
     Ae();
@@ -38043,7 +38483,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (C.get() && !C.get().startsWith("data:")) {
       if (e === true) n += "?rnd=" + CABLES.generateUUID();
     }
-    I = true;
+    E = true;
     ge.set(true);
     fetch(n)
       .then((e) => {
@@ -38075,16 +38515,16 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   }
   T.onFileChanged = function (e) {
     if (C.get() && C.get().indexOf(e) > -1) {
-      M(true);
+      j(true);
     }
   };
   h.onChange = () => {
-    if (h.get()) M();
+    if (h.get()) j();
     if (!h.get()) {
       x = null;
     }
   };
-  function M(e) {
+  function j(e) {
     clearTimeout(ye);
     ye = setTimeout(function () {
       Ce(e);
@@ -38094,7 +38534,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!x) return;
     x.shaders = {};
     if (d.links.length == 1 && d.get()) {
-      I = true;
+      E = true;
       const n = d.links[0].portOut.op;
       const i = n.getPort("Shader");
       const r = n.getPort("Material Name");
@@ -38131,10 +38571,10 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         }
       }
     }
-    I = false;
+    E = false;
     if (_) e();
   }
-  function Ee() {
+  function Ie() {
     const t = ie.get();
     if (!x || !P || !P.hiddenNodes) return;
     if (!t) {
@@ -38145,7 +38585,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       if (n) n.hidden = true;
     }
   }
-  function Ie() {
+  function Ee() {
     if (!P) ke();
     if (!x) return;
     x.unHideAll();
@@ -38156,13 +38596,13 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         else T.verbose("node to be hidden not found", e, t);
       }
     }
-    Ee();
+    Ie();
   }
   function ke() {
     P = t.get();
     if (!P || P === "") P = {};
     else P = JSON.parse(P);
-    if (x) Ie();
+    if (x) Ee();
     return P;
   }
   function Pe() {
@@ -38186,7 +38626,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   T.exposeTexture = function (e) {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfTexture");
     t.getPort("Name").set(e);
-    j(t, 1);
+    M(t, 1);
     T.patch.link(T, p.name, t, "Render");
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
@@ -38195,12 +38635,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const n = gui.corePatch().addOp("Ops.Gl.GLTF.GltfGeometry");
     n.getPort("Name").set(e);
     n.getPort("Submesh").set(t);
-    j(n, 1);
+    M(n, 1);
     T.patch.link(T, p.name, n, "Update");
     gui.patchView.testCollision(n);
     gui.patchView.centerSelectOp(n.id, true);
   };
-  function j(e, t) {
+  function M(e, t) {
     t = t || 1;
     e.setUiAttrib({
       subPatch: T.uiAttribs.subPatch,
@@ -38227,7 +38667,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
             const s = gui.corePatch().addOp("Ops.Gl.GLTF.GltfNode_v2");
             s.getPort("Node Name").set(t[e].name);
             T.patch.link(i, n, s, "Render");
-            j(s, e);
+            M(s, e);
             if (e == t.length - 1) {
               s.getPort("Transformation").set(false);
             } else {
@@ -38251,7 +38691,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       gui.serverOps.loadOpLibs(t, () => {
         let e = gui.corePatch().addOp(t);
         e.getPort("Node Name").set(n);
-        j(e);
+        M(e);
         T.patch.link(T, p.name, e, "Render");
         gui.patchView.testCollision(e);
         gui.patchView.centerSelectOp(e.id, true);
@@ -38263,7 +38703,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfSetMaterial");
     t.getPort("Material Name").set(e);
     T.patch.link(T, d.name, t, "Material");
-    j(t);
+    M(t);
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
     gui.closeModal();
@@ -38277,7 +38717,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       else delete P.hiddenNodes[e];
     Pe();
   };
-  function Me(n) {
+  function je(n) {
     const i = {},
       r = [];
     for (let e = 0, t = n.length; e < t; ++e) {
@@ -38319,6 +38759,126 @@ Ops.Ui.Area.prototype = new CABLES.Op();
 CABLES.OPS["38f79614-b0de-4960-8da5-2827e7f43415"] = {
   f: Ops.Ui.Area,
   objName: "Ops.Ui.Area",
+};
+Ops.Json.SwitchObject = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  const t = n.inValueInt("Object Index", 0);
+  const i = n.outObject("object out");
+  const r = 8;
+  const a = [];
+  n.onLoaded = function () {
+    s();
+  };
+  t.onChange = s;
+  for (let t = 0; t < r; t++) {
+    let e = n.inObject("object port " + t);
+    e.inputNum = t;
+    e.onChange = o.bind(e);
+    a[t] = e;
+  }
+  function s() {
+    let e = Math.max(0, Math.floor(t.get()));
+    if (e < 0) e = 0;
+    else if (e > r - 1) e = r - 1;
+    i.setRef(a[e].get());
+  }
+  function o() {
+    if (this.inputNum != t.get()) return;
+    i.setRef(this.get());
+  }
+};
+Ops.Json.SwitchObject.prototype = new CABLES.Op();
+CABLES.OPS["345d535e-267d-49fb-98c0-c8a8f9424160"] = {
+  f: Ops.Json.SwitchObject,
+  objName: "Ops.Json.SwitchObject",
+};
+Ops.Debug.ConsoleLog = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inFloat("Number", 0),
+    i = e.inString("String", "");
+  n.onChange = function () {
+    console.log(n.get());
+  };
+  i.onChange = function () {
+    console.log(i.get());
+  };
+};
+Ops.Debug.ConsoleLog.prototype = new CABLES.Op();
+CABLES.OPS["545e7225-73b0-4d40-923b-4b39940403a8"] = {
+  f: Ops.Debug.ConsoleLog,
+  objName: "Ops.Debug.ConsoleLog",
+};
+Ops.Array.ArrayPack = function () {
+  CABLES.Op.apply(this, arguments);
+  const r = this;
+  const e = (r.attachments = {});
+  const a = r.outArray("Result");
+  const s = 8;
+  const o = [];
+  let l = false;
+  for (let t = 0; t < s; t++) {
+    let e = r.inArray("Array " + t);
+    e.onChange = n;
+    o.push(e);
+  }
+  function n() {
+    const t = [];
+    const n = [];
+    let i = 0;
+    for (i = 0; i < s; i++) {
+      let e = o[i].get();
+      if (e) {
+        n.push(e);
+        if (e.length != n[0].length) {
+          if (!l)
+            r.setUiError("arraylen", "Arrays do not have the same length !");
+          a.set(null);
+          l = true;
+          return;
+        }
+      }
+    }
+    if (n.length === 0) {
+      if (!l) r.setUiError("invalid", "No Valid Arrays");
+      a.set(null);
+      l = true;
+      return;
+    }
+    if (l) {
+      r.setUiError("arraylen", null);
+      r.setUiError("invalid", null);
+    }
+    l = false;
+    for (let e = 0; e < n[0].length; e++)
+      for (i = 0; i < n.length; i++) t.push(n[i][e]);
+    a.setRef(t);
+  }
+};
+Ops.Array.ArrayPack.prototype = new CABLES.Op();
+CABLES.OPS["51df396d-87be-4890-8fbd-c8bb3d364d3b"] = {
+  f: Ops.Array.ArrayPack,
+  objName: "Ops.Array.ArrayPack",
+};
+Ops.Boolean.Boolean = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inBool("value", false),
+    i = e.outBoolNum("result");
+  i.set(false);
+  n.onChange = r;
+  function r() {
+    if (i.get() != n.get()) i.set(n.get());
+  }
+};
+Ops.Boolean.Boolean.prototype = new CABLES.Op();
+CABLES.OPS["83e2d74c-9741-41aa-a4d7-1bda4ef55fb3"] = {
+  f: Ops.Boolean.Boolean,
+  objName: "Ops.Boolean.Boolean",
 };
 window.addEventListener("load", function (e) {
   CABLES.jsLoaded = new Event("CABLES.jsLoaded");
@@ -38383,7 +38943,7 @@ window.addEventListener("load", function (e) {
           "-ms-fullscreen",
         ],
       ],
-      H = G[0],
+      q = G[0],
       z = 0;
     z < G.length;
     z++
@@ -38393,8 +38953,8 @@ window.addEventListener("load", function (e) {
       break;
     }
   if (D) {
-    for (var q = 0; q < D.length; q++) F[H[q]] = D[q];
-    F.prefixed = D[0] !== H[0];
+    for (var H = 0; H < D.length; H++) F[q[H]] = D[H];
+    F.prefixed = D[0] !== q[0];
   }
   var W = [],
     X = function (a, s) {
@@ -38630,14 +39190,14 @@ window.addEventListener("load", function (e) {
   function Te(e) {
     return ee(e) && 1 === e.nodeType;
   }
-  function Se() {
+  function Oe() {
     try {
       return window.parent !== window.self;
     } catch (e) {
       return !0;
     }
   }
-  function Oe(n) {
+  function Se(n) {
     return function (e, t) {
       if (!ve(e)) return document[n](null);
       t = Te((t = ve(t) ? document.querySelector(t) : t)) ? t : document;
@@ -38668,7 +39228,7 @@ window.addEventListener("load", function (e) {
       Object.getOwnPropertyNames(t).forEach(function (e) {
         r.setAttribute(e, t[e]);
       }),
-      i && He(r, i),
+      i && qe(r, i),
       r
     );
   }
@@ -38699,7 +39259,7 @@ window.addEventListener("load", function (e) {
       e
     );
   }
-  function Ee(e, t) {
+  function Ie(e, t) {
     return e
       ? (e.classList
           ? e.classList.remove(t)
@@ -38714,7 +39274,7 @@ window.addEventListener("load", function (e) {
       : (d.warn("removeClass was called with an element that doesn't exist"),
         null);
   }
-  function Ie(e, t, n) {
+  function Ee(e, t, n) {
     var i = Ce(e, t);
     if (
       (n =
@@ -38722,7 +39282,7 @@ window.addEventListener("load", function (e) {
           ? !i
           : n) !== i
     )
-      return (n ? xe : Ee)(e, t), e;
+      return (n ? xe : Ie)(e, t), e;
   }
   function ke(n, i) {
     Object.getOwnPropertyNames(i).forEach(function (e) {
@@ -38751,10 +39311,10 @@ window.addEventListener("load", function (e) {
   function Ne(e, t, n) {
     e.setAttribute(t, n);
   }
-  function Me(e, t) {
+  function je(e, t) {
     e.removeAttribute(t);
   }
-  function je() {
+  function Me() {
     document.body.focus(),
       (document.onselectstart = function () {
         return !1;
@@ -38848,7 +39408,7 @@ window.addEventListener("load", function (e) {
         })
     );
   }
-  function He(t, e) {
+  function qe(t, e) {
     return (
       Ge(e).forEach(function (e) {
         return t.appendChild(e);
@@ -38857,9 +39417,9 @@ window.addEventListener("load", function (e) {
     );
   }
   function ze(e, t) {
-    return He(Fe(e), t);
+    return qe(Fe(e), t);
   }
-  function qe(e) {
+  function He(e) {
     return (
       (void 0 === e.button && void 0 === e.buttons) ||
       (0 === e.button && void 0 === e.buttons) ||
@@ -38868,26 +39428,26 @@ window.addEventListener("load", function (e) {
     );
   }
   var We,
-    Xe = Oe("querySelector"),
-    Ye = Oe("querySelectorAll"),
+    Xe = Se("querySelector"),
+    Ye = Se("querySelectorAll"),
     Ke = Object.freeze({
       __proto__: null,
       isReal: _e,
       isEl: Te,
-      isInFrame: Se,
+      isInFrame: Oe,
       createEl: c,
       textContent: Ae,
       prependTo: we,
       hasClass: Ce,
       addClass: xe,
-      removeClass: Ee,
-      toggleClass: Ie,
+      removeClass: Ie,
+      toggleClass: Ee,
       setAttributes: ke,
       getAttributes: Pe,
       getAttribute: Le,
       setAttribute: Ne,
-      removeAttribute: Me,
-      blockTextSelection: je,
+      removeAttribute: je,
+      blockTextSelection: Me,
       unblockTextSelection: De,
       getBoundingClientRect: Re,
       findPosition: Be,
@@ -38895,9 +39455,9 @@ window.addEventListener("load", function (e) {
       isTextNode: Ve,
       emptyEl: Fe,
       normalizeContent: Ge,
-      appendContent: He,
+      appendContent: qe,
       insertContent: ze,
-      isSingleLeftClick: qe,
+      isSingleLeftClick: He,
       $: Xe,
       $$: Ye,
     }),
@@ -39282,7 +39842,7 @@ window.addEventListener("load", function (e) {
           "; must be a DOM node or evented object."
       );
   }
-  function St(e, t, n) {
+  function Ot(e, t, n) {
     if (!_t(e))
       throw new Error(
         "Invalid event type for " +
@@ -39292,7 +39852,7 @@ window.addEventListener("load", function (e) {
           "; must be a non-empty string or array."
       );
   }
-  function Ot(e, t, n) {
+  function St(e, t, n) {
     if ("function" != typeof e)
       throw new Error(
         "Invalid listener for " + yt(t) + "#" + n + "; must be a function."
@@ -39307,8 +39867,8 @@ window.addEventListener("load", function (e) {
         : ((i = t[0]), (r = t[1]), t[2]);
     return (
       Tt(i, e, n),
-      St(r, e, n),
-      Ot(t, e, n),
+      Ot(r, e, n),
+      St(t, e, n),
       { isTargetingSelf: a, target: i, type: r, listener: (t = u(e, t)) }
     );
   }
@@ -39406,8 +39966,8 @@ window.addEventListener("load", function (e) {
           ? l(this.eventBusEl_, e, t)
           : ((t = t),
             Tt((e = e), this, "off"),
-            St(t, this, "off"),
-            Ot(n, this, "off"),
+            Ot(t, this, "off"),
+            St(n, this, "off"),
             (n = u(this, n)),
             this.off("dispose", n),
             e.nodeName
@@ -39428,7 +39988,7 @@ window.addEventListener("load", function (e) {
         return dt(this.eventBusEl_, e, t);
       },
     };
-  function Et(e, t) {
+  function It(e, t) {
     t = (t = void 0 === t ? {} : t).eventBusKey;
     if (t) {
       if (!e[t].nodeName)
@@ -39455,7 +40015,7 @@ window.addEventListener("load", function (e) {
       e
     );
   }
-  var It = {
+  var Et = {
     state: {},
     setState: function (e) {
       var n,
@@ -39472,7 +40032,7 @@ window.addEventListener("load", function (e) {
   };
   function kt(e, t) {
     return (
-      h(e, It),
+      h(e, Et),
       (e.state = h({}, e.state, t)),
       "function" == typeof e.handleStateChanged &&
         Ct(e) &&
@@ -39694,7 +40254,7 @@ window.addEventListener("load", function (e) {
             return i.addClass(e);
           }),
         !1 !== t.evented &&
-          (Et(this, { eventBusKey: this.el_ ? "el_" : null }),
+          (It(this, { eventBusKey: this.el_ ? "el_" : null }),
           (this.handleLanguagechange = this.handleLanguagechange.bind(this)),
           this.on(this.player_, "languagechange", this.handleLanguagechange)),
         kt(this, this.constructor.defaultState),
@@ -39928,10 +40488,10 @@ window.addEventListener("load", function (e) {
         xe(this.el_, e);
       }),
       (e.removeClass = function (e) {
-        Ee(this.el_, e);
+        Ie(this.el_, e);
       }),
       (e.toggleClass = function (e, t) {
-        Ie(this.el_, e, t);
+        Ee(this.el_, e, t);
       }),
       (e.show = function () {
         this.removeClass("vjs-hidden");
@@ -39952,7 +40512,7 @@ window.addEventListener("load", function (e) {
         Ne(this.el_, e, t);
       }),
       (e.removeAttribute = function (e) {
-        Me(this.el_, e);
+        je(this.el_, e);
       }),
       (e.width = function (e, t) {
         return this.dimension("width", e, t);
@@ -40204,7 +40764,7 @@ window.addEventListener("load", function (e) {
     (e.prototype = Object.create(t.prototype)),
       ((e.prototype.constructor = e).__proto__ = t);
   };
-  function Mt(e, t, n, i) {
+  function jt(e, t, n, i) {
     return (
       (function (e, t, n) {
         if ("number" != typeof t || t < 0 || n < t)
@@ -40221,7 +40781,7 @@ window.addEventListener("load", function (e) {
       n[i][t]
     );
   }
-  function jt(e) {
+  function Mt(e) {
     var t =
       void 0 === e || 0 === e.length
         ? {
@@ -40235,8 +40795,8 @@ window.addEventListener("load", function (e) {
           }
         : {
             length: e.length,
-            start: Mt.bind(null, "start", 0, e),
-            end: Mt.bind(null, "end", 1, e),
+            start: jt.bind(null, "start", 0, e),
+            end: jt.bind(null, "end", 1, e),
           };
     return (
       window.Symbol &&
@@ -40249,10 +40809,10 @@ window.addEventListener("load", function (e) {
   }
   function Dt(e, t) {
     return Array.isArray(e)
-      ? jt(e)
+      ? Mt(e)
       : void 0 === e || void 0 === t
-      ? jt()
-      : jt([[e, t]]);
+      ? Mt()
+      : Mt([[e, t]]);
   }
   function Rt(e, t) {
     var n,
@@ -40310,7 +40870,7 @@ window.addEventListener("load", function (e) {
   function Gt(e) {
     Ft(e) && e.then(null, function (e) {});
   }
-  function Ht(i) {
+  function qt(i) {
     return [
       "kind",
       "label",
@@ -40344,7 +40904,7 @@ window.addEventListener("load", function (e) {
         });
       return Array.prototype.map
         .call(t, function (e) {
-          var t = Ht(e.track);
+          var t = qt(e.track);
           return e.src && (t.src = e.src), t;
         })
         .concat(
@@ -40352,10 +40912,10 @@ window.addEventListener("load", function (e) {
             .call(e.textTracks(), function (e) {
               return -1 === n.indexOf(e);
             })
-            .map(Ht)
+            .map(qt)
         );
     },
-    qt = function (e, n) {
+    Ht = function (e, n) {
       return (
         e.forEach(function (e) {
           var t = n.addRemoteTextTrack(e).track;
@@ -41503,15 +42063,15 @@ window.addEventListener("load", function (e) {
     (a.LOADING = 1),
     (a.LOADED = 2),
     (a.ERROR = 3);
-  var Sn = {
+  var On = {
     audio: { ListClass: nn, TrackClass: r, capitalName: "Audio" },
     video: { ListClass: rn, TrackClass: he, capitalName: "Video" },
     text: { ListClass: t, TrackClass: Tn, capitalName: "Text" },
   };
-  Object.keys(Sn).forEach(function (e) {
-    (Sn[e].getterName = e + "Tracks"), (Sn[e].privateName = e + "Tracks_");
+  Object.keys(On).forEach(function (e) {
+    (On[e].getterName = e + "Tracks"), (On[e].privateName = e + "Tracks_");
   });
-  var On = {
+  var Sn = {
       remoteText: {
         ListClass: t,
         TrackClass: Tn,
@@ -41527,10 +42087,10 @@ window.addEventListener("load", function (e) {
         privateName: "remoteTextTrackEls_",
       },
     },
-    An = Q({}, Sn, On);
-  (On.names = Object.keys(On)),
-    (Sn.names = Object.keys(Sn)),
-    (An.names = [].concat(On.names).concat(Sn.names));
+    An = Q({}, On, Sn);
+  (Sn.names = Object.keys(Sn)),
+    (On.names = Object.keys(On)),
+    (An.names = [].concat(Sn.names).concat(On.names));
   var _ =
       "undefined" != typeof e ? e : "undefined" != typeof window ? window : {},
     T =
@@ -41552,7 +42112,7 @@ window.addEventListener("load", function (e) {
       (this.code = e.code),
       (this.message = t || e.message);
   }
-  function En(e) {
+  function In(e) {
     function t(e, t, n, i) {
       return 3600 * (0 | e) + 60 * (0 | t) + (0 | n) + (0 | i) / 1e3;
     }
@@ -41565,7 +42125,7 @@ window.addEventListener("load", function (e) {
         : t(0, e[1], e[2], e[4])
       : null;
   }
-  function In() {
+  function En() {
     this.values = wn(null);
   }
   function kn(e, t, n, i) {
@@ -41580,7 +42140,7 @@ window.addEventListener("load", function (e) {
   function Pn(t, e, s) {
     var n = t;
     function i() {
-      var e = En(t);
+      var e = In(t);
       if (null === e)
         throw new xn(xn.Errors.BadTimeStamp, "Malformed timestamp: " + n);
       return (t = t.replace(/^[^\sa-zA-Z-]+/, "")), e;
@@ -41598,7 +42158,7 @@ window.addEventListener("load", function (e) {
       (e.endTime = i()),
       r(),
       (function (e, t) {
-        var a = new In();
+        var a = new En();
         kn(
           e,
           function (e, t) {
@@ -41678,7 +42238,7 @@ window.addEventListener("load", function (e) {
     BadSignature: { code: 0, message: "Malformed WebVTT signature." },
     BadTimeStamp: { code: 1, message: "Malformed time stamp." },
   }),
-    (In.prototype = {
+    (En.prototype = {
       set: function (e, t) {
         this.get(e) || "" === t || (this.values[e] = t);
       },
@@ -41725,7 +42285,7 @@ window.addEventListener("load", function (e) {
       v: "span",
       lang: "span",
     },
-    Mn = {
+    jn = {
       white: "rgba(255,255,255,1)",
       lime: "rgba(0,255,0,1)",
       cyan: "rgba(0,255,255,1)",
@@ -41735,7 +42295,7 @@ window.addEventListener("load", function (e) {
       blue: "rgba(0,0,255,1)",
       black: "rgba(0,0,0,1)",
     },
-    jn = { v: "title", lang: "lang" },
+    Mn = { v: "title", lang: "lang" },
     Dn = { rt: "ruby" };
   function Rn(e, t) {
     for (
@@ -41771,7 +42331,7 @@ window.addEventListener("load", function (e) {
             )
           )
         : "/" !== n[1]
-        ? (a = En(n.substr(1, n.length - 2)))
+        ? (a = In(n.substr(1, n.length - 2)))
           ? ((i = e.document.createProcessingInstruction("timestamp", a)),
             p.appendChild(i))
           : (r = n.match(/^<([^.\s/0-9>]+)(\.[^\s\\>]+)?([^>\\]+)?(\\?)>?$/)) &&
@@ -41781,7 +42341,7 @@ window.addEventListener("load", function (e) {
             (d = Nn[u]),
             (i = d
               ? ((d = e.document.createElement(d)),
-                (u = jn[u]) && c && (d[u] = c.trim()),
+                (u = Mn[u]) && c && (d[u] = c.trim()),
                 d)
               : null) &&
               ((o = p),
@@ -41790,8 +42350,8 @@ window.addEventListener("load", function (e) {
                   ((a = r[2].split(".")).forEach(function (e) {
                     var t = /^bg_/.test(e),
                       e = t ? e.slice(3) : e;
-                    Mn.hasOwnProperty(e) &&
-                      ((e = Mn[e]),
+                    jn.hasOwnProperty(e) &&
+                      ((e = jn[e]),
                       (i.style[t ? "background-color" : "color"] = e));
                   }),
                   (i.className = a.join(" "))),
@@ -42038,7 +42598,7 @@ window.addEventListener("load", function (e) {
       (this.width = e.width || n),
       (this.lineHeight = void 0 !== r ? r : e.lineHeight);
   }
-  function Hn(e, t, o, l) {
+  function qn(e, t, o, l) {
     var n,
       i = new Gn(t),
       r = t.cue,
@@ -42253,7 +42813,7 @@ window.addEventListener("load", function (e) {
           (t = r[n]),
             (e = new Fn(i, t, l)),
             a.appendChild(e.div),
-            Hn(0, e, o, s),
+            qn(0, e, o, s),
             (t.displayState = e.div),
             s.push(Gn.getSimpleBoxPosition(e));
       })();
@@ -42298,7 +42858,7 @@ window.addEventListener("load", function (e) {
                   var n;
                   "X-TIMESTAMP-MAP" === e &&
                     ((t = t),
-                    (n = new In()),
+                    (n = new En()),
                     kn(
                       t,
                       function (e, t) {
@@ -42307,7 +42867,7 @@ window.addEventListener("load", function (e) {
                             n.integer(e + "S", t);
                             break;
                           case "LOCA":
-                            n.set(e + "L", En(t));
+                            n.set(e + "L", In(t));
                         }
                       },
                       /[^\d]:/,
@@ -42327,7 +42887,7 @@ window.addEventListener("load", function (e) {
                   var r;
                   "Region" === e &&
                     ((t = t),
-                    (r = new In()),
+                    (r = new En()),
                     kn(
                       t,
                       function (e, t) {
@@ -42345,7 +42905,7 @@ window.addEventListener("load", function (e) {
                           case "viewportanchor":
                             var n = t.split(",");
                             if (2 !== n.length) break;
-                            var i = new In();
+                            var i = new En();
                             if (
                               (i.percent("x", n[0]),
                               i.percent("y", n[1]),
@@ -42460,7 +43020,7 @@ window.addEventListener("load", function (e) {
         return t.onflush && t.onflush(), this;
       },
     });
-  var qn = zn,
+  var Hn = zn,
     Wn = { "": 1, lr: 1, rl: 1 },
     Xn = {
       start: 1,
@@ -42746,7 +43306,7 @@ window.addEventListener("load", function (e) {
     });
   }
   var ei = K(function (e) {
-    e = e.exports = { WebVTT: qn, VTTCue: Qn, VTTRegion: Jn };
+    e = e.exports = { WebVTT: Hn, VTTCue: Qn, VTTRegion: Jn };
     (dn.vttjs = e), (dn.WebVTT = e.WebVTT);
     var t = e.VTTCue,
       n = e.VTTRegion,
@@ -42761,7 +43321,7 @@ window.addEventListener("load", function (e) {
       dn.VTTCue || e.shim();
   });
   ei.WebVTT, ei.VTTCue, ei.VTTRegion;
-  var S = (function (i) {
+  var O = (function (i) {
     function n(t, e) {
       var n;
       return (
@@ -42892,7 +43452,7 @@ window.addEventListener("load", function (e) {
           });
       }),
       (e.dispose = function () {
-        this.clearTracks(Sn.names),
+        this.clearTracks(On.names),
           this.manualProgress && this.manualProgressOff(),
           this.manualTimeUpdates && this.manualTimeUpdatesOff(),
           i.prototype.dispose.call(this);
@@ -42937,11 +43497,11 @@ window.addEventListener("load", function (e) {
       }),
       (e.initTrackListeners = function () {
         var r = this;
-        Sn.names.forEach(function (e) {
+        On.names.forEach(function (e) {
           function t() {
             r.trigger(e + "trackchange");
           }
-          var n = Sn[e],
+          var n = On[e],
             i = r[n.getterName]();
           i.addEventListener("removetrack", t),
             i.addEventListener("addtrack", t),
@@ -43029,7 +43589,7 @@ window.addEventListener("load", function (e) {
       }),
       (e.createRemoteTextTrack = function (e) {
         e = f(e, { tech: this });
-        return new On.remoteTextEl.TrackClass(e);
+        return new Sn.remoteTextEl.TrackClass(e);
       }),
       (e.addRemoteTextTrack = function (e, t) {
         var n = this,
@@ -43140,23 +43700,23 @@ window.addEventListener("load", function (e) {
   })(g);
   An.names.forEach(function (e) {
     var t = An[e];
-    S.prototype[t.getterName] = function () {
+    O.prototype[t.getterName] = function () {
       return (
         (this[t.privateName] = this[t.privateName] || new t.ListClass()),
         this[t.privateName]
       );
     };
   }),
-    (S.prototype.featuresVolumeControl = !0),
-    (S.prototype.featuresMuteControl = !0),
-    (S.prototype.featuresFullscreenResize = !1),
-    (S.prototype.featuresPlaybackRate = !1),
-    (S.prototype.featuresProgressEvents = !1),
-    (S.prototype.featuresSourceset = !1),
-    (S.prototype.featuresTimeupdateEvents = !1),
-    (S.prototype.featuresNativeTextTracks = !1),
-    (S.prototype.featuresVideoFrameCallback = !1),
-    (S.withSourceHandlers = function (r) {
+    (O.prototype.featuresVolumeControl = !0),
+    (O.prototype.featuresMuteControl = !0),
+    (O.prototype.featuresFullscreenResize = !1),
+    (O.prototype.featuresPlaybackRate = !1),
+    (O.prototype.featuresProgressEvents = !1),
+    (O.prototype.featuresSourceset = !1),
+    (O.prototype.featuresTimeupdateEvents = !1),
+    (O.prototype.featuresNativeTextTracks = !1),
+    (O.prototype.featuresVideoFrameCallback = !1),
+    (O.withSourceHandlers = function (r) {
       (r.registerSourceHandler = function (e, t) {
         var n = (n = r.sourceHandlers) || (r.sourceHandlers = []);
         void 0 === t && (t = n.length), n.splice(t, 0, e);
@@ -43206,9 +43766,9 @@ window.addEventListener("load", function (e) {
               (this.sourceHandler_ = null));
         });
     }),
-    g.registerComponent("Tech", S),
-    S.registerTech("Tech", S),
-    (S.defaultTechOrder_ = []);
+    g.registerComponent("Tech", O),
+    O.registerTech("Tech", O),
+    (O.defaultTechOrder_ = []);
   var ti = {},
     ni = {},
     ii = {};
@@ -43341,7 +43901,7 @@ window.addEventListener("load", function (e) {
       else
         for (var r = 0, a = t.playerOptions.techOrder; r < a.length; r++) {
           var s = p(a[r]),
-            o = S.getTech(s);
+            o = O.getTech(s);
           if ((o = !s ? g.getComponent(s) : o) && o.isSupported()) {
             e.loadTech_(s);
             break;
@@ -43987,7 +44547,7 @@ window.addEventListener("load", function (e) {
     );
   }
   var Ti = _i;
-  function Si(e, t) {
+  function Oi(e, t) {
     return Ti(e, (t = void 0 === t ? e : t));
   }
   t = (function (i) {
@@ -44035,7 +44595,7 @@ window.addEventListener("load", function (e) {
       }),
       (t.updateTextNode_ = function (e) {
         var t = this;
-        (e = Si((e = void 0 === e ? 0 : e))),
+        (e = Oi((e = void 0 === e ? 0 : e))),
           this.formattedTime_ !== e &&
             ((this.formattedTime_ = e),
             this.requestNamedAnimationFrame(
@@ -44296,7 +44856,7 @@ window.addEventListener("load", function (e) {
   })(yi);
   (_.prototype.controlText_ = "Seek to live, currently playing live"),
     g.registerComponent("SeekToLive", _);
-  function Oi(e, t, n) {
+  function Si(e, t, n) {
     return (e = Number(e)), Math.min(n, Math.max(t, isNaN(e) ? t : e));
   }
   T = (function (i) {
@@ -44387,7 +44947,7 @@ window.addEventListener("load", function (e) {
         var t = this.bar.el_.ownerDocument;
         "mousedown" === e.type && e.preventDefault(),
           "touchstart" !== e.type || ue || e.preventDefault(),
-          je(),
+          Me(),
           this.addClass("vjs-sliding"),
           this.trigger("slideractive"),
           this.on(t, "mousemove", this.handleMouseMove_),
@@ -44423,7 +44983,7 @@ window.addEventListener("load", function (e) {
         }
       }),
       (t.getProgress = function () {
-        return Number(Oi(this.getPercent(), 0, 1).toFixed(4));
+        return Number(Si(this.getPercent(), 0, 1).toFixed(4));
       }),
       (t.calculateDistance = function (e) {
         e = Ue(this.el_, e);
@@ -44451,7 +45011,7 @@ window.addEventListener("load", function (e) {
   })(g);
   g.registerComponent("Slider", T);
   function Ai(e, t) {
-    return Oi((e / t) * 100, 0, 100).toFixed(2) + "%";
+    return Si((e / t) * 100, 0, 100).toFixed(2) + "%";
   }
   g.registerComponent(
     "LoadProgressBar",
@@ -44577,8 +45137,8 @@ window.addEventListener("load", function (e) {
                     ? ((t = (e = o.player_.liveTracker.liveWindow()) - r * e) <
                       1
                         ? ""
-                        : "-") + Si(t, e)
-                    : Si(a, n)),
+                        : "-") + Oi(t, e)
+                    : Oi(a, n)),
                   o.update(i, r, n),
                   s && s();
               }
@@ -44731,7 +45291,7 @@ window.addEventListener("load", function (e) {
                     "aria-valuetext",
                     i.localize(
                       "progress bar timing: currentTime={1} duration={2}",
-                      [Si(e, n), Si(n, n)],
+                      [Oi(e, n), Oi(n, n)],
                       "{1} of {2}"
                     )
                   ),
@@ -44767,14 +45327,14 @@ window.addEventListener("load", function (e) {
         );
       }),
       (t.handleMouseDown = function (e) {
-        qe(e) &&
+        He(e) &&
           (e.stopPropagation(),
           (this.videoWasPlaying = !this.player_.paused()),
           this.player_.pause(),
           a.prototype.handleMouseDown.call(this, e));
       }),
       (t.handleMouseMove = function (e, t) {
-        if ((void 0 === t && (t = !1), qe(e))) {
+        if ((void 0 === t && (t = !1), He(e))) {
           t || this.player_.scrubbing() || this.player_.scrubbing(!0);
           var n = this.calculateDistance(e),
             i = this.player_.liveTracker;
@@ -44922,7 +45482,7 @@ window.addEventListener("load", function (e) {
           (t || n) &&
             ((r = Be((i = a.el()))),
             (e = Ue(i, e).x),
-            (e = Oi(e, 0, 1)),
+            (e = Si(e, 0, 1)),
             n && n.update(r, e),
             t && t.update(r, a.getProgress())));
       }),
@@ -45219,7 +45779,7 @@ window.addEventListener("load", function (e) {
         );
       }),
       (t.handleMouseDown = function (e) {
-        qe(e) && i.prototype.handleMouseDown.call(this, e);
+        He(e) && i.prototype.handleMouseDown.call(this, e);
       }),
       (t.handleMouseMove = function (e) {
         var t,
@@ -45231,9 +45791,9 @@ window.addEventListener("load", function (e) {
           (n = this.vertical()),
           (i = Ue(i, e)),
           (i = n ? i.y : i.x),
-          (i = Oi(i, 0, 1)),
+          (i = Si(i, 0, 1)),
           r.update(t, i, n)),
-          qe(e) &&
+          He(e) &&
             (this.checkMuted(), this.player_.volume(this.calculateDistance(e)));
       }),
       (t.checkMuted = function () {
@@ -45402,7 +45962,7 @@ window.addEventListener("load", function (e) {
             : e < 0.33
             ? (t = 1)
             : e < 0.67 && (t = 2);
-        for (var n = 0; n < 4; n++) Ee(this.el_, "vjs-vol-" + n);
+        for (var n = 0; n < 4; n++) Ie(this.el_, "vjs-vol-" + n);
         xe(this.el_, "vjs-vol-" + t);
       }),
       (t.updateControlText_ = function () {
@@ -45763,7 +46323,7 @@ window.addEventListener("load", function (e) {
           this.menu.show(),
           this.menu.lockShowing(),
           this.menuButton_.el_.setAttribute("aria-expanded", "true"),
-          (ge && Se()) || this.menu.focus());
+          (ge && Oe()) || this.menu.focus());
       }),
       (t.unpressButton = function () {
         this.enabled_ &&
@@ -45954,7 +46514,7 @@ window.addEventListener("load", function (e) {
     );
   })(o);
   g.registerComponent("TextTrackMenuItem", xi);
-  var Ei = (function (n) {
+  var Ii = (function (n) {
     function e(e, t) {
       return (
         (t.track = {
@@ -46013,7 +46573,7 @@ window.addEventListener("load", function (e) {
       e
     );
   })(xi);
-  g.registerComponent("OffTextTrackMenuItem", Ei);
+  g.registerComponent("OffTextTrackMenuItem", Ii);
   a = (function (n) {
     function e(e, t) {
       return (
@@ -46028,7 +46588,7 @@ window.addEventListener("load", function (e) {
         void 0 === t && (t = xi),
           this.label_ && (n = this.label_ + " off"),
           (e = void 0 === e ? [] : e).push(
-            new Ei(this.player_, {
+            new Ii(this.player_, {
               kinds: this.kinds_,
               kind: this.kind_,
               label: n,
@@ -46056,7 +46616,7 @@ window.addEventListener("load", function (e) {
     );
   })(rn);
   g.registerComponent("TextTrackButton", a);
-  var Ii = (function (a) {
+  var Ei = (function (a) {
     function e(e, t) {
       var n = t.track,
         i = t.cue,
@@ -46080,7 +46640,7 @@ window.addEventListener("load", function (e) {
       e
     );
   })(o);
-  g.registerComponent("ChaptersTrackMenuItem", Ii);
+  g.registerComponent("ChaptersTrackMenuItem", Ei);
   t = (function (r) {
     function e(e, t, n) {
       var i = r.call(this, e, t, n) || this;
@@ -46167,7 +46727,7 @@ window.addEventListener("load", function (e) {
         if (!t) return e;
         for (var n = 0, i = t.length; n < i; n++) {
           var r = t[n],
-            r = new Ii(this.player_, { track: this.track_, cue: r });
+            r = new Ei(this.player_, { track: this.track_, cue: r });
           e.push(r);
         }
         return e;
@@ -46722,7 +47282,7 @@ window.addEventListener("load", function (e) {
     uncloseable: !0,
   })),
     g.registerComponent("ErrorDisplay", e);
-  var Mi = "vjs-text-track-settings",
+  var ji = "vjs-text-track-settings",
     _ = ["#000", "Black"],
     a = ["#00F", "Blue"],
     v = ["#0FF", "Cyan"],
@@ -46734,7 +47294,7 @@ window.addEventListener("load", function (e) {
     t = ["1", "Opaque"],
     T = ["0.5", "Semi-Transparent"],
     e = ["0", "Transparent"],
-    ji = {
+    Mi = {
       backgroundColor: {
         selector: ".vjs-bg-color > select",
         id: "captions-background-color-%s",
@@ -46820,7 +47380,7 @@ window.addEventListener("load", function (e) {
   function Di(e, t) {
     if ((e = t ? t(e) : e) && "none" !== e) return e;
   }
-  (ji.windowColor.options = ji.backgroundColor.options),
+  (Mi.windowColor.options = Mi.backgroundColor.options),
     g.registerComponent(
       "TextTrackSettings",
       (function (i) {
@@ -46847,7 +47407,7 @@ window.addEventListener("load", function (e) {
             n.on(n.$(".vjs-default-button"), "click", function () {
               n.setDefaults(), n.updateDisplay();
             }),
-            J(ji, function (e) {
+            J(Mi, function (e) {
               n.on(n.$(e.selector), "change", n.updateDisplay);
             }),
             n.options_.persistTextTrackSettings && n.restoreSettings(),
@@ -46863,7 +47423,7 @@ window.addEventListener("load", function (e) {
           (t.createElSelect_ = function (e, t, n) {
             var i = this;
             void 0 === t && (t = ""), void 0 === n && (n = "label");
-            var e = ji[e],
+            var e = Mi[e],
               r = e.id.replace("%s", this.id_),
               a = [t, r].join(" ").trim();
             return [
@@ -47012,14 +47572,14 @@ window.addEventListener("load", function (e) {
                 return void 0 !== t && (e[n] = t), e;
               }),
               void 0 === (e = {}) && (e = 0),
-              $((n = ji)).reduce(function (e, t) {
+              $((n = Mi)).reduce(function (e, t) {
                 return i(e, n[t], t);
               }, e)
             );
           }),
           (t.setValues = function (n) {
             var i = this;
-            J(ji, function (e, t) {
+            J(Mi, function (e, t) {
               !(function (e, t, n) {
                 if (t)
                   for (var i = 0; i < e.options.length; i++)
@@ -47032,7 +47592,7 @@ window.addEventListener("load", function (e) {
           }),
           (t.setDefaults = function () {
             var n = this;
-            J(ji, function (e) {
+            J(Mi, function (e) {
               var t = e.hasOwnProperty("default") ? e.default : 0;
               n.$(e.selector).selectedIndex = t;
             });
@@ -47040,7 +47600,7 @@ window.addEventListener("load", function (e) {
           (t.restoreSettings = function () {
             var e;
             try {
-              e = JSON.parse(window.localStorage.getItem(Mi));
+              e = JSON.parse(window.localStorage.getItem(ji));
             } catch (e) {
               d.warn(e);
             }
@@ -47051,8 +47611,8 @@ window.addEventListener("load", function (e) {
               var e = this.getValues();
               try {
                 Object.keys(e).length
-                  ? window.localStorage.setItem(Mi, JSON.stringify(e))
-                  : window.localStorage.removeItem(Mi);
+                  ? window.localStorage.setItem(ji, JSON.stringify(e))
+                  : window.localStorage.removeItem(ji);
               } catch (e) {
                 d.warn(e);
               }
@@ -47419,7 +47979,7 @@ window.addEventListener("load", function (e) {
     var i, t, r, a;
     n.featuresSourceset &&
       ((i = n.el()).resetSourceset_ ||
-        ((t = Ui([n.el(), window.HTMLMediaElement.prototype, qi], "src")),
+        ((t = Ui([n.el(), window.HTMLMediaElement.prototype, Hi], "src")),
         (r = i.setAttribute),
         (a = i.load),
         Object.defineProperty(
@@ -47469,7 +48029,7 @@ window.addEventListener("load", function (e) {
       (e = void 0 === e ? !0 : e) && (a.set = r), Object.defineProperty(t, n, a)
     );
   }
-  var Hi,
+  var qi,
     zi = Object.defineProperty({}, "innerHTML", {
       get: function () {
         return this.cloneNode(!0).innerHTML;
@@ -47486,7 +48046,7 @@ window.addEventListener("load", function (e) {
         );
       },
     }),
-    qi = Object.defineProperty({}, "src", {
+    Hi = Object.defineProperty({}, "src", {
       get: function () {
         return this.hasAttribute("src")
           ? Jt(window.Element.prototype.getAttribute.call(this, "src"))
@@ -47496,7 +48056,7 @@ window.addEventListener("load", function (e) {
         return window.Element.prototype.setAttribute.call(this, "src", e), e;
       },
     }),
-    O = (function (u) {
+    S = (function (u) {
       function s(e, t) {
         var n = u.call(this, e, t) || this,
           t = e.source,
@@ -47616,7 +48176,7 @@ window.addEventListener("load", function (e) {
           var e,
             t,
             i = this,
-            r = Sn[n],
+            r = On[n],
             a = this.el()[r.getterName],
             s = this[r.getterName]();
           this["featuresNative" + r.capitalName + "Tracks"] &&
@@ -47643,7 +48203,7 @@ window.addEventListener("load", function (e) {
                     srcElement: s,
                   };
                   s.trigger(t),
-                    "text" === n && i[On.remoteText.getterName]().trigger(t);
+                    "text" === n && i[Sn.remoteText.getterName]().trigger(t);
                 },
                 addtrack: function (e) {
                   s.addTrack(e.track);
@@ -47666,7 +48226,7 @@ window.addEventListener("load", function (e) {
         }),
         (e.proxyNativeTracks_ = function () {
           var t = this;
-          Sn.names.forEach(function (e) {
+          On.names.forEach(function (e) {
             t.proxyNativeTracksForType_(e);
           });
         }),
@@ -47698,7 +48258,7 @@ window.addEventListener("load", function (e) {
           ) {
             var r = n[i],
               a = this.options_[r];
-            "undefined" != typeof a && (a ? Ne(t, r, r) : Me(t, r), (t[r] = a));
+            "undefined" != typeof a && (a ? Ne(t, r, r) : je(t, r), (t[r] = a));
           }
           return t;
         }),
@@ -47911,8 +48471,8 @@ window.addEventListener("load", function (e) {
         }),
         s
       );
-    })(S);
-  Gi(O, "TEST_VID", function () {
+    })(O);
+  Gi(S, "TEST_VID", function () {
     if (_e()) {
       var e = document.createElement("video"),
         t = document.createElement("track");
@@ -47925,30 +48485,30 @@ window.addEventListener("load", function (e) {
       );
     }
   }),
-    (O.isSupported = function () {
+    (S.isSupported = function () {
       try {
-        O.TEST_VID.volume = 0.5;
+        S.TEST_VID.volume = 0.5;
       } catch (e) {
         return !1;
       }
-      return !(!O.TEST_VID || !O.TEST_VID.canPlayType);
+      return !(!S.TEST_VID || !S.TEST_VID.canPlayType);
     }),
-    (O.canPlayType = function (e) {
-      return O.TEST_VID.canPlayType(e);
+    (S.canPlayType = function (e) {
+      return S.TEST_VID.canPlayType(e);
     }),
-    (O.canPlaySource = function (e, t) {
-      return O.canPlayType(e.type);
+    (S.canPlaySource = function (e, t) {
+      return S.canPlayType(e.type);
     }),
-    (O.canControlVolume = function () {
+    (S.canControlVolume = function () {
       try {
-        var e = O.TEST_VID.volume;
-        O.TEST_VID.volume = e / 2 + 0.1;
-        var t = e !== O.TEST_VID.volume;
+        var e = S.TEST_VID.volume;
+        S.TEST_VID.volume = e / 2 + 0.1;
+        var t = e !== S.TEST_VID.volume;
         return t && ge
           ? (window.setTimeout(function () {
-              O &&
-                O.prototype &&
-                (O.prototype.featuresVolumeControl = e !== O.TEST_VID.volume);
+              S &&
+                S.prototype &&
+                (S.prototype.featuresVolumeControl = e !== S.TEST_VID.volume);
             }),
             !1)
           : t;
@@ -47956,32 +48516,32 @@ window.addEventListener("load", function (e) {
         return !1;
       }
     }),
-    (O.canMuteVolume = function () {
+    (S.canMuteVolume = function () {
       try {
-        var e = O.TEST_VID.muted;
+        var e = S.TEST_VID.muted;
         return (
-          (O.TEST_VID.muted = !e),
-          O.TEST_VID.muted
-            ? Ne(O.TEST_VID, "muted", "muted")
-            : Me(O.TEST_VID, "muted"),
-          e !== O.TEST_VID.muted
+          (S.TEST_VID.muted = !e),
+          S.TEST_VID.muted
+            ? Ne(S.TEST_VID, "muted", "muted")
+            : je(S.TEST_VID, "muted"),
+          e !== S.TEST_VID.muted
         );
       } catch (e) {
         return !1;
       }
     }),
-    (O.canControlPlaybackRate = function () {
+    (S.canControlPlaybackRate = function () {
       if (re && ue && ce < 58) return !1;
       try {
-        var e = O.TEST_VID.playbackRate;
+        var e = S.TEST_VID.playbackRate;
         return (
-          (O.TEST_VID.playbackRate = e / 2 + 0.1), e !== O.TEST_VID.playbackRate
+          (S.TEST_VID.playbackRate = e / 2 + 0.1), e !== S.TEST_VID.playbackRate
         );
       } catch (e) {
         return !1;
       }
     }),
-    (O.canOverrideAttributes = function () {
+    (S.canOverrideAttributes = function () {
       try {
         var e = function () {};
         Object.defineProperty(document.createElement("video"), "src", {
@@ -48005,16 +48565,16 @@ window.addEventListener("load", function (e) {
       }
       return !0;
     }),
-    (O.supportsNativeTextTracks = function () {
+    (S.supportsNativeTextTracks = function () {
       return be || (ge && ue);
     }),
-    (O.supportsNativeVideoTracks = function () {
-      return !(!O.TEST_VID || !O.TEST_VID.videoTracks);
+    (S.supportsNativeVideoTracks = function () {
+      return !(!S.TEST_VID || !S.TEST_VID.videoTracks);
     }),
-    (O.supportsNativeAudioTracks = function () {
-      return !(!O.TEST_VID || !O.TEST_VID.audioTracks);
+    (S.supportsNativeAudioTracks = function () {
+      return !(!S.TEST_VID || !S.TEST_VID.audioTracks);
     }),
-    (O.Events = [
+    (S.Events = [
       "loadstart",
       "suspend",
       "abort",
@@ -48050,39 +48610,39 @@ window.addEventListener("load", function (e) {
       var t = e[0],
         n = e[1];
       Gi(
-        O.prototype,
+        S.prototype,
         t,
         function () {
-          return O[n]();
+          return S[n]();
         },
         !0
       );
     }),
-    (O.prototype.featuresVolumeControl = O.canControlVolume()),
-    (O.prototype.movingMediaElementInDOM = !ge),
-    (O.prototype.featuresFullscreenResize = !0),
-    (O.prototype.featuresProgressEvents = !0),
-    (O.prototype.featuresTimeupdateEvents = !0),
-    (O.prototype.featuresVideoFrameCallback = !(
-      !O.TEST_VID || !O.TEST_VID.requestVideoFrameCallback
+    (S.prototype.featuresVolumeControl = S.canControlVolume()),
+    (S.prototype.movingMediaElementInDOM = !ge),
+    (S.prototype.featuresFullscreenResize = !0),
+    (S.prototype.featuresProgressEvents = !0),
+    (S.prototype.featuresTimeupdateEvents = !0),
+    (S.prototype.featuresVideoFrameCallback = !(
+      !S.TEST_VID || !S.TEST_VID.requestVideoFrameCallback
     )),
-    (O.patchCanPlayType = function () {
+    (S.patchCanPlayType = function () {
       4 <= ae &&
         !oe &&
         !ue &&
-        ((Hi = O.TEST_VID && O.TEST_VID.constructor.prototype.canPlayType),
-        (O.TEST_VID.constructor.prototype.canPlayType = function (e) {
+        ((qi = S.TEST_VID && S.TEST_VID.constructor.prototype.canPlayType),
+        (S.TEST_VID.constructor.prototype.canPlayType = function (e) {
           return e && /^application\/(?:x-|vnd\.apple\.)mpegurl/i.test(e)
             ? "maybe"
-            : Hi.call(this, e);
+            : qi.call(this, e);
         }));
     }),
-    (O.unpatchCanPlayType = function () {
-      var e = O.TEST_VID.constructor.prototype.canPlayType;
-      return Hi && (O.TEST_VID.constructor.prototype.canPlayType = Hi), e;
+    (S.unpatchCanPlayType = function () {
+      var e = S.TEST_VID.constructor.prototype.canPlayType;
+      return qi && (S.TEST_VID.constructor.prototype.canPlayType = qi), e;
     }),
-    O.patchCanPlayType(),
-    (O.disposeMediaElement = function (e) {
+    S.patchCanPlayType(),
+    (S.disposeMediaElement = function (e) {
       if (e) {
         for (e.parentNode && e.parentNode.removeChild(e); e.hasChildNodes(); )
           e.removeChild(e.firstChild);
@@ -48095,7 +48655,7 @@ window.addEventListener("load", function (e) {
             })();
       }
     }),
-    (O.resetMediaElement = function (e) {
+    (S.resetMediaElement = function (e) {
       if (e) {
         for (var t = e.querySelectorAll("source"), n = t.length; n--; )
           e.removeChild(t[n]);
@@ -48116,13 +48676,13 @@ window.addEventListener("load", function (e) {
       "loop",
       "playsinline",
     ].forEach(function (e) {
-      O.prototype[e] = function () {
+      S.prototype[e] = function () {
         return this.el_[e] || this.el_.hasAttribute(e);
       };
     }),
     ["muted", "defaultMuted", "autoplay", "loop", "playsinline"].forEach(
       function (t) {
-        O.prototype["set" + p(t)] = function (e) {
+        S.prototype["set" + p(t)] = function (e) {
           (this.el_[t] = e)
             ? this.el_.setAttribute(t, t)
             : this.el_.removeAttribute(t);
@@ -48150,7 +48710,7 @@ window.addEventListener("load", function (e) {
       "videoHeight",
       "crossOrigin",
     ].forEach(function (e) {
-      O.prototype[e] = function () {
+      S.prototype[e] = function () {
         return this.el_[e];
       };
     }),
@@ -48164,38 +48724,38 @@ window.addEventListener("load", function (e) {
       "disablePictureInPicture",
       "crossOrigin",
     ].forEach(function (t) {
-      O.prototype["set" + p(t)] = function (e) {
+      S.prototype["set" + p(t)] = function (e) {
         this.el_[t] = e;
       };
     }),
     ["pause", "load", "play"].forEach(function (e) {
-      O.prototype[e] = function () {
+      S.prototype[e] = function () {
         return this.el_[e]();
       };
     }),
-    S.withSourceHandlers(O),
-    (O.nativeSourceHandler = {}),
-    (O.nativeSourceHandler.canPlayType = function (e) {
+    O.withSourceHandlers(S),
+    (S.nativeSourceHandler = {}),
+    (S.nativeSourceHandler.canPlayType = function (e) {
       try {
-        return O.TEST_VID.canPlayType(e);
+        return S.TEST_VID.canPlayType(e);
       } catch (e) {
         return "";
       }
     }),
-    (O.nativeSourceHandler.canHandleSource = function (e, t) {
-      if (e.type) return O.nativeSourceHandler.canPlayType(e.type);
+    (S.nativeSourceHandler.canHandleSource = function (e, t) {
+      if (e.type) return S.nativeSourceHandler.canPlayType(e.type);
       if (e.src) {
         e = en(e.src);
-        return O.nativeSourceHandler.canPlayType("video/" + e);
+        return S.nativeSourceHandler.canPlayType("video/" + e);
       }
       return "";
     }),
-    (O.nativeSourceHandler.handleSource = function (e, t, n) {
+    (S.nativeSourceHandler.handleSource = function (e, t, n) {
       t.setSrc(e.src);
     }),
-    (O.nativeSourceHandler.dispose = function () {}),
-    O.registerSourceHandler(O.nativeSourceHandler),
-    S.registerTech("Html5", O);
+    (S.nativeSourceHandler.dispose = function () {}),
+    S.registerSourceHandler(S.nativeSourceHandler),
+    O.registerTech("Html5", S);
   var Wi = [
       "progress",
       "abort",
@@ -48333,7 +48893,7 @@ window.addEventListener("load", function (e) {
             }),
           (i.scrubbing_ = !1),
           (i.el_ = i.createEl()),
-          Et(y(i), { eventBusKey: "el_" }),
+          It(y(i), { eventBusKey: "el_" }),
           i.fsApi_.requestFullscreen &&
             (ct(
               document,
@@ -48618,7 +49178,7 @@ window.addEventListener("load", function (e) {
             r = e.charAt(0).toLowerCase() + e.slice(1);
           "Html5" !== i &&
             this.tag &&
-            (S.getTech("Html5").disposeMediaElement(this.tag),
+            (O.getTech("Html5").disposeMediaElement(this.tag),
             (this.tag.player = null),
             (this.tag = null)),
             (this.techName_ = i),
@@ -48659,7 +49219,7 @@ window.addEventListener("load", function (e) {
               t.src === this.cache_.src &&
               0 < this.cache_.currentTime &&
               (s.startTime = this.cache_.currentTime);
-          e = S.getTech(e);
+          e = O.getTech(e);
           if (!e)
             throw new Error(
               "No Tech named '" +
@@ -48670,7 +49230,7 @@ window.addEventListener("load", function (e) {
             );
           (this.tech_ = new e(s)),
             this.tech_.ready(u(this, this.handleTechReady_), !0),
-            qt(this.textTracksJson_ || [], this.tech_),
+            Ht(this.textTracksJson_ || [], this.tech_),
             Wi.forEach(function (t) {
               n.on(n.tech_, t, function (e) {
                 return n["handleTech" + p(t) + "_"](e);
@@ -49426,7 +49986,7 @@ window.addEventListener("load", function (e) {
             (this.isFullWindow = !1),
             l(document, "keydown", this.boundFullWindowOnEscKey_),
             (document.documentElement.style.overflow = this.docOrigOverflow),
-            Ee(document.body, "vjs-full-window"),
+            Ie(document.body, "vjs-full-window"),
             this.trigger("exitFullWindow");
         }),
         (e.disablePictureInPicture = function (e) {
@@ -49519,7 +50079,7 @@ window.addEventListener("load", function (e) {
         (e.canPlayType = function (e) {
           for (var t, n = 0, i = this.options_.techOrder; n < i.length; n++) {
             var r = i[n],
-              a = S.getTech(r);
+              a = O.getTech(r);
             if ((a = a || g.getComponent(r))) {
               if (a.isSupported() && (t = a.canPlayType(e))) return t;
             } else
@@ -49547,7 +50107,7 @@ window.addEventListener("load", function (e) {
             i = this,
             r = this.options_.techOrder
               .map(function (e) {
-                return [e, S.getTech(e)];
+                return [e, O.getTech(e)];
               })
               .filter(function (e) {
                 var t = e[0],
@@ -50241,7 +50801,7 @@ window.addEventListener("load", function (e) {
     (A.players = {});
   t = window.navigator;
   (A.prototype.options_ = {
-    techOrder: S.defaultTechOrder_,
+    techOrder: O.defaultTechOrder_,
     html5: {},
     inactivityTimeout: 2e3,
     playbackRates: [],
@@ -50385,7 +50945,7 @@ window.addEventListener("load", function (e) {
           );
         (this.player = e),
           this.log || (this.log = this.player.log.createLogger(this.name)),
-          Et(this),
+          It(this),
           delete this.trigger,
           kt(this, this.constructor.defaultState),
           lr(e, this.name),
@@ -50601,7 +51161,7 @@ window.addEventListener("load", function (e) {
     (w.players = A.players),
     (w.getComponent = g.getComponent),
     (w.registerComponent = function (e, t) {
-      S.isTech(t) &&
+      O.isTech(t) &&
         d.warn(
           "The " +
             e +
@@ -50609,8 +51169,8 @@ window.addEventListener("load", function (e) {
         ),
         g.registerComponent.call(g, e, t);
     }),
-    (w.getTech = S.getTech),
-    (w.registerTech = S.registerTech),
+    (w.getTech = O.getTech),
+    (w.registerTech = O.registerTech),
     (w.use = function (e, t) {
       (ti[e] = ti[e] || []), ti[e].push(t);
     }),
@@ -50669,7 +51229,7 @@ window.addEventListener("load", function (e) {
     (w.log = d),
     (w.createLogger = Y),
     (w.createTimeRange = w.createTimeRanges = Dt),
-    (w.formatTime = Si),
+    (w.formatTime = Oi),
     (w.setFormatTime = function (e) {
       Ti = e;
     }),
@@ -50974,7 +51534,7 @@ window.addEventListener("load", function (e) {
         (i = i.trim()),
           Dr.forEach(function (e) {
             var t,
-              n = jr[e].exec(i.toLowerCase());
+              n = Mr[e].exec(i.toLowerCase());
             !n ||
               n.length <= 1 ||
               ((r = e),
@@ -50987,10 +51547,10 @@ window.addEventListener("load", function (e) {
       a
     );
   }
-  function Sr(e) {
-    return jr.audio.test((e = void 0 === e ? "" : e).trim().toLowerCase());
-  }
   function Or(e) {
+    return Mr.audio.test((e = void 0 === e ? "" : e).trim().toLowerCase());
+  }
+  function Sr(e) {
     if (e && "string" == typeof e) {
       var t = e
           .toLowerCase()
@@ -50999,24 +51559,24 @@ window.addEventListener("load", function (e) {
             return _r(e.trim());
           }),
         n = "video";
-      1 === t.length && Sr(t[0])
+      1 === t.length && Or(t[0])
         ? (n = "audio")
         : 1 === t.length &&
           ((i = t[0]),
-          jr.text.test((i = void 0 === i ? "" : i).trim().toLowerCase())) &&
+          Mr.text.test((i = void 0 === i ? "" : i).trim().toLowerCase())) &&
           (n = "application");
       var i = "mp4";
       return (
         t.every(function (e) {
-          return jr.mp4.test(e);
+          return Mr.mp4.test(e);
         })
           ? (i = "mp4")
           : t.every(function (e) {
-              return jr.webm.test(e);
+              return Mr.webm.test(e);
             })
           ? (i = "webm")
           : t.every(function (e) {
-              return jr.ogg.test(e);
+              return Mr.ogg.test(e);
             }) && (i = "ogg"),
         n + "/" + i + ';codecs="' + e + '"'
       );
@@ -51027,7 +51587,7 @@ window.addEventListener("load", function (e) {
       void 0 === e && (e = ""),
       (window.MediaSource &&
         window.MediaSource.isTypeSupported &&
-        window.MediaSource.isTypeSupported(Or(e))) ||
+        window.MediaSource.isTypeSupported(Sr(e))) ||
         !1
     );
   }
@@ -51038,7 +51598,7 @@ window.addEventListener("load", function (e) {
       .every(function (e) {
         e = e.trim();
         for (var t = 0; t < Rr.length; t++)
-          if (jr["muxer" + Rr[t]].test(e)) return !0;
+          if (Mr["muxer" + Rr[t]].test(e)) return !0;
         return !1;
       });
   }
@@ -51070,9 +51630,9 @@ window.addEventListener("load", function (e) {
           (e && e.byteLength) || 0
         ));
   }
-  function Er(e, t) {
+  function Ir(e, t) {
     var n = void 0 !== (t = (void 0 === t ? {} : t).le) && t;
-    e = E(
+    e = I(
       (e =
         ("bigint" != typeof e && "number" != typeof e) ||
         ("number" == typeof e && e != e)
@@ -51087,12 +51647,12 @@ window.addEventListener("load", function (e) {
       a++
     ) {
       var s = n ? a : Math.abs(a + 1 - r.length);
-      (r[s] = Number((e / Gr[a]) & E(255))),
+      (r[s] = Number((e / Gr[a]) & I(255))),
         e < 0 && ((r[s] = Math.abs(~r[s])), (r[s] -= 0 === a ? 1 : 2));
     }
     return r;
   }
-  function Ir(e, t) {
+  function Er(e, t) {
     if (
       "string" !=
       typeof (e =
@@ -51128,7 +51688,7 @@ window.addEventListener("load", function (e) {
       r = !window.location && !/\/\//i.test(e);
     if (
       (n
-        ? (e = new window.URL(e, window.location || Hr))
+        ? (e = new window.URL(e, window.location || qr))
         : /\/\//i.test(e) ||
           (e = hr.buildAbsoluteURL(
             (window.location && window.location.href) || "",
@@ -51138,7 +51698,7 @@ window.addEventListener("load", function (e) {
     ) {
       n = new URL(t, e);
       return r
-        ? n.href.slice(Hr.length)
+        ? n.href.slice(qr.length)
         : i
         ? n.href.slice(n.protocol.length)
         : n.href;
@@ -51537,7 +52097,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(fr),
-    Mr = (function (t) {
+    jr = (function (t) {
       function e() {
         var e = t.call(this) || this;
         (e.lineStream = new Pr()),
@@ -52010,7 +52570,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(fr),
-    jr = {
+    Mr = {
       mp4: /^(av0?1|avc0?[1234]|vp0?9|flac|opus|mp3|mp4a|mp4v|stpp.ttml.im1t)/,
       webm: /^(vp0?[89]|av0?1|opus|vorbis)/,
       ogg: /^(vp0?[89]|theora|flac|opus|vorbis)/,
@@ -52027,19 +52587,19 @@ window.addEventListener("load", function (e) {
     Ur = /^(audio|video|application)\/(x-|vnd\.apple\.)?mpegurl/i,
     Vr = /^application\/dash\+xml/i,
     Fr = xr,
-    E = window.BigInt || Number,
+    I = window.BigInt || Number,
     Gr = [
-      E("0x1"),
-      E("0x100"),
-      E("0x10000"),
-      E("0x1000000"),
-      E("0x100000000"),
-      E("0x10000000000"),
-      E("0x1000000000000"),
-      E("0x100000000000000"),
-      E("0x10000000000000000"),
+      I("0x1"),
+      I("0x100"),
+      I("0x10000"),
+      I("0x1000000"),
+      I("0x100000000"),
+      I("0x10000000000"),
+      I("0x1000000000000"),
+      I("0x100000000000000"),
+      I("0x10000000000000000"),
     ],
-    Hr = "http://example.com";
+    qr = "http://example.com";
   function zr(e) {
     for (
       var t =
@@ -52055,12 +52615,12 @@ window.addEventListener("load", function (e) {
       n[i] = t.charCodeAt(i);
     return n;
   }
-  function qr(e, t) {
+  function Hr(e, t) {
     return (t = void 0 === t ? Object : t) && "function" == typeof t.freeze
       ? t.freeze(e)
       : e;
   }
-  var Wr = qr({
+  var Wr = Hr({
       HTML: "text/html",
       isHTML: function (e) {
         return e === Wr.HTML;
@@ -52070,7 +52630,7 @@ window.addEventListener("load", function (e) {
       XML_XHTML_APPLICATION: "application/xhtml+xml",
       XML_SVG_IMAGE: "image/svg+xml",
     }),
-    Xr = qr({
+    Xr = Hr({
       HTML: "http://www.w3.org/1999/xhtml",
       isHTML: function (e) {
         return e === Xr.HTML;
@@ -52079,7 +52639,7 @@ window.addEventListener("load", function (e) {
       XML: "http://www.w3.org/XML/1998/namespace",
       XMLNS: "http://www.w3.org/2000/xmlns/",
     }),
-    Yr = { freeze: qr, MIME_TYPE: Wr, NAMESPACE: Xr },
+    Yr = { freeze: Hr, MIME_TYPE: Wr, NAMESPACE: Xr },
     Kr = Yr.NAMESPACE;
   function Qr(e) {
     return "" !== e;
@@ -52116,26 +52676,26 @@ window.addEventListener("load", function (e) {
     ua = (s.DOCUMENT_TYPE_NODE = 10),
     ca = (s.DOCUMENT_FRAGMENT_NODE = 11),
     r = ((s.NOTATION_NODE = 12), {}),
-    I = {};
-  (r.INDEX_SIZE_ERR = ((I[1] = "Index size error"), 1)),
-    (r.DOMSTRING_SIZE_ERR = ((I[2] = "DOMString size error"), 2));
-  r.HIERARCHY_REQUEST_ERR = ((I[3] = "Hierarchy request error"), 3);
-  (r.WRONG_DOCUMENT_ERR = ((I[4] = "Wrong document"), 4)),
-    (r.INVALID_CHARACTER_ERR = ((I[5] = "Invalid character"), 5)),
-    (r.NO_DATA_ALLOWED_ERR = ((I[6] = "No data allowed"), 6)),
-    (r.NO_MODIFICATION_ALLOWED_ERR = ((I[7] = "No modification allowed"), 7));
-  r.NOT_FOUND_ERR = ((I[8] = "Not found"), 8);
-  r.NOT_SUPPORTED_ERR = ((I[9] = "Not supported"), 9);
+    E = {};
+  (r.INDEX_SIZE_ERR = ((E[1] = "Index size error"), 1)),
+    (r.DOMSTRING_SIZE_ERR = ((E[2] = "DOMString size error"), 2));
+  r.HIERARCHY_REQUEST_ERR = ((E[3] = "Hierarchy request error"), 3);
+  (r.WRONG_DOCUMENT_ERR = ((E[4] = "Wrong document"), 4)),
+    (r.INVALID_CHARACTER_ERR = ((E[5] = "Invalid character"), 5)),
+    (r.NO_DATA_ALLOWED_ERR = ((E[6] = "No data allowed"), 6)),
+    (r.NO_MODIFICATION_ALLOWED_ERR = ((E[7] = "No modification allowed"), 7));
+  r.NOT_FOUND_ERR = ((E[8] = "Not found"), 8);
+  r.NOT_SUPPORTED_ERR = ((E[9] = "Not supported"), 9);
   var da;
-  r.INUSE_ATTRIBUTE_ERR = ((I[10] = "Attribute in use"), 10);
+  r.INUSE_ATTRIBUTE_ERR = ((E[10] = "Attribute in use"), 10);
   function ha(e, t) {
     var n;
     return (
       t instanceof Error
         ? (n = t)
         : ((n = this),
-          Error.call(this, I[e]),
-          (this.message = I[e]),
+          Error.call(this, E[e]),
+          (this.message = E[e]),
           Error.captureStackTrace && Error.captureStackTrace(this, ha)),
       (n.code = e),
       t && (this.message = this.message + ": " + t),
@@ -52151,7 +52711,7 @@ window.addEventListener("load", function (e) {
       n = e._node._inc || e._node.ownerDocument._inc;
     e._inc != n &&
       ((t = e._refresh(e._node)),
-      qa(e, "length", t.length),
+      Ha(e, "length", t.length),
       Jr(t, e),
       (e._inc = n));
   }
@@ -52187,14 +52747,14 @@ window.addEventListener("load", function (e) {
       "&#" + e.charCodeAt() + ";"
     );
   }
-  function Sa(e, t) {
+  function Oa(e, t) {
     if (t(e)) return 1;
     if ((e = e.firstChild))
       do {
-        if (Sa(e, t)) return 1;
+        if (Oa(e, t)) return 1;
       } while ((e = e.nextSibling));
   }
-  function Oa() {}
+  function Sa() {}
   function Aa(e, t, n) {
     e && e._inc++,
       n.namespaceURI === Kr.XMLNS &&
@@ -52243,16 +52803,16 @@ window.addEventListener("load", function (e) {
       t
     );
   }
-  function Ea() {
+  function Ia() {
     this._nsMap = {};
   }
-  function Ia() {}
+  function Ea() {}
   function ka() {}
   function Pa() {}
   function La() {}
   function Na() {}
-  function Ma() {}
   function ja() {}
+  function Ma() {}
   function Da() {}
   function Ra() {}
   function Ba() {}
@@ -52289,7 +52849,7 @@ window.addEventListener("load", function (e) {
       return 1;
     }
   }
-  function Ha(e, t, n) {
+  function qa(e, t, n) {
     e.push(" ", t, '="', n.replace(/[<&"]/g, Ta), '"');
   }
   function za(e, t, n, i, r) {
@@ -52335,7 +52895,7 @@ window.addEventListener("load", function (e) {
               r.push({ prefix: "", namespace: m.value });
         for (var m, g, b, f = 0; f < s; f++)
           Ga((m = a.item(f)), 0, r) &&
-            (Ha(
+            (qa(
               t,
               (g = m.prefix || "") ? "xmlns:" + g : "xmlns",
               (b = m.namespaceURI)
@@ -52345,7 +52905,7 @@ window.addEventListener("load", function (e) {
         if (
           (l === u &&
             Ga(e, 0, r) &&
-            (Ha(
+            (qa(
               t,
               (g = e.prefix || "") ? "xmlns:" + g : "xmlns",
               (b = e.namespaceURI)
@@ -52367,7 +52927,7 @@ window.addEventListener("load", function (e) {
           za(o, t, n, i, r.slice()), (o = o.nextSibling);
         return;
       case na:
-        return Ha(t, e.name, e.value), 0;
+        return qa(t, e.name, e.value), 0;
       case ia:
         return t.push(e.data.replace(/[<&]/g, Ta).replace(/]]>/g, "]]&gt;"));
       case ra:
@@ -52395,14 +52955,14 @@ window.addEventListener("load", function (e) {
         t.push("??", e.nodeName);
     }
   }
-  function qa(e, t, n) {
+  function Ha(e, t, n) {
     e[t] = n;
   }
-  (r.INVALID_STATE_ERR = ((I[11] = "Invalid state"), 11)),
-    (r.SYNTAX_ERR = ((I[12] = "Syntax error"), 12)),
-    (r.INVALID_MODIFICATION_ERR = ((I[13] = "Invalid modification"), 13)),
-    (r.NAMESPACE_ERR = ((I[14] = "Invalid namespace"), 14)),
-    (r.INVALID_ACCESS_ERR = ((I[15] = "Invalid access"), 15)),
+  (r.INVALID_STATE_ERR = ((E[11] = "Invalid state"), 11)),
+    (r.SYNTAX_ERR = ((E[12] = "Syntax error"), 12)),
+    (r.INVALID_MODIFICATION_ERR = ((E[13] = "Invalid modification"), 13)),
+    (r.NAMESPACE_ERR = ((E[14] = "Invalid namespace"), 14)),
+    (r.INVALID_ACCESS_ERR = ((E[15] = "Invalid access"), 15)),
     (ha.prototype = Error.prototype),
     Jr(r, ha),
     (pa.prototype = {
@@ -52464,7 +53024,7 @@ window.addEventListener("load", function (e) {
         return !0;
       },
       createDocument: function (e, t, n) {
-        var i = new Oa();
+        var i = new Sa();
         return (
           (i.implementation = this),
           (i.childNodes = new pa()),
@@ -52475,7 +53035,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createDocumentType: function (e, t, n) {
-        var i = new Ma();
+        var i = new ja();
         return (
           (i.name = e),
           (i.nodeName = e),
@@ -52576,7 +53136,7 @@ window.addEventListener("load", function (e) {
     }),
     Jr(s, k),
     Jr(s, k.prototype),
-    (Oa.prototype = {
+    (Sa.prototype = {
       nodeName: "#document",
       nodeType: la,
       doctype: null,
@@ -52627,7 +53187,7 @@ window.addEventListener("load", function (e) {
       getElementById: function (t) {
         var n = null;
         return (
-          Sa(this.documentElement, function (e) {
+          Oa(this.documentElement, function (e) {
             if (e.nodeType == ta && e.getAttribute("id") == t)
               return (n = e), !0;
           }),
@@ -52640,7 +53200,7 @@ window.addEventListener("load", function (e) {
           var a = [];
           return (
             0 < o.length &&
-              Sa(r.documentElement, function (e) {
+              Oa(r.documentElement, function (e) {
                 var t, n, i;
                 e === r ||
                   e.nodeType !== ta ||
@@ -52660,7 +53220,7 @@ window.addEventListener("load", function (e) {
         });
       },
       createElement: function (e) {
-        var t = new Ea();
+        var t = new Ia();
         return (
           (t.ownerDocument = this),
           (t.nodeName = e),
@@ -52696,7 +53256,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createAttribute: function (e) {
-        var t = new Ia();
+        var t = new Ea();
         return (
           (t.ownerDocument = this),
           (t.name = e),
@@ -52711,7 +53271,7 @@ window.addEventListener("load", function (e) {
         return (t.ownerDocument = this), (t.nodeName = e), t;
       },
       createElementNS: function (e, t) {
-        var n = new Ea(),
+        var n = new Ia(),
           i = t.split(":"),
           r = (n.attributes = new ga());
         return (
@@ -52727,7 +53287,7 @@ window.addEventListener("load", function (e) {
         );
       },
       createAttributeNS: function (e, t) {
-        var n = new Ia(),
+        var n = new Ea(),
           i = t.split(":");
         return (
           (n.ownerDocument = this),
@@ -52742,8 +53302,8 @@ window.addEventListener("load", function (e) {
         );
       },
     }),
-    ea(Oa, k),
-    (Oa.prototype.getElementsByTagName = (Ea.prototype = {
+    ea(Sa, k),
+    (Sa.prototype.getElementsByTagName = (Ia.prototype = {
       nodeType: ta,
       hasAttribute: function (e) {
         return null != this.getAttributeNode(e);
@@ -52812,7 +53372,7 @@ window.addEventListener("load", function (e) {
         return new fa(this, function (t) {
           var n = [];
           return (
-            Sa(t, function (e) {
+            Oa(t, function (e) {
               e === t ||
                 e.nodeType != ta ||
                 ("*" !== i && e.tagName != i) ||
@@ -52826,7 +53386,7 @@ window.addEventListener("load", function (e) {
         return new fa(this, function (t) {
           var n = [];
           return (
-            Sa(t, function (e) {
+            Oa(t, function (e) {
               e === t ||
                 e.nodeType !== ta ||
                 ("*" !== i && e.namespaceURI !== i) ||
@@ -52838,10 +53398,10 @@ window.addEventListener("load", function (e) {
         });
       },
     }).getElementsByTagName),
-    (Oa.prototype.getElementsByTagNameNS = Ea.prototype.getElementsByTagNameNS),
-    ea(Ea, k),
-    (Ia.prototype.nodeType = na),
+    (Sa.prototype.getElementsByTagNameNS = Ia.prototype.getElementsByTagNameNS),
     ea(Ia, k),
+    (Ea.prototype.nodeType = na),
+    ea(Ea, k),
     (ka.prototype = {
       data: "",
       substringData: function (e, t) {
@@ -52856,7 +53416,7 @@ window.addEventListener("load", function (e) {
         this.replaceData(e, 0, t);
       },
       appendChild: function (e) {
-        throw new Error(I[3]);
+        throw new Error(E[3]);
       },
       deleteData: function (e, t) {
         this.replaceData(e, t, "");
@@ -52887,10 +53447,10 @@ window.addEventListener("load", function (e) {
     ea(La, ka),
     (Na.prototype = { nodeName: "#cdata-section", nodeType: ra }),
     ea(Na, ka),
-    (Ma.prototype.nodeType = ua),
-    ea(Ma, k),
-    (ja.prototype.nodeType = 12),
+    (ja.prototype.nodeType = ua),
     ea(ja, k),
+    (Ma.prototype.nodeType = 12),
+    ea(Ma, k),
     (Da.prototype.nodeType = 6),
     ea(Da, k),
     (Ra.prototype.nodeType = aa),
@@ -52941,15 +53501,15 @@ window.addEventListener("load", function (e) {
           }
         },
       }),
-      (qa = function (e, t, n) {
+      (Ha = function (e, t, n) {
         e["$$" + t] = n;
       }));
   } catch (D) {}
   var he = {
-      DocumentType: Ma,
+      DocumentType: ja,
       DOMException: ha,
       DOMImplementation: _a,
-      Element: Ea,
+      Element: Ia,
       Node: k,
       NodeList: pa,
       XMLSerializer: Va,
@@ -53342,14 +53902,14 @@ window.addEventListener("load", function (e) {
                         a.error("end tag name: " + y + " maybe not complete"),
                         (v = b + 1 + y.length));
                     var T = _.localNSMap,
-                      S = _.tagName == y;
+                      O = _.tagName == y;
                     if (
-                      S ||
+                      O ||
                       (_.tagName && _.tagName.toLowerCase() == y.toLowerCase())
                     ) {
                       if ((r.endElement(_.uri, _.localName, y), T))
-                        for (var O in T) r.endPrefixMapping(O);
-                      S ||
+                        for (var S in T) r.endPrefixMapping(S);
+                      O ||
                         a.fatalError(
                           "end tag name: " +
                             y +
@@ -53622,9 +54182,9 @@ window.addEventListener("load", function (e) {
                         i.nbsp || a.warning("unclosed xml attribute")),
                       d && C)
                     ) {
-                      for (var x = as(d, {}), E = 0; E < C; E++) {
-                        var I = A[E];
-                        o(I.offset), (I.locator = as(d, {}));
+                      for (var x = as(d, {}), I = 0; I < C; I++) {
+                        var E = A[I];
+                        o(E.offset), (E.locator = as(d, {}));
                       }
                       (r.locator = x),
                         ss(A, r, w) && h.push(A),
@@ -53880,12 +54440,12 @@ window.addEventListener("load", function (e) {
       return e.concat(t);
     }, []);
   }
-  function Ss(e) {
+  function Os(e) {
     if (!e.length) return [];
     for (var t = [], n = 0; n < e.length; n++) t.push(e[n]);
     return t;
   }
-  function Os(e, t) {
+  function Ss(e, t) {
     for (var n = 0; n < e.length; n++) if (t(e[n])) return n;
     return -1;
   }
@@ -53976,7 +54536,7 @@ window.addEventListener("load", function (e) {
       [r]
     );
   }
-  function Es(e, t, n) {
+  function Is(e, t, n) {
     for (
       var i = e.sidx.map || null,
         r = e.sidx.duration,
@@ -54027,7 +54587,7 @@ window.addEventListener("load", function (e) {
     }
     return (e.segments = u), e;
   }
-  function Is(e) {
+  function Es(e) {
     return (
       (n = function (e) {
         return e.timeline;
@@ -54082,7 +54642,7 @@ window.addEventListener("load", function (e) {
       i = t.playlists.concat(ks(t)),
       e = n.playlists.concat(ks(n));
     return (
-      (n.timelineStarts = Is([t.timelineStarts, n.timelineStarts])),
+      (n.timelineStarts = Es([t.timelineStarts, n.timelineStarts])),
       (i = {
         oldPlaylists: i,
         newPlaylists: e,
@@ -54092,7 +54652,7 @@ window.addEventListener("load", function (e) {
       (e = i.newPlaylists),
       (a = i.timelineStarts),
       e.forEach(function (t) {
-        t.discontinuitySequence = Os(a, function (e) {
+        t.discontinuitySequence = Ss(a, function (e) {
           return e.timeline === t.timeline;
         });
         var e = (function (e, t) {
@@ -54102,7 +54662,7 @@ window.addEventListener("load", function (e) {
         })(r, t.attributes.NAME);
         if (e && !t.sidx) {
           var n = t.segments[0],
-            i = Os(e.segments, function (e) {
+            i = Ss(e.segments, function (e) {
               return Math.abs(e.presentationTime - n.presentationTime) < 1 / 60;
             });
           if (-1 === i)
@@ -54147,7 +54707,7 @@ window.addEventListener("load", function (e) {
     );
     var t;
   }
-  function Ms(e) {
+  function js(e) {
     return _s(
       e.reduce(function (e, t) {
         var n,
@@ -54181,9 +54741,9 @@ window.addEventListener("load", function (e) {
       );
     });
   }
-  function js(e, t) {
+  function Ms(e, t) {
     var n = Ns(e.sidx);
-    return (n = n && t[n] && t[n].sidx) && Es(e, n, e.sidx.resolvedUri), e;
+    return (n = n && t[n] && t[n].sidx) && Is(e, n, e.sidx.resolvedUri), e;
   }
   function Ds(e, h, p) {
     var f;
@@ -54214,7 +54774,7 @@ window.addEventListener("load", function (e) {
           u,
           c,
           d,
-          l = js(
+          l = Ms(
             ((s = p),
             (o = (a = t).attributes),
             (l = a.segments),
@@ -54327,9 +54887,9 @@ window.addEventListener("load", function (e) {
       s = d.type,
       o = d.suggestedPresentationDelay,
       l = d.minimumUpdatePeriod,
-      u = Ms(t.filter(Bs)).map(Rs),
-      c = Ms(t.filter(Us)),
-      e = Ms(t.filter(Vs)),
+      u = js(t.filter(Bs)).map(Rs),
+      c = js(t.filter(Us)),
+      e = js(t.filter(Vs)),
       d = t
         .map(function (e) {
           return e.attributes.captionServices;
@@ -54348,7 +54908,7 @@ window.addEventListener("load", function (e) {
         duration: a,
         playlists: (function (e, t) {
           if ((void 0 === t && (t = {}), !Object.keys(t).length)) return e;
-          for (var n in e) e[n] = js(e[n], t);
+          for (var n in e) e[n] = Ms(e[n], t);
           return e;
         })(u, i),
       };
@@ -54373,7 +54933,7 @@ window.addEventListener("load", function (e) {
                   uri: "",
                 }),
               e[n].playlists.push(
-                js(
+                Ms(
                   (function (e) {
                     var t = e.attributes,
                       n = e.segments,
@@ -54422,12 +54982,12 @@ window.addEventListener("load", function (e) {
         return e.timelineStarts;
       });
     return (
-      (a.timelineStarts = Is(u)),
+      (a.timelineStarts = Es(u)),
       (e = e),
       (p = a.timelineStarts),
       e.forEach(function (t) {
         (t.mediaSequence = 0),
-          (t.discontinuitySequence = Os(p, function (e) {
+          (t.discontinuitySequence = Ss(p, function (e) {
             return e.timeline === t.timeline;
           })),
           t.segments &&
@@ -54462,7 +55022,7 @@ window.addEventListener("load", function (e) {
       r ? Ls({ oldManifest: r, newManifest: a }) : a
     );
   }
-  function Hs(e, t) {
+  function qs(e, t) {
     for (
       var n,
         i,
@@ -54487,33 +55047,33 @@ window.addEventListener("load", function (e) {
       var y = t[v],
         _ = y.d,
         T = y.r || 0,
-        S = y.t || 0;
-      b < 0 && (b = S), S && b < S && (b = S);
-      var O,
+        O = y.t || 0;
+      b < 0 && (b = O), O && b < O && (b = O);
+      var S,
         A = void 0;
       A =
         T < 0
-          ? (O = v + 1) === t.length
+          ? (S = v + 1) === t.length
             ? "dynamic" === l && 0 < c && 0 < d.indexOf("$Number$")
               ? ((n = b),
                 (i = _),
                 (y = o = s = a = r = void 0),
-                (r = (S = e).NOW),
-                (a = S.clientOffset),
-                (s = S.availabilityStartTime),
-                (o = S.timescale),
-                (y = S.periodStart),
-                (S = S.minimumUpdatePeriod),
+                (r = (O = e).NOW),
+                (a = O.clientOffset),
+                (s = O.availabilityStartTime),
+                (o = O.timescale),
+                (y = O.periodStart),
+                (O = O.minimumUpdatePeriod),
                 Math.ceil(
                   (((r + a) / 1e3 +
-                    (void 0 === S ? 0 : S) -
+                    (void 0 === O ? 0 : O) -
                     (s + (void 0 === y ? 0 : y))) *
                     (void 0 === o ? 1 : o) -
                     n) /
                     i
                 ))
               : (h * p - b) / _
-            : (t[O].t - b) / _
+            : (t[S].t - b) / _
           : T + 1;
       for (var w = f + g.length + A, C = f + g.length; C < w; )
         g.push({ number: C, duration: _ / p, time: b, timeline: m }),
@@ -54538,7 +55098,7 @@ window.addEventListener("load", function (e) {
     );
     var r;
   }
-  function qs(r, e) {
+  function Hs(r, e) {
     var a = { RepresentationID: r.id, Bandwidth: r.bandwidth || 0 },
       t = void 0 === (t = r.initialization) ? { sourceURL: "", range: "" } : t,
       s = As({
@@ -54550,7 +55110,7 @@ window.addEventListener("load", function (e) {
     (e = r).duration || t
       ? e.duration
         ? Cs(e)
-        : Hs(e, t)
+        : qs(e, t)
       : [
           {
             number: e.startNumber || 1,
@@ -54599,7 +55159,7 @@ window.addEventListener("load", function (e) {
       });
     return (
       t && (i = Cs(r)),
-      (i = e ? Hs(r, e) : i)
+      (i = e ? qs(r, e) : i)
         .map(function (e, t) {
           if (s[t]) {
             var n = s[t],
@@ -54624,7 +55184,7 @@ window.addEventListener("load", function (e) {
       n = e.attributes,
       i = e.segmentInfo;
     i.template
-      ? ((a = qs), (t = P(n, i.template)))
+      ? ((a = Hs), (t = P(n, i.template)))
       : i.base
       ? ((a = xs), (t = P(n, i.base)))
       : i.list && ((a = Ws), (t = P(n, i.list)));
@@ -54649,7 +55209,7 @@ window.addEventListener("load", function (e) {
     );
   }
   function L(e, t) {
-    return Ss(e.childNodes).filter(function (e) {
+    return Os(e.childNodes).filter(function (e) {
       return e.tagName === t;
     });
   }
@@ -54681,8 +55241,8 @@ window.addEventListener("load", function (e) {
   }
   function N(e) {
     return e && e.attributes
-      ? Ss(e.attributes).reduce(function (e, t) {
-          var n = So[t.name] || So.DEFAULT;
+      ? Os(e.attributes).reduce(function (e, t) {
+          var n = Oo[t.name] || Oo.DEFAULT;
           return (e[t.name] = n(t.value)), e;
         }, {})
       : {};
@@ -54793,7 +55353,7 @@ window.addEventListener("load", function (e) {
       var r = L(e, "ContentProtection").reduce(function (e, t) {
         var n = N(t);
         n.schemeIdUri && (n.schemeIdUri = n.schemeIdUri.toLowerCase());
-        var i = Oo[n.schemeIdUri];
+        var i = So[n.schemeIdUri];
         return (
           i &&
             ((e[i] = { attributes: n }),
@@ -54964,7 +55524,7 @@ window.addEventListener("load", function (e) {
     );
   }
   function ro(e) {
-    return "string" == typeof e ? Ir(e) : e;
+    return "string" == typeof e ? Er(e) : e;
   }
   function ao(e, t, n) {
     var i;
@@ -54994,12 +55554,12 @@ window.addEventListener("load", function (e) {
   function so(e, t, n, i) {
     void 0 === n && (n = !0), void 0 === i && (i = !1);
     var r = (function (e) {
-        for (var t = 1, n = 0; n < Io.length && !(e & Io[n]); n++) t++;
+        for (var t = 1, n = 0; n < Eo.length && !(e & Eo[n]); n++) t++;
         return t;
       })(e[t]),
       a = e.subarray(t, t + r);
     return (
-      n && ((a = Array.prototype.slice.call(e, t, t + r))[0] ^= Io[r - 1]),
+      n && ((a = Array.prototype.slice.call(e, t, t + r))[0] ^= Eo[r - 1]),
       {
         length: r,
         value: (function (i, e) {
@@ -55014,14 +55574,14 @@ window.addEventListener("load", function (e) {
               i,
               function (e, t, n) {
                 n = r ? n : Math.abs(n + 1 - i.length);
-                return e + E(t) * Gr[n];
+                return e + I(t) * Gr[n];
               },
-              E(0)
+              I(0)
             ));
           return (
             !e ||
-              ((e = Gr[i.length] / E(2) - E(1)) < (t = E(t)) &&
-                ((t -= e), (t -= e), (t -= E(2)))),
+              ((e = Gr[i.length] / I(2) - I(1)) < (t = I(t)) &&
+                ((t -= e), (t -= e), (t -= I(2)))),
             Number(t)
           );
         })(a, { signed: i }),
@@ -55033,7 +55593,7 @@ window.addEventListener("load", function (e) {
     return "string" == typeof e
       ? e.match(/.{1,2}/g).map(oo)
       : "number" == typeof e
-      ? Er(e)
+      ? Ir(e)
       : e;
   }
   function lo(e, t, n) {
@@ -55146,7 +55706,7 @@ window.addEventListener("load", function (e) {
     },
     _o = ["AUDIO", "SUBTITLES"],
     To = /\$([A-z]*)(?:(%0)([0-9]+)d)?\$/g,
-    So = {
+    Oo = {
       mediaPresentationDuration: Ks,
       availabilityStartTime: function (e) {
         return (
@@ -55196,7 +55756,7 @@ window.addEventListener("load", function (e) {
         return e;
       },
     },
-    Oo = {
+    So = {
       "urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b": "org.w3.clearkey",
       "urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed": "com.widevine.alpha",
       "urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95":
@@ -55242,7 +55802,7 @@ window.addEventListener("load", function (e) {
       return n;
     },
     xo = C([73, 68, 51]),
-    Eo = {
+    Io = {
       EBML: C([26, 69, 223, 163]),
       DocType: C([66, 130]),
       Segment: C([24, 83, 128, 103]),
@@ -55266,7 +55826,7 @@ window.addEventListener("load", function (e) {
       Block: C([161]),
       SimpleBlock: C([163]),
     },
-    Io = [128, 64, 32, 16, 8, 4, 2, 1],
+    Eo = [128, 64, 32, 16, 8, 4, 2, 1],
     ko = C([0, 0, 0, 1]),
     Po = C([0, 0, 1]),
     Lo = C([0, 0, 3]),
@@ -55286,7 +55846,7 @@ window.addEventListener("load", function (e) {
       moov: C([109, 111, 111, 118]),
       moof: C([109, 111, 111, 102]),
     },
-    Mo = {
+    jo = {
       aac: function (e) {
         var t = io(e);
         return x(e, [255, 16], { offset: t, mask: [255, 22] });
@@ -55296,17 +55856,17 @@ window.addEventListener("load", function (e) {
         return x(e, [255, 2], { offset: t, mask: [255, 6] });
       },
       webm: function (e) {
-        e = uo(e, [Eo.EBML, Eo.DocType])[0];
+        e = uo(e, [Io.EBML, Io.DocType])[0];
         return x(e, No.webm);
       },
       mkv: function (e) {
-        e = uo(e, [Eo.EBML, Eo.DocType])[0];
+        e = uo(e, [Io.EBML, Io.DocType])[0];
         return x(e, No.matroska);
       },
       mp4: function (e) {
         return (
-          !Mo["3gp"](e) &&
-          !Mo.mov(e) &&
+          !jo["3gp"](e) &&
+          !jo.mov(e) &&
           (!(!x(e, No.mp4, { offset: 4 }) && !x(e, No.fmp4, { offset: 4 })) ||
             !(!x(e, No.moof, { offset: 4 }) && !x(e, No.moov, { offset: 4 })) ||
             void 0)
@@ -55350,21 +55910,21 @@ window.addEventListener("load", function (e) {
         return co(e, "h265", [32, 33], 3).length;
       },
     },
-    jo = Object.keys(Mo)
+    Mo = Object.keys(jo)
       .filter(function (e) {
         return "ts" !== e && "h264" !== e && "h265" !== e;
       })
       .concat(["ts", "h264", "h265"]);
-  jo.forEach(function (e) {
-    var t = Mo[e];
-    Mo[e] = function (e) {
+  Mo.forEach(function (e) {
+    var t = jo[e];
+    jo[e] = function (e) {
       return t(C(e));
     };
   });
   function Do(e) {
     e = C(e);
-    for (var t = 0; t < jo.length; t++) {
-      var n = jo[t];
+    for (var t = 0; t < Mo.length; t++) {
+      var n = Mo[t];
       if (fu[n](e)) return n;
     }
     return "";
@@ -55399,7 +55959,7 @@ window.addEventListener("load", function (e) {
     for (var n = 0; n < e.length; n++) t.push(e.start(n) + " => " + e.end(n));
     return t.join(", ");
   }
-  function Ho(e) {
+  function qo(e) {
     for (var t = [], n = 0; n < e.length; n++)
       t.push({ start: e.start(n), end: e.end(n) });
     return t;
@@ -55407,7 +55967,7 @@ window.addEventListener("load", function (e) {
   function zo(e) {
     if (e && e.length && e.end) return e.end(e.length - 1);
   }
-  function qo(e, t) {
+  function Ho(e, t) {
     var n = 0;
     if (!e || !e.length) return n;
     for (var i = 0; i < e.length; i++) {
@@ -55618,7 +56178,7 @@ window.addEventListener("load", function (e) {
       var t = (function (e) {
         var t = n.playlists[e],
           e = t.attributes && t.attributes.CODECS;
-        return (e && e.split(",").every(Sr)) ||
+        return (e && e.split(",").every(Or)) ||
           ol(n, function (e) {
             return sl(t, e);
           })
@@ -55852,7 +56412,7 @@ window.addEventListener("load", function (e) {
       e = Au({ timeout: 45e3 }, e);
       var t = a.beforeRequest || w.Vhs.xhr.beforeRequest;
       !t || "function" != typeof t || ((t = t(e)) && (e = t));
-      var i = (!0 === w.Vhs.xhr.original ? Ou : w.Vhs.xhr)(e, function (e, t) {
+      var i = (!0 === w.Vhs.xhr.original ? Su : w.Vhs.xhr)(e, function (e, t) {
           return yl(i, e, t, n);
         }),
         r = i.abort;
@@ -55885,13 +56445,13 @@ window.addEventListener("load", function (e) {
       n
     );
   }
-  function Sl(e, t) {
+  function Ol(e, t) {
     return (
       (e = e.toString(16)),
       "00".substring(0, 2 - e.length) + e + (t % 2 ? " " : "")
     );
   }
-  function Ol(e) {
+  function Sl(e) {
     return 32 <= e && e < 126 ? String.fromCharCode(e) : ".";
   }
   function Al(n) {
@@ -55926,17 +56486,17 @@ window.addEventListener("load", function (e) {
       n +=
         t
           .slice(16 * i, 16 * i + 16)
-          .map(Sl)
+          .map(Ol)
           .join("") +
         " " +
         t
           .slice(16 * i, 16 * i + 16)
-          .map(Ol)
+          .map(Sl)
           .join("") +
         "\n";
     return n;
   }
-  function El(e) {
+  function Il(e) {
     var t = e.playlist,
       n = e.time,
       i = void 0 === n ? void 0 : n;
@@ -55991,7 +56551,7 @@ window.addEventListener("load", function (e) {
         : n({ message: "valid programTime was not found" })
       : n({ message: "getProgramTime: playlist and time must be provided" });
   }
-  function Il(e) {
+  function El(e) {
     var t = e.programTime,
       n = e.playlist,
       i = e.retryCount,
@@ -56055,7 +56615,7 @@ window.addEventListener("load", function (e) {
                   ? u({ message: t + " is not buffered yet. Try again" })
                   : (a(i.estimatedStart + e),
                     void l.one("seeked", function () {
-                      Il({
+                      El({
                         programTime: t,
                         playlist: n,
                         retryCount: r - 1,
@@ -56120,7 +56680,7 @@ window.addEventListener("load", function (e) {
               }),
               r
             );
-          })(s, Ir(n, !0))),
+          })(s, Er(n, !0))),
           (a = a || io(s)),
           s.length < 10 || (a && s.length < a + 2))
         )
@@ -56205,10 +56765,10 @@ window.addEventListener("load", function (e) {
     }
     return i;
   }
-  function Ml(e) {
+  function jl(e) {
     return (e.on = e.addEventListener), (e.off = e.removeEventListener), e;
   }
-  function jl(n) {
+  function Ml(n) {
     var i = n.transmuxer,
       e = n.bytes,
       t = n.audioAppendStart,
@@ -56276,7 +56836,7 @@ window.addEventListener("load", function (e) {
             (t = t.callback),
             (e.buffer = []),
             t(e),
-            Eu(i))));
+            Iu(i))));
     }),
       t && i.postMessage({ action: "setAudioAppendStart", appendStart: t }),
       Array.isArray(r) &&
@@ -56294,7 +56854,7 @@ window.addEventListener("load", function (e) {
       i.postMessage({ action: "flush" });
   }
   function Dl(e, t) {
-    e.postMessage({ action: t }), Eu(e);
+    e.postMessage({ action: t }), Iu(e);
   }
   function Rl(e, t) {
     if (!t.currentTransmux) return (t.currentTransmux = e), Dl(t, e), 0;
@@ -56302,7 +56862,7 @@ window.addEventListener("load", function (e) {
   }
   function Bl(e) {
     if (!e.transmuxer.currentTransmux)
-      return (e.transmuxer.currentTransmux = e), void jl(e);
+      return (e.transmuxer.currentTransmux = e), void Ml(e);
     e.transmuxer.transmuxQueue.push(e);
   }
   function Ul(n) {
@@ -56398,7 +56958,7 @@ window.addEventListener("load", function (e) {
       return o(null, a);
     };
   }
-  function Hl(n, i) {
+  function ql(n, i) {
     var e = Do(n.map.bytes);
     if ("mp4" !== e) {
       var t = n.map.resolvedUri || n.map.uri;
@@ -56466,7 +57026,7 @@ window.addEventListener("load", function (e) {
       );
     };
   }
-  function ql(e) {
+  function Hl(e) {
     var n = e.segment,
       t = e.bytes,
       i = e.trackInfoFn,
@@ -56618,7 +57178,7 @@ window.addEventListener("load", function (e) {
         "ts" !== n.container && "aac" !== n.container)
       )
         return t(n, { hasAudio: !1, hasVideo: !1 }), h(null, n, {}), 0;
-      ql({
+      Hl({
         segment: n,
         bytes: i,
         trackInfoFn: t,
@@ -56664,8 +57224,8 @@ window.addEventListener("load", function (e) {
       y = e.audioSegmentTimingInfoFn,
       _ = e.id3Fn,
       T = e.captionsFn,
-      S = e.isEndOfTimeline,
-      O = e.endedTimelineFn,
+      O = e.isEndOfTimeline,
+      S = e.endedTimelineFn,
       A = e.dataFn,
       w = e.doneFn,
       C = e.onTransmuxerLog,
@@ -56687,8 +57247,8 @@ window.addEventListener("load", function (e) {
                   audioSegmentTimingInfoFn: y,
                   id3Fn: _,
                   captionsFn: T,
-                  isEndOfTimeline: S,
-                  endedTimelineFn: O,
+                  isEndOfTimeline: O,
+                  endedTimelineFn: S,
                   dataFn: A,
                   doneFn: w,
                   onTransmuxerLog: C,
@@ -56742,8 +57302,8 @@ window.addEventListener("load", function (e) {
               audioSegmentTimingInfoFn: y,
               id3Fn: _,
               captionsFn: T,
-              isEndOfTimeline: S,
-              endedTimelineFn: O,
+              isEndOfTimeline: O,
+              endedTimelineFn: S,
               dataFn: A,
               doneFn: w,
               onTransmuxerLog: C,
@@ -56762,7 +57322,7 @@ window.addEventListener("load", function (e) {
               },
               function (e) {
                 (f.map.bytes = e),
-                  Hl(f, function (e) {
+                  ql(f, function (e) {
                     return e ? (Vl(n), w(e, f)) : void t();
                   });
               }
@@ -56890,7 +57450,7 @@ window.addEventListener("load", function (e) {
             e = new Uint8Array(t.response);
             if (n.map.key) return (n.map.encryptedBytes = e), i(null, n);
             (n.map.bytes = e),
-              Hl(n, function (e) {
+              ql(n, function (e) {
                 return e
                   ? ((e.xhr = t), (e.status = t.status), i(e, n))
                   : void i(null, n);
@@ -56965,7 +57525,7 @@ window.addEventListener("load", function (e) {
       }),
       Object.keys(i).forEach(function (e) {
         return 1 < i[e].length
-          ? (Mu(
+          ? (ju(
               "multiple " +
                 e +
                 " codecs found as attributes: " +
@@ -57094,7 +57654,7 @@ window.addEventListener("load", function (e) {
               return !yu.isDisabled(e.playlist);
             })
           : u).filter(function (e) {
-          return e.bandwidth * M.BANDWIDTH_VARIANCE < t;
+          return e.bandwidth * j.BANDWIDTH_VARIANCE < t;
         }),
         c = e[e.length - 1],
         o = e.filter(function (e) {
@@ -57106,11 +57666,11 @@ window.addEventListener("load", function (e) {
           r = o ? "bandwidthBestRep" : "sortedPlaylistReps";
           return (
             u[0] && (r = "enabledPlaylistReps"),
-            ju("choosing " + tu(d) + " using " + r + " with options", s),
+            Mu("choosing " + tu(d) + " using " + r + " with options", s),
             d.playlist
           );
         }
-        return ju("could not choose a playlist with options", s), null;
+        return Mu("could not choose a playlist with options", s), null;
       }
       d = e.filter(function (e) {
         return e.width && e.height;
@@ -57163,11 +57723,11 @@ window.addEventListener("load", function (e) {
             : o
             ? (l = "bandwidthBestRep")
             : u[0] && (l = "enabledPlaylistReps"),
-          ju("choosing " + tu(m) + " using " + l + " with options", s),
+          Mu("choosing " + tu(m) + " using " + l + " with options", s),
           m.playlist
         );
       }
-      return ju("could not choose a playlist with options", s), null;
+      return Mu("could not choose a playlist with options", s), null;
     }
   }
   function su(e) {
@@ -57369,7 +57929,7 @@ window.addEventListener("load", function (e) {
         ". For HLS content, a duration in excess of the target duration may result in playback issues. See the HLS specification section on EXT-X-TARGETDURATION for more details: https://tools.ietf.org/html/draft-pantos-http-live-streaming-23#section-4.3.3.1";
     return s || t ? { severity: s ? "warn" : "info", message: a } : null;
   }
-  var fu = Mo,
+  var fu = jo,
     mu = 9e4,
     gu = function (e, t) {
       if (/^[a-z]+:/i.test(t)) return t;
@@ -57518,7 +58078,7 @@ window.addEventListener("load", function (e) {
     _u = w.log,
     Tu = w.mergeOptions,
     s = w.EventTarget,
-    Su = (function (a) {
+    Ou = (function (a) {
       function e(e, t, n) {
         var i;
         if ((void 0 === n && (n = {}), (i = a.call(this) || this), !e))
@@ -57636,7 +58196,7 @@ window.addEventListener("load", function (e) {
               r = e.customTagMappers,
               r = void 0 === r ? [] : r,
               e = e.experimentalLLHLS,
-              s = new Mr();
+              s = new jr();
             t && s.on("warn", t),
               n && s.on("info", n),
               a.forEach(function (e) {
@@ -57937,7 +58497,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(s),
-    Ou = w.xhr,
+    Su = w.xhr,
     Au = w.mergeOptions,
     cn = Object.freeze({
       __proto__: null,
@@ -58032,7 +58592,7 @@ window.addEventListener("load", function (e) {
                   }
                   return (
                     (e[u] = { sidxInfo: a.sidx, sidx: n }),
-                    Es(a, n, a.sidx.resolvedUri),
+                    Is(a, n, a.sidx.resolvedUri),
                     r(!0)
                   );
                 }
@@ -58323,7 +58883,7 @@ window.addEventListener("load", function (e) {
                   n &&
                     n[r] &&
                     n[r].sidx &&
-                    Es(o, n[r].sidx, o.sidx.resolvedUri));
+                    Is(o, n[r].sidx, o.sidx.resolvedUri));
                 o = bl(s, o, Ll);
                 o && ((s = o), (a = !1));
               }
@@ -58429,7 +58989,7 @@ window.addEventListener("load", function (e) {
         e
       );
     })(fr),
-    M = {
+    j = {
       GOAL_BUFFER_LENGTH: 30,
       MAX_GOAL_BUFFER_LENGTH: 60,
       BACK_BUFFER_LENGTH: 30,
@@ -58454,7 +59014,7 @@ window.addEventListener("load", function (e) {
               return n.append(t), URL.createObjectURL(n.getBlob());
             }
           })(i),
-          t = Ml(new Worker(e));
+          t = jl(new Worker(e));
         t.objURL = e;
         var n = t.terminate;
         return (
@@ -58470,7 +59030,7 @@ window.addEventListener("load", function (e) {
     he = function (e) {
       return (
         "var browserWorkerPolyFill = " +
-        Ml.toString() +
+        jl.toString() +
         ";\nbrowserWorkerPolyFill(self);\n" +
         e
       );
@@ -58566,9 +59126,9 @@ window.addEventListener("load", function (e) {
             V,
             F,
             G,
-            H,
-            z,
             q,
+            z,
+            H,
             W,
             X,
             Y,
@@ -58822,7 +59382,7 @@ window.addEventListener("load", function (e) {
                 Q(e)
               );
             }),
-            (O = function (e, t) {
+            (S = function (e, t) {
               for (var n = [], i = t.length; i--; ) n[i] = $(t[i]);
               return l.apply(null, [u.moof, U(e)].concat(n));
             }),
@@ -58830,14 +59390,14 @@ window.addEventListener("load", function (e) {
               for (var t = e.length, n = []; t--; ) n[t] = z(e[t]);
               return l.apply(
                 null,
-                [u.moov, H(4294967295)].concat(n).concat(G(e))
+                [u.moov, q(4294967295)].concat(n).concat(G(e))
               );
             }),
             (G = function (e) {
               for (var t = e.length, n = []; t--; ) n[t] = J(e[t]);
               return l.apply(null, [u.mvex].concat(n));
             }),
-            (H = function (e) {
+            (q = function (e) {
               e = new Uint8Array([
                 0,
                 0,
@@ -59153,7 +59713,7 @@ window.addEventListener("load", function (e) {
                 R(e)
               );
             }),
-            (q = function (e) {
+            (H = function (e) {
               e = new Uint8Array([
                 0,
                 0,
@@ -59300,7 +59860,7 @@ window.addEventListener("load", function (e) {
             }),
             (z = function (e) {
               return (
-                (e.duration = e.duration || 4294967295), l(u.trak, q(e), W(e))
+                (e.duration = e.duration || 4294967295), l(u.trak, H(e), W(e))
               );
             }),
             (J = function (e) {
@@ -59459,7 +60019,7 @@ window.addEventListener("load", function (e) {
           function Te() {
             var e, n;
             return (
-              Se ||
+              Oe ||
                 ((e = {
                   96e3: [a, [227, 64], r(154), [56]],
                   88200: [a, [231], r(170), [56]],
@@ -59520,7 +60080,7 @@ window.addEventListener("load", function (e) {
                   8e3: [Pe, r(268), [3, 121, 16], r(47), [7]],
                 }),
                 (n = e),
-                (Se = Object.keys(n).reduce(function (e, t) {
+                (Oe = Object.keys(n).reduce(function (e, t) {
                   return (
                     (e[t] = new Uint8Array(
                       n[t].reduce(function (e, t) {
@@ -59530,14 +60090,14 @@ window.addEventListener("load", function (e) {
                     e
                   );
                 }, {}))),
-              Se
+              Oe
             );
           }
-          var Se,
-            Oe = function (e) {
+          var Oe,
+            Se = function (e) {
               return l(u.mdat, e);
             },
-            Ae = O,
+            Ae = S,
             we = function (e) {
               var t = B(),
                 n = F(e),
@@ -59629,7 +60189,7 @@ window.addEventListener("load", function (e) {
                 r
               );
             },
-            Ee = function (e) {
+            Ie = function (e) {
               var t;
               return (
                 !e[0][0].keyFrame &&
@@ -59643,7 +60203,7 @@ window.addEventListener("load", function (e) {
                 e
               );
             },
-            Ie = function (e, t) {
+            Ee = function (e, t) {
               for (var n, i, r, a = t || 0, s = [], o = 0; o < e.length; o++)
                 for (i = e[o], n = 0; n < i.length; n++)
                   (r = i[n]), (a += (r = _e(r, a)).size), s.push(r);
@@ -59681,23 +60241,23 @@ window.addEventListener("load", function (e) {
             Ne = function (e, t) {
               return e * t;
             },
-            Me = function (e) {
+            je = function (e) {
               return e / 9e4;
             },
-            je = function (e, t) {
+            Me = function (e, t) {
               return e / t;
             },
             h = 9e4,
             De = Le,
-            s = Me,
+            s = je,
             Re = function (e, t) {
-              return Le(je(e, t));
+              return Le(Me(e, t));
             },
             Be = function (e, t) {
-              return Ne(Me(e), t);
+              return Ne(je(e), t);
             },
             Ue = function (e, t, n) {
-              return Me(n ? e : e - t);
+              return je(n ? e : e - t);
             },
             Ve = function (e, t, n, i) {
               var r,
@@ -59747,7 +60307,7 @@ window.addEventListener("load", function (e) {
                 (t = e[i]), n.push({ size: t.data.byteLength, duration: 1024 });
               return n;
             },
-            He = function (e) {
+            qe = function (e) {
               for (
                 var t,
                   n = 0,
@@ -59772,7 +60332,7 @@ window.addEventListener("load", function (e) {
                 delete e.minSegmentPts,
                 delete e.maxSegmentPts;
             },
-            qe = function (e, t) {
+            He = function (e, t) {
               var n = e.minSegmentDts;
               return (
                 t || (n -= e.timelineStartInfo.dts),
@@ -60845,10 +61405,10 @@ window.addEventListener("load", function (e) {
           function T(e, t, n) {
             return decodeURIComponent(nt(e, t, n));
           }
-          function S(e) {
+          function O(e) {
             return (e[0] << 21) | (e[1] << 14) | (e[2] << 7) | e[3];
           }
-          var O = e,
+          var S = e,
             o = tt,
             it = {
               TXXX: function (e) {
@@ -60920,7 +61480,7 @@ window.addEventListener("load", function (e) {
                     (u.push(e),
                     (c += e.data.byteLength),
                     1 === u.length &&
-                      ((l = S(e.data.subarray(6, 10))), (l += 10)),
+                      ((l = O(e.data.subarray(6, 10))), (l += 10)),
                     !(c < l))
                   ) {
                     for (
@@ -60941,10 +61501,10 @@ window.addEventListener("load", function (e) {
                     (n = 10),
                       64 & t.data[5] &&
                         ((n += 4),
-                        (n += S(t.data.subarray(10, 14))),
-                        (l -= S(t.data.subarray(16, 20))));
+                        (n += O(t.data.subarray(10, 14))),
+                        (l -= O(t.data.subarray(16, 20))));
                     do {
-                      if ((i = S(t.data.subarray(n + 4, n + 8))) < 1)
+                      if ((i = O(t.data.subarray(n + 4, n + 8))) < 1)
                         return void this.trigger("log", {
                           level: "warn",
                           message:
@@ -60989,7 +61549,7 @@ window.addEventListener("load", function (e) {
           var A,
             at,
             e = rt,
-            O = O,
+            S = S,
             st = function () {
               var r = new Uint8Array(188),
                 a = 0;
@@ -61256,7 +61816,7 @@ window.addEventListener("load", function (e) {
               TransportPacketStream: st,
               TransportParseStream: A,
               ElementaryStream: at,
-              TimestampRolloverStream: O,
+              TimestampRolloverStream: S,
               CaptionStream: y.CaptionStream,
               Cea608Stream: y.Cea608Stream,
               Cea708Stream: y.Cea708Stream,
@@ -61884,7 +62444,7 @@ window.addEventListener("load", function (e) {
           function Tt(e, t) {
             (t.stream = e), this.trigger("log", t);
           }
-          function St(e, t) {
+          function Ot(e, t) {
             for (var n = Object.keys(t), i = 0; i < n.length; i++) {
               var r = n[i];
               "headOfPipeline" !== r &&
@@ -61892,7 +62452,7 @@ window.addEventListener("load", function (e) {
                 t[r].on("log", Tt.bind(e, r));
             }
           }
-          function Ot(e, t) {
+          function St(e, t) {
             var n;
             if (e.length === t.length) {
               for (n = 0; n < e.length; n++) if (e[n] !== t[n]) return;
@@ -61909,16 +62469,16 @@ window.addEventListener("load", function (e) {
           }
           var wt,
             Ct,
-            E,
+            I,
             xt = _t,
-            Et = [
+            It = [
               "audioobjecttype",
               "channelcount",
               "samplerate",
               "samplingfrequencyindex",
               "samplesize",
             ],
-            It = [
+            Et = [
               "width",
               "height",
               "profileIdc",
@@ -61929,17 +62489,17 @@ window.addEventListener("load", function (e) {
             kt = e.H264Stream,
             Pt = yt.isLikelyAacData,
             Lt = h,
-            I = function (a, s) {
+            E = function (a, s) {
               var o = [],
                 l = 0,
                 u = 0,
                 c = 1 / 0,
                 d = (s = s || {}).firstSequenceNumber || 0;
-              I.prototype.init.call(this),
+              E.prototype.init.call(this),
                 (this.push = function (t) {
                   We(a, t),
                     a &&
-                      Et.forEach(function (e) {
+                      It.forEach(function (e) {
                         a[e] = t[e];
                       }),
                     o.push(t);
@@ -61957,10 +62517,10 @@ window.addEventListener("load", function (e) {
                   var e, t, n, i, r;
                   0 !== o.length &&
                     ((e = Fe(o, a, l)),
-                    (a.baseMediaDecodeTime = qe(a, s.keepOriginalTimestamps)),
+                    (a.baseMediaDecodeTime = He(a, s.keepOriginalTimestamps)),
                     (r = Ve(a, e, u, c)),
                     (a.samples = Ge(e)),
-                    (t = Oe(He(e))),
+                    (t = Se(qe(e))),
                     (o = []),
                     (i = Ae(d, [a])),
                     (n = new Uint8Array(i.byteLength + t.byteLength)),
@@ -61993,7 +62553,7 @@ window.addEventListener("load", function (e) {
                   p(a), (o = []), this.trigger("reset");
                 });
             };
-          (I.prototype = new n()),
+          (E.prototype = new n()),
             ((wt = function (s, a) {
               var t,
                 n,
@@ -62009,7 +62569,7 @@ window.addEventListener("load", function (e) {
                       t ||
                       ((t = e.config),
                       (s.sps = [e.data]),
-                      It.forEach(function (e) {
+                      Et.forEach(function (e) {
                         s[e] = t[e];
                       }, this)),
                     "pic_parameter_set_rbsp" !== e.nalUnitType ||
@@ -62041,7 +62601,7 @@ window.addEventListener("load", function (e) {
                           (t.pts = n.pts),
                           (t.dts = n.dts),
                           (t.duration += n.duration))
-                        : (t = Ee(t))),
+                        : (t = Ie(t))),
                     u.length)
                   ) {
                     var r = a.alignGopsAtEnd
@@ -62065,9 +62625,9 @@ window.addEventListener("load", function (e) {
                     p(s), (t = r);
                   }
                   We(s, t),
-                    (s.samples = Ie(t)),
-                    (e = Oe(ke(t))),
-                    (s.baseMediaDecodeTime = qe(s, a.keepOriginalTimestamps)),
+                    (s.samples = Ee(t)),
+                    (e = Se(ke(t))),
+                    (s.baseMediaDecodeTime = He(s, a.keepOriginalTimestamps)),
                     this.trigger(
                       "processedGopsInfo",
                       t.map(function (e) {
@@ -62134,9 +62694,9 @@ window.addEventListener("load", function (e) {
                   )
                     (n = (i = this.gopCache_[a]).gop),
                       s.pps &&
-                        Ot(s.pps[0], i.pps[0]) &&
+                        St(s.pps[0], i.pps[0]) &&
                         s.sps &&
-                        Ot(s.sps[0], i.sps[0]) &&
+                        St(s.sps[0], i.sps[0]) &&
                         (n.dts < s.timelineStartInfo.dts ||
                           (-1e4 <= (n = e.dts - n.dts - n.duration) &&
                             n <= 45e3 &&
@@ -62220,7 +62780,7 @@ window.addEventListener("load", function (e) {
                   u = e;
                 });
             }).prototype = new n()),
-            ((E = function (e, t) {
+            ((I = function (e, t) {
               (this.numberOfTracks = 0),
                 (this.metadataStream = t),
                 "undefined" != typeof (e = e || {}).remux
@@ -62236,7 +62796,7 @@ window.addEventListener("load", function (e) {
                 (this.pendingMetadata = []),
                 (this.pendingBytes = 0),
                 (this.emittedTracks = 0),
-                E.prototype.init.call(this),
+                I.prototype.init.call(this),
                 (this.push = function (e) {
                   return e.text
                     ? this.pendingCaptions.push(e)
@@ -62254,7 +62814,7 @@ window.addEventListener("load", function (e) {
                       ));
                 });
             }).prototype = new n()),
-            (E.prototype.flush = function (e) {
+            (I.prototype.flush = function (e) {
               var t,
                 n,
                 i,
@@ -62282,12 +62842,12 @@ window.addEventListener("load", function (e) {
               if (
                 (this.videoTrack
                   ? ((s = this.videoTrack.timelineStartInfo.pts),
-                    It.forEach(function (e) {
+                    Et.forEach(function (e) {
                       a.info[e] = this.videoTrack[e];
                     }, this))
                   : this.audioTrack &&
                     ((s = this.audioTrack.timelineStartInfo.pts),
-                    Et.forEach(function (e) {
+                    It.forEach(function (e) {
                       a.info[e] = this.audioTrack[e];
                     }, this)),
                 this.videoTrack || this.audioTrack)
@@ -62343,7 +62903,7 @@ window.addEventListener("load", function (e) {
               this.emittedTracks >= this.numberOfTracks &&
                 (this.trigger("done"), (this.emittedTracks = 0));
             }),
-            (E.prototype.setRemux = function (e) {
+            (I.prototype.setRemux = function (e) {
               this.remuxTracks = e;
             }),
             ((Ct = function (i) {
@@ -62365,7 +62925,7 @@ window.addEventListener("load", function (e) {
                     (t.timedMetadataTimestampRolloverStream =
                       new C.TimestampRolloverStream("timed-metadata")),
                     (t.adtsStream = new pt()),
-                    (t.coalesceStream = new E(i, t.metadataStream)),
+                    (t.coalesceStream = new I(i, t.metadataStream)),
                     (t.headOfPipeline = t.aacStream),
                     t.aacStream
                       .pipe(t.audioTimestampRolloverStream)
@@ -62388,7 +62948,7 @@ window.addEventListener("load", function (e) {
                           type: "audio",
                         }),
                         t.coalesceStream.numberOfTracks++,
-                        (t.audioSegmentStream = new I(a, i)),
+                        (t.audioSegmentStream = new E(a, i)),
                         t.audioSegmentStream.on(
                           "log",
                           s.getLogTrigger_("audioSegmentStream")
@@ -62413,7 +62973,7 @@ window.addEventListener("load", function (e) {
                       "done",
                       this.trigger.bind(this, "done")
                     ),
-                    St(this, t);
+                    Ot(this, t);
                 }),
                 (this.setupTsPipeline = function () {
                   var n = {};
@@ -62427,7 +62987,7 @@ window.addEventListener("load", function (e) {
                     (n.adtsStream = new pt()),
                     (n.h264Stream = new kt()),
                     (n.captionStream = new C.CaptionStream(i)),
-                    (n.coalesceStream = new E(i, n.metadataStream)),
+                    (n.coalesceStream = new I(i, n.metadataStream)),
                     (n.headOfPipeline = n.packetStream),
                     n.packetStream
                       .pipe(n.parseStream)
@@ -62502,7 +63062,7 @@ window.addEventListener("load", function (e) {
                           a &&
                             !n.audioSegmentStream &&
                             (n.coalesceStream.numberOfTracks++,
-                            (n.audioSegmentStream = new I(a, i)),
+                            (n.audioSegmentStream = new E(a, i)),
                             n.audioSegmentStream.on(
                               "log",
                               s.getLogTrigger_("audioSegmentStream")
@@ -62540,7 +63100,7 @@ window.addEventListener("load", function (e) {
                       "done",
                       this.trigger.bind(this, "done")
                     ),
-                    St(this, n);
+                    Ot(this, n);
                 }),
                 (this.setBaseMediaDecodeTime = function (e) {
                   var t = this.transmuxPipeline_;
@@ -62628,7 +63188,7 @@ window.addEventListener("load", function (e) {
                   s = e.mdat,
                   o = e.traf,
                   l = P(o, ["tfhd"]),
-                  u = qt(l[0]),
+                  u = Ht(l[0]),
                   e = u.trackId,
                   l = P(o, ["tfdt"]),
                   l = 0 < l.length ? Gt(l[0]).baseMediaDecodeTime : 0,
@@ -62714,11 +63274,11 @@ window.addEventListener("load", function (e) {
               d
             );
           }
-          function Mt(e) {
+          function jt(e) {
             var t = 31 & e[1];
             return (t <<= 8), (t |= e[2]);
           }
-          function jt(e) {
+          function Mt(e) {
             return !!(64 & e[1]);
           }
           function Dt(e) {
@@ -62744,9 +63304,9 @@ window.addEventListener("load", function (e) {
           var Bt = {
               Transmuxer: Ct,
               VideoSegmentStream: wt,
-              AudioSegmentStream: I,
-              AUDIO_PROPERTIES: Et,
-              VIDEO_PROPERTIES: It,
+              AudioSegmentStream: E,
+              AUDIO_PROPERTIES: It,
+              VIDEO_PROPERTIES: Et,
               generateSegmentTimingInfo: At,
             },
             e = function (e) {
@@ -62798,7 +63358,7 @@ window.addEventListener("load", function (e) {
                 t
               );
             },
-            Ht = function (e) {
+            qt = function (e) {
               return {
                 isLeading: (12 & e[0]) >>> 2,
                 dependsOn: 3 & e[0],
@@ -62829,7 +63389,7 @@ window.addEventListener("load", function (e) {
                 r && ((n.dataOffset = i.getInt32(d)), (d += 4)),
                   a &&
                     c &&
-                    ((t = { flags: Ht(e.subarray(d, d + 4)) }),
+                    ((t = { flags: qt(e.subarray(d, d + 4)) }),
                     (d += 4),
                     s && ((t.duration = i.getUint32(d)), (d += 4)),
                     o && ((t.size = i.getUint32(d)), (d += 4)),
@@ -62846,7 +63406,7 @@ window.addEventListener("load", function (e) {
                 (t = {}),
                   s && ((t.duration = i.getUint32(d)), (d += 4)),
                   o && ((t.size = i.getUint32(d)), (d += 4)),
-                  l && ((t.flags = Ht(e.subarray(d, d + 4))), (d += 4)),
+                  l && ((t.flags = qt(e.subarray(d, d + 4))), (d += 4)),
                   u &&
                     (1 === n.version
                       ? (t.compositionTimeOffset = i.getInt32(d))
@@ -62855,7 +63415,7 @@ window.addEventListener("load", function (e) {
                   n.samples.push(t);
               return n;
             },
-            qt = function (e) {
+            Ht = function (e) {
               var t = new DataView(e.buffer, e.byteOffset, e.byteLength),
                 n = {
                   version: e[0],
@@ -63126,20 +63686,20 @@ window.addEventListener("load", function (e) {
             Jt = Qe,
             en = i,
             N = o,
-            M = {};
-          (M.ts = {
+            j = {};
+          (j.ts = {
             parseType: function (e, t) {
-              e = Mt(e);
+              e = jt(e);
               return 0 === e ? "pat" : e === t ? "pmt" : t ? "pes" : null;
             },
             parsePat: function (e) {
-              var t = jt(e),
+              var t = Mt(e),
                 n = 4 + Dt(e);
               return t && (n += e[n] + 1), ((31 & e[n + 10]) << 8) | e[n + 11];
             },
             parsePmt: function (e) {
               var t = {},
-                n = jt(e),
+                n = Mt(e),
                 i = 4 + Dt(e);
               if ((n && (i += e[i] + 1), 1 & e[i + 5])) {
                 for (
@@ -63155,9 +63715,9 @@ window.addEventListener("load", function (e) {
                 return t;
               }
             },
-            parsePayloadUnitStartIndicator: jt,
+            parsePayloadUnitStartIndicator: Mt,
             parsePesType: function (e, t) {
-              switch (t[Mt(e)]) {
+              switch (t[jt(e)]) {
                 case _.H264_STREAM_TYPE:
                   return "video";
                 case _.ADTS_STREAM_TYPE:
@@ -63169,7 +63729,7 @@ window.addEventListener("load", function (e) {
               }
             },
             parsePesTime: function (e) {
-              if (!jt(e)) return null;
+              if (!Mt(e)) return null;
               var t = 4 + Dt(e);
               if (t >= e.byteLength) return null;
               var n = null,
@@ -63255,19 +63815,19 @@ window.addEventListener("load", function (e) {
               );
             },
           }),
-            (M.aac = yt);
+            (j.aac = yt);
           function tn(e, t, n) {
             for (var i, r, a, s, o = 0, l = 188, u = !1; l <= e.byteLength; )
               if (71 !== e[o] || (71 !== e[l] && l !== e.byteLength)) o++, l++;
               else {
                 if (
                   ((i = e.subarray(o, l)),
-                  "pes" === M.ts.parseType(i, t.pid) &&
-                    ((r = M.ts.parsePesType(i, t.table)),
-                    (a = M.ts.parsePayloadUnitStartIndicator(i)),
+                  "pes" === j.ts.parseType(i, t.pid) &&
+                    ((r = j.ts.parsePesType(i, t.table)),
+                    (a = j.ts.parsePayloadUnitStartIndicator(i)),
                     "audio" === r &&
                       a &&
-                      (s = M.ts.parsePesTime(i)) &&
+                      (s = j.ts.parsePesTime(i)) &&
                       ((s.type = "audio"), n.audio.push(s), (u = !0))),
                   u)
                 )
@@ -63279,12 +63839,12 @@ window.addEventListener("load", function (e) {
               else {
                 if (
                   ((i = e.subarray(o, l)),
-                  "pes" === M.ts.parseType(i, t.pid) &&
-                    ((r = M.ts.parsePesType(i, t.table)),
-                    (a = M.ts.parsePayloadUnitStartIndicator(i)),
+                  "pes" === j.ts.parseType(i, t.pid) &&
+                    ((r = j.ts.parsePesType(i, t.table)),
+                    (a = j.ts.parsePayloadUnitStartIndicator(i)),
                     "audio" === r &&
                       a &&
-                      (s = M.ts.parsePesTime(i)) &&
+                      (s = j.ts.parsePesTime(i)) &&
                       ((s.type = "audio"), n.audio.push(s), (u = !0))),
                   u)
                 )
@@ -63300,12 +63860,12 @@ window.addEventListener("load", function (e) {
               for (var n, i = 0, r = 188; r < e.byteLength; )
                 if (71 !== e[i] || 71 !== e[r]) i++, r++;
                 else {
-                  switch (((n = e.subarray(i, r)), M.ts.parseType(n, t.pid))) {
+                  switch (((n = e.subarray(i, r)), j.ts.parseType(n, t.pid))) {
                     case "pat":
-                      t.pid = M.ts.parsePat(n);
+                      t.pid = j.ts.parsePat(n);
                       break;
                     case "pmt":
-                      var a = M.ts.parsePmt(n);
+                      var a = j.ts.parsePmt(n);
                       (t.table = t.table || {}),
                         Object.keys(a).forEach(function (e) {
                           t.table[e] = a[e];
@@ -63340,15 +63900,15 @@ window.addEventListener("load", function (e) {
                           else {
                             if (
                               ((i = e.subarray(d, h)),
-                              "pes" === M.ts.parseType(i, t.pid))
+                              "pes" === j.ts.parseType(i, t.pid))
                             )
                               if (
-                                ((r = M.ts.parsePesType(i, t.table)),
-                                (a = M.ts.parsePayloadUnitStartIndicator(i)),
+                                ((r = j.ts.parsePesType(i, t.table)),
+                                (a = j.ts.parsePayloadUnitStartIndicator(i)),
                                 "video" === r &&
                                   (a &&
                                     !p &&
-                                    (s = M.ts.parsePesTime(i)) &&
+                                    (s = j.ts.parsePesTime(i)) &&
                                     ((s.type = "video"),
                                     n.video.push(s),
                                     (p = !0)),
@@ -63363,8 +63923,8 @@ window.addEventListener("load", function (e) {
                                     (u = f.data.shift()),
                                       o.set(u, l),
                                       (l += u.byteLength);
-                                  !M.ts.videoPacketContainsKeyFrame(o) ||
-                                    ((c = M.ts.parsePesTime(o)) &&
+                                  !j.ts.videoPacketContainsKeyFrame(o) ||
+                                    ((c = j.ts.parsePesTime(o)) &&
                                       ((n.firstKeyFrame = c),
                                       (n.firstKeyFrame.type = "video"))),
                                     (f.size = 0);
@@ -63379,12 +63939,12 @@ window.addEventListener("load", function (e) {
                           else {
                             if (
                               ((i = e.subarray(d, h)),
-                              "pes" === M.ts.parseType(i, t.pid) &&
-                                ((r = M.ts.parsePesType(i, t.table)),
-                                (a = M.ts.parsePayloadUnitStartIndicator(i)),
+                              "pes" === j.ts.parseType(i, t.pid) &&
+                                ((r = j.ts.parsePesType(i, t.table)),
+                                (a = j.ts.parsePayloadUnitStartIndicator(i)),
                                 "video" === r &&
                                   a &&
-                                  (s = M.ts.parsePesTime(i)) &&
+                                  (s = j.ts.parsePesTime(i)) &&
                                   ((s.type = "video"),
                                   n.video.push(s),
                                   (p = !0))),
@@ -63403,12 +63963,12 @@ window.addEventListener("load", function (e) {
                 }
             return i;
           }
-          var j = h,
+          var M = h,
             rn = function (e, t) {
               var n,
                 i,
                 r = (
-                  M.aac.isLikelyAacData(e)
+                  j.aac.isLikelyAacData(e)
                     ? function (e) {
                         for (
                           var t,
@@ -63421,21 +63981,21 @@ window.addEventListener("load", function (e) {
                           3 <= e.length - o;
 
                         ) {
-                          switch (M.aac.parseType(e, o)) {
+                          switch (j.aac.parseType(e, o)) {
                             case "timed-metadata":
                               if (e.length - o < 10) {
                                 n = !0;
                                 break;
                               }
                               if (
-                                (s = M.aac.parseId3TagSize(e, o)) > e.length
+                                (s = j.aac.parseId3TagSize(e, o)) > e.length
                               ) {
                                 n = !0;
                                 break;
                               }
                               null === a &&
                                 ((t = e.subarray(o, o + s)),
-                                (a = M.aac.parseAacTimestamp(t))),
+                                (a = j.aac.parseAacTimestamp(t))),
                                 (o += s);
                               break;
                             case "audio":
@@ -63443,13 +64003,13 @@ window.addEventListener("load", function (e) {
                                 n = !0;
                                 break;
                               }
-                              if ((s = M.aac.parseAdtsSize(e, o)) > e.length) {
+                              if ((s = j.aac.parseAdtsSize(e, o)) > e.length) {
                                 n = !0;
                                 break;
                               }
                               null === r &&
                                 ((t = e.subarray(o, o + s)),
-                                (r = M.aac.parseSampleRate(t))),
+                                (r = j.aac.parseSampleRate(t))),
                                 i++,
                                 (o += s);
                               break;
@@ -63459,7 +64019,7 @@ window.addEventListener("load", function (e) {
                           if (n) return null;
                         }
                         if (null === r || null === a) return null;
-                        var l = j / r;
+                        var l = M / r;
                         return {
                           audio: [
                             { type: "audio", dts: a, pts: a },
@@ -63482,8 +64042,8 @@ window.addEventListener("load", function (e) {
                     t.audio.forEach(function (e) {
                       (e.dts = N(e.dts, n)),
                         (e.pts = N(e.pts, n)),
-                        (e.dtsTime = e.dts / j),
-                        (e.ptsTime = e.pts / j);
+                        (e.dtsTime = e.dts / M),
+                        (e.ptsTime = e.pts / M);
                     })),
                   t.video &&
                     t.video.length &&
@@ -63492,14 +64052,14 @@ window.addEventListener("load", function (e) {
                     t.video.forEach(function (e) {
                       (e.dts = N(e.dts, i)),
                         (e.pts = N(e.pts, i)),
-                        (e.dtsTime = e.dts / j),
-                        (e.ptsTime = e.pts / j);
+                        (e.dtsTime = e.dts / M),
+                        (e.ptsTime = e.pts / M);
                     }),
                     t.firstKeyFrame &&
                       (((t = t.firstKeyFrame).dts = N(t.dts, i)),
                       (t.pts = N(t.pts, i)),
-                      (t.dtsTime = t.dts / j),
-                      (t.ptsTime = t.pts / j))),
+                      (t.dtsTime = t.dts / M),
+                      (t.ptsTime = t.pts / M))),
                   r)
                 : null;
             },
@@ -63712,15 +64272,15 @@ window.addEventListener("load", function (e) {
         })
       )
     ),
-    Eu = function (e) {
+    Iu = function (e) {
       (e.currentTransmux = null),
         e.transmuxQueue.length &&
           ((e.currentTransmux = e.transmuxQueue.shift()),
           "function" == typeof e.currentTransmux
             ? e.currentTransmux()
-            : jl(e.currentTransmux));
+            : Ml(e.currentTransmux));
     },
-    Iu = function (e) {
+    Eu = function (e) {
       Rl("reset", e);
     },
     ku = function (e) {
@@ -63740,8 +64300,8 @@ window.addEventListener("load", function (e) {
     Pu = 2,
     Lu = -101,
     Nu = -102,
-    Mu = Bo("CodecUtils"),
-    ju = Bo("PlaylistSelector"),
+    ju = Bo("CodecUtils"),
+    Mu = Bo("PlaylistSelector"),
     fr = function () {
       var e = (this.useDevicePixelRatio && window.devicePixelRatio) || 1;
       return au(
@@ -63937,7 +64497,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.endOfStream = function () {
           (this.ended_ = !0),
-            this.transmuxer_ && Iu(this.transmuxer_),
+            this.transmuxer_ && Eu(this.transmuxer_),
             (this.gopBuffer_.length = 0),
             this.pause(),
             this.trigger("ended");
@@ -64084,7 +64644,7 @@ window.addEventListener("load", function (e) {
           (this.fetchAtBuffer_ = !1), this.resyncLoader();
         }),
         (t.resyncLoader = function () {
-          this.transmuxer_ && Iu(this.transmuxer_),
+          this.transmuxer_ && Eu(this.transmuxer_),
             (this.mediaIndex = null),
             (this.partIndex = null),
             (this.syncPoint_ = null),
@@ -64186,7 +64746,7 @@ window.addEventListener("load", function (e) {
         (t.chooseNextRequest_ = function () {
           var e = this.buffered_(),
             t = zo(e) || 0,
-            n = qo(e, this.currentTime_()),
+            n = Ho(e, this.currentTime_()),
             i = !this.hasPlayed_() && 1 <= n,
             r = n >= this.goalBufferLength_(),
             e = this.playlist_.segments;
@@ -64416,7 +64976,7 @@ window.addEventListener("load", function (e) {
                     r.playlist.uri === this.playlist_.uri ||
                     p < (e <= bu ? 1 : 0.5) ||
                     ((this.bandwidth =
-                      r.playlist.attributes.BANDWIDTH * M.BANDWIDTH_VARIANCE +
+                      r.playlist.attributes.BANDWIDTH * j.BANDWIDTH_VARIANCE +
                       1),
                     this.trigger("earlyabort"))))));
         }),
@@ -64759,12 +65319,12 @@ window.addEventListener("load", function (e) {
           1 < s.length &&
             this.logger_(
               "On QUOTA_EXCEEDED_ERR, found gaps in the audio buffer: " +
-                Ho(s).join(", ")
+                qo(s).join(", ")
             ),
             1 < o.length &&
               this.logger_(
                 "On QUOTA_EXCEEDED_ERR, found gaps in the video buffer: " +
-                  Ho(o).join(", ")
+                  qo(o).join(", ")
               );
           var l = s.length ? s.start(0) : 0,
             u = s.length ? s.end(s.length - 1) : 0,
@@ -64776,9 +65336,9 @@ window.addEventListener("load", function (e) {
                 "On QUOTA_EXCEEDED_ERR, single segment too large to append to buffer, triggering an error. Appended byte length: " +
                   a.byteLength +
                   ", audio buffer: " +
-                  Ho(s).join(", ") +
+                  qo(s).join(", ") +
                   ", video buffer: " +
-                  Ho(o).join(", ") +
+                  qo(o).join(", ") +
                   ", "
               ),
               this.error({
@@ -64992,7 +65552,7 @@ window.addEventListener("load", function (e) {
               ((t = this.seekable_()),
               (n = this.currentTime_()),
               (i = this.playlist_.targetDuration || 10),
-              (r = n - M.BACK_BUFFER_LENGTH),
+              (r = n - j.BACK_BUFFER_LENGTH),
               t.length && (r = Math.max(r, t.start(0))),
               Math.min(n - i, r));
           0 < r && this.remove(0, r);
@@ -65429,7 +65989,7 @@ window.addEventListener("load", function (e) {
   function Gu(e, t) {
     return e && t && -1 !== Array.prototype.indexOf.call(e.sourceBuffers, t);
   }
-  function Hu(e) {
+  function qu(e) {
     var t = e.type,
       n = e.sourceUpdater,
       i = e.action,
@@ -65447,7 +66007,7 @@ window.addEventListener("load", function (e) {
         Vu(n, i);
     };
   }
-  function qu(e) {
+  function Hu(e) {
     return decodeURIComponent(escape(String.fromCharCode.apply(null, e)));
   }
   function Wu(e, t) {
@@ -65812,7 +66372,7 @@ window.addEventListener("load", function (e) {
     oc = function (i, r) {
       return function (e) {
         var t = Bu(i),
-          n = Or(r);
+          n = Sr(r);
         e.logger_("Adding " + i + "Buffer with codec " + r + " to mediaSource");
         n = e.mediaSource.addSourceBuffer(n);
         n.addEventListener("updateend", e["on" + t + "UpdateEnd_"]),
@@ -65843,7 +66403,7 @@ window.addEventListener("load", function (e) {
     uc = function (r) {
       return function (e, t) {
         var n = t[e + "Buffer"],
-          i = Or(r);
+          i = Sr(r);
         Gu(t.mediaSource, n) &&
           t.codecs[e] !== r &&
           (t.logger_(
@@ -65912,7 +66472,7 @@ window.addEventListener("load", function (e) {
             ((this.triggeredReady_ = !0), this.trigger("ready"));
         }),
         (t.addSourceBuffer = function (e, t) {
-          Hu({
+          qu({
             type: "mediaSource",
             sourceUpdater: this,
             action: oc(e, t),
@@ -65920,11 +66480,11 @@ window.addEventListener("load", function (e) {
           });
         }),
         (t.abort = function (e) {
-          Hu({ type: e, sourceUpdater: this, action: sc(e), name: "abort" });
+          qu({ type: e, sourceUpdater: this, action: sc(e), name: "abort" });
         }),
         (t.removeSourceBuffer = function (e) {
           this.canRemoveSourceBuffer()
-            ? Hu({
+            ? qu({
                 type: "mediaSource",
                 sourceUpdater: this,
                 action: lc(e),
@@ -65953,7 +66513,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.changeType = function (e, t) {
           this.canChangeType()
-            ? Hu({
+            ? qu({
                 type: e,
                 sourceUpdater: this,
                 action: uc(t),
@@ -65988,7 +66548,7 @@ window.addEventListener("load", function (e) {
                 "delayed audio append of " + a.length + " until video append"
               )
             );
-          Hu({
+          qu({
             type: r,
             sourceUpdater: this,
             action: ec(a, i || { mediaIndex: -1 }, t),
@@ -66065,7 +66625,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.setDuration = function (e, t) {
           void 0 === t && (t = Ru),
-            Hu({
+            qu({
               type: "mediaSource",
               sourceUpdater: this,
               action: ac(e),
@@ -66075,7 +66635,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.endOfStream = function (e, t) {
           void 0 === t && (t = Ru),
-            Hu({
+            qu({
               type: "mediaSource",
               sourceUpdater: this,
               action: rc(
@@ -66089,7 +66649,7 @@ window.addEventListener("load", function (e) {
         (t.removeAudio = function (e, t, n) {
           void 0 === n && (n = Ru),
             this.audioBuffered().length && 0 !== this.audioBuffered().end(0)
-              ? Hu({
+              ? qu({
                   type: "audio",
                   sourceUpdater: this,
                   action: tc(e, t),
@@ -66101,7 +66661,7 @@ window.addEventListener("load", function (e) {
         (t.removeVideo = function (e, t, n) {
           void 0 === n && (n = Ru),
             this.videoBuffered().length && 0 !== this.videoBuffered().end(0)
-              ? Hu({
+              ? qu({
                   type: "video",
                   sourceUpdater: this,
                   action: tc(e, t),
@@ -66118,7 +66678,7 @@ window.addEventListener("load", function (e) {
             "undefined" != typeof e &&
               this.audioBuffer &&
               this.audioTimestampOffset_ !== e &&
-              (Hu({
+              (qu({
                 type: "audio",
                 sourceUpdater: this,
                 action: nc(e),
@@ -66133,7 +66693,7 @@ window.addEventListener("load", function (e) {
             "undefined" != typeof e &&
               this.videoBuffer &&
               this.videoTimestampOffset !== e &&
-              (Hu({
+              (qu({
                 type: "video",
                 sourceUpdater: this,
                 action: nc(e),
@@ -66145,7 +66705,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.audioQueueCallback = function (e) {
           this.audioBuffer &&
-            Hu({
+            qu({
               type: "audio",
               sourceUpdater: this,
               action: ic(e),
@@ -66154,7 +66714,7 @@ window.addEventListener("load", function (e) {
         }),
         (t.videoQueueCallback = function (e) {
           this.videoBuffer &&
-            Hu({
+            qu({
               type: "video",
               sourceUpdater: this,
               action: ic(e),
@@ -66425,9 +66985,9 @@ window.addEventListener("load", function (e) {
               w.log.warn("Error encountered when parsing cues: " + e.message);
             }),
             t.segment.map &&
-              ((i = t.segment.map.bytes), e && (i = qu(i)), n.parse(i));
+              ((i = t.segment.map.bytes), e && (i = Hu(i)), n.parse(i));
           var i = t.bytes;
-          e && (i = qu(i)), n.parse(i), n.flush();
+          e && (i = Hu(i)), n.parse(i), n.flush();
         }),
         (t.updateTimeMapping_ = function (e, t, n) {
           var i,
@@ -67417,9 +67977,9 @@ window.addEventListener("load", function (e) {
                   (g.isMasterPlaylist = !0),
                   null)
                 : "vhs-json" === a && g.playlists
-                ? new Su(g.playlists[0], r, o)
+                ? new Ou(g.playlists[0], r, o)
                 : g.resolvedUri
-                ? new Su(g.resolvedUri, r, o)
+                ? new Ou(g.resolvedUri, r, o)
                 : g.playlists && "dash" === a
                 ? new Cu(g.playlists[0], r, o, p)
                 : null,
@@ -67466,7 +68026,7 @@ window.addEventListener("load", function (e) {
             if (!l[e][n][p].forced) {
               var f = l[e][n][p],
                 m = void 0;
-              if ("hls" === a) m = new Su(f.resolvedUri, r, o);
+              if ("hls" === a) m = new Ou(f.resolvedUri, r, o);
               else if ("dash" === a) {
                 if (
                   !f.playlists.filter(function (e) {
@@ -67477,7 +68037,7 @@ window.addEventListener("load", function (e) {
                 m = new Cu(f.playlists[0], r, o, h);
               } else
                 "vhs-json" === a &&
-                  (m = new Su(
+                  (m = new Ou(
                     f.playlists ? f.playlists[0] : f.resolvedUri,
                     r,
                     o
@@ -67569,7 +68129,7 @@ window.addEventListener("load", function (e) {
       "mediaBytesTransferred",
       "mediaAppends",
     ],
-    Sc = (function (v) {
+    Oc = (function (v) {
       function e(e) {
         var t = v.call(this) || this,
           n = e.src,
@@ -67684,7 +68244,7 @@ window.addEventListener("load", function (e) {
           timelineChangeController: t.timelineChangeController_,
           experimentalExactManifestTimings: e.experimentalExactManifestTimings,
         };
-        (t.masterPlaylistLoader_ = new ("dash" === t.sourceType_ ? Cu : Su)(
+        (t.masterPlaylistLoader_ = new ("dash" === t.sourceType_ ? Cu : Ou)(
           n,
           t.vhs_,
           t.requestOptions_
@@ -68024,10 +68584,10 @@ window.addEventListener("load", function (e) {
                       " as current playlist is live llhls, but currentTime isn't in buffered."
                   ),
                   !1);
-            (n = qo(n, i)),
+            (n = Ho(n, i)),
               (i = l
-                ? M.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE
-                : M.MAX_BUFFER_LOW_WATER_LINE);
+                ? j.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE
+                : j.MAX_BUFFER_LOW_WATER_LINE);
             if (o < i)
               return (
                 u(
@@ -68800,26 +69360,26 @@ window.addEventListener("load", function (e) {
         }),
         (t.goalBufferLength = function () {
           var e = this.tech_.currentTime(),
-            t = M.GOAL_BUFFER_LENGTH,
-            n = M.GOAL_BUFFER_LENGTH_RATE,
-            i = Math.max(t, M.MAX_GOAL_BUFFER_LENGTH);
+            t = j.GOAL_BUFFER_LENGTH,
+            n = j.GOAL_BUFFER_LENGTH_RATE,
+            i = Math.max(t, j.MAX_GOAL_BUFFER_LENGTH);
           return Math.min(t + e * n, i);
         }),
         (t.bufferLowWaterLine = function () {
           var e = this.tech_.currentTime(),
-            t = M.BUFFER_LOW_WATER_LINE,
-            n = M.BUFFER_LOW_WATER_LINE_RATE,
-            i = Math.max(t, M.MAX_BUFFER_LOW_WATER_LINE),
-            r = Math.max(t, M.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE);
+            t = j.BUFFER_LOW_WATER_LINE,
+            n = j.BUFFER_LOW_WATER_LINE_RATE,
+            i = Math.max(t, j.MAX_BUFFER_LOW_WATER_LINE),
+            r = Math.max(t, j.EXPERIMENTAL_MAX_BUFFER_LOW_WATER_LINE);
           return Math.min(t + e * n, this.experimentalBufferBasedABR ? r : i);
         }),
         (t.bufferHighWaterLine = function () {
-          return M.BUFFER_HIGH_WATER_LINE;
+          return j.BUFFER_HIGH_WATER_LINE;
         }),
         e
       );
     })(w.EventTarget),
-    Oc = ["seeking", "seeked", "pause", "playing", "error"],
+    Sc = ["seeking", "seeked", "pause", "playing", "error"],
     Ac = (function () {
       function e(e) {
         var n = this;
@@ -68884,14 +69444,14 @@ window.addEventListener("load", function (e) {
           this.tech_.on("seeked", this.clearSeekingAppendCheck_),
           this.tech_.on("seeking", this.watchForBadSeeking_),
           this.tech_.on("waiting", r),
-          this.tech_.on(Oc, a),
+          this.tech_.on(Sc, a),
           this.tech_.on("canplay", i),
           this.tech_.one("play", t),
           (this.dispose = function () {
             n.clearSeekingAppendCheck_(),
               n.logger_("dispose"),
               n.tech_.off("waiting", r),
-              n.tech_.off(Oc, a),
+              n.tech_.off(Sc, a),
               n.tech_.off("canplay", i),
               n.tech_.off("play", t),
               n.tech_.off("seeking", n.watchForBadSeeking_),
@@ -68949,7 +69509,7 @@ window.addEventListener("load", function (e) {
                     " " +
                     e +
                     " appends that did not increase buffer (possible stalled download)",
-                  { playlistId: n.playlist_ && n.playlist_.id, buffered: Ho(i) }
+                  { playlistId: n.playlist_ && n.playlist_.id, buffered: qo(i) }
                 ),
                 this[e + "StalledDownloads_"] < 10 ||
                   (this.logger_(e + " loader stalled download exclusion"),
@@ -69031,7 +69591,7 @@ window.addEventListener("load", function (e) {
             l < o.length;
             l++
           )
-            if (o[l]) if (qo(o[l], n) < s) return !1;
+            if (o[l]) if (Ho(o[l], n) < s) return !1;
           r = Fo(r, n);
           return (
             0 !== r.length &&
@@ -69239,8 +69799,8 @@ window.addEventListener("load", function (e) {
         );
       },
     },
-    j = {
-      PlaylistLoader: Su,
+    M = {
+      PlaylistLoader: Ou,
       Playlist: yu,
       utils: cn,
       STANDARD_PLAYLIST_SELECTOR: fr,
@@ -69301,14 +69861,14 @@ window.addEventListener("load", function (e) {
       },
       xhr: _l(),
     };
-  Object.keys(M).forEach(function (t) {
-    Object.defineProperty(j, t, {
+  Object.keys(j).forEach(function (t) {
+    Object.defineProperty(M, t, {
       get: function () {
         return (
           w.log.warn(
             "using Vhs." + t + " is UNSAFE be sure you know what you are doing"
           ),
-          M[t]
+          j[t]
         );
       },
       set: function (e) {
@@ -69319,7 +69879,7 @@ window.addEventListener("load", function (e) {
             ? w.log.warn(
                 "value of Vhs." + t + " must be greater than or equal to 0"
               )
-            : (M[t] = e);
+            : (j[t] = e);
       },
     });
   });
@@ -69332,12 +69892,12 @@ window.addEventListener("load", function (e) {
     (e.selectedIndex_ = i), e.trigger({ selectedIndex: i, type: "change" });
   }
   var xc = "videojs-vhs";
-  j.canPlaySource = function () {
+  M.canPlaySource = function () {
     return w.log.warn(
       "HLS is no longer a tech. Please remove it from your player's techOrder."
     );
   };
-  function Ec(e) {
+  function Ic(e) {
     var i = e.player,
       t = e.sourceKeySystems,
       n = e.audioMedia,
@@ -69375,7 +69935,7 @@ window.addEventListener("load", function (e) {
       Promise.race([Promise.all(a), Promise.race(s)])
     );
   }
-  function Ic(e) {
+  function Ec(e) {
     var t = e.player;
     return (
       !!(e = (function (e, t, n) {
@@ -69390,8 +69950,8 @@ window.addEventListener("load", function (e) {
             n.attributes.CODECS &&
             (i.audio = n.attributes.CODECS);
         var r,
-          a = Or(i.video),
-          s = Or(i.audio),
+          a = Sr(i.video),
+          s = Sr(i.audio),
           o = {};
         for (r in e)
           (o[r] = {}),
@@ -69421,7 +69981,7 @@ window.addEventListener("load", function (e) {
       return null;
     }
   }
-  (j.supportsNativeHls = (function () {
+  (M.supportsNativeHls = (function () {
     if (!document || !document.createElement) return !1;
     var t = document.createElement("video");
     if (!w.getTech("Html5").isSupported()) return !1;
@@ -69437,7 +69997,7 @@ window.addEventListener("load", function (e) {
       return /maybe|probably/i.test(t.canPlayType(e));
     });
   })()),
-    (j.supportsNativeDash =
+    (M.supportsNativeDash =
       !!(
         document &&
         document.createElement &&
@@ -69446,12 +70006,12 @@ window.addEventListener("load", function (e) {
       /maybe|probably/i.test(
         document.createElement("video").canPlayType("application/dash+xml")
       )),
-    (j.supportsTypeNatively = function (e) {
+    (M.supportsTypeNatively = function (e) {
       return "hls" === e
-        ? j.supportsNativeHls
-        : "dash" === e && j.supportsNativeDash;
+        ? M.supportsNativeHls
+        : "dash" === e && M.supportsNativeDash;
     }),
-    (j.isSupported = function () {
+    (M.isSupported = function () {
       return w.log.warn(
         "HLS is no longer a tech. Please remove it from your player's techOrder."
       );
@@ -69616,10 +70176,10 @@ window.addEventListener("load", function (e) {
                   name: "hls-throughput-from-local-storage",
                 }))),
             "number" != typeof this.options_.bandwidth &&
-              (this.options_.bandwidth = M.INITIAL_BANDWIDTH),
+              (this.options_.bandwidth = j.INITIAL_BANDWIDTH),
             (this.options_.enableLowInitialPlaylist =
               this.options_.enableLowInitialPlaylist &&
-              this.options_.bandwidth === M.INITIAL_BANDWIDTH),
+              this.options_.bandwidth === j.INITIAL_BANDWIDTH),
             [
               "withCredentials",
               "useDevicePixelRatio",
@@ -69659,7 +70219,7 @@ window.addEventListener("load", function (e) {
                 ? JSON.parse(e.substring(e.indexOf(",") + 1))
                 : e),
             (this.options_.tech = this.tech_),
-            (this.options_.externVhs = j),
+            (this.options_.externVhs = M),
             (this.options_.sourceType = Cr(t)),
             (this.options_.seekTo = function (e) {
               i.tech_.setCurrentTime(e);
@@ -69668,7 +70228,7 @@ window.addEventListener("load", function (e) {
               w.log.warn(
                 "smoothQualityChange is deprecated and will be removed in the next major version"
               ),
-            (this.masterPlaylistController_ = new Sc(this.options_)),
+            (this.masterPlaylistController_ = new Oc(this.options_)),
             (t = w.mergeOptions(
               { liveRangeSafeTimeDelta: 0.1 },
               this.options_,
@@ -69692,13 +70252,13 @@ window.addEventListener("load", function (e) {
                 e.error(t);
             }),
             (t = this.options_.experimentalBufferBasedABR
-              ? j.movingAverageBandwidthSelector(0.55)
-              : j.STANDARD_PLAYLIST_SELECTOR),
+              ? M.movingAverageBandwidthSelector(0.55)
+              : M.STANDARD_PLAYLIST_SELECTOR),
             (this.masterPlaylistController_.selectPlaylist = (
               this.selectPlaylist || t
             ).bind(this)),
             (this.masterPlaylistController_.selectInitialPlaylist =
-              j.INITIAL_PLAYLIST_SELECTOR.bind(this)),
+              M.INITIAL_PLAYLIST_SELECTOR.bind(this)),
             (this.playlists =
               this.masterPlaylistController_.masterPlaylistLoader_),
             (this.mediaSource = this.masterPlaylistController_.mediaSource),
@@ -69857,7 +70417,7 @@ window.addEventListener("load", function (e) {
               },
               buffered: {
                 get: function () {
-                  return Ho(i.tech_.buffered());
+                  return qo(i.tech_.buffered());
                 },
                 enumerable: !0,
               },
@@ -69899,7 +70459,7 @@ window.addEventListener("load", function (e) {
               },
               seekable: {
                 get: function () {
-                  return Ho(i.tech_.seekable());
+                  return qo(i.tech_.seekable());
                 },
                 enumerable: !0,
               },
@@ -69983,7 +70543,7 @@ window.addEventListener("load", function (e) {
               this.masterPlaylistController_.mediaTypes_.AUDIO
                 .activePlaylistLoader;
           this.logger_("waiting for EME key session creation"),
-            Ec({
+            Ic({
               player: this.player_,
               sourceKeySystems: this.source_.keySystems,
               audioMedia: e && e.media(),
@@ -70012,7 +70572,7 @@ window.addEventListener("load", function (e) {
             e =
               this.masterPlaylistController_.mediaTypes_.AUDIO
                 .activePlaylistLoader,
-            e = Ic({
+            e = Ec({
               player: this.player_,
               sourceKeySystems: this.source_.keySystems,
               media: this.playlists.media(),
@@ -70116,7 +70676,7 @@ window.addEventListener("load", function (e) {
             r.prototype.dispose.call(this);
         }),
         (t.convertToProgramTime = function (e, t) {
-          return El({
+          return Il({
             playlist: this.masterPlaylistController_.media(),
             time: e,
             callback: t,
@@ -70126,7 +70686,7 @@ window.addEventListener("load", function (e) {
           return (
             void 0 === n && (n = !0),
             void 0 === i && (i = 2),
-            Il({
+            El({
               programTime: e,
               playlist: this.masterPlaylistController_.media(),
               retryCount: i,
@@ -70177,7 +70737,7 @@ window.addEventListener("load", function (e) {
           n = (n = void 0 === n ? {} : n).overrideNative,
           n = void 0 !== n && n,
           e = Cr(e);
-        return e && (!j.supportsTypeNatively(e) || n || t) ? "maybe" : "";
+        return e && (!M.supportsTypeNatively(e) || n || t) ? "maybe" : "";
       },
     };
   return (
@@ -70207,16 +70767,16 @@ window.addEventListener("load", function (e) {
       },
       configurable: !0,
     }),
-    (w.Vhs = j),
+    (w.Vhs = M),
     Object.defineProperty(w, "Hls", {
       get: function () {
         return (
-          w.log.warn("videojs.Hls is deprecated. Use videojs.Vhs instead."), j
+          w.log.warn("videojs.Hls is deprecated. Use videojs.Vhs instead."), M
         );
       },
       configurable: !0,
     }),
-    w.use || (w.registerComponent("Hls", j), w.registerComponent("Vhs", j)),
+    w.use || (w.registerComponent("Hls", M), w.registerComponent("Vhs", M)),
     (w.options.vhs = w.options.vhs || {}),
     (w.options.hls = w.options.hls || {}),
     (w.getPlugin && w.getPlugin("reloadSourceOnError")) ||

@@ -11,6 +11,17 @@ if (currentURL.includes("works")) {
 var bodyElement = document.body;
 bodyElement.setAttribute("context", pageContext);
 
+function textureOffset() {
+  if (mq1.matches) {
+    CABLES.patch.setVariable("imageTextureOffset", [0, -0.15]);
+  }
+  if (mq2.matches) {
+    CABLES.patch.setVariable("imageTextureOffset", [0, -0.4]);
+  }
+  if (mq3.matches) {
+    CABLES.patch.setVariable("imageTextureOffset", [0, 0]);
+  }
+}
 //initialize Patch
 
 function showError(errId, errMsg) {}
@@ -66,11 +77,14 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       videoPlay: isPlaying,
       videoMuted: 1,
       indexPSR_mq3: [0.5, -0.5, 0, 3.2, -40, -20, 50],
+      indexPSR_mq1: [0, 5, -2, 10, -40, 0, 0],
       indexWorkPSR_mq3: [0.5, 0, 0, 5, 180, 50, 30],
       indexAboutPSR_mq3: [-0.5, 0, 0, 4, 250, 50, 50],
       // WorkPage
       workPSR_mq3: [-1, -1, 0, 10, 90, 0, 0],
+      workPSR_mq2: [0.5, 6, 0, 12, 200, -64, 0],
       workPSR_mq1: [-3.52, -1.67, 0, 15, 330, 0, -8.45],
+      imageTextureWrap: 0,
     },
     patch: CABLES.exportedPatch,
     prefixAssetPath: path,
@@ -106,6 +120,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       CABLES.patch.setVariable("videoMuted", 0);
       // console.log(isPlaying);
     });
+    textureOffset();
   }
   if (pageContext == "index") {
     CABLES.patch.setVariable("videoPlay", 0);
