@@ -22,13 +22,34 @@ function textureOffset() {
     CABLES.patch.setVariable("imageTextureOffset", [0, 0]);
   }
 }
+
 //initialize Patch
 
 function showError(errId, errMsg) {}
 
-function patchInitialized(patch) {}
+let initCount = 0;
+let hasInitialized = false;
+
+function patchInitialized(patch) {
+  if (hasInitialized) {
+    //console.log("Skipping repeated initialization");
+    return;
+  }
+
+  initCount++;
+  // console.log(`Patch Initialized - Attempt: ${initCount}`, {
+  //   timestamp: new Date().toISOString(),
+  // });
+
+  // Mark as initialized
+  hasInitialized = true;
+
+  // Your actual initialization logic here
+  // ...
+}
 
 function patchFinishedLoading(patch) {
+  console.log("Loaded");
   const videoPlay = CABLES.patch.getVar("playerStatus");
   const videoFullscreen = CABLES.patch.getVar("videoFullscreen");
   const videoMuted = CABLES.patch.getVar("videoMuted");
@@ -76,15 +97,18 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       aboutScroll: 0,
       videoPlay: isPlaying,
       videoMuted: 1,
-      indexPSR_mq3: [0.5, -0.5, 0, 3.2, -40, -20, 50],
+      mainColorHex: "#141414",
+      indexPSR_mq3: [0.5, -0.5, 0, 10, 0, -20, 10],
+      indexPSR_mq2: [0, 5, -2, 10, -40, 0, 0],
       indexPSR_mq1: [0, 5, -2, 10, -40, 0, 0],
       indexWorkPSR_mq3: [0.5, 0, 0, 5, 180, 50, 30],
-      indexAboutPSR_mq3: [-0.5, 0, 0, 4, 250, 50, 50],
+      indexAboutPSR_mq3: [-0.5, 0, 0, 5, 250, 50, 50],
       // WorkPage
       workPSR_mq3: [-1, -1, 0, 10, 90, 0, 0],
       workPSR_mq2: [0.5, 6, 0, 12, 200, -64, 0],
       workPSR_mq1: [-3.52, -1.67, 0, 15, 330, 0, -8.45],
       imageTextureWrap: 0,
+      moveAutoSpeed: 0.5,
     },
     patch: CABLES.exportedPatch,
     prefixAssetPath: path,

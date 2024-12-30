@@ -1,6 +1,26 @@
-window.addEventListener("load", function () {
+// General Animations
+
+$("a.tint").on("click", function (e) {
+  e.preventDefault();
+  var destination = $(this).attr("href");
+
+  let tl = new TimelineMax({
+    onComplete: function () {
+      window.location = destination;
+    },
+  });
+
+  tl.to("body", { opacity: 0 });
+});
+var timeline = new TimelineMax();
+
+function patchFinishedLoading(patch) {
   if (pageContext == "index") {
     // ScrollforCables
+    timeline
+      .from("body", 1, { opacity: 0 }, 0.5)
+      .from("#text1", 1, { x: -25, autoAlpha: 0 }, 0.8)
+      .from("#canvasMask3", 1, { x: -25 }, 1);
 
     ScrollTrigger.create({
       start: "top 50%",
@@ -25,22 +45,31 @@ window.addEventListener("load", function () {
         end: "top 0%",
       },
     });
-    const tl1_mq1 = gsap.timeline({
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 1,
+        trigger: "#about",
+        start: "top bottom",
+        end: "top 30%",
+      },
+    });
+
+    const tl3 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 1,
+        trigger: "#linksWrapper",
+        start: "top bottom",
+        end: "bottom 90%",
+      },
+    });
+
+    const tl4 = gsap.timeline({
       scrollTrigger: {
         scrub: 1,
         trigger: "#workList",
         start: "top bottom", // Starts when top of workList hits bottom of viewport
         end: "top 60px", // Ends when top of workList hits top of viewport
-      },
-    });
-
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        scrub: 1,
-        trigger: "#workList",
-        start: "bottom 0%",
-        endTrigger: "#about",
-        end: "bottom 0%",
       },
     });
 
@@ -53,72 +82,91 @@ window.addEventListener("load", function () {
         tl1.to("#deco1", { opacity: 0 }, "<"),
         tl1.to("#deco2", { opacity: 0 }, "<"),
         tl1.to("#deco3", { opacity: 0 }, "<"),
-        tl1.to("#canvasMask3", { translateY: "-50vh" }, "<");
+        tl1.to("#canvasMask3", { height: "65px", left: 0 }, "<"),
+        tl1.to("#backgroundMask2", { translateY: "-100vh" }, "<"),
+        tl1.to("#decoText1", { translateY: "-50vh" }, "<");
 
       tl2.to("#about", { opacity: 1 }),
-        // tl2.to("#image", { opacity: 1, left: "-30px" }, "<"),
-        tl2.to("#backgroundMask1", { height: "60vh" }, "<"),
-        tl2.to("#linksabout a", { opacity: 1, stagger: 0.2 }, "<50%"),
-        //    Snapping
+        tl2.to("#backgroundMask1", { height: "50vh" }, "<"),
+        tl2.to("#backgroundMask3", { height: "100vh" }, "<30%");
 
-        ScrollTrigger.create({
-          onEnter: () => {
-            //   console.log("onEnter");
-            CABLES.patch.setVariable("stringTexture", "works");
-            CABLES.patch.setVariable("mainColor", "works");
+      tl3.fromTo(
+        "#curriculum",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl3.to(".videojs-about", {
+          keyframes: {
+            opacity: [0, 1, 0, 1, 0, 0, 1, 0, 1],
+            ease: "none", // ease the entire keyframe block
           },
-          onLeave: () => {
-            //   console.log("onLeave");
-            // gsap.to(window, { scrollTo: "#about", duration: 2 });
-            CABLES.patch.setVariable("stringTexture", "about");
-          },
-          onEnterBack: () => {
-            CABLES.patch.setVariable("stringTexture", "works");
-          },
-          onLeaveBack: () => {
-            CABLES.patch.setVariable("stringTexture", "mediaDesign");
-            //   console.log("onLeaveBack");
-            // gsap.to(window, { scrollTo: "#void", duration: 2 });
-            // CABLES.patch.setVariable("stringTexture", "media design");
-          },
-          start: "top 90%",
-          end: "bottom bottom",
-          trigger: "#workList",
+          duration: 0.5,
         });
 
-      // ScrollTrigger.create({
-      //   onLeave: () => {
-      //     gsap.to(window, { scrollTo: "#workList", duration: 2 });
-      //   },
-      //   // markers: true,
-      //   start: "top top",
-      //   end: "bottom 70%",
-      //   trigger: "#void",
-      // });
+      tl3.fromTo(
+        "#textContact",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl3.fromTo(
+          "#deco4",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<50%"
+        ),
+        tl3.fromTo(
+          "#deco5",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<80%"
+        );
     }
 
     //// mq2
 
     if (mq2.matches || mq1.matches) {
-      tl1_mq1
-        .to("#logo", { translateY: "-50vh" })
-        .to("#logoPlayer", { scale: "0.75" }, "<") // starts with logo
-        .from(
-          "#text1",
-          {
-            translateY: "0",
-            opacity: 1,
+      tl4.to("#logo", { translateY: "-50vh" }),
+        tl4.to("#decoText1", { opacity: 0 }, "<"),
+        tl4.to("#text1", { opacity: 0, translateY: "-50vh" }, "<"),
+        tl4.to("#logoPlayer", { scale: "0.75" }, "<"),
+        tl4.to("#backgroundMask1", { height: 0 }, "<");
+
+      tl3.fromTo(
+        "#curriculum",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl3.to(".videojs-about", {
+          keyframes: {
+            opacity: [0, 1, 0, 1, 0, 0, 1, 0, 1],
+            ease: "none", // ease the entire keyframe block
           },
-          "<"
-        ) // start with the others
-        .to(
-          "#text1",
-          {
-            opacity: 0,
-            // duration: 0.2,
-          },
-          "<"
+          duration: 0.5,
+        });
+
+      tl3.fromTo(
+        "#textContact",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl3.fromTo(
+          "#deco4",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<50%"
+        ),
+        tl3.fromTo(
+          "#deco5",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<80%"
         );
+
+      tl2.fromTo("#backgroundMask2", { top: "100vh" }, { top: "0vh" }, "<");
     }
 
     // FadeIn work Elements
@@ -156,9 +204,14 @@ window.addEventListener("load", function () {
       observer.observe(item);
     });
   }
-});
-
+}
 if (pageContext == "works") {
+  timeline
+    .from("body", 1, { opacity: 0 }, 1)
+    .from("#logo", 1, { autoAlpha: 0 }, 1.2)
+    .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
+    .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
+
   if (mq3.matches) {
     // const galleryVoidElement = document.querySelector(".galleryVoid");
     // // Scroll to the position of the galleryVoidElement
@@ -170,4 +223,22 @@ if (pageContext == "works") {
     //   },
     // });
   }
+}
+if (pageContext == "index") {
+  let currentIndex = 1;
+  const workFields = Array.from(
+    document.getElementById("workFields").getElementsByTagName("li")
+  ).map((li) => li.textContent);
+  const decoText = document.getElementById("decoText1");
+  decoText.textContent = workFields[0];
+
+  setInterval(() => {
+    if (isElementVisible("#header") == true) {
+      decoText.textContent = workFields[currentIndex];
+      CABLES.patch.setVariable("stringTexture", workFields[currentIndex]);
+    }
+
+    // Move to next index, loop back to 0 when reaching the end
+    currentIndex = (currentIndex + 1) % workFields.length;
+  }, 5000); // 5000 milliseconds = 5 seconds
 }

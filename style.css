@@ -1,10 +1,12 @@
 :root {
   --bck0: #ffffff;
   --bck1: rgb(237, 237, 237);
-  --bck2: #f2f5fa;
+  --bck2: #f7f7f7;
   --black: #141414;
   --blue: rgb(0, 0, 256);
   --textSize0: 12px;
+  --textSize1: 14px;
+  --textSize2: 16px;
   --fLight: 100;
   --fRegular: 400;
   --fBold: 600;
@@ -19,6 +21,7 @@
   --mainHeight: calc(100vh - 110px);
   --mainWidth: calc(100vw - ((var(--mainMargin) * 2) + var(--mainPadding)));
   --mainWidthMq2: calc(100vw - 56px);
+  --headerTextOffset: 50px;
 }
 
 * {
@@ -37,6 +40,7 @@ body {
   margin: 0;
   background-color: var(--bck0);
   color: #fff;
+  opacity: 1;
   /* disable scrolling / rubberband effect on mobile */
   height: 100vh;
   overflow-x: hidden;
@@ -53,10 +57,14 @@ ol {
   padding-left: 24px;
 }
 .navbar {
-  height: 65px;
+  height: var(--headerHeight);
+  mix-blend-mode: multiply;
 }
 .navbar > div {
   height: 65px;
+}
+.nav-link {
+  padding: 0px 8px 10px;
 }
 #glcanvas {
   display: block;
@@ -81,12 +89,42 @@ ol {
   left: calc(((var(--mainWidth) / 6) * 2));
   bottom: 0;
 }
+
+#backgroundMask2 {
+  position: absolute;
+  left: 0px;
+  /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+  right: calc(
+    (((var(--mainWidth) / 6) * 4) + var(--mainMargin)) - var(--headerTextOffset)
+  );
+  top: 0px;
+  bottom: 0px;
+}
+[context="works"] #backgroundMask2 {
+  height: 100vh;
+  width: calc(((var(--mainWidth) / 6) * 2));
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+#backgroundMask3 {
+  height: 0vh;
+  right: 0;
+  left: calc(((var(--mainWidth) / 6) * 3));
+  bottom: 0;
+}
 #canvasMask1 {
   height: 100vh;
   left: calc((var(--mainWidth) / 6) + var(--mainMargin) + var(--mainPadding));
   /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
   right: calc(var(--mainMargin));
   position: absolute;
+}
+[context="works"] #canvasMask1 {
+  height: 100px;
+  left: 0;
+  width: calc((var(--mainWidth) / 6) + var(--mainMargin) + var(--mainPadding));
+  position: fixed;
 }
 #canvasMask2 {
   position: fixed;
@@ -104,6 +142,16 @@ ol {
 }
 #canvasMask4 {
   position: fixed;
+  top: 0;
+  width: calc(
+    (var(--mainWidth) / 6) + var(--mainPadding) + var(--headerTextOffset)
+  );
+  left: calc(
+    (var(--mainWidth) / 6) + var(--mainPadding) - var(--headerTextOffset)
+  );
+}
+[context="works"] #canvasMask4 {
+  position: fixed;
   height: 65vh;
   width: calc((var(--mainWidth) / 6) + var(--mainPadding));
   left: calc((var(--mainWidth) / 6) + var(--mainPadding));
@@ -115,9 +163,11 @@ ol {
     ((var(--mainWidth) / 6) * 2) + var(--mainMargin) + var(--mainPadding)
   );
   /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
-  right: 0px;
+  right: var(--mainMargin);
+
   top: -2px;
 }
+
 .srcshape {
   position: fixed;
   top: 0;
@@ -154,6 +204,12 @@ ol {
   z-index: 1001 !important;
   filter: brightness(0);
   height: var(--headerHeight);
+  left: calc((var(--mainPadding)) + var(--mainMargin));
+}
+
+#logo #logoPlayer {
+  transform: scale(0.8);
+  transform-origin: center left;
 }
 
 #logo a {
@@ -173,6 +229,15 @@ nav a {
 
 .w-nav-link.w--current {
   color: var(--bck0);
+}
+.w-nav-link.highlight {
+  color: var(--black);
+  font-weight: var(--fRegular);
+  text-decoration: underline;
+}
+
+.vjs-loading-spinner {
+  display: none !important;
 }
 
 @keyframes scrollTextAnim {
@@ -202,12 +267,8 @@ nav a {
 
 [context="index"] #void {
   height: 100vh;
-  margin-bottom: 50px;
 }
 
-[context="index"] #work {
-  min-height: 110vh;
-}
 [context="index"] #about {
   mix-blend-mode: multiply;
 }
@@ -219,8 +280,18 @@ nav a {
 [context="index"] #header {
   height: 110vh;
   position: relative;
-  z-index: 4;
+  z-index: 5;
   mix-blend-mode: multiply;
+  pointer-events: none;
+}
+[context="works"] #header {
+  position: relative;
+  z-index: 5;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+[context="index"] #header #workFields {
+  display: none;
 }
 [context="index"] #workList .w-dyn-items,
 [context="index"] #aboutList .w-dyn-item {
@@ -236,7 +307,38 @@ nav a {
   height: 100%;
   color: var(--black);
 }
+[context="index"] .w-richtext ul[role="list"] > li {
+  font-weight: 800;
+  list-style: none;
+  font-size: 14px;
+}
+[context="works"] .w-richtext ul[role="list"] > li {
+  font-weight: var(--fBold);
+  list-style-image: url("https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/677187a0d82d856d66f04fe4_bullet1.svg");
+  font-size: var(--textSize1);
+}
+[context="index"] .w-richtext ul[role="list"] {
+  margin-top: 8px;
+}
+[context="works"] .w-richtext ul[role="list"] {
+  margin-bottom: 0px;
+}
+[context="index"] .w-richtext ul[role="list"] > li > ul > li {
+  font-weight: 600;
+  list-style-image: url("https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/677187a0d82d856d66f04fe4_bullet1.svg");
+  font-size: 14px;
+}
+[context="works"] .w-richtext ul[role="list"] > li > ul > li {
+  font-weight: var(--fLight);
+  font-size: var(--textSize0);
+  list-style-image: url("https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/677187a04c587e02fd7dfa86_bullet2.svg");
+}
 
+[context="index"] .w-richtext ul[role="list"] > li > ul > li > ul > li {
+  font-weight: var(--fLight);
+  font-size: var(--textSize0);
+  list-style-image: url("https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/677187a04c587e02fd7dfa86_bullet2.svg");
+}
 [context="index"] #curriculum {
   grid-column: 4 / 6; /* Start at 4, end before 6 (so 4 and 5) */
   grid-row: 1;
@@ -244,21 +346,42 @@ nav a {
 [context="index"] #curriculum .w-richtext {
   position: relative;
   top: 150px;
+  left: 25px;
 }
 [context="index"] #links {
-  grid-column: 5 / 7;
+  grid-column: 6;
   grid-row: 1;
-  padding-right: 260px;
+  position: relative;
+  left: 100px;
 }
 [context="index"] #links #linksWrapper {
   position: relative;
-  top: 60vh;
+  top: 80vh;
+  font-weight: 200;
+}
+[context="index"] #links #textContact {
+  align-items: flex-end;
+  font-size: 12px;
+  position: relative;
+  right: 201px;
+  bottom: 20px;
 }
 [context="index"] #links #linksContact {
   display: flex;
   flex-direction: column;
   color: var(--black);
-  align-items: flex-end;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+}
+[context="index"] #about a {
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+[context="index"] #about a:hover {
+  text-decoration: underline;
 }
 
 [context="index"] .collection-list .work {
@@ -282,6 +405,7 @@ nav a {
   object-fit: cover;
   position: relative;
   top: var(--headerHeight);
+  opacity: 0;
 }
 
 [context="index"] .collection-list .work .video .videojs-work video {
@@ -310,19 +434,25 @@ nav a {
 
 [context="index"] #background {
   /* width: var(--mainWidth); */
-  height: var(--mainHeight);
-  background-color: var(--bck1);
+  /* height: var(--mainHeight); */
+  background-color: var(--bck2);
   position: fixed;
   top: 65px;
+  bottom: 0px;
   left: calc(var(--mainMargin) + var(--mainPadding));
   right: var(--mainMargin);
   z-index: 0;
+  transform-origin: center right;
 }
 
 [context="index"] .text-block {
   left: 100px;
   top: 55vh;
   font-size: 12px;
+}
+[context="index"] .deco {
+  z-index: 7;
+  background-color: var(--black);
 }
 
 [context="index"] #deco1 {
@@ -336,27 +466,53 @@ nav a {
   background-color: #a2a2a2;
 }
 
-[context="index"] .deco {
-  z-index: 7;
-}
 [context="index"] #deco2,
 [context="index"] #deco3 {
   position: fixed;
   top: var(--headerHeight);
-  left: 400px;
-  width: 35px;
+  left: calc((var(--mainWidth) / 6) + var(--mainPadding));
+  width: 12px;
   height: 2px;
   background-color: var(--black);
+}
+
+[context="index"] #deco2 {
+  height: 3px;
+  width: 20px;
 }
 
 [context="index"] #deco3 {
   top: 55vh;
 }
+[context="index"] #deco4,
+[context="index"] #deco5 {
+  width: 20px;
+  position: relative;
+  right: 250px;
+}
+[context="index"] #deco4 {
+  height: 4px;
+  bottom: 30px;
+}
+[context="index"] #deco5 {
+  height: 2px;
+}
+
+[context="index"] #decoText1 {
+  position: fixed;
+  top: calc(var(--headerHeight) - 15px);
+  left: calc(var(--mainMargin) + var(--mainPadding));
+  color: var(--black);
+  font-weight: 100;
+  z-index: 10;
+  padding-left: 20px;
+  font-size: 12px;
+}
 
 [context="index"] #text1 {
   z-index: 7;
   position: fixed;
-  width: 400px;
+  width: calc((var(--mainWidth) / 6) + var(--mainPadding));
   top: 55vh;
   left: calc((var(--mainWidth) / 6) + var(--mainPadding));
   margin-top: 25px;
@@ -364,11 +520,12 @@ nav a {
   font-size: var(--textSize0);
   font-family: Twkeverett, sans-serif;
   font-weight: var(--fLight);
+  opacity: 1;
 }
 
 [context="index"] main {
-  mix-blend-mode: multiply;
-  z-index: 5;
+  z-index: 4;
+  min-height: 110vh;
   /* margin: 0 0 500px 0; */
   /* background-color: aqua; */
 }
@@ -482,62 +639,10 @@ nav a {
   height: 100vh;
 }
 
-[context="index"] #about a {
-  color: var(--black);
-  text-decoration: none;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-[context="index"] #about a:hover {
-  text-decoration: underline;
-}
-
 [context="index"] #about #textabout {
   font-size: 20px;
   font-weight: var(--fLight);
   opacity: 0;
-}
-
-[context="index"] #about #linksabout {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 40px;
-}
-[context="index"] #about #linksabout > * {
-  opacity: 0;
-}
-
-[context="index"] #about #linksabout::before {
-  content: "";
-  display: block;
-  width: 32px;
-  height: 4px;
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-[context="index"] #about #deco4 {
-  background-color: var(--bck1);
-  height: 2px;
-  display: flex;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-[context="index"] #about #deco5 {
-  background-color: var(--bck1);
-  grid-area: 1/7;
-  width: 100%;
-  aspect-ratio: 1/1;
-  align-self: flex-end;
-  position: relative;
-  bottom: 100px;
-  right: -30px;
-  z-index: 0;
 }
 
 /* workPage */
@@ -567,9 +672,17 @@ nav a {
   z-index: 6;
 }
 [context="works"] .infowrapper {
-  background-color: var(--bck1);
+  background-color: transparent;
   padding-top: var(--headerHeight);
-  padding-bottom: 65px;
+}
+[context="works"] .infowrapper .w-richtext {
+  padding-bottom: 20px;
+}
+[context="works"] #col2 .infowrapper .w-richtext {
+  padding: 40px 20px 20px 20px;
+}
+[context="works"] #col1 .infowrapper {
+  padding-left: 50px;
 }
 
 [context="works"] .infoheader {
@@ -584,11 +697,6 @@ nav a {
   position: fixed;
   left: 0px;
   width: calc((var(--mainWidth) / 6) + var(--mainPadding) + var(--mainMargin));
-}
-
-[context="works"] #col1 .infowrapper {
-  margin-left: calc(var(--mainPadding) * -1);
-  padding-left: var(--mainPadding);
 }
 
 [context="works"] main #col2 {
@@ -616,7 +724,7 @@ nav a {
   background-color: var(--bck1);
   position: fixed;
   top: var(--headerHeight);
-  left: var(--mainMargin);
+  left: calc(var(--mainMargin) + var(--mainPadding));
   right: 0px;
   bottom: 0px;
   z-index: 0;
@@ -631,58 +739,24 @@ nav a {
   filter: grayscale(100%);
 }
 
-[context="works"] main h1 {
-  position: relative;
-  padding: 0 0 0 0;
-  grid-area: 2/1;
-  margin: 10px 0 30px 0;
-}
-
-[context="works"] main h2 {
-  font-weight: 100;
-}
-
 [context="works"] .heading {
-  font-size: var(--textSize0);
+  font-size: var(--textSize1);
   margin: 0;
   margin-top: 10px;
+  margin-left: 26px;
   line-height: 24px;
 }
-
-[context="works"] #col1 *:before {
-  font-size: var(--textSize0);
-  font-weight: var(--fBold);
+[context="works"] #infoList {
+  margin-top: 10px;
+}
+[context="works"] .infowrapper {
+  padding-top: var(--headerHeight);
 }
 
-[context="works"] #workingWith,
-#workingFor,
-#services,
-#tools {
-  font-weight: var(--fLight);
-}
-
-[context="works"] #workingWith::before {
-  content: "Working with: ";
-}
-
-[context="works"] #workingFor::before {
-  content: "Working for: ";
-}
-
-[context="works"] #services::before {
-  margin-bottom: 8px;
-  content: "Jobs developed: ";
-}
-
-[context="works"] #tools::before {
-  margin-bottom: 8px;
-  content: "Tools used: ";
-}
-
-[context="works"] p#description {
+[context="works"] main #description p {
   align-self: flex-end;
   margin: 0;
-  font-size: 12px;
+  font-size: var(--textSize0);
   font-weight: var(--fLight);
 }
 
@@ -711,20 +785,22 @@ nav a {
 [context="works"] main #imageList {
   justify-content: flex-end;
   align-items: center;
-  margin: 0 35px 0 0;
 }
 
 [context="works"] main #imageList li {
   list-style-type: none;
-  font-weight: var(--fLight);
-  margin: 0 0 5px 0;
 }
 [context="works"] main #imageList li a {
-  color: var(--black);
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--bck0);
+  margin: 8px 0;
+  opacity: 0.5;
 }
 [context="works"] main #imageList li.active a {
-  color: var(--bck0);
-  font-weight: var(--fBold);
+  opacity: 1;
+  background-color: var(--black);
 }
 [context="works"] main #imageList li {
   cursor: pointer;
@@ -756,6 +832,10 @@ nav a {
   cursor: pointer;
 }
 
+[context="works"] .backgroundmask {
+  display: none;
+}
+
 #playerControls {
   /* Add your positioning styles */
   transition: opacity 0.3s ease;
@@ -766,6 +846,7 @@ nav a {
   opacity: 0;
 }
 
+/* Tablet */
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
   body {
     font-size: var(--textSize0);
@@ -775,8 +856,18 @@ nav a {
   [context="index"] #canvasMask1 {
     left: calc(var(--mainMargin) + var(--mainPadding));
   }
+
+  [context="index"] #backgroundMask1 {
+    height: 45vh;
+    left: 0;
+    right: 0;
+  }
+  [context="index"] backgroundMask3 {
+    display: none;
+  }
   [context="index"] #canvasMask4 {
-    width: calc((var(--mainWidth)) + var(--mainPadding));
+    width: calc((var(--mainWidth) / 3) * 2 + var(--mainPadding));
+    height: 100vh;
   }
 
   [context="index"] #workList .w-dyn-items,
@@ -824,17 +915,47 @@ nav a {
     padding: 0 8px;
     color: var(--black);
   }
-  [context="works"] #logo {
-    left: calc((var(--mainPadding)) + var(--mainMargin));
+  #logo {
+    left: calc((var(--mainPadding)) + var(--mainMargin)) !important;
   }
-  [context="works"] #logo #logoPlayer {
-    transform: scale(0.8);
-    transform-origin: center left;
+  [context="index"] #text1 {
+    width: calc((var(--mainWidth) / 3) + var(--mainPadding));
+    left: 20vw;
+  }
+  [context="index"] #decoText1 {
+    top: calc(var(--headerHeight) + 20px);
   }
   [context="works"] div#deco2 {
     left: 5px;
     top: 5px;
     padding: unset !important;
+  }
+  [context="index"] #deco2,
+  [context="index"] #deco3 {
+  }
+  [context="index"] main .work {
+    filter: grayscale(1) brightness(0.8) contrast(2);
+  }
+  [context="index"] main .work .description {
+    display: flex;
+    position: absolute;
+    color: var(--black);
+    font-weight: 200;
+    padding-left: var(--mainPadding);
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    opacity: 0;
+  }
+
+  [context="index"] .w-dyn-item #image {
+    grid-area: 1/1;
+  }
+  [context="index"] #curriculum {
+    grid-area: 1/2;
+  }
+  [context="index"] #links {
+    grid-area: 1/3;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 700px) {
@@ -861,11 +982,17 @@ nav a {
   [context="index"] #work {
     mix-blend-mode: unset;
   }
+  [context="index"] main .work {
+    opacity: 1;
+  }
 
   [context="index"] #canvasMask1,
   [context="index"] #canvasMask4 {
     left: var(--q1Margin);
     right: var(--q1Margin);
+  }
+  #backgroundMask1 {
+    height: 45vh;
   }
   [context="index"] #canvasMask4 {
     width: unset;
@@ -873,17 +1000,7 @@ nav a {
   [context="index"] main .work {
     margin: 0 0 30vh 0;
   }
-  /* [context="index"] main .work {
-  } */
-  .visibleImage {
-    filter: grayscale(0) contrast(1) !important;
-  }
-  .visibleTitle {
-    opacity: 1 !important;
-  }
-  .visibleDescription {
-    opacity: 1 !important;
-  }
+
   [context="index"] main .work .description,
   [context="index"] main .work .title,
   [context="index"] main .work .image {
@@ -997,6 +1114,16 @@ nav a {
     padding: 0 8px;
     color: var(--black);
   }
+}
+
+.visibleImage {
+  filter: grayscale(0) contrast(1) !important;
+}
+.visibleTitle {
+  opacity: 1 !important;
+}
+.visibleDescription {
+  opacity: 1 !important;
 }
 
 /* animations */
