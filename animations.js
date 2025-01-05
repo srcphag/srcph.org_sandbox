@@ -12,14 +12,19 @@ $("a.tint").on("click", function (e) {
 
   tl.to("body", { opacity: 0 });
 });
-var timeline = new TimelineMax();
+var pageLoad = new TimelineMax();
 
 function patchFinishedLoading(patch) {
+  pageLoad.fromTo(
+    "body",
+    { opacity: 0 },
+    { opacity: 1, duration: 1, delay: 0.05 },
+    "<"
+  );
+
   if (pageContext == "index") {
-    // ScrollforCables
-    timeline
-      .from("body", 1, { opacity: 0 }, 0.5)
-      .from("#text1", 1, { x: -25, autoAlpha: 0 }, 0.8)
+    pageLoad
+      .from("#text1", 1, { x: -25 }, 0.8)
       .from("#canvasMask3", 1, { x: -25 }, 1);
 
     ScrollTrigger.create({
@@ -70,6 +75,15 @@ function patchFinishedLoading(patch) {
         trigger: "#workList",
         start: "top bottom", // Starts when top of workList hits bottom of viewport
         end: "top 60px", // Ends when top of workList hits top of viewport
+      },
+    });
+
+    const tl5 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 1,
+        trigger: "#about",
+        start: "top bottom",
+        end: "top top",
       },
     });
 
@@ -126,7 +140,7 @@ function patchFinishedLoading(patch) {
 
     //// mq2
 
-    if (mq2.matches || mq1.matches) {
+    if (mq2.matches) {
       tl4.to("#logo", { translateY: "-50vh" }),
         tl4.to("#decoText1", { opacity: 0 }, "<"),
         tl4.to("#text1", { opacity: 0, translateY: "-50vh" }, "<"),
@@ -165,8 +179,56 @@ function patchFinishedLoading(patch) {
           { opacity: 1, translateX: "0px" },
           "<80%"
         );
+      // tl3.to("#text1", { opacity: 0 }, "<80%");
 
       tl2.fromTo("#backgroundMask2", { top: "100vh" }, { top: "0vh" }, "<");
+    }
+
+    if (mq1.matches) {
+      tl4.to("#logo", { translateY: "-48vh" }),
+        tl4.to("#decoText1", { opacity: 0 }, "<"),
+        tl4.to("#deco1", { opacity: 0 }, "<"),
+        tl4.to("#deco2", { opacity: 0 }, "<"),
+        tl4.to("#deco3", { opacity: 0 }, "<"),
+        tl4.to("#text1", { opacity: 0, translateX: "-50vw" }, "<"),
+        tl4.to("#logoPlayer", { scale: "0.6" }, "<"),
+        tl4.to("#backgroundMask1", { translateX: "-100vw" }, "<"),
+        tl4.to("#canvasMask4", { height: "100vh" }, "<");
+
+      tl5.fromTo(
+        "#curriculum",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl5.to(".videojs-about", {
+          keyframes: {
+            opacity: [0, 1, 0, 1, 0, 0, 1, 0, 1],
+            ease: "none", // ease the entire keyframe block
+          },
+          duration: 0.5,
+        });
+
+      tl3.fromTo(
+        "#textContact",
+        { opacity: 0, translateX: "-20px" },
+        { opacity: 1, translateX: "0px" },
+        "<"
+      ),
+        tl3.fromTo(
+          "#deco4",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<50%"
+        ),
+        tl3.fromTo(
+          "#deco5",
+          { opacity: 0, translateX: "-20px" },
+          { opacity: 1, translateX: "0px" },
+          "<80%"
+        );
+
+      // tl5.fromTo("#backgroundMask2", { right: "100vw" }, { right: "0" }, "<");
     }
 
     // FadeIn work Elements
@@ -206,8 +268,7 @@ function patchFinishedLoading(patch) {
   }
 }
 if (pageContext == "works") {
-  timeline
-    .from("body", 1, { opacity: 0 }, 1)
+  pageLoad
     .from("#logo", 1, { autoAlpha: 0 }, 1.2)
     .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
     .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
@@ -242,3 +303,9 @@ if (pageContext == "index") {
     currentIndex = (currentIndex + 1) % workFields.length;
   }, 5000); // 5000 milliseconds = 5 seconds
 }
+
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted) {
+    pageLoad.seek(0).play();
+  }
+});

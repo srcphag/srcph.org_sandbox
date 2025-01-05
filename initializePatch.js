@@ -49,7 +49,6 @@ function patchInitialized(patch) {
 }
 
 function patchFinishedLoading(patch) {
-  console.log("Loaded");
   const videoPlay = CABLES.patch.getVar("playerStatus");
   const videoFullscreen = CABLES.patch.getVar("videoFullscreen");
   const videoMuted = CABLES.patch.getVar("videoMuted");
@@ -87,6 +86,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
   let isPlaying = 0;
 
   CABLES.patch = new CABLES.Patch({
+    silent: true,
     variables: {
       pageContext: pageContext,
       mediaQuery: currentMediaQuery,
@@ -100,9 +100,15 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       mainColorHex: "#141414",
       indexPSR_mq3: [0.5, -0.5, 0, 10, 0, -20, 10],
       indexPSR_mq2: [0, 5, -2, 10, -40, 0, 0],
-      indexPSR_mq1: [0, 5, -2, 10, -40, 0, 0],
+      indexPSR_mq1: [0, 5, 0, 15, -40, 0, 0],
+
       indexWorkPSR_mq3: [0.5, 0, 0, 5, 180, 50, 30],
+      indexWorkPSR_mq2: [0.5, 0, 0, 5, 180, 50, 30],
+      indexWorkPSR_mq1: [0, 2, 0, 15, 20, 20, 10],
+
       indexAboutPSR_mq3: [-0.5, 0, 0, 5, 250, 50, 50],
+      indexAboutPSR_mq2: [-0.5, 0, 0, 5, 250, 50, 50],
+      indexAboutPSR_mq1: [0, 8, 0, 15, 20, 20, 10],
       // WorkPage
       workPSR_mq3: [-1, -1, 0, 10, 90, 0, 0],
       workPSR_mq2: [0.5, 6, 0, 12, 200, -64, 0],
@@ -152,10 +158,10 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 });
 
 // disable rubberband effect on mobile devices
-document.getElementById("glcanvas").addEventListener(
-  "touchmove",
-  (e) => {
-    e.preventDefault();
-  },
-  false
-);
+// document.getElementById("glcanvas").addEventListener(
+//   "touchmove",
+//   (e) => {
+//     e.preventDefault();
+//   },
+//   false
+// );

@@ -18,7 +18,7 @@ function handleScrollProgress(progress, variableName) {
 
 function setPSR(variable, values) {
   CABLES.patch.setVariable(variable, values);
-  console.log(values);
+  // console.log(values);
 }
 
 function getRandomInt(min, max) {
@@ -81,12 +81,10 @@ function isElementVisible(elementSelector) {
 }
 
 function highlightMenuItem(index) {
-  // Get all nav links
   const navLinks = document.querySelectorAll(".nav-link");
 
-  // Remove highlight class from all links
   navLinks.forEach((link) => {
-    link.classList.remove("highlight"); // Replace 'highlight' with your desired class name
+    link.classList.remove("highlight");
   });
 
   // Add highlight class to selected link
@@ -142,68 +140,93 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     }
   }
 
-  function scrollToElement(element, durationLenght) {
-    if (isScrolling) return;
-
-    isScrolling = true;
-
-    // Reset all work elements
-    workElements.forEach((el) => {
-      el.classList.remove("visibleImage");
-
-      const titleElement = el.querySelector(".title");
-      if (titleElement) titleElement.classList.remove("visibleTitle");
-
-      const descriptionElement = el.querySelector(".description");
-      if (descriptionElement)
-        descriptionElement.classList.remove("visibleDescription");
-
-      const videoElement = el.querySelector(".videojs-work");
-      if (videoElement) {
-        const player = videojs(videoElement);
-        player.muted(true);
-        player.pause();
+  function scrollToElement(element, durationLength = 1) {
+    return new Promise((resolve) => {
+      // If already scrolling, queue this scroll
+      if (isScrolling) {
+        setTimeout(() => scrollToElement(element, durationLength), 100);
+        return;
       }
-    });
 
-    // Scroll to new element
-    gsap.to(window, {
-      duration: durationLenght,
-      scrollTo: {
-        y: element,
-        offsetY: 65,
-        autoKill: false,
-      },
-      ease: "power3.out",
-      onComplete: () => {
-        // Update new element status
-        element.classList.add("visibleImage");
+      isScrolling = true;
+
+      // Helper function to cleanup previous elements
+      const cleanupPreviousElements = () => {
+        workElements.forEach((el) => {
+          el.classList.remove("visibleImage", "active");
+
+          const titleElement = el.querySelector(".title");
+          titleElement?.classList.remove("visibleTitle");
+
+          const descriptionElement = el.querySelector(".description");
+          descriptionElement?.classList.remove("visibleDescription");
+
+          const videoElement = el.querySelector(".videojs-work");
+          if (videoElement) {
+            const player = videojs(videoElement);
+            player.muted(true);
+            player.pause();
+          }
+        });
+      };
+
+      // Helper function to setup new element
+      const setupNewElement = () => {
+        element.classList.add("visibleImage", "active");
 
         const titleElement = element.querySelector(".title");
-        if (titleElement) titleElement.classList.add("visibleTitle");
+        titleElement?.classList.add("visibleTitle");
 
         const descriptionElement = element.querySelector(".description");
-        if (descriptionElement)
-          descriptionElement.classList.add("visibleDescription");
+        descriptionElement?.classList.add("visibleDescription");
 
-        // Update main color
+        // Update main color if available
         const mainColor = element.getAttribute("color");
-        if (mainColor && CABLES && CABLES.patch) {
+        if (mainColor && CABLES?.patch) {
           CABLES.patch.setVariable("mainColorHex", mainColor);
         }
 
-        // Play video if exists
+        // Handle video playback
         const videoElement = element.querySelector(".videojs-work");
         if (videoElement) {
           const player = videojs(videoElement);
           player.muted(true);
-          player.play();
+          player.play().catch(console.error);
         }
+      };
 
-        setTimeout(() => {
-          isScrolling = false;
-        }, 200);
-      },
+      // Cleanup previous state
+      cleanupPreviousElements();
+
+      if (element) {
+        // Calculate the exact scroll position
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 65;
+
+        // Perform the scroll animation
+        gsap.to(window, {
+          duration: durationLength,
+          scrollTo: {
+            y: offsetPosition,
+            autoKill: false,
+          },
+          ease: "power3.Out", // Smoother easing
+          onStart: () => {
+            // Add a class to prevent other scrolling during animation
+            document.body.classList.add("is-scrolling");
+          },
+          onComplete: () => {
+            setupNewElement();
+
+            // Small delay to ensure everything is settled
+            setTimeout(() => {
+              isScrolling = false;
+              document.body.classList.remove("is-scrolling");
+              resolve();
+            }, 50);
+          },
+        });
+      }
     });
   }
 
@@ -357,46 +380,53 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       const triggers = [
         {
           trigger: "#work",
-          start: "top bottom",
-          end: "bottom top",
+          start: "top 30%",
+          end: "bottom 80%",
           onEnter: () => {
-            // console.log("onEnter work");
             scrollToSectionDesktop("collection-list", 2, 65);
             highlightMenuItem(1);
           },
-        },
-        {
-          trigger: "#about",
-          start: "top bottom",
-
-          onEnter: () => {
-            // console.log("onEnter about");
-            scrollToSectionDesktop("about", 2, 65);
+          onLeave: () => {
+            scrollToSectionDesktop("about", 2, 0);
+            highlightMenuItem(2);
+          },
+          onEnterBack: () => {
+            scrollToSectionDesktop("collection-list", 2, 65);
+            highlightMenuItem(1);
+          },
+          onLeaveBack: () => {
+            scrollToSectionDesktop("header", 2, 0);
             highlightMenuItem(2);
           },
         },
-        {
-          trigger: "#void",
-          start: "top bottom",
-          end: "bottom 10%",
-          onEnterBack: () => {
-            // console.log("onEnterBack void");
-            scrollToSectionDesktop("header", 3, 0);
-            highlightMenuItem(0);
-          },
-        },
+        // {
+        //   trigger: "#about",
+        //   start: "top bottom",
+
+        //   onEnter: () => {
+        //     scrollToSectionDesktop("about", 2, 65);
+        //     highlightMenuItem(2);
+        //   },
+        // },
+        // {
+        //   trigger: "#void",
+        //   start: "top bottom",
+        //   end: "bottom 10%",
+        //   onEnterBack: () => {
+        //     scrollToSectionDesktop("header", 3, 0);
+        //     highlightMenuItem(0);
+        //   },
+        // },
         {
           trigger: "#workList",
           start: "top 90%",
           end: "bottom bottom",
           onEnter: () => {
-            //   console.log("onEnter");
             CABLES.patch.setVariable("stringTexture", "works");
           },
           onLeave: () => {
             CABLES.patch.setVariable("stringTexture", "about");
             CABLES.patch.setVariable("mainColorHex", "#0b00ff");
-            console.log("leave");
           },
           onEnterBack: () => {
             CABLES.patch.setVariable("stringTexture", "works");
@@ -434,90 +464,118 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     }
 
     if (mq1.matches || mq2.matches) {
-      function handleScrollNavigation(delta, isTouch = false) {
-        if (isScrolling) return;
+      const firstElement = document.getElementsByClassName("work")[0];
 
-        // Directly use the index of the currently visible work element
-        const currentVisible = document.querySelector(".work.visibleImage");
-        const currentIndex = workElements.indexOf(currentVisible);
+      firstElement.classList.add("visibleImage");
 
-        console.log("Current Work Index:", currentIndex); // Debugging log
+      // function handleScrollNavigation(delta, isTouch = false) {
+      //   if (isScrolling) return;
 
-        const scrollDown = isTouch ? delta < 0 : delta > 0;
-        const scrollUp = isTouch ? delta > 0 : delta < 0;
+      //   // Directly use the index of the currently visible work element
+      //   const currentVisible = document.querySelector(".work.visibleImage");
+      //   const currentIndex = workElements.indexOf(currentVisible);
 
-        if (scrollDown && currentIndex < workElements.length - 1) {
-          scrollToElement(workElements[currentIndex + 1], 0.35);
-        } else if (scrollUp && currentIndex > 0) {
-          scrollToElement(workElements[currentIndex - 1], 0.35);
-        } else if (scrollDown && currentIndex === workElements.length - 1) {
+      //   console.log("Current Work Index:", currentIndex);
+
+      //   const scrollDown = isTouch ? delta < 0 : delta > 0;
+      //   const scrollUp = isTouch ? delta > 0 : delta < 0;
+
+      //   if (scrollDown && currentIndex < workElements.length) {
+      //     scrollToElement(workElements[currentIndex + 1], 1);
+      //   } else if (
+      //     scrollUp &&
+      //     currentIndex > 0 &&
+      //     isElementVisible("#about") === false
+      //   ) {
+      //     scrollToElement(workElements[currentIndex - 1], 1);
+      //   } else if (
+      //     scrollDown &&
+      //     currentIndex === workElements.length &&
+      //     isElementVisible("#about") === false
+      //   ) {
+      //     scrollToSection("about", 2);
+      //   } else if (scrollUp && currentIndex === 0) {
+      //     // scrollToSection("header", 2);
+      //   }
+      // }
+      // Declare currentIndex globally
+      let currentIndex = 0; // Initialize with -1 to indicate no element is visible initially
+
+      if (isScrolling) return;
+
+      // const hammer = new Hammer(document.body);
+      const hammer = new Hammer(document.getElementById("workList"));
+
+      hammer.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
+      const workelementsLength = workElements.length - 1;
+
+      hammer.on("swipeup", (ev) => {
+        if (currentIndex < workelementsLength) {
+          currentIndex += 1; // Increment index
+          const nextElement = workElements[currentIndex];
+          console.log(
+            "Scrolling to previous element:",
+            nextElement.getAttribute("project"),
+            currentIndex
+          );
+          scrollToElement(nextElement, 1);
+        } else {
+          console.log("Already at last element");
           scrollToSection("about", 2);
-        } else if (scrollUp && currentIndex === 0) {
+        }
+      });
+
+      hammer.on("swipedown", (ev) => {
+        if (currentIndex > 0) {
+          currentIndex -= 1; // Decrement index
+          const previousElement = workElements[currentIndex];
+          console.log(
+            "Scrolling to previous element:",
+            previousElement.getAttribute("project"),
+            currentIndex
+          );
+          scrollToElement(previousElement, 1);
+        } else {
+          currentIndex = 0;
+          console.log("Already at first element", currentIndex);
           scrollToSection("header", 2);
         }
-      }
-
-      // Wheel event
-      window.addEventListener(
-        "wheel",
-        (e) => {
-          e.preventDefault();
-          handleScrollNavigation(e.deltaY);
-        },
-        { passive: false }
-      );
-
-      // Touch events
-      let touchStartY = 0;
-      const touchThreshold = 50;
-
-      window.addEventListener(
-        "touchstart",
-        (e) => {
-          touchStartY = e.touches[0].clientY;
-        },
-        { passive: true }
-      );
-
-      window.addEventListener(
-        "touchmove",
-        (e) => {
-          const touchCurrentY = e.touches[0].clientY;
-          const touchDelta = touchCurrentY - touchStartY;
-
-          if (Math.abs(touchDelta) > touchThreshold) {
-            handleScrollNavigation(touchDelta, true);
-            touchStartY = touchCurrentY;
-          }
-        },
-        { passive: true }
-      );
+      });
 
       const triggers = [
         {
           trigger: "#work",
-          start: "top bottom",
-          end: "bottom top",
+          start: "top 70%",
+          end: "bottom 50%",
           onEnter: () => {
+            const nextElement = workElements[0];
+            scrollToElement(nextElement, 2);
             highlightMenuItem(1);
           },
-        },
-        {
-          trigger: "#about",
-          start: "top bottom",
-
-          onEnter: () => {
+          onLeave: () => {
+            scrollToSectionDesktop("about", 2, 0);
             highlightMenuItem(2);
           },
-        },
-        {
-          trigger: "#void",
-          start: "top bottom",
-          end: "bottom 10%",
           onEnterBack: () => {
+            currentIndex = workelementsLength;
+            const previousElement = workElements[currentIndex];
+
+            console.log(
+              "Scrolling to previous element:",
+              previousElement.getAttribute("project"),
+              currentIndex
+            );
+
+            scrollToElement(previousElement, 1);
+            // console.log(nextElement);
+            highlightMenuItem(1);
+          },
+          onLeaveBack: () => {
+            // scrollToSection("header", 2, 0);
             highlightMenuItem(0);
           },
         },
+
         {
           trigger: "#workList",
           start: "bottom 10%",
@@ -529,7 +587,6 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
           onLeave: () => {
             CABLES.patch.setVariable("stringTexture", "about");
             CABLES.patch.setVariable("mainColorHex", "#0b00ff");
-            console.log("leave");
           },
           onEnterBack: () => {
             CABLES.patch.setVariable("stringTexture", "works");
@@ -569,6 +626,14 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     const canvasMask4 = document.getElementById("canvasMask4");
     canvasMask4.style.height =
       String(getElementPosition("#text1").bottom) + "px";
+    if (mq2.matches) {
+      const deco3 = document.getElementById("deco3");
+      deco3.style.top = String(getElementPosition("#text1").bottom) + "px";
+    }
+    if (mq1.matches) {
+      const deco3 = document.getElementById("deco3");
+      deco3.style.top = String(getElementPosition("#text1").bottom) + "px";
+    }
   }
 
   /////////// Context Works ///////////
