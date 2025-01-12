@@ -1,0 +1,203 @@
+[context="works"] {
+  #multiplier,
+  #multiplier .galleryelement {
+    display: none;
+  }
+
+  nav.nav-menu a {
+    color: var(--black);
+  }
+
+  .srcshape {
+    z-index: 5;
+  }
+
+  main {
+    /* grid-template-rows: var(--headerHeight) auto; */
+    color: var(--black);
+    top: 0px;
+    bottom: 0px;
+    left: calc(var(--mainMargin) + var(--mainPadding));
+    right: var(--mainMargin);
+    background-color: transparent;
+    position: fixed;
+    z-index: 6;
+  }
+  .infowrapper {
+    background-color: transparent;
+    padding-top: var(--headerHeight);
+  }
+  .infowrapper .w-richtext {
+    padding-bottom: 20px;
+  }
+  #col2 .infowrapper .w-richtext {
+    padding: 40px 20px 20px 20px;
+  }
+  #col1 .infowrapper {
+    padding-left: 50px;
+  }
+
+  .infoheader {
+    height: var(--headerHeight);
+    background-color: var(--bck0);
+  }
+
+  main #col1 {
+    grid-area: 1/1;
+  }
+  main #col1 .infoheader {
+    position: fixed;
+    left: 0px;
+    width: calc(
+      (var(--mainWidth) / 6) + var(--mainPadding) + var(--mainMargin)
+    );
+  }
+
+  main #col2 {
+    grid-area: 1/2;
+  }
+  main #col2 p {
+    margin-top: 65px;
+  }
+
+  #col1 .infowrapper > *:not(h1):not(#deco2) {
+    padding-left: var(--mainPadding);
+  }
+
+  main #col6 {
+    grid-area: 1/6;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+  }
+
+  #background {
+    /* width: var(--mainWidth); */
+    height: calc(100vh - var(--headerHeight));
+    background-color: var(--bck1);
+    position: fixed;
+    top: var(--headerHeight);
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+  }
+
+  main img {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    padding: 0 0 0 0;
+    grid-area: 1/1;
+    /* margin: 50px 0 0 0; */
+    filter: grayscale(100%);
+  }
+
+  .heading {
+    font-size: var(--textSize1);
+    margin: 0;
+    margin-top: 10px;
+    margin-left: unset;
+    line-height: 24px;
+  }
+  /*  .heading::after {
+  content: " ";
+  display: block;
+  position: relative;
+  left: 0;
+  height: 100%;
+} */
+  #infoList {
+    margin-top: 10px;
+  }
+  .infowrapper {
+    padding-top: var(--headerHeight);
+  }
+
+  main #description p {
+    align-self: flex-end;
+    margin: 0;
+    font-size: var(--textSize0);
+    font-weight: var(--fLight);
+  }
+
+  #deco1,
+  #deco2 {
+    position: relative;
+    width: 15px;
+    height: 2px;
+    /* z-index: 4; */
+    background-color: var(--black);
+  }
+
+  #deco1 {
+    top: -10px;
+  }
+
+  #deco2 {
+    left: 200px;
+    top: -35px;
+  }
+
+  main .textlist ul {
+    color: var(--black);
+  }
+
+  main #imageList {
+    justify-content: flex-end;
+    align-items: center;
+    display: none !important;
+  }
+  .galleryVoid {
+    display: none;
+  }
+
+  main #imageList li {
+    list-style-type: none;
+  }
+  main #imageList li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--bck0);
+    margin: 8px 0;
+    opacity: 0.5;
+  }
+  main #imageList li.active a {
+    opacity: 1;
+    background-color: var(--black);
+  }
+  main #imageList li {
+    cursor: pointer;
+  }
+  #logo {
+    position: fixed;
+    top: 0vh;
+    left: 100px;
+    z-index: 4;
+  }
+
+  #playerControls {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 25px; /* needs defined width */
+    height: 40px; /* needs defined height */
+    z-index: 10;
+  }
+
+  #playerControls > div {
+    width: 25px; /* needs defined width */
+    height: 40px; /* needs defined height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .backgroundmask {
+    display: none;
+  }
+}

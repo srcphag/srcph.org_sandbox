@@ -1,0 +1,231 @@
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  [context="index"] {
+    #test {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    #workList .w-dyn-items,
+    #aboutList .w-dyn-item {
+      display: flex;
+      flex-direction: column;
+    }
+    #work #workList {
+      margin-bottom: unset;
+    }
+    .w-container:before {
+      display: none;
+    }
+    nav.nav-menu {
+      align-items: center;
+      display: flex;
+      /* margin-right: var(--q1Margin); */
+    }
+    .navbar {
+      max-width: 100vw;
+      margin: unset;
+      padding: unset;
+    }
+    nav.w-nav-menu {
+      margin-right: var(--q1Margin);
+    }
+    .nav-link {
+      font-size: var(--textSize0);
+      padding-left: 4px;
+      padding-right: 4px;
+      padding-bottom: 0;
+    }
+    #work,
+    #about,
+    #header {
+      margin-left: var(--q1Margin) !important;
+      margin-right: var(--q1Margin) !important;
+      padding-left: unset !important;
+      padding-right: unset !important;
+    }
+
+    #logo {
+      top: 48vh;
+    }
+    #logo {
+      left: 32px;
+    }
+
+    #background {
+      left: var(--q1Margin);
+      right: var(--q1Margin);
+    }
+    #void {
+      height: 0;
+      margin-bottom: unset;
+    }
+    #work {
+      mix-blend-mode: unset;
+    }
+    #about {
+      height: unset;
+      padding-bottom: 10vh;
+      margin-top: 50vh;
+      mix-blend-mode: unset;
+    }
+
+    main .work {
+      opacity: 1;
+      margin: 0 0 15vh 0;
+    }
+
+    #canvasMask1,
+    #canvasMask4 {
+      left: var(--q1Margin);
+      right: var(--q1Margin);
+    }
+    #canvasMask2 {
+      display: none;
+    }
+    #canvasMask3 {
+      display: none;
+    }
+    #backgroundMask1 {
+      height: 45vh;
+      left: 0;
+      right: 0;
+      width: unset;
+    }
+    #canvasMask4 {
+      width: unset;
+    }
+    #backgroundMask2 {
+      display: none;
+    }
+
+    #text1 {
+      right: var(--mainMargin);
+      width: unset;
+      font-size: var(--q1textSize0);
+      line-height: 15px;
+      font-weight: var(--fLight);
+    }
+    #decoText1 {
+      font-size: var(--q1textSize0);
+      left: var(--q1Margin);
+      top: calc(var(--headerHeight) + 15px);
+    }
+    #deco2 {
+      top: 50vh;
+      left: unset;
+      height: 2px;
+      width: 12px;
+      right: calc(var(--q1Margin) + 15px);
+    }
+    #deco3 {
+      left: calc(var(--q1Margin) + 15px);
+    }
+    main .work .description,
+    main .work .title,
+    main .work .image {
+      transition: opacity 1s ease;
+    }
+    .w-dyn-item #image {
+      display: flex;
+      justify-content: center;
+    }
+    .w-dyn-item .videojs-about {
+      mix-blend-mode: multiply;
+      z-index: 1;
+    }
+    .w-dyn-item #image::after {
+      content: " ";
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bck2);
+    }
+    main .work .description {
+      display: flex;
+      color: var(--black);
+      font-weight: 200;
+      padding-left: var(--mainPadding);
+      padding-top: 20px;
+      padding-right: 20px;
+      font-size: var(--q1textSize0);
+      opacity: 0;
+      background-color: var(--bck0);
+      line-height: 15px;
+    }
+    .videojs-about {
+      width: 65vw;
+    }
+    #curriculum {
+      background-color: var(--bck0);
+    }
+    .w-richtext ul[role="list"] > li {
+      font-size: var(--textSize0);
+    }
+    .w-richtext ul[role="list"] > li > ul > li {
+      font-size: var(--textSize0);
+    }
+
+    .w-richtext ul[role="list"] > li > ul > li > ul > li {
+      font-size: var(--q1textSize0);
+    }
+    .w-richtext ul[role="list"] {
+      padding-left: 15px;
+    }
+
+    .w-richtext ul[role="list"] > li > ul {
+      padding-left: var(--mainPadding);
+    }
+    #aboutList {
+      height: unset;
+    }
+    #aboutList .w-dyn-item {
+      height: unset;
+    }
+    #curriculum {
+      display: flex;
+      justify-content: flex-end;
+    }
+    #curriculum .w-richtext {
+      left: unset;
+      position: unset;
+      width: 100%;
+      line-height: 18px;
+      margin-bottom: 110px;
+    }
+    #links {
+      margin-top: 50px;
+      left: unset;
+    }
+    #links #linksWrapper {
+      top: unset;
+    }
+    #links #textContact {
+      right: unset;
+    }
+    #links #linksContact {
+      right: unset;
+      margin-left: 65vw;
+    }
+
+    main .work .title {
+      color: var(--black);
+      opacity: 0;
+      height: 30px;
+      font-weight: var(--fBold);
+    }
+    main .work .title div {
+      display: inline-block;
+      background-color: var(--bck0);
+      padding: 0 10px;
+      height: 100%;
+      display: flex;
+      /* vertical-align: middle; */
+      align-items: center;
+      width: fit-content;
+      padding-right: 50px;
+    }
+  }
+}

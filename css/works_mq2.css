@@ -1,0 +1,85 @@
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  [context="works"] {
+    body {
+      font-size: var(--textSize0);
+      font-weight: 200;
+      /* opacity: 0; */
+    }
+
+    main {
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-flow: row;
+      display: grid;
+    }
+
+    #canvasMask1 {
+      height: var(--headerHeight);
+      width: calc(
+        (var(--mainWidth) / 3) + var(--mainMargin) + var(--mainPadding)
+      );
+    }
+    #canvasMask2 {
+      width: calc((var(--mainWidth) / 2) + var(--mainMargin));
+    }
+    #canvasMask3 {
+      width: calc((var(--mainWidth) / 3) + var(--mainPadding));
+      left: calc(var(--mainMargin));
+    }
+    #canvasMask4 {
+      width: calc((var(--mainWidth) / 3));
+      left: calc(
+        (var(--mainWidth) / 3) + var(--mainPadding) + var(--mainMargin)
+      );
+    }
+
+    .backgroundmask {
+      display: none !important;
+    }
+    main #col6 {
+      grid-area: 1 / 3;
+    }
+    #col1 .infowrapper > *:not(h1) {
+      padding-left: var(--mainPadding);
+    }
+    main #col1 .infoheader {
+      width: calc(
+        (var(--mainWidth) / 3) + var(--mainPadding) + var(--mainMargin)
+      );
+    }
+    main #col2 .infowrapper {
+      padding: 0;
+      overflow: scroll;
+      max-height: 35vh;
+      padding-top: 65px;
+    }
+    main #description {
+      padding: 0 20px;
+    }
+
+    nav.nav-menu {
+      align-items: center;
+      display: flex;
+      margin-right: var(--mainMargin);
+      align-items: center;
+    }
+    nav.nav-menu a {
+      padding: 0 8px;
+      color: var(--black);
+    }
+    #logo {
+      left: var(--mainMargin) !important;
+    }
+    #logo #logoPlayer {
+      transform: scale(0.7);
+      transform-origin: center left;
+    }
+
+    div#deco2 {
+      left: 180px;
+      top: -35px;
+      padding: unset !important;
+    }
+  }
+}

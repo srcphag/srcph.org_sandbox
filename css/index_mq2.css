@@ -1,0 +1,95 @@
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  [context="index"] {
+    body {
+      font-size: var(--textSize0);
+      font-weight: 200;
+      /* opacity: 0; */
+    }
+    main,
+    #about {
+      padding-left: calc(var(--mainMargin));
+    }
+    #canvasMask1 {
+      left: calc(var(--mainMargin));
+    }
+
+    #backgroundMask1 {
+      height: 45vh;
+      left: 0;
+      right: 0;
+    }
+    backgroundMask3 {
+      display: none;
+    }
+    #backgroundMask4 {
+      display: none;
+    }
+    #canvasMask3 {
+      width: calc((var(--mainWidth) / 3) + var(--mainPadding));
+      left: calc(var(--mainMargin));
+    }
+    #canvasMask4 {
+      width: calc((var(--mainWidth) / 3) * 2 + var(--mainPadding));
+      height: 100vh;
+    }
+
+    #workList .w-dyn-items,
+    #aboutList .w-dyn-item {
+      display: grid;
+      grid-template-columns: repeat(3, calc(100% / 3));
+      /* grid-template-columns: repeat(6, calc(var(--mainWidth) / 6));
+    grid-template-rows: repeat(auto, calc(var(--mainWidth) / 6)); */
+    }
+
+    nav.nav-menu {
+      align-items: center;
+      display: flex;
+      margin-right: var(--mainMargin);
+      align-items: center;
+    }
+    nav.nav-menu a {
+      padding: 0 8px;
+      color: var(--black);
+    }
+    #logo {
+      left: var(--mainMargin) !important;
+    }
+
+    #logo #logoPlayer {
+      transform: scale(0.7);
+      transform-origin: center left;
+    }
+    #text1 {
+      width: calc((var(--mainWidth) / 3) + var(--mainPadding));
+      left: 20vw;
+    }
+    #decoText1 {
+      top: calc(var(--headerHeight) + 20px);
+    }
+
+    main .work {
+      filter: grayscale(1) brightness(0.8) contrast(2);
+    }
+    main .work .description {
+      display: flex;
+      position: absolute;
+      color: var(--black);
+      font-weight: 200;
+      padding-left: var(--mainPadding);
+      padding-top: 20px;
+      padding-right: 20px;
+      font-size: 12px;
+      opacity: 0;
+    }
+
+    .w-dyn-item #image {
+      grid-area: 1/1;
+    }
+    #curriculum {
+      grid-area: 1/2;
+    }
+    #links {
+      grid-area: 1/3;
+    }
+  }
+}

@@ -3,9 +3,10 @@ const gridItems = document.querySelectorAll(".work");
 const headerSection = document.querySelector("#header");
 const workSection = document.querySelector("#workList");
 const aboutSection = document.querySelector("#about");
+const workElements = Array.from(document.querySelectorAll(".work"));
+
 var mainColor;
 
-var workPSR_mq3 = [1, 0, 0, 10, 138, -28, 0];
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -36,6 +37,26 @@ function createOrderedRandomArray(size, minStep, maxStep) {
   }
 
   return array;
+}
+function remap(value, inMin, inMax, outMin, outMax) {
+  // First normalize to 0-1
+  const normalized = (value - inMin) / (inMax - inMin);
+  // Then scale to output range
+  return normalized * (outMax - outMin) + outMin;
+}
+function lerpArrays(arr1, arr2, t) {
+  // Make sure arrays are the same length
+  if (arr1.length !== arr2.length) {
+    throw new Error("Arrays must be the same length");
+  }
+
+  return arr1.map((value, index) => {
+    return lerp(value, arr2[index], t);
+  });
+}
+
+function lerp(start, end, t) {
+  return start * (1 - t) + end * t;
 }
 
 function getElementPosition(elementId) {
@@ -94,7 +115,6 @@ function highlightMenuItem(index) {
 document.addEventListener("CABLES.jsLoaded", function (event) {
   /// Scroll Function
   let isScrolling = false;
-  const workElements = Array.from(document.querySelectorAll(".work"));
 
   function scrollToSection(sectionName, durationLenght) {
     const section = document.querySelector(`.${sectionName}`);
@@ -120,7 +140,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     }
   }
 
-  function scrollToSectionDesktop(sectionName, durationLenght, offset = 0) {
+  function scrollToSectionGsap(sectionName, durationLenght, offset = 0) {
     const section = document.querySelector(`.${sectionName}`);
 
     if (section) {
@@ -202,7 +222,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
         // Calculate the exact scroll position
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - 65;
-
+        console.log("Scroll to:", element.getAttribute("project"));
         // Perform the scroll animation
         gsap.to(window, {
           duration: durationLength,
@@ -278,7 +298,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     /// Random position on grid
 
     if (mq3.matches) {
-      const numRows = 10;
+      const numRows = 5;
       const numCols = 5;
 
       gridItems.forEach((item) => {
@@ -383,40 +403,22 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
           start: "top 30%",
           end: "bottom 80%",
           onEnter: () => {
-            scrollToSectionDesktop("collection-list", 2, 65);
+            scrollToSectionGsap("collection-list", 2, 65);
             highlightMenuItem(1);
           },
           onLeave: () => {
-            scrollToSectionDesktop("about", 2, 0);
+            scrollToSectionGsap("about", 2, 0);
             highlightMenuItem(2);
           },
           onEnterBack: () => {
-            scrollToSectionDesktop("collection-list", 2, 65);
+            scrollToSectionGsap("collection-list", 2, 65);
             highlightMenuItem(1);
           },
           onLeaveBack: () => {
-            scrollToSectionDesktop("header", 2, 0);
+            scrollToSectionGsap("header", 2, 0);
             highlightMenuItem(2);
           },
         },
-        // {
-        //   trigger: "#about",
-        //   start: "top bottom",
-
-        //   onEnter: () => {
-        //     scrollToSectionDesktop("about", 2, 65);
-        //     highlightMenuItem(2);
-        //   },
-        // },
-        // {
-        //   trigger: "#void",
-        //   start: "top bottom",
-        //   end: "bottom 10%",
-        //   onEnterBack: () => {
-        //     scrollToSectionDesktop("header", 3, 0);
-        //     highlightMenuItem(0);
-        //   },
-        // },
         {
           trigger: "#workList",
           start: "top 90%",
@@ -462,43 +464,18 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
         }
       );
     }
-
+    if (mq2.matches) {
+      const backgroundMask1 = document.getElementById("backgroundMask1");
+      const text1Position = document
+        .querySelector("#text1")
+        .getBoundingClientRect();
+      backgroundMask1.style.height = `calc(100% - ${text1Position.bottom}px + 65px)`;
+    }
     if (mq1.matches || mq2.matches) {
       const firstElement = document.getElementsByClassName("work")[0];
 
       firstElement.classList.add("visibleImage");
 
-      // function handleScrollNavigation(delta, isTouch = false) {
-      //   if (isScrolling) return;
-
-      //   // Directly use the index of the currently visible work element
-      //   const currentVisible = document.querySelector(".work.visibleImage");
-      //   const currentIndex = workElements.indexOf(currentVisible);
-
-      //   console.log("Current Work Index:", currentIndex);
-
-      //   const scrollDown = isTouch ? delta < 0 : delta > 0;
-      //   const scrollUp = isTouch ? delta > 0 : delta < 0;
-
-      //   if (scrollDown && currentIndex < workElements.length) {
-      //     scrollToElement(workElements[currentIndex + 1], 1);
-      //   } else if (
-      //     scrollUp &&
-      //     currentIndex > 0 &&
-      //     isElementVisible("#about") === false
-      //   ) {
-      //     scrollToElement(workElements[currentIndex - 1], 1);
-      //   } else if (
-      //     scrollDown &&
-      //     currentIndex === workElements.length &&
-      //     isElementVisible("#about") === false
-      //   ) {
-      //     scrollToSection("about", 2);
-      //   } else if (scrollUp && currentIndex === 0) {
-      //     // scrollToSection("header", 2);
-      //   }
-      // }
-      // Declare currentIndex globally
       let currentIndex = 0; // Initialize with -1 to indicate no element is visible initially
 
       if (isScrolling) return;
@@ -521,7 +498,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
           scrollToElement(nextElement, 1);
         } else {
           console.log("Already at last element");
-          scrollToSection("about", 2);
+          scrollToSectionGsap("about", 2);
         }
       });
 
@@ -538,7 +515,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
         } else {
           currentIndex = 0;
           console.log("Already at first element", currentIndex);
-          scrollToSection("header", 2);
+          scrollToSectionGsap("header", 1);
         }
       });
 
@@ -549,11 +526,11 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
           end: "bottom 50%",
           onEnter: () => {
             const nextElement = workElements[0];
-            scrollToElement(nextElement, 2);
+            scrollToElement(nextElement, 1);
             highlightMenuItem(1);
           },
           onLeave: () => {
-            scrollToSectionDesktop("about", 2, 0);
+            scrollToSectionGsap("about", 1);
             highlightMenuItem(2);
           },
           onEnterBack: () => {
@@ -566,7 +543,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
               currentIndex
             );
 
-            scrollToElement(previousElement, 1);
+            // scrollToElement(previousElement, 1);
             // console.log(nextElement);
             highlightMenuItem(1);
           },
@@ -592,8 +569,8 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
             CABLES.patch.setVariable("stringTexture", "works");
           },
           onLeaveBack: () => {
-            // CABLES.patch.setVariable("stringTexture", "mediaDesign");
-            // CABLES.patch.setVariable("mainColor", "#121212");
+            CABLES.patch.setVariable("stringTexture", "mediaDesign");
+            CABLES.patch.setVariable("mainColor", "#141414");
           },
         },
         // Add more triggers here if needed
@@ -657,7 +634,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     });
 
     CABLES.patch.setVariable("videoUrl", imageUrls[0]);
-    console.log("videoUrl", imageUrls[0]);
+    // console.log("videoUrl", imageUrls[0]);
 
     if (mq3.matches) {
       const imageListContainer = document.getElementById("imageList");
@@ -739,6 +716,14 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       col2mask.style.height =
         String(getElementPosition("#description").bottom) + "px";
     }
+    if (mq2.matches) {
+      const col1mask = document.getElementById("canvasMask3");
+      const col2mask = document.getElementById("canvasMask4");
+
+      col1mask.style.height = String(getElementPosition("#info").bottom) + "px";
+      col2mask.style.height =
+        String(getElementPosition("#description").bottom) + "px";
+    }
 
     let sections = gsap.utils.toArray(".galleryelement");
 
@@ -797,29 +782,24 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     }
 
     const mainElement = document.querySelector("main");
+    let workPSR_mq1_A = CABLES.patch.getVar("workPSR_mq1").getValue();
+    let workPSR_mq1_B = workPSR_mq1_A.slice(); // Creates a shallow copy
+    workPSR_mq1_B[1] += 5;
 
     mainElement.addEventListener("scroll", () => {
-      let verticalScrollValue = mainElement.scrollTop;
-      console.log(verticalScrollValue);
+      const scrollPercentage =
+        mainElement.scrollTop /
+        (mainElement.scrollHeight - mainElement.clientHeight);
 
-      CABLES.patch.setVariable("workPSR_mq1", [
-        -3.52,
-        -1.67,
-        0,
-        15,
-        330 + verticalScrollValue * 0.1,
-        0,
-        -8.45 + verticalScrollValue * 0.05,
-      ]);
-      CABLES.patch.setVariable("workPSR_mq2", [
-        -3.52,
-        -1.67,
-        0,
-        15,
-        330 + verticalScrollValue * 0.1,
-        0,
-        -8.45 + verticalScrollValue * 0.05,
-      ]);
+      CABLES.patch.setVariable(
+        "workPSR_mq1",
+        lerpArrays(workPSR_mq1_A, workPSR_mq1_B, scrollPercentage)
+      );
+
+      // CABLES.patch.setVariable(
+      //   "workPSR_mq2",
+      //   (workPSR_mq1[3] += remap(scrollPercentage, 0, 1, -1, 1))
+      // );
     });
   }
 });

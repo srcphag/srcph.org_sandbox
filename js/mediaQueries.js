@@ -3,7 +3,7 @@ let currentMediaQuery = ""; // Variable to store the current media query
 function handleMediaQuery(queryName, x) {
   if (x.matches) {
     currentMediaQuery = queryName; // Update the current media query variable with the query name
-    console.log("Current media query:", currentMediaQuery);
+    // console.log("Current media query:", currentMediaQuery);
   } else {
     // Handle the case when the media query doesn't match (optional)
   }

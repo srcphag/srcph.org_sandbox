@@ -1,17 +1,3 @@
-// General Animations
-
-$("a.tint").on("click", function (e) {
-  e.preventDefault();
-  var destination = $(this).attr("href");
-
-  let tl = new TimelineMax({
-    onComplete: function () {
-      window.location = destination;
-    },
-  });
-
-  tl.to("body", { opacity: 0 });
-});
 var pageLoad = new TimelineMax();
 
 function patchFinishedLoading(patch) {
@@ -138,8 +124,6 @@ function patchFinishedLoading(patch) {
         );
     }
 
-    //// mq2
-
     if (mq2.matches) {
       tl4.to("#logo", { translateY: "-50vh" }),
         tl4.to("#decoText1", { opacity: 0 }, "<"),
@@ -231,8 +215,6 @@ function patchFinishedLoading(patch) {
       // tl5.fromTo("#backgroundMask2", { right: "100vw" }, { right: "0" }, "<");
     }
 
-    // FadeIn work Elements
-
     const fadeInAnimation = gsap.timeline({
       paused: true,
       defaults: { opacity: 0, top: "100px" },
@@ -266,26 +248,7 @@ function patchFinishedLoading(patch) {
       observer.observe(item);
     });
   }
-}
-if (pageContext == "works") {
-  pageLoad
-    .from("#logo", 1, { autoAlpha: 0 }, 1.2)
-    .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
-    .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
 
-  if (mq3.matches) {
-    // const galleryVoidElement = document.querySelector(".galleryVoid");
-    // // Scroll to the position of the galleryVoidElement
-    // gsap.to(window, {
-    //   duration: 0.2,
-    //   scrollTo: {
-    //     y: galleryVoidElement,
-    //     offsetY: 0, // Optionally adjust the offset if needed
-    //   },
-    // });
-  }
-}
-if (pageContext == "index") {
   let currentIndex = 1;
   const workFields = Array.from(
     document.getElementById("workFields").getElementsByTagName("li")
@@ -299,9 +262,27 @@ if (pageContext == "index") {
       CABLES.patch.setVariable("stringTexture", workFields[currentIndex]);
     }
 
-    // Move to next index, loop back to 0 when reaching the end
     currentIndex = (currentIndex + 1) % workFields.length;
   }, 5000); // 5000 milliseconds = 5 seconds
+}
+if (pageContext == "works") {
+  pageLoad
+    .from("#logo", 1, { autoAlpha: 0 }, 1.2)
+    .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
+    .from("#deco2", 1, { x: -25, autoAlpha: 0 }, 1.1)
+    .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
+
+  if (mq3.matches) {
+    // const galleryVoidElement = document.querySelector(".galleryVoid");
+    // // Scroll to the position of the galleryVoidElement
+    // gsap.to(window, {
+    //   duration: 0.2,
+    //   scrollTo: {
+    //     y: galleryVoidElement,
+    //     offsetY: 0, // Optionally adjust the offset if needed
+    //   },
+    // });
+  }
 }
 
 window.addEventListener("pageshow", function (event) {

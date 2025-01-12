@@ -54,39 +54,18 @@ function patchFinishedLoading(patch) {
   const videoMuted = CABLES.patch.getVar("videoMuted");
   const isImage = CABLES.patch.getVar("isImage");
 
-  // videoPlay.on("change", function (newValue) {
-  //   if (newValue == 1) {
-  //     controlPlayElement.classList.add("playerPause");
-  //   } else {
-  //     controlPlayElement.classList.remove("playerPause");
-  //   }
-  // });
-  // videoFullscreen.on("change", function (newValue) {
-  //   if (newValue == 1) {
-  //   }
-  // });
-  // videoMuted.on("change", function (newValue) {
-  //   if (newValue == 1) {
-  //     controlAudioElement.classList.add("playerMute");
-  //   } else {
-  //     controlAudioElement.classList.remove("playerMute");
-  //   }
-  // });
-  // isImage.on("change", function (newValue) {
-  //   const playerControls = document.getElementById("playerControls");
-  //   if (newValue == 1) {
-  //     playerControls.style.display = "none";
-  //   } else {
-  //     playerControls.style.display = "flex";
-  //   }
-  // });
+  // Get mouse position in -1 to 1 range
+  document.addEventListener("mousemove", (e) => {
+    const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+    const mouseY = (e.clientY / window.innerHeight) * 2 - 1;
+    CABLES.patch.setVariable("mousePosition", [mouseX, mouseY]);
+  });
 }
 
 document.addEventListener("CABLES.jsLoaded", function (event) {
   let isPlaying = 0;
 
   CABLES.patch = new CABLES.Patch({
-    silent: true,
     variables: {
       pageContext: pageContext,
       mediaQuery: currentMediaQuery,
@@ -111,13 +90,15 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       indexAboutPSR_mq1: [0, 8, 0, 15, 20, 20, 10],
       // WorkPage
       workPSR_mq3: [-1, -1, 0, 10, 90, 0, 0],
-      workPSR_mq2: [0.5, 6, 0, 12, 200, -64, 0],
-      workPSR_mq1: [-3.52, -1.67, 0, 15, 330, 0, -8.45],
+      workPSR_mq2: [0.5, 13, 0, 20, 200, -64, 0],
+      workPSR_mq1: [0, -5, 0, 50, 180, 20, 20],
       imageTextureWrap: 0,
-      moveAutoSpeed: 0.5,
+      autoTransformSpeed: 0.2,
+      mouseTransformSpeed: 0.5,
     },
     patch: CABLES.exportedPatch,
     prefixAssetPath: path,
+    silent: true,
     assetPath: path,
     jsPath: path,
     glCanvasId: "glcanvas",
