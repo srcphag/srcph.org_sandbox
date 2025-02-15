@@ -14,6 +14,10 @@
       display: grid;
     }
 
+    /* .canvasmask {
+      display: none;
+    } */
+
     #canvasMask1 {
       height: var(--headerHeight);
       width: calc(
@@ -33,15 +37,14 @@
         (var(--mainWidth) / 3) + var(--mainPadding) + var(--mainMargin)
       );
     }
-
     .backgroundmask {
       display: none !important;
     }
     main #col6 {
       grid-area: 1 / 3;
     }
-    #col1 .infowrapper > *:not(h1) {
-      padding-left: var(--mainPadding);
+    #col1 .infowrapper {
+      padding-left: unset;
     }
     main #col1 .infoheader {
       width: calc(
@@ -53,6 +56,8 @@
       overflow: scroll;
       max-height: 35vh;
       padding-top: 65px;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
     main #description {
       padding: 0 20px;
@@ -77,9 +82,10 @@
     }
 
     div#deco2 {
-      left: 180px;
+      left: 150px;
       top: -35px;
       padding: unset !important;
+      display: none;
     }
   }
 }

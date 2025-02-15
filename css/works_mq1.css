@@ -23,8 +23,7 @@
       padding-bottom: 0;
     }
     #work,
-    #about,
-    #header {
+    #about {
       margin-left: var(--q1Margin) !important;
       margin-right: var(--q1Margin) !important;
       padding-left: unset !important;

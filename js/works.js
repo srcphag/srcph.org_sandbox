@@ -1,3 +1,9 @@
+// Creating a video element container firs
+const videoContainer = document.createElement('div');
+videoContainer.id = 'videoContainer';
+
+// videoContainer.style.display = 'none';
+
 document.addEventListener("CABLES.jsLoaded", function (event) {
 
   if (pageContext == "works") {

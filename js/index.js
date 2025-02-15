@@ -191,117 +191,188 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
         }
       );
     }
-    if (mq2.matches) {
-      const backgroundMask1 = document.getElementById("backgroundMask1");
-      const text1Position = document
-        .querySelector("#text1")
-        .getBoundingClientRect();
-      backgroundMask1.style.height = `calc(100% - ${text1Position.bottom}px + 65px)`;
-    }
+
     if (mq1.matches || mq2.matches) {
-      const firstElement = document.getElementsByClassName("work")[0];
+      let triggers;
+      let marginBottom;
 
-      firstElement.classList.add("visibleImage");
+      if (mq2.matches) {
+        triggers = [
+          {
+            trigger: "#work",
+            start: "top 50%",
+            end: "bottom 50%",
+            onEnter: () => {
+              scrollToSectionGsap("work", 1, "65");
+              highlightMenuItem(1);
+            },
+            onLeave: () => {
+              scrollToSectionGsap("about", 1);
+              highlightMenuItem(2);
+            },
+            onEnterBack: () => {
+              // scrollToLastWork(".work", 1, "65");
+              highlightMenuItem(1);
+            },
+            onLeaveBack: () => {
+              scrollToSectionGsap("header", 1);
+              highlightMenuItem(0);
+            },
+          },
 
-      let currentIndex = 0; // Initialize with -1 to indicate no element is visible initially
+          {
+            trigger: "#workList",
+            start: "bottom 10%",
+            end: "bottom bottom",
+            onEnter: () => {
+              //   console.log("onEnter");
+              CABLES.patch.setVariable("stringTexture", "works");
+            },
+            onLeave: () => {
+              CABLES.patch.setVariable("stringTexture", "about");
+              CABLES.patch.setVariable("mainColorHex", "#0b00ff");
+            },
+            onEnterBack: () => {
+              CABLES.patch.setVariable("stringTexture", "works");
+            },
+            onLeaveBack: () => {
+              CABLES.patch.setVariable("stringTexture", "mediaDesign");
+              CABLES.patch.setVariable("mainColor", "#141414");
+            },
+          },
+          // Add more triggers here if needed
+        ];
+        marginBottom = vhToPx(35);
+      }
 
-      if (isScrolling) return;
+      if (mq1.matches) {
+        triggers = [
+          {
+            trigger: "#work",
+            start: "top 90%",
+            end: "bottom 60%",
+            onEnter: () => {
+              scrollToSectionGsap("work", 1, "65");
+              highlightMenuItem(1);
+            },
+            onLeave: () => {
+              scrollToSectionGsap("about", 1);
+              highlightMenuItem(2);
+            },
+            onEnterBack: () => {
+              scrollToLastWork(".work", 1, "65");
+              highlightMenuItem(1);
+            },
+            onLeaveBack: () => {
+              scrollToSectionGsap("header", 1);
+              highlightMenuItem(0);
+            },
+          },
 
-      // const hammer = new Hammer(document.body);
-      const hammer = new Hammer(document.getElementById("workList"));
+          {
+            trigger: "#workList",
+            start: "bottom 10%",
+            end: "bottom bottom",
+            onEnter: () => {
+              //   console.log("onEnter");
+              CABLES.patch.setVariable("stringTexture", "works");
+            },
+            onLeave: () => {
+              CABLES.patch.setVariable("stringTexture", "about");
+              CABLES.patch.setVariable("mainColorHex", "#0b00ff");
+            },
+            onEnterBack: () => {
+              CABLES.patch.setVariable("stringTexture", "works");
+            },
+            onLeaveBack: () => {
+              CABLES.patch.setVariable("stringTexture", "mediaDesign");
+              CABLES.patch.setVariable("mainColor", "#141414");
+            },
+          },
+          // Add more triggers here if needed
+        ];
+        marginBottom = vhToPx(10);
+      }
 
-      hammer.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
-      const workelementsLength = workElements.length - 1;
+      function onElementVisible(element) {
+        element.classList.add("visibleImage", "active");
 
-      hammer.on("swipeup", (ev) => {
-        if (currentIndex < workelementsLength) {
-          currentIndex += 1; // Increment index
-          const nextElement = workElements[currentIndex];
-          console.log(
-            "Scrolling to previous element:",
-            nextElement.getAttribute("project"),
-            currentIndex
-          );
-          scrollToElement(nextElement, 1);
-        } else {
-          console.log("Already at last element");
-          scrollToSectionGsap("about", 2);
+        const titleElement = element.querySelector(".title");
+        titleElement?.classList.add("visibleTitle");
+
+        const descriptionElement = element.querySelector(".description");
+        descriptionElement?.classList.add("visibleDescription");
+
+        // Update main color if available
+        const mainColor = element.getAttribute("color");
+        if (mainColor && CABLES?.patch) {
+          CABLES.patch.setVariable("mainColorHex", mainColor);
         }
-      });
 
-      hammer.on("swipedown", (ev) => {
-        if (currentIndex > 0) {
-          currentIndex -= 1; // Decrement index
-          const previousElement = workElements[currentIndex];
-          console.log(
-            "Scrolling to previous element:",
-            previousElement.getAttribute("project"),
-            currentIndex
-          );
-          scrollToElement(previousElement, 1);
-        } else {
-          currentIndex = 0;
-          console.log("Already at first element", currentIndex);
-          scrollToSectionGsap("header", 1);
+        // Handle video playback
+        const videoElement = element.querySelector(".videojs-work");
+        if (videoElement) {
+          const player = videojs(videoElement);
+          player.muted(true);
+          player.play().catch(console.error);
         }
+      }
+
+      function onElementHidden(element) {
+        element.classList.remove("visibleImage", "active");
+
+        const titleElement = element.querySelector(".title");
+        titleElement?.classList.remove("visibleTitle");
+
+        const descriptionElement = element.querySelector(".description");
+        descriptionElement?.classList.remove("visibleDescription");
+
+        const videoElement = element.querySelector(".videojs-work");
+        if (videoElement) {
+          const player = videojs(videoElement);
+          player.muted(true);
+          player.pause();
+        }
+      }
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            // Calculate visible area
+            const visibleArea =
+              entry.intersectionRect.width * entry.intersectionRect.height;
+            const totalArea =
+              entry.boundingClientRect.width * entry.boundingClientRect.height;
+            const visiblePercentage = Math.round(entry.intersectionRatio * 100);
+
+            if (entry.isIntersecting) {
+              onElementVisible(entry.target);
+              // console.log("Element is visible:", {
+              //   element: entry.target,
+              //   visibleArea: Math.round(visibleArea) + "px²",
+              //   totalArea: Math.round(totalArea) + "px²",
+              //   visiblePercentage: visiblePercentage + "%",
+              //   dimensions: {
+              //     width: Math.round(entry.intersectionRect.width) + "px",
+              //     height: Math.round(entry.intersectionRect.height) + "px",
+              //   },
+              // });
+            } else {
+              onElementHidden(entry.target);
+            }
+          });
+        },
+        {
+          root: null,
+          rootMargin: `65px 0px -${marginBottom}px 0px`,
+          threshold: 1.0, // Multiple thresholds for more detailed tracking
+        }
+      );
+
+      // Find all elements with class 'work' and observe them
+      workElements.forEach((element) => {
+        observer.observe(element);
       });
-
-      const triggers = [
-        {
-          trigger: "#work",
-          start: "top 70%",
-          end: "bottom 50%",
-          onEnter: () => {
-            const nextElement = workElements[0];
-            scrollToElement(nextElement, 1);
-            highlightMenuItem(1);
-          },
-          onLeave: () => {
-            scrollToSectionGsap("about", 1);
-            highlightMenuItem(2);
-          },
-          onEnterBack: () => {
-            currentIndex = workelementsLength;
-            const previousElement = workElements[currentIndex];
-
-            console.log(
-              "Scrolling to previous element:",
-              previousElement.getAttribute("project"),
-              currentIndex
-            );
-
-            // scrollToElement(previousElement, 1);
-            // console.log(nextElement);
-            highlightMenuItem(1);
-          },
-          onLeaveBack: () => {
-            // scrollToSection("header", 2, 0);
-            highlightMenuItem(0);
-          },
-        },
-
-        {
-          trigger: "#workList",
-          start: "bottom 10%",
-          end: "bottom bottom",
-          onEnter: () => {
-            //   console.log("onEnter");
-            CABLES.patch.setVariable("stringTexture", "works");
-          },
-          onLeave: () => {
-            CABLES.patch.setVariable("stringTexture", "about");
-            CABLES.patch.setVariable("mainColorHex", "#0b00ff");
-          },
-          onEnterBack: () => {
-            CABLES.patch.setVariable("stringTexture", "works");
-          },
-          onLeaveBack: () => {
-            CABLES.patch.setVariable("stringTexture", "mediaDesign");
-            CABLES.patch.setVariable("mainColor", "#141414");
-          },
-        },
-        // Add more triggers here if needed
-      ];
 
       triggers.forEach(
         ({
@@ -326,40 +397,51 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       );
     }
 
-    // canvasMask position
+    // Mask positions
 
-    const canvasMask4 = document.getElementById("canvasMask4");
-    canvasMask4.style.height =
-      String(getElementPosition("#text1").bottom) + "px";
+    if (mq1.matches || mq2.matches || mq3.matches) {
+      const canvasMask4 = document.getElementById("canvasMask4");
+      const mask5 = document.getElementById("canvasMask5");
+
+      mask4.style.height = String(getElementPosition("#text1").bottom) + "px";
+
+      // Track position of the mask
+
+      function updatePosition() {
+        if (workList && mask1 && mask5) {
+          const rect = workList.getBoundingClientRect();
+          var WorkHeight = workList.offsetHeight;
+
+          mask1.style.transform = `translateY(${rect.top + window.scrollY}px)`;
+          mask1.style.height = `${WorkHeight}px`;
+          mask5.style.transform = `translateY(${
+            rect.bottom + window.scrollY
+          }px)`;
+        }
+      }
+      requestAnimationFrame(function animate() {
+        updatePosition();
+        requestAnimationFrame(animate);
+      });
+    }
+
     if (mq2.matches) {
       const deco3 = document.getElementById("deco3");
       deco3.style.top = String(getElementPosition("#text1").bottom) + "px";
+
+      const backgroundMask1 = document.getElementById("backgroundMask1");
+      const text1Position = document
+        .querySelector("#text1")
+        .getBoundingClientRect();
+      backgroundMask1.style.height = `calc(100% - ${text1Position.bottom}px + 65px)`;
     }
     if (mq1.matches) {
       const deco3 = document.getElementById("deco3");
       deco3.style.top = String(getElementPosition("#text1").bottom) + "px";
     }
-
-    // Track position of the mask
-
-    const workList = document.getElementById("workList");
-    const mask1 = document.getElementById("canvasMask1");
-    const mask5 = document.getElementById("canvasMask5");
-
-    function updatePosition() {
-      if (workList && mask1 && mask5) {
-        const rect = workList.getBoundingClientRect();
-        var WorkHeight = workList.offsetHeight;
-
-        mask1.style.transform = `translateY(${rect.top + window.scrollY}px)`;
-        mask1.style.height = `${WorkHeight}px`;
-        mask5.style.transform = `translateY(${rect.bottom + window.scrollY}px)`;
-      }
-    }
-
-    requestAnimationFrame(function animate() {
-      updatePosition();
-      requestAnimationFrame(animate);
-    });
   }
 });
+
+
+
+

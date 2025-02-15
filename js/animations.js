@@ -72,6 +72,14 @@ function patchFinishedLoading(patch) {
         end: "top top",
       },
     });
+    const tl6 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 1,
+        trigger: "#about",
+        start: "top 80%",
+        end: "top top",
+      },
+    });
 
     //// mq3
 
@@ -79,10 +87,10 @@ function patchFinishedLoading(patch) {
       tl1.to("#logo", { translateY: "-50vh" }),
         tl1.to("#text1", { translateY: "-70vh", opacity: 0 }, "<"),
         tl1.to("#canvasMask4", { translateY: "-70vh" }, "<"),
+        tl1.to("#canvasMask3", { height: "65px", left: 0 }, "<"),
         tl1.to("#deco1", { opacity: 0 }, "<"),
         tl1.to("#deco2", { opacity: 0 }, "<"),
         tl1.to("#deco3", { opacity: 0 }, "<"),
-        tl1.to("#canvasMask3", { height: "65px", left: 0 }, "<"),
         tl1.to("#backgroundMask2", { translateY: "-100vh" }, "<"),
         tl1.to("#decoText1", { translateY: "-50vh" }, "<");
 
@@ -94,7 +102,7 @@ function patchFinishedLoading(patch) {
         "#curriculum",
         { opacity: 0, translateX: "-20px" },
         { opacity: 1, translateX: "0px" },
-        "<"
+        "<50%"
       ),
         tl3.to(".videojs-about", {
           keyframes: {
@@ -128,22 +136,29 @@ function patchFinishedLoading(patch) {
       tl4.to("#logo", { translateY: "-50vh" }),
         tl4.to("#decoText1", { opacity: 0 }, "<"),
         tl4.to("#text1", { opacity: 0, translateY: "-50vh" }, "<"),
+        tl4.to("#canvasMask4", { translateY: "-70vh" }, "<"),
+        tl4.to("#canvasMask3", { height: "65px" }, "<"),
         tl4.to("#logoPlayer", { scale: "0.75" }, "<"),
         tl4.to("#backgroundMask1", { height: 0 }, "<");
 
-      tl3.fromTo(
+      tl6.fromTo(
         "#curriculum",
         { opacity: 0, translateX: "-20px" },
         { opacity: 1, translateX: "0px" },
         "<"
       ),
-        tl3.to(".videojs-about", {
+        tl6.to(".videojs-about", {
           keyframes: {
             opacity: [0, 1, 0, 1, 0, 0, 1, 0, 1],
             ease: "none", // ease the entire keyframe block
           },
           duration: 0.5,
         });
+
+      imageElement = document.querySelector(".videojs-about");
+      imageHeight = imageElement.offsetHeight;
+
+      tl6.to("#canvasMask3", { height: `400px` }, "<");
 
       tl3.fromTo(
         "#textContact",
@@ -170,11 +185,11 @@ function patchFinishedLoading(patch) {
 
     if (mq1.matches) {
       tl4.to("#logo", { translateY: "-48vh" }),
+        tl4.to("#text1", { opacity: 0 }, "-=1"),
         tl4.to("#decoText1", { opacity: 0 }, "<"),
         tl4.to("#deco1", { opacity: 0 }, "<"),
         tl4.to("#deco2", { opacity: 0 }, "<"),
         tl4.to("#deco3", { opacity: 0 }, "<"),
-        tl4.to("#text1", { opacity: 0, translateX: "-50vw" }, "<"),
         tl4.to("#logoPlayer", { scale: "0.6" }, "<"),
         tl4.to("#backgroundMask1", { translateX: "-100vw" }, "<"),
         tl4.to("#canvasMask4", { height: "100vh" }, "<");
@@ -247,41 +262,43 @@ function patchFinishedLoading(patch) {
     gridItems.forEach((item) => {
       observer.observe(item);
     });
+
+    let currentIndex = 1;
+    const workFields = Array.from(
+      document.getElementById("workFields").getElementsByTagName("li")
+    ).map((li) => li.textContent);
+    const decoText = document.getElementById("decoText1");
+    decoText.textContent = workFields[0];
+
+    setInterval(() => {
+      if (isElementVisible("#header") == true) {
+        decoText.textContent = workFields[currentIndex];
+        CABLES.patch.setVariable("stringTexture", workFields[currentIndex]);
+      }
+
+      currentIndex = (currentIndex + 1) % workFields.length;
+    }, 5000); // 5000 milliseconds = 5 seconds
   }
 
-  let currentIndex = 1;
-  const workFields = Array.from(
-    document.getElementById("workFields").getElementsByTagName("li")
-  ).map((li) => li.textContent);
-  const decoText = document.getElementById("decoText1");
-  decoText.textContent = workFields[0];
+  if (pageContext == "works") {
+    pageLoad
+      .from("#logo", 1, { autoAlpha: 0 }, 0.5)
+      .from("#title", 1, { x: -25, autoAlpha: 0 }, 0.8)
+      .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
+      .from("#deco2", 1, { x: -25, autoAlpha: 0 }, 1.1)
+      .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
 
-  setInterval(() => {
-    if (isElementVisible("#header") == true) {
-      decoText.textContent = workFields[currentIndex];
-      CABLES.patch.setVariable("stringTexture", workFields[currentIndex]);
+    if (mq3.matches) {
+      // const galleryVoidElement = document.querySelector(".galleryVoid");
+      // // Scroll to the position of the galleryVoidElement
+      // gsap.to(window, {
+      //   duration: 0.2,
+      //   scrollTo: {
+      //     y: galleryVoidElement,
+      //     offsetY: 0, // Optionally adjust the offset if needed
+      //   },
+      // });
     }
-
-    currentIndex = (currentIndex + 1) % workFields.length;
-  }, 5000); // 5000 milliseconds = 5 seconds
-}
-if (pageContext == "works") {
-  pageLoad
-    .from("#logo", 1, { autoAlpha: 0 }, 1.2)
-    .from("#infoList", 1, { x: -25, autoAlpha: 0 }, 1)
-    .from("#deco2", 1, { x: -25, autoAlpha: 0 }, 1.1)
-    .from("#description", 1, { x: -25, autoAlpha: 0 }, 1.2);
-
-  if (mq3.matches) {
-    // const galleryVoidElement = document.querySelector(".galleryVoid");
-    // // Scroll to the position of the galleryVoidElement
-    // gsap.to(window, {
-    //   duration: 0.2,
-    //   scrollTo: {
-    //     y: galleryVoidElement,
-    //     offsetY: 0, // Optionally adjust the offset if needed
-    //   },
-    // });
   }
 }
 

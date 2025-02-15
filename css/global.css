@@ -21,7 +21,7 @@
 
   --mainHeight: calc(100vh - 110px);
   --mainWidth: calc(100vw - ((var(--mainMargin) * 2) + var(--mainPadding)));
-  --mainWidthMq2: calc(100vw - 56px);
+  --mainWidthTouch: calc(100vw - (var(--mainMargin) * 2));
   --headerTextOffset: 50px;
 }
 
@@ -35,15 +35,25 @@
   user-select: none;
   font-family: Twkeverett, sans-serif;
 }
+#videoContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
   background-color: var(--bck0);
   color: #fff;
   opacity: 0;
-  height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
+  /* height: 100vh; */
+  /* min-width: 100vw;
+  max-width: 100vw; */
+  overflow: hidden;
 }
 
 a {
@@ -68,17 +78,15 @@ ol {
 }
 #glcanvas {
   display: block;
-  top: 0;
-  left: 0;
   outline: 0;
-  z-index: 1;
   mix-blend-mode: multiply;
 }
 
 .srcshape {
   position: fixed;
+  width: 100vw;
+  height: 100vh;
   top: 0;
-  left: 0;
   z-index: 5;
   mix-blend-mode: multiply;
 }
@@ -142,8 +150,12 @@ nav a {
   font-weight: var(--fRegular);
   text-decoration: underline;
 }
+.container-3.w-container {
+  margin: unset;
+}
 
-.vjs-loading-spinner {
+.vjs-loading-spinner,
+.vjs-modal-dialog-content {
   display: none !important;
 }
 

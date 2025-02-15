@@ -31,10 +31,33 @@ let initCount = 0;
 let hasInitialized = false;
 
 function patchInitialized(patch) {
-  if (hasInitialized) {
-    //console.log("Skipping repeated initialization");
-    return;
-  }
+  const canvas = document.getElementById("glcanvas");
+  const rect = canvas.getBoundingClientRect();
+
+  document.addEventListener("mousemove", (event) => {
+    // Step 1: Calculate coordinates relative to the canvas
+    const canvasX = event.clientX - rect.left;
+    const canvasY = event.clientY - rect.top;
+
+    // Step 2: Normalize to a 0-1 range
+    var normX = canvasX / rect.width;
+    var normY = canvasY / rect.height;
+
+    // Step 3: Convert to -1 to 1 range (and flip y for WebGL, if needed)
+    var ndcX = normX * 2 - 1;
+    var ndcY = -(normY * 2 - 1); // flip y-axis
+
+    CABLES.patch.setVariable("mouseX", ndcX);
+    CABLES.patch.setVariable("mouseY", ndcY);
+    //   console.log({
+    //     canvasX,
+    //     canvasY,
+    //     normX,
+    //     normY,
+    //     ndcX,
+    //     ndcY,
+    //   });
+  });
 
   initCount++;
   // console.log(`Patch Initialized - Attempt: ${initCount}`, {
@@ -53,13 +76,6 @@ function patchFinishedLoading(patch) {
   const videoFullscreen = CABLES.patch.getVar("videoFullscreen");
   const videoMuted = CABLES.patch.getVar("videoMuted");
   const isImage = CABLES.patch.getVar("isImage");
-
-  // Get mouse position in -1 to 1 range
-  document.addEventListener("mousemove", (e) => {
-    const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
-    const mouseY = (e.clientY / window.innerHeight) * 2 - 1;
-    CABLES.patch.setVariable("mousePosition", [mouseX, mouseY]);
-  });
 }
 
 document.addEventListener("CABLES.jsLoaded", function (event) {
@@ -95,6 +111,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       imageTextureWrap: 0,
       autoTransformSpeed: 0.2,
       mouseTransformSpeed: 0.5,
+      trailAmmount: 0.5,
     },
     patch: CABLES.exportedPatch,
     prefixAssetPath: path,

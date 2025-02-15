@@ -38,8 +38,7 @@
       padding-bottom: 0;
     }
     #work,
-    #about,
-    #header {
+    #about {
       margin-left: var(--q1Margin) !important;
       margin-right: var(--q1Margin) !important;
       padding-left: unset !important;
@@ -67,8 +66,9 @@
     #about {
       height: unset;
       padding-bottom: 10vh;
-      margin-top: 50vh;
+      margin-top: 10vh;
       mix-blend-mode: unset;
+      z-index: 1;
     }
 
     main .work {
@@ -87,6 +87,7 @@
     #canvasMask3 {
       display: none;
     }
+
     #backgroundMask1 {
       height: 45vh;
       left: 0;
@@ -97,6 +98,9 @@
       width: unset;
     }
     #backgroundMask2 {
+      display: none;
+    }
+    #backgroundMask4 {
       display: none;
     }
 
