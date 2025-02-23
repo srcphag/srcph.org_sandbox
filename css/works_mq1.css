@@ -145,13 +145,19 @@
       justify-content: flex-end;
       pointer-events: none;
     }
-    #playerControls > div {
-      width: 14px;
-      height: 22.4px;
-      margin-right: var(--q1Margin);
+    #playerControls #controlsWrapper {
       position: relative;
       bottom: 45px;
       pointer-events: all;
+      margin-left: unset;
+      width: calc(100vw - (var(--q1Margin) * 2));
+      margin: 0 var(--q1Margin);
+    }
+    #controlsWrapper > div:nth-child(2) {
+      padding: unset;
+    }
+    #playerControls div.magic-hover {
+      padding: 5px 7px;
     }
   }
 }

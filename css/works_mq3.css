@@ -29,6 +29,14 @@
     z-index: 6;
     position: absolute;
   }
+  #canvasMask1 {
+    position: fixed;
+    height: var(--headerHeight);
+    width: calc((var(--mainWidth) / 6) + var(--mainMargin));
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
   #canvasMask3 {
     width: calc((var(--mainWidth) / 6) + var(--mainPadding));
     left: calc(var(--mainMargin));
@@ -54,8 +62,17 @@
     background-color: transparent;
     padding-top: var(--headerHeight);
   }
+  #title {
+    font-size: calc(var(--textSize1) + 0.15rem) !important;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: unset;
+    line-height: 24px;
+  }
   .infowrapper .w-richtext {
     padding-bottom: 20px;
+    font-size: var(--textSize1) !important;
+    line-height: var(--lineHeight1) !important;
   }
   #col2 .infowrapper .w-richtext {
     padding: 40px 20px 20px 20px;
@@ -118,14 +135,6 @@
     grid-area: 1/1;
     /* margin: 50px 0 0 0; */
     filter: grayscale(100%);
-  }
-
-  .heading {
-    font-size: var(--textSize1);
-    margin: 0;
-    margin-top: 10px;
-    margin-left: unset;
-    line-height: 24px;
   }
 
   #infoList {
@@ -199,7 +208,7 @@
     background-color: var(--black);
   }
   main #imageList li {
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   #logo {
     position: fixed;
@@ -210,22 +219,43 @@
 
   #playerControls {
     position: fixed;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 25px; /* needs defined width */
-    height: 40px; /* needs defined height */
+    /* width: 25px; 
+    height: 40px;  */
     z-index: 10;
   }
+  #playerControls div.magic-hover#play {
+    font-weight: var(--fBold);
+  }
 
-  #playerControls > div {
-    width: 25px; /* needs defined width */
-    height: 40px; /* needs defined height */
+  #playerControls div.magic-hover {
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: pointer;
+    /* cursor: pointer; */
+    background-color: var(--bck0);
+    color: var(--black);
+    padding: 5px 20px;
+    font-weight: var(--fLight);
+  }
+  #controlsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    margin-left: 50vw;
+  }
+  #controlsWrapper > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    padding-right: var(--mainMargin);
   }
 
   .backgroundmask {

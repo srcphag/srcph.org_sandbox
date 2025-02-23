@@ -87,5 +87,21 @@
       padding: unset !important;
       display: none;
     }
+    #controlsWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: unset;
+      margin-left: unset;
+    }
+    #controlsWrapper > div:nth-child(2) {
+      padding-right: unset;
+      position: absolute;
+      bottom: var(--mainMargin);
+      right: var(--mainMargin);
+    }
+    #playerControls div.magic-hover {
+      padding: 5px 7px;
+    }
   }
 }

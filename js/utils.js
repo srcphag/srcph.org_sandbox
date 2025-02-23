@@ -1,5 +1,15 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+options = {
+  outerStyle: "square",
+  hoverEffect: "circle-move",
+  hoverItemMove: false,
+  defaultCursor: false,
+  outerWidth: 6,
+  outerHeight: 6,
+};
+magicMouse(options);
+
 function handleScrollProgress(progress, variableName) {
   CABLES.patch.setVariable(variableName, progress);
 }
@@ -99,24 +109,26 @@ function highlightMenuItem(index) {
   navLinks[index].classList.add("highlight");
 }
 
-function scrollToSectionGsap(sectionName, durationLenght, offset = 0) {
-  const section = document.querySelector(`.${sectionName}`);
+function scrollToSectionGsap(sectionName, durationLength, offset = 0) {
+  if (isScrolling) return; // Prevent multiple calls while scrolling
 
-  if (section) {
-    isScrolling = true;
-    gsap.to(window, {
-      duration: durationLenght,
-      scrollTo: {
-        y: section,
-        offsetY: offset, // Adjust this value as needed
-        autoKill: false,
-      },
-      ease: "power3.out",
-      onComplete: () => {
-        isScrolling = false;
-      },
-    });
-  }
+  const section = document.querySelector(`.${sectionName}`);
+  if (!section) return; // Exit if the section does not exist
+
+  isScrolling = true; // Set the flag before starting the animation
+
+  gsap.to(window, {
+    duration: durationLength,
+    scrollTo: {
+      y: section,
+      offsetY: offset, // Adjust this value as needed
+      autoKill: false,
+    },
+    ease: "power3.out",
+    onComplete: () => {
+      isScrolling = false; // Reset the flag after animation completes
+    },
+  });
 }
 function scrollToLastWork(sectionName, durationLength = 1, offset = 0) {
   // Get all elements with class 'work' and take the last one

@@ -3,7 +3,6 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 
   if (pageContext == "index") {
     const usedPositions = new Set();
-    const workContainers = document.querySelectorAll(".work");
 
     /// Setting players
 
@@ -58,7 +57,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 
       //
 
-      workContainers.forEach((container) => {
+      workElements.forEach((container) => {
         const videoElement = container.querySelector(".videojs-work");
         if (!videoElement) return; // Skip if no video found in this container
 
@@ -87,16 +86,36 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
         // });
       });
 
-      workContainers.forEach((container) => {
+      workElements.forEach((container) => {
+        const descriptionElement = container.querySelector(".description");
         const titleElement = container.querySelector(".title");
-        container.addEventListener("mouseover", (event) => {
+
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo(
+          descriptionElement,
+          {
+            x: -30,
+          },
+          {
+            x: 0,
+            duration: 0.2,
+            ease: "power2.out",
+          }
+        );
+
+        container.addEventListener("mouseenter", (event) => {
           container.classList.add("workIndex");
           titleElement.classList.add("textVisible");
+          descriptionElement.classList.add("visibleDescription");
+          tl.progress(0);
+          tl.play();
         });
 
-        container.addEventListener("mouseout", () => {
+        container.addEventListener("mouseleave", () => {
           container.classList.remove("workIndex");
           titleElement.classList.remove("textVisible");
+          descriptionElement.classList.remove("visibleDescription");
         });
       });
     }
@@ -400,9 +419,6 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     // Mask positions
 
     if (mq1.matches || mq2.matches || mq3.matches) {
-      const canvasMask4 = document.getElementById("canvasMask4");
-      const mask5 = document.getElementById("canvasMask5");
-
       mask4.style.height = String(getElementPosition("#text1").bottom) + "px";
 
       // Track position of the mask
@@ -441,7 +457,3 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     }
   }
 });
-
-
-
-

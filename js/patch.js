@@ -24995,8 +24995,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -82 },
-        { name: "Movement Y", value: 1 },
+        { name: "Movement X", value: -36 },
+        { name: "Movement Y", value: 59 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -25371,7 +25371,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "h36xf2f52",
       uiAttribs: {},
       portsIn: [
-        { name: "Value", value: "works" },
+        { name: "Value", value: "index" },
         { name: "Variable", value: "pageContext" },
       ],
       objName: "Ops.Vars.VarSetString_v2",
@@ -25463,12 +25463,6 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "fvntb6ykt",
               objOut: "5cuc5vqu0",
             },
-            {
-              portIn: "render",
-              portOut: "trigger",
-              objIn: "5m0nxxnjx",
-              objOut: "5cuc5vqu0",
-            },
           ],
         },
       ],
@@ -25535,7 +25529,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "whp28n8pi",
       uiAttribs: {},
       portsOut: [
-        { name: "Switched Value", value: 1 },
+        { name: "Switched Value", value: 0 },
         {
           name: "Trigger 0",
           links: [
@@ -25558,7 +25552,18 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Highest Index", value: 1 },
+        {
+          name: "Trigger 2",
+          links: [
+            {
+              portIn: "Execute",
+              portOut: "Trigger 2",
+              objIn: "tjch93q43",
+              objOut: "whp28n8pi",
+            },
+          ],
+        },
+        { name: "Highest Index", value: 2 },
       ],
       objName: "Ops.Trigger.RouteTrigger",
     },
@@ -25680,6 +25685,12 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "uqyteclc3",
               objOut: "jh3l549w8",
             },
+            {
+              portIn: "Switch Value",
+              portOut: "Value",
+              objIn: "tjch93q43",
+              objOut: "jh3l549w8",
+            },
           ],
         },
       ],
@@ -25793,7 +25804,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "d7g5c0h5b",
               portOut: "Trigger 2",
-              objIn: "8jjtil0jj",
+              objIn: "36ydgfd4h",
               objOut: "val0mhtoj",
             },
           ],
@@ -25859,7 +25870,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "d7g5c0h5b",
               portOut: "Trigger 2",
-              objIn: "buwa4ywbx",
+              objIn: "l0oqnjosp",
               objOut: "uqyteclc3",
             },
           ],
@@ -25873,7 +25884,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       portsIn: [
         { name: "String 0", value: "index" },
         { name: "String 1", value: "works" },
-        { name: "String 2", value: "" },
+        { name: "String 2", value: "404" },
         { name: "String 3", value: "" },
         { name: "String 4", value: "" },
         { name: "String 5", value: "" },
@@ -25918,9 +25929,9 @@ CABLES.exportedPatches["GgjVeu"] = {
               objOut: "o6iq01n0j",
             },
             {
-              portIn: "Generate",
+              portIn: "nm7k58wq0",
               portOut: "Trigger 0",
-              objIn: "xvrxo414c",
+              objIn: "z7y2n2i3i",
               objOut: "o6iq01n0j",
             },
           ],
@@ -25932,6 +25943,17 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "render",
               portOut: "Trigger 1",
               objIn: "7e4ey2fi4",
+              objOut: "o6iq01n0j",
+            },
+          ],
+        },
+        {
+          name: "Trigger 2",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 2",
+              objIn: "o9xs3vhpa",
               objOut: "o6iq01n0j",
             },
           ],
@@ -26323,8 +26345,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Passive Events", value: 0 },
       ],
       portsOut: [
-        { name: "x", value: -0.6842105263157895 },
-        { name: "y", value: -0.6447688564476886 },
+        { name: "x", value: 0.66875 },
+        { name: "y", value: -0.9497005988023952 },
         {
           name: "click",
           links: [
@@ -26338,8 +26360,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -82 },
-        { name: "Movement Y", value: 1 },
+        { name: "Movement X", value: -36 },
+        { name: "Movement Y", value: 59 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -27513,7 +27535,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "oen4upux4",
       uiAttribs: {},
       portsIn: [
-        { name: "Value", value: 1 },
+        { name: "Value", value: 0 },
         { name: "Variable", value: "videoMuted" },
       ],
       objName: "Ops.Vars.VarSetNumber_v2",
@@ -27522,7 +27544,6 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "plo7uwjmn",
       uiAttribs: { subPatch: "oq0mm5hrc" },
       portsIn: [
-        { name: "Array 2", value: 0 },
         { name: "Array 3", value: 0 },
         { name: "Array 4", value: 0 },
         { name: "Array 5", value: 0 },
@@ -27628,6 +27649,24 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "x1nx2ee3j",
               objOut: "ls1owm8vb",
             },
+            {
+              portIn: "r",
+              portOut: "value",
+              objIn: "mmx48qgw9",
+              objOut: "ls1owm8vb",
+            },
+            {
+              portIn: "Emissive R",
+              portOut: "value",
+              objIn: "zzjyotgds",
+              objOut: "ls1owm8vb",
+            },
+            {
+              portIn: "R",
+              portOut: "value",
+              objIn: "zzjyotgds",
+              objOut: "ls1owm8vb",
+            },
           ],
         },
         { name: "Valid Index", value: 1 },
@@ -27651,6 +27690,24 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "x1nx2ee3j",
               objOut: "gyjsxc17k",
             },
+            {
+              portIn: "g",
+              portOut: "value",
+              objIn: "mmx48qgw9",
+              objOut: "gyjsxc17k",
+            },
+            {
+              portIn: "Emissive G",
+              portOut: "value",
+              objIn: "zzjyotgds",
+              objOut: "gyjsxc17k",
+            },
+            {
+              portIn: "G",
+              portOut: "value",
+              objIn: "zzjyotgds",
+              objOut: "gyjsxc17k",
+            },
           ],
         },
         { name: "Valid Index", value: 1 },
@@ -27672,6 +27729,24 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "b",
               portOut: "value",
               objIn: "x1nx2ee3j",
+              objOut: "hnxcvkeen",
+            },
+            {
+              portIn: "b",
+              portOut: "value",
+              objIn: "mmx48qgw9",
+              objOut: "hnxcvkeen",
+            },
+            {
+              portIn: "Emissive B",
+              portOut: "value",
+              objIn: "zzjyotgds",
+              objOut: "hnxcvkeen",
+            },
+            {
+              portIn: "B",
+              portOut: "value",
+              objIn: "zzjyotgds",
               objOut: "hnxcvkeen",
             },
           ],
@@ -27716,15 +27791,6 @@ CABLES.exportedPatches["GgjVeu"] = {
       ],
       portsOut: [{ name: "create port out", value: 0 }],
       objName: "Ops.Ui.SubPatch",
-    },
-    {
-      id: "m9hzg1ife",
-      uiAttribs: { subPatch: "oq0mm5hrc" },
-      portsIn: [
-        { name: "create port", value: 0 },
-        { name: "out0 Ops.Ui.VizArrayTable Start Row", value: 0 },
-      ],
-      objName: "Ops.Ui.PatchOutput",
     },
     {
       id: "99lxruhzw",
@@ -27774,6 +27840,18 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "Texture",
               portOut: "Value",
               objIn: "23spdnjhn",
+              objOut: "e50oqab02",
+            },
+            {
+              portIn: "Texture",
+              portOut: "Value",
+              objIn: "9mk9lwfol",
+              objOut: "e50oqab02",
+            },
+            {
+              portIn: "Texture In",
+              portOut: "Value",
+              objIn: "b1025pxu7",
               objOut: "e50oqab02",
             },
           ],
@@ -27835,19 +27913,6 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Crop TexCoords", value: 0 },
         { name: "billboard", value: 0 },
       ],
-      portsOut: [
-        {
-          name: "trigger",
-          links: [
-            {
-              portIn: "render",
-              portOut: "trigger",
-              objIn: "23spdnjhn",
-              objOut: "x1nx2ee3j",
-            },
-          ],
-        },
-      ],
       objName: "Ops.Gl.Shader.BasicMaterial_v3",
     },
     {
@@ -27862,6 +27927,12 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "Texture",
               portOut: "Value",
               objIn: "99lxruhzw",
+              objOut: "6szyoriwg",
+            },
+            {
+              portIn: "Texture",
+              portOut: "Value",
+              objIn: "lgr7iccwf",
               objOut: "6szyoriwg",
             },
           ],
@@ -27962,17 +28033,6 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Active", value: 1 },
       ],
       portsOut: [
-        {
-          name: "Render Before",
-          links: [
-            {
-              portIn: "out1 Ops.Trigger.RouteTrigger Next Trigger",
-              portOut: "Render Before",
-              objIn: "m9hzg1ife",
-              objOut: "hjdeu0zr1",
-            },
-          ],
-        },
         { name: "Generator", value: "" },
         { name: "GLTF Version", value: 2 },
         { name: "Anim Length", value: 0 },
@@ -29641,7 +29701,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       portsIn: [
         { name: "String 0", value: "index" },
         { name: "String 1", value: "works" },
-        { name: "String 2", value: "" },
+        { name: "String 2", value: "404" },
         { name: "String 3", value: "" },
         { name: "String 4", value: "" },
         { name: "String 5", value: "" },
@@ -29685,15 +29745,32 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "x1nx2ee3j",
               objOut: "3ms5xb3ej",
             },
+            {
+              portIn: "Trigger In",
+              portOut: "Trigger 0",
+              objIn: "zzjyotgds",
+              objOut: "3ms5xb3ej",
+            },
           ],
         },
         {
           name: "Trigger 1",
           links: [
             {
-              portIn: "render",
+              portIn: "Execute",
               portOut: "Trigger 1",
-              objIn: "99lxruhzw",
+              objIn: "ml4jm0lz0",
+              objOut: "3ms5xb3ej",
+            },
+          ],
+        },
+        {
+          name: "Trigger 2",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 2",
+              objIn: "mmx48qgw9",
               objOut: "3ms5xb3ej",
             },
           ],
@@ -29977,7 +30054,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Size index", value: 1 },
         { name: "Size", value: "Manual" },
         { name: "Width", value: 2048 },
-        { name: "Height", value: 2048 },
+        { name: "Height", value: 682.6666666666666 },
         { name: "Auto Height", value: 0 },
         { name: "Auto Line Breaks", value: 0 },
         { name: "font", value: "everettLight" },
@@ -30010,19 +30087,36 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "background A", value: 1 },
       ],
       portsOut: [
-        { name: "Ratio", value: 1.0029296875 },
         {
-          name: "texture",
+          name: "Next",
           links: [
             {
-              portIn: "object port 0",
-              portOut: "texture",
-              objIn: "mosg1lz53",
+              portIn: "render",
+              portOut: "Next",
+              objIn: "5m0nxxnjx",
+              objOut: "fvntb6ykt",
+            },
+            {
+              portIn: "Render",
+              portOut: "Next",
+              objIn: "0wtkjvm38",
               objOut: "fvntb6ykt",
             },
           ],
         },
-        { name: "Aspect", value: 0.997078870496592 },
+        { name: "Ratio", value: 0.33642578125 },
+        {
+          name: "texture",
+          links: [
+            {
+              portIn: "Base Texture",
+              portOut: "texture",
+              objIn: "0wtkjvm38",
+              objOut: "fvntb6ykt",
+            },
+          ],
+        },
+        { name: "Aspect", value: 2.972423802612482 },
         { name: "Num Lines", value: 1 },
       ],
       objName: "Ops.Gl.Textures.TextTexture_v6",
@@ -30044,9 +30138,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Changed",
           links: [
             {
-              portIn: "Reset",
+              portIn: "xz0gracpt",
               portOut: "Changed",
-              objIn: "2z4excx7g",
+              objIn: "z7y2n2i3i",
               objOut: "pokh8f7mm",
             },
           ],
@@ -30062,116 +30156,15 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Next",
           links: [
             {
-              portIn: "Reset",
+              portIn: "xz0gracpt",
               portOut: "Next",
-              objIn: "2z4excx7g",
+              objIn: "z7y2n2i3i",
               objOut: "3jdhde75y",
             },
           ],
         },
       ],
       objName: "Ops.Trigger.TriggerButton",
-    },
-    {
-      id: "xvrxo414c",
-      uiAttribs: {},
-      portsIn: [
-        { name: "min", value: 0 },
-        { name: "max", value: 1 },
-        { name: "Integer", value: 1 },
-        { name: "No consecutive duplicates", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "Value 1",
-              portOut: "result",
-              objIn: "jubvms29d",
-              objOut: "xvrxo414c",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.TriggerRandomNumber_v2",
-    },
-    {
-      id: "2z4excx7g",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Speed", value: 1 },
-        { name: "Play", value: 1 },
-        { name: "Sync to timeline", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Time",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "Time",
-              objIn: "k8772j0ch",
-              objOut: "2z4excx7g",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Anim.Timer_v2",
-    },
-    {
-      id: "k8772j0ch",
-      uiAttribs: {},
-      portsIn: [{ name: "number2", value: 0.2 }],
-      portsOut: [
-        {
-          name: "result",
-          links: [
-            {
-              portIn: "Index",
-              portOut: "result",
-              objIn: "jubvms29d",
-              objOut: "k8772j0ch",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Math.Compare.LessThan",
-    },
-    {
-      id: "jubvms29d",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Value 0", value: 1 },
-        { name: "Value 2", value: 0 },
-        { name: "Value 3", value: 0 },
-        { name: "Value 4", value: 0 },
-        { name: "Value 5", value: 0 },
-        { name: "Value 6", value: 0 },
-        { name: "Value 7", value: 0 },
-        { name: "Value 8", value: 0 },
-        { name: "Value 9", value: 0 },
-        { name: "Value 10", value: 0 },
-        { name: "Value 11", value: 0 },
-        { name: "Value 12", value: 0 },
-        { name: "Value 13", value: 0 },
-        { name: "Value 14", value: 0 },
-        { name: "Value 15", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Result",
-          links: [
-            {
-              portIn: "Opacity",
-              portOut: "Result",
-              objIn: "fvntb6ykt",
-              objOut: "jubvms29d",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Number.SwitchNumber",
     },
     {
       id: "p6hjo3g1c",
@@ -30184,6 +30177,15 @@ CABLES.exportedPatches["GgjVeu"] = {
       uiAttribs: {},
       portsIn: [{ name: "Title", value: "" }],
       objName: "Ops.Ui.Area",
+    },
+    {
+      id: "3es0tzeh7",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "create port", value: 0 },
+        { name: "out0 Ops.Ui.VizArrayTable Start Row", value: 0 },
+      ],
+      objName: "Ops.Ui.PatchOutput",
     },
     {
       id: "3sodhmqvs",
@@ -30251,7 +30253,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "ovzv6maxr",
       uiAttribs: {},
       portsIn: [
-        { name: "Value", value: 0.1 },
+        { name: "Value", value: 1 },
         { name: "Variable", value: "autoTransformSpeed" },
       ],
       objName: "Ops.Vars.VarSetNumber_v2",
@@ -30277,9 +30279,27 @@ CABLES.exportedPatches["GgjVeu"] = {
               objOut: "onyu94me7",
             },
             {
+              portIn: "x0ic0h4fm",
+              portOut: "Value",
+              objIn: "tiwzxtzaz",
+              objOut: "onyu94me7",
+            },
+            {
+              portIn: "x0ic0h4fm",
+              portOut: "Value",
+              objIn: "hj7s4mhgf",
+              objOut: "onyu94me7",
+            },
+            {
               portIn: "ieb1lbewd",
               portOut: "Value",
-              objIn: "8jjtil0jj",
+              objIn: "36ydgfd4h",
+              objOut: "onyu94me7",
+            },
+            {
+              portIn: "ieb1lbewd",
+              portOut: "Value",
+              objIn: "yqe6tjlza",
               objOut: "onyu94me7",
             },
           ],
@@ -30416,7 +30436,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "ieb1lbewd",
               portOut: "Value",
-              objIn: "buwa4ywbx",
+              objIn: "l0oqnjosp",
               objOut: "e37ngwrk6",
             },
           ],
@@ -30435,7 +30455,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "83lvt4w8p",
               portOut: "Value",
-              objIn: "buwa4ywbx",
+              objIn: "l0oqnjosp",
               objOut: "1qfvv6m0r",
             },
           ],
@@ -30454,7 +30474,13 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "83lvt4w8p",
               portOut: "Value",
-              objIn: "8jjtil0jj",
+              objIn: "36ydgfd4h",
+              objOut: "s8pdb81a8",
+            },
+            {
+              portIn: "83lvt4w8p",
+              portOut: "Value",
+              objIn: "yqe6tjlza",
               objOut: "s8pdb81a8",
             },
           ],
@@ -30550,8 +30576,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "z1150e2ur",
       uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
       portsIn: [
-        { name: "Size index", value: 1 },
-        { name: "Size", value: "Manual" },
+        { name: "Size index", value: 0 },
+        { name: "Size", value: "Canvas" },
         { name: "Width", value: 629 },
         { name: "Height", value: 822 },
         { name: "filter index", value: 1 },
@@ -30581,9 +30607,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Texture",
           links: [
             {
-              portIn: "out0 ImageCompose texture_out",
+              portIn: "texture0",
               portOut: "Texture",
-              objIn: "c2dfdfab-f08f-46c6-8599-9c62d64da7c1",
+              objIn: "ckns4nxk6",
               objOut: "z1150e2ur",
             },
           ],
@@ -30628,7 +30654,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect", value: 0.5778588807785888 },
+        { name: "Aspect", value: 1.1497005988023952 },
       ],
       objName: "Ops.Gl.Matrix.Camera_v2",
     },
@@ -30653,17 +30679,11 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "width", value: 475 },
-        { name: "height", value: 822 },
+        { name: "width", value: 960 },
+        { name: "height", value: 835 },
         { name: "Pixel Density", value: 1 },
       ],
       objName: "Ops.Gl.MainLoop_v2",
-    },
-    {
-      id: "qxg4n5ydb",
-      uiAttribs: {},
-      portsIn: [{ name: "Variable", value: "mousePosition" }],
-      objName: "Ops.Vars.VarSetArray_v2",
     },
     {
       id: "tfqqg918w",
@@ -30704,148 +30724,10 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -82 },
-        { name: "Movement Y", value: 1 },
+        { name: "Movement X", value: -36 },
+        { name: "Movement Y", value: 59 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
-    },
-    {
-      id: "hrvqoi58d",
-      uiAttribs: {},
-      portsIn: [
-        { name: "Num Triplets", value: 100 },
-        { name: "X", value: 0 },
-        { name: "Y", value: 0 },
-        { name: "Z", value: 0 },
-      ],
-      portsOut: [
-        {
-          name: "Array",
-          links: [
-            {
-              portIn: "Value",
-              portOut: "Array",
-              objIn: "qxg4n5ydb",
-              objOut: "hrvqoi58d",
-            },
-          ],
-        },
-        { name: "Total points", value: 100 },
-        { name: "Array length", value: 300 },
-      ],
-      objName: "Ops.Array.Array3",
-    },
-    {
-      id: "buwa4ywbx",
-      uiAttribs: {},
-      storage: { blueprintVer: 2, subPatchVer: 2 },
-      portsIn: [
-        { name: "d7g5c0h5b", title: "Trigger 2" },
-        { name: "ieb1lbewd", title: "Value" },
-        { name: "83lvt4w8p", title: "Value" },
-        { name: "patchId", value: "bp2sub_buwa4ywbx" },
-      ],
-      portsOut: [
-        {
-          name: "d58ks5o1j",
-          title: "Result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "d58ks5o1j",
-              objIn: "zpdk4s7hr",
-              objOut: "buwa4ywbx",
-            },
-          ],
-        },
-        {
-          name: "eqbeofk6o",
-          title: "Result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "eqbeofk6o",
-              objIn: "sd5jtt6y5",
-              objOut: "buwa4ywbx",
-            },
-          ],
-        },
-        {
-          name: "vy0njf6dp",
-          title: "Result",
-          links: [
-            {
-              portIn: "number1",
-              portOut: "vy0njf6dp",
-              objIn: "e6ylr7btl",
-              objOut: "buwa4ywbx",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Patch.PGgjVeu.MouseInteract",
-    },
-    {
-      id: "8jjtil0jj",
-      uiAttribs: {},
-      storage: { blueprintVer: 2, subPatchVer: 2 },
-      portsIn: [
-        { name: "d7g5c0h5b", title: "Trigger 2" },
-        { name: "ieb1lbewd", title: "Value" },
-        { name: "83lvt4w8p", title: "Value" },
-        { name: "patchId", value: "bp2sub_8jjtil0jj" },
-      ],
-      portsOut: [
-        {
-          name: "d58ks5o1j",
-          title: "Result",
-          links: [
-            {
-              portIn: "icoiczvtv",
-              portOut: "d58ks5o1j",
-              objIn: "t94xojk09",
-              objOut: "8jjtil0jj",
-            },
-          ],
-        },
-        {
-          name: "eqbeofk6o",
-          title: "Result",
-          links: [
-            {
-              portIn: "6lhmsuqvg",
-              portOut: "eqbeofk6o",
-              objIn: "t94xojk09",
-              objOut: "8jjtil0jj",
-            },
-          ],
-        },
-        {
-          name: "vy0njf6dp",
-          title: "Result",
-          links: [
-            {
-              portIn: "09lct6z2t",
-              portOut: "vy0njf6dp",
-              objIn: "t94xojk09",
-              objOut: "8jjtil0jj",
-            },
-          ],
-        },
-        {
-          name: "cq7ouht1r",
-          title: "Next",
-          links: [
-            {
-              portIn: "2uzay3xk0",
-              portOut: "cq7ouht1r",
-              objIn: "t94xojk09",
-              objOut: "8jjtil0jj",
-            },
-          ],
-        },
-      ],
-      objName: "Ops.Patch.PGgjVeu.MouseInteract",
     },
     {
       id: "fat5zwhg1",
@@ -31040,8 +30922,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Passive Events", value: 0 },
       ],
       portsOut: [
-        { name: "x", value: -0.6842105263157895 },
-        { name: "y", value: -0.6447688564476886 },
+        { name: "x", value: 0.66875 },
+        { name: "y", value: -0.9497005988023952 },
         {
           name: "click",
           links: [
@@ -31055,8 +30937,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -82 },
-        { name: "Movement Y", value: 1 },
+        { name: "Movement X", value: -36 },
+        { name: "Movement Y", value: 59 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -31592,7 +31474,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "dhvqxgqt0",
       uiAttribs: { subPatch: "ada365e8-754a-450f-9fdb-6dc6f8348b73" },
       portsIn: [{ name: "Variable", value: "videoMuted" }],
-      portsOut: [{ name: "Value", value: 1 }],
+      portsOut: [{ name: "Value", value: 0 }],
       objName: "Ops.Vars.VarGetNumber_v2",
     },
     {
@@ -32120,8 +32002,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Passive Events", value: 0 },
       ],
       portsOut: [
-        { name: "x", value: -0.6842105263157895 },
-        { name: "y", value: -0.6447688564476886 },
+        { name: "x", value: 0.66875 },
+        { name: "y", value: -0.9497005988023952 },
         {
           name: "click",
           links: [
@@ -32135,8 +32017,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         },
         { name: "Button is down", value: 0 },
         { name: "Mouse is hovering", value: 0 },
-        { name: "Movement X", value: -82 },
-        { name: "Movement Y", value: 1 },
+        { name: "Movement X", value: -36 },
+        { name: "Movement Y", value: 59 },
       ],
       objName: "Ops.Devices.Mouse.Mouse_v3",
     },
@@ -32672,7 +32554,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "rq5vdxas2",
       uiAttribs: { subPatch: "13704e35-26e9-43b4-a28f-ca3749c1ccbe" },
       portsIn: [{ name: "Variable", value: "videoMuted" }],
-      portsOut: [{ name: "Value", value: 1 }],
+      portsOut: [{ name: "Value", value: 0 }],
       objName: "Ops.Vars.VarGetNumber_v2",
     },
     {
@@ -33112,9 +32994,9 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "Next",
           links: [
             {
-              portIn: "exec",
+              portIn: "Execute",
               portOut: "Next",
-              objIn: "wm3l5lbrt",
+              objIn: "rdlyyv1x4",
               objOut: "eyn33vy5z",
             },
           ],
@@ -33128,12 +33010,18 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "wm3l5lbrt",
               objOut: "eyn33vy5z",
             },
+            {
+              portIn: "texture1",
+              portOut: "texture",
+              objIn: "ckns4nxk6",
+              objOut: "eyn33vy5z",
+            },
           ],
         },
         { name: "duration", value: 119.933312 },
-        { name: "progress", value: 0.3370874527070924 },
+        { name: "progress", value: 0.4985898063298027 },
         { name: "Interaction Needed", value: 0 },
-        { name: "CurrentTime", value: 40.451393 },
+        { name: "CurrentTime", value: 59.832106 },
         {
           name: "Loading",
           links: [
@@ -33217,9 +33105,9 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect Ratio", value: 0.5778588807785888 },
-        { name: "Texture Width", value: 475 },
-        { name: "Texture Height", value: 822 },
+        { name: "Aspect Ratio", value: 1.1497005988023952 },
+        { name: "Texture Width", value: 960 },
+        { name: "Texture Height", value: 835 },
       ],
       objName: "Ops.Gl.ImageCompose.ImageCompose_v4",
     },
@@ -33310,7 +33198,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Y", value: 0.5 },
       ],
       portsOut: [
-        { name: "Info", value: "475x822 RGBA 8bit ubyte nearest clamp\n" },
+        { name: "Info", value: "960x835 RGBA 8bit ubyte nearest clamp\n" },
       ],
       objName: "Ops.Ui.VizTexture",
     },
@@ -33320,8 +33208,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       portsIn: [
         { name: "Size index", value: 0 },
         { name: "Size", value: "Canvas" },
-        { name: "texture width", value: 475 },
-        { name: "texture height", value: 822 },
+        { name: "texture width", value: 960 },
+        { name: "texture height", value: 835 },
         { name: "Auto Aspect", value: 1 },
         { name: "filter index", value: 1 },
         { name: "filter", value: "linear" },
@@ -33423,9 +33311,9 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect Ratio", value: 0.5778588807785888 },
-        { name: "Texture Width", value: 475 },
-        { name: "Texture Height", value: 822 },
+        { name: "Aspect Ratio", value: 1.1497005988023952 },
+        { name: "Texture Width", value: 960 },
+        { name: "Texture Height", value: 835 },
       ],
       objName: "Ops.Gl.ImageCompose.ImageCompose_v4",
     },
@@ -33443,7 +33331,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Y", value: 0.5 },
       ],
       portsOut: [
-        { name: "Info", value: "475x822 RGBA 8bit ubyte nearest clamp\n" },
+        { name: "Info", value: "960x835 RGBA 8bit ubyte nearest clamp\n" },
       ],
       objName: "Ops.Ui.VizTexture",
     },
@@ -33463,8 +33351,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "fillShape", value: 1 },
         { name: "Line thickness", value: 0 },
         { name: "Invert color", value: 0 },
-        { name: "width", value: 0.02, title: "Width" },
-        { name: "height", value: 0.02 },
+        { name: "width", title: "Width" },
         { name: "Rotate", value: 0 },
         { name: "r", value: 1 },
         { name: "g", value: 1 },
@@ -33540,13 +33427,12 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "4lio9i46g",
       uiAttribs: {},
       portsIn: [
-        { name: "Amount", value: 0.529 },
+        { name: "Amount", value: 0.862 },
         { name: "Blend Mode index", value: 0 },
         { name: "Blend Mode", value: "normal" },
         { name: "Alpha Mask index", value: 0 },
         { name: "Alpha Mask", value: "Off" },
-        { name: "Seed", value: 0.34 },
-        { name: "frequency", value: 28.98 },
+        { name: "Seed", value: -0.12 },
         { name: "strength", value: 1 },
         { name: "Block size small x", value: 100 },
         { name: "Block size small y", value: 100 },
@@ -33606,11 +33492,17 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "dmgmkfdso",
               objOut: "4ttdxv9y1",
             },
+            {
+              portIn: "Image",
+              portOut: "texture_out",
+              objIn: "4f06jwk3u",
+              objOut: "4ttdxv9y1",
+            },
           ],
         },
-        { name: "Aspect Ratio", value: 0.5778588807785888 },
-        { name: "Texture Width", value: 475 },
-        { name: "Texture Height", value: 822 },
+        { name: "Aspect Ratio", value: 1.1497005988023952 },
+        { name: "Texture Width", value: 960 },
+        { name: "Texture Height", value: 835 },
       ],
       objName: "Ops.Gl.ImageCompose.ImageCompose_v4",
     },
@@ -33628,7 +33520,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Y", value: 0.5 },
       ],
       portsOut: [
-        { name: "Info", value: "475x822 RGBA 8bit ubyte nearest clamp\n" },
+        { name: "Info", value: "960x835 RGBA 8bit ubyte nearest clamp\n" },
       ],
       objName: "Ops.Ui.VizTexture",
     },
@@ -33726,8 +33618,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       uiAttribs: {},
       portsIn: [
         { name: "use original size", value: 1 },
-        { name: "width", value: 475 },
-        { name: "height", value: 822 },
+        { name: "width", value: 960 },
+        { name: "height", value: 835 },
         { name: "filter index", value: 1 },
         { name: "filter", value: "linear" },
         { name: "Pixel Format index", value: 4 },
@@ -33759,7 +33651,7 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect Ratio", value: 0.5778588807785888 },
+        { name: "Aspect Ratio", value: 1.1497005988023952 },
       ],
       objName: "Ops.Gl.Textures.CopyTexture_v3",
     },
@@ -33798,6 +33690,12 @@ CABLES.exportedPatches["GgjVeu"] = {
               portIn: "render",
               portOut: "trigger",
               objIn: "jhu7n8je2",
+              objOut: "eivf5lesh",
+            },
+            {
+              portIn: "render",
+              portOut: "trigger",
+              objIn: "yxrh21yi6",
               objOut: "eivf5lesh",
             },
           ],
@@ -33886,9 +33784,9 @@ CABLES.exportedPatches["GgjVeu"] = {
             },
           ],
         },
-        { name: "Aspect Ratio", value: 0.5778588807785888 },
-        { name: "Texture Width", value: 475 },
-        { name: "Texture Height", value: 822 },
+        { name: "Aspect Ratio", value: 1.1497005988023952 },
+        { name: "Texture Width", value: 960 },
+        { name: "Texture Height", value: 835 },
       ],
       objName: "Ops.Gl.ImageCompose.ImageCompose_v4",
     },
@@ -33958,9 +33856,21 @@ CABLES.exportedPatches["GgjVeu"] = {
               objIn: "vsyg6lild",
               objOut: "0jpqp8o1c",
             },
+            {
+              portIn: "Generate",
+              portOut: "Next",
+              objIn: "s35yb63wr",
+              objOut: "0jpqp8o1c",
+            },
+            {
+              portIn: "Reset",
+              portOut: "Next",
+              objIn: "lbtbcoo3y",
+              objOut: "0jpqp8o1c",
+            },
           ],
         },
-        { name: "Number", value: -0.6447688564476886 },
+        { name: "Number", value: -0.9497005988023952 },
       ],
       objName: "Ops.Number.TriggerOnChangeNumber",
     },
@@ -34006,8 +33916,8 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "old max", value: 1 },
         { name: "new min", value: 1 },
         { name: "new max", value: 0 },
-        { name: "Easing index", value: 0 },
-        { name: "Easing", value: "Linear" },
+        { name: "Easing index", value: 1 },
+        { name: "Easing", value: "Smoothstep" },
         { name: "Clamp", value: 1 },
       ],
       portsOut: [
@@ -34015,15 +33925,15 @@ CABLES.exportedPatches["GgjVeu"] = {
           name: "result",
           links: [
             {
-              portIn: "a",
-              portOut: "result",
-              objIn: "jhu7n8je2",
-              objOut: "t4cg4mkdx",
-            },
-            {
               portIn: "amount",
               portOut: "result",
               objIn: "eivf5lesh",
+              objOut: "t4cg4mkdx",
+            },
+            {
+              portIn: "a",
+              portOut: "result",
+              objIn: "jhu7n8je2",
               objOut: "t4cg4mkdx",
             },
             {
@@ -34041,7 +33951,7 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "pn57ashc4",
       uiAttribs: {},
       portsIn: [
-        { name: "contrast", value: 0.51 },
+        { name: "contrast", value: 0.5 },
         { name: "brightness", value: 0.5 },
       ],
       portsOut: [
@@ -34091,7 +34001,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Y", value: 0.5 },
       ],
       portsOut: [
-        { name: "Info", value: "475x822 RGBA 8bit ubyte nearest clamp\n" },
+        { name: "Info", value: "960x835 RGBA 8bit ubyte nearest clamp\n" },
       ],
       objName: "Ops.Ui.VizTexture",
     },
@@ -34207,8 +34117,8 @@ CABLES.exportedPatches["GgjVeu"] = {
       id: "fu8upjak6",
       uiAttribs: {},
       portsIn: [
-        { name: "Width", value: 20 },
-        { name: "Height", value: 20 },
+        { name: "Width", value: 10 },
+        { name: "Height", value: 10 },
         { name: "Filter index", value: 0 },
         { name: "Filter", value: "nearest" },
         { name: "Wrap index", value: 0 },
@@ -34216,7 +34126,7 @@ CABLES.exportedPatches["GgjVeu"] = {
         { name: "Color", value: 0 },
         { name: "Pixel Format index", value: 4 },
         { name: "Pixel Format", value: "RGBA 8bit ubyte" },
-        { name: "Integer", value: 0 },
+        { name: "Integer", value: 1 },
         { name: "Seed", value: 1 },
         { name: "Channel R", value: 1 },
         { name: "Min R", value: 0 },
@@ -34238,12 +34148,12 @@ CABLES.exportedPatches["GgjVeu"] = {
             {
               portIn: "Image",
               portOut: "Texture",
-              objIn: "4f06jwk3u",
+              objIn: "kvw0sm4aa",
               objOut: "fu8upjak6",
             },
           ],
         },
-        { name: "Total Pixel", value: 400 },
+        { name: "Total Pixel", value: 100 },
       ],
       objName: "Ops.Gl.Textures.NoiseTexture",
     },
@@ -34413,8 +34323,1737 @@ CABLES.exportedPatches["GgjVeu"] = {
       ],
       objName: "Ops.Anim.Smooth",
     },
+    {
+      id: "o9xs3vhpa",
+      uiAttribs: {},
+      portsIn: [
+        { name: "r", value: 0 },
+        { name: "g", value: 0 },
+        { name: "b", value: 0 },
+        { name: "a", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "trigger",
+          links: [
+            {
+              portIn: "Render",
+              portOut: "trigger",
+              objIn: "6s5iwbhzc",
+              objOut: "o9xs3vhpa",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.ClearColor",
+    },
+    {
+      id: "6s5iwbhzc",
+      uiAttribs: {},
+      portsIn: [
+        { name: "text", value: "404 " },
+        { name: "Draw Mesh", value: 0 },
+        { name: "Scale Mesh", value: 0.5 },
+        { name: "Size index", value: 1 },
+        { name: "Size", value: "Manual" },
+        { name: "Width", value: 2048 },
+        { name: "Height", value: 2048 },
+        { name: "Auto Height", value: 0 },
+        { name: "Auto Line Breaks", value: 0 },
+        { name: "font", value: "everettLight" },
+        { name: "weight", value: "bold" },
+        { name: "fontSize", value: 956.09 },
+        { name: "align index", value: 1 },
+        { name: "align", value: "center" },
+        { name: "Vertical align index", value: 1 },
+        { name: "Vertical align", value: "Middle" },
+        { name: "Letter Spacing", value: 0 },
+        { name: "Line Height Add", value: 0 },
+        { name: "Padding Y Top", value: 0 },
+        { name: "Padding Y Bottom", value: 0 },
+        { name: "Padding X", value: 0 },
+        { name: "filter index", value: 1 },
+        { name: "filter", value: "linear" },
+        { name: "Wrap index", value: 0 },
+        { name: "Wrap", value: "repeat" },
+        { name: "Anisotropic index", value: 0 },
+        { name: "Anisotropic", value: 0 },
+        { name: "Reuse Texture", value: 1 },
+        { name: "Show Debug", value: 0 },
+        { name: "Redraw On Font Load", value: 1 },
+        { name: "r", value: 1 },
+        { name: "g", value: 1 },
+        { name: "b", value: 1 },
+        { name: "Opacity", value: 1 },
+        { name: "background R", value: 0 },
+        { name: "background G", value: 0 },
+        { name: "background B", value: 0 },
+        { name: "background A", value: 1 },
+      ],
+      portsOut: [
+        {
+          name: "Next",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Next",
+              objIn: "5m0nxxnjx",
+              objOut: "6s5iwbhzc",
+            },
+          ],
+        },
+        { name: "Ratio", value: 1 },
+        {
+          name: "texture",
+          links: [
+            {
+              portIn: "object port 2",
+              portOut: "texture",
+              objIn: "mosg1lz53",
+              objOut: "6s5iwbhzc",
+            },
+            {
+              portIn: "Texture In",
+              portOut: "texture",
+              objIn: "gxezgby9h",
+              objOut: "6s5iwbhzc",
+            },
+          ],
+        },
+        { name: "Aspect", value: 1 },
+        { name: "Num Lines", value: 1 },
+      ],
+      objName: "Ops.Gl.Textures.TextTexture_v6",
+    },
+    {
+      id: "tjch93q43",
+      uiAttribs: {},
+      portsIn: [
+        { name: "String 0", value: "mq1" },
+        { name: "String 1", value: "mq2" },
+        { name: "String 2", value: "mq3" },
+        { name: "String 3", value: "" },
+        { name: "String 4", value: "" },
+        { name: "String 5", value: "" },
+        { name: "String 6", value: "" },
+        { name: "String 7", value: "" },
+        { name: "String 8", value: "" },
+        { name: "String 9", value: "" },
+        { name: "String 10", value: "" },
+        { name: "String 11", value: "" },
+        { name: "String 12", value: "" },
+        { name: "String 13", value: "" },
+        { name: "String 14", value: "" },
+        { name: "String 15", value: "" },
+        { name: "String 16", value: "" },
+        { name: "String 17", value: "" },
+        { name: "String 18", value: "" },
+        { name: "String 19", value: "" },
+        { name: "String 20", value: "" },
+        { name: "String 21", value: "" },
+        { name: "String 22", value: "" },
+        { name: "String 23", value: "" },
+      ],
+      portsOut: [
+        { name: "Switched Index", value: 2 },
+        {
+          name: "Trigger 0",
+          links: [
+            {
+              portIn: "9mnoq6ams",
+              portOut: "Trigger 0",
+              objIn: "tiwzxtzaz",
+              objOut: "tjch93q43",
+            },
+          ],
+        },
+        {
+          name: "Trigger 1",
+          links: [
+            {
+              portIn: "9mnoq6ams",
+              portOut: "Trigger 1",
+              objIn: "hj7s4mhgf",
+              objOut: "tjch93q43",
+            },
+          ],
+        },
+        {
+          name: "Trigger 2",
+          links: [
+            {
+              portIn: "d7g5c0h5b",
+              portOut: "Trigger 2",
+              objIn: "yqe6tjlza",
+              objOut: "tjch93q43",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Trigger.RouteTriggerString_v2",
+    },
+    {
+      id: "xwullk18b",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 0.6 },
+        { name: "Y", value: 1.12 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "sjcn93uzi",
+              objOut: "xwullk18b",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "sjcn93uzi",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "al6v6db10",
+              objOut: "sjcn93uzi",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "eslpdvsv9",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 3.7 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "sjcn93uzi",
+              objOut: "eslpdvsv9",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "awwaalsl7",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 148.35 },
+        { name: "Y", value: -67.71 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "sjcn93uzi",
+              objOut: "awwaalsl7",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "pgzg8ma34",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 1.62 },
+        { name: "Y", value: 0 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "p9loqfq56",
+              objOut: "pgzg8ma34",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "p9loqfq56",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "s8716txow",
+              objOut: "p9loqfq56",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "15ao6bl6f",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 8.68 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "p9loqfq56",
+              objOut: "15ao6bl6f",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "y9ufeibir",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 332.62 },
+        { name: "Y", value: -88.18 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "p9loqfq56",
+              objOut: "y9ufeibir",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "5da6uhknz",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 3.88 },
+        { name: "Y", value: 0.89 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 0",
+              portOut: "Array",
+              objIn: "pm7wluk73",
+              objOut: "5da6uhknz",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "pm7wluk73",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array 3", value: 0 },
+        { name: "Array 4", value: 0 },
+        { name: "Array 5", value: 0 },
+        { name: "Array 6", value: 0 },
+        { name: "Array 7", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Result",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Result",
+              objIn: "r0tuv5hd6",
+              objOut: "pm7wluk73",
+            },
+          ],
+        },
+        { name: "Array length", value: 7 },
+      ],
+      objName: "Ops.Array.ArrayMerge_v3",
+    },
+    {
+      id: "r5ej5u0s3",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Array length", value: 1 },
+        { name: "Mode select index", value: 0 },
+        { name: "Mode select", value: "Number" },
+        { name: "Default Value", value: 5.95 },
+        { name: "Reverse", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 1",
+              portOut: "Array",
+              objIn: "pm7wluk73",
+              objOut: "r5ej5u0s3",
+            },
+          ],
+        },
+        { name: "Array length out", value: 1 },
+      ],
+      objName: "Ops.Array.Array_v3",
+    },
+    {
+      id: "nqdhfscj9",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "X", value: 248.87 },
+        { name: "Y", value: -40.95 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "pm7wluk73",
+              objOut: "nqdhfscj9",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "al6v6db10",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq3" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "s8716txow",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq2" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "r0tuv5hd6",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq1" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "1an36f0vs",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq1" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "byk06hys1",
+              portOut: "Value",
+              objIn: "3pes842n0",
+              objOut: "1an36f0vs",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "ztceytpm5",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq2" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "byk06hys1",
+              portOut: "Value",
+              objIn: "s1jyboif2",
+              objOut: "ztceytpm5",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "t16yxgjge",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "errorPSR_mq3" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "byk06hys1",
+              portOut: "Value",
+              objIn: "t0a9jtv61",
+              objOut: "t16yxgjge",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetArray_v2",
+    },
+    {
+      id: "t0a9jtv61",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "icoiczvtv", title: "number2" },
+        { name: "6lhmsuqvg", title: "number2" },
+        { name: "09lct6z2t", title: "number2" },
+        { name: "patchId", value: "bp2sub_t0a9jtv61" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "t0a9jtv61",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "s1jyboif2",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "icoiczvtv", value: 0, title: "number2" },
+        { name: "6lhmsuqvg", value: 0, title: "number2" },
+        { name: "09lct6z2t", value: 0, title: "number2" },
+        { name: "patchId", value: "bp2sub_s1jyboif2" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "s1jyboif2",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "3pes842n0",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "2uzay3xk0", title: "render" },
+        { name: "byk06hys1", title: "Array" },
+        { name: "icoiczvtv", value: 0, title: "number2" },
+        { name: "6lhmsuqvg", value: 0, title: "number2" },
+        { name: "09lct6z2t", value: 0, title: "number2" },
+        { name: "patchId", value: "bp2sub_3pes842n0" },
+      ],
+      portsOut: [
+        {
+          name: "driq8l4om",
+          title: "trigger",
+          links: [
+            {
+              portIn: "in0 Ops.Gl.Matrix.TransformView trigger",
+              portOut: "driq8l4om",
+              objIn: "hmrwm30er",
+              objOut: "3pes842n0",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
+    },
+    {
+      id: "hj7s4mhgf",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "9mnoq6ams", title: "Reset" },
+        { name: "x51l5mx3z", value: 0.5, title: "number1" },
+        { name: "via20ae2r", value: 0, title: "number1" },
+        { name: "eq3wcir2y", value: 0, title: "number1" },
+        { name: "x0ic0h4fm", title: "number1" },
+        { name: "patchId", value: "bp2sub_hj7s4mhgf" },
+      ],
+      portsOut: [
+        { name: "fei1jpjm5", value: 0, title: "Result" },
+        { name: "o1i9iyfw1", value: 0, title: "Result" },
+        { name: "arp1806j4", value: 0, title: "result" },
+        {
+          name: "scw0zze34",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "scw0zze34",
+              objIn: "s1jyboif2",
+              objOut: "hj7s4mhgf",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.AutoTransform",
+    },
+    {
+      id: "tiwzxtzaz",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "9mnoq6ams", title: "Reset" },
+        { name: "x51l5mx3z", value: 0.5, title: "number1" },
+        { name: "via20ae2r", value: 0, title: "number1" },
+        { name: "eq3wcir2y", value: 0, title: "number1" },
+        { name: "x0ic0h4fm", title: "number1" },
+        { name: "patchId", value: "bp2sub_tiwzxtzaz" },
+      ],
+      portsOut: [
+        { name: "fei1jpjm5", value: 17.281836431257368, title: "Result" },
+        { name: "o1i9iyfw1", value: 0, title: "Result" },
+        { name: "arp1806j4", value: 0, title: "result" },
+        {
+          name: "scw0zze34",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "scw0zze34",
+              objIn: "3pes842n0",
+              objOut: "tiwzxtzaz",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.AutoTransform",
+    },
+    {
+      id: "71ntvis15",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "r", value: 0.961 },
+        { name: "g", value: 0.125 },
+        { name: "b", value: 0 },
+        { name: "a", value: 0 },
+      ],
+      portsOut: [
+        { name: "outr", value: 0.961 },
+        { name: "outg", value: 0.125 },
+        { name: "outb", value: 0 },
+        { name: "outa", value: 0 },
+        { name: "Hex", value: "F52000" },
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Array 2",
+              portOut: "Array",
+              objIn: "plo7uwjmn",
+              objOut: "71ntvis15",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Color.ColorValue",
+    },
+    {
+      id: "7ucir53hh",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "mousePosition" }],
+      objName: "Ops.Vars.VarSetArray_v2",
+    },
+    {
+      id: "maqfpr9z7",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Num Triplets", value: 1 },
+        { name: "Z", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Array",
+          links: [
+            {
+              portIn: "Value",
+              portOut: "Array",
+              objIn: "7ucir53hh",
+              objOut: "maqfpr9z7",
+            },
+          ],
+        },
+        { name: "Total points", value: 1 },
+        { name: "Array length", value: 3 },
+      ],
+      objName: "Ops.Array.Array3",
+    },
+    {
+      id: "w138k92t1",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "mouseX" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "X",
+              portOut: "Value",
+              objIn: "maqfpr9z7",
+              objOut: "w138k92t1",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "owv4dx8m3",
+      uiAttribs: {},
+      portsIn: [{ name: "Variable", value: "mouseY" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Y",
+              portOut: "Value",
+              objIn: "maqfpr9z7",
+              objOut: "owv4dx8m3",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "gxezgby9h",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Show Info", value: 0 },
+        { name: "Visualize outside 0-1 index", value: 1 },
+        { name: "Visualize outside 0-1", value: "Anim" },
+        { name: "Alpha index", value: 0 },
+        { name: "Alpha", value: "A" },
+        { name: "Show Color", value: 0 },
+        { name: "X", value: 0.5 },
+        { name: "Y", value: 0.5 },
+      ],
+      portsOut: [
+        { name: "Info", value: "2048x2048 RGBA 8bit ubyte linear repeat\n" },
+      ],
+      objName: "Ops.Ui.VizTexture",
+    },
+    {
+      id: "lk91ozdv7",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "Translate X", value: 1 },
+        { name: "Translate Y", value: 0 },
+        { name: "Repeat X", value: 1 },
+        { name: "Repeat Y", value: 1 },
+        { name: "Flip X", value: 0 },
+        { name: "Flip Y", value: 0 },
+        { name: "Rotation", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Trigger",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger",
+              objIn: "9mk9lwfol",
+              objOut: "lk91ozdv7",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.ShaderEffects.TransformTextureCoordinates",
+    },
+    {
+      id: "mmx48qgw9",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "a", value: 1 },
+        { name: "colorizeTexture", value: 0 },
+        { name: "Vertex Colors", value: 0 },
+        { name: "Alpha Mask Source index", value: 0 },
+        { name: "Alpha Mask Source", value: "Luminance" },
+        { name: "Opacity TexCoords Transform", value: 0 },
+        { name: "Discard Transparent Pixels", value: 0 },
+        { name: "diffuseRepeatX", value: 1 },
+        { name: "diffuseRepeatY", value: 1 },
+        { name: "Tex Offset X", value: 0 },
+        { name: "Tex Offset Y", value: 0 },
+        { name: "Crop TexCoords", value: 0 },
+        { name: "billboard", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "trigger",
+          links: [
+            {
+              portIn: "render",
+              portOut: "trigger",
+              objIn: "lk91ozdv7",
+              objOut: "mmx48qgw9",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.Shader.BasicMaterial_v3",
+    },
+    {
+      id: "9mk9lwfol",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "blendMode index", value: 6 },
+        { name: "blendMode", value: "add" },
+        { name: "Amount", value: 1 },
+        { name: "Target index", value: 0 },
+        { name: "Target", value: "Color" },
+        { name: "Scale", value: 1 },
+        { name: "Use Texture Alpha", value: 0 },
+        { name: "Pos X", value: 0 },
+        { name: "Pos Y", value: 0 },
+        { name: "Rot X", value: 0 },
+        { name: "Rot Y", value: 0 },
+        { name: "Rot Z", value: 0 },
+        { name: "Mapping index", value: 5 },
+        { name: "Mapping", value: "TexCoords 1" },
+        { name: "Discard", value: 0 },
+        { name: "WorldSpace", value: 1 },
+      ],
+      portsOut: [
+        {
+          name: "trigger",
+          links: [
+            {
+              portIn: "Render",
+              portOut: "trigger",
+              objIn: "hjdeu0zr1",
+              objOut: "9mk9lwfol",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.ShaderEffects.TextureProjection_v2",
+    },
+    {
+      id: "b1025pxu7",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "Show Info", value: 0 },
+        { name: "Visualize outside 0-1 index", value: 1 },
+        { name: "Visualize outside 0-1", value: "Anim" },
+        { name: "Alpha index", value: 0 },
+        { name: "Alpha", value: "A" },
+        { name: "Show Color", value: 0 },
+        { name: "X", value: 0.5 },
+        { name: "Y", value: 0.5 },
+      ],
+      portsOut: [
+        { name: "Info", value: "2048x2048 RGBA 8bit ubyte linear repeat\n" },
+      ],
+      objName: "Ops.Ui.VizTexture",
+    },
+    {
+      id: "l0oqnjosp",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "d7g5c0h5b", title: "Trigger 2" },
+        { name: "ieb1lbewd", title: "Value" },
+        { name: "83lvt4w8p", title: "Value" },
+        { name: "patchId", value: "bp2sub_l0oqnjosp" },
+      ],
+      portsOut: [
+        {
+          name: "d58ks5o1j",
+          title: "Result",
+          links: [
+            {
+              portIn: "number1",
+              portOut: "d58ks5o1j",
+              objIn: "zpdk4s7hr",
+              objOut: "l0oqnjosp",
+            },
+          ],
+        },
+        {
+          name: "eqbeofk6o",
+          title: "Result",
+          links: [
+            {
+              portIn: "number1",
+              portOut: "eqbeofk6o",
+              objIn: "sd5jtt6y5",
+              objOut: "l0oqnjosp",
+            },
+          ],
+        },
+        {
+          name: "vy0njf6dp",
+          title: "Result",
+          links: [
+            {
+              portIn: "number1",
+              portOut: "vy0njf6dp",
+              objIn: "e6ylr7btl",
+              objOut: "l0oqnjosp",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.MouseInteract",
+    },
+    {
+      id: "36ydgfd4h",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "d7g5c0h5b", title: "Trigger 2" },
+        { name: "ieb1lbewd", title: "Value" },
+        { name: "83lvt4w8p", title: "Value" },
+        { name: "patchId", value: "bp2sub_36ydgfd4h" },
+      ],
+      portsOut: [
+        {
+          name: "d58ks5o1j",
+          title: "Result",
+          links: [
+            {
+              portIn: "icoiczvtv",
+              portOut: "d58ks5o1j",
+              objIn: "t94xojk09",
+              objOut: "36ydgfd4h",
+            },
+          ],
+        },
+        {
+          name: "eqbeofk6o",
+          title: "Result",
+          links: [
+            {
+              portIn: "6lhmsuqvg",
+              portOut: "eqbeofk6o",
+              objIn: "t94xojk09",
+              objOut: "36ydgfd4h",
+            },
+          ],
+        },
+        {
+          name: "vy0njf6dp",
+          title: "Result",
+          links: [
+            {
+              portIn: "09lct6z2t",
+              portOut: "vy0njf6dp",
+              objIn: "t94xojk09",
+              objOut: "36ydgfd4h",
+            },
+          ],
+        },
+        {
+          name: "cq7ouht1r",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "cq7ouht1r",
+              objIn: "t94xojk09",
+              objOut: "36ydgfd4h",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.MouseInteract",
+    },
+    {
+      id: "yqe6tjlza",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "d7g5c0h5b", title: "Trigger 2" },
+        { name: "ieb1lbewd", title: "Value" },
+        { name: "83lvt4w8p", title: "Value" },
+        { name: "patchId", value: "bp2sub_yqe6tjlza" },
+      ],
+      portsOut: [
+        {
+          name: "d58ks5o1j",
+          title: "Result",
+          links: [
+            {
+              portIn: "icoiczvtv",
+              portOut: "d58ks5o1j",
+              objIn: "t0a9jtv61",
+              objOut: "yqe6tjlza",
+            },
+          ],
+        },
+        {
+          name: "eqbeofk6o",
+          title: "Result",
+          links: [
+            {
+              portIn: "6lhmsuqvg",
+              portOut: "eqbeofk6o",
+              objIn: "t0a9jtv61",
+              objOut: "yqe6tjlza",
+            },
+          ],
+        },
+        {
+          name: "vy0njf6dp",
+          title: "Result",
+          links: [
+            {
+              portIn: "09lct6z2t",
+              portOut: "vy0njf6dp",
+              objIn: "t0a9jtv61",
+              objOut: "yqe6tjlza",
+            },
+          ],
+        },
+        {
+          name: "cq7ouht1r",
+          title: "Next",
+          links: [
+            {
+              portIn: "2uzay3xk0",
+              portOut: "cq7ouht1r",
+              objIn: "t0a9jtv61",
+              objOut: "yqe6tjlza",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Patch.PGgjVeu.MouseInteract",
+    },
+    {
+      id: "s35yb63wr",
+      uiAttribs: {},
+      portsIn: [
+        { name: "min", value: 0 },
+        { name: "max", value: 1 },
+        { name: "Integer", value: 0 },
+        { name: "No consecutive duplicates", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "result",
+          links: [
+            {
+              portIn: "number1",
+              portOut: "result",
+              objIn: "g1byf20ve",
+              objOut: "s35yb63wr",
+            },
+            {
+              portIn: "number1",
+              portOut: "result",
+              objIn: "fthm9ia3l",
+              objOut: "s35yb63wr",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Math.TriggerRandomNumber_v2",
+    },
+    {
+      id: "g1byf20ve",
+      uiAttribs: {},
+      portsIn: [{ name: "number2", value: 0.04 }],
+      portsOut: [
+        {
+          name: "result",
+          links: [
+            {
+              portIn: "width",
+              portOut: "result",
+              objIn: "jhu7n8je2",
+              objOut: "g1byf20ve",
+            },
+            {
+              portIn: "height",
+              portOut: "result",
+              objIn: "jhu7n8je2",
+              objOut: "g1byf20ve",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Math.Multiply",
+    },
+    {
+      id: "yxrh21yi6",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Blend Mode index", value: 0 },
+        { name: "Blend Mode", value: "normal" },
+        { name: "Alpha Mask index", value: 1 },
+        { name: "Alpha Mask", value: "On" },
+        { name: "Amount", value: 0.01 },
+        { name: "Shape index", value: 3 },
+        { name: "Shape", value: "box" },
+        { name: "Mirror X", value: 0 },
+        { name: "Mirror Y", value: 0 },
+        { name: "Offset X", value: 0 },
+        { name: "Offset Y", value: 0 },
+        { name: "fillShape", value: 1 },
+        { name: "Line thickness", value: 0 },
+        { name: "Invert color", value: 0 },
+        { name: "width", value: 1, title: "Width" },
+        { name: "height", value: 1 },
+        { name: "Rotate", value: 0 },
+        { name: "r", value: 1 },
+        { name: "g", value: 1 },
+        { name: "b", value: 1 },
+      ],
+      portsOut: [
+        {
+          name: "trigger",
+          links: [
+            {
+              portIn: "render",
+              portOut: "trigger",
+              objIn: "kvw0sm4aa",
+              objOut: "yxrh21yi6",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.ImageCompose.Shapes2d_v2",
+    },
+    {
+      id: "qvp3rze0d",
+      uiAttribs: {},
+      portsIn: [
+        { name: "old min", value: 0 },
+        { name: "old max", value: 1 },
+        { name: "new min", value: 1 },
+        { name: "new max", value: 0 },
+        { name: "Easing index", value: 0 },
+        { name: "Easing", value: "Linear" },
+        { name: "Clamp", value: 1 },
+      ],
+      portsOut: [
+        {
+          name: "result",
+          links: [
+            {
+              portIn: "a",
+              portOut: "result",
+              objIn: "yxrh21yi6",
+              objOut: "qvp3rze0d",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Math.MapRange",
+    },
+    {
+      id: "lbtbcoo3y",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Speed", value: 5 },
+        { name: "Play", value: 1 },
+        { name: "Sync to timeline", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Time",
+          links: [
+            {
+              portIn: "value",
+              portOut: "Time",
+              objIn: "qvp3rze0d",
+              objOut: "lbtbcoo3y",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Anim.Timer_v2",
+    },
+    {
+      id: "fthm9ia3l",
+      uiAttribs: {},
+      portsIn: [{ name: "number2", value: 10 }],
+      portsOut: [
+        {
+          name: "result",
+          links: [
+            {
+              portIn: "frequency",
+              portOut: "result",
+              objIn: "4lio9i46g",
+              objOut: "fthm9ia3l",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Math.Multiply",
+    },
+    {
+      id: "kvw0sm4aa",
+      uiAttribs: {},
+      portsIn: [
+        { name: "blendMode index", value: 3 },
+        { name: "blendMode", value: "multiply" },
+        { name: "amount", value: 1 },
+        { name: "Premultiplied", value: 0 },
+        { name: "Alpha Mask", value: 0 },
+        { name: "removeAlphaSrc", value: 0 },
+        { name: "Mask Src index", value: 1 },
+        { name: "Mask Src", value: "luminance" },
+        { name: "Invert alpha channel", value: 0 },
+        { name: "Aspect Ratio", value: 0 },
+        { name: "Stretch Axis index", value: 0 },
+        { name: "Stretch Axis", value: "X" },
+        { name: "Position", value: 0 },
+        { name: "Crop", value: 0 },
+        { name: "flip x", value: 0 },
+        { name: "flip y", value: 0 },
+        { name: "Transform", value: 0 },
+        { name: "Scale X", value: 1 },
+        { name: "Scale Y", value: 1 },
+        { name: "Position X", value: 0 },
+        { name: "Position Y", value: 0 },
+        { name: "Rotation", value: 0 },
+        { name: "Clip Repeat", value: 0 },
+      ],
+      objName: "Ops.Gl.ImageCompose.DrawImage_v3",
+    },
+    {
+      id: "8y2fp640r",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Value", value: 0 },
+        { name: "Variable", value: "videoFullscreen" },
+      ],
+      objName: "Ops.Vars.VarSetNumber_v2",
+    },
+    {
+      id: "lgr7iccwf",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "Scale index", value: 1 },
+        { name: "Scale", value: "Fit" },
+        { name: "Flip Y", value: 0 },
+        { name: "Flip X", value: 0 },
+      ],
+      objName: "Ops.Gl.Meshes.FullscreenRectangle_v2",
+    },
+    {
+      id: "ml4jm0lz0",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsOut: [
+        { name: "Switched Value", value: 0 },
+        {
+          name: "Trigger 0",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 0",
+              objIn: "99lxruhzw",
+              objOut: "ml4jm0lz0",
+            },
+          ],
+        },
+        {
+          name: "Trigger 1",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger 1",
+              objIn: "mj4jfqzhy",
+              objOut: "ml4jm0lz0",
+            },
+          ],
+        },
+        { name: "Highest Index", value: 1 },
+      ],
+      objName: "Ops.Trigger.RouteTrigger",
+    },
+    {
+      id: "7fxd86cp0",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [{ name: "Variable", value: "videoFullscreen" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Switch Value",
+              portOut: "Value",
+              objIn: "ml4jm0lz0",
+              objOut: "7fxd86cp0",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "rdlyyv1x4",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsOut: [
+        { name: "Switched Value", value: 0 },
+        {
+          name: "Trigger 0",
+          links: [
+            {
+              portIn: "exec",
+              portOut: "Trigger 0",
+              objIn: "wm3l5lbrt",
+              objOut: "rdlyyv1x4",
+            },
+          ],
+        },
+        {
+          name: "Trigger 1",
+          links: [
+            {
+              portIn: "exec",
+              portOut: "Trigger 1",
+              objIn: "ckns4nxk6",
+              objOut: "rdlyyv1x4",
+            },
+          ],
+        },
+        { name: "Highest Index", value: 1 },
+      ],
+      objName: "Ops.Trigger.RouteTrigger",
+    },
+    {
+      id: "8dq82j75d",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Variable", value: "videoFullscreen" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "num",
+              portOut: "Value",
+              objIn: "ckns4nxk6",
+              objOut: "8dq82j75d",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "ckns4nxk6",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Default Texture Transparent", value: 1 }],
+      portsOut: [
+        {
+          name: "Next",
+          links: [
+            {
+              portIn: "out1 ShaderToTexture Next",
+              portOut: "Next",
+              objIn: "c2dfdfab-f08f-46c6-8599-9c62d64da7c1",
+              objOut: "ckns4nxk6",
+            },
+          ],
+        },
+        {
+          name: "texture",
+          links: [
+            {
+              portIn: "out0 ImageCompose texture_out",
+              portOut: "texture",
+              objIn: "c2dfdfab-f08f-46c6-8599-9c62d64da7c1",
+              objOut: "ckns4nxk6",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.Textures.SwitchTextures_v2",
+    },
+    {
+      id: "47j2bunmq",
+      uiAttribs: { subPatch: "0ff66c6c-0dc3-43ce-bbac-906b76f3f60b" },
+      portsIn: [{ name: "Variable", value: "videoFullscreen" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Switch Value",
+              portOut: "Value",
+              objIn: "rdlyyv1x4",
+              objOut: "47j2bunmq",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetNumber_v2",
+    },
+    {
+      id: "mj4jfqzhy",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [{ name: "a", value: 0.93 }],
+      portsOut: [
+        {
+          name: "trigger",
+          links: [
+            {
+              portIn: "render",
+              portOut: "trigger",
+              objIn: "lgr7iccwf",
+              objOut: "mj4jfqzhy",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.ClearColor",
+    },
+    {
+      id: "z7y2n2i3i",
+      uiAttribs: {},
+      storage: { blueprintVer: 2, subPatchVer: 2 },
+      portsIn: [
+        { name: "xz0gracpt", title: "Changed" },
+        { name: "nm7k58wq0", title: "Trigger 0" },
+        { name: "patchId", value: "bp2sub_z7y2n2i3i" },
+      ],
+      portsOut: [
+        {
+          name: "ce2ob73kl",
+          title: "Opacity",
+          links: [
+            {
+              portIn: "Opacity",
+              portOut: "ce2ob73kl",
+              objIn: "fvntb6ykt",
+              objOut: "z7y2n2i3i",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.User.srcphag.Strobe",
+    },
+    {
+      id: "p1g8wrfh7",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Value", value: "#ededed" },
+        { name: "Variable", value: "backFullScreenColorHex" },
+      ],
+      objName: "Ops.Vars.VarSetString_v2",
+    },
+    {
+      id: "8u45kzlf4",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [{ name: "Bytes", value: 0 }],
+      portsOut: [
+        {
+          name: "R",
+          links: [
+            {
+              portIn: "r",
+              portOut: "R",
+              objIn: "mj4jfqzhy",
+              objOut: "8u45kzlf4",
+            },
+          ],
+        },
+        {
+          name: "G",
+          links: [
+            {
+              portIn: "g",
+              portOut: "G",
+              objIn: "mj4jfqzhy",
+              objOut: "8u45kzlf4",
+            },
+          ],
+        },
+        {
+          name: "B",
+          links: [
+            {
+              portIn: "b",
+              portOut: "B",
+              objIn: "mj4jfqzhy",
+              objOut: "8u45kzlf4",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Color.HexToRGB_v2",
+    },
+    {
+      id: "90bia1wzr",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [{ name: "Variable", value: "backFullScreenColorHex" }],
+      portsOut: [
+        {
+          name: "Value",
+          links: [
+            {
+              portIn: "Hex",
+              portOut: "Value",
+              objIn: "8u45kzlf4",
+              objOut: "90bia1wzr",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Vars.VarGetString",
+    },
+    {
+      id: "v0tlrpg3m",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Show Info", value: 0 },
+        { name: "Visualize outside 0-1 index", value: 1 },
+        { name: "Visualize outside 0-1", value: "Anim" },
+        { name: "Alpha index", value: 0 },
+        { name: "Alpha", value: "A" },
+        { name: "Show Color", value: 0 },
+        { name: "X", value: 0.5 },
+        { name: "Y", value: 0.5 },
+      ],
+      portsOut: [
+        { name: "Info", value: "2048x2048 RGBA 8bit ubyte linear repeat\n" },
+      ],
+      objName: "Ops.Ui.VizTexture",
+    },
+    {
+      id: "y0ubrodna",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Blend Mode index", value: 0 },
+        { name: "Blend Mode", value: "normal" },
+        { name: "Amount", value: 1 },
+        { name: "x", value: 1 },
+        { name: "y", value: 3 },
+        { name: "Clear", value: 1 },
+      ],
+      objName: "Ops.Gl.ImageCompose.RepeatTexture_v2",
+    },
+    {
+      id: "0wtkjvm38",
+      uiAttribs: {},
+      portsIn: [
+        { name: "Size index", value: 2 },
+        { name: "Size", value: "Manual" },
+        { name: "Width", value: 2048 },
+        { name: "Height", value: 2048 },
+        { name: "Filter index", value: 1 },
+        { name: "Filter", value: "linear" },
+        { name: "Wrap index", value: 1 },
+        { name: "Wrap", value: "repeat" },
+        { name: "Anisotropic index", value: 0 },
+        { name: "Anisotropic", value: "0" },
+        { name: "Pixel Format index", value: 4 },
+        { name: "Pixel Format", value: "RGBA 8bit ubyte" },
+        { name: "Clear", value: 1 },
+        { name: "R", value: 0 },
+        { name: "G", value: 0 },
+        { name: "B", value: 0 },
+        { name: "A", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Next",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Next",
+              objIn: "y0ubrodna",
+              objOut: "0wtkjvm38",
+            },
+          ],
+        },
+        {
+          name: "texture_out",
+          links: [
+            {
+              portIn: "Texture In",
+              portOut: "texture_out",
+              objIn: "v0tlrpg3m",
+              objOut: "0wtkjvm38",
+            },
+            {
+              portIn: "object port 0",
+              portOut: "texture_out",
+              objIn: "mosg1lz53",
+              objOut: "0wtkjvm38",
+            },
+          ],
+        },
+        { name: "Aspect Ratio", value: 1 },
+        { name: "Texture Width", value: 2048 },
+        { name: "Texture Height", value: 2048 },
+      ],
+      objName: "Ops.Gl.ImageCompose.ImageCompose_v4",
+    },
+    {
+      id: "zzjyotgds",
+      uiAttribs: { subPatch: "oq0mm5hrc" },
+      portsIn: [
+        { name: "A", value: 1 },
+        { name: "Enable", value: 1 },
+        { name: "Albedo", value: 1 },
+        { name: "Roughness", value: 1 },
+        { name: "Active", value: 0 },
+        { name: "Fresnel Intensity", value: 0.7 },
+        { name: "Fresnel Width", value: 1 },
+        { name: "Fresnel Exponent", value: 6 },
+        { name: "Fresnel R", value: 1 },
+        { name: "Fresnel G", value: 1 },
+        { name: "Fresnel B", value: 1 },
+        { name: "Emissive Active", value: 1 },
+        { name: "Color Intensity", value: 0.909 },
+        { name: "Shininess", value: 1 },
+        { name: "Specular Amount", value: 0 },
+        { name: "Specular Model index", value: 0 },
+        { name: "Specular Model", value: "Blinn" },
+        { name: "Energy Conservation", value: 0 },
+        { name: "Double Sided Material", value: 0 },
+        { name: "Falloff Mode index", value: 1 },
+        { name: "Falloff Mode", value: "B" },
+        { name: "Colorize Texture", value: 0 },
+        { name: "Diffuse Repeat X", value: 1 },
+        { name: "Diffuse Repeat Y", value: 1 },
+        { name: "Texture Offset X", value: 0 },
+        { name: "Texture Offset Y", value: 0 },
+        { name: "Specular Intensity", value: 1 },
+        { name: "Normal Map Intensity", value: 0.5 },
+        { name: "AO Intensity", value: 1 },
+        { name: "AO UV Channel index", value: 0 },
+        { name: "AO UV Channel", value: 1 },
+        { name: "Emissive Intensity", value: 1 },
+        { name: "Emissive Mask Intensity", value: 1 },
+        { name: "Env Map Intensity", value: 1 },
+        { name: "Env Map Blend index", value: 0 },
+        { name: "Env Map Blend", value: "Add" },
+        { name: "Env Mask Intensity", value: 1 },
+        { name: "Alpha Mask Source index", value: 0 },
+        { name: "Alpha Mask Source", value: "Luminance" },
+        { name: "Discard Transparent Pixels", value: 0 },
+      ],
+      portsOut: [
+        {
+          name: "Trigger Out",
+          links: [
+            {
+              portIn: "render",
+              portOut: "Trigger Out",
+              objIn: "23spdnjhn",
+              objOut: "zzjyotgds",
+            },
+          ],
+        },
+      ],
+      objName: "Ops.Gl.Phong.PhongMaterial_v6",
+    },
   ],
-  export: { time: "2025-02-11 20:50", service: "html", exportNumber: 46 },
+  export: { time: "2025-02-23 14:22", service: "html", exportNumber: 55 },
 };
 if (!CABLES.exportedPatch) {
   CABLES.exportedPatch = CABLES.exportedPatches["GgjVeu"];
@@ -34441,6 +36080,7 @@ Ops.Boolean = Ops.Boolean || {};
 Ops.Devices = Ops.Devices || {};
 Ops.Gl.GLTF = Ops.Gl.GLTF || {};
 Ops.Trigger = Ops.Trigger || {};
+Ops.Gl.Phong = Ops.Gl.Phong || {};
 Ops.Extension = Ops.Extension || {};
 Ops.Gl.Matrix = Ops.Gl.Matrix || {};
 Ops.Gl.Meshes = Ops.Gl.Meshes || {};
@@ -34480,7 +36120,7 @@ Ops.Ui.SubPatch = function () {
   let n = CABLES.generateUUID();
   u.patchId.set(n);
   p();
-  d();
+  m();
   let h = false;
   u.saveData = s;
   u.init = () => {
@@ -34591,7 +36231,7 @@ Ops.Ui.SubPatch = function () {
     for (n = 0; n < t.length; n++) {
       if (!u.getPortByName(t[n].name)) {
         const s = u.addOutPort(new CABLES.Port(u, t[n].name, t[n].type));
-        const o = d();
+        const o = m();
         const l = o.addInPort(new CABLES.Port(o, t[n].name, t[n].type));
         s.ignoreValueSerialize = true;
         s.setUiAttribs({ editableTitle: true });
@@ -34658,7 +36298,7 @@ Ops.Ui.SubPatch = function () {
       u.log("dynOut unlinked...");
     }
   };
-  function d() {
+  function m() {
     let e = u.patch.getSubPatchOp(u.patchId.get(), "Ops.Ui.PatchOutput");
     if (!e) {
       u.patch.addOp("Ops.Ui.PatchOutput", {
@@ -34694,13 +36334,13 @@ Ops.Ui.SubPatch = function () {
         .link(
           e.op,
           e.getName(),
-          d(),
+          m(),
           "out" + (a - 1) + " " + t.op.name + " " + t.name
         );
     }
     const i = gui.patchView.getSubPatchBounds(u.patchId.get());
     p().uiAttr({ translate: { x: i.minx, y: i.miny - 100 } });
-    d().uiAttr({ translate: { x: i.minx, y: i.maxy + 100 } });
+    m().uiAttr({ translate: { x: i.minx, y: i.maxy + 100 } });
     s();
     return r;
   };
@@ -34715,7 +36355,7 @@ Ops.Ui.SubPatch = function () {
   };
   u.rebuildListeners = () => {
     u.log("rebuild listeners...");
-    const t = d();
+    const t = m();
     for (let e = 0; e < t.portsIn.length; e++) {
       if (t.portsIn[e].isLinked()) {
         f(t.portsIn[e], this.portsOut[e]);
@@ -34741,12 +36381,12 @@ Ops.Patch.PGgjVeu.AutoTransform = function () {
   h.setUiAttribs({ title: "Reset", display: "button" });
   const f = e.inFloat("x51l5mx3z", 1);
   f.setUiAttribs({ title: "number1" });
-  const d = e.inFloat("via20ae2r", 1);
-  d.setUiAttribs({ title: "number1" });
+  const m = e.inFloat("via20ae2r", 1);
+  m.setUiAttribs({ title: "number1" });
   const p = e.inFloat("eq3wcir2y", 1);
   p.setUiAttribs({ title: "number1" });
-  const m = e.inFloat("x0ic0h4fm", 1);
-  m.setUiAttribs({ title: "number1" });
+  const d = e.inFloat("x0ic0h4fm", 1);
+  d.setUiAttribs({ title: "number1" });
   const g = e.outNumber("fei1jpjm5");
   g.setUiAttribs({ title: "Result" });
   const b = e.outNumber("o1i9iyfw1");
@@ -34770,9 +36410,9 @@ Ops.Patch.PGgjVeu.AutoTransform = function () {
           r.set(e);
         });
         const i = t[e].outNumber("innerOut_via20ae2r");
-        i.set(d.get());
+        i.set(m.get());
         i.setUiAttribs({ title: "number1" });
-        d.on("change", (e, t) => {
+        m.on("change", (e, t) => {
           i.set(e);
         });
         const a = t[e].outNumber("innerOut_eq3wcir2y");
@@ -34782,9 +36422,9 @@ Ops.Patch.PGgjVeu.AutoTransform = function () {
           a.set(e);
         });
         const s = t[e].outNumber("innerOut_x0ic0h4fm");
-        s.set(m.get());
+        s.set(d.get());
         s.setUiAttribs({ title: "number1" });
-        m.on("change", (e, t) => {
+        d.on("change", (e, t) => {
           s.set(e);
         });
       }
@@ -34860,8 +36500,8 @@ Ops.Patch.PGgjVeu.TransfromFromArray = function () {
   h.setUiAttribs({ title: "number2" });
   const f = e.inFloat("09lct6z2t", 0);
   f.setUiAttribs({ title: "number2" });
-  const d = e.outTrigger("driq8l4om");
-  d.setUiAttribs({ title: "trigger" });
+  const m = e.outTrigger("driq8l4om");
+  m.setUiAttribs({ title: "trigger" });
   e.initInnerPorts = function (t) {
     for (let e = 0; e < t.length; e++) {
       if (t[e].innerInput) {
@@ -34898,7 +36538,7 @@ Ops.Patch.PGgjVeu.TransfromFromArray = function () {
         const o = t[e].inTrigger("innerIn_driq8l4om");
         o.setUiAttribs({ title: "trigger" });
         o.onTriggered = () => {
-          d.trigger();
+          m.trigger();
         };
       }
     }
@@ -34932,103 +36572,6 @@ CABLES.OPS["fe53a267-5d09-45e5-a791-f1a574055dc4"] = {
   f: Ops.Patch.PGgjVeu.TransfromFromArray,
   objName: "Ops.Patch.PGgjVeu.TransfromFromArray",
 };
-Ops.Patch.PGgjVeu.MouseInteract = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const n = (e.attachments = {
-    inc_gen_ports_js:
-      'const port_d7g5c0h5b=op.inTrigger("d7g5c0h5b");\nport_d7g5c0h5b.setUiAttribs({title:"Trigger 2",});\n\nconst port_ieb1lbewd=op.inFloat("ieb1lbewd",0.1);\nport_ieb1lbewd.setUiAttribs({title:"Value",});\n\nconst port_83lvt4w8p=op.inFloat("83lvt4w8p",1);\nport_83lvt4w8p.setUiAttribs({title:"Value",});\n\nconst port_d58ks5o1j=op.outNumber("d58ks5o1j");\nport_d58ks5o1j.setUiAttribs({title:"Result",});\n\nconst port_eqbeofk6o=op.outNumber("eqbeofk6o");\nport_eqbeofk6o.setUiAttribs({title:"Result",});\n\nconst port_vy0njf6dp=op.outNumber("vy0njf6dp");\nport_vy0njf6dp.setUiAttribs({title:"Result",});\n\nconst port_cq7ouht1r=op.outTrigger("cq7ouht1r");\nport_cq7ouht1r.setUiAttribs({title:"Next",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_d7g5c0h5b = addedOps[i].outTrigger("innerOut_d7g5c0h5b");\ninnerOut_d7g5c0h5b.setUiAttribs({title:"Trigger 2"});\nport_d7g5c0h5b.onTriggered = () => { innerOut_d7g5c0h5b.trigger(); };\n\nconst innerOut_ieb1lbewd = addedOps[i].outNumber("innerOut_ieb1lbewd");\ninnerOut_ieb1lbewd.set(port_ieb1lbewd.get() );\ninnerOut_ieb1lbewd.setUiAttribs({title:"Value"});\nport_ieb1lbewd.on("change", (a,v) => { innerOut_ieb1lbewd.set(a); });\n\nconst innerOut_83lvt4w8p = addedOps[i].outNumber("innerOut_83lvt4w8p");\ninnerOut_83lvt4w8p.set(port_83lvt4w8p.get() );\ninnerOut_83lvt4w8p.setUiAttribs({title:"Value"});\nport_83lvt4w8p.on("change", (a,v) => { innerOut_83lvt4w8p.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_d58ks5o1j = addedOps[i].inFloat("innerIn_d58ks5o1j");\ninnerIn_d58ks5o1j.setUiAttribs({title:"Result"});\ninnerIn_d58ks5o1j.on("change", (a,v) => { port_d58ks5o1j.set(a); });\n\nconst innerIn_eqbeofk6o = addedOps[i].inFloat("innerIn_eqbeofk6o");\ninnerIn_eqbeofk6o.setUiAttribs({title:"Result"});\ninnerIn_eqbeofk6o.on("change", (a,v) => { port_eqbeofk6o.set(a); });\n\nconst innerIn_vy0njf6dp = addedOps[i].inFloat("innerIn_vy0njf6dp");\ninnerIn_vy0njf6dp.setUiAttribs({title:"Result"});\ninnerIn_vy0njf6dp.on("change", (a,v) => { port_vy0njf6dp.set(a); });\n\nconst innerIn_cq7ouht1r = addedOps[i].inTrigger("innerIn_cq7ouht1r");\ninnerIn_cq7ouht1r.setUiAttribs({title:"Next"});\ninnerIn_cq7ouht1r.onTriggered = () => { port_cq7ouht1r.trigger(); };\n\n}\n}\n};\n',
-    subpatch_json:
-      '{"ops":[{"id":"bp3-0","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"number2","portOut":"Time","objIn":"bp3-1","objOut":"bp3-0"},{"portIn":"number2","portOut":"Time","objIn":"bp3-2","objOut":"bp3-0"},{"portIn":"number2","portOut":"Time","objIn":"bp3-12","objOut":"bp3-0"}]}],"objName":"Ops.Anim.Timer_v2"},{"id":"bp3-1","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp3-4","objOut":"bp3-1"}]}],"objName":"Ops.Math.Sum"},{"id":"bp3-2","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp3-5","objOut":"bp3-2"}]}],"objName":"Ops.Math.Sum"},{"id":"bp3-3","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp3-1","objOut":"bp3-3"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp3-4","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Next","links":[{"portIn":"innerIn_cq7ouht1r","portOut":"Next","objIn":"bp3-14","objOut":"bp3-4"}]},{"name":"Result","links":[{"portIn":"innerIn_d58ks5o1j","portOut":"Result","objIn":"bp3-14","objOut":"bp3-4"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp3-5","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"innerIn_eqbeofk6o","portOut":"Result","objIn":"bp3-14","objOut":"bp3-5"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp3-6","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp3-2","objOut":"bp3-6"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp3-7","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"has focus","value":1},{"name":"Tab Visible","links":[{"portIn":"Play","portOut":"Tab Visible","objIn":"bp3-0","objOut":"bp3-7"}]}],"objName":"Ops.Html.WindowHasFocus"},{"id":"bp3-8","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Play","value":1},{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"value","portOut":"Time","objIn":"bp3-15","objOut":"bp3-8"}]}],"objName":"Ops.Anim.Timer_v2"},{"id":"bp3-9","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"Next","links":[{"portIn":"Reset","portOut":"Next","objIn":"bp3-8","objOut":"bp3-9"}]},{"name":"Number","value":0.13398940196820597}],"objName":"Ops.Number.TriggerOnChangeNumber"},{"id":"bp3-10","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp3-12","objOut":"bp3-10"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp3-11","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"innerIn_vy0njf6dp","portOut":"Result","objIn":"bp3-14","objOut":"bp3-11"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp3-12","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp3-11","objOut":"bp3-12"}]}],"objName":"Ops.Math.Sum"},{"id":"bp3-13","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsOut":[{"name":"innerOut_d7g5c0h5b","title":"Trigger 2","links":[{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-4","objOut":"bp3-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-3","objOut":"bp3-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-6","objOut":"bp3-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-10","objOut":"bp3-13"},{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-5","objOut":"bp3-13"},{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp3-11","objOut":"bp3-13"}]},{"name":"innerOut_ieb1lbewd","title":"Value","links":[{"portIn":"Speed","portOut":"innerOut_ieb1lbewd","objIn":"bp3-0","objOut":"bp3-13"}]},{"name":"innerOut_83lvt4w8p","title":"Value","links":[{"portIn":"Speed","portOut":"innerOut_83lvt4w8p","objIn":"bp3-8","objOut":"bp3-13"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp3-14","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"innerIn_d58ks5o1j","title":"Result"},{"name":"innerIn_eqbeofk6o","title":"Result"},{"name":"innerIn_vy0njf6dp","title":"Result"},{"name":"innerIn_cq7ouht1r","title":"Next"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp3-15","uiAttribs":{"subPatch":"frvqybgul"},"storage":{},"portsIn":[{"name":"old min","value":0},{"name":"old max","value":1},{"name":"new min","value":1},{"name":"new max","value":0},{"name":"Easing index","value":0},{"name":"Easing","value":"Linear"},{"name":"Clamp","value":1}],"portsOut":[{"name":"result","links":[{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp3-10","objOut":"bp3-15"},{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp3-6","objOut":"bp3-15"},{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp3-3","objOut":"bp3-15"}]}],"objName":"Ops.Math.MapRange"},{"id":"bp3-16","uiAttribs":{"subPatch":"frvqybgul"},"portsIn":[{"name":"Index","value":0}],"portsOut":[{"name":"X","links":[{"portIn":"Add to number","portOut":"X","objIn":"bp3-3","objOut":"bp3-16"},{"portIn":"Value","portOut":"X","objIn":"bp3-9","objOut":"bp3-16"}]},{"name":"Y","links":[{"portIn":"Add to number","portOut":"Y","objIn":"bp3-6","objOut":"bp3-16"},{"portIn":"Add to number","portOut":"Y","objIn":"bp3-10","objOut":"bp3-16"}]},{"name":"Z","value":0}],"storage":{"ref":"bp3-16"},"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp3-17","uiAttribs":{"subPatch":"frvqybgul"},"portsIn":[{"name":"Variable","value":"mousePosition"}],"portsOut":[{"name":"Value","links":[{"portIn":"Array","portOut":"Value","objIn":"bp3-16","objOut":"bp3-17"}]}],"storage":{"ref":"bp3-17"},"objName":"Ops.Vars.VarGetArray_v2"}]}',
-  });
-  const u = e.inTrigger("d7g5c0h5b");
-  u.setUiAttribs({ title: "Trigger 2" });
-  const c = e.inFloat("ieb1lbewd", 0.1);
-  c.setUiAttribs({ title: "Value" });
-  const h = e.inFloat("83lvt4w8p", 1);
-  h.setUiAttribs({ title: "Value" });
-  const f = e.outNumber("d58ks5o1j");
-  f.setUiAttribs({ title: "Result" });
-  const d = e.outNumber("eqbeofk6o");
-  d.setUiAttribs({ title: "Result" });
-  const p = e.outNumber("vy0njf6dp");
-  p.setUiAttribs({ title: "Result" });
-  const m = e.outTrigger("cq7ouht1r");
-  m.setUiAttribs({ title: "Next" });
-  e.initInnerPorts = function (t) {
-    for (let e = 0; e < t.length; e++) {
-      if (t[e].innerInput) {
-        const n = t[e].outTrigger("innerOut_d7g5c0h5b");
-        n.setUiAttribs({ title: "Trigger 2" });
-        u.onTriggered = () => {
-          n.trigger();
-        };
-        const r = t[e].outNumber("innerOut_ieb1lbewd");
-        r.set(c.get());
-        r.setUiAttribs({ title: "Value" });
-        c.on("change", (e, t) => {
-          r.set(e);
-        });
-        const i = t[e].outNumber("innerOut_83lvt4w8p");
-        i.set(h.get());
-        i.setUiAttribs({ title: "Value" });
-        h.on("change", (e, t) => {
-          i.set(e);
-        });
-      }
-      if (t[e].innerOutput) {
-        const a = t[e].inFloat("innerIn_d58ks5o1j");
-        a.setUiAttribs({ title: "Result" });
-        a.on("change", (e, t) => {
-          f.set(e);
-        });
-        const s = t[e].inFloat("innerIn_eqbeofk6o");
-        s.setUiAttribs({ title: "Result" });
-        s.on("change", (e, t) => {
-          d.set(e);
-        });
-        const o = t[e].inFloat("innerIn_vy0njf6dp");
-        o.setUiAttribs({ title: "Result" });
-        o.on("change", (e, t) => {
-          p.set(e);
-        });
-        const l = t[e].inTrigger("innerIn_cq7ouht1r");
-        l.setUiAttribs({ title: "Next" });
-        l.onTriggered = () => {
-          m.trigger();
-        };
-      }
-    }
-  };
-  const r = "bp2sub_" + e.id;
-  new CABLES.SubPatchOp(e, { subId: r });
-  t();
-  function t() {
-    if (!n || !n.subpatch_json) return;
-    const t = JSON.parse(n.subpatch_json);
-    CABLES.Patch.replaceOpIds(t, {
-      parentSubPatchId: r,
-      prefixHash: r,
-      oldIdAsRef: true,
-      doNotUnlinkLostLinks: true,
-    });
-    for (let e = 0; e < t.ops.length; e++) {
-      t.ops[e].uiAttribs.blueprintSubpatch2 = true;
-    }
-    e.loadDependencies(t, () => {
-      e.patch.deSerialize(t, { opsCreated: e.initInnerPorts });
-      if (CABLES.UI) gui.savedState.setSaved("blueprintloaded", r);
-      e.patch.emitEvent("subpatchExpose", r);
-      e.setStorage({ blueprintVer: 2 });
-      e.patch.emitEvent("subpatchExpose", r);
-    });
-  }
-};
-Ops.Patch.PGgjVeu.MouseInteract.prototype = new CABLES.Op();
-CABLES.OPS["38017d40-69c5-4b36-ac8d-f29966617da3"] = {
-  f: Ops.Patch.PGgjVeu.MouseInteract,
-  objName: "Ops.Patch.PGgjVeu.MouseInteract",
-};
 Ops.Patch.PGgjVeu.CalcAspectRatio = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
@@ -35036,7 +36579,7 @@ Ops.Patch.PGgjVeu.CalcAspectRatio = function () {
     inc_gen_ports_js:
       'const port_0b4ut0hih=op.inTrigger("0b4ut0hih");\nport_0b4ut0hih.setUiAttribs({title:"Next",});\n\nconst port_nwr6evmz4=op.inFloat("nwr6evmz4",0);\nport_nwr6evmz4.setUiAttribs({title:"number2",});\n\nconst port_5q93l0dx5=op.outTrigger("5q93l0dx5");\nport_5q93l0dx5.setUiAttribs({title:"Next",});\n\nconst port_2u90hfuze=op.outNumber("2u90hfuze");\nport_2u90hfuze.setUiAttribs({title:"result",});\n\nconst port_5vd4oouaz=op.outNumber("5vd4oouaz");\nport_5vd4oouaz.setUiAttribs({title:"result",});\n\nconst port_0c3imfas6=op.outNumber("0c3imfas6");\nport_0c3imfas6.setUiAttribs({title:"Aspect Ratio",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_0b4ut0hih = addedOps[i].outTrigger("innerOut_0b4ut0hih");\ninnerOut_0b4ut0hih.setUiAttribs({title:"Next"});\nport_0b4ut0hih.onTriggered = () => { innerOut_0b4ut0hih.trigger(); };\n\nconst innerOut_nwr6evmz4 = addedOps[i].outNumber("innerOut_nwr6evmz4");\ninnerOut_nwr6evmz4.set(port_nwr6evmz4.get() );\ninnerOut_nwr6evmz4.setUiAttribs({title:"number2"});\nport_nwr6evmz4.on("change", (a,v) => { innerOut_nwr6evmz4.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_5q93l0dx5 = addedOps[i].inTrigger("innerIn_5q93l0dx5");\ninnerIn_5q93l0dx5.setUiAttribs({title:"Next"});\ninnerIn_5q93l0dx5.onTriggered = () => { port_5q93l0dx5.trigger(); };\n\nconst innerIn_2u90hfuze = addedOps[i].inFloat("innerIn_2u90hfuze");\ninnerIn_2u90hfuze.setUiAttribs({title:"result"});\ninnerIn_2u90hfuze.on("change", (a,v) => { port_2u90hfuze.set(a); });\n\nconst innerIn_5vd4oouaz = addedOps[i].inFloat("innerIn_5vd4oouaz");\ninnerIn_5vd4oouaz.setUiAttribs({title:"result"});\ninnerIn_5vd4oouaz.on("change", (a,v) => { port_5vd4oouaz.set(a); });\n\nconst innerIn_0c3imfas6 = addedOps[i].inFloat("innerIn_0c3imfas6");\ninnerIn_0c3imfas6.setUiAttribs({title:"Aspect Ratio"});\ninnerIn_0c3imfas6.on("change", (a,v) => { port_0c3imfas6.set(a); });\n\n}\n}\n};\n',
     subpatch_json:
-      '{"ops":[{"id":"bp4-0","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsIn":[{"name":"Variable","value":"videoAspectRatio"}],"portsOut":[{"name":"Value","links":[{"portIn":"number1","portOut":"Value","objIn":"bp4-2","objOut":"bp4-0"},{"portIn":"number2","portOut":"Value","objIn":"bp4-1","objOut":"bp4-0"}]}],"objName":"Ops.Vars.VarGetNumber_v2"},{"id":"bp4-1","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_2u90hfuze","portOut":"result","objIn":"bp4-6","objOut":"bp4-1"}]}],"objName":"Ops.Math.Divide"},{"id":"bp4-2","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"number1","portOut":"result","objIn":"bp4-3","objOut":"bp4-2"}]}],"objName":"Ops.Math.Subtract"},{"id":"bp4-3","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_5vd4oouaz","portOut":"result","objIn":"bp4-6","objOut":"bp4-3"}]}],"objName":"Ops.Math.Sum"},{"id":"bp4-4","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"CSS Width","value":629},{"name":"CSS Height","value":822},{"name":"Pixel Ratio","value":1},{"name":"Pixel Width","value":629},{"name":"Pixel Height","value":822},{"name":"Aspect Ratio","links":[{"portIn":"number1","portOut":"Aspect Ratio","objIn":"bp4-1","objOut":"bp4-4"},{"portIn":"number2","portOut":"Aspect Ratio","objIn":"bp4-2","objOut":"bp4-4"},{"portIn":"innerIn_0c3imfas6","portOut":"Aspect Ratio","objIn":"bp4-6","objOut":"bp4-4"}]},{"name":"Landscape","value":0}],"objName":"Ops.Gl.CanvasInfo_v3"},{"id":"bp4-5","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"innerOut_0b4ut0hih","title":"Next","links":[{"portIn":"innerIn_5q93l0dx5","portOut":"innerOut_0b4ut0hih","objIn":"bp4-6","objOut":"bp4-5"}]},{"name":"innerOut_nwr6evmz4","title":"number2","links":[{"portIn":"number2","portOut":"innerOut_nwr6evmz4","objIn":"bp4-3","objOut":"bp4-5"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp4-6","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsIn":[{"name":"innerIn_5q93l0dx5","title":"Next"},{"name":"innerIn_2u90hfuze","title":"result"},{"name":"innerIn_5vd4oouaz","title":"result"},{"name":"innerIn_0c3imfas6","title":"Aspect Ratio"}],"objName":"Ops.Ui.SubPatchOutput"}]}',
+      '{"ops":[{"id":"bp3-0","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsIn":[{"name":"Variable","value":"videoAspectRatio"}],"portsOut":[{"name":"Value","links":[{"portIn":"number1","portOut":"Value","objIn":"bp3-2","objOut":"bp3-0"},{"portIn":"number2","portOut":"Value","objIn":"bp3-1","objOut":"bp3-0"}]}],"objName":"Ops.Vars.VarGetNumber_v2"},{"id":"bp3-1","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_2u90hfuze","portOut":"result","objIn":"bp3-6","objOut":"bp3-1"}]}],"objName":"Ops.Math.Divide"},{"id":"bp3-2","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"number1","portOut":"result","objIn":"bp3-3","objOut":"bp3-2"}]}],"objName":"Ops.Math.Subtract"},{"id":"bp3-3","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_5vd4oouaz","portOut":"result","objIn":"bp3-6","objOut":"bp3-3"}]}],"objName":"Ops.Math.Sum"},{"id":"bp3-4","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"CSS Width","value":629},{"name":"CSS Height","value":822},{"name":"Pixel Ratio","value":1},{"name":"Pixel Width","value":629},{"name":"Pixel Height","value":822},{"name":"Aspect Ratio","links":[{"portIn":"number1","portOut":"Aspect Ratio","objIn":"bp3-1","objOut":"bp3-4"},{"portIn":"number2","portOut":"Aspect Ratio","objIn":"bp3-2","objOut":"bp3-4"},{"portIn":"innerIn_0c3imfas6","portOut":"Aspect Ratio","objIn":"bp3-6","objOut":"bp3-4"}]},{"name":"Landscape","value":0}],"objName":"Ops.Gl.CanvasInfo_v3"},{"id":"bp3-5","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsOut":[{"name":"innerOut_0b4ut0hih","title":"Next","links":[{"portIn":"innerIn_5q93l0dx5","portOut":"innerOut_0b4ut0hih","objIn":"bp3-6","objOut":"bp3-5"}]},{"name":"innerOut_nwr6evmz4","title":"number2","links":[{"portIn":"number2","portOut":"innerOut_nwr6evmz4","objIn":"bp3-3","objOut":"bp3-5"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp3-6","uiAttribs":{"subPatch":"ta5yict98"},"storage":{},"portsIn":[{"name":"innerIn_5q93l0dx5","title":"Next"},{"name":"innerIn_2u90hfuze","title":"result"},{"name":"innerIn_5vd4oouaz","title":"result"},{"name":"innerIn_0c3imfas6","title":"Aspect Ratio"}],"objName":"Ops.Ui.SubPatchOutput"}]}',
   });
   const l = e.inTrigger("0b4ut0hih");
   l.setUiAttribs({ title: "Next" });
@@ -35048,8 +36591,8 @@ Ops.Patch.PGgjVeu.CalcAspectRatio = function () {
   h.setUiAttribs({ title: "result" });
   const f = e.outNumber("5vd4oouaz");
   f.setUiAttribs({ title: "result" });
-  const d = e.outNumber("0c3imfas6");
-  d.setUiAttribs({ title: "Aspect Ratio" });
+  const m = e.outNumber("0c3imfas6");
+  m.setUiAttribs({ title: "Aspect Ratio" });
   e.initInnerPorts = function (t) {
     for (let e = 0; e < t.length; e++) {
       if (t[e].innerInput) {
@@ -35084,7 +36627,7 @@ Ops.Patch.PGgjVeu.CalcAspectRatio = function () {
         const o = t[e].inFloat("innerIn_0c3imfas6");
         o.setUiAttribs({ title: "Aspect Ratio" });
         o.on("change", (e, t) => {
-          d.set(e);
+          m.set(e);
         });
       }
     }
@@ -35125,7 +36668,7 @@ Ops.User.srcphag.CalcAspectRatio = function () {
     inc_gen_ports_js:
       'const port_5zoeeizsf=op.inFloat("5zoeeizsf",0);\nport_5zoeeizsf.setUiAttribs({title:"number2",});\n\nconst port_stqfp1svi=op.inTrigger("stqfp1svi");\nport_stqfp1svi.setUiAttribs({title:"trigger",});\n\nconst port_4kaudq7u5=op.outNumber("4kaudq7u5");\nport_4kaudq7u5.setUiAttribs({title:"result",});\n\nconst port_9zwxt98wb=op.outNumber("9zwxt98wb");\nport_9zwxt98wb.setUiAttribs({title:"result",});\n\nconst port_bf11i75lz=op.outNumber("bf11i75lz");\nport_bf11i75lz.setUiAttribs({title:"Aspect Ratio",});\n\nconst port_ctfhbmcpr=op.outTrigger("ctfhbmcpr");\nport_ctfhbmcpr.setUiAttribs({title:"trigger",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_5zoeeizsf = addedOps[i].outNumber("innerOut_5zoeeizsf");\ninnerOut_5zoeeizsf.set(port_5zoeeizsf.get() );\ninnerOut_5zoeeizsf.setUiAttribs({title:"number2"});\nport_5zoeeizsf.on("change", (a,v) => { innerOut_5zoeeizsf.set(a); });\n\nconst innerOut_stqfp1svi = addedOps[i].outTrigger("innerOut_stqfp1svi");\ninnerOut_stqfp1svi.setUiAttribs({title:"trigger"});\nport_stqfp1svi.onTriggered = () => { innerOut_stqfp1svi.trigger(); };\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_4kaudq7u5 = addedOps[i].inFloat("innerIn_4kaudq7u5");\ninnerIn_4kaudq7u5.setUiAttribs({title:"result"});\ninnerIn_4kaudq7u5.on("change", (a,v) => { port_4kaudq7u5.set(a); });\n\nconst innerIn_9zwxt98wb = addedOps[i].inFloat("innerIn_9zwxt98wb");\ninnerIn_9zwxt98wb.setUiAttribs({title:"result"});\ninnerIn_9zwxt98wb.on("change", (a,v) => { port_9zwxt98wb.set(a); });\n\nconst innerIn_bf11i75lz = addedOps[i].inFloat("innerIn_bf11i75lz");\ninnerIn_bf11i75lz.setUiAttribs({title:"Aspect Ratio"});\ninnerIn_bf11i75lz.on("change", (a,v) => { port_bf11i75lz.set(a); });\n\nconst innerIn_ctfhbmcpr = addedOps[i].inTrigger("innerIn_ctfhbmcpr");\ninnerIn_ctfhbmcpr.setUiAttribs({title:"trigger"});\ninnerIn_ctfhbmcpr.onTriggered = () => { port_ctfhbmcpr.trigger(); };\n\n}\n}\n};\n',
     subpatch_json:
-      '{"ops":[{"id":"bp5-0","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"innerOut_5zoeeizsf","title":"number2","links":[{"portIn":"number2","portOut":"innerOut_5zoeeizsf","objIn":"bp5-5","objOut":"bp5-0"}]},{"name":"innerOut_stqfp1svi","title":"trigger","links":[{"portIn":"innerIn_ctfhbmcpr","portOut":"innerOut_stqfp1svi","objIn":"bp5-1","objOut":"bp5-0"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp5-1","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsIn":[{"name":"innerIn_4kaudq7u5","title":"result"},{"name":"innerIn_9zwxt98wb","title":"result"},{"name":"innerIn_bf11i75lz","title":"Aspect Ratio"},{"name":"innerIn_ctfhbmcpr","title":"trigger"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp5-2","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsIn":[{"name":"Variable","value":"videoAspectRatio"}],"portsOut":[{"name":"Value","links":[{"portIn":"number1","portOut":"Value","objIn":"bp5-4","objOut":"bp5-2"},{"portIn":"number2","portOut":"Value","objIn":"bp5-3","objOut":"bp5-2"}]}],"objName":"Ops.Vars.VarGetNumber_v2"},{"id":"bp5-3","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_9zwxt98wb","portOut":"result","objIn":"bp5-1","objOut":"bp5-3"}]}],"objName":"Ops.Math.Divide"},{"id":"bp5-4","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"number1","portOut":"result","objIn":"bp5-5","objOut":"bp5-4"}]}],"objName":"Ops.Math.Subtract"},{"id":"bp5-5","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_4kaudq7u5","portOut":"result","objIn":"bp5-1","objOut":"bp5-5"}]}],"objName":"Ops.Math.Sum"},{"id":"bp5-6","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"CSS Width","value":629},{"name":"CSS Height","value":822},{"name":"Pixel Ratio","value":1},{"name":"Pixel Width","value":629},{"name":"Pixel Height","value":822},{"name":"Aspect Ratio","links":[{"portIn":"number1","portOut":"Aspect Ratio","objIn":"bp5-3","objOut":"bp5-6"},{"portIn":"number2","portOut":"Aspect Ratio","objIn":"bp5-4","objOut":"bp5-6"},{"portIn":"innerIn_bf11i75lz","portOut":"Aspect Ratio","objIn":"bp5-1","objOut":"bp5-6"}]},{"name":"Landscape","value":0}],"objName":"Ops.Gl.CanvasInfo_v3"}]}',
+      '{"ops":[{"id":"bp4-0","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"innerOut_5zoeeizsf","title":"number2","links":[{"portIn":"number2","portOut":"innerOut_5zoeeizsf","objIn":"bp4-5","objOut":"bp4-0"}]},{"name":"innerOut_stqfp1svi","title":"trigger","links":[{"portIn":"innerIn_ctfhbmcpr","portOut":"innerOut_stqfp1svi","objIn":"bp4-1","objOut":"bp4-0"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp4-1","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsIn":[{"name":"innerIn_4kaudq7u5","title":"result"},{"name":"innerIn_9zwxt98wb","title":"result"},{"name":"innerIn_bf11i75lz","title":"Aspect Ratio"},{"name":"innerIn_ctfhbmcpr","title":"trigger"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp4-2","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsIn":[{"name":"Variable","value":"videoAspectRatio"}],"portsOut":[{"name":"Value","links":[{"portIn":"number1","portOut":"Value","objIn":"bp4-4","objOut":"bp4-2"},{"portIn":"number2","portOut":"Value","objIn":"bp4-3","objOut":"bp4-2"}]}],"objName":"Ops.Vars.VarGetNumber_v2"},{"id":"bp4-3","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_9zwxt98wb","portOut":"result","objIn":"bp4-1","objOut":"bp4-3"}]}],"objName":"Ops.Math.Divide"},{"id":"bp4-4","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"number1","portOut":"result","objIn":"bp4-5","objOut":"bp4-4"}]}],"objName":"Ops.Math.Subtract"},{"id":"bp4-5","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"innerIn_4kaudq7u5","portOut":"result","objIn":"bp4-1","objOut":"bp4-5"}]}],"objName":"Ops.Math.Sum"},{"id":"bp4-6","uiAttribs":{"subPatch":"72hec4f2d"},"storage":{},"portsOut":[{"name":"CSS Width","value":629},{"name":"CSS Height","value":822},{"name":"Pixel Ratio","value":1},{"name":"Pixel Width","value":629},{"name":"Pixel Height","value":822},{"name":"Aspect Ratio","links":[{"portIn":"number1","portOut":"Aspect Ratio","objIn":"bp4-3","objOut":"bp4-6"},{"portIn":"number2","portOut":"Aspect Ratio","objIn":"bp4-4","objOut":"bp4-6"},{"portIn":"innerIn_bf11i75lz","portOut":"Aspect Ratio","objIn":"bp4-1","objOut":"bp4-6"}]},{"name":"Landscape","value":0}],"objName":"Ops.Gl.CanvasInfo_v3"}]}',
   });
   const l = e.inFloat("5zoeeizsf", 0);
   l.setUiAttribs({ title: "number2" });
@@ -35137,8 +36680,8 @@ Ops.User.srcphag.CalcAspectRatio = function () {
   h.setUiAttribs({ title: "result" });
   const f = e.outNumber("bf11i75lz");
   f.setUiAttribs({ title: "Aspect Ratio" });
-  const d = e.outTrigger("ctfhbmcpr");
-  d.setUiAttribs({ title: "trigger" });
+  const m = e.outTrigger("ctfhbmcpr");
+  m.setUiAttribs({ title: "trigger" });
   e.initInnerPorts = function (t) {
     for (let e = 0; e < t.length; e++) {
       if (t[e].innerInput) {
@@ -35173,7 +36716,7 @@ Ops.User.srcphag.CalcAspectRatio = function () {
         const o = t[e].inTrigger("innerIn_ctfhbmcpr");
         o.setUiAttribs({ title: "trigger" });
         o.onTriggered = () => {
-          d.trigger();
+          m.trigger();
         };
       }
     }
@@ -35206,6 +36749,170 @@ Ops.User.srcphag.CalcAspectRatio.prototype = new CABLES.Op();
 CABLES.OPS["b54b86be-5009-4cc4-b3f3-70281c667af5"] = {
   f: Ops.User.srcphag.CalcAspectRatio,
   objName: "Ops.User.srcphag.CalcAspectRatio",
+};
+Ops.Patch.PGgjVeu.MouseInteract = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const n = (e.attachments = {
+    inc_gen_ports_js:
+      'const port_d7g5c0h5b=op.inTrigger("d7g5c0h5b");\nport_d7g5c0h5b.setUiAttribs({title:"Trigger 2",});\n\nconst port_ieb1lbewd=op.inFloat("ieb1lbewd",0.1);\nport_ieb1lbewd.setUiAttribs({title:"Value",});\n\nconst port_83lvt4w8p=op.inFloat("83lvt4w8p",1);\nport_83lvt4w8p.setUiAttribs({title:"Value",});\n\nconst port_d58ks5o1j=op.outNumber("d58ks5o1j");\nport_d58ks5o1j.setUiAttribs({title:"Result",});\n\nconst port_eqbeofk6o=op.outNumber("eqbeofk6o");\nport_eqbeofk6o.setUiAttribs({title:"Result",});\n\nconst port_vy0njf6dp=op.outNumber("vy0njf6dp");\nport_vy0njf6dp.setUiAttribs({title:"Result",});\n\nconst port_cq7ouht1r=op.outTrigger("cq7ouht1r");\nport_cq7ouht1r.setUiAttribs({title:"Next",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_d7g5c0h5b = addedOps[i].outTrigger("innerOut_d7g5c0h5b");\ninnerOut_d7g5c0h5b.setUiAttribs({title:"Trigger 2"});\nport_d7g5c0h5b.onTriggered = () => { innerOut_d7g5c0h5b.trigger(); };\n\nconst innerOut_ieb1lbewd = addedOps[i].outNumber("innerOut_ieb1lbewd");\ninnerOut_ieb1lbewd.set(port_ieb1lbewd.get() );\ninnerOut_ieb1lbewd.setUiAttribs({title:"Value"});\nport_ieb1lbewd.on("change", (a,v) => { innerOut_ieb1lbewd.set(a); });\n\nconst innerOut_83lvt4w8p = addedOps[i].outNumber("innerOut_83lvt4w8p");\ninnerOut_83lvt4w8p.set(port_83lvt4w8p.get() );\ninnerOut_83lvt4w8p.setUiAttribs({title:"Value"});\nport_83lvt4w8p.on("change", (a,v) => { innerOut_83lvt4w8p.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_d58ks5o1j = addedOps[i].inFloat("innerIn_d58ks5o1j");\ninnerIn_d58ks5o1j.setUiAttribs({title:"Result"});\ninnerIn_d58ks5o1j.on("change", (a,v) => { port_d58ks5o1j.set(a); });\n\nconst innerIn_eqbeofk6o = addedOps[i].inFloat("innerIn_eqbeofk6o");\ninnerIn_eqbeofk6o.setUiAttribs({title:"Result"});\ninnerIn_eqbeofk6o.on("change", (a,v) => { port_eqbeofk6o.set(a); });\n\nconst innerIn_vy0njf6dp = addedOps[i].inFloat("innerIn_vy0njf6dp");\ninnerIn_vy0njf6dp.setUiAttribs({title:"Result"});\ninnerIn_vy0njf6dp.on("change", (a,v) => { port_vy0njf6dp.set(a); });\n\nconst innerIn_cq7ouht1r = addedOps[i].inTrigger("innerIn_cq7ouht1r");\ninnerIn_cq7ouht1r.setUiAttribs({title:"Next"});\ninnerIn_cq7ouht1r.onTriggered = () => { port_cq7ouht1r.trigger(); };\n\n}\n}\n};\n',
+    subpatch_json:
+      '{"ops":[{"id":"bp5-0","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"number2","portOut":"Time","objIn":"bp5-1","objOut":"bp5-0"},{"portIn":"number2","portOut":"Time","objIn":"bp5-2","objOut":"bp5-0"},{"portIn":"number2","portOut":"Time","objIn":"bp5-12","objOut":"bp5-0"}]}],"objName":"Ops.Anim.Timer_v2"},{"id":"bp5-1","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp5-4","objOut":"bp5-1"}]}],"objName":"Ops.Math.Sum"},{"id":"bp5-2","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp5-5","objOut":"bp5-2"}]}],"objName":"Ops.Math.Sum"},{"id":"bp5-3","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp5-1","objOut":"bp5-3"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp5-4","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Next","links":[{"portIn":"innerIn_cq7ouht1r","portOut":"Next","objIn":"bp5-14","objOut":"bp5-4"}]},{"name":"Result","links":[{"portIn":"innerIn_d58ks5o1j","portOut":"Result","objIn":"bp5-14","objOut":"bp5-4"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp5-5","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"innerIn_eqbeofk6o","portOut":"Result","objIn":"bp5-14","objOut":"bp5-5"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp5-6","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp5-2","objOut":"bp5-6"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp5-7","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"has focus","value":1},{"name":"Tab Visible","links":[{"portIn":"Play","portOut":"Tab Visible","objIn":"bp5-0","objOut":"bp5-7"}]}],"objName":"Ops.Html.WindowHasFocus"},{"id":"bp5-8","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Play","value":1},{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"value","portOut":"Time","objIn":"bp5-15","objOut":"bp5-8"}]}],"objName":"Ops.Anim.Timer_v2"},{"id":"bp5-9","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"Next","links":[{"portIn":"Reset","portOut":"Next","objIn":"bp5-8","objOut":"bp5-9"}]},{"name":"Number","value":0}],"objName":"Ops.Number.TriggerOnChangeNumber"},{"id":"bp5-10","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Default Value","value":0}],"portsOut":[{"name":"Current value","links":[{"portIn":"number1","portOut":"Current value","objIn":"bp5-12","objOut":"bp5-10"}]}],"objName":"Ops.Math.Accumulator"},{"id":"bp5-11","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Separate inc/dec","value":0},{"name":"Inc factor","value":10,"title":"Inc/Dec factor"},{"name":"Dec factor","value":4}],"portsOut":[{"name":"Result","links":[{"portIn":"innerIn_vy0njf6dp","portOut":"Result","objIn":"bp5-14","objOut":"bp5-11"}]}],"objName":"Ops.Anim.Smooth"},{"id":"bp5-12","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"result","links":[{"portIn":"Value","portOut":"result","objIn":"bp5-11","objOut":"bp5-12"}]}],"objName":"Ops.Math.Sum"},{"id":"bp5-13","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsOut":[{"name":"innerOut_d7g5c0h5b","title":"Trigger 2","links":[{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-4","objOut":"bp5-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-3","objOut":"bp5-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-6","objOut":"bp5-13"},{"portIn":"Trigger in","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-10","objOut":"bp5-13"},{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-5","objOut":"bp5-13"},{"portIn":"Update","portOut":"innerOut_d7g5c0h5b","objIn":"bp5-11","objOut":"bp5-13"}]},{"name":"innerOut_ieb1lbewd","title":"Value","links":[{"portIn":"Speed","portOut":"innerOut_ieb1lbewd","objIn":"bp5-0","objOut":"bp5-13"}]},{"name":"innerOut_83lvt4w8p","title":"Value","links":[{"portIn":"Speed","portOut":"innerOut_83lvt4w8p","objIn":"bp5-8","objOut":"bp5-13"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp5-14","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"innerIn_d58ks5o1j","title":"Result"},{"name":"innerIn_eqbeofk6o","title":"Result"},{"name":"innerIn_vy0njf6dp","title":"Result"},{"name":"innerIn_cq7ouht1r","title":"Next"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp5-15","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"old min","value":0},{"name":"old max","value":1},{"name":"new min","value":1},{"name":"new max","value":0},{"name":"Easing index","value":1},{"name":"Easing","value":"Smoothstep"},{"name":"Clamp","value":1}],"portsOut":[{"name":"result","links":[{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp5-10","objOut":"bp5-15"},{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp5-6","objOut":"bp5-15"},{"portIn":"Multiplier to add number","portOut":"result","objIn":"bp5-3","objOut":"bp5-15"}]}],"objName":"Ops.Math.MapRange"},{"id":"bp5-16","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Index","value":0}],"portsOut":[{"name":"X","links":[{"portIn":"Add to number","portOut":"X","objIn":"bp5-3","objOut":"bp5-16"},{"portIn":"Value","portOut":"X","objIn":"bp5-9","objOut":"bp5-16"}]},{"name":"Y","links":[{"portIn":"Add to number","portOut":"Y","objIn":"bp5-6","objOut":"bp5-16"},{"portIn":"Add to number","portOut":"Y","objIn":"bp5-10","objOut":"bp5-16"}]},{"name":"Z","value":0}],"objName":"Ops.Array.Array3GetNumbers"},{"id":"bp5-17","uiAttribs":{"subPatch":"uhitjgu7j"},"storage":{},"portsIn":[{"name":"Variable","value":"mousePosition"}],"portsOut":[{"name":"Value","links":[{"portIn":"Array","portOut":"Value","objIn":"bp5-16","objOut":"bp5-17"}]}],"objName":"Ops.Vars.VarGetArray_v2"}]}',
+  });
+  const u = e.inTrigger("d7g5c0h5b");
+  u.setUiAttribs({ title: "Trigger 2" });
+  const c = e.inFloat("ieb1lbewd", 0.1);
+  c.setUiAttribs({ title: "Value" });
+  const h = e.inFloat("83lvt4w8p", 1);
+  h.setUiAttribs({ title: "Value" });
+  const f = e.outNumber("d58ks5o1j");
+  f.setUiAttribs({ title: "Result" });
+  const m = e.outNumber("eqbeofk6o");
+  m.setUiAttribs({ title: "Result" });
+  const p = e.outNumber("vy0njf6dp");
+  p.setUiAttribs({ title: "Result" });
+  const d = e.outTrigger("cq7ouht1r");
+  d.setUiAttribs({ title: "Next" });
+  e.initInnerPorts = function (t) {
+    for (let e = 0; e < t.length; e++) {
+      if (t[e].innerInput) {
+        const n = t[e].outTrigger("innerOut_d7g5c0h5b");
+        n.setUiAttribs({ title: "Trigger 2" });
+        u.onTriggered = () => {
+          n.trigger();
+        };
+        const r = t[e].outNumber("innerOut_ieb1lbewd");
+        r.set(c.get());
+        r.setUiAttribs({ title: "Value" });
+        c.on("change", (e, t) => {
+          r.set(e);
+        });
+        const i = t[e].outNumber("innerOut_83lvt4w8p");
+        i.set(h.get());
+        i.setUiAttribs({ title: "Value" });
+        h.on("change", (e, t) => {
+          i.set(e);
+        });
+      }
+      if (t[e].innerOutput) {
+        const a = t[e].inFloat("innerIn_d58ks5o1j");
+        a.setUiAttribs({ title: "Result" });
+        a.on("change", (e, t) => {
+          f.set(e);
+        });
+        const s = t[e].inFloat("innerIn_eqbeofk6o");
+        s.setUiAttribs({ title: "Result" });
+        s.on("change", (e, t) => {
+          m.set(e);
+        });
+        const o = t[e].inFloat("innerIn_vy0njf6dp");
+        o.setUiAttribs({ title: "Result" });
+        o.on("change", (e, t) => {
+          p.set(e);
+        });
+        const l = t[e].inTrigger("innerIn_cq7ouht1r");
+        l.setUiAttribs({ title: "Next" });
+        l.onTriggered = () => {
+          d.trigger();
+        };
+      }
+    }
+  };
+  const r = "bp2sub_" + e.id;
+  new CABLES.SubPatchOp(e, { subId: r });
+  t();
+  function t() {
+    if (!n || !n.subpatch_json) return;
+    const t = JSON.parse(n.subpatch_json);
+    CABLES.Patch.replaceOpIds(t, {
+      parentSubPatchId: r,
+      prefixHash: r,
+      oldIdAsRef: true,
+      doNotUnlinkLostLinks: true,
+    });
+    for (let e = 0; e < t.ops.length; e++) {
+      t.ops[e].uiAttribs.blueprintSubpatch2 = true;
+    }
+    e.loadDependencies(t, () => {
+      e.patch.deSerialize(t, { opsCreated: e.initInnerPorts });
+      if (CABLES.UI) gui.savedState.setSaved("blueprintloaded", r);
+      e.patch.emitEvent("subpatchExpose", r);
+      e.setStorage({ blueprintVer: 2 });
+      e.patch.emitEvent("subpatchExpose", r);
+    });
+  }
+};
+Ops.Patch.PGgjVeu.MouseInteract.prototype = new CABLES.Op();
+CABLES.OPS["38017d40-69c5-4b36-ac8d-f29966617da3"] = {
+  f: Ops.Patch.PGgjVeu.MouseInteract,
+  objName: "Ops.Patch.PGgjVeu.MouseInteract",
+};
+Ops.User.srcphag.Strobe = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const n = (e.attachments = {
+    inc_gen_ports_js:
+      'const port_xz0gracpt=op.inTrigger("xz0gracpt");\nport_xz0gracpt.setUiAttribs({title:"Changed",});\n\nconst port_nm7k58wq0=op.inTrigger("nm7k58wq0");\nport_nm7k58wq0.setUiAttribs({title:"Trigger 0",});\n\nconst port_ce2ob73kl=op.outNumber("ce2ob73kl");\nport_ce2ob73kl.setUiAttribs({title:"Opacity",display:"range",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_xz0gracpt = addedOps[i].outTrigger("innerOut_xz0gracpt");\ninnerOut_xz0gracpt.setUiAttribs({title:"Changed"});\nport_xz0gracpt.onTriggered = () => { innerOut_xz0gracpt.trigger(); };\n\nconst innerOut_nm7k58wq0 = addedOps[i].outTrigger("innerOut_nm7k58wq0");\ninnerOut_nm7k58wq0.setUiAttribs({title:"Trigger 0"});\nport_nm7k58wq0.onTriggered = () => { innerOut_nm7k58wq0.trigger(); };\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_ce2ob73kl = addedOps[i].inFloat("innerIn_ce2ob73kl");\ninnerIn_ce2ob73kl.setUiAttribs({title:"Opacity"});\ninnerIn_ce2ob73kl.on("change", (a,v) => { port_ce2ob73kl.set(a); });\n\n}\n}\n};\n',
+    subpatch_json:
+      '{"ops":[{"id":"bp6-0","uiAttribs":{"subPatch":"sltfzq478"},"storage":{},"portsOut":[{"name":"innerOut_xz0gracpt","title":"Changed","links":[{"portIn":"Reset","portOut":"innerOut_xz0gracpt","objIn":"bp6-3","objOut":"bp6-0"}]},{"name":"innerOut_nm7k58wq0","title":"Trigger 0","links":[{"portIn":"Generate","portOut":"innerOut_nm7k58wq0","objIn":"bp6-2","objOut":"bp6-0"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"bp6-1","uiAttribs":{"subPatch":"sltfzq478"},"storage":{},"portsIn":[{"name":"innerIn_ce2ob73kl","title":"Opacity"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"bp6-2","uiAttribs":{"subPatch":"sltfzq478"},"portsIn":[{"name":"min","value":0},{"name":"max","value":1},{"name":"Integer","value":1},{"name":"No consecutive duplicates","value":0}],"portsOut":[{"name":"result","links":[{"portIn":"Value 1","portOut":"result","objIn":"bp6-5","objOut":"bp6-2"}]}],"storage":{"ref":"bp6-2"},"objName":"Ops.Math.TriggerRandomNumber_v2"},{"id":"bp6-3","uiAttribs":{"subPatch":"sltfzq478"},"portsIn":[{"name":"Speed","value":1},{"name":"Play","value":1},{"name":"Sync to timeline","value":0}],"portsOut":[{"name":"Time","links":[{"portIn":"number1","portOut":"Time","objIn":"bp6-4","objOut":"bp6-3"}]}],"storage":{"ref":"bp6-3"},"objName":"Ops.Anim.Timer_v2"},{"id":"bp6-4","uiAttribs":{"subPatch":"sltfzq478"},"portsIn":[{"name":"number2","value":0.2}],"portsOut":[{"name":"result","links":[{"portIn":"Index","portOut":"result","objIn":"bp6-5","objOut":"bp6-4"}]}],"storage":{"ref":"bp6-4"},"objName":"Ops.Math.Compare.LessThan"},{"id":"bp6-5","uiAttribs":{"subPatch":"sltfzq478"},"portsIn":[{"name":"Value 0","value":1},{"name":"Value 2","value":0},{"name":"Value 3","value":0},{"name":"Value 4","value":0},{"name":"Value 5","value":0},{"name":"Value 6","value":0},{"name":"Value 7","value":0},{"name":"Value 8","value":0},{"name":"Value 9","value":0},{"name":"Value 10","value":0},{"name":"Value 11","value":0},{"name":"Value 12","value":0},{"name":"Value 13","value":0},{"name":"Value 14","value":0},{"name":"Value 15","value":0}],"portsOut":[{"name":"Result","links":[{"portIn":"innerIn_ce2ob73kl","portOut":"Result","objIn":"bp6-1","objOut":"bp6-5"}]}],"storage":{"ref":"bp6-5"},"objName":"Ops.Number.SwitchNumber"}]}',
+  });
+  const a = e.inTrigger("xz0gracpt");
+  a.setUiAttribs({ title: "Changed" });
+  const s = e.inTrigger("nm7k58wq0");
+  s.setUiAttribs({ title: "Trigger 0" });
+  const o = e.outNumber("ce2ob73kl");
+  o.setUiAttribs({ title: "Opacity", display: "range" });
+  e.initInnerPorts = function (t) {
+    for (let e = 0; e < t.length; e++) {
+      if (t[e].innerInput) {
+        const n = t[e].outTrigger("innerOut_xz0gracpt");
+        n.setUiAttribs({ title: "Changed" });
+        a.onTriggered = () => {
+          n.trigger();
+        };
+        const r = t[e].outTrigger("innerOut_nm7k58wq0");
+        r.setUiAttribs({ title: "Trigger 0" });
+        s.onTriggered = () => {
+          r.trigger();
+        };
+      }
+      if (t[e].innerOutput) {
+        const i = t[e].inFloat("innerIn_ce2ob73kl");
+        i.setUiAttribs({ title: "Opacity" });
+        i.on("change", (e, t) => {
+          o.set(e);
+        });
+      }
+    }
+  };
+  const r = "bp2sub_" + e.id;
+  new CABLES.SubPatchOp(e, { subId: r });
+  t();
+  function t() {
+    if (!n || !n.subpatch_json) return;
+    const t = JSON.parse(n.subpatch_json);
+    CABLES.Patch.replaceOpIds(t, {
+      parentSubPatchId: r,
+      prefixHash: r,
+      oldIdAsRef: true,
+      doNotUnlinkLostLinks: true,
+    });
+    for (let e = 0; e < t.ops.length; e++) {
+      t.ops[e].uiAttribs.blueprintSubpatch2 = true;
+    }
+    e.loadDependencies(t, () => {
+      e.patch.deSerialize(t, { opsCreated: e.initInnerPorts });
+      if (CABLES.UI) gui.savedState.setSaved("blueprintloaded", r);
+      e.patch.emitEvent("subpatchExpose", r);
+      e.setStorage({ blueprintVer: 2 });
+      e.patch.emitEvent("subpatchExpose", r);
+    });
+  }
+};
+Ops.User.srcphag.Strobe.prototype = new CABLES.Op();
+CABLES.OPS["0db46c93-d83c-4e48-88d0-de9e2cbb7251"] = {
+  f: Ops.User.srcphag.Strobe,
+  objName: "Ops.User.srcphag.Strobe",
 };
 Ops.Anim.Timer_v2 = function () {
   CABLES.Op.apply(this, arguments);
@@ -35287,9 +36994,9 @@ Ops.Anim.Smooth = function () {
   let h = 0;
   let f = 0;
   e.toWorkPortsNeedToBeLinked(n);
-  let d;
+  let m;
   let p;
-  let m = 4;
+  let d = 4;
   let g = true;
   let b = 0;
   const v = 0;
@@ -35299,7 +37006,7 @@ Ops.Anim.Smooth = function () {
   r.setUiAttribs({ hidePort: true });
   s.onChange = o.onChange = A;
   r.onChange = O;
-  y();
+  I();
   function O() {
     const e = r.get();
     if (!e) b = v;
@@ -35312,17 +37019,17 @@ Ops.Anim.Smooth = function () {
       s.setUiAttribs({ title: "Inc factor" });
     }
     A();
-    y();
+    I();
   }
   function A() {
     if (b == v) {
-      d = s.get();
+      m = s.get();
       p = s.get();
     } else if (b == _) {
-      d = s.get();
+      m = s.get();
       p = o.get();
     }
-    if (d <= 0.2 || d != d) d = 0.2;
+    if (m <= 0.2 || m != m) m = 0.2;
     if (p <= 0.2 || p != p) p = 0.2;
   }
   i.onChange = function () {
@@ -35333,18 +37040,18 @@ Ops.Anim.Smooth = function () {
   s.onChange = function () {
     A();
   };
-  function y() {
+  function I() {
     let e = 1;
     if (performance.now() - f > 500 || f === 0) u = i.get() || 0;
     else e = (performance.now() - f) / (performance.now() - f);
     f = performance.now();
     if (u != u) u = 0;
-    if (m <= 0) m = 1e-4;
+    if (d <= 0) d = 1e-4;
     const t = c - u;
     if (t >= 0) u += t / (p * e);
-    else u += t / (d * e);
+    else u += t / (m * e);
     if (Math.abs(t) < 1e-5) u = c;
-    if (m != m) u = 0;
+    if (d != d) u = 0;
     if (u != u || u == -Infinity || u == Infinity) u = i.get();
     if (h != u) {
       l.set(u);
@@ -35357,7 +37064,7 @@ Ops.Anim.Smooth = function () {
     a.trigger();
   }
   n.onTriggered = function () {
-    y();
+    I();
   };
 };
 Ops.Anim.Smooth.prototype = new CABLES.Op();
@@ -35461,10 +37168,10 @@ Ops.Gl.Matrix.TransformView = function () {
   n.setPortGroup("Rotation", [o, u, l]);
   const h = vec3.create();
   const f = vec3.create();
-  const d = mat4.create();
-  mat4.identity(d);
+  const m = mat4.create();
+  mat4.identity(m);
   let p = false;
-  let m = false;
+  let d = false;
   let g = true;
   let b = true;
   let v = true;
@@ -35484,7 +37191,7 @@ Ops.Gl.Matrix.TransformView = function () {
     }
     if (t) _();
     e.pushViewMatrix();
-    mat4.multiply(e.vMatrix, e.vMatrix, d);
+    mat4.multiply(e.vMatrix, e.vMatrix, m);
     c.trigger();
     e.popViewMatrix();
     if (n.isCurrentUiOp()) gui.setTransformGizmo({ posX: r, posY: i, posZ: a });
@@ -35493,17 +37200,17 @@ Ops.Gl.Matrix.TransformView = function () {
     return { pos: [r, i, a] };
   };
   function _() {
-    mat4.identity(d);
-    if (m) mat4.translate(d, d, h);
-    if (o.get() !== 0) mat4.rotateX(d, d, o.get() * CGL.DEG2RAD);
-    if (l.get() !== 0) mat4.rotateY(d, d, l.get() * CGL.DEG2RAD);
-    if (u.get() !== 0) mat4.rotateZ(d, d, u.get() * CGL.DEG2RAD);
-    if (p) mat4.scale(d, d, f);
+    mat4.identity(m);
+    if (d) mat4.translate(m, m, h);
+    if (o.get() !== 0) mat4.rotateX(m, m, o.get() * CGL.DEG2RAD);
+    if (l.get() !== 0) mat4.rotateY(m, m, l.get() * CGL.DEG2RAD);
+    if (u.get() !== 0) mat4.rotateZ(m, m, u.get() * CGL.DEG2RAD);
+    if (p) mat4.scale(m, m, f);
     x = false;
   }
   function O() {
-    m = false;
-    if (r.get() !== 0 || i.get() !== 0 || a.get() !== 0) m = true;
+    d = false;
+    if (r.get() !== 0 || i.get() !== 0 || a.get() !== 0) d = true;
     vec3.set(h, r.get(), i.get(), a.get());
     g = false;
   }
@@ -35511,20 +37218,20 @@ Ops.Gl.Matrix.TransformView = function () {
     p = false;
     if (s.get() !== 0) p = true;
     vec3.set(f, s.get(), s.get(), s.get());
-    I = false;
-  }
-  function y() {
-    g = true;
+    y = false;
   }
   function I() {
+    g = true;
+  }
+  function y() {
     b = true;
   }
   function x() {
     v = true;
   }
   o.onChange = l.onChange = u.onChange = x;
-  s.onChange = I;
-  r.onChange = i.onChange = a.onChange = y;
+  s.onChange = y;
+  r.onChange = i.onChange = a.onChange = I;
   o.set(0);
   l.set(0);
   u.set(0);
@@ -35615,14 +37322,14 @@ Ops.Array.SmoothArray = function () {
   let h = 0;
   let f = [];
   l.set(f);
-  let d;
+  let m;
   let p;
-  let m = false;
+  let d = false;
   g();
   b();
   function g() {
-    m = r.get();
-    if (!m) {
+    d = r.get();
+    if (!d) {
       s.setUiAttribs({ greyout: true });
       a.setUiAttribs({ title: "Inc/Dec factor" });
     } else {
@@ -35633,12 +37340,12 @@ Ops.Array.SmoothArray = function () {
     _();
   }
   function b() {
-    d = a.get();
-    if (m == false) p = a.get();
+    m = a.get();
+    if (d == false) p = a.get();
     else p = s.get();
-    if (d <= 0 || d != d) d = 1e-4;
+    if (m <= 0 || m != m) m = 1e-4;
     if (p <= 0 || p != p) p = 1e-4;
-    if (d <= 1) d = 1;
+    if (m <= 1) m = 1;
     if (p <= 1) p = 1;
   }
   i.onLinkChanged = () => {
@@ -35673,7 +37380,7 @@ Ops.Array.SmoothArray = function () {
       let e = f[r];
       let t = u[r] - e;
       if (t >= 0) e += t / (p * n);
-      else e += t / (d * n);
+      else e += t / (m * n);
       if (e > 0 && e < 1e-9) e = 0;
       if (!e) e = 0;
       if (f[r] != e) {
@@ -35715,146 +37422,6 @@ Ops.Math.Sum.prototype = new CABLES.Op();
 CABLES.OPS["c8fb181e-0b03-4b41-9e55-06b6267bc634"] = {
   f: Ops.Math.Sum,
   objName: "Ops.Math.Sum",
-};
-Ops.Math.Accumulator = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTrigger("Trigger in"),
-    r = e.inValueFloat("Add to number", 0),
-    i = e.inValueFloat("Multiplier to add number", 1),
-    a = e.inValueFloat("Default Value", 1),
-    s = e.inTriggerButton("Set Default Value"),
-    o = e.outNumber("Current value");
-  let l = performance.now();
-  let u = 0;
-  let c = true;
-  s.onTriggered = h;
-  function h() {
-    u = a.get();
-    o.set(u);
-    c = true;
-  }
-  n.onTriggered = function () {
-    if (!c) {
-      let e = (performance.now() - l) / 100;
-      u += r.get() * e * i.get();
-      o.set(u);
-    }
-    l = performance.now();
-    c = false;
-  };
-};
-Ops.Math.Accumulator.prototype = new CABLES.Op();
-CABLES.OPS["460574ca-dca2-4283-8c37-57a8c446a51f"] = {
-  f: Ops.Math.Accumulator,
-  objName: "Ops.Math.Accumulator",
-};
-Ops.Number.TriggerOnChangeNumber = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inFloat("Value"),
-    r = e.outTrigger("Next"),
-    i = e.outNumber("Number");
-  n.onChange = function () {
-    i.set(n.get());
-    r.trigger();
-  };
-};
-Ops.Number.TriggerOnChangeNumber.prototype = new CABLES.Op();
-CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"] = {
-  f: Ops.Number.TriggerOnChangeNumber,
-  objName: "Ops.Number.TriggerOnChangeNumber",
-};
-Ops.Math.MapRange = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const f = e.inValueFloat("value", 0),
-    d = e.inValueFloat("old min", 0),
-    p = e.inValueFloat("old max", 1),
-    m = e.inValueFloat("new min", 0),
-    g = e.inValueFloat("new max", 1),
-    n = e.inValueSelect(
-      "Easing",
-      ["Linear", "Smoothstep", "Smootherstep"],
-      "Linear"
-    ),
-    r = e.inBool("Clamp", true),
-    b = e.outNumber("result", 0);
-  e.setPortGroup("Input Range", [d, p]);
-  e.setPortGroup("Output Range", [m, g]);
-  let v = true;
-  let _ = 0;
-  let O = 0;
-  f.onChange = d.onChange = p.onChange = m.onChange = g.onChange = i;
-  i();
-  r.onChange = () => {
-    v = r.get();
-    i();
-  };
-  n.onChange = function () {
-    if (n.get() == "Smoothstep") _ = 1;
-    else if (n.get() == "Smootherstep") _ = 2;
-    else _ = 0;
-  };
-  function i() {
-    const e = m.get();
-    const t = g.get();
-    const n = d.get();
-    const r = p.get();
-    let i = f.get();
-    if (v) {
-      if (i >= Math.max(r, n)) {
-        b.set(t);
-        return;
-      } else if (i <= Math.min(r, n)) {
-        b.set(e);
-        return;
-      }
-    }
-    let a = false;
-    const s = Math.min(n, r);
-    const o = Math.max(n, r);
-    if (s != n) a = true;
-    let l = false;
-    const u = Math.min(e, t);
-    const c = Math.max(e, t);
-    if (u != e) l = true;
-    let h = 0;
-    if (a) h = ((o - i) * (c - u)) / (o - s);
-    else h = ((i - s) * (c - u)) / (o - s);
-    if (l) O = c - h;
-    else O = h + u;
-    if (_ === 0) {
-      b.set(O);
-    } else if (_ == 1) {
-      i = Math.max(0, Math.min(1, (O - e) / (t - e)));
-      b.set(e + i * i * (3 - 2 * i) * (t - e));
-    } else if (_ == 2) {
-      i = Math.max(0, Math.min(1, (O - e) / (t - e)));
-      b.set(e + i * i * i * (i * (i * 6 - 15) + 10) * (t - e));
-    }
-  }
-};
-Ops.Math.MapRange.prototype = new CABLES.Op();
-CABLES.OPS["2617b407-60a0-4ff6-b4a7-18136cfa7817"] = {
-  f: Ops.Math.MapRange,
-  objName: "Ops.Math.MapRange",
-};
-Ops.Vars.VarGetArray_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.outArray("Value");
-  e.varName = e.inValueSelect("Variable", [], "", true);
-  new CABLES.VarGetOpWrapper(e, "array", e.varName, n);
-};
-Ops.Vars.VarGetArray_v2.prototype = new CABLES.Op();
-CABLES.OPS["afa79294-aa9c-43bc-a49a-cade000a1de5"] = {
-  f: Ops.Vars.VarGetArray_v2,
-  objName: "Ops.Vars.VarGetArray_v2",
 };
 Ops.Vars.VarGetNumber_v2 = function () {
   CABLES.Op.apply(this, arguments);
@@ -35927,12 +37494,12 @@ Ops.Gl.CanvasInfo_v3 = function () {
   c.set(t.patch.cgl.canvas.parentElement);
   f.on("resize", () => {
     h.trigger();
-    d();
+    m();
   });
-  d();
-  function d() {
+  m();
+  function m() {
     let e = 1;
-    if (f.canvasHeight == 0) setTimeout(d, 100);
+    if (f.canvasHeight == 0) setTimeout(m, 100);
     r.set(f.canvasHeight / t.patch.cgl.pixelDensity);
     n.set(f.canvasWidth / t.patch.cgl.pixelDensity);
     a.set(f.canvasWidth);
@@ -35947,10 +37514,225 @@ CABLES.OPS["be186ff9-427e-409f-b6a4-f8d957bf7bc7"] = {
   f: Ops.Gl.CanvasInfo_v3,
   objName: "Ops.Gl.CanvasInfo_v3",
 };
+Ops.Math.Accumulator = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTrigger("Trigger in"),
+    r = e.inValueFloat("Add to number", 0),
+    i = e.inValueFloat("Multiplier to add number", 1),
+    a = e.inValueFloat("Default Value", 1),
+    s = e.inTriggerButton("Set Default Value"),
+    o = e.outNumber("Current value");
+  let l = performance.now();
+  let u = 0;
+  let c = true;
+  s.onTriggered = h;
+  function h() {
+    u = a.get();
+    o.set(u);
+    c = true;
+  }
+  n.onTriggered = function () {
+    if (!c) {
+      let e = (performance.now() - l) / 100;
+      u += r.get() * e * i.get();
+      o.set(u);
+    }
+    l = performance.now();
+    c = false;
+  };
+};
+Ops.Math.Accumulator.prototype = new CABLES.Op();
+CABLES.OPS["460574ca-dca2-4283-8c37-57a8c446a51f"] = {
+  f: Ops.Math.Accumulator,
+  objName: "Ops.Math.Accumulator",
+};
+Ops.Number.TriggerOnChangeNumber = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inFloat("Value"),
+    r = e.outTrigger("Next"),
+    i = e.outNumber("Number");
+  n.onChange = function () {
+    i.set(n.get());
+    r.trigger();
+  };
+};
+Ops.Number.TriggerOnChangeNumber.prototype = new CABLES.Op();
+CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"] = {
+  f: Ops.Number.TriggerOnChangeNumber,
+  objName: "Ops.Number.TriggerOnChangeNumber",
+};
+Ops.Math.MapRange = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const f = e.inValueFloat("value", 0),
+    m = e.inValueFloat("old min", 0),
+    p = e.inValueFloat("old max", 1),
+    d = e.inValueFloat("new min", 0),
+    g = e.inValueFloat("new max", 1),
+    n = e.inValueSelect(
+      "Easing",
+      ["Linear", "Smoothstep", "Smootherstep"],
+      "Linear"
+    ),
+    r = e.inBool("Clamp", true),
+    b = e.outNumber("result", 0);
+  e.setPortGroup("Input Range", [m, p]);
+  e.setPortGroup("Output Range", [d, g]);
+  let v = true;
+  let _ = 0;
+  let O = 0;
+  f.onChange = m.onChange = p.onChange = d.onChange = g.onChange = i;
+  i();
+  r.onChange = () => {
+    v = r.get();
+    i();
+  };
+  n.onChange = function () {
+    if (n.get() == "Smoothstep") _ = 1;
+    else if (n.get() == "Smootherstep") _ = 2;
+    else _ = 0;
+  };
+  function i() {
+    const e = d.get();
+    const t = g.get();
+    const n = m.get();
+    const r = p.get();
+    let i = f.get();
+    if (v) {
+      if (i >= Math.max(r, n)) {
+        b.set(t);
+        return;
+      } else if (i <= Math.min(r, n)) {
+        b.set(e);
+        return;
+      }
+    }
+    let a = false;
+    const s = Math.min(n, r);
+    const o = Math.max(n, r);
+    if (s != n) a = true;
+    let l = false;
+    const u = Math.min(e, t);
+    const c = Math.max(e, t);
+    if (u != e) l = true;
+    let h = 0;
+    if (a) h = ((o - i) * (c - u)) / (o - s);
+    else h = ((i - s) * (c - u)) / (o - s);
+    if (l) O = c - h;
+    else O = h + u;
+    if (_ === 0) {
+      b.set(O);
+    } else if (_ == 1) {
+      i = Math.max(0, Math.min(1, (O - e) / (t - e)));
+      b.set(e + i * i * (3 - 2 * i) * (t - e));
+    } else if (_ == 2) {
+      i = Math.max(0, Math.min(1, (O - e) / (t - e)));
+      b.set(e + i * i * i * (i * (i * 6 - 15) + 10) * (t - e));
+    }
+  }
+};
+Ops.Math.MapRange.prototype = new CABLES.Op();
+CABLES.OPS["2617b407-60a0-4ff6-b4a7-18136cfa7817"] = {
+  f: Ops.Math.MapRange,
+  objName: "Ops.Math.MapRange",
+};
+Ops.Vars.VarGetArray_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.outArray("Value");
+  e.varName = e.inValueSelect("Variable", [], "", true);
+  new CABLES.VarGetOpWrapper(e, "array", e.varName, n);
+};
+Ops.Vars.VarGetArray_v2.prototype = new CABLES.Op();
+CABLES.OPS["afa79294-aa9c-43bc-a49a-cade000a1de5"] = {
+  f: Ops.Vars.VarGetArray_v2,
+  objName: "Ops.Vars.VarGetArray_v2",
+};
+Ops.Math.TriggerRandomNumber_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inTriggerButton("Generate"),
+    r = e.inValue("min", 0),
+    i = e.inValue("max", 1),
+    a = e.outTrigger("next"),
+    s = e.outNumber("result"),
+    o = e.inValueBool("Integer", false),
+    l = e.inValueBool("No consecutive duplicates", false);
+  e.setPortGroup("Value Range", [r, i]);
+  n.onTriggered = i.onChange = r.onChange = o.onChange = u;
+  u();
+  function u() {
+    let e = Math.random() * (i.get() - r.get()) + r.get();
+    if (o.get()) e = c();
+    if (r.get() != i.get() && i.get() > r.get())
+      while (l.get() && e == s.get()) e = c();
+    s.set(e);
+    a.trigger();
+  }
+  function c() {
+    return Math.floor(Math.random() * (i.get() - r.get() + 1) + r.get());
+  }
+};
+Ops.Math.TriggerRandomNumber_v2.prototype = new CABLES.Op();
+CABLES.OPS["26f446cc-9107-4164-8209-5254487fa132"] = {
+  f: Ops.Math.TriggerRandomNumber_v2,
+  objName: "Ops.Math.TriggerRandomNumber_v2",
+};
+Ops.Math.Compare.LessThan = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {});
+  const n = e.inValue("number1");
+  const r = e.inValue("number2");
+  const i = e.outBoolNum("result");
+  e.setUiAttribs({ mathTitle: true });
+  n.onChange = a;
+  r.onChange = a;
+  a();
+  function a() {
+    i.set(n.get() < r.get());
+  }
+};
+Ops.Math.Compare.LessThan.prototype = new CABLES.Op();
+CABLES.OPS["04fd113f-ade1-43fb-99fa-f8825f8814c0"] = {
+  f: Ops.Math.Compare.LessThan,
+  objName: "Ops.Math.Compare.LessThan",
+};
+Ops.Number.SwitchNumber = function () {
+  CABLES.Op.apply(this, arguments);
+  const n = this;
+  const e = (n.attachments = {});
+  const t = n.inValueInt("Index");
+  const r = [];
+  const i = n.outNumber("Result");
+  t.onChange = a;
+  for (let t = 0; t < 16; t++) {
+    let e = n.inValue("Value " + t);
+    r.push(e);
+    e.onChange = a;
+  }
+  function a() {
+    if (t.get() >= 0 && r[t.get()]) {
+      i.set(r[t.get()].get());
+    }
+  }
+};
+Ops.Number.SwitchNumber.prototype = new CABLES.Op();
+CABLES.OPS["fbb89f72-f2e3-4d34-ad01-7d884a1bcdc0"] = {
+  f: Ops.Number.SwitchNumber,
+  objName: "Ops.Number.SwitchNumber",
+};
 Ops.Devices.Mouse.Mouse_v3 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const k = (e.attachments = {});
+  const M = (e.attachments = {});
   const t = e.inSwitch(
       "Coordinates",
       ["-1 to 1", "Pixel Display", "Pixel", "0 to 1"],
@@ -35971,16 +37753,16 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     c = e.outTrigger("click"),
     h = e.outTrigger("click right"),
     f = e.outBoolNum("Button is down"),
-    d = e.outBoolNum("Mouse is hovering"),
+    m = e.outBoolNum("Mouse is hovering"),
     p = e.outNumber("Movement X", 0),
-    m = e.outNumber("Movement Y", 0);
+    d = e.outNumber("Movement Y", 0);
   const g = e.patch.cgl;
   let b = 1;
   let v = null;
   let _ = null;
   s.onChange = i.onChange = R;
   t.onChange = V;
-  e.onDelete = L;
+  e.onDelete = w;
   R();
   e.on("loadedValueSet", O);
   function O() {
@@ -36002,7 +37784,7 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
       u.set(_.clientHeight / 2 / g.pixelDensity);
     } else console.error("unknown normalize mouse", b);
   }
-  function M(i, a) {
+  function k(i, a) {
     i = i || 0;
     a = a || 0;
     if (b == 0) {
@@ -36043,11 +37825,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     );
   }
   r.onChange = function () {
-    L();
+    w();
     R();
   };
   o.onChange = function () {
-    if (v) L();
+    if (v) w();
     if (o.get()) R();
   };
   function V() {
@@ -36056,11 +37838,11 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     else if (t.get() == "0 to 1") b = 2;
     else if (t.get() == "Pixel Display") b = 3;
   }
-  function y(e) {
-    f.set(false);
-    d.set(A(e));
-  }
   function I(e) {
+    f.set(false);
+    m.set(A(e));
+  }
+  function y(e) {
     if (!A(e)) return;
     f.set(true);
   }
@@ -36078,7 +37860,7 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
   }
   function E(e) {
     f.set(false);
-    d.set(A(e));
+    m.set(A(e));
   }
   function C(e) {
     let t = e.clientX;
@@ -36093,41 +37875,41 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
       n = e.clientY - r.top;
     }
     if (a.get()) n = _.clientHeight - n;
-    M(t / g.pixelDensity, n / g.pixelDensity);
-  }
-  function j(e) {
-    d.set(A(e));
-    C(e);
-    p.set(e.movementX / g.pixelDensity);
-    m.set(e.movementY / g.pixelDensity);
+    k(t / g.pixelDensity, n / g.pixelDensity);
   }
   function N(e) {
+    m.set(A(e));
+    C(e);
+    p.set(e.movementX / g.pixelDensity);
+    d.set(e.movementY / g.pixelDensity);
+  }
+  function j(e) {
     if (event.touches && event.touches.length > 0) C(e.touches[0]);
   }
-  function w(e) {
+  function L(e) {
     f.set(true);
-    if (e.touches && e.touches.length > 0) I(e.touches[0]);
+    if (e.touches && e.touches.length > 0) y(e.touches[0]);
   }
   function P(e) {
     f.set(false);
     x();
   }
-  function L() {
+  function w() {
     if (!v) return;
     v.removeEventListener("touchend", P);
-    v.removeEventListener("touchstart", w);
-    v.removeEventListener("touchmove", N);
+    v.removeEventListener("touchstart", L);
+    v.removeEventListener("touchmove", j);
     v.removeEventListener("click", S);
-    v.removeEventListener("mousemove", j);
+    v.removeEventListener("mousemove", N);
     v.removeEventListener("mouseleave", E);
-    v.removeEventListener("mousedown", I);
+    v.removeEventListener("mousedown", y);
     v.removeEventListener("mouseup", x);
-    v.removeEventListener("mouseenter", y);
+    v.removeEventListener("mouseenter", I);
     v.removeEventListener("contextmenu", T);
     v = null;
   }
   function R() {
-    if (v || !o.get()) L();
+    if (v || !o.get()) w();
     if (!o.get()) return;
     v = _ = g.canvas;
     if (i.get() == "Canvas Area") {
@@ -36140,14 +37922,14 @@ Ops.Devices.Mouse.Mouse_v3 = function () {
     if (s.get()) e = { passive: true };
     if (r.get()) {
       v.addEventListener("touchend", P, e);
-      v.addEventListener("touchstart", w, e);
-      v.addEventListener("touchmove", N, e);
+      v.addEventListener("touchstart", L, e);
+      v.addEventListener("touchmove", j, e);
     }
-    v.addEventListener("mousemove", j, e);
+    v.addEventListener("mousemove", N, e);
     v.addEventListener("mouseleave", E, e);
-    v.addEventListener("mousedown", I, e);
+    v.addEventListener("mousedown", y, e);
     v.addEventListener("mouseup", x, e);
-    v.addEventListener("mouseenter", y, e);
+    v.addEventListener("mouseenter", I, e);
     v.addEventListener("contextmenu", T, e);
     v.addEventListener("click", S, e);
   }
@@ -36174,37 +37956,6 @@ Ops.Trigger.TriggerOnChangeString.prototype = new CABLES.Op();
 CABLES.OPS["319d07e0-5cbe-4bc1-89fb-a934fd41b0c4"] = {
   f: Ops.Trigger.TriggerOnChangeString,
   objName: "Ops.Trigger.TriggerOnChangeString",
-};
-Ops.Math.TriggerRandomNumber_v2 = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inTriggerButton("Generate"),
-    r = e.inValue("min", 0),
-    i = e.inValue("max", 1),
-    a = e.outTrigger("next"),
-    s = e.outNumber("result"),
-    o = e.inValueBool("Integer", false),
-    l = e.inValueBool("No consecutive duplicates", false);
-  e.setPortGroup("Value Range", [r, i]);
-  n.onTriggered = i.onChange = r.onChange = o.onChange = u;
-  u();
-  function u() {
-    let e = Math.random() * (i.get() - r.get()) + r.get();
-    if (o.get()) e = c();
-    if (r.get() != i.get() && i.get() > r.get())
-      while (l.get() && e == s.get()) e = c();
-    s.set(e);
-    a.trigger();
-  }
-  function c() {
-    return Math.floor(Math.random() * (i.get() - r.get() + 1) + r.get());
-  }
-};
-Ops.Math.TriggerRandomNumber_v2.prototype = new CABLES.Op();
-CABLES.OPS["26f446cc-9107-4164-8209-5254487fa132"] = {
-  f: Ops.Math.TriggerRandomNumber_v2,
-  objName: "Ops.Math.TriggerRandomNumber_v2",
 };
 Ops.Trigger.TriggerButton = function () {
   CABLES.Op.apply(this, arguments);
@@ -36337,9 +38088,9 @@ Ops.Cables.LoadingStatus_v2 = function () {
   const c = r.patch.cgl;
   const h = r.patch;
   let f = false;
-  const d = [];
+  const m = [];
   let p = true;
-  let m = 0;
+  let d = 0;
   document.body.classList.add("cables-loading");
   let g = c.patch.loading.start("loadingStatusInit", "loadingStatusInit", r);
   r.patch.loading.on("finishedTask", b.bind(this));
@@ -36534,7 +38285,7 @@ CABLES.OPS["4fbfc71e-1429-439f-8591-ad35961252ed"] = {
 Ops.Gl.Performance = function () {
   CABLES.Op.apply(this, arguments);
   const s = this;
-  const M = (s.attachments = {});
+  const k = (s.attachments = {});
   const e = s.inTrigger("exe"),
     o = s.inValueBool("Active", true),
     l = s.inValueBool("Visible", true),
@@ -36545,24 +38296,24 @@ Ops.Gl.Performance = function () {
     U = s.inBool("Smooth Graph", true),
     D = s.inFloat("Scale", 3),
     c = s.inFloat("Size", 128),
-    B = s.outObject("Canvas"),
-    G = s.outNumber("FPS");
+    G = s.outObject("Canvas"),
+    B = s.outNumber("FPS");
   const r = s.patch.cgl;
   const i = document.createElement("div");
   let a = null;
   let h = null;
   let f = false;
-  let d = 0;
-  let p = 0;
   let m = 0;
+  let p = 0;
+  let d = 0;
   let g = 0;
   let b = 0;
   const v = [];
   const _ = [];
   const O = [];
   const A = [];
-  let y = 0;
   let I = 0;
+  let y = 0;
   let x = null;
   let F = 0;
   let z = 0;
@@ -36573,11 +38324,11 @@ Ops.Gl.Performance = function () {
   const H = "#222222";
   const E = "#003f5c";
   const C = "#7a5195";
-  const j = "#ef5675";
+  const N = "#ef5675";
   const Y = "#ffa600";
   let W = false;
-  let N = 0;
-  let w = 0;
+  let j = 0;
+  let L = 0;
   let P = 0;
   s.toWorkPortsNeedToBeLinked(e, u);
   const K = s.patch.cgl.gl;
@@ -36586,7 +38337,7 @@ Ops.Gl.Performance = function () {
     e.onLinkChanged =
     l.onChange =
       () => {
-        k();
+        M();
         J();
       };
   t.onChange = Q;
@@ -36604,10 +38355,10 @@ Ops.Gl.Performance = function () {
   i.style["z-index"] = "99999";
   i.innerHTML = "&nbsp;";
   i.addEventListener("click", $);
-  const L = s.patch.cgl.canvas.parentElement;
-  L.appendChild(i);
+  const w = s.patch.cgl.canvas.parentElement;
+  w.appendChild(i);
   R();
-  k();
+  M();
   Q();
   J();
   s.onDelete = function () {
@@ -36654,15 +38405,15 @@ Ops.Gl.Performance = function () {
   }
   n.onChange = function () {
     f = n.get();
-    k();
+    M();
   };
   function $() {
     if (!l.get()) return;
     i.style.opacity = 1;
     f = !f;
-    k();
+    M();
   }
-  function k() {
+  function M() {
     ne();
     if (!x) te();
     if (f) {
@@ -36694,7 +38445,7 @@ Ops.Gl.Performance = function () {
       h.fillStyle = C;
       e = _[r];
       h.fillRect(i - r, t - e * n, 1, _[r] * n);
-      h.fillStyle = j;
+      h.fillStyle = N;
       e += O[r];
       h.fillRect(i - r, t - e * n, 1, O[r] * n);
       h.fillStyle = Y;
@@ -36724,7 +38475,7 @@ Ops.Gl.Performance = function () {
     x.style.cursor = "pointer";
     x.style.top = "-64px";
     x.style["z-index"] = "99998";
-    L.appendChild(x);
+    w.appendChild(x);
     h = x.getContext("2d");
     x.addEventListener("click", $);
     R();
@@ -36768,20 +38519,20 @@ Ops.Gl.Performance = function () {
         '<span style="color:' +
         C +
         '">■</span> ' +
-        Math.round(w * 100) / 100 +
+        Math.round(L * 100) / 100 +
         "ms mainloop ";
       t +=
         '<span style="color:' +
-        j +
+        N +
         '">■</span> ' +
         Math.round(P * 100) / 100 +
         "ms onframe ";
-      if (N)
+      if (j)
         t +=
           '<span style="color:' +
           Y +
           '">■</span> ' +
-          Math.round(N * 100) / 100 +
+          Math.round(j * 100) / 100 +
           "ms GPU";
       t += e;
       i.innerHTML = t;
@@ -36791,7 +38542,7 @@ Ops.Gl.Performance = function () {
         "CPU: " +
         Math.round(s.patch.cgl.profileData.profileOnAnimFrameOps * 100) / 100 +
         "ms / ";
-      if (N) t += "GPU: " + Math.round(N * 100) / 100 + "ms  ";
+      if (j) t += "GPU: " + Math.round(j * 100) / 100 + "ms  ";
       i.innerHTML = t;
     }
     if (s.patch.loading.getProgress() != 1) {
@@ -36803,16 +38554,16 @@ Ops.Gl.Performance = function () {
     }
     if (f) {
       let t = 0;
-      y = 0;
+      I = 0;
       b = 0;
       for (let e = v.length; e > v.length - v.length / 3; e--) {
         if (v[e] > -1) {
-          y += v[e];
+          I += v[e];
           t++;
         }
         if (_[e] > -1) b += _[e];
       }
-      y /= t;
+      I /= t;
       b /= t;
       i.innerHTML +=
         "<br/> " +
@@ -36826,11 +38577,11 @@ Ops.Gl.Performance = function () {
         "<br/>frame avg: " +
         Math.round(b * 100) / 100 +
         " ms (" +
-        Math.round((b / y) * 100) +
+        Math.round((b / I) * 100) +
         "%) / " +
-        Math.round(y * 100) / 100 +
+        Math.round(I * 100) / 100 +
         " ms";
-      i.innerHTML += " (self: " + Math.round(I * 100) / 100 + " ms) ";
+      i.innerHTML += " (self: " + Math.round(y * 100) / 100 + " ms) ";
       i.innerHTML +=
         "<br/>shader binds: " +
         Math.ceil(s.patch.cgl.profileData.profileShaderBinds / p) +
@@ -36935,7 +38686,7 @@ Ops.Gl.Performance = function () {
       a.style.position = "absolute";
       a.style["z-index"] = "99999";
       a.innerHTML = "";
-      L.appendChild(a);
+      w.appendChild(a);
     }
     let t = 0;
     const n = CGL.performanceMeasures[0];
@@ -36950,25 +38701,25 @@ Ops.Gl.Performance = function () {
   function oe() {
     const e = performance.now();
     if (o.get()) {
-      d++;
+      m++;
       if (Z && V.get() && l.get())
         s.patch.cgl.profileData.doProfileGlQuery = true;
       else s.patch.cgl.profileData.doProfileGlQuery = false;
-      if (m === 0) m = Date.now();
-      if (Date.now() - m >= 1e3) {
-        p = d;
-        d = 0;
-        G.set(p);
+      if (d === 0) d = Date.now();
+      if (Date.now() - d >= 1e3) {
+        p = m;
+        m = 0;
+        B.set(p);
         if (l.get()) ne();
-        m = Date.now();
+        d = Date.now();
       }
       const n = s.patch.cgl.profileData.glQueryData;
-      N = 0;
+      j = 0;
       if (n) {
         let t = 0;
         for (let e in n) {
           t++;
-          if (n[e].time) N += n[e].time;
+          if (n[e].time) j += n[e].time;
         }
       }
       if (l.get()) {
@@ -36983,14 +38734,14 @@ Ops.Gl.Performance = function () {
               s.patch.cgl.profileData.profileMainloopMs
           );
           O.shift();
-          A.push(N);
+          A.push(j);
           A.shift();
           ee();
         }
       }
       F = performance.now();
-      I = performance.now() - e;
-      B.setRef(x);
+      y = performance.now() - e;
+      G.setRef(x);
     }
     const t = performance.now();
     u.trigger();
@@ -37002,11 +38753,11 @@ Ops.Gl.Performance = function () {
         s.patch.cgl.profileData.profileMainloopMs;
       if (U.get()) {
         g = g * 0.9 + r * 0.1;
-        w = w * 0.5 + i * 0.5;
+        L = L * 0.5 + i * 0.5;
         P = P * 0.5 + a * 0.5;
       } else {
         g = r;
-        w = i;
+        L = i;
         P = a;
       }
       s.patch.cgl.profileData.clearGlQuery();
@@ -37049,7 +38800,7 @@ Ops.Color.ColorValue = function () {
   const u = e.outNumber("outa");
   const c = e.outNumber("Hex", "000000");
   const h = e.outArray("Array");
-  n.onChange = r.onChange = i.onChange = a.onChange = d;
+  n.onChange = r.onChange = i.onChange = a.onChange = m;
   function f(e) {
     let t = Math.round(e * 255).toString(16);
     if (t.length === 1) {
@@ -37057,7 +38808,7 @@ Ops.Color.ColorValue = function () {
     }
     return t.toUpperCase();
   }
-  function d() {
+  function m() {
     s.set(n.get());
     o.set(r.get());
     l.set(i.get());
@@ -37066,7 +38817,7 @@ Ops.Color.ColorValue = function () {
     c.set(e);
     h.set([n.get(), r.get(), i.get(), a.get()]);
   }
-  d();
+  m();
 };
 Ops.Color.ColorValue.prototype = new CABLES.Op();
 CABLES.OPS["7caa37c8-f2a7-49f2-a29c-96af362abca0"] = {
@@ -37124,7 +38875,7 @@ Ops.Html.FontFile_v2 = function () {
   let h;
   let f = null;
   let t = null;
-  let d = null;
+  let m = null;
   let p = "";
   a.onChange = function () {
     l.set(false);
@@ -37144,7 +38895,7 @@ Ops.Html.FontFile_v2 = function () {
     r(e.document);
   });
   function r(e) {
-    if (d) d.remove();
+    if (m) m.remove();
     if (h) {
       const t = f.fonts.delete(h);
       h = null;
@@ -37198,13 +38949,13 @@ Ops.Html.FontFile_v2 = function () {
           n +
           '") format("truetype");'.endl() +
           "}";
-        d = document.createElement("style");
-        d.classList.add("cablesEle");
-        d.type = "text/css";
-        d.innerHTML = r;
+        m = document.createElement("style");
+        m.classList.add("cablesEle");
+        m.type = "text/css";
+        m.innerHTML = r;
         document
           .getElementsByTagName("head")
-          [document.getElementsByTagName("head").length - 1].appendChild(d);
+          [document.getElementsByTagName("head").length - 1].appendChild(m);
       }
     }
   }
@@ -37233,41 +38984,41 @@ Ops.Gl.Texture_v2 = function () {
     c = i.inBool("Save Memory", true),
     h = i.outTexture("Texture"),
     f = i.inBool("Add Cachebuster", false),
-    d = i.inTriggerButton("Reload"),
+    m = i.inTriggerButton("Reload"),
     p = i.outNumber("Width"),
-    m = i.outNumber("Height"),
+    d = i.outNumber("Height"),
     g = i.outNumber("Aspect Ratio"),
     b = i.outBoolNum("Loaded", 0),
     v = i.outBoolNum("Loading", 0);
   const _ = i.patch.cgl;
   i.toWorkPortsNeedToBeLinked(h);
-  i.setPortGroup("Size", [p, m]);
+  i.setPortGroup("Size", [p, d]);
   let O = null;
   let A = null;
-  let y = null;
-  let I = CGL.Texture.FILTER_MIPMAP;
+  let I = null;
+  let y = CGL.Texture.FILTER_MIPMAP;
   let x = CGL.Texture.WRAP_REPEAT;
   let T = 0;
   let S = 0;
   l.setUiAttribs({ hidePort: true });
   l.onChange = a.onChange = s.onChange = f.onChange = o.onChange = C;
-  r.onChange = t.onChange = w;
+  r.onChange = t.onChange = L;
   n.onChange = P;
   t.set("mipmap");
   n.set("repeat");
   h.setRef(CGL.Texture.getEmptyTexture(_));
-  d.onTriggered = C;
+  m.onTriggered = C;
   u.onChange = function () {
     if (u.get()) {
-      if (O != a.get() || !y) C();
-      else h.setRef(y);
+      if (O != a.get() || !I) C();
+      else h.setRef(I);
     } else {
       h.setRef(CGL.Texture.getEmptyTexture(_));
       p.set(CGL.Texture.getEmptyTexture(_).width);
-      m.set(CGL.Texture.getEmptyTexture(_).height);
-      if (y) y.delete();
+      d.set(CGL.Texture.getEmptyTexture(_).height);
+      if (I) I.delete();
       i.setUiAttrib({ extendTitle: "" });
-      y = null;
+      I = null;
     }
   };
   const E = function () {
@@ -37277,17 +39028,17 @@ Ops.Gl.Texture_v2 = function () {
   function C(e) {
     clearTimeout(S);
     S = setTimeout(function () {
-      N(e);
+      j(e);
     }, 1);
   }
-  function j() {
+  function N() {
     if (s.get() == "R") return CGL.Texture.PFORMATSTR_R8UB;
     if (s.get() == "RG") return CGL.Texture.PFORMATSTR_RG8UB;
     if (s.get() == "RGB") return CGL.Texture.PFORMATSTR_RGB8UB;
     if (s.get() == "SRGBA") return CGL.Texture.PFORMATSTR_SRGBA8;
     return CGL.Texture.PFORMATSTR_RGBA8UB;
   }
-  function N(e) {
+  function j(e) {
     i.checkMainloopExists();
     if (!u.get()) return;
     if (A) A = _.patch.loading.finished(A);
@@ -37314,7 +39065,7 @@ Ops.Gl.Texture_v2 = function () {
               A = _.patch.loading.finished(A);
               return;
             }
-            if (y) y.delete();
+            if (I) I.delete();
             if (e) {
               const n = CGL.Texture.getErrorTexture(_);
               h.setRef(n);
@@ -37327,13 +39078,13 @@ Ops.Gl.Texture_v2 = function () {
               return;
             }
             p.set(t.width);
-            m.set(t.height);
+            d.set(t.height);
             g.set(t.width / t.height);
-            y = t;
-            h.setRef(y);
+            I = t;
+            h.setRef(I);
             v.set(false);
             b.set(true);
-            if (c.get()) y.image = null;
+            if (c.get()) I.image = null;
             if (A) {
               A = _.patch.loading.finished(A);
             }
@@ -37344,8 +39095,8 @@ Ops.Gl.Texture_v2 = function () {
             wrap: x,
             flip: o.get(),
             unpackAlpha: l.get(),
-            pixelFormat: j(),
-            filter: I,
+            pixelFormat: N(),
+            filter: y,
           }
         );
         i.checkMainloopExists();
@@ -37355,12 +39106,12 @@ Ops.Gl.Texture_v2 = function () {
       A = _.patch.loading.finished(A);
     }
   }
-  function w() {
-    if (t.get() == "nearest") I = CGL.Texture.FILTER_NEAREST;
-    else if (t.get() == "linear") I = CGL.Texture.FILTER_LINEAR;
-    else if (t.get() == "mipmap") I = CGL.Texture.FILTER_MIPMAP;
-    else if (t.get() == "Anisotropic") I = CGL.Texture.FILTER_ANISOTROPIC;
-    r.setUiAttribs({ greyout: I != CGL.Texture.FILTER_MIPMAP });
+  function L() {
+    if (t.get() == "nearest") y = CGL.Texture.FILTER_NEAREST;
+    else if (t.get() == "linear") y = CGL.Texture.FILTER_LINEAR;
+    else if (t.get() == "mipmap") y = CGL.Texture.FILTER_MIPMAP;
+    else if (t.get() == "Anisotropic") y = CGL.Texture.FILTER_ANISOTROPIC;
+    r.setUiAttribs({ greyout: y != CGL.Texture.FILTER_MIPMAP });
     T = parseFloat(r.get());
     C();
   }
@@ -37374,7 +39125,7 @@ Ops.Gl.Texture_v2 = function () {
     if (a.get() && a.get().indexOf(e) > -1) {
       h.setRef(CGL.Texture.getEmptyTexture(i.patch.cgl));
       h.setRef(CGL.Texture.getTempTexture(_));
-      N(true);
+      j(true);
     }
   };
 };
@@ -37399,13 +39150,13 @@ Ops.Gl.Textures.SwitchTextures_v2 = function () {
   let h = CGL.Texture.getEmptyTexture(o);
   t.toWorkPortsNeedToBeLinked(n);
   n.onTriggered = function () {
-    d();
+    m();
     a.trigger();
   };
   i.onChange = function () {
     if (i.get()) h = CGL.Texture.getEmptyTexture(o);
     else h = CGL.Texture.getTempTexture(o);
-    d(true);
+    m(true);
   };
   for (let e = 0; e < 16; e++) {
     const p = t.inTexture("texture" + e);
@@ -37413,9 +39164,9 @@ Ops.Gl.Textures.SwitchTextures_v2 = function () {
     p.onChange = f;
   }
   function f() {
-    d(true);
+    m(true);
   }
-  function d(e) {
+  function m(e) {
     u = parseInt(r.get(), 10);
     if (!e) {
       if (u == c) return;
@@ -37546,8 +39297,8 @@ Ops.Boolean.Or = function () {
     u.onChange =
     c.onChange =
     h.onChange =
-      d;
-  function d() {
+      m;
+  function m() {
     f.set(
       n.get() ||
         r.get() ||
@@ -37773,12 +39524,12 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
   const _ = b.patch.cgl;
   const O = [];
   const A = [];
-  const y = [];
+  const I = [];
   b.toWorkPortsNeedToBeLinked(t);
   n.setUiAttribs({ editorSyntax: "glsl" });
   r.setUiAttribs({ editorSyntax: "glsl" });
-  const I = new CGL.Shader(_, "customshader", b);
-  I.setModules([
+  const y = new CGL.Shader(_, "customshader", b);
+  y.setModules([
     "MODULE_VERTEX_POSITION",
     "MODULE_COLOR",
     "MODULE_BEGIN_FRAG",
@@ -37810,21 +39561,21 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
     g();
   };
   function h() {
-    j();
+    N();
     if (u) g();
-    if (i.get()) _.pushShader(I);
+    if (i.get()) _.pushShader(y);
     f();
     a.trigger();
-    I.popTextures();
+    y.popTextures();
     if (i.get()) _.popShader();
   }
   function f() {
     for (let e = 0; e < A.length; e++)
       if (A[e] && A[e].get() && A[e].get().tex)
-        I.pushTexture(A[e].uniform, A[e].get().tex);
-      else I.pushTexture(A[e], CGL.Texture.getEmptyTexture(_));
+        y.pushTexture(A[e].uniform, A[e].get().tex);
+      else y.pushTexture(A[e], CGL.Texture.getEmptyTexture(_));
   }
-  function d() {
+  function m() {
     for (let e = 0; e < A.length; e++)
       if (A[e] && A[e].get() && A[e].get().tex)
         _.setTexture(0 + e + v, A[e].get().tex);
@@ -37846,7 +39597,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
   ];
   let S = 0;
   const E = [];
-  function m(e) {
+  function d(e) {
     const t = e.split("\n");
     const i = [];
     for (let e = 0; e < t.length; e++) {
@@ -37876,7 +39627,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 if (o) {
                   const l = parseInt(o[0].trim().slice(1, -1));
                   const u = b.inArray(s, []);
-                  u.uniform = new CGL.Uniform(I, "f[]", s, new Float32Array(l));
+                  u.uniform = new CGL.Uniform(y, "f[]", s, new Float32Array(l));
                   O.push(u);
                   i.push(u);
                   const c = {
@@ -37889,10 +39640,10 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                   u.onChange = function () {
                     this.changed = true;
                   }.bind(c);
-                  y.push(c);
+                  I.push(c);
                 } else {
                   const u = b.inFloat(s, 0);
-                  u.uniform = new CGL.Uniform(I, "f", s, u);
+                  u.uniform = new CGL.Uniform(y, "f", s, u);
                   O.push(u);
                   i.push(u);
                 }
@@ -37901,7 +39652,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               E.push(s);
               if (!x(s)) {
                 const u = b.inInt(s, 0);
-                u.uniform = new CGL.Uniform(I, "i", s, u);
+                u.uniform = new CGL.Uniform(y, "i", s, u);
                 O.push(u);
                 i.push(u);
               }
@@ -37909,7 +39660,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               E.push(s);
               if (!x(s)) {
                 const u = b.inBool(s, false);
-                u.uniform = new CGL.Uniform(I, "b", s, u);
+                u.uniform = new CGL.Uniform(y, "b", s, u);
                 O.push(u);
                 i.push(u);
               }
@@ -37917,7 +39668,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               E.push(s);
               if (!x(s)) {
                 const u = b.inArray(s, 0);
-                u.uniform = new CGL.Uniform(I, "m4", s, u);
+                u.uniform = new CGL.Uniform(y, "m4", s, u);
                 O.push(u);
                 i.push(u);
                 const c = {
@@ -37930,7 +39681,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 u.onChange = function () {
                   this.changed = true;
                 }.bind(c);
-                y.push(c);
+                I.push(c);
               }
             } else if (a === "sampler2D" || a === "samplerCube") {
               E.push(s);
@@ -37938,7 +39689,7 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 const h = b.inObject(s);
                 let e = "t";
                 if (a === "samplerCube") e = "tc";
-                h.uniform = new CGL.Uniform(I, e, s, v + A.length);
+                h.uniform = new CGL.Uniform(y, e, s, v + A.length);
                 A.push(h);
                 i.push(h);
                 h.set(CGL.Texture.getTempTexture(_));
@@ -37958,15 +39709,15 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
               if (!x(s + " X")) {
                 const f = [];
                 const c = { name: s, num: e, changed: false };
-                y.push(c);
+                I.push(c);
                 C(c);
-                const d = b.inFloat(s + " X", 0);
-                d.onChange = function () {
+                const m = b.inFloat(s + " X", 0);
+                m.onChange = function () {
                   this.changed = true;
                 }.bind(c);
-                O.push(d);
-                f.push(d);
-                c.x = d;
+                O.push(m);
+                f.push(m);
+                c.x = m;
                 const p = b.inFloat(s + " Y", 0);
                 p.onChange = function () {
                   this.changed = true;
@@ -37975,13 +39726,13 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
                 f.push(p);
                 c.y = p;
                 if (e > 2) {
-                  const m = b.inFloat(s + " Z", 0);
-                  m.onChange = function () {
+                  const d = b.inFloat(s + " Z", 0);
+                  d.onChange = function () {
                     this.changed = true;
                   }.bind(c);
-                  O.push(m);
-                  f.push(m);
-                  c.z = m;
+                  O.push(d);
+                  f.push(d);
+                  c.z = d;
                 }
                 if (e > 3) {
                   const g = b.inFloat(s + " W", 0);
@@ -38002,19 +39753,19 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
     b.setPortGroup("uniforms", i);
   }
   function g() {
-    if (!I) return;
+    if (!y) return;
     let e = false;
     l++;
     if (l > 2) e = true;
-    I.setSource(r.get(), n.get(), e);
+    y.setSource(r.get(), n.get(), e);
     if (_.glVersion == 1) {
       _.enableExtension("OES_standard_derivatives");
-      I.enableExtension("GL_OES_standard_derivatives");
+      y.enableExtension("GL_OES_standard_derivatives");
     }
     S = 0;
     E.length = 0;
-    m(r.get());
-    m(n.get());
+    d(r.get());
+    d(n.get());
     for (let t = 0; t < A.length; t++)
       for (let e = 0; e < E.length; e++)
         if (A[t] && E.indexOf(A[t].name) == -1) {
@@ -38027,28 +39778,28 @@ Ops.Gl.Shader.CustomShader_v2 = function () {
           O[t].remove();
           O[t] = null;
         }
-    for (let e = 0; e < y.length; e++) {
-      C(y[e]);
-      y[e].changed = true;
+    for (let e = 0; e < I.length; e++) {
+      C(I[e]);
+      I[e].changed = true;
     }
     for (let e = 0; e < O.length; e++)
       if (O[e] && O[e].uniform) O[e].uniform.needsUpdate = true;
-    I.compile();
+    y.compile();
     b.refreshParams();
-    s.setRef(I);
+    s.setRef(y);
     u = false;
-    if (I.hasErrors()) b.setUiError("compile", "Shader has errors");
+    if (y.hasErrors()) b.setUiError("compile", "Shader has errors");
     else b.setUiError("compile", null);
-    o.set(I.hasErrors());
+    o.set(y.hasErrors());
   }
   function C(e) {
-    if (e.num == 2) e.uni = new CGL.Uniform(I, "2f", e.name, [0, 0]);
-    else if (e.num == 3) e.uni = new CGL.Uniform(I, "3f", e.name, [0, 0, 0]);
-    else if (e.num == 4) e.uni = new CGL.Uniform(I, "4f", e.name, [0, 0, 0, 0]);
+    if (e.num == 2) e.uni = new CGL.Uniform(y, "2f", e.name, [0, 0]);
+    else if (e.num == 3) e.uni = new CGL.Uniform(y, "3f", e.name, [0, 0, 0]);
+    else if (e.num == 4) e.uni = new CGL.Uniform(y, "4f", e.name, [0, 0, 0, 0]);
   }
-  function j() {
-    for (let e = 0; e < y.length; e++) {
-      const t = y[e];
+  function N() {
+    for (let e = 0; e < I.length; e++) {
+      const t = I[e];
       if (t.changed) {
         if (t.num === 2) t.uni.setValue([t.x.get(), t.y.get()]);
         else if (t.num === 3) t.uni.setValue([t.x.get(), t.y.get(), t.z.get()]);
@@ -38067,30 +39818,6 @@ CABLES.OPS["a165fc89-a35b-4d39-8930-7345b098bd9d"] = {
   f: Ops.Gl.Shader.CustomShader_v2,
   objName: "Ops.Gl.Shader.CustomShader_v2",
 };
-Ops.Number.SwitchNumber = function () {
-  CABLES.Op.apply(this, arguments);
-  const n = this;
-  const e = (n.attachments = {});
-  const t = n.inValueInt("Index");
-  const r = [];
-  const i = n.outNumber("Result");
-  t.onChange = a;
-  for (let t = 0; t < 16; t++) {
-    let e = n.inValue("Value " + t);
-    r.push(e);
-    e.onChange = a;
-  }
-  function a() {
-    if (t.get() >= 0 && r[t.get()]) {
-      i.set(r[t.get()].get());
-    }
-  }
-};
-Ops.Number.SwitchNumber.prototype = new CABLES.Op();
-CABLES.OPS["fbb89f72-f2e3-4d34-ad01-7d884a1bcdc0"] = {
-  f: Ops.Number.SwitchNumber,
-  objName: "Ops.Number.SwitchNumber",
-};
 Ops.Array.InterpolateArrays = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
@@ -38102,7 +39829,7 @@ Ops.Array.InterpolateArrays = function () {
     c = e.outTrigger("Next"),
     h = e.outArray("Result");
   let f = true;
-  let d = [];
+  let m = [];
   function r() {
     f = true;
   }
@@ -38119,16 +39846,16 @@ Ops.Array.InterpolateArrays = function () {
       return;
     }
     if (f) {
-      if (d.length != n.length) d.length = n.length;
+      if (m.length != n.length) m.length = n.length;
       let t = u.get();
       for (let e = 0; e < n.length; e++) {
         i = n[e];
         a = r[e];
         s = (a - i) * t + i;
-        d[e] = s;
+        m[e] = s;
       }
       f = false;
-      h.setRef(d);
+      h.setRef(m);
     }
     c.trigger();
   }
@@ -38232,11 +39959,11 @@ Ops.Array.Array_v3 = function () {
   const c = 0;
   const h = 1;
   const f = 2;
-  n.onChange = d;
+  n.onChange = m;
   a.onChange = i.onChange = r.onChange = p;
-  d();
+  m();
   p();
-  function d() {
+  function m() {
     let e = n.get();
     if (e === "Number") u = c;
     else if (e === "1,2,3,4") u = h;
@@ -38381,9 +40108,9 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
     c = e.inFloat("Pos X", 0),
     h = e.inFloat("Pos Y", 0),
     f = e.inFloat("Rot X", 0),
-    d = e.inFloat("Rot Y", 0),
+    m = e.inFloat("Rot Y", 0),
     p = e.inFloat("Rot Z", 0),
-    m = e.inValueSelect(
+    d = e.inValueSelect(
       "Mapping",
       [
         "Triplanar",
@@ -38407,10 +40134,10 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
     g.onChange =
     b.onChange =
     i.onLinkChanged =
-    m.onChange =
-      I;
+    d.onChange =
+      y;
   e.toWorkPortsNeedToBeLinked(i, r);
-  e.setPortGroup("Rotation", [f, d, p]);
+  e.setPortGroup("Rotation", [f, m, p]);
   e.setPortGroup("Position", [c, h]);
   const _ = new CGL.ShaderModifier(v, e.name, { opId: e.id });
   _.addModule({
@@ -38431,27 +40158,27 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
     srcBodyFrag: t.maptexture_body_frag,
   });
   _.addUniformBoth("f", "MOD_rotX", f);
-  _.addUniformBoth("f", "MOD_rotY", d);
+  _.addUniformBoth("f", "MOD_rotY", m);
   _.addUniformBoth("f", "MOD_rotZ", p);
   _.addUniformBoth("t", "MOD_tex");
   _.addUniformBoth("f", "MOD_scale", l);
   _.addUniformBoth("f", "MOD_amount", s);
   _.addUniformBoth("2f", "MOD_offset", c, h);
   const A = _.addUniformFrag("f", "MOD_viewPortW");
-  const y = _.addUniformFrag("f", "MOD_viewPortH");
+  const I = _.addUniformFrag("f", "MOD_viewPortH");
   CGL.TextureEffect.setupBlending(e, _, a, s);
-  I();
-  function I() {
+  y();
+  function y() {
     _.toggleDefine("MOD_USE_IMGALPHA", u.get());
     _.toggleDefine("MOD_WORLDSPACE", b.get());
-    _.toggleDefine("MOD_MAP_XY", m.get() == "XY");
-    _.toggleDefine("MOD_MAP_XZ", m.get() == "XZ");
-    _.toggleDefine("MOD_MAP_YZ", m.get() == "YZ");
-    _.toggleDefine("MOD_MAP_TEXCOORD", m.get() == "TexCoords 1");
-    _.toggleDefine("MOD_MAP_TEXCOORD1", m.get() == "TexCoords 2");
-    _.toggleDefine("MOD_MAP_TEXCOORD2", m.get() == "TexCoords 3");
-    _.toggleDefine("MOD_MAP_SCREEN", m.get() == "Screen");
-    _.toggleDefine("MOD_MAP_TRIPLANAR", m.get() == "Triplanar");
+    _.toggleDefine("MOD_MAP_XY", d.get() == "XY");
+    _.toggleDefine("MOD_MAP_XZ", d.get() == "XZ");
+    _.toggleDefine("MOD_MAP_YZ", d.get() == "YZ");
+    _.toggleDefine("MOD_MAP_TEXCOORD", d.get() == "TexCoords 1");
+    _.toggleDefine("MOD_MAP_TEXCOORD1", d.get() == "TexCoords 2");
+    _.toggleDefine("MOD_MAP_TEXCOORD2", d.get() == "TexCoords 3");
+    _.toggleDefine("MOD_MAP_SCREEN", d.get() == "Screen");
+    _.toggleDefine("MOD_MAP_TRIPLANAR", d.get() == "Triplanar");
     _.toggleDefine("MOD_DISCARD", g.get());
     _.toggleDefine("MOD_BLEND_NORMAL", a.get() == "Normal");
     _.toggleDefine("MOD_BLEND_ADD", a.get() == "Add");
@@ -38460,7 +40187,7 @@ Ops.Gl.ShaderEffects.TextureProjection_v2 = function () {
     _.toggleDefine("MOD_TARGET_ALPHA", o.get() == "Alpha");
     _.toggleDefine("MOD_TARGET_COLOR", o.get() == "Color");
     _.toggleDefine("MOD_TARGET_POINTSIZE", o.get() == "Pointsize");
-    if (o.get() == "Pointsize" && m.get() == "Screen")
+    if (o.get() == "Pointsize" && d.get() == "Screen")
       e.setUiError(
         "pointscreen",
         "This combination of Mapping and Target is not possible",
@@ -38541,10 +40268,10 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
   const h = s.addUniformFrag("4f", "color", o, l, u, c);
   s.uniformColorDiffuse = h;
   const f = e.inTexture("texture");
-  let d = null;
-  f.onChange = j;
+  let m = null;
+  f.onChange = N;
   const p = e.inValueBool("colorizeTexture", false);
-  const m = e.inValueBool("Vertex Colors", false);
+  const d = e.inValueBool("Vertex Colors", false);
   const g = e.inTexture("textureOpacity");
   let b = null;
   const v = e.inSwitch(
@@ -38557,13 +40284,13 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
   const _ = e.inValueBool("Opacity TexCoords Transform", false);
   const O = e.inValueBool("Discard Transparent Pixels");
   const A = e.inValue("diffuseRepeatX", 1),
-    y = e.inValue("diffuseRepeatY", 1),
-    I = e.inValue("Tex Offset X", 0),
+    I = e.inValue("diffuseRepeatY", 1),
+    y = e.inValue("Tex Offset X", 0),
     x = e.inValue("Tex Offset Y", 0),
     T = e.inBool("Crop TexCoords", false);
   s.addUniformFrag("f", "diffuseRepeatX", A);
-  s.addUniformFrag("f", "diffuseRepeatY", y);
-  s.addUniformFrag("f", "texOffsetX", I);
+  s.addUniformFrag("f", "diffuseRepeatY", I);
+  s.addUniformFrag("f", "texOffsetX", y);
   s.addUniformFrag("f", "texOffsetY", x);
   const S = e.inValueBool("billboard", false);
   v.onChange =
@@ -38571,15 +40298,15 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     O.onChange =
     _.onChange =
     T.onChange =
-    m.onChange =
+    d.onChange =
     p.onChange =
-      w;
+      L;
   e.setPortGroup("Color", [o, l, u, c]);
-  e.setPortGroup("Color Texture", [f, m, p]);
+  e.setPortGroup("Color Texture", [f, d, p]);
   e.setPortGroup("Opacity", [g, v, O, _]);
-  e.setPortGroup("Texture Transform", [A, y, I, x, T]);
+  e.setPortGroup("Texture Transform", [A, I, y, x, T]);
   C();
-  j();
+  N();
   e.preRender = function () {
     s.bind();
     E();
@@ -38588,7 +40315,7 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     if (!s) return;
     a.pushShader(s);
     s.popTextures();
-    if (d && f.get()) s.pushTexture(d, f.get());
+    if (m && f.get()) s.pushTexture(m, f.get());
     if (b && g.get()) s.pushTexture(b, g.get());
     r.trigger();
     a.popShader();
@@ -38604,24 +40331,24 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
       s.removeDefine("HAS_TEXTURE_OPACITY");
       b = null;
     }
-    w();
+    L();
   }
-  function j() {
+  function N() {
     if (f.get()) {
       if (!s.hasDefine("HAS_TEXTURE_DIFFUSE")) s.define("HAS_TEXTURE_DIFFUSE");
-      if (!d) d = new CGL.Uniform(s, "t", "texDiffuse");
+      if (!m) m = new CGL.Uniform(s, "t", "texDiffuse");
     } else {
       s.removeUniform("texDiffuse");
       s.removeDefine("HAS_TEXTURE_DIFFUSE");
-      d = null;
+      m = null;
     }
-    N();
+    j();
   }
-  function N() {
+  function j() {
     const e = f.isLinked() || g.isLinked();
     A.setUiAttribs({ greyout: !e });
-    y.setUiAttribs({ greyout: !e });
     I.setUiAttribs({ greyout: !e });
+    y.setUiAttribs({ greyout: !e });
     x.setUiAttribs({ greyout: !e });
     p.setUiAttribs({ greyout: !e });
     v.setUiAttribs({ greyout: !g.get() });
@@ -38632,8 +40359,8 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     l.setUiAttribs({ greyout: t });
     u.setUiAttribs({ greyout: t });
   }
-  function w() {
-    s.toggleDefine("VERTEX_COLORS", m.get());
+  function L() {
+    s.toggleDefine("VERTEX_COLORS", d.get());
     s.toggleDefine("CROP_TEXCOORDS", T.get());
     s.toggleDefine("COLORIZE_TEXTURE", p.get());
     s.toggleDefine("TRANSFORMALPHATEXCOORDS", _.get());
@@ -38646,7 +40373,7 @@ Ops.Gl.Shader.BasicMaterial_v3 = function () {
     s.toggleDefine("ALPHA_MASK_R", v.get() == "R");
     s.toggleDefine("ALPHA_MASK_G", v.get() == "G");
     s.toggleDefine("ALPHA_MASK_B", v.get() == "B");
-    N();
+    j();
   }
 };
 Ops.Gl.Shader.BasicMaterial_v3.prototype = new CABLES.Op();
@@ -38682,7 +40409,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       "\n\nfloat MOD_width=MOD_targetTexInfo.x;\nfloat MOD_height=MOD_targetTexInfo.y;\nfloat MOD_numTargets=MOD_targetTexInfo.w;\nfloat MOD_numLinesPerTarget=MOD_height/MOD_numTargets;\n\nfloat halfpix=(1.0/MOD_width)*0.5;\nfloat halfpixy=(1.0/MOD_height)*0.5;\n\nfloat x=(attrVertIndex)/MOD_width+halfpix;\n\nvec3 off=vec3(0.0);\n\nfor(float i=0.0;i<MOD_numTargets;i+=1.0)\n{\n    float y=1.0-((MOD_numLinesPerTarget*i)/MOD_height+halfpixy);\n    vec2 coord=vec2(x,y);\n    vec3 targetXYZ = texture(MOD_targetTex,coord).xyz;\n\n    off+=(targetXYZ*MOD_weights[int(i)]);\n\n\n\n    coord.y+=1.0/MOD_height; // normals are in next row\n    vec3 targetNormal = texture(MOD_targetTex,coord).xyz;\n    norm+=targetNormal*MOD_weights[int(i)];\n\n\n}\n\n// norm=normalize(norm);\npos.xyz+=off;\n",
     targets_head_vert: "\nUNI float MOD_weights[MOD_NUM_WEIGHTS];\n",
   });
-  const M = class {
+  const k = class {
     constructor(e, t) {
       this.node = t;
       this.name = t.name;
@@ -38728,7 +40455,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       p.popViewMatrix();
     }
   };
-  const y = true;
+  const I = true;
   const V = class {
     constructor() {
       this.json = {};
@@ -38754,7 +40481,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   };
-  function I(e) {
+  function y(e) {
     if (window.TextDecoder) return new TextDecoder("utf-8").decode(e);
     let t, n, r, i;
     let a, s;
@@ -38795,12 +40522,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (r >= e.byteLength) {
       return;
     }
-    i.size = e.getUint32(r + 0, y);
-    i.type = I(t.subarray(r + 4, r + 4 + 4));
+    i.size = e.getUint32(r + 0, I);
+    i.type = y(t.subarray(r + 4, r + 4 + 4));
     if (i.type == "BIN\0") {
       i.dataView = new DataView(n, r + 8, i.size);
     } else if (i.type == "JSON") {
-      const a = I(t.subarray(r + 8, r + 8 + i.size));
+      const a = y(t.subarray(r + 8, r + 8 + i.size));
       try {
         const s = JSON.parse(a);
         i.data = s;
@@ -38853,10 +40580,10 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
             _ = Math.max(l[t], _);
             for (let e = 0; e < n; e++) {
               if (h[e].defaultEasing === CABLES.EASING_CUBICSPLINE) {
-                const d = t * n * 3 + e;
-                const p = h[e].setValue(l[t], c[d + n]);
-                p.bezTangIn = c[d];
-                p.bezTangOut = c[d + n * 2];
+                const m = t * n * 3 + e;
+                const p = h[e].setValue(l[t], c[m + n]);
+                p.bezTangIn = c[m];
+                p.bezTangOut = c[m + n * 2];
               } else {
                 h[e].setValue(l[t], c[t * n + e]);
               }
@@ -38880,20 +40607,20 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n.cameras = n.cameras || [];
     for (let t = 0; t < n.nodes.length; t++) {
       if (n.nodes[t].hasOwnProperty("camera")) {
-        const e = new M(n, n.nodes[t]);
+        const e = new k(n, n.nodes[t]);
         n.cameras.push(e);
       }
     }
   }
-  function B() {
+  function G() {
     if (!window.DracoDecoder) {
       setTimeout(() => {
-        B();
+        G();
       }, 100);
     }
     R();
   }
-  function G(e) {
+  function B(e) {
     const t = 8;
     let i = 0,
       n = 0;
@@ -38905,14 +40632,14 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!e) return;
     const r = new Uint8Array(e);
     let s = 0;
-    const o = I(r.subarray(s, 4));
+    const o = y(r.subarray(s, 4));
     s += 4;
     if (o != "glTF") return;
     a.timing.push(["dataview", Math.round(performance.now() - a.startTime)]);
     const l = new DataView(e);
-    const u = l.getUint32(s, y);
+    const u = l.getUint32(s, I);
     s += 4;
-    const c = l.getUint32(s, y);
+    const c = l.getUint32(s, I);
     s += 4;
     oe.set(u);
     const h = [];
@@ -38930,7 +40657,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       f = x(l, r, e, s);
     }
     a.chunks = h;
-    const d = h[0].data.bufferViews;
+    const m = h[0].data.bufferViews;
     const p = h[0].data.accessors;
     a.timing.push([
       "Parse buffers",
@@ -38945,62 +40672,62 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
           "gltfdraco",
           "GLTF draco compression lib not found / add draco op to your patch!"
         );
-        B();
+        G();
         return a;
       } else {
         a.useDraco = true;
       }
     }
     A.setUiError("gltfdraco", null);
-    if (d) {
+    if (m) {
       for (n = 0; n < p.length; n++) {
-        const m = p[n];
-        const g = d[m.bufferView];
+        const d = p[n];
+        const g = m[d.bufferView];
         let r = 0;
-        if (m.type == "SCALAR") r = 1;
-        else if (m.type == "VEC2") r = 2;
-        else if (m.type == "VEC3") r = 3;
-        else if (m.type == "VEC4") r = 4;
-        else if (m.type == "MAT4") r = 16;
-        else console.error("unknown accessor type", m.type);
+        if (d.type == "SCALAR") r = 1;
+        else if (d.type == "VEC2") r = 2;
+        else if (d.type == "VEC3") r = 3;
+        else if (d.type == "VEC4") r = 4;
+        else if (d.type == "MAT4") r = 16;
+        else console.error("unknown accessor type", d.type);
         if (h[1].dataView) {
           if (g) {
-            const b = m.count * r;
-            let e = (g.byteOffset || 0) + (m.byteOffset || 0);
+            const b = d.count * r;
+            let e = (g.byteOffset || 0) + (d.byteOffset || 0);
             let t = g.byteStride || 0;
             let n = null;
-            if (m.componentType == 5126 || m.componentType == 5125) {
+            if (d.componentType == 5126 || d.componentType == 5125) {
               t = t || 4;
-              const v = m.componentType == 5125;
+              const v = d.componentType == 5125;
               if (v) n = new Uint32Array(b);
               else n = new Float32Array(b);
               n.cblStride = r;
               for (i = 0; i < b; i++) {
-                if (v) n[i] = h[1].dataView.getUint32(e, y);
-                else n[i] = h[1].dataView.getFloat32(e, y);
+                if (v) n[i] = h[1].dataView.getUint32(e, I);
+                else n[i] = h[1].dataView.getFloat32(e, I);
                 if (t != 4 && (i + 1) % r === 0) e += t - r * 4;
                 e += 4;
               }
-            } else if (m.componentType == 5123) {
+            } else if (d.componentType == 5123) {
               t = t || 2;
               n = new Uint16Array(b);
               n.cblStride = t;
               for (i = 0; i < b; i++) {
-                n[i] = h[1].dataView.getUint16(e, y);
+                n[i] = h[1].dataView.getUint16(e, I);
                 if (t != 2 && (i + 1) % r === 0) e += t - r * 2;
                 e += 2;
               }
-            } else if (m.componentType == 5121) {
+            } else if (d.componentType == 5121) {
               t = t || 1;
               n = new Uint8Array(b);
               n.cblStride = t;
               for (i = 0; i < b; i++) {
-                n[i] = h[1].dataView.getUint8(e, y);
+                n[i] = h[1].dataView.getUint8(e, I);
                 if (t != 1 && (i + 1) % r === 0) e += t - r * 1;
                 e += 1;
               }
             } else {
-              console.error("unknown component type", m.componentType);
+              console.error("unknown component type", d.componentType);
             }
             a.accBuffers.push(n);
           } else {
@@ -39040,7 +40767,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     for (n = 0; n < a.nodes.length; n++) {
       a.nodes[n].initSkin();
     }
-    j = true;
+    N = true;
     a.timing.push(["load anims", Math.round(performance.now() - a.startTime)]);
     if (a.json.animations) U(a);
     a.timing.push([
@@ -39128,7 +40855,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         const o = new Int8Array(i);
         let t = r.byteOffset || 0;
         for (let e = 0; e < i; e++) {
-          o[e] = a.chunks[1].dataView.getInt8(t, y);
+          o[e] = a.chunks[1].dataView.getInt8(t, I);
           t++;
         }
         const l = window.DracoDecoder;
@@ -40000,8 +41727,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
           }
         }
         for (let e in E.json.meshes[i].primitives[n].attributes) {
-          const m = E.json.meshes[i].primitives[n].attributes[e];
-          const g = E.json.accessors[m].bufferView;
+          const d = E.json.meshes[i].primitives[n].attributes[e];
+          const g = E.json.accessors[d].bufferView;
           if (o.indexOf(g) == -1) {
             o.push(g);
             if (E.json.bufferViews[g])
@@ -40209,20 +41936,20 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     s += "  <th>size</th>";
     s += "  <th>%</th>";
     s += "</tr>";
-    let d = f;
+    let m = f;
     for (let e in a) {
       s += "<tr>";
       s += "<td>" + e + "</td>";
       s += "<td>" + Y(a[e]) + " </td>";
       s += "<td>" + Math.round((a[e] / f) * 100) + "% </td>";
       s += "<tr>";
-      d -= a[e];
+      m -= a[e];
     }
-    if (d != 0) {
+    if (m != 0) {
       s += "<tr>";
       s += "<td>unknown</td>";
-      s += "<td>" + Y(d) + " </td>";
-      s += "<td>" + Math.round((d / f) * 100) + "% </td>";
+      s += "<td>" + Y(m) + " </td>";
+      s += "<td>" + Math.round((m / f) * 100) + "% </td>";
       s += "<tr>";
     }
     s += "</table>";
@@ -40480,7 +42207,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     ie = A.inBool("Use Material Properties", false),
     f = A.inBool("Active", true),
     ae = A.outTrigger("Render Before"),
-    d = A.outTrigger("Next"),
+    m = A.outTrigger("Next"),
     se = A.outString("Generator"),
     oe = A.outNumber("GLTF Version"),
     le = A.outArray("GLTF Extensions Used"),
@@ -40488,13 +42215,13 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     ce = A.outNumber("Anim Time", 0),
     he = A.outObject("Json"),
     fe = A.outArray("Anims"),
-    de = A.outArray("BoundingPoints"),
+    me = A.outArray("BoundingPoints"),
     pe = A.outObject("Bounds"),
-    me = A.outTrigger("Finished"),
+    de = A.outTrigger("Finished"),
     ge = A.outBool("Loading");
   A.setPortGroup("Timing", [s, u, ee]);
   let p = A.patch.cg || A.patch.cgl;
-  let m = null;
+  let d = null;
   let be = false;
   let ve = 0;
   let g = false;
@@ -40503,24 +42230,24 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   let E = null;
   let _ = 0;
   let C = 0;
-  let j = true;
+  let N = true;
   let _e = null;
-  let N = null;
-  let w = null;
+  let j = null;
+  let L = null;
   const Oe = vec3.create();
   let Ae = 0;
-  let ye = false;
+  let Ie = false;
   const P = vec3.create();
   S.onChange = ne.onChange = c.onChange = te.onChange = R;
   $.onTriggered = e;
-  t.onChange = Ne;
-  re.onChange = je;
+  t.onChange = je;
+  re.onChange = Ne;
   J.onChange = Pe;
   r.onChange = xe;
   A.toWorkPortsNeedToBeLinked(Z);
   t.setUiAttribs({ hideParam: true, hidePort: true });
   A.setPortGroup("Transform", [i, a, r]);
-  function Ie() {
+  function ye() {
     const t = ["None"];
     if (E) {
       for (let e = 0; e < E.nodes.length; e++) {
@@ -40532,7 +42259,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     n.uiAttribs.values = t;
   }
   function xe() {
-    ye = r.get() != "None";
+    Ie = r.get() != "None";
     if (E && E.bounds) {
       P.set(E.bounds.center);
       P[0] = -P[0];
@@ -40545,7 +42272,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     a.setUiAttribs({ greyout: !i.get() });
   };
   h.onChange = function () {
-    j = true;
+    N = true;
   };
   A.onDelete = function () {
     T();
@@ -40558,7 +42285,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     b = null;
     if (!E) return;
     for (let e = 0; e < E.nodes.length; e++) {
-      if (E.nodes[e].name == n.get()) b = new M(E, E.nodes[e]);
+      if (E.nodes[e].name == n.get()) b = new k(E, E.nodes[e]);
     }
   }
   Z.onTriggered = function () {
@@ -40566,17 +42293,17 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!g) return;
     if (!f.get()) return;
     if (be) {
-      if (!m) m = CGL.MESHES.getSimpleCube(p, "ErrorCube");
-      m.render(p.getShader());
+      if (!d) d = CGL.MESHES.getSimpleCube(p, "ErrorCube");
+      d.render(p.getShader());
     }
     ve = 0;
     if (u.get()) C = A.patch.timer.getTime();
     else C = Math.max(0, s.get());
     if (ee.get()) {
       C %= _;
-      if (C < Ae) me.trigger();
+      if (C < Ae) de.trigger();
     } else {
-      if (_ > 0 && C >= _) me.trigger();
+      if (_ > 0 && C >= _) de.trigger();
     }
     Ae = C;
     p.pushModelMatrix();
@@ -40588,7 +42315,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         vec3.set(Oe, e, e, e);
         mat4.scale(p.mMatrix, p.mMatrix, Oe);
       }
-      if (ye) {
+      if (Ie) {
         mat4.translate(p.mMatrix, p.mMatrix, P);
       }
     }
@@ -40596,7 +42323,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     p.tempData.currentScene = E;
     ae.trigger();
     if (g) {
-      if (j) Ee();
+      if (N) Ee();
       if (b) b.start(C);
       if (E) {
         E.time = C;
@@ -40616,29 +42343,29 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         }
       }
     }
-    d.trigger();
+    m.trigger();
     p.tempData.currentScene = e;
     p.popModelMatrix();
     if (b) b.end();
   };
-  function L() {
+  function w() {
     if (!E) {
       g = true;
       be = true;
-      p.patch.loading.finished(N);
+      p.patch.loading.finished(j);
       A.setUiError("nogltf", "GLTF File not found");
       return;
     }
     A.setUiError("nogltf", null);
     if (E.loadingMeshes > 0) {
-      setTimeout(L, 100);
+      setTimeout(w, 100);
       return;
     }
     E.timing.push([
       "finishLoading()",
       Math.round(performance.now() - E.startTime),
     ]);
-    j = true;
+    N = true;
     ue.set(_);
     E.bounds = new CABLES.CG.BoundingBox();
     E.timing.push([
@@ -40655,16 +42382,16 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       "calced bounds",
       Math.round(performance.now() - E.startTime),
     ]);
-    je();
+    Ne();
     E.timing.push([
       "hideNodesFromData",
       Math.round(performance.now() - E.startTime),
     ]);
     if (O) e();
     E.timing.push(["printinfo", Math.round(performance.now() - E.startTime)]);
-    Ie();
+    ye();
     Te();
-    de.set(v);
+    me.set(v);
     if (E) {
       if (S.get() && !S.get().startsWith("data:")) {
         A.setUiAttrib({ extendTitle: CABLES.basename(S.get()) });
@@ -40685,8 +42412,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     xe();
     Pe();
     ge.set(false);
-    p.patch.loading.finished(N);
-    N = null;
+    p.patch.loading.finished(j);
+    j = null;
     if (E.accBuffersDelete) {
       for (let e = 0; e < E.accBuffersDelete.length; e++) {
         E.accBuffers[E.accBuffersDelete[e]] = null;
@@ -40697,7 +42424,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   }
   function Se(e) {
     if (!f.get()) return;
-    if (!N) N = p.patch.loading.start("gltfScene", S.get(), A);
+    if (!j) j = p.patch.loading.start("gltfScene", S.get(), A);
     let t = S.get();
     if (!t || t == "null") return;
     let n = A.patch.getFilePath(String(S.get()));
@@ -40705,7 +42432,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (S.get() && !S.get().startsWith("data:")) {
       if (e === true) n += "?rnd=" + CABLES.generateUUID();
     }
-    j = true;
+    N = true;
     ge.set(true);
     fetch(n)
       .then((e) => {
@@ -40713,20 +42440,20 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       })
       .then((e) => {
         if (S.get() != t) {
-          p.patch.loading.finished(N);
-          N = null;
+          p.patch.loading.finished(j);
+          j = null;
           return;
         }
         v = [];
         _ = 0;
-        E = G(e);
+        E = B(e);
         e = null;
-        L();
+        w();
       })
       .catch((e) => {
-        if (N) p.patch.loading.finished(N);
-        N = null;
-        L();
+        if (j) p.patch.loading.finished(j);
+        j = null;
+        w();
         A.logError("gltf fetch error", e);
       });
     T();
@@ -40756,7 +42483,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     if (!E) return;
     E.shaders = {};
     if (h.links.length == 1 && h.get()) {
-      j = true;
+      N = true;
       const n = h.links[0].portOut.op;
       const r = n.getPort("Shader");
       const i = n.getPort("Material Name");
@@ -40793,12 +42520,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         }
       }
     }
-    j = false;
+    N = false;
     if (O) e();
   }
   function Ce() {
     const t = re.get();
-    if (!E || !w || !w.hiddenNodes) return;
+    if (!E || !L || !L.hiddenNodes) return;
     if (!t) {
       return;
     }
@@ -40807,12 +42534,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       if (n) n.hidden = true;
     }
   }
-  function je() {
-    if (!w) Ne();
+  function Ne() {
+    if (!L) je();
     if (!E) return;
     E.unHideAll();
-    if (w && w.hiddenNodes) {
-      for (const e in w.hiddenNodes) {
+    if (L && L.hiddenNodes) {
+      for (const e in L.hiddenNodes) {
         const t = E.getNode(e);
         if (t) t.hidden = true;
         else A.verbose("node to be hidden not found", e, t);
@@ -40820,15 +42547,15 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     }
     Ce();
   }
-  function Ne() {
-    w = t.get();
-    if (!w || w === "") w = {};
-    else w = JSON.parse(w);
-    if (E) je();
-    return w;
+  function je() {
+    L = t.get();
+    if (!L || L === "") L = {};
+    else L = JSON.parse(L);
+    if (E) Ne();
+    return L;
   }
-  function we() {
-    t.set(JSON.stringify(w));
+  function Le() {
+    t.set(JSON.stringify(L));
   }
   function Pe() {
     if (E && E.nodes) {
@@ -40837,19 +42564,19 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       }
     }
   }
-  function Le(t, n) {
+  function we(t, n) {
     for (let e = 0; e < E.nodes.length; e++) {
       if (E.nodes[e].children.indexOf(n) >= 0) {
         t.push(E.nodes[e]);
-        if (E.nodes[e].isChild) Le(t, e);
+        if (E.nodes[e].isChild) we(t, e);
       }
     }
   }
   A.exposeTexture = function (e) {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfTexture");
     t.getPort("Name").set(e);
-    k(t, 1);
-    A.patch.link(A, d.name, t, "Render");
+    M(t, 1);
+    A.patch.link(A, m.name, t, "Render");
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
   };
@@ -40857,12 +42584,12 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const n = gui.corePatch().addOp("Ops.Gl.GLTF.GltfGeometry");
     n.getPort("Name").set(e);
     n.getPort("Submesh").set(t);
-    k(n, 1);
-    A.patch.link(A, d.name, n, "Update");
+    M(n, 1);
+    A.patch.link(A, m.name, n, "Update");
     gui.patchView.testCollision(n);
     gui.patchView.centerSelectOp(n.id, true);
   };
-  function k(e, t) {
+  function M(e, t) {
     t = t || 1;
     e.setUiAttrib({
       subPatch: A.uiAttribs.subPatch,
@@ -40880,16 +42607,16 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
         if (E.nodes[e].name == n) {
           let t = [];
           const a = E.nodes[e];
-          Le(t, e);
+          we(t, e);
           t = t.reverse();
           t.push(a, a);
-          let n = d.name;
+          let n = m.name;
           let r = A;
           for (let e = 0; e < t.length; e++) {
             const s = gui.corePatch().addOp("Ops.Gl.GLTF.GltfNode_v2");
             s.getPort("Node Name").set(t[e].name);
             A.patch.link(r, n, s, "Render");
-            k(s, e);
+            M(s, e);
             if (e == t.length - 1) {
               s.getPort("Transformation").set(false);
             } else {
@@ -40913,8 +42640,8 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
       gui.serverOps.loadOpLibs(t, () => {
         let e = gui.corePatch().addOp(t);
         e.getPort("Node Name").set(n);
-        k(e);
-        A.patch.link(A, d.name, e, "Render");
+        M(e);
+        A.patch.link(A, m.name, e, "Render");
         gui.patchView.testCollision(e);
         gui.patchView.centerSelectOp(e.id, true);
       });
@@ -40925,7 +42652,7 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
     const t = gui.corePatch().addOp("Ops.Gl.GLTF.GltfSetMaterial");
     t.getPort("Material Name").set(e);
     A.patch.link(A, h.name, t, "Material");
-    k(t);
+    M(t);
     gui.patchView.testCollision(t);
     gui.patchView.centerSelectOp(t.id, true);
     gui.closeModal();
@@ -40933,11 +42660,11 @@ Ops.Gl.GLTF.GltfScene_v4 = function () {
   A.toggleNodeVisibility = function (e) {
     const t = E.getNode(e);
     t.hidden = !t.hidden;
-    w.hiddenNodes = w.hiddenNodes || {};
+    L.hiddenNodes = L.hiddenNodes || {};
     if (t)
-      if (t.hidden) w.hiddenNodes[e] = true;
-      else delete w.hiddenNodes[e];
-    we();
+      if (t.hidden) L.hiddenNodes[e] = true;
+      else delete L.hiddenNodes[e];
+    Le();
   };
   function Re(n) {
     const r = {},
@@ -41102,8 +42829,8 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     _ = g.inInt("Height", 512),
     O = g.inBool("Auto Height", true),
     A = g.inBool("Auto Line Breaks", true),
-    y = g.inString("font", "Arial"),
-    I = g.inString("weight", "normal"),
+    I = g.inString("font", "Arial"),
+    y = g.inString("weight", "normal"),
     x = g.inValueFloat("fontSize", 300),
     T = g.inSwitch("align", ["left", "center", "right"], "center"),
     S = g.inSwitch("Vertical align", ["Top", "Middle", "Bottom"], "Top"),
@@ -41112,20 +42839,20 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     W = g.inInt("Padding Y Top", 3),
     K = g.inInt("Padding Y Bottom", 3),
     Z = g.inInt("Padding X", 0),
-    j = g.inSwitch("filter", ["nearest", "linear", "mipmap"], "linear"),
-    N = g.inValueSelect(
+    N = g.inSwitch("filter", ["nearest", "linear", "mipmap"], "linear"),
+    j = g.inValueSelect(
       "Wrap",
       ["repeat", "mirrored repeat", "clamp to edge"],
       "clamp to edge"
     ),
-    w = g.inSwitch("Anisotropic", [0, 1, 2, 4, 8, 16], 0),
+    L = g.inSwitch("Anisotropic", [0, 1, 2, 4, 8, 16], 0),
     P = g.inValueBool("Reuse Texture", true),
     Q = g.inBool("Show Debug", false),
     s = g.inBool("Redraw On Font Load", true),
-    L = g.inValueSlider("r", 1),
+    w = g.inValueSlider("r", 1),
     R = g.inValueSlider("g", 1),
-    k = g.inValueSlider("b", 1),
-    M = g.inFloatSlider("Opacity", 1),
+    M = g.inValueSlider("b", 1),
+    k = g.inFloatSlider("Opacity", 1),
     V = g.inValueSlider("background R", 0),
     J = g.inValueSlider("background G", 0),
     $ = g.inValueSlider("background B", 0),
@@ -41138,23 +42865,23 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     c = g.outNumber("Aspect", 1),
     ne = g.outNumber("Num Lines");
   const D = " ";
-  L.setUiAttribs({ colorPick: true });
+  w.setUiAttribs({ colorPick: true });
   V.setUiAttribs({ colorPick: true });
   g.toWorkPortsNeedToBeLinked(e);
-  g.setPortGroup("Text Color", [L, R, k, M]);
+  g.setPortGroup("Text Color", [w, R, M, k]);
   g.setPortGroup("Background", [V, J, $, ee]);
-  g.setPortGroup("Font", [y, I, x, T, S, E, C]);
-  g.setPortGroup("Texture", [N, j, w, P, Q]);
+  g.setPortGroup("Font", [I, y, x, T, S, E, C]);
+  g.setPortGroup("Texture", [j, N, L, P, Q]);
   g.setPortGroup("Rendering", [t, n]);
   e.onLinkChanged = () => {
-    if (!e.isLinked()) U.setRef(CGL.Texture.getEmptyTexture(B));
-    else U.setRef(G);
+    if (!e.isLinked()) U.setRef(CGL.Texture.getEmptyTexture(G));
+    else U.setRef(B);
   };
   o.onTriggered =
-    L.onChange =
+    w.onChange =
     R.onChange =
-    k.onChange =
     M.onChange =
+    k.onChange =
     S.onChange =
     A.onChange =
     O.onChange =
@@ -41169,9 +42896,9 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     Z.onChange =
     Y.onChange =
     x.onChange =
-    I.onChange =
-    w.onChange =
     y.onChange =
+    L.onChange =
+    I.onChange =
     Q.onChange =
     P.onChange =
       function () {
@@ -41179,8 +42906,8 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
         ue();
       };
   U.ignoreValueSerialize = true;
-  const B = g.patch.cgl;
-  let G = new CGL.Texture(B);
+  const G = g.patch.cgl;
+  let B = new CGL.Texture(G);
   let F = 2;
   let z = 2;
   const q = document.createElement("canvas");
@@ -41191,18 +42918,18 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
   u.setRef(q);
   let X = q.getContext("2d");
   let H = true;
-  const h = CGL.MESHES.getSimpleRect(B, "texttexture rect");
+  const h = CGL.MESHES.getSimpleRect(G, "texttexture rect");
   const r = vec3.create();
-  const i = new CGL.Shader(B, "texttexture");
+  const i = new CGL.Shader(G, "texttexture");
   i.setModules(["MODULE_VERTEX_POSITION", "MODULE_COLOR", "MODULE_BEGIN_FRAG"]);
   i.setSource(a.text_vert, a.text_frag);
   const f = new CGL.Uniform(i, "t", "tex");
-  const d = new CGL.Uniform(i, "f", "aspect", 0);
-  const p = new CGL.Uniform(i, "f", "a", M);
-  const m = new CGL.Uniform(i, "4f", "color", L, R, k, M);
+  const m = new CGL.Uniform(i, "f", "aspect", 0);
+  const p = new CGL.Uniform(i, "f", "a", k);
+  const d = new CGL.Uniform(i, "4f", "color", w, R, M, k);
   if (g.patch.isEditorMode())
     CABLES.UI.SIMPLEWIREFRAMERECT =
-      CABLES.UI.SIMPLEWIREFRAMERECT || new CGL.WireframeRect(B);
+      CABLES.UI.SIMPLEWIREFRAMERECT || new CGL.WireframeRect(G);
   e.onTriggered = ae;
   t.onChange = ue;
   ue();
@@ -41210,22 +42937,22 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     X = null;
     q.remove();
   });
-  w.onChange =
-    j.onChange =
+  L.onChange =
     N.onChange =
+    j.onChange =
       () => {
-        if (G) G.delete();
-        G = null;
+        if (B) B.delete();
+        B = null;
         H = true;
       };
   V.onChange =
     J.onChange =
     $.onChange =
     ee.onChange =
-    L.onChange =
+    w.onChange =
     R.onChange =
-    k.onChange =
     M.onChange =
+    k.onChange =
       () => {
         if (!t.get() || U.isLinked()) H = true;
       };
@@ -41233,7 +42960,7 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     if (U.isLinked()) H = true;
   };
   g.patch.on("fontLoaded", (e) => {
-    if (e == y.get()) H = true;
+    if (e == I.get()) H = true;
   });
   document.fonts.ready.then(() => {
     if (s.get()) H = true;
@@ -41256,24 +42983,24 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     }
     if (t.get()) {
       r[0] = r[1] = r[2] = n.get();
-      B.pushBlendMode(CGL.BLEND_NORMAL, false);
-      B.pushModelMatrix();
-      mat4.scale(B.mMatrix, B.mMatrix, r);
+      G.pushBlendMode(CGL.BLEND_NORMAL, false);
+      G.pushModelMatrix();
+      mat4.scale(G.mMatrix, G.mMatrix, r);
       i.popTextures();
-      i.pushTexture(f, G.tex);
-      d.set(c.get());
-      if (B.shouldDrawHelpers(g))
+      i.pushTexture(f, B.tex);
+      m.set(c.get());
+      if (G.shouldDrawHelpers(g))
         CABLES.UI.SIMPLEWIREFRAMERECT.render(c.get(), 1, 1);
-      B.pushShader(i);
+      G.pushShader(i);
       h.render(g.patch.cg.getShader());
-      B.popShader();
-      B.popBlendMode();
-      B.popModelMatrix();
+      G.popShader();
+      G.popBlendMode();
+      G.popModelMatrix();
     }
     l.trigger();
   }
   function se() {
-    if (G) G.setSize(re(), ie());
+    if (B) B.setSize(re(), ie());
     X.canvas.width = q.width = re();
     X.canvas.height = q.height = ie();
     c.set(q.width / q.height);
@@ -41306,7 +43033,7 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     return n;
   }
   function le() {
-    B.checkFrameStarted("texttrexture refresh");
+    G.checkFrameStarted("texttrexture refresh");
     const e =
       "rgba(" +
       Math.floor(V.get() * 255) +
@@ -41321,19 +43048,19 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     X.fillRect(0, 0, X.canvas.width, X.canvas.height);
     const t =
       "rgba(" +
-      Math.floor(L.get() * 255) +
+      Math.floor(w.get() * 255) +
       "," +
       Math.floor(R.get() * 255) +
       "," +
-      Math.floor(k.get() * 255) +
+      Math.floor(M.get() * 255) +
       "," +
-      M.get() +
+      k.get() +
       ")";
     X.fillStyle = t;
     let n = parseFloat(x.get());
-    let r = y.get();
+    let r = I.get();
     if (r.indexOf(D) > -1) r = '"' + r + '"';
-    X.font = I.get() + D + n + "px " + r + "";
+    X.font = y.get() + D + n + "px " + r + "";
     X.textBaseline = "top";
     X.textAlign = T.get();
     X.letterSpacing = E.get() + "px";
@@ -41353,15 +43080,15 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     }
     const u = [];
     for (let e = 0; e < a.length; e++) {
-      const m = X.measureText(a[e]);
+      const d = X.measureText(a[e]);
       u[e] =
-        Math.ceil(m.fontBoundingBoxAscent) +
-        Math.ceil(m.fontBoundingBoxDescent) +
+        Math.ceil(d.fontBoundingBoxAscent) +
+        Math.ceil(d.fontBoundingBoxDescent) +
         C.get();
     }
     for (let e = 0; e < a.length; e++) {
-      const m = X.measureText(a[e]);
-      z = Math.max(z, Math.ceil(m.width));
+      const d = X.measureText(a[e]);
+      z = Math.max(z, Math.ceil(d.width));
       F += u[e];
     }
     z += l * 2;
@@ -41375,11 +43102,11 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
     }
     F = Math.ceil(F);
     z = Math.ceil(z);
-    if (z > B.maxTexSize || F > B.maxTexSize)
+    if (z > G.maxTexSize || F > G.maxTexSize)
       g.setUiError("textoobig", "Texture too big!");
     else g.setUiError("textoobig", null);
-    F = Math.min(B.maxTexSize, F);
-    z = Math.min(B.maxTexSize, z);
+    F = Math.min(G.maxTexSize, F);
+    z = Math.min(G.maxTexSize, z);
     let h = 0;
     if (S.get() == "Middle") h = (F - c) / 2;
     else if (S.get() == "Bottom") h = F - c;
@@ -41403,33 +43130,33 @@ Ops.Gl.Textures.TextTexture_v6 = function () {
       }
       h += u[t];
     }
-    let d = CGL.Texture.WRAP_REPEAT;
-    if (N.get() == "mirrored repeat") d = CGL.Texture.WRAP_MIRRORED_REPEAT;
-    else if (N.get() == "clamp to edge") d = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+    let m = CGL.Texture.WRAP_REPEAT;
+    if (j.get() == "mirrored repeat") m = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    else if (j.get() == "clamp to edge") m = CGL.Texture.WRAP_CLAMP_TO_EDGE;
     let p = CGL.Texture.FILTER_LINEAR;
-    if (j.get() == "nearest") p = CGL.Texture.FILTER_NEAREST;
-    else if (j.get() == "mipmap") p = CGL.Texture.FILTER_MIPMAP;
+    if (N.get() == "nearest") p = CGL.Texture.FILTER_NEAREST;
+    else if (N.get() == "mipmap") p = CGL.Texture.FILTER_MIPMAP;
     if (
       !P.get() ||
-      !G ||
+      !B ||
       !U.get() ||
-      G.width != q.width ||
-      G.height != q.height ||
-      G.anisotropic != parseFloat(w.get())
+      B.width != q.width ||
+      B.height != q.height ||
+      B.anisotropic != parseFloat(L.get())
     ) {
-      if (G) G.delete();
-      G = new CGL.Texture.createFromImage(B, q, {
+      if (B) B.delete();
+      B = new CGL.Texture.createFromImage(G, q, {
         filter: p,
-        anisotropic: parseFloat(w.get()),
-        wrap: d,
+        anisotropic: parseFloat(L.get()),
+        wrap: m,
       });
     }
-    G.unpackAlpha = false;
-    G.flip = false;
-    G.initTexture(q, p);
+    B.unpackAlpha = false;
+    B.flip = false;
+    B.initTexture(q, p);
     te.set(X.canvas.height / X.canvas.width);
     ne.set(a.length);
-    U.setRef(G);
+    U.setRef(B);
   }
   function ue() {
     v.setUiAttribs({ greyout: b.get() != "Manual" });
@@ -41444,26 +43171,6 @@ Ops.Gl.Textures.TextTexture_v6.prototype = new CABLES.Op();
 CABLES.OPS["2c042efa-3604-4717-b8f4-5ad08d6740e5"] = {
   f: Ops.Gl.Textures.TextTexture_v6,
   objName: "Ops.Gl.Textures.TextTexture_v6",
-};
-Ops.Math.Compare.LessThan = function () {
-  CABLES.Op.apply(this, arguments);
-  const e = this;
-  const t = (e.attachments = {});
-  const n = e.inValue("number1");
-  const r = e.inValue("number2");
-  const i = e.outBoolNum("result");
-  e.setUiAttribs({ mathTitle: true });
-  n.onChange = a;
-  r.onChange = a;
-  a();
-  function a() {
-    i.set(n.get() < r.get());
-  }
-};
-Ops.Math.Compare.LessThan.prototype = new CABLES.Op();
-CABLES.OPS["04fd113f-ade1-43fb-99fa-f8825f8814c0"] = {
-  f: Ops.Math.Compare.LessThan,
-  objName: "Ops.Math.Compare.LessThan",
 };
 Ops.Gl.Textures.EmptyTexture = function () {
   CABLES.Op.apply(this, arguments);
@@ -41508,11 +43215,11 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
       CGL.Texture.PIXELFORMATS,
       CGL.Texture.PFORMATSTR_RGBA8UB
     ),
-    d = e.inSwitch("Num Textures", ["1", "4"], "1"),
+    m = e.inSwitch("Num Textures", ["1", "4"], "1"),
     i = e.outTrigger("Next"),
     a = e.outTexture("Texture"),
     p = e.outTexture("Texture 2"),
-    m = e.outTexture("Texture 3"),
+    d = e.outTexture("Texture 3"),
     g = e.outTexture("Texture 4");
   e.setPortGroup("Texture Size", [s, o, l]);
   e.setPortGroup("Texture settings", [u, h, f, c]);
@@ -41521,17 +43228,17 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
   const _ = [0, 0, 0, 0];
   const O = null;
   const A = [];
-  let y = null;
   let I = null;
+  let y = null;
   o.onChange =
     l.onChange =
     f.onChange =
     u.onChange =
-    d.onChange =
+    m.onChange =
     c.onChange =
     h.onChange =
-      w;
-  s.onChange = N;
+      L;
+  s.onChange = j;
   const x = false;
   let T = null;
   const S = null;
@@ -41539,8 +43246,8 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
   const C = CGL.MESHES.getSimpleRect(v, "shader2texture rect");
   e.toWorkPortsNeedToBeLinked(r);
   u.set("nearest");
-  N();
-  function j() {
+  j();
+  function N() {
     if (u.get() == "mipmap" && S && S.isFloatingPoint()) {
       e.setUiError(
         "warning",
@@ -41550,26 +43257,26 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
       e.setUiError("warning", null);
     }
   }
-  function N() {
+  function j() {
     c.setUiAttribs({ greyout: u.get() != "mipmap" });
     o.setUiAttribs({ greyout: s.get() == "Canvas" });
     l.setUiAttribs({ greyout: s.get() == "Canvas" });
   }
-  function w() {
+  function L() {
     E = true;
-    j();
     N();
+    j();
   }
   function P() {
-    if (I) I.dispose();
-    y = null;
+    if (y) y.dispose();
     I = null;
+    y = null;
   }
-  function L() {
+  function w() {
     E = false;
     if (T) T.delete();
     const e = A.length;
-    b = parseInt(d.get());
+    b = parseInt(m.get());
     A.length = 0;
     for (let e = 0; e < b; e++) A[e] = true;
     if (e != A.length) {
@@ -41610,27 +43317,27 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
     }
   }
   n.onTriggered = function () {
-    if (!T || E) L();
+    if (!T || E) w();
     if (
       s.get() == "Manual" &&
       (T.getTextureColor().width != o.get() ||
         T.getTextureColor().height != l.get())
     ) {
-      L();
+      w();
     } else if (
       s.get() == "Canvas" &&
       T &&
       (T.getTextureColor().width != v.canvasWidth ||
         T.getTextureColor().height != v.canvasHeight)
     )
-      L();
+      w();
     if (!r.get() || !r.get().setDrawBuffers) return;
-    if (r.get() != y) {
-      y = r.get();
-      I = r.get().copy();
-      I.setDrawBuffers(A);
+    if (r.get() != I) {
+      I = r.get();
+      y = r.get().copy();
+      y.setDrawBuffers(A);
     }
-    if (!I) {
+    if (!y) {
       a.set(null);
       return;
     }
@@ -41643,7 +43350,7 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
     v.pushModelMatrix();
     mat4.identity(v.mMatrix);
     v.pushShader(r.get());
-    if (I.bindTextures) I.bindTextures();
+    if (y.bindTextures) y.bindTextures();
     v.pushBlend(false);
     C.render(r.get());
     v.popBlend();
@@ -41654,7 +43361,7 @@ Ops.Gl.Shader.ShaderToTexture_v2 = function () {
     if (b >= 2) {
       a.set(T.getTextureColorNum(0));
       p.set(T.getTextureColorNum(1));
-      m.set(T.getTextureColorNum(2));
+      d.set(T.getTextureColorNum(2));
       g.set(T.getTextureColorNum(3));
     } else a.set(T.getTextureColor());
     v.popShader();
@@ -41670,7 +43377,7 @@ CABLES.OPS["eb40e0e0-761b-4ce7-987a-014fff720873"] = {
 Ops.Gl.Matrix.Camera_v2 = function () {
   CABLES.Op.apply(this, arguments);
   const e = this;
-  const k = (e.attachments = {});
+  const M = (e.attachments = {});
   const t = e.inTrigger("render");
   const n = e.outTrigger("trigger");
   const r = e.inBool("Identity", true);
@@ -41687,54 +43394,54 @@ Ops.Gl.Matrix.Camera_v2 = function () {
   const c = e.inValue("eye X", 0);
   const h = e.inValue("eye Y", 0);
   const f = e.inValue("eye Z", 5);
-  const d = e.inValue("center X", 0);
+  const m = e.inValue("center X", 0);
   const p = e.inValue("center Y", 0);
-  const m = e.inValue("center Z", 0);
+  const d = e.inValue("center Z", 0);
   const g = e.inValue("truck", 0);
   const b = e.inValue("boom", 0);
   const v = e.inValue("dolly", 0);
   const _ = e.inValue("tilt", 0);
   const O = e.inValue("pan", 0);
   const A = e.inValue("roll", 0);
-  const y = e.outNumber("Aspect");
-  const M = e.outArray("Look At Array");
-  const I = e.patch.cgl;
+  const I = e.outNumber("Aspect");
+  const k = e.outArray("Look At Array");
+  const y = e.patch.cgl;
   let x = 0;
   const T = vec3.create();
   const S = vec3.create();
   const E = vec3.create();
   const C = mat4.create();
   mat4.identity(C);
-  const j = [];
-  const N = vec3.create();
-  const w = mat4.create();
-  mat4.identity(w);
+  const N = [];
+  const j = vec3.create();
+  const L = mat4.create();
+  mat4.identity(L);
   let P = true;
   t.onTriggered = function () {
-    if (I.tempData.shadowPass) return n.trigger();
+    if (y.tempData.shadowPass) return n.trigger();
     if (!l.get()) x = u.get();
-    else x = I.getViewPort()[2] / I.getViewPort()[3];
-    y.set(x);
-    I.pushViewMatrix();
-    if (r.get()) mat4.identity(I.vMatrix);
+    else x = y.getViewPort()[2] / y.getViewPort()[3];
+    I.set(x);
+    y.pushViewMatrix();
+    if (r.get()) mat4.identity(y.vMatrix);
     if (P) {
-      mat4.identity(w);
-      vec3.set(N, g.get(), b.get(), v.get());
+      mat4.identity(L);
+      vec3.set(j, g.get(), b.get(), v.get());
       if (g.get() !== 0 || b.get() !== 0 || v.get() !== 0)
-        mat4.translate(w, w, N);
-      if (_.get() !== 0) mat4.rotateX(w, w, _.get() * CGL.DEG2RAD);
-      if (O.get() !== 0) mat4.rotateY(w, w, O.get() * CGL.DEG2RAD);
-      if (A.get() !== 0) mat4.rotateZ(w, w, A.get() * CGL.DEG2RAD);
+        mat4.translate(L, L, j);
+      if (_.get() !== 0) mat4.rotateX(L, L, _.get() * CGL.DEG2RAD);
+      if (O.get() !== 0) mat4.rotateY(L, L, O.get() * CGL.DEG2RAD);
+      if (A.get() !== 0) mat4.rotateZ(L, L, A.get() * CGL.DEG2RAD);
       P = false;
     }
-    mat4.multiply(I.vMatrix, I.vMatrix, w);
-    I.pushPMatrix();
-    I.pushViewMatrix();
+    mat4.multiply(y.vMatrix, y.vMatrix, L);
+    y.pushPMatrix();
+    y.pushViewMatrix();
     if (i.get() == "prespective") {
-      mat4.perspective(I.pMatrix, o.get() * 0.0174533, x, a.get(), s.get());
+      mat4.perspective(y.pMatrix, o.get() * 0.0174533, x, a.get(), s.get());
     } else if (i.get() == "ortogonal") {
       mat4.ortho(
-        I.pMatrix,
+        y.pMatrix,
         -1 * (o.get() / 14),
         1 * (o.get() / 14),
         (-1 * (o.get() / 14)) / x,
@@ -41743,28 +43450,28 @@ Ops.Gl.Matrix.Camera_v2 = function () {
         s.get()
       );
     }
-    j[0] = c.get();
-    j[1] = h.get();
-    j[2] = f.get();
-    j[3] = d.get();
-    j[4] = p.get();
-    j[5] = m.get();
-    j[6] = 0;
-    j[7] = 1;
-    j[8] = 0;
-    M.setRef(j);
+    N[0] = c.get();
+    N[1] = h.get();
+    N[2] = f.get();
+    N[3] = m.get();
+    N[4] = p.get();
+    N[5] = d.get();
+    N[6] = 0;
+    N[7] = 1;
+    N[8] = 0;
+    k.setRef(N);
     vec3.set(T, 0, 1, 0);
     vec3.set(S, c.get(), h.get(), f.get());
-    vec3.set(E, d.get(), p.get(), m.get());
+    vec3.set(E, m.get(), p.get(), d.get());
     mat4.lookAt(C, S, E, T);
-    mat4.multiply(I.vMatrix, I.vMatrix, C);
+    mat4.multiply(y.vMatrix, y.vMatrix, C);
     n.trigger();
-    I.popViewMatrix();
-    I.popPMatrix();
-    I.popViewMatrix();
+    y.popViewMatrix();
+    y.popPMatrix();
+    y.popViewMatrix();
     if (e.isCurrentUiOp()) gui.setTransformGizmo({ posX: g, posY: b, posZ: v });
   };
-  const L = function () {
+  const w = function () {
     if (!l.get()) {
       u.setUiAttribs({ greyout: false });
     } else {
@@ -41780,8 +43487,8 @@ Ops.Gl.Matrix.Camera_v2 = function () {
   _.onChange = R;
   O.onChange = R;
   A.onChange = R;
-  l.onChange = L;
-  L();
+  l.onChange = w;
+  w();
 };
 Ops.Gl.Matrix.Camera_v2.prototype = new CABLES.Op();
 CABLES.OPS["f7673a93-7772-4ade-9d3d-df7174f5258b"] = {
@@ -41805,9 +43512,9 @@ Ops.Gl.MainLoop_v2 = function () {
   t.onChange = A;
   const h = n.patch.cgl;
   let f = 0;
-  let d = 0;
+  let m = 0;
   let p = null;
-  let m = false;
+  let d = false;
   if (!n.patch.cgl) n.uiAttr({ error: "No webgl cgl context" });
   const g = vec3.create();
   vec3.set(g, 0, 0, 0);
@@ -41828,7 +43535,7 @@ Ops.Gl.MainLoop_v2 = function () {
   T();
   n.patch.tempData.mainloopOp = this;
   function A() {
-    I();
+    y();
     if (CABLES.UI) {
       if (t.get() < 1) n.patch.cgl.canvas.style.imageRendering = "pixelated";
     }
@@ -41846,7 +43553,7 @@ Ops.Gl.MainLoop_v2 = function () {
       n.setUiAttrib({ extendTitle: "Inactive" });
     }
   };
-  function y() {
+  function I() {
     if (i.get()) {
       if (!O) return 10;
       if (!_) return 30;
@@ -41857,7 +43564,7 @@ Ops.Gl.MainLoop_v2 = function () {
     h.gl.clearColor(0, 0, 0, 0);
     h.gl.clear(h.gl.COLOR_BUFFER_BIT | h.gl.DEPTH_BUFFER_BIT);
   };
-  function I() {
+  function y() {
     if (t.get() != 0)
       n.patch.cgl.pixelDensity = Math.min(t.get(), window.devicePixelRatio);
     else n.patch.cgl.pixelDensity = window.devicePixelRatio;
@@ -41867,9 +43574,9 @@ Ops.Gl.MainLoop_v2 = function () {
     if (h.aborted || h.canvas.clientWidth === 0 || h.canvas.clientHeight === 0)
       return;
     n.patch.cg = h;
-    I();
+    y();
     const t = performance.now();
-    n.patch.config.fpsLimit = y();
+    n.patch.config.fpsLimit = I();
     if (h.canvasWidth == -1) {
       h.setCanvas(n.patch.config.glCanvasId);
       return;
@@ -41878,11 +43585,11 @@ Ops.Gl.MainLoop_v2 = function () {
       l.set(h.canvasWidth / 1);
       u.set(h.canvasHeight / 1);
     }
-    if (CABLES.now() - d > 1e3) {
+    if (CABLES.now() - m > 1e3) {
       CGL.fpsReport = CGL.fpsReport || [];
-      if (n.patch.loading.getProgress() >= 1 && d !== 0) CGL.fpsReport.push(f);
+      if (n.patch.loading.getProgress() >= 1 && m !== 0) CGL.fpsReport.push(f);
       f = 0;
-      d = CABLES.now();
+      m = CABLES.now();
     }
     CGL.MESH.lastShader = null;
     CGL.MESH.lastMesh = null;
@@ -41915,7 +43622,7 @@ Ops.Gl.MainLoop_v2 = function () {
     p = setTimeout(() => {
       if (n.patch.getOpsByObjName(n.name).length > 1) {
         n.setUiError("multimainloop", "there should only be one mainloop op!");
-        if (!m) m = n.patch.addEventListener("onOpDelete", T);
+        if (!d) d = n.patch.addEventListener("onOpDelete", T);
       } else n.setUiError("multimainloop", null, 1);
     }, 500);
   }
@@ -41928,8 +43635,8 @@ CABLES.OPS["f1029550-d877-42da-9b1e-63a5163a0350"] = {
 Ops.User.srcphag.videoTextureHLS2 = function () {
   CABLES.Op.apply(this, arguments);
   const n = this;
-  const k = (n.attachments = {});
-  const M = n.inTrigger("Update"),
+  const M = (n.attachments = {});
+  const k = n.inTrigger("Update"),
     r = n.inUrl("file", "video"),
     t = n.inValueBool("play"),
     e = n.inValueBool("loop", true),
@@ -41949,14 +43656,14 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
     V = n.inValueBool("Preload", true),
     U = n.inBool("Show Interaction needed Button", true),
     D = n.outTrigger("Next"),
-    d = n.outTexture("texture", null, "texture"),
-    B = n.outNumber("duration"),
-    G = n.outNumber("progress"),
+    m = n.outTexture("texture", null, "texture"),
+    G = n.outNumber("duration"),
+    B = n.outNumber("progress"),
     F = n.outBoolNum("Interaction Needed"),
     z = n.outNumber("CurrentTime"),
     p = n.outBoolNum("Loading"),
     q = n.outBoolNum("Playing"),
-    m = n.outBoolNum("Can Play Through", false),
+    d = n.outBoolNum("Can Play Through", false),
     X = n.outNumber("Width"),
     H = n.outNumber("Height"),
     Y = n.outNumber("Aspect Ratio"),
@@ -41970,26 +43677,26 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
   let _ = false;
   let O = false;
   let A = false;
-  let y = 0;
   let I = 0;
+  let y = 0;
   let x = null;
   let K = null;
   let T = true;
   let S = true;
   let E = 0;
   let C = null;
-  const j = n.patch.cgl;
-  const N = document.createElement("video");
-  N.setAttribute("playsinline", "");
-  N.setAttribute("webkit-playsinline", "");
-  N.setAttribute("autoplay", "autoplay");
-  N.setAttribute("loop", "loop");
-  N.loop = e.get();
-  W.set(!!N.requestVideoFrameCallback);
-  const w = CGL.Texture.getEmptyTexture(j);
-  n.toWorkPortsNeedToBeLinked(d);
-  d.setRef(CGL.Texture.getEmptyTexture(j));
-  t.onChange = L;
+  const N = n.patch.cgl;
+  const j = document.createElement("video");
+  j.setAttribute("playsinline", "");
+  j.setAttribute("webkit-playsinline", "");
+  j.setAttribute("autoplay", "autoplay");
+  j.setAttribute("loop", "loop");
+  j.loop = e.get();
+  W.set(!!j.requestVideoFrameCallback);
+  const L = CGL.Texture.getEmptyTexture(N);
+  n.toWorkPortsNeedToBeLinked(m);
+  m.setRef(CGL.Texture.getEmptyTexture(N));
+  t.onChange = w;
   r.onChange = re;
   i.onChange = n.onMasterVolumeChanged = ee;
   o.onChange = l.onChange = () => {
@@ -42004,13 +43711,13 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
     }
     Z();
   };
-  M.onTriggered = () => {
+  k.onTriggered = () => {
     if (performance.now() - E > 1e3 / s.get()) S = true;
     if (S) {
       J();
     }
-    q.set(!N.paused);
-    if (O && !N.paused && t.get()) {
+    q.set(!j.paused);
+    if (O && !j.paused && t.get()) {
       O = false;
       CABLES.interActionNeededButton.remove("videoplayer");
     }
@@ -42019,34 +43726,34 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
   };
   function Q() {
     if (x) x.delete();
-    y = CGL.Texture.FILTER_NEAREST;
-    if (o.get() == "linear") y = CGL.Texture.FILTER_LINEAR;
-    if (l.get() == "repeat") I = CGL.Texture.WRAP_REPEAT;
-    if (l.get() == "mirrored repeat") I = CGL.Texture.WRAP_MIRRORED_REPEAT;
-    if (l.get() == "clamp to edge") I = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    x = new CGL.Texture(j, { wrap: I, filter: y });
+    I = CGL.Texture.FILTER_NEAREST;
+    if (o.get() == "linear") I = CGL.Texture.FILTER_LINEAR;
+    if (l.get() == "repeat") y = CGL.Texture.WRAP_REPEAT;
+    if (l.get() == "mirrored repeat") y = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    if (l.get() == "clamp to edge") y = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+    x = new CGL.Texture(N, { wrap: y, filter: I });
   }
   f.onTriggered = function () {
-    N.currentTime = 0;
-    d.setRef(w);
+    j.currentTime = 0;
+    m.setRef(L);
     S = true;
   };
   h.onChange = function () {
-    N.currentTime = h.get() || 0;
+    j.currentTime = h.get() || 0;
     S = true;
   };
   s.onChange = function () {
     S = true;
   };
   function P() {
-    N.playbackRate = c.get();
+    j.playbackRate = c.get();
   }
-  function L() {
+  function w() {
     n.setUiError("playvideo", null);
     R(true);
     if (t.get()) {
-      N.currentTime = h.get() || 0;
-      const e = N.play();
+      j.currentTime = h.get() || 0;
+      const e = j.play();
       if (e)
         e.then(function () {
           P();
@@ -42054,13 +43761,13 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
           n.setUiError("playvideo", e.message);
           n.logWarn("exc", e);
           n.log(e);
-          n.log(N);
-          if (N.paused && U.get()) {
+          n.log(j);
+          if (j.paused && U.get()) {
             n.setUiError("playvideo", null);
             O = true;
             CABLES.interActionNeededButton.add(n.patch, "videoplayer", () => {
               O = false;
-              N.play()
+              j.play()
                 .then(() => {
                   P();
                   CABLES.interActionNeededButton.remove("videoplayer");
@@ -42072,12 +43779,12 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
             });
           }
         });
-    } else N.pause();
+    } else j.pause();
   }
   c.onChange = function () {
     try {
       n.setUiError("playbackRate", null);
-      N.playbackRate = c.get();
+      j.playbackRate = c.get();
     } catch (e) {
       n.setUiError(
         "playbackRate",
@@ -42087,87 +43794,87 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
     }
   };
   e.onChange = () => {
-    N.loop = e.get();
+    j.loop = e.get();
   };
   a.onChange = function () {
-    N.muted = a.get();
+    j.muted = a.get();
   };
   function J() {
     const e = S;
     E = performance.now();
     if (!r.get()) {
       x = null;
-      d.set(w);
+      m.set(L);
       return;
     }
     if (!v) return;
     if (!x) Q();
-    if (x.width != N.videoWidth || x.height != N.videoHeight) {
-      n.log("video size", N.videoWidth, N.videoHeight);
-      x.setSize(N.videoWidth, N.videoHeight);
+    if (x.width != j.videoWidth || x.height != j.videoHeight) {
+      n.log("video size", j.videoWidth, j.videoHeight);
+      x.setSize(j.videoWidth, j.videoHeight);
     }
     X.set(x.width);
     H.set(x.height);
     Y.set(x.width / x.height);
-    if (!m.get()) return;
+    if (!d.get()) return;
     if (!v) return;
-    if (!N) return;
-    if (N.videoHeight <= 0) {
+    if (!j) return;
+    if (j.videoHeight <= 0) {
       n.setUiError("videosize", "video width is 0!");
       return;
     }
-    if (N.videoWidth <= 0) {
+    if (j.videoWidth <= 0) {
       n.setUiError("videosize", "video height is 0!");
       return;
     }
-    const t = N.currentTime / N.duration;
-    if (!isNaN(t)) G.set(t);
-    z.set(N.currentTime);
-    j.gl.bindTexture(j.gl.TEXTURE_2D, x.tex);
-    j.gl.pixelStorei(j.gl.UNPACK_FLIP_Y_WEBGL, u.get());
-    j.gl.texImage2D(
-      j.gl.TEXTURE_2D,
+    const t = j.currentTime / j.duration;
+    if (!isNaN(t)) B.set(t);
+    z.set(j.currentTime);
+    N.gl.bindTexture(N.gl.TEXTURE_2D, x.tex);
+    N.gl.pixelStorei(N.gl.UNPACK_FLIP_Y_WEBGL, u.get());
+    N.gl.texImage2D(
+      N.gl.TEXTURE_2D,
       0,
-      j.gl.RGBA,
-      j.gl.RGBA,
-      j.gl.UNSIGNED_BYTE,
-      N
+      N.gl.RGBA,
+      N.gl.RGBA,
+      N.gl.UNSIGNED_BYTE,
+      j
     );
     x._setFilter();
-    if (u.get()) j.gl.pixelStorei(j.gl.UNPACK_FLIP_Y_WEBGL, false);
+    if (u.get()) N.gl.pixelStorei(N.gl.UNPACK_FLIP_Y_WEBGL, false);
     T = false;
-    d.setRef(x);
+    m.setRef(x);
     S = false;
     n.patch.cgl.profileData.profileVideosPlaying++;
-    if (N.readyState == 4) p.set(false);
+    if (j.readyState == 4) p.set(false);
     else p.set(false);
-    if (N.requestVideoFrameCallback)
-      N.requestVideoFrameCallback(() => {
+    if (j.requestVideoFrameCallback)
+      j.requestVideoFrameCallback(() => {
         S = true;
       });
   }
   function $() {
-    N.controls = false;
-    N.muted = a.get();
-    N.loop = e.get();
+    j.controls = false;
+    j.muted = a.get();
+    j.loop = e.get();
     S = true;
-    m.set(true);
+    d.set(true);
   }
   function ee() {
-    N.volume = Math.min(
+    j.volume = Math.min(
       1,
       Math.max(0, (i.get() || 0) * n.patch.config.masterVolume)
     );
   }
   function te() {
-    B.set(N.duration);
-    L();
+    G.set(j.duration);
+    w();
   }
   function R(e) {
     if (_) return;
     g.set(false);
     b.set("");
-    m.set(false);
+    d.set(false);
     if (r.get() && String(r.get()).length > 1) T = true;
     if (!r.get()) {
       b.set(true);
@@ -42175,22 +43882,22 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
     if (V.get() || e) {
       clearTimeout(K);
       p.set(true);
-      N.preload = "true";
+      j.preload = "true";
       let e = n.patch.getFilePath(r.get());
       if (String(r.get()).indexOf("data:") == 0) e = r.get();
       if (!e) return;
       n.setUiError("onerror", null);
-      N.style.display = "none";
-      N.setAttribute("src", e);
-      N.setAttribute("crossOrigin", "anonymous");
+      j.style.display = "none";
+      j.setAttribute("src", e);
+      j.setAttribute("crossOrigin", "anonymous");
       if (ie(e) && Hls.isSupported()) {
         ae(e);
       } else {
-        N.setAttribute("src", e);
+        j.setAttribute("src", e);
       }
       try {
         n.setUiError("playbackRate", null);
-        N.playbackRate = c.get();
+        j.playbackRate = c.get();
       } catch (e) {
         n.setUiError(
           "playbackRate",
@@ -42200,22 +43907,22 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
       }
       if (!A) {
         A = true;
-        N.addEventListener("canplaythrough", $, true);
-        N.addEventListener("loadedmetadata", te);
-        N.addEventListener(
+        j.addEventListener("canplaythrough", $, true);
+        j.addEventListener("loadedmetadata", te);
+        j.addEventListener(
           "playing",
           function () {
             v = true;
           },
           true
         );
-        N.onerror = function () {
+        j.onerror = function () {
           g.set(true);
-          if (N) {
-            b.set("Error " + N.error.code + "/" + N.error.message);
+          if (j) {
+            b.set("Error " + j.error.code + "/" + j.error.message);
             n.setUiError(
               "onerror",
-              "Could not load video / " + N.error.message,
+              "Could not load video / " + j.error.message,
               2
             );
           }
@@ -42240,7 +43947,7 @@ Ops.User.srcphag.videoTextureHLS2 = function () {
       C.destroy();
     }
     C = new Hls({ enableWorker: true, lowLatencyMode: true });
-    C.attachMedia(N);
+    C.attachMedia(j);
     C.on(Hls.Events.MEDIA_ATTACHED, () => {
       C.loadSource(e);
     });
@@ -42295,58 +44002,58 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
       CGL.Texture.PIXELFORMATS,
       CGL.Texture.PFORMATSTR_RGBA8UB
     ),
-    d = n.inBool("Clear", true),
+    m = n.inBool("Clear", true),
     p = n.inValueSlider("R", 0),
-    m = n.inValueSlider("G", 0),
+    d = n.inValueSlider("G", 0),
     g = n.inValueSlider("B", 0),
     b = n.inValueSlider("A", 0),
     v = n.outTrigger("Next"),
     _ = n.outTexture("texture_out", CGL.Texture.getEmptyTexture(t)),
     O = n.outNumber("Aspect Ratio"),
-    k = n.outNumber("Texture Width"),
-    M = n.outNumber("Texture Height");
+    M = n.outNumber("Texture Width"),
+    k = n.outNumber("Texture Height");
   n.setPortGroup("Texture Size", [s, o, l]);
   n.setPortGroup("Texture Parameters", [c, h, u, f]);
   p.setUiAttribs({ colorPick: true });
-  n.setPortGroup("Color", [p, m, g, b, d]);
+  n.setPortGroup("Color", [p, d, g, b, m]);
   n.toWorkPortsNeedToBeLinked(r);
   const V = [0, 0, 0, 0];
   let A = null;
-  let y = null;
-  let I = true;
+  let I = null;
+  let y = true;
   let U = false;
   let x = null;
   let D = null;
-  let B = null;
   let G = null;
+  let B = null;
   c.onChange = u.onChange = h.onChange = f.onChange = F;
-  i.onLinkChanged = d.onChange = s.onChange = a.onChange = P;
+  i.onLinkChanged = m.onChange = s.onChange = a.onChange = P;
   r.onTriggered = n.preRender = R;
   P();
   function T() {
     if (A) A.delete();
-    if (y) y.delete();
-    y = null;
+    if (I) I.delete();
+    I = null;
     A = new CGL.TextureEffect(t, {
       isFloatingPointTexture: CGL.Texture.isPixelFormatFloat(f.get()),
       name: n.name,
     });
     const e = Math.min(t.maxAnisotropic, parseFloat(h.get()));
-    y = new CGL.Texture(t, {
+    I = new CGL.Texture(t, {
       anisotropic: e,
       name: "image_compose_v2_" + n.id,
       pixelFormat: f.get(),
       filter: S(),
       wrap: E(),
       width: C(),
-      height: j(),
+      height: N(),
     });
-    A.setSourceTexture(y);
-    k.set(C());
-    M.set(j());
-    O.set(C() / j());
+    A.setSourceTexture(I);
+    M.set(C());
+    k.set(N());
+    O.set(C() / N());
     _.set(CGL.Texture.getEmptyTexture(t));
-    I = false;
+    y = false;
     P();
   }
   function S() {
@@ -42368,7 +44075,7 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
     else e = Math.ceil(o.get());
     return n.patch.cgl.checkTextureSize(e);
   }
-  function j() {
+  function N() {
     let e = 0;
     if (i.get() && s.get() == "Auto") e = i.get().height;
     else if (s.get() == "Auto" || s.get() == "Canvas") e = t.canvasHeight;
@@ -42377,54 +44084,54 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
     return n.patch.cgl.checkTextureSize(e);
   }
   function F() {
-    I = true;
+    y = true;
   }
   function z() {
     if (
-      (C() != y.width ||
-        j() != y.height ||
-        y.pixelFormat != f.get() ||
-        y.filter != S() ||
-        y.wrap != E()) &&
+      (C() != I.width ||
+        N() != I.height ||
+        I.pixelFormat != f.get() ||
+        I.filter != S() ||
+        I.wrap != E()) &&
       C() !== 0 &&
-      j() !== 0
+      N() !== 0
     ) {
       T();
-      A.setSourceTexture(y);
+      A.setSourceTexture(I);
       _.set(CGL.Texture.getEmptyTexture(t));
-      _.set(y);
-      N();
-      L();
+      _.set(I);
+      j();
+      w();
     }
   }
-  function N() {
+  function j() {
     let e = null;
     if (s.get() == "Manual") {
       e = null;
     } else if (s.get() == "Auto") {
       if (i.get()) e = "Input Texture";
       else e = "Canvas Size";
-      e += ": " + C() + " x " + j();
+      e += ": " + C() + " x " + N();
     }
     let t = false;
     t = s.uiAttribs.info != e;
     s.setUiAttribs({ info: e });
     if (t) n.refreshParams();
   }
-  function w() {
-    if (x) x.toggleDefine("USE_TEX", i.isLinked() || !d.get());
+  function L() {
+    if (x) x.toggleDefine("USE_TEX", i.isLinked() || !m.get());
     if (x) x.toggleDefine("USE_UVTEX", a.isLinked());
   }
   function P() {
     h.setUiAttribs({ greyout: S() != CGL.Texture.FILTER_MIPMAP });
     p.setUiAttribs({ greyout: i.isLinked() });
     g.setUiAttribs({ greyout: i.isLinked() });
-    m.setUiAttribs({ greyout: i.isLinked() });
-    b.setUiAttribs({ greyout: i.isLinked() });
     d.setUiAttribs({ greyout: i.isLinked() });
+    b.setUiAttribs({ greyout: i.isLinked() });
+    m.setUiAttribs({ greyout: i.isLinked() });
     o.setUiAttribs({ greyout: s.get() != "Manual" });
     l.setUiAttribs({ greyout: s.get() != "Manual" });
-    if (y)
+    if (I)
       if (
         CGL.Texture.isPixelFormatFloat(f.get()) &&
         S() == CGL.Texture.FILTER_MIPMAP
@@ -42434,16 +44141,16 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
           "Don't use mipmap and 32bit at the same time, many systems do not support this."
         );
       else n.setUiError("fpmipmap", null);
-    N();
-    w();
+    j();
     L();
+    w();
   }
-  function L() {
-    if (y)
+  function w() {
+    if (I)
       if (
         i.isLinked() &&
         i.get() &&
-        y.isFloatingPoint() != i.get().isFloatingPoint()
+        I.isFloatingPoint() != i.get().isFloatingPoint()
       )
         n.setUiError(
           "textypediff",
@@ -42460,20 +44167,20 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
       x = new CGL.Shader(t, "copytextureshader");
       x.setSource(x.getDefaultVertexShader(), e.imgcomp_frag);
       D = new CGL.Uniform(x, "t", "tex", 0);
-      B = new CGL.Uniform(x, "t", "UVTex", 1);
-      G = new CGL.Uniform(x, "4f", "bgColor", p, m, g, b);
-      w();
+      G = new CGL.Uniform(x, "t", "UVTex", 1);
+      B = new CGL.Uniform(x, "4f", "bgColor", p, d, g, b);
+      L();
     }
     t.pushShader(x);
     t.currentTextureEffect.bind();
     if (i.get()) t.setTexture(0, i.get().tex);
-    else if (!d.get() && _.get()) t.setTexture(0, _.get().tex);
+    else if (!m.get() && _.get()) t.setTexture(0, _.get().tex);
     if (a.get()) t.setTexture(1, a.get().tex);
     t.currentTextureEffect.finish();
     t.popShader();
   }
   function R() {
-    if (!A || I) T();
+    if (!A || y) T();
     t.pushBlend(false);
     z();
     const e = t.currentTextureEffect;
@@ -42481,7 +44188,7 @@ Ops.Gl.ImageCompose.ImageCompose_v4 = function () {
     t.currentTextureEffect.imgCompVer = 3;
     t.currentTextureEffect.width = o.get();
     t.currentTextureEffect.height = l.get();
-    A.setSourceTexture(y);
+    A.setSourceTexture(I);
     A.startEffect(i.get() || CGL.Texture.getEmptyTexture(t, U), true);
     q();
     v.trigger();
@@ -42518,23 +44225,23 @@ Ops.Gl.Meshes.FullscreenRectangle_v2 = function () {
   let c = new CGL.Geometry("fullscreen rectangle");
   let h = 0,
     f = 0,
-    d = 0,
+    m = 0,
     p = 0;
   e.toWorkShouldNotBeChild(
     "Ops.Gl.TextureEffects.ImageCompose",
     CABLES.OP_PORT_TYPE_FUNCTION
   );
   e.toWorkPortsNeedToBeLinked(n);
-  a.onChange = I;
-  i.onChange = I;
-  n.onTriggered = y;
+  a.onChange = y;
+  i.onChange = y;
+  n.onTriggered = I;
   s.onLinkChanged = _;
   r.onChange = A;
-  const m = new CGL.Shader(l, "fullscreenrectangle", this);
-  m.setModules(["MODULE_VERTEX_POSITION", "MODULE_COLOR", "MODULE_BEGIN_FRAG"]);
-  m.setSource(t.shader_vert, t.shader_frag);
-  m.fullscreenRectUniform = new CGL.Uniform(m, "t", "tex", 0);
-  m.aspectUni = new CGL.Uniform(m, "f", "aspectTex", 0);
+  const d = new CGL.Shader(l, "fullscreenrectangle", this);
+  d.setModules(["MODULE_VERTEX_POSITION", "MODULE_COLOR", "MODULE_BEGIN_FRAG"]);
+  d.setSource(t.shader_vert, t.shader_frag);
+  d.fullscreenRectUniform = new CGL.Uniform(d, "t", "tex", 0);
+  d.aspectUni = new CGL.Uniform(d, "f", "aspectTex", 0);
   let g = false;
   let b = true;
   let v = false;
@@ -42556,19 +44263,19 @@ Ops.Gl.Meshes.FullscreenRectangle_v2 = function () {
   }
   e.preRender = function () {
     O();
-    m.bind();
-    if (u) u.render(m);
-    y();
+    d.bind();
+    if (u) u.render(d);
+    I();
   };
   function A() {
     v = r.get() == "Fit";
   }
-  function y() {
-    if (l.viewPort[2] != d || l.viewPort[3] != p || !u) x();
+  function I() {
+    if (l.viewPort[2] != m || l.viewPort[3] != p || !u) x();
     if (b) O();
     l.pushPMatrix();
     mat4.identity(l.pMatrix);
-    mat4.ortho(l.pMatrix, 0, d, p, 0, -10, 1e3);
+    mat4.ortho(l.pMatrix, 0, m, p, 0, -10, 1e3);
     l.pushModelMatrix();
     mat4.identity(l.mMatrix);
     l.pushViewMatrix();
@@ -42577,15 +44284,15 @@ Ops.Gl.Meshes.FullscreenRectangle_v2 = function () {
       const n = s.get().width / s.get().height;
       let e = p;
       let t = p * n;
-      if (t > d) {
-        e = (d * 1) / n;
-        t = d;
+      if (t > m) {
+        e = (m * 1) / n;
+        t = m;
       }
-      l.pushViewPort((d - t) / 2, (p - e) / 2, t, e);
+      l.pushViewPort((m - t) / 2, (p - e) / 2, t, e);
     }
     if (g) {
       if (s.get()) l.setTexture(0, s.get().tex);
-      u.render(m);
+      u.render(d);
     } else {
       u.render(l.getShader());
     }
@@ -42596,23 +44303,23 @@ Ops.Gl.Meshes.FullscreenRectangle_v2 = function () {
     if (v && s.get()) l.popViewPort();
     o.trigger();
   }
-  function I() {
+  function y() {
     u = null;
   }
   function x() {
-    if (l.viewPort[2] == d && l.viewPort[3] == p && u) return;
+    if (l.viewPort[2] == m && l.viewPort[3] == p && u) return;
     let e = 0,
       t = 0;
-    d = l.viewPort[2];
+    m = l.viewPort[2];
     p = l.viewPort[3];
     c.vertices = new Float32Array([
-      e + d,
+      e + m,
       t + p,
       0,
       e,
       t + p,
       0,
-      e + d,
+      e + m,
       t,
       0,
       e,
@@ -42658,9 +44365,9 @@ Ops.Trigger.Sequence = function () {
   n.onTriggered = f;
   n.setUiAttribs({ hideParam: true, hidePort: true });
   for (let t = 0; t < i; t++) {
-    const d = a.outTrigger("trigger " + t);
-    s.push(d);
-    d.onLinkChanged = c;
+    const m = a.outTrigger("trigger " + t);
+    s.push(m);
+    m.onLinkChanged = c;
     if (t < i - 1) {
       let e = a.inTrigger("exe " + t);
       e.onTriggered = h;
@@ -42710,23 +44417,23 @@ CABLES.OPS["a466bc1f-06e9-4595-8849-bffb9fe22f99"] = {
 };
 Ops.Ui.VizTexture = function () {
   CABLES.Op.apply(this, arguments);
-  const M = this;
-  const n = (M.attachments = {
+  const k = this;
+  const n = (k.attachments = {
     viztex_frag:
       "IN vec2 texCoord;\nUNI sampler2D tex;\nUNI samplerCube cubeMap;\nUNI float width;\nUNI float height;\nUNI float type;\nUNI float time;\n\nfloat LinearizeDepth(float d,float zNear,float zFar)\n{\n    float z_n = 2.0 * d - 1.0;\n    return 2.0 * zNear / (zFar + zNear - z_n * (zFar - zNear));\n}\n\nvoid main()\n{\n    vec4 col=vec4(vec3(0.),0.0);\n\n    vec4 colTex=texture(tex,texCoord);\n\n\n\n    if(type==1.0)\n    {\n        vec4 depth=vec4(0.);\n        vec2 localST=texCoord;\n        localST.y = 1. - localST.y;\n\n        localST.t = mod(localST.t*3.,1.);\n        localST.s = mod(localST.s*4.,1.);\n\n        #ifdef WEBGL2\n            #define texCube texture\n        #endif\n        #ifdef WEBGL1\n            #define texCube textureCube\n        #endif\n\n//         //Due to the way my depth-cubeMap is rendered, objects to the -x,y,z side is projected to the positive x,y,z side\n//         //Inside where top/bottom is to be drawn?\n        if (texCoord.s*4.> 1. && texCoord.s*4.<2.)\n        {\n            //Bottom (-y) quad\n            if (texCoord.t*3. < 1.)\n            {\n                vec3 dir=vec3(localST.s*2.-1.,-1.,-localST.t*2.+1.);//Due to the (arbitrary) way I choose as up in my depth-viewmatrix, i her emultiply the latter coordinate with -1\n                depth = texCube(cubeMap, dir);\n            }\n            //top (+y) quad\n            else if (texCoord.t*3. > 2.)\n            {\n                vec3 dir=vec3(localST.s*2.-1.,1.,localST.t*2.-1.);//Get lower y texture, which is projected to the +y part of my cubeMap\n                depth = texCube(cubeMap, dir);\n            }\n            else//Front (-z) quad\n            {\n                vec3 dir=vec3(localST.s*2.-1.,-localST.t*2.+1.,1.);\n                depth = texCube(cubeMap, dir);\n            }\n        }\n//         //If not, only these ranges should be drawn\n        else if (texCoord.t*3. > 1. && texCoord.t*3. < 2.)\n        {\n            if (texCoord.x*4. < 1.)//left (-x) quad\n            {\n                vec3 dir=vec3(-1.,-localST.t*2.+1.,localST.s*2.-1.);\n                depth = texCube(cubeMap, dir);\n            }\n            else if (texCoord.x*4. < 3.)//right (+x) quad (front was done above)\n            {\n                vec3 dir=vec3(1,-localST.t*2.+1.,-localST.s*2.+1.);\n                depth = texCube(cubeMap, dir);\n            }\n            else //back (+z) quad\n            {\n                vec3 dir=vec3(-localST.s*2.+1.,-localST.t*2.+1.,-1.);\n                depth = texCube(cubeMap, dir);\n            }\n        }\n        // colTex = vec4(vec3(depth),1.);\n        colTex = vec4(depth);\n    }\n\n    if(type==2.0)\n    {\n       float near = 0.1;\n       float far = 50.;\n       float depth = LinearizeDepth(colTex.r, near, far);\n       colTex.rgb = vec3(depth);\n    }\n\n\n\n\n    #ifdef ANIM_RANGE\n\n        if(colTex.r>1.0 || colTex.r<0.0)\n            colTex.r=mod(colTex.r,1.0)*0.5+(sin(colTex.r+mod(colTex.r*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\n        if(colTex.g>1.0 || colTex.g<0.0)\n            colTex.g=mod(colTex.g,1.0)*0.5+(sin(colTex.g+mod(colTex.g*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\n        if(colTex.b>1.0 || colTex.b<0.0)\n            colTex.b=mod(colTex.b,1.0)*0.5+(sin(colTex.b+mod(colTex.b*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\n\n    #endif\n\n\n    // #ifdef ANIM_RANGE\n    //     if(colTex.r>1.0 || colTex.r<0.0)\n    //     {\n    //         float r=mod( time+colTex.r,1.0)*0.5+0.5;\n    //         colTex.r=r;\n    //     }\n    //     if(colTex.g>1.0 || colTex.g<0.0)\n    //     {\n    //         float r=mod( time+colTex.g,1.0)*0.5+0.5;\n    //         colTex.g=r;\n    //     }\n    //     if(colTex.b>1.0 || colTex.b<0.0)\n    //     {\n    //         float r=mod( time+colTex.b,1.0)*0.5+0.5;\n    //         colTex.b=r;\n    //     }\n    // #endif\n\n    #ifdef MOD_RANGE\n        colTex.r=mod(colTex.r,1.0001);\n        colTex.g=mod(colTex.g,1.0001);\n        colTex.b=mod(colTex.b,1.0001);\n\n    #endif\n\n    #ifdef ALPHA_ONE\n        colTex.a=1.0;\n    #endif\n    #ifdef ALPHA_INV\n        colTex.a=1.0-colTex.a;\n    #endif\n\n    outColor = mix(col,colTex,colTex.a);\n}\n\n",
     viztex_vert:
       "IN vec3 vPosition;\nIN vec2 attrTexCoord;\nOUT vec2 texCoord;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nvoid main()\n{\n    texCoord=vec2(attrTexCoord.x,1.0-attrTexCoord.y);\n    vec4 pos = vec4( vPosition, 1. );\n    mat4 mvMatrix=viewMatrix * modelMatrix;\n    gl_Position = projMatrix * mvMatrix * pos;\n}",
   });
-  const V = M.inTexture("Texture In"),
-    U = M.inBool("Show Info", false),
-    e = M.inSwitch("Visualize outside 0-1", ["Off", "Anim", "Modulo"], "Anim"),
-    t = M.inSwitch("Alpha", ["A", "1", "1-A"], "A"),
-    D = M.inBool("Show Color", false),
-    B = M.inFloatSlider("X", 0.5),
-    G = M.inFloatSlider("Y", 0.5),
-    r = M.outTexture("Texture Out"),
-    F = M.outString("Info");
-  M.setUiAttrib({ height: 150, resizable: true });
+  const V = k.inTexture("Texture In"),
+    U = k.inBool("Show Info", false),
+    e = k.inSwitch("Visualize outside 0-1", ["Off", "Anim", "Modulo"], "Anim"),
+    t = k.inSwitch("Alpha", ["A", "1", "1-A"], "A"),
+    D = k.inBool("Show Color", false),
+    G = k.inFloatSlider("X", 0.5),
+    B = k.inFloatSlider("Y", 0.5),
+    r = k.outTexture("Texture Out"),
+    F = k.outString("Info");
+  k.setUiAttrib({ height: 150, resizable: true });
   const z = new CABLES.Timer();
   let i = null;
   let q = null;
@@ -42740,15 +44447,15 @@ Ops.Ui.VizTexture = function () {
     z.play();
   }
   function s() {
-    B.setUiAttribs({ greyout: !D.get() });
     G.setUiAttribs({ greyout: !D.get() });
+    B.setUiAttribs({ greyout: !D.get() });
   }
   V.onChange = () => {
     const e = V.get();
     r.setRef(e);
     let t = "";
     if (V.get() && V.isLinked()) t = V.links[0].getOtherPort(V).name;
-    M.setUiAttrib({ extendTitle: t });
+    k.setUiAttrib({ extendTitle: t });
   };
   function o() {
     if (!i) return;
@@ -42757,34 +44464,34 @@ Ops.Ui.VizTexture = function () {
     i.toggleDefine("ALPHA_INV", t.get() == "1-A");
     i.toggleDefine("ALPHA_ONE", t.get() == "1");
   }
-  M.renderVizLayerGl = (c, h) => {
+  k.renderVizLayerGl = (c, h) => {
     if (!V.isLinked()) return;
     if (!h.useGl) return;
     const f = V;
-    const d = 5;
-    const p = d + 1;
+    const m = 5;
+    const p = m + 1;
     const e = CABLES.UI.uiProfiler.start("previewlayer texture");
-    const m = f.op.patch.cgl;
+    const d = f.op.patch.cgl;
     if (!this._emptyCubemap)
-      this._emptyCubemap = CGL.Texture.getEmptyCubemapTexture(m);
+      this._emptyCubemap = CGL.Texture.getEmptyCubemapTexture(d);
     f.op.patch.cgl.profileData.profileTexPreviews++;
-    const g = f.get() || CGL.Texture.getEmptyTexture(m);
+    const g = f.get() || CGL.Texture.getEmptyTexture(d);
     if (!this._mesh) {
       const t = new CGL.Geometry("vizTexture rect");
       t.vertices = [1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1, 0];
       t.texCoords = [1, 1, 0, 1, 1, 0, 0, 0];
       t.verticesIndices = [0, 1, 2, 3, 1, 2];
-      this._mesh = new CGL.Mesh(m, t);
+      this._mesh = new CGL.Mesh(d, t);
     }
     if (!this._shader) {
-      this._shader = new CGL.Shader(m, "glpreviewtex");
+      this._shader = new CGL.Shader(d, "glpreviewtex");
       this._shader.setModules([
         "MODULE_VERTEX_POSITION",
         "MODULE_COLOR",
         "MODULE_BEGIN_FRAG",
       ]);
       this._shader.setSource(n.viztex_vert, n.viztex_frag);
-      this._shaderTexUniform = new CGL.Uniform(this._shader, "t", "tex", d);
+      this._shaderTexUniform = new CGL.Uniform(this._shader, "t", "tex", m);
       this._shaderTexCubemapUniform = new CGL.Uniform(
         this._shader,
         "tc",
@@ -42808,13 +44515,13 @@ Ops.Ui.VizTexture = function () {
       this._shaderTypeUniform = new CGL.Uniform(this._shader, "f", "type", 0);
       this._shaderTimeUniform = new CGL.Uniform(this._shader, "f", "time", 0);
     }
-    m.pushPMatrix();
+    d.pushPMatrix();
     const b = [g.width, g.height];
     const v =
       f.op.patch.cgl.canvasWidth > b[0] && f.op.patch.cgl.canvasHeight > b[1];
     if (v) {
       mat4.ortho(
-        m.pMatrix,
+        d.pMatrix,
         0,
         f.op.patch.cgl.canvasWidth,
         f.op.patch.cgl.canvasHeight,
@@ -42822,49 +44529,49 @@ Ops.Ui.VizTexture = function () {
         0.001,
         11
       );
-    } else mat4.ortho(m.pMatrix, -1, 1, 1, -1, 0.001, 11);
-    const _ = m.getTexture(d);
-    const O = m.getTexture(p);
+    } else mat4.ortho(d.pMatrix, -1, 1, 1, -1, 0.001, 11);
+    const _ = d.getTexture(m);
+    const O = d.getTexture(p);
     let A = 0;
     if (g) {
       if (g.cubemap) A = 1;
       if (g.textureType == CGL.Texture.TYPE_DEPTH) A = 2;
       if (A == 0 || A == 2) {
-        m.setTexture(d, g.tex);
-        m.setTexture(p, this._emptyCubemap.cubemap, m.gl.TEXTURE_CUBE_MAP);
+        d.setTexture(m, g.tex);
+        d.setTexture(p, this._emptyCubemap.cubemap, d.gl.TEXTURE_CUBE_MAP);
       } else if (A == 1) {
-        m.setTexture(p, g.cubemap, m.gl.TEXTURE_CUBE_MAP);
+        d.setTexture(p, g.cubemap, d.gl.TEXTURE_CUBE_MAP);
       }
       z.update();
       this._shaderTimeUniform.setValue(z.get());
       this._shaderTypeUniform.setValue(A);
       let t = [f.op.patch.cgl.canvasWidth, f.op.patch.cgl.canvasHeight];
-      m.gl.clearColor(0, 0, 0, 0);
-      m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
-      m.pushModelMatrix();
+      d.gl.clearColor(0, 0, 0, 0);
+      d.gl.clear(d.gl.COLOR_BUFFER_BIT | d.gl.DEPTH_BUFFER_BIT);
+      d.pushModelMatrix();
       if (v) {
         t = b;
-        mat4.translate(m.mMatrix, m.mMatrix, [b[0] / 2, b[1] / 2, 0]);
-        mat4.scale(m.mMatrix, m.mMatrix, [b[0] / 2, b[1] / 2, 0]);
+        mat4.translate(d.mMatrix, d.mMatrix, [b[0] / 2, b[1] / 2, 0]);
+        mat4.scale(d.mMatrix, d.mMatrix, [b[0] / 2, b[1] / 2, 0]);
       }
       this._mesh.render(this._shader);
-      m.popModelMatrix();
-      if (A == 0) m.setTexture(d, _);
-      if (A == 1) m.setTexture(p, O);
-      m.popPMatrix();
-      m.resetViewPort();
-      const y = [h.width, h.height];
-      const I = false;
-      if (g.width > g.height) y[1] = (h.width * b[1]) / b[0];
+      d.popModelMatrix();
+      if (A == 0) d.setTexture(m, _);
+      if (A == 1) d.setTexture(p, O);
+      d.popPMatrix();
+      d.resetViewPort();
+      const I = [h.width, h.height];
+      const y = false;
+      if (g.width > g.height) I[1] = (h.width * b[1]) / b[0];
       else {
-        y[1] = h.width * (b[1] / b[0]);
-        if (y[1] > h.height) {
-          const E = h.height / y[1];
-          y[0] *= E;
-          y[1] *= E;
+        I[1] = h.width * (b[1] / b[0]);
+        if (I[1] > h.height) {
+          const E = h.height / I[1];
+          I[0] *= E;
+          I[1] *= E;
         }
       }
-      const x = y[0] > b[0] && y[1] > b[1];
+      const x = I[0] > b[0] && I[1] > b[1];
       c.imageSmoothingEnabled = true;
       c.fillStyle = "#ffffff";
       c.fillRect(h.x, h.y - 10, 10, 10);
@@ -42882,65 +44589,65 @@ Ops.Ui.VizTexture = function () {
           c.fillRect(h.x + i * t, h.y + r * e, i, r);
         }
       c.fillStyle = "#222";
-      const T = (h.width - y[0]) / 2;
-      const S = (e - y[1]) / 2;
-      let a = h.x + (h.width - y[0]) / 2;
-      let s = h.y + (e - y[1]) / 2;
-      let o = y[0];
-      let l = y[1];
-      if (e - y[1] < 0) {
-        a = h.x + (h.width - (y[0] * e) / y[1]) / 2;
+      const T = (h.width - I[0]) / 2;
+      const S = (e - I[1]) / 2;
+      let a = h.x + (h.width - I[0]) / 2;
+      let s = h.y + (e - I[1]) / 2;
+      let o = I[0];
+      let l = I[1];
+      if (e - I[1] < 0) {
+        a = h.x + (h.width - (I[0] * e) / I[1]) / 2;
         s = h.y;
-        o = (y[0] * e) / y[1];
+        o = (I[0] * e) / I[1];
         l = e;
       }
       c.fillRect(h.x, h.y, a - h.x, e);
       c.fillRect(h.x + o + a - h.x, h.y, o, e);
       c.fillRect(h.x, h.y, h.width, S);
-      c.fillRect(h.x, h.y + y[1] + S, h.width, S);
+      c.fillRect(h.x, h.y + I[1] + S, h.width, S);
       if (
-        m.canvas &&
-        m.canvasWidth > 0 &&
-        m.canvasHeight > 0 &&
-        m.canvas.width > 0 &&
-        m.canvas.height > 0
+        d.canvas &&
+        d.canvasWidth > 0 &&
+        d.canvasHeight > 0 &&
+        d.canvas.width > 0 &&
+        d.canvas.height > 0
       ) {
         try {
           const C = o / t[0] > 3 || l / t[1] > 3;
-          const j = o / t[0] > 10 || l / t[1] > 10;
+          const N = o / t[0] > 10 || l / t[1] > 10;
           if (b[1] == 1) {
             c.imageSmoothingEnabled = false;
-            c.drawImage(m.canvas, 0, 0, t[0], t[1], h.x, h.y, h.width, e);
+            c.drawImage(d.canvas, 0, 0, t[0], t[1], h.x, h.y, h.width, e);
             c.imageSmoothingEnabled = true;
           } else if (b[0] == 1) {
             c.imageSmoothingEnabled = false;
-            c.drawImage(m.canvas, 0, 0, t[0], t[1], h.x, h.y, h.width, e);
+            c.drawImage(d.canvas, 0, 0, t[0], t[1], h.x, h.y, h.width, e);
             c.imageSmoothingEnabled = true;
           } else if (
-            y[0] != 0 &&
-            y[1] != 0 &&
+            I[0] != 0 &&
+            I[1] != 0 &&
             h.width != 0 &&
             e != 0 &&
             o != 0 &&
             l != 0
           ) {
             c.imageSmoothingEnabled = !C;
-            c.drawImage(m.canvas, 0, 0, t[0], t[1], a, s, o, l);
+            c.drawImage(d.canvas, 0, 0, t[0], t[1], a, s, o, l);
           }
-          if (j) {
-            const N = o / t[0];
-            const w = l / t[1];
+          if (N) {
+            const j = o / t[0];
+            const L = l / t[1];
             c.imageSmoothingEnabled = true;
             c.lineWidth = 1;
             c.globalAlpha = 0.5;
             c.beginPath();
             for (let e = 0; e <= t[0]; e++) {
-              c.moveTo(a + e * N, s);
-              c.lineTo(a + e * N, s + l);
+              c.moveTo(a + e * j, s);
+              c.lineTo(a + e * j, s + l);
             }
             for (let e = 0; e <= t[1]; e++) {
-              c.moveTo(a, s + e * w);
-              c.lineTo(a + o, s + e * w);
+              c.moveTo(a, s + e * L);
+              c.lineTo(a + o, s + e * L);
             }
             c.strokeStyle = "#555";
             c.stroke();
@@ -42956,22 +44663,22 @@ Ops.Ui.VizTexture = function () {
       F.set(u);
       if (D.get()) {
         u += H + "\n";
-        const P = a + o * B.get();
-        const L = s + l * G.get();
+        const P = a + o * G.get();
+        const w = s + l * B.get();
         c.fillStyle = "#000";
-        c.fillRect(P - 1, L - 10, 3, 20);
-        c.fillRect(P, L - 1, 20, 3);
+        c.fillRect(P - 1, w - 10, 3, 20);
+        c.fillRect(P, w - 1, 20, 3);
         c.fillStyle = "#fff";
-        c.fillRect(P - 1, L - 10, 1, 20);
-        c.fillRect(P - 10, L - 1, 20, 1);
+        c.fillRect(P - 1, w - 10, 1, 20);
+        c.fillRect(P - 10, w - 1, 20, 1);
       }
       if (U.get()) {
-        M.setUiAttrib({ comment: u });
+        k.setUiAttrib({ comment: u });
       }
       if (D.get()) {
-        const R = m.gl;
-        const k = V.get();
-        if (!k) {
+        const R = d.gl;
+        const M = V.get();
+        if (!M) {
           H = "";
           return;
         }
@@ -42982,20 +44689,20 @@ Ops.Ui.VizTexture = function () {
           R.FRAMEBUFFER,
           R.COLOR_ATTACHMENT0,
           R.TEXTURE_2D,
-          k.tex,
+          M.tex,
           0
         );
         R.bindFramebuffer(R.FRAMEBUFFER, null);
         X.read(
-          m,
+          d,
           q,
-          k.pixelFormat,
-          B.get() * k.width,
-          k.height - G.get() * k.height,
+          M.pixelFormat,
+          G.get() * M.width,
+          M.height - B.get() * M.height,
           1,
           1,
           (e) => {
-            if (!CGL.Texture.isPixelFormatFloat(k.pixelFormat)) {
+            if (!CGL.Texture.isPixelFormatFloat(M.pixelFormat)) {
               H = "Pixel Float: " + Math.floor((e[0] / 255) * 100) / 100;
               if (!isNaN(e[1]))
                 H += ", " + Math.floor((e[1] / 255) * 100) / 100;
@@ -43004,7 +44711,7 @@ Ops.Ui.VizTexture = function () {
               if (!isNaN(e[3]))
                 H += ", " + Math.floor((e[3] / 255) * 100) / 100;
               H += "\n";
-              if (k.pixelFormat.indexOf("ubyte") > 0) {
+              if (M.pixelFormat.indexOf("ubyte") > 0) {
                 H += "Pixel UByte: ";
                 H += Math.round(e[0]);
                 if (!isNaN(e[1])) H += ", " + Math.round(e[1]);
@@ -43028,8 +44735,8 @@ Ops.Ui.VizTexture = function () {
         );
       }
     }
-    m.gl.clearColor(0, 0, 0, 0);
-    m.gl.clear(m.gl.COLOR_BUFFER_BIT | m.gl.DEPTH_BUFFER_BIT);
+    d.gl.clearColor(0, 0, 0, 0);
+    d.gl.clear(d.gl.COLOR_BUFFER_BIT | d.gl.DEPTH_BUFFER_BIT);
     e.finish();
   };
 };
@@ -43053,20 +44760,20 @@ Ops.Gl.RenderToTexture_v3 = function () {
     c = i.outTrigger("trigger"),
     h = i.outTexture("texture"),
     f = i.outTexture("textureDepth"),
-    d = i.inDropDown(
+    m = i.inDropDown(
       "Pixel Format",
       CGL.Texture.PIXELFORMATS,
       CGL.Texture.PFORMATSTR_RGBA8UB
     ),
     p = i.inValueBool("Depth", true),
-    m = i.inValueBool("Clear", true);
+    d = i.inValueBool("Clear", true);
   const g = i.patch.cgl;
   let b = null;
   let v = true;
   i.setPortGroup("Size", [n, r, a, s]);
-  d.onChange =
+  m.onChange =
     p.onChange =
-    m.onChange =
+    d.onChange =
     o.onChange =
     l.onChange =
     u.onChange =
@@ -43093,7 +44800,7 @@ Ops.Gl.RenderToTexture_v3 = function () {
       if (o.get() == "nearest") r = CGL.Texture.FILTER_NEAREST;
       else if (o.get() == "linear") r = CGL.Texture.FILTER_LINEAR;
       else if (o.get() == "mipmap") r = CGL.Texture.FILTER_MIPMAP;
-      if (d.get().indexOf("loat") && o.get() == "mipmap")
+      if (m.get().indexOf("loat") && o.get() == "mipmap")
         i.setUiError(
           "fpmipmap",
           "Can't use mipmap and float texture at the same time"
@@ -43111,18 +44818,18 @@ Ops.Gl.RenderToTexture_v3 = function () {
         if (u.get() == "8x") t = 8;
         b = new CGL.Framebuffer2(g, 8, 8, {
           name: "render2texture " + i.id,
-          pixelFormat: d.get(),
+          pixelFormat: m.get(),
           multisampling: e,
           multisamplingSamples: t,
           wrap: n,
           filter: r,
           depth: p.get(),
-          clear: m.get(),
+          clear: d.get(),
         });
       } else {
         b = new CGL.Framebuffer(g, 8, 8, {
           isFloatingPointTexture: false,
-          clear: m.get(),
+          clear: d.get(),
         });
       }
       if (b && b.valid) {
@@ -43195,9 +44902,9 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
   const c = e.inValueFloat("Offset Y", 0);
   const h = e.inValueBool("fillShape", true);
   const f = e.inValue("Line thickness", 1);
-  const d = e.inValueBool("Invert color", false);
+  const m = e.inValueBool("Invert color", false);
   const p = e.inValue("width", 0.5);
-  const m = e.inValue("height", 0.5);
+  const d = e.inValue("height", 0.5);
   const g = e.inValueSlider("Rotate", 0);
   const b = e.inValueSlider("r", Math.random()),
     v = e.inValueSlider("g", Math.random()),
@@ -43205,8 +44912,8 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
     O = e.inValueSlider("a", 1);
   b.setUiAttribs({ colorPick: true });
   const A = e.outTrigger("trigger");
-  let y = 0;
-  function I() {
+  let I = 0;
+  function y() {
     let e = s.get();
     if (
       e === "circle" ||
@@ -43216,13 +44923,13 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
       e === "octogon" ||
       e === "hexagram"
     )
-      y = 0;
-    else if (e === "box" || e === "iso triangle" || e === "rhombus") y = 1;
-    if (y === 0) {
-      m.setUiAttribs({ greyout: true });
+      I = 0;
+    else if (e === "box" || e === "iso triangle" || e === "rhombus") I = 1;
+    if (I === 0) {
+      d.setUiAttribs({ greyout: true });
       p.setUiAttribs({ title: "Size" });
-    } else if (y === 1) {
-      m.setUiAttribs({ greyout: false });
+    } else if (I === 1) {
+      d.setUiAttribs({ greyout: false });
       p.setUiAttribs({ title: "Width" });
     }
   }
@@ -43230,7 +44937,7 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
     f.setUiAttribs({ greyout: h.get() });
   };
   e.init = s.onChange = function () {
-    I();
+    y();
     T.toggleDefine("IS_CIRCLE", s.get());
     T.toggleDefine("IS_EQUI_TRIANGLE", s.get() === "eqi triangle");
     T.toggleDefine("IS_ISO_TRIANGLE", s.get() === "iso triangle");
@@ -43247,20 +44954,20 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
   const S = new CGL.Uniform(T, "t", "tex", 0);
   const E = new CGL.Uniform(T, "f", "amount", a);
   const C = new CGL.Uniform(T, "b", "mirrorX", o);
-  const j = new CGL.Uniform(T, "b", "mirrorY", l);
-  const N = new CGL.Uniform(T, "f", "xPos", u);
-  const w = new CGL.Uniform(T, "f", "yPos", c);
-  const k = new CGL.Uniform(T, "b", "invertColor", d);
+  const N = new CGL.Uniform(T, "b", "mirrorY", l);
+  const j = new CGL.Uniform(T, "f", "xPos", u);
+  const L = new CGL.Uniform(T, "f", "yPos", c);
+  const M = new CGL.Uniform(T, "b", "invertColor", m);
   const P = new CGL.Uniform(T, "b", "fillShape", h);
-  const M = new CGL.Uniform(T, "f", "width", p);
-  const V = new CGL.Uniform(T, "f", "height", m);
+  const k = new CGL.Uniform(T, "f", "width", p);
+  const V = new CGL.Uniform(T, "f", "height", d);
   const U = new CGL.Uniform(T, "f", "lineThickness", f);
   const D = new CGL.Uniform(T, "f", "rotate", g);
-  let B = new CGL.Uniform(T, "f", "r", b);
-  let G = new CGL.Uniform(T, "f", "g", v);
+  let G = new CGL.Uniform(T, "f", "r", b);
+  let B = new CGL.Uniform(T, "f", "g", v);
   let F = new CGL.Uniform(T, "f", "b", _);
   let z = new CGL.Uniform(T, "f", "a", O);
-  let L = new CGL.Uniform(T, "f", "aspect", 1);
+  let w = new CGL.Uniform(T, "f", "aspect", 1);
   CGL.TextureEffect.setupBlending(e, T, r, a, i);
   n.onTriggered = R;
   function R() {
@@ -43268,7 +44975,7 @@ Ops.Gl.ImageCompose.Shapes2d_v2 = function () {
     x.pushShader(T);
     x.currentTextureEffect.bind();
     P.setValue(h.get());
-    L.setValue(x.currentTextureEffect.aspectRatio);
+    w.setValue(x.currentTextureEffect.aspectRatio);
     x.setTexture(0, x.currentTextureEffect.getCurrentSourceTexture().tex);
     x.currentTextureEffect.finish();
     x.popShader();
@@ -43299,7 +45006,7 @@ Ops.Gl.ImageCompose.AlphaMask_v2 = function () {
   const c = new CGL.Uniform(u, "t", "tex", 0);
   const h = new CGL.Uniform(u, "t", "image", 1);
   const f = new CGL.Uniform(u, "f", "amount", r);
-  const d = e.inDropDown(
+  const m = e.inDropDown(
     "method",
     ["luminance", "image alpha", "red", "green", "blue"],
     "luminance"
@@ -43307,13 +45014,13 @@ Ops.Gl.ImageCompose.AlphaMask_v2 = function () {
   s.onChange =
     i.onChange =
     a.onChange =
-    d.onChange =
+    m.onChange =
       function () {
-        u.toggleDefine("FROM_LUMINANCE", d.get() == "luminance");
-        u.toggleDefine("FROM_ALPHA", d.get() == "image alpha");
-        u.toggleDefine("FROM_RED", d.get() == "red");
-        u.toggleDefine("FROM_GREEN", d.get() == "green");
-        u.toggleDefine("FROM_BLUR", d.get() == "blue");
+        u.toggleDefine("FROM_LUMINANCE", m.get() == "luminance");
+        u.toggleDefine("FROM_ALPHA", m.get() == "image alpha");
+        u.toggleDefine("FROM_RED", m.get() == "red");
+        u.toggleDefine("FROM_GREEN", m.get() == "green");
+        u.toggleDefine("FROM_BLUR", m.get() == "blue");
         u.toggleDefine("USE_TEXTURE", s.get());
         u.toggleDefine("INVERT", a.get());
         u.toggleDefine("METH_MUL", i.get() == "Mul");
@@ -43355,9 +45062,9 @@ Ops.Gl.ImageCompose.Pixelate_v2 = function () {
   c.setSource(c.getDefaultVertexShader(), t.pixelate_frag);
   const h = new CGL.Uniform(c, "t", "tex", 0);
   const f = new CGL.Uniform(c, "t", "multiplierTex", 1);
-  const d = new CGL.Uniform(c, "f", "amount", a);
+  const m = new CGL.Uniform(c, "f", "amount", a);
   const p = new CGL.Uniform(c, "f", "amountX", s);
-  const m = new CGL.Uniform(c, "f", "amountY", o);
+  const d = new CGL.Uniform(c, "f", "amountY", o);
   r.onChange = function () {
     c.toggleDefine("PIXELATE_TEXTURE", r.isLinked());
   };
@@ -43396,9 +45103,9 @@ Ops.Gl.ImageCompose.Noise.GlitchNoise_v2 = function () {
     c = e.inValue("Block size small y", 9),
     h = e.inValue("Block size large x", 8),
     f = e.inValue("Block size large y", 4),
-    d = e.inValue("Scroll X", 0),
+    m = e.inValue("Scroll X", 0),
     p = e.inValue("Scroll Y", 0),
-    m = e.outTrigger("trigger");
+    d = e.outTrigger("trigger");
   const g = 0;
   const b = e.patch.cgl;
   const v = new CGL.Shader(b, e.name, e);
@@ -43406,14 +45113,14 @@ Ops.Gl.ImageCompose.Noise.GlitchNoise_v2 = function () {
   const _ = new CGL.Uniform(v, "t", "tex", g),
     O = new CGL.Uniform(v, "f", "amount", r),
     A = new CGL.Uniform(v, "f", "time", s),
-    y = new CGL.Uniform(v, "f", "frequency", o),
-    I = new CGL.Uniform(v, "f", "strength", l),
+    I = new CGL.Uniform(v, "f", "frequency", o),
+    y = new CGL.Uniform(v, "f", "strength", l),
     x = new CGL.Uniform(v, "f", "blockSizeA", u),
     T = new CGL.Uniform(v, "f", "blockSizeB", c),
     S = new CGL.Uniform(v, "f", "blockSizeC", h),
     E = new CGL.Uniform(v, "f", "blockSizeD", f),
-    C = new CGL.Uniform(v, "f", "scrollX", d),
-    j = new CGL.Uniform(v, "f", "scrollY", p);
+    C = new CGL.Uniform(v, "f", "scrollX", m),
+    N = new CGL.Uniform(v, "f", "scrollY", p);
   CGL.TextureEffect.setupBlending(e, v, i, r, a);
   n.onTriggered = function () {
     if (!CGL.TextureEffect.checkOpInEffect(e, 3)) return;
@@ -43422,7 +45129,7 @@ Ops.Gl.ImageCompose.Noise.GlitchNoise_v2 = function () {
     b.setTexture(g, b.currentTextureEffect.getCurrentSourceTexture().tex);
     b.currentTextureEffect.finish();
     b.popShader();
-    m.trigger();
+    d.trigger();
   };
 };
 Ops.Gl.ImageCompose.Noise.GlitchNoise_v2.prototype = new CABLES.Op();
@@ -43455,10 +45162,10 @@ Ops.Gl.ImageCompose.PixelDisplacement_v4 = function () {
   e.setPortGroup("Axis Displacement Strength", [s, o]);
   e.setPortGroup("Modes", [l, u]);
   e.toWorkPortsNeedToBeLinked(r);
-  const d = e.patch.cgl,
-    p = new CGL.Shader(d, e.name, e);
+  const m = e.patch.cgl,
+    p = new CGL.Shader(m, e.name, e);
   p.setSource(p.getDefaultVertexShader(), t.pixeldisplace3_frag);
-  const m = new CGL.Uniform(p, "t", "tex", 0),
+  const d = new CGL.Uniform(p, "t", "tex", 0),
     g = new CGL.Uniform(p, "t", "displaceTex", 1),
     b = new CGL.Uniform(p, "f", "amountX", s),
     v = new CGL.Uniform(p, "f", "amountY", o),
@@ -43484,17 +45191,17 @@ Ops.Gl.ImageCompose.PixelDisplacement_v4 = function () {
   n.onTriggered = function () {
     if (!CGL.TextureEffect.checkOpInEffect(e, 3)) return;
     if (r.get()) {
-      d.pushShader(p);
-      d.currentTextureEffect.bind();
+      m.pushShader(p);
+      m.currentTextureEffect.bind();
       _.setValue([
-        d.currentTextureEffect.getCurrentSourceTexture().width / r.get().width,
-        d.currentTextureEffect.getCurrentSourceTexture().height /
+        m.currentTextureEffect.getCurrentSourceTexture().width / r.get().width,
+        m.currentTextureEffect.getCurrentSourceTexture().height /
           r.get().height,
       ]);
-      d.setTexture(0, d.currentTextureEffect.getCurrentSourceTexture().tex);
-      if (r.get()) d.setTexture(1, r.get().tex);
-      d.currentTextureEffect.finish();
-      d.popShader();
+      m.setTexture(0, m.currentTextureEffect.getCurrentSourceTexture().tex);
+      if (r.get()) m.setTexture(1, r.get().tex);
+      m.currentTextureEffect.finish();
+      m.popShader();
     }
     f.trigger();
   };
@@ -43507,7 +45214,7 @@ CABLES.OPS["c00f79f2-0505-4b4f-b0bf-10ef7875dd87"] = {
 Ops.Gl.Textures.CopyTexture_v3 = function () {
   CABLES.Op.apply(this, arguments);
   const t = this;
-  const M = (t.attachments = {
+  const k = (t.attachments = {
     copytexture_frag:
       "UNI float a;\nUNI sampler2D tex;\n\n#ifdef TEX_MASK\nUNI sampler2D texMask;\n#endif\n\nIN vec2 texCoord;\n\nvoid main()\n{\n    vec2 tc=texCoord;\n\n    #ifdef FLIPX\n        tc.x=1.0-tc.x;\n    #endif\n    #ifdef FLIPY\n        tc.y=1.0-tc.y;\n    #endif\n\n    vec4 col=texture(tex,tc);\n\n    #ifdef TEX_MASK\n        col.a=texture(texMask,tc).r;\n    #endif\n\n    #ifdef GREY_R\n        col.rgb=vec3(col.r);\n    #endif\n\n    #ifdef GREY_G\n        col.rgb=vec3(col.g);\n    #endif\n\n    #ifdef GREY_B\n        col.rgb=vec3(col.b);\n    #endif\n\n    #ifdef GREY_A\n        col.rgb=vec3(col.a);\n    #endif\n\n    #ifdef GREY_LUMI\n        col.rgb=vec3( dot(vec3(0.2126,0.7152,0.0722), col.rgb) );\n    #endif\n\n\n    #ifdef INVERT_A\n        col.a=1.0-col.a;\n    #endif\n\n    #ifdef INVERT_R\n        col.r=1.0-col.r;\n    #endif\n\n    #ifdef INVERT_G\n        col.g=1.0-col.g;\n    #endif\n\n    #ifdef INVERT_B\n        col.b=1.0-col.b;\n    #endif\n\n    #ifdef ALPHA_1\n        col.a=1.0;\n    #endif\n\n\n\n\n    outColor= col;\n}",
   });
@@ -43535,9 +45242,9 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
       ["Off", "R", "G", "B", "A", "Luminance"],
       "Off"
     ),
-    d = t.inBool("Invert R", false),
+    m = t.inBool("Invert R", false),
     p = t.inBool("Invert G", false),
-    m = t.inBool("Invert B", false),
+    d = t.inBool("Invert B", false),
     V = t.inBool("Invert A", false),
     g = t.inBool("Flip X", false),
     b = t.inBool("Flip Y", false),
@@ -43546,36 +45253,36 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
     U = t.outNumber("Aspect Ratio");
   h.setUiAttribs({ hidePort: true });
   f.setUiAttribs({ hidePort: true });
-  d.setUiAttribs({ hidePort: true });
-  p.setUiAttribs({ hidePort: true });
   m.setUiAttribs({ hidePort: true });
+  p.setUiAttribs({ hidePort: true });
+  d.setUiAttribs({ hidePort: true });
   let D = null;
   const O = t.patch.cgl;
   let A = null;
-  let y = null;
   let I = null;
+  let y = null;
   let x = true;
   let T = null;
   let S = 2,
     E = 2;
   const C = [0, 0, 0, 0];
-  let j = true;
+  let N = true;
   t.toWorkPortsNeedToBeLinked(e, n);
   t.setPortGroup("Size", [i, a, s]);
-  const N = new CGL.Shader(O, "copytexture");
-  N.setSource(N.getDefaultVertexShader(), M.copytexture_frag);
-  const B = new CGL.Uniform(N, "t", "tex", 0);
-  let G = new CGL.Uniform(N, "t", "texMask", 1);
-  let w = CGL.Texture.FILTER_LINEAR;
+  const j = new CGL.Shader(O, "copytexture");
+  j.setSource(j.getDefaultVertexShader(), k.copytexture_frag);
+  const G = new CGL.Uniform(j, "t", "tex", 0);
+  let B = new CGL.Uniform(j, "t", "texMask", 1);
+  let L = CGL.Texture.FILTER_LINEAR;
   let P = CGL.Texture.WRAP_CLAMP_TO_EDGE;
   g.onChange =
     b.onChange =
     h.onChange =
     u.onChange =
     f.onChange =
-    d.onChange =
-    p.onChange =
     m.onChange =
+    p.onChange =
+    d.onChange =
     c.onChange =
     o.onChange =
     l.onChange =
@@ -43592,46 +45299,46 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
     T = n.get();
   };
   e.onTriggered = q;
-  k();
-  function L() {
-    if (y) y.delete();
-    if (I) {
-      I.delete();
-      I = null;
+  M();
+  function w() {
+    if (I) I.delete();
+    if (y) {
+      y.delete();
+      y = null;
     }
-    y = new CGL.TextureEffect(O, { pixelFormat: l.get(), clear: false });
+    I = new CGL.TextureEffect(O, { pixelFormat: l.get(), clear: false });
     if (
-      !I ||
-      I.width != Math.floor(a.get()) ||
-      I.height != Math.floor(s.get()) ||
-      I.wrap != P ||
-      I.pixelFormat != l.get()
+      !y ||
+      y.width != Math.floor(a.get()) ||
+      y.height != Math.floor(s.get()) ||
+      y.wrap != P ||
+      y.pixelFormat != l.get()
     ) {
       const e = Math.min(O.maxAnisotropic, parseFloat(u.get()));
-      if (I) I.delete();
-      I = new CGL.Texture(O, {
+      if (y) y.delete();
+      y = new CGL.Texture(O, {
         name: "copytexture_" + t.id,
         pixelFormat: l.get(),
         anisotropic: e,
-        filter: w,
+        filter: L,
         wrap: P,
         width: Math.floor(a.get()),
         height: Math.floor(s.get()),
       });
     }
-    y.setSourceTexture(I);
-    k();
-    j = false;
+    I.setSourceTexture(y);
+    M();
+    N = false;
   }
   function R() {
     X();
-    j = true;
+    N = true;
     if (!e.isLinked() || !n.isLinked())
       _.setRef(CGL.Texture.getEmptyTexture(O));
   }
   function F() {
     if (!n.get() || n.get() == CGL.Texture.getEmptyTexture(O)) return;
-    if (!y) L();
+    if (!I) w();
     if (i.get()) {
       S = n.get().width;
       E = n.get().height;
@@ -43639,17 +45346,17 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
       S = Math.floor(a.get());
       E = Math.floor(s.get());
     }
-    if ((S != I.width || E != I.height) && S !== 0 && E !== 0) {
+    if ((S != y.width || E != y.height) && S !== 0 && E !== 0) {
       s.set(E);
       a.set(S);
-      I.filter = w;
-      I.setSize(S, E);
+      y.filter = L;
+      y.setSize(S, E);
       U.set(S / E);
-      y.setSourceTexture(I);
+      I.setSourceTexture(y);
     }
     x = false;
   }
-  function k() {
+  function M() {
     if (!CABLES.UI) return;
     u.setUiAttribs({ greyout: o.get() != "mipmap" });
     a.setUiAttribs({ greyout: i.get() });
@@ -43660,7 +45367,7 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
     R();
   }
   i.onChange = function () {
-    k();
+    M();
     if (i.get()) {
       a.onChange = null;
       s.onChange = null;
@@ -43677,8 +45384,8 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
       A = null;
       v.trigger();
       return;
-    } else if (!y || j || A != n.get()) {
-      L();
+    } else if (!I || N || A != n.get()) {
+      w();
     }
     const e = O.getViewPort();
     C[0] = e[0];
@@ -43688,10 +45395,10 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
     F();
     A = n.get();
     const t = O.currentTextureEffect;
-    O.currentTextureEffect = y;
-    y.setSourceTexture(I);
-    y.startEffect();
-    O.pushShader(N);
+    O.currentTextureEffect = I;
+    I.setSourceTexture(y);
+    I.startEffect();
+    O.pushShader(j);
     O.currentTextureEffect.bind();
     O.setTexture(0, n.get().tex);
     if (r.get()) O.setTexture(1, r.get().tex);
@@ -43699,45 +45406,45 @@ Ops.Gl.Textures.CopyTexture_v3 = function () {
     O.currentTextureEffect.finish();
     O.popShader();
     O.popBlend();
-    _.setRef(y.getCurrentSourceTexture());
-    y.endEffect();
+    _.setRef(I.getCurrentSourceTexture());
+    I.endEffect();
     O.setViewPort(C[0], C[1], C[2], C[3]);
     O.currentTextureEffect = t;
     O.setTexture(0, CGL.Texture.getEmptyTexture(O).tex);
     v.trigger();
   }
   function X() {
-    N.toggleDefine("FLIPX", g.get());
-    N.toggleDefine("FLIPY", b.get());
-    N.toggleDefine("TEX_MASK", r.get());
-    N.toggleDefine("GREY_R", f.get() === "R");
-    N.toggleDefine("GREY_G", f.get() === "G");
-    N.toggleDefine("GREY_B", f.get() === "B");
-    N.toggleDefine("GREY_A", f.get() === "A");
-    N.toggleDefine("GREY_LUMI", f.get() === "Luminance");
-    N.toggleDefine("ALPHA_1", h.get() === "1");
-    N.toggleDefine("ALPHA_A", h.get() === "A");
-    N.toggleDefine("INVERT_R", d.get());
-    N.toggleDefine("INVERT_G", p.get());
-    N.toggleDefine("INVERT_B", m.get());
-    N.toggleDefine("INVERT_A", V.get());
+    j.toggleDefine("FLIPX", g.get());
+    j.toggleDefine("FLIPY", b.get());
+    j.toggleDefine("TEX_MASK", r.get());
+    j.toggleDefine("GREY_R", f.get() === "R");
+    j.toggleDefine("GREY_G", f.get() === "G");
+    j.toggleDefine("GREY_B", f.get() === "B");
+    j.toggleDefine("GREY_A", f.get() === "A");
+    j.toggleDefine("GREY_LUMI", f.get() === "Luminance");
+    j.toggleDefine("ALPHA_1", h.get() === "1");
+    j.toggleDefine("ALPHA_A", h.get() === "A");
+    j.toggleDefine("INVERT_R", m.get());
+    j.toggleDefine("INVERT_G", p.get());
+    j.toggleDefine("INVERT_B", d.get());
+    j.toggleDefine("INVERT_A", V.get());
     if (c.get() == "repeat") P = CGL.Texture.WRAP_REPEAT;
     else if (c.get() == "mirrored repeat") P = CGL.Texture.WRAP_MIRRORED_REPEAT;
     else if (c.get() == "clamp to edge") P = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    if (o.get() == "nearest") w = CGL.Texture.FILTER_NEAREST;
-    else if (o.get() == "linear") w = CGL.Texture.FILTER_LINEAR;
-    else if (o.get() == "mipmap") w = CGL.Texture.FILTER_MIPMAP;
-    if (N.needsRecompile()) {
-      j = true;
+    if (o.get() == "nearest") L = CGL.Texture.FILTER_NEAREST;
+    else if (o.get() == "linear") L = CGL.Texture.FILTER_LINEAR;
+    else if (o.get() == "mipmap") L = CGL.Texture.FILTER_MIPMAP;
+    if (j.needsRecompile()) {
+      N = true;
     }
     if (
-      I &&
-      (I.width != Math.floor(a.get()) ||
-        I.height != Math.floor(s.get()) ||
-        I.wrap != P ||
-        I.pixelFormat != l.get())
+      y &&
+      (y.width != Math.floor(a.get()) ||
+        y.height != Math.floor(s.get()) ||
+        y.wrap != P ||
+        y.pixelFormat != l.get())
     ) {
-      j = true;
+      N = true;
     }
   }
 };
@@ -43770,16 +45477,16 @@ Ops.Gl.ImageCompose.DrawImage_v3 = function () {
     ),
     h = r.inValueBool("Invert alpha channel"),
     f = r.inValueBool("Aspect Ratio", false),
-    d = r.inValueSelect("Stretch Axis", ["X", "Y"], "X"),
+    m = r.inValueSelect("Stretch Axis", ["X", "Y"], "X"),
     p = r.inValueSlider("Position", 0),
-    m = r.inValueBool("Crop", false),
+    d = r.inValueBool("Crop", false),
     g = r.outTrigger("trigger");
   n.set("normal");
   const b = r.patch.cgl;
   const v = new CGL.Shader(b, "drawimage");
   u.onLinkChanged = _;
   r.setPortGroup("Mask", [u, c, h]);
-  r.setPortGroup("Aspect Ratio", [f, p, m, d]);
+  r.setPortGroup("Aspect Ratio", [f, p, d, m]);
   function _() {
     if (u.isLinked()) {
       l.setUiAttribs({ greyout: true });
@@ -43794,76 +45501,76 @@ Ops.Gl.ImageCompose.DrawImage_v3 = function () {
   r.toWorkPortsNeedToBeLinked(a);
   v.setSource(e.drawimage_vert, e.drawimage_frag);
   const O = new CGL.Uniform(v, "t", "tex", 0),
-    k = new CGL.Uniform(v, "t", "image", 1),
-    M = new CGL.Uniform(v, "t", "imageAlpha", 2),
+    M = new CGL.Uniform(v, "t", "image", 1),
+    k = new CGL.Uniform(v, "t", "imageAlpha", 2),
     A = new CGL.Uniform(v, "f", "aspectTex", 1),
     V = new CGL.Uniform(v, "f", "aspectPos", p);
-  f.onChange = m.onChange = d.onChange = y;
-  function y() {
+  f.onChange = d.onChange = m.onChange = I;
+  function I() {
     v.removeDefine("ASPECT_AXIS_X");
     v.removeDefine("ASPECT_AXIS_Y");
     v.removeDefine("ASPECT_CROP");
     p.setUiAttribs({ greyout: !f.get() });
-    m.setUiAttribs({ greyout: !f.get() });
     d.setUiAttribs({ greyout: !f.get() });
+    m.setUiAttribs({ greyout: !f.get() });
     if (f.get()) {
       v.define("ASPECT_RATIO");
-      if (m.get()) v.define("ASPECT_CROP");
-      if (d.get() == "X") v.define("ASPECT_AXIS_X");
-      if (d.get() == "Y") v.define("ASPECT_AXIS_Y");
+      if (d.get()) v.define("ASPECT_CROP");
+      if (m.get() == "X") v.define("ASPECT_AXIS_X");
+      if (m.get() == "Y") v.define("ASPECT_AXIS_Y");
     } else {
       v.removeDefine("ASPECT_RATIO");
-      if (m.get()) v.define("ASPECT_CROP");
-      if (d.get() == "X") v.define("ASPECT_AXIS_X");
-      if (d.get() == "Y") v.define("ASPECT_AXIS_Y");
+      if (d.get()) v.define("ASPECT_CROP");
+      if (m.get() == "X") v.define("ASPECT_AXIS_X");
+      if (m.get() == "Y") v.define("ASPECT_AXIS_Y");
     }
   }
-  const I = r.inValueBool("flip x");
+  const y = r.inValueBool("flip x");
   const x = r.inValueBool("flip y");
   let T = r.inValueBool("Transform");
   let S = r.inValueSlider("Scale X", 1);
   let E = r.inValueSlider("Scale Y", 1);
   let C = r.inValue("Position X", 0);
-  let j = r.inValue("Position Y", 0);
-  let N = r.inValue("Rotation", 0);
-  const w = r.inValueBool("Clip Repeat", false);
+  let N = r.inValue("Position Y", 0);
+  let j = r.inValue("Rotation", 0);
+  const L = r.inValueBool("Clip Repeat", false);
   const U = new CGL.Uniform(v, "f", "scaleX", S);
   const D = new CGL.Uniform(v, "f", "scaleY", E);
-  const B = new CGL.Uniform(v, "f", "posX", C);
-  const G = new CGL.Uniform(v, "f", "posY", j);
-  const F = new CGL.Uniform(v, "f", "rotate", N);
+  const G = new CGL.Uniform(v, "f", "posX", C);
+  const B = new CGL.Uniform(v, "f", "posY", N);
+  const F = new CGL.Uniform(v, "f", "rotate", j);
   T.onChange = P;
   function P() {
     v.toggleDefine("TEX_TRANSFORM", T.get());
     S.setUiAttribs({ greyout: !T.get() });
     E.setUiAttribs({ greyout: !T.get() });
     C.setUiAttribs({ greyout: !T.get() });
-    j.setUiAttribs({ greyout: !T.get() });
     N.setUiAttribs({ greyout: !T.get() });
+    j.setUiAttribs({ greyout: !T.get() });
   }
   CGL.TextureEffect.setupBlending(r, v, n, i);
   const z = new CGL.Uniform(v, "f", "amount", i);
   t.onTriggered = R;
-  w.onChange =
+  L.onChange =
     u.onChange =
     s.onChange =
     o.onChange =
     h.onChange =
     x.onChange =
-    I.onChange =
+    y.onChange =
     l.onChange =
     c.onChange =
-      L;
+      w;
   P();
   _();
-  y();
-  L();
-  function L() {
+  I();
+  w();
+  function w() {
     v.toggleDefine("REMOVE_ALPHA_SRC", l.get());
     v.toggleDefine("ALPHA_MASK", o.get());
-    v.toggleDefine("CLIP_REPEAT", w.get());
+    v.toggleDefine("CLIP_REPEAT", L.get());
     v.toggleDefine("HAS_TEXTUREALPHA", u.get() && u.get().tex);
-    v.toggleDefine("TEX_FLIP_X", I.get());
+    v.toggleDefine("TEX_FLIP_X", y.get());
     v.toggleDefine("TEX_FLIP_Y", x.get());
     v.toggleDefine("INVERT_ALPHA", h.get());
     v.toggleDefine("ALPHA_FROM_LUMINANCE", c.get() == "luminance");
@@ -44013,9 +45720,9 @@ Ops.Gl.ImageCompose.Levels_v2 = function () {
   const c = new CGL.Shader(u, e.name, e);
   const h = new CGL.Uniform(c, "f", "inMin", r),
     f = new CGL.Uniform(c, "f", "midPoint", i),
-    d = new CGL.Uniform(c, "f", "inMax", a),
+    m = new CGL.Uniform(c, "f", "inMax", a),
     p = new CGL.Uniform(c, "f", "outMin", s),
-    m = new CGL.Uniform(c, "f", "outMax", o),
+    d = new CGL.Uniform(c, "f", "outMax", o),
     g = new CGL.Uniform(c, "t", "tex", 0);
   c.setSource(c.getDefaultVertexShader(), t.levels_frag);
   n.onTriggered = function () {
@@ -44046,75 +45753,75 @@ Ops.Gl.Textures.NoiseTexture = function () {
       "repeat"
     ),
     A = g.inValueBool("Color", false),
-    y = g.inDropDown(
+    I = g.inDropDown(
       "Pixel Format",
       CGL.Texture.PIXELFORMATS,
       CGL.Texture.PFORMATSTR_RGBA8UB
     ),
-    I = g.inBool("Integer", false),
+    y = g.inBool("Integer", false),
     x = g.inFloat("Seed", 1),
     T = g.inBool("Channel R", true),
     S = g.inFloat("Min R", 0),
     E = g.inFloat("Max R", 1),
     C = g.inBool("Channel G", true),
-    j = g.inFloat("Min G", 0),
-    N = g.inFloat("Max G", 1),
-    w = g.inBool("Channel B", true),
+    N = g.inFloat("Min G", 0),
+    j = g.inFloat("Max G", 1),
+    L = g.inBool("Channel B", true),
     P = g.inFloat("Min B", 0),
-    L = g.inFloat("Max B", 1),
+    w = g.inFloat("Max B", 1),
     R = g.inBool("Channel A", true),
-    k = g.inFloat("Min A", 1),
-    M = g.inFloat("Max A", 1),
+    M = g.inFloat("Min A", 1),
+    k = g.inFloat("Max A", 1),
     V = g.outTexture("Texture"),
     U = g.outNumber("Total Pixel");
   const D = g.patch.cgl;
   let t = null;
-  let B = null;
+  let G = null;
   x.onChange =
     b.onChange =
     v.onChange =
-    y.onChange =
+    I.onChange =
     S.onChange =
     E.onChange =
-    j.onChange =
-    k.onChange =
     N.onChange =
     M.onChange =
+    j.onChange =
+    k.onChange =
     P.onChange =
-    L.onChange =
-    T.onChange =
     w.onChange =
+    T.onChange =
+    L.onChange =
     C.onChange =
     R.onChange =
     _.onChange =
     O.onChange =
-    I.onChange =
+    y.onChange =
     A.onChange =
       n;
   n();
   function n() {
-    if (B) D.patch.loading.finished(B);
-    B = D.patch.loading.start("noisetexture", "noisetexture");
+    if (G) D.patch.loading.finished(G);
+    G = D.patch.loading.start("noisetexture", "noisetexture");
     D.addNextFrameOnceCallback(r);
   }
   function r() {
-    const e = y.get().indexOf("float") > -1;
+    const e = I.get().indexOf("float") > -1;
     if (!e) {
       if (
         S.get() < 0 ||
         S.get() > 1 ||
-        j.get() < 0 ||
-        j.get() > 1 ||
+        N.get() < 0 ||
+        N.get() > 1 ||
         P.get() < 0 ||
         P.get() > 1 ||
         E.get() < 0 ||
         E.get() > 1 ||
-        M.get() < 0 ||
-        M.get() > 1 ||
-        N.get() < 0 ||
-        N.get() > 1 ||
-        L.get() < 0 ||
-        L.get() > 1
+        k.get() < 0 ||
+        k.get() > 1 ||
+        j.get() < 0 ||
+        j.get() > 1 ||
+        w.get() < 0 ||
+        w.get() > 1
       )
         g.setUiError(
           "nonfprange",
@@ -44122,11 +45829,11 @@ Ops.Gl.Textures.NoiseTexture = function () {
         );
       else g.setUiError("nonfprange", null);
     } else g.setUiError("nonfprange", null);
-    j.setUiAttribs({ greyout: !A.get() });
     N.setUiAttribs({ greyout: !A.get() });
+    j.setUiAttribs({ greyout: !A.get() });
     P.setUiAttribs({ greyout: !A.get() });
-    L.setUiAttribs({ greyout: !A.get() });
-    M.setUiAttribs({ greyout: !A.get() });
+    w.setUiAttribs({ greyout: !A.get() });
+    k.setUiAttribs({ greyout: !A.get() });
     let t = Math.ceil(b.get());
     let n = Math.ceil(v.get());
     if (t < 1) t = 1;
@@ -44135,12 +45842,12 @@ Ops.Gl.Textures.NoiseTexture = function () {
     const i = t * 4 * n;
     const a = S.get();
     const s = E.get() - a;
-    const o = j.get();
-    const l = N.get() - o;
+    const o = N.get();
+    const l = j.get() - o;
     const u = P.get();
-    const c = L.get() - u;
-    const h = k.get();
-    const f = M.get() - h;
+    const c = w.get() - u;
+    const h = M.get();
+    const f = k.get() - h;
     Math.randomSeed = x.get();
     if (e) {
       r = new Float32Array(i);
@@ -44174,32 +45881,905 @@ Ops.Gl.Textures.NoiseTexture = function () {
         }
       }
     }
-    if (I.get()) {
+    if (y.get()) {
       for (let e = 0; e < r.length; e++) r[e] = Math.round(r[e] - 0.5);
     }
     if (!T.get()) for (let e = 0; e < i; e += 4) r[e + 0] = 0;
     if (!C.get()) for (let e = 0; e < i; e += 4) r[e + 1] = 0;
-    if (!w.get()) for (let e = 0; e < i; e += 4) r[e + 2] = 0;
+    if (!L.get()) for (let e = 0; e < i; e += 4) r[e + 2] = 0;
     if (!R.get()) for (let e = 0; e < i; e += 4) r[e + 3] = 0;
-    let d = CGL.Texture.FILTER_NEAREST;
-    if (_.get() == "linear") d = CGL.Texture.FILTER_LINEAR;
+    let m = CGL.Texture.FILTER_NEAREST;
+    if (_.get() == "linear") m = CGL.Texture.FILTER_LINEAR;
     let p = CGL.Texture.WRAP_REPEAT;
     if (O.get() == "mirrored repeat") p = CGL.Texture.WRAP_MIRRORED_REPEAT;
     if (O.get() == "clamp to edge") p = CGL.Texture.WRAP_CLAMP_TO_EDGE;
-    let m = new CGL.Texture(D, {
+    let d = new CGL.Texture(D, {
       isFloatingPointTexture: e,
       name: "noisetexture",
     });
-    m.initFromData(r, t, n, d, p);
+    d.initFromData(r, t, n, m, p);
     U.set(t * n);
-    V.setRef(m);
-    B = D.patch.loading.finished(B);
+    V.setRef(d);
+    G = D.patch.loading.finished(G);
   }
 };
 Ops.Gl.Textures.NoiseTexture.prototype = new CABLES.Op();
 CABLES.OPS["b781bc6b-b2cf-44fe-80eb-a840e430d27d"] = {
   f: Ops.Gl.Textures.NoiseTexture,
   objName: "Ops.Gl.Textures.NoiseTexture",
+};
+Ops.Gl.ShaderEffects.TransformTextureCoordinates = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {
+    trans_vert:
+      "\n#ifdef MOD_FLIPX\n    texCoord.x=1.0-texCoord.x;\n#endif\n#ifdef MOD_FLIPY\n    texCoord.y=1.0-texCoord.y;\n#endif\n\ntexCoord-=0.5;\nfloat MOD_a=MOD_rot * (2.0*3.14159265);\ntexCoord = (cos(MOD_a)*texCoord + sin(MOD_a)*vec2(texCoord.y, -texCoord.x));\ntexCoord+=0.5;\n\ntexCoord*=MOD_scale;\ntexCoord+=MOD_trans;\n",
+  });
+  const n = e.inTrigger("render"),
+    r = e.outTrigger("Trigger"),
+    i = e.inValue("Translate X", 0),
+    a = e.inValue("Translate Y", 0),
+    s = e.inValue("Repeat X", 1),
+    o = e.inValue("Repeat Y", 1),
+    l = e.inBool("Flip X", false),
+    u = e.inBool("Flip Y", false),
+    c = e.inFloat("Rotation", 0);
+  const h = e.patch.cgl;
+  const f = new CGL.ShaderModifier(h, e.name, { opId: e.id });
+  f.addModule({
+    priority: -2,
+    name: "MODULE_VERTEX_POSITION",
+    srcBodyVert: t.trans_vert || "",
+  });
+  f.addUniformVert("2f", "MOD_trans", i, a);
+  f.addUniformVert("2f", "MOD_scale", s, o);
+  f.addUniformVert("f", "MOD_rot", c);
+  l.onChange = u.onChange = m;
+  m();
+  function m() {
+    f.toggleDefine("MOD_FLIPX", l.get());
+    f.toggleDefine("MOD_FLIPY", u.get());
+  }
+  n.onTriggered = function () {
+    f.bind();
+    r.trigger();
+    f.unbind();
+  };
+};
+Ops.Gl.ShaderEffects.TransformTextureCoordinates.prototype = new CABLES.Op();
+CABLES.OPS["54eeb750-1491-4fdf-bfd5-290e1b29bafd"] = {
+  f: Ops.Gl.ShaderEffects.TransformTextureCoordinates,
+  objName: "Ops.Gl.ShaderEffects.TransformTextureCoordinates",
+};
+Ops.Gl.ImageCompose.RepeatTexture_v2 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const t = (e.attachments = {
+    repeat_frag:
+      "IN vec2 texCoord;\nUNI sampler2D tex;\nUNI sampler2D mulTex;\nUNI float amount;\nUNI float amountX;\nUNI float amountY;\n\n{{CGL.BLENDMODES3}}\n\nvoid main()\n{\n    float am=amount;\n\n    float mul=1.0;\n\n    #ifdef HAS_MASK\n        mul=texture(mulTex,texCoord).r;\n    #endif\n\n    vec2 coord = vec2(\n        mod(texCoord.x*amountX*mul,1.0),\n        mod(texCoord.y*amountY*mul,1.0));\n\n    vec4 col=texture(tex,coord);\n    vec4 base=texture(tex,texCoord);\n\n\n    #ifdef CLEAR\n        base.a=0.0;\n    #endif\n\n    outColor=cgl_blendPixel(base,col,am);\n}",
+  });
+  const n = e.inTrigger("render"),
+    r = CGL.TextureEffect.AddBlendSelect(e, "Blend Mode", "normal"),
+    i = e.inValueSlider("Amount", 1),
+    a = e.inValue("x", 3),
+    s = e.inValue("y", 3),
+    o = e.outTrigger("trigger"),
+    l = e.inBool("Clear", true),
+    u = e.inTexture("Multiply");
+  const c = e.patch.cgl;
+  const h = new CGL.Shader(c, e.name, e);
+  h.setSource(h.getDefaultVertexShader(), t.repeat_frag);
+  const f = new CGL.Uniform(h, "t", "tex", 0),
+    m = new CGL.Uniform(h, "t", "mulTex", 2),
+    p = new CGL.Uniform(h, "f", "amount", i),
+    d = new CGL.Uniform(h, "f", "amountX", a),
+    g = new CGL.Uniform(h, "f", "amountY", s);
+  CGL.TextureEffect.setupBlending(e, h, r, i);
+  l.onChange = u.onChange = b;
+  function b() {
+    h.toggleDefine("CLEAR", l.get());
+    h.toggleDefine("HAS_MASK", u.get());
+  }
+  n.onTriggered = function () {
+    if (!CGL.TextureEffect.checkOpInEffect(e, 3)) return;
+    c.pushShader(h);
+    c.currentTextureEffect.bind();
+    c.setTexture(0, c.currentTextureEffect.getCurrentSourceTexture().tex);
+    if (u.get()) c.setTexture(2, u.get().tex);
+    c.currentTextureEffect.finish();
+    c.popShader();
+    o.trigger();
+  };
+};
+Ops.Gl.ImageCompose.RepeatTexture_v2.prototype = new CABLES.Op();
+CABLES.OPS["ff9aa796-d781-444c-a9d4-a62157f82dd5"] = {
+  f: Ops.Gl.ImageCompose.RepeatTexture_v2,
+  objName: "Ops.Gl.ImageCompose.RepeatTexture_v2",
+};
+Ops.Gl.Phong.PhongMaterial_v6 = function () {
+  CABLES.Op.apply(this, arguments);
+  const e = this;
+  const o = (e.attachments = {
+    phong_frag:
+      'IN vec3 viewDirection;\nIN vec3 normInterpolated;\nIN vec2 texCoord;\n\n#ifdef AO_CHAN_1\n    #ifndef ATTRIB_texCoord1\n        #define ATTRIB_texCoord1\n\n        IN vec2 texCoord1;\n    #endif\n#endif\n\n#ifdef HAS_TEXTURE_AO\nvec2 tcAo;\n#endif\n\n\n\n#ifdef ENABLE_FRESNEL\n    IN vec4 cameraSpace_pos;\n#endif\n\n// IN mat3 normalMatrix; // when instancing...\n\n#ifdef HAS_TEXTURE_NORMAL\n    IN mat3 TBN_Matrix; // tangent bitangent normal space transform matrix\n#endif\n\nIN vec3 fragPos;\nIN vec3 v_viewDirection;\n\nUNI vec4 inDiffuseColor;\nUNI vec4 inMaterialProperties;\n\n#ifdef ADD_EMISSIVE_COLOR\n    UNI vec4 inEmissiveColor; // .w = intensity\n#endif\n\n#ifdef ENABLE_FRESNEL\n    UNI mat4 viewMatrix;\n    UNI vec4 inFresnel;\n    UNI vec2 inFresnelWidthExponent;\n#endif\n\n#ifdef ENVMAP_MATCAP\n    IN vec3 viewSpaceNormal;\n    IN vec3 viewSpacePosition;\n#endif\n\nstruct Light {\n    vec3 color;\n    vec3 position;\n    vec3 specular;\n\n\n    // * SPOT LIGHT * //\n    #ifdef HAS_SPOT\n        vec3 conePointAt;\n        #define COSCONEANGLE x\n        #define COSCONEANGLEINNER y\n        #define SPOTEXPONENT z\n        vec3 spotProperties;\n    #endif\n\n    #define INTENSITY x\n    #define ATTENUATION y\n    #define FALLOFF z\n    #define RADIUS w\n    vec4 lightProperties;\n\n    int castLight;\n};\n\n/* CONSTANTS */\n#define NONE -1\n#define ALBEDO x\n#define ROUGHNESS y\n#define SHININESS z\n#define SPECULAR_AMT w\n#define NORMAL x\n#define AO y\n#define SPECULAR z\n#define EMISSIVE w\nconst float PI = 3.1415926535897932384626433832795;\nconst float TWO_PI = (2. * PI);\nconst float EIGHT_PI = (8. * PI);\n\n#define RECIPROCAL_PI 1./PI\n#define RECIPROCAL_PI2 RECIPROCAL_PI/2.\n\n// TEXTURES\n// #ifdef HAS_TEXTURES\n    UNI vec4 inTextureIntensities;\n\n    #ifdef HAS_TEXTURE_ENV\n        #ifdef TEX_FORMAT_CUBEMAP\n            UNI samplerCube texEnv;\n            #ifndef WEBGL1\n                #define SAMPLETEX textureLod\n            #endif\n            #ifdef WEBGL1\n                #define SAMPLETEX textureCubeLodEXT\n            #endif\n        #endif\n\n        #ifdef TEX_FORMAT_EQUIRECT\n            UNI sampler2D texEnv;\n            #ifdef WEBGL1\n                // #extension GL_EXT_shader_texture_lod : enable\n                #ifdef GL_EXT_shader_texture_lod\n                    #define textureLod texture2DLodEXT\n                #endif\n                // #define textureLod texture2D\n            #endif\n\n            #define SAMPLETEX sampleEquirect\n\n            const vec2 invAtan = vec2(0.1591, 0.3183);\n            vec4 sampleEquirect(sampler2D tex,vec3 direction,float lod)\n            {\n                #ifndef WEBGL1\n                    vec3 newDirection = normalize(direction);\n            \t\tvec2 sampleUV;\n            \t\tsampleUV.x = -1. * (atan( direction.z, direction.x ) * RECIPROCAL_PI2 + 0.75);\n            \t\tsampleUV.y = asin( clamp(direction.y, -1., 1.) ) * RECIPROCAL_PI + 0.5;\n                #endif\n\n                #ifdef WEBGL1\n                    vec3 newDirection = normalize(direction);\n                \t\tvec2 sampleUV = vec2(atan(newDirection.z, newDirection.x), asin(newDirection.y+1e-6));\n                        sampleUV *= vec2(0.1591, 0.3183);\n                        sampleUV += 0.5;\n                #endif\n                return textureLod(tex, sampleUV, lod);\n            }\n        #endif\n        #ifdef ENVMAP_MATCAP\n            UNI sampler2D texEnv;\n            #ifdef WEBGL1\n                // #extension GL_EXT_shader_texture_lod : enable\n                #ifdef GL_EXT_shader_texture_lod\n                    #define textureLod texture2DLodEXT\n                #endif\n                // #define textureLod texture2D\n            #endif\n\n\n            // * taken & modified from https://github.com/mrdoob/three.js/blob/dev/src/renderers/shaders/ShaderLib/meshmatcap_frag.glsl.js\n            vec2 getMatCapUV(vec3 viewSpacePosition, vec3 viewSpaceNormal) {\n                vec3 viewDir = normalize(-viewSpacePosition);\n            \tvec3 x = normalize(vec3(viewDir.z, 0.0, - viewDir.x));\n            \tvec3 y = normalize(cross(viewDir, x));\n            \tvec2 uv = vec2(dot(x, viewSpaceNormal), dot(y, viewSpaceNormal)) * 0.495 + 0.5; // 0.495 to remove artifacts caused by undersized matcap disks\n            \treturn uv;\n            }\n        #endif\n\n        UNI float inEnvMapIntensity;\n        UNI float inEnvMapWidth;\n    #endif\n\n    #ifdef HAS_TEXTURE_LUMINANCE_MASK\n        UNI sampler2D texLuminance;\n        UNI float inLuminanceMaskIntensity;\n    #endif\n\n    #ifdef HAS_TEXTURE_DIFFUSE\n        UNI sampler2D texDiffuse;\n    #endif\n\n    #ifdef HAS_TEXTURE_SPECULAR\n        UNI sampler2D texSpecular;\n    #endif\n\n    #ifdef HAS_TEXTURE_NORMAL\n        UNI sampler2D texNormal;\n    #endif\n\n    #ifdef HAS_TEXTURE_AO\n        UNI sampler2D texAO;\n    #endif\n\n    #ifdef HAS_TEXTURE_EMISSIVE\n        UNI sampler2D texEmissive;\n    #endif\n\n    #ifdef HAS_TEXTURE_EMISSIVE_MASK\n        UNI sampler2D texMaskEmissive;\n        UNI float inEmissiveMaskIntensity;\n    #endif\n    #ifdef HAS_TEXTURE_ALPHA\n        UNI sampler2D texAlpha;\n    #endif\n// #endif\n\n{{MODULES_HEAD}}\n\nfloat when_gt(float x, float y) { return max(sign(x - y), 0.0); } // comparator function\nfloat when_lt(float x, float y) { return max(sign(y - x), 0.0); }\nfloat when_eq(float x, float y) { return 1. - abs(sign(x - y)); } // comparator function\nfloat when_neq(float x, float y) { return abs(sign(x - y)); } // comparator function\nfloat when_ge(float x, float y) { return 1.0 - when_lt(x, y); }\nfloat when_le(float x, float y) { return 1.0 - when_gt(x, y); }\n\n#ifdef FALLOFF_MODE_A\n    float CalculateFalloff(float distance, vec3 lightDirection, float falloff, float radius) {\n        // * original falloff\n        float denom = distance / radius + 1.0;\n        float attenuation = 1.0 / (denom*denom);\n        float t = (attenuation - falloff) / (1.0 - falloff);\n        return max(t, 0.0);\n    }\n#endif\n\n#ifdef FALLOFF_MODE_B\n    float CalculateFalloff(float distance, vec3 lightDirection, float falloff, float radius) {\n        float distanceSquared = dot(lightDirection, lightDirection);\n        float factor = distanceSquared * falloff;\n        float smoothFactor = clamp(1. - factor * factor, 0., 1.);\n        float attenuation = smoothFactor * smoothFactor;\n\n        return attenuation * 1. / max(distanceSquared, 0.00001);\n    }\n#endif\n\n#ifdef FALLOFF_MODE_C\n    float CalculateFalloff(float distance, vec3 lightDirection, float falloff, float radius) {\n        // https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf\n        float falloffNumerator = 1. - pow(distance/radius, 4.);\n        falloffNumerator = clamp(falloffNumerator, 0., 1.);\n        falloffNumerator *= falloffNumerator;\n\n        float denominator = distance*distance + falloff;\n\n        return falloffNumerator/denominator;\n    }\n#endif\n\n#ifdef FALLOFF_MODE_D\n    float CalculateFalloff(float distance, vec3 lightDirection, float falloff, float radius) {\n        // inverse square falloff, "physically correct"\n        return 1.0 / max(distance * distance, 0.0001);\n    }\n#endif\n\n#ifdef ENABLE_FRESNEL\n    float CalculateFresnel(vec3 direction, vec3 normal)\n    {\n        vec3 nDirection = normalize( direction );\n        vec3 nNormal = normalize( mat3(viewMatrix) * normal );\n        vec3 halfDirection = normalize( nNormal + nDirection );\n\n        float cosine = dot( halfDirection, nDirection );\n        float product = max( cosine, 0.0 );\n        float factor = pow(product, inFresnelWidthExponent.y);\n\n        return 5. * factor;\n    }\n#endif\n\n#ifdef CONSERVE_ENERGY\n    // http://www.rorydriscoll.com/2009/01/25/energy-conservation-in-games/\n    // http://www.farbrausch.de/~fg/articles/phong.pdf\n    float EnergyConservation(float shininess) {\n        #ifdef SPECULAR_PHONG\n            return (shininess + 2.)/TWO_PI;\n        #endif\n        #ifdef SPECULAR_BLINN\n            return (shininess + 8.)/EIGHT_PI;\n        #endif\n\n        #ifdef SPECULAR_SCHLICK\n            return (shininess + 8.)/EIGHT_PI;\n        #endif\n\n        #ifdef SPECULAR_GAUSS\n            return (shininess + 8.)/EIGHT_PI;\n        #endif\n    }\n#endif\n\n#ifdef ENABLE_OREN_NAYAR_DIFFUSE\n    float CalculateOrenNayar(vec3 lightDirection, vec3 viewDirection, vec3 normal) {\n        float LdotV = dot(lightDirection, viewDirection);\n        float NdotL = dot(lightDirection, normal);\n        float NdotV = dot(normal, viewDirection);\n\n        float albedo = inMaterialProperties.ALBEDO;\n        albedo *= 1.8;\n        float s = LdotV - NdotL * NdotV;\n        float t = mix(1., max(NdotL, NdotV), step(0., s));\n\n        float roughness = inMaterialProperties.ROUGHNESS;\n        float sigma2 = roughness * roughness;\n        float A = 1. + sigma2 * (albedo / (sigma2 + 0.13) + 0.5 / (sigma2 + 0.33));\n        float B = 0.45 * sigma2 / (sigma2 + 0.09);\n\n        float factor = albedo * max(0., NdotL) * (A + B * s / t) / PI;\n\n        return factor;\n\n    }\n#endif\n\nvec3 CalculateDiffuseColor(\n    vec3 lightDirection,\n    vec3 viewDirection,\n    vec3 normal,\n    vec3 lightColor,\n    vec3 materialColor,\n    inout float lambert\n) {\n    #ifndef ENABLE_OREN_NAYAR_DIFFUSE\n        lambert = clamp(dot(lightDirection, normal), 0., 1.);\n    #endif\n\n    #ifdef ENABLE_OREN_NAYAR_DIFFUSE\n        lambert = CalculateOrenNayar(lightDirection, viewDirection, normal);\n    #endif\n\n    vec3 diffuseColor = lambert * lightColor * materialColor;\n    return diffuseColor;\n}\n\nvec3 CalculateSpecularColor(\n    vec3 specularColor,\n    float specularCoefficient,\n    float shininess,\n    vec3 lightDirection,\n    vec3 viewDirection,\n    vec3 normal,\n    float lambertian\n) {\n    vec3 resultColor = vec3(0.);\n\n    #ifdef SPECULAR_PHONG\n        vec3 reflectDirection = reflect(-lightDirection, normal);\n        float specularAngle = max(dot(reflectDirection, viewDirection), 0.);\n        float specularFactor = pow(specularAngle, max(0., shininess));\n    resultColor = lambertian * specularFactor * specularCoefficient * specularColor;\n    #endif\n\n    #ifdef SPECULAR_BLINN\n        vec3 halfDirection = normalize(lightDirection + viewDirection);\n        float specularAngle = max(dot(halfDirection, normal), 0.);\n        float specularFactor = pow(specularAngle, max(0., shininess));\n        resultColor = lambertian * specularFactor * specularCoefficient * specularColor;\n    #endif\n\n    #ifdef SPECULAR_SCHLICK\n        vec3 halfDirection = normalize(lightDirection + viewDirection);\n        float specularAngle = dot(halfDirection, normal);\n        float schlickShininess = max(0., shininess);\n        float specularFactor = specularAngle / (schlickShininess - schlickShininess*specularAngle + specularAngle);\n        resultColor = lambertian * specularFactor * specularCoefficient * specularColor;\n    #endif\n\n    #ifdef SPECULAR_GAUSS\n        vec3 halfDirection = normalize(lightDirection + viewDirection);\n        float specularAngle = acos(max(dot(halfDirection, normal), 0.));\n        float exponent = specularAngle * shininess * 0.17;\n        exponent = -(exponent*exponent);\n        float specularFactor = exp(exponent);\n\n        resultColor = lambertian * specularFactor * specularCoefficient * specularColor;\n    #endif\n\n    #ifdef CONSERVE_ENERGY\n        float conserveEnergyFactor = EnergyConservation(shininess);\n        resultColor = conserveEnergyFactor * resultColor;\n    #endif\n\n    return resultColor;\n}\n\n#ifdef HAS_SPOT\n    float CalculateSpotLightEffect(vec3 lightPosition, vec3 conePointAt, float cosConeAngle, float cosConeAngleInner, float spotExponent, vec3 lightDirection) {\n        vec3 spotLightDirection = normalize(lightPosition-conePointAt);\n        float spotAngle = dot(-lightDirection, spotLightDirection);\n        float epsilon = cosConeAngle - cosConeAngleInner;\n\n        float spotIntensity = clamp((spotAngle - cosConeAngle)/epsilon, 0.0, 1.0);\n        spotIntensity = pow(spotIntensity, max(0.01, spotExponent));\n\n        return max(0., spotIntensity);\n    }\n#endif\n\n\n\n{{PHONG_FRAGMENT_HEAD}}\n\n\nvoid main()\n{\n    {{MODULE_BEGIN_FRAG}}\n\n    vec4 col=vec4(0., 0., 0., inDiffuseColor.a);\n    vec3 calculatedColor = vec3(0.);\n    vec3 normal = normalize(normInterpolated);\n    vec3 baseColor = inDiffuseColor.rgb;\n\n    {{MODULE_BASE_COLOR}}\n\n\n\n    #ifdef AO_CHAN_0\n        vec2 tcAo=texCoord;\n    #endif\n    #ifdef AO_CHAN_1\n        vec2 tcAo=texCoord1;\n    #endif\n\n\n    vec3 viewDirection = normalize(v_viewDirection);\n\n    #ifdef DOUBLE_SIDED\n        if(!gl_FrontFacing) normal = normal * -1.0;\n    #endif\n\n    #ifdef HAS_TEXTURES\n        #ifdef HAS_TEXTURE_DIFFUSE\n            baseColor = texture(texDiffuse, texCoord).rgb;\n\n            #ifdef COLORIZE_TEXTURE\n                baseColor *= inDiffuseColor.rgb;\n            #endif\n        #endif\n\n        #ifdef HAS_TEXTURE_NORMAL\n            normal = texture(texNormal, texCoord).rgb;\n            normal = normalize(normal * 2. - 1.);\n            float normalIntensity = inTextureIntensities.NORMAL;\n            normal = normalize(mix(vec3(0., 0., 1.), normal, 2. * normalIntensity));\n            normal = normalize(TBN_Matrix * normal);\n        #endif\n    #endif\n\n    {{PHONG_FRAGMENT_BODY}}\n\n\n\n\n\n\n    #ifdef ENABLE_FRESNEL\n        calculatedColor += inFresnel.rgb * (CalculateFresnel(vec3(cameraSpace_pos), normal) * inFresnel.w * inFresnelWidthExponent.x);\n    #endif\n\n     #ifdef HAS_TEXTURE_ALPHA\n        #ifdef ALPHA_MASK_ALPHA\n            col.a*=texture(texAlpha,texCoord).a;\n        #endif\n        #ifdef ALPHA_MASK_LUMI\n            col.a*= dot(vec3(0.2126,0.7152,0.0722), texture(texAlpha,texCoord).rgb);\n        #endif\n        #ifdef ALPHA_MASK_R\n            col.a*=texture(texAlpha,texCoord).r;\n        #endif\n        #ifdef ALPHA_MASK_G\n            col.a*=texture(texAlpha,texCoord).g;\n        #endif\n        #ifdef ALPHA_MASK_B\n            col.a*=texture(texAlpha,texCoord).b;\n        #endif\n    #endif\n\n    #ifdef DISCARDTRANS\n        if(col.a<0.2) discard;\n    #endif\n\n\n    #ifdef HAS_TEXTURE_ENV\n        vec3 luminanceColor = vec3(0.);\n\n        #ifndef ENVMAP_MATCAP\n            float environmentMapWidth = inEnvMapWidth;\n            float glossyExponent = inMaterialProperties.SHININESS;\n            float glossyCoefficient = inMaterialProperties.SPECULAR_AMT;\n\n            vec3 envMapNormal =  normal;\n            vec3 reflectDirection = reflect(normalize(-viewDirection), normal);\n\n            float lambertianCoefficient = dot(viewDirection, reflectDirection); //0.44; // TODO: need prefiltered map for this\n            // lambertianCoefficient = 1.;\n            float specularAngle = max(dot(reflectDirection, viewDirection), 0.);\n            float specularFactor = pow(specularAngle, max(0., inMaterialProperties.SHININESS));\n\n            glossyExponent = specularFactor;\n\n            float maxMIPLevel = 10.;\n            float MIPlevel = log2(environmentMapWidth / 1024. * sqrt(3.)) - 0.5 * log2(glossyExponent + 1.);\n\n            luminanceColor = inEnvMapIntensity * (\n                inDiffuseColor.rgb *\n                SAMPLETEX(texEnv, envMapNormal, maxMIPLevel).rgb\n                +\n                glossyCoefficient * SAMPLETEX(texEnv, reflectDirection, MIPlevel).rgb\n            );\n        #endif\n        #ifdef ENVMAP_MATCAP\n            luminanceColor = inEnvMapIntensity * (\n                texture(texEnv, getMatCapUV(viewSpacePosition, viewSpaceNormal)).rgb\n                //inDiffuseColor.rgb\n                //* textureLod(texEnv, getMatCapUV(envMapNormal), maxMIPLevel).rgb\n                //+\n                //glossyCoefficient * textureLod(texEnv, getMatCapUV(reflectDirection), MIPlevel).rgb\n            );\n        #endif\n\n\n\n        #ifdef HAS_TEXTURE_LUMINANCE_MASK\n            luminanceColor *= texture(texLuminance, texCoord).r * inLuminanceMaskIntensity;\n        #endif\n\n        #ifdef HAS_TEXTURE_AO\n            luminanceColor *= texture(texAO, tcAo).r*inTextureIntensities.AO;\n        #endif\n\n        #ifdef ENV_BLEND_ADD\n            calculatedColor.rgb += luminanceColor;\n        #endif\n        #ifdef ENV_BLEND_MUL\n            calculatedColor.rgb *= luminanceColor;\n        #endif\n\n        #ifdef ENV_BLEND_MIX\n            calculatedColor.rgb=mix(luminanceColor,calculatedColor.rgb,luminanceColor);\n        #endif\n\n\n    #endif\n\n    #ifdef ADD_EMISSIVE_COLOR\n        vec3 emissiveRadiance = mix(calculatedColor, inEmissiveColor.rgb, inEmissiveColor.w); // .w = intensity of color;\n\n        #ifdef HAS_TEXTURE_EMISSIVE\n            float emissiveIntensity = inTextureIntensities.EMISSIVE;\n            emissiveRadiance = mix(calculatedColor, texture(texEmissive, texCoord).rgb, emissiveIntensity);\n        #endif\n\n        #ifdef HAS_TEXTURE_EMISSIVE_MASK\n           float emissiveMixValue = mix(1., texture(texMaskEmissive, texCoord).r, inEmissiveMaskIntensity);\n           calculatedColor = mix(calculatedColor, emissiveRadiance, emissiveMixValue);\n        #endif\n\n        #ifndef HAS_TEXTURE_EMISSIVE_MASK\n            calculatedColor = emissiveRadiance;\n        #endif\n    #endif\n\n    col.rgb = clamp(calculatedColor, 0., 1.);\n\n\n    {{MODULE_COLOR}}\n\n    outColor = col;\n\n}\n',
+    phong_vert:
+      "\n{{MODULES_HEAD}}\n\n#define NONE -1\n#define AMBIENT 0\n#define POINT 1\n#define DIRECTIONAL 2\n#define SPOT 3\n\n#define TEX_REPEAT_X x;\n#define TEX_REPEAT_Y y;\n#define TEX_OFFSET_X z;\n#define TEX_OFFSET_Y w;\n\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\nIN float attrVertIndex;\nIN vec3 attrTangent;\nIN vec3 attrBiTangent;\n\nOUT vec2 texCoord;\nOUT vec3 normInterpolated;\nOUT vec3 fragPos;\n\n#ifdef AO_CHAN_1\n    #ifndef ATTRIB_attrTexCoord1\n        IN vec2 attrTexCoord1;\n        OUT vec2 texCoord1;\n        #define ATTRIB_attrTexCoord1\n        #define ATTRIB_texCoord1\n    #endif\n#endif\n\n#ifdef HAS_TEXTURE_NORMAL\n    OUT mat3 TBN_Matrix; // tangent bitangent normal space transform matrix\n#endif\n\n#ifdef ENABLE_FRESNEL\n    OUT vec4 cameraSpace_pos;\n#endif\n\nOUT vec3 v_viewDirection;\nOUT mat3 normalMatrix;\nOUT mat4 mvMatrix;\n\n#ifdef HAS_TEXTURES\n    UNI vec4 inTextureRepeatOffset;\n#endif\n\nUNI vec3 camPos;\nUNI mat4 projMatrix;\nUNI mat4 viewMatrix;\nUNI mat4 modelMatrix;\n\n#ifdef ENVMAP_MATCAP\n    OUT vec3 viewSpaceNormal;\n    OUT vec3 viewSpacePosition;\n#endif\n\n\nmat3 transposeMat3(mat3 m)\n{\n    return mat3(m[0][0], m[1][0], m[2][0],\n        m[0][1], m[1][1], m[2][1],\n        m[0][2], m[1][2], m[2][2]);\n}\n\nmat3 inverseMat3(mat3 m)\n{\n    float a00 = m[0][0], a01 = m[0][1], a02 = m[0][2];\n    float a10 = m[1][0], a11 = m[1][1], a12 = m[1][2];\n    float a20 = m[2][0], a21 = m[2][1], a22 = m[2][2];\n\n    float b01 = a22 * a11 - a12 * a21;\n    float b11 = -a22 * a10 + a12 * a20;\n    float b21 = a21 * a10 - a11 * a20;\n\n    float det = a00 * b01 + a01 * b11 + a02 * b21;\n\n    return mat3(b01, (-a22 * a01 + a02 * a21), (a12 * a01 - a02 * a11),\n        b11, (a22 * a00 - a02 * a20), (-a12 * a00 + a02 * a10),\n        b21, (-a21 * a00 + a01 * a20), (a11 * a00 - a01 * a10)) / det;\n}\n\nvoid main()\n{\n    mat4 mMatrix=modelMatrix;\n    vec4 pos=vec4(vPosition,  1.0);\n\n    texCoord=attrTexCoord;\n    texCoord.y = 1. - texCoord.y;\n\n    #ifdef ATTRIB_texCoord1\n        texCoord1=attrTexCoord1;\n    #endif\n\n    vec3 norm=attrVertNormal;\n    vec3 tangent = attrTangent;\n    vec3 bitangent = attrBiTangent;\n\n    {{MODULE_VERTEX_POSITION}}\n\n    normalMatrix = transposeMat3(inverseMat3(mat3(mMatrix)));\n    mvMatrix = (viewMatrix * mMatrix);\n\n\n\n    #ifdef ENABLE_FRESNEL\n        cameraSpace_pos = mvMatrix * pos;\n    #endif\n\n    #ifdef HAS_TEXTURES\n        float repeatX = inTextureRepeatOffset.TEX_REPEAT_X;\n        float offsetX = inTextureRepeatOffset.TEX_OFFSET_X;\n        float repeatY = inTextureRepeatOffset.TEX_REPEAT_Y;\n        float offsetY = inTextureRepeatOffset.TEX_OFFSET_Y;\n\n        texCoord.x *= repeatX;\n        texCoord.x += offsetX;\n        texCoord.y *= repeatY;\n        texCoord.y += offsetY;\n    #endif\n\n   normInterpolated = vec3(normalMatrix*norm);\n\n    #ifdef HAS_TEXTURE_NORMAL\n        vec3 normCameraSpace = normalize((vec4(normInterpolated, 0.0)).xyz);\n        vec3 tangCameraSpace = normalize((mMatrix * vec4(tangent, 0.0)).xyz);\n        vec3 bitangCameraSpace = normalize((mMatrix * vec4(bitangent, 0.0)).xyz);\n\n        // re orthogonalization for smoother normals\n        tangCameraSpace = normalize(tangCameraSpace - dot(tangCameraSpace, normCameraSpace) * normCameraSpace);\n        bitangCameraSpace = cross(normCameraSpace, tangCameraSpace);\n\n        TBN_Matrix = mat3(tangCameraSpace, bitangCameraSpace, normCameraSpace);\n    #endif\n\n    fragPos = vec3((mMatrix) * pos);\n    v_viewDirection = normalize(camPos - fragPos);\n    // modelPos=mMatrix*pos;\n\n    #ifdef ENVMAP_MATCAP\n        mat3 viewSpaceNormalMatrix = normalMatrix = transposeMat3(inverseMat3(mat3(mvMatrix)));\n        viewSpaceNormal = normalize(viewSpaceNormalMatrix * norm);\n        viewSpacePosition = vec3(mvMatrix * pos);\n    #endif\n\n    mat4 modelViewMatrix=mvMatrix;\n    {{MODULE_VERTEX_MODELVIEW}}\n\n\n    gl_Position = projMatrix * modelViewMatrix * pos;\n}\n",
+    snippet_body_ambient_frag:
+      "    // * AMBIENT LIGHT {{LIGHT_INDEX}} *\n    vec3 diffuseColor{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.lightProperties.INTENSITY*phongLight{{LIGHT_INDEX}}.color;\n    calculatedColor += diffuseColor{{LIGHT_INDEX}};\n",
+    snippet_body_directional_frag:
+      "    // * DIRECTIONAL LIGHT {{LIGHT_INDEX}} *\n\n    if (phongLight{{LIGHT_INDEX}}.castLight == 1) {\n        vec3 phongLightDirection{{LIGHT_INDEX}} = normalize(phongLight{{LIGHT_INDEX}}.position);\n\n        float phongLambert{{LIGHT_INDEX}} = 1.; // inout variable\n\n        vec3 lightColor{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.color;\n        vec3 lightSpecular{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.specular;\n\n        #ifdef HAS_TEXTURES\n            #ifdef HAS_TEXTURE_AO\n                // lightColor{{LIGHT_INDEX}} *= mix(vec3(1.), texture(texAO, texCoord).rgb, inTextureIntensities.AO);\n                lightColor{{LIGHT_INDEX}} *= texture(texAO, tcAo).g, inTextureIntensities.AO;\n\n            #endif\n\n            #ifdef HAS_TEXTURE_SPECULAR\n                lightSpecular{{LIGHT_INDEX}} *= mix(1., texture(texSpecular, texCoord).r, inTextureIntensities.SPECULAR);\n            #endif\n        #endif\n\n        vec3 diffuseColor{{LIGHT_INDEX}} = CalculateDiffuseColor(phongLightDirection{{LIGHT_INDEX}}, viewDirection, normal, lightColor{{LIGHT_INDEX}}, baseColor, phongLambert{{LIGHT_INDEX}});\n        vec3 specularColor{{LIGHT_INDEX}} = CalculateSpecularColor(\n            lightSpecular{{LIGHT_INDEX}},\n            inMaterialProperties.SPECULAR_AMT,\n            inMaterialProperties.SHININESS,\n            phongLightDirection{{LIGHT_INDEX}},\n            viewDirection,\n            normal,\n            phongLambert{{LIGHT_INDEX}}\n        );\n\n        vec3 combinedColor{{LIGHT_INDEX}} = (diffuseColor{{LIGHT_INDEX}} + specularColor{{LIGHT_INDEX}});\n\n        vec3 lightModelDiff{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.position - fragPos.xyz;\n\n        combinedColor{{LIGHT_INDEX}} *= phongLight{{LIGHT_INDEX}}.lightProperties.INTENSITY;\n        calculatedColor += combinedColor{{LIGHT_INDEX}};\n    }",
+    snippet_body_point_frag:
+      "// * POINT LIGHT {{LIGHT_INDEX}} *\n    if (phongLight{{LIGHT_INDEX}}.castLight == 1) {\n        vec3 phongLightDirection{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.position - fragPos.xyz;\n        // * get length before normalization for falloff calculation\n        phongLightDirection{{LIGHT_INDEX}} = normalize(phongLightDirection{{LIGHT_INDEX}});\n        float phongLightDistance{{LIGHT_INDEX}} = length(phongLightDirection{{LIGHT_INDEX}});\n\n        float phongLambert{{LIGHT_INDEX}} = 1.; // inout variable\n\n        vec3 lightColor{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.color;\n        vec3 lightSpecular{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.specular;\n\n        #ifdef HAS_TEXTURES\n            #ifdef HAS_TEXTURE_AO\n                lightColor{{LIGHT_INDEX}} -= (1.0-texture(texAO, tcAo).g)* (inTextureIntensities.AO);\n            #endif\n\n            #ifdef HAS_TEXTURE_SPECULAR\n                lightSpecular{{LIGHT_INDEX}} *= mix(1., texture(texSpecular, texCoord).r, inTextureIntensities.SPECULAR);\n            #endif\n        #endif\n\n        vec3 diffuseColor{{LIGHT_INDEX}} = CalculateDiffuseColor(phongLightDirection{{LIGHT_INDEX}}, viewDirection, normal, lightColor{{LIGHT_INDEX}}, baseColor, phongLambert{{LIGHT_INDEX}});\n        vec3 specularColor{{LIGHT_INDEX}} = CalculateSpecularColor(\n            lightSpecular{{LIGHT_INDEX}},\n            inMaterialProperties.SPECULAR_AMT,\n            inMaterialProperties.SHININESS,\n            phongLightDirection{{LIGHT_INDEX}},\n            viewDirection,\n            normal,\n            phongLambert{{LIGHT_INDEX}}\n        );\n\n        vec3 combinedColor{{LIGHT_INDEX}} = (diffuseColor{{LIGHT_INDEX}} + specularColor{{LIGHT_INDEX}});\n\n        combinedColor{{LIGHT_INDEX}} *= phongLight{{LIGHT_INDEX}}.lightProperties.INTENSITY;\n\n        float attenuation{{LIGHT_INDEX}} = CalculateFalloff(\n            phongLightDistance{{LIGHT_INDEX}},\n            phongLightDirection{{LIGHT_INDEX}},\n            phongLight{{LIGHT_INDEX}}.lightProperties.FALLOFF,\n            phongLight{{LIGHT_INDEX}}.lightProperties.RADIUS\n        );\n\n        attenuation{{LIGHT_INDEX}} *= when_gt(phongLambert{{LIGHT_INDEX}}, 0.);\n        combinedColor{{LIGHT_INDEX}} *= attenuation{{LIGHT_INDEX}};\n\n        calculatedColor += combinedColor{{LIGHT_INDEX}};\n    }\n",
+    snippet_body_spot_frag:
+      "    // * SPOT LIGHT {{LIGHT_INDEX}} *\n    if (phongLight{{LIGHT_INDEX}}.castLight == 1) {\n        vec3 phongLightDirection{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.position - fragPos.xyz;\n        phongLightDirection{{LIGHT_INDEX}} = normalize( phongLightDirection{{LIGHT_INDEX}});\n        float phongLightDistance{{LIGHT_INDEX}} = length(phongLightDirection{{LIGHT_INDEX}});\n\n        float phongLambert{{LIGHT_INDEX}} = 1.; // inout variable\n\n        vec3 lightColor{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.color;\n        vec3 lightSpecular{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.specular;\n\n        #ifdef HAS_TEXTURES\n            #ifdef HAS_TEXTURE_AO\n                // lightColor{{LIGHT_INDEX}} *= mix(vec3(1.), texture(texAO, texCoord).rgb, inTextureIntensities.AO);\n                lightColor{{LIGHT_INDEX}} *= texture(texAO, texCoord).g, inTextureIntensities.AO;\n\n            #endif\n\n            #ifdef HAS_TEXTURE_SPECULAR\n                lightSpecular{{LIGHT_INDEX}} *= mix(1., texture(texSpecular, texCoord).r, inTextureIntensities.SPECULAR);\n            #endif\n        #endif\n\n        vec3 diffuseColor{{LIGHT_INDEX}} = CalculateDiffuseColor(phongLightDirection{{LIGHT_INDEX}}, viewDirection, normal, lightColor{{LIGHT_INDEX}}, baseColor, phongLambert{{LIGHT_INDEX}});\n        vec3 specularColor{{LIGHT_INDEX}} = CalculateSpecularColor(\n            lightSpecular{{LIGHT_INDEX}},\n            inMaterialProperties.SPECULAR_AMT,\n            inMaterialProperties.SHININESS,\n            phongLightDirection{{LIGHT_INDEX}},\n            viewDirection,\n            normal,\n            phongLambert{{LIGHT_INDEX}}\n        );\n\n        vec3 combinedColor{{LIGHT_INDEX}} = (diffuseColor{{LIGHT_INDEX}} + specularColor{{LIGHT_INDEX}});\n\n        float spotIntensity{{LIGHT_INDEX}} = CalculateSpotLightEffect(\n            phongLight{{LIGHT_INDEX}}.position, phongLight{{LIGHT_INDEX}}.conePointAt, phongLight{{LIGHT_INDEX}}.spotProperties.COSCONEANGLE,\n            phongLight{{LIGHT_INDEX}}.spotProperties.COSCONEANGLEINNER, phongLight{{LIGHT_INDEX}}.spotProperties.SPOTEXPONENT,\n            phongLightDirection{{LIGHT_INDEX}}\n        );\n\n        combinedColor{{LIGHT_INDEX}} *= spotIntensity{{LIGHT_INDEX}};\n\n        vec3 lightModelDiff{{LIGHT_INDEX}} = phongLight{{LIGHT_INDEX}}.position - fragPos.xyz;\n\n        float attenuation{{LIGHT_INDEX}} = CalculateFalloff(\n            phongLightDistance{{LIGHT_INDEX}},\n            phongLightDirection{{LIGHT_INDEX}},\n            phongLight{{LIGHT_INDEX}}.lightProperties.FALLOFF,\n            phongLight{{LIGHT_INDEX}}.lightProperties.RADIUS\n        );\n\n        attenuation{{LIGHT_INDEX}} *= when_gt(phongLambert{{LIGHT_INDEX}}, 0.);\n\n        combinedColor{{LIGHT_INDEX}} *= attenuation{{LIGHT_INDEX}};\n\n        combinedColor{{LIGHT_INDEX}} *= phongLight{{LIGHT_INDEX}}.lightProperties.INTENSITY;\n        calculatedColor += combinedColor{{LIGHT_INDEX}};\n    }",
+    snippet_head_frag: "UNI Light phongLight{{LIGHT_INDEX}};\n",
+  });
+  const t = e.patch.cgl;
+  const k = o.snippet_head_frag;
+  const V = {
+    point: o.snippet_body_point_frag,
+    spot: o.snippet_body_spot_frag,
+    ambient: o.snippet_body_ambient_frag,
+    directional: o.snippet_body_directional_frag,
+    area: o.snippet_body_area_frag,
+  };
+  const U = new RegExp("{{LIGHT_INDEX}}", "g");
+  const D = (e) => {
+    return k.replace("{{LIGHT_INDEX}}", e);
+  };
+  const G = (e, t) => {
+    return V[t].replace(U, e);
+  };
+  function B() {
+    const e = o.phong_vert;
+    let t = o.phong_frag;
+    let n = D(0);
+    let r = G(0, it[0].type);
+    t = t.replace(Ie, n);
+    t = t.replace(ye, r);
+    N.setSource(e, t);
+    N.define("HAS_POINT");
+    N.removeDefine("HAS_SPOT");
+    N.removeDefine("HAS_DIRECTIONAL");
+    N.removeDefine("HAS_AMBIENT");
+  }
+  const F = e.inTrigger("Trigger In");
+  const z = e.inFloat("R", Math.random());
+  const q = e.inFloat("G", Math.random());
+  const X = e.inFloat("B", Math.random());
+  const H = e.inFloatSlider("A", 1);
+  const Y = [z, q, X, H];
+  e.setPortGroup("Diffuse Color", Y);
+  const n = e.inBool("Enable", false);
+  const r = e.inFloatSlider("Albedo", 0.707);
+  const i = e.inFloatSlider("Roughness", 0.835);
+  n.setUiAttribs({ hidePort: true });
+  r.setUiAttribs({ greyout: true });
+  i.setUiAttribs({ greyout: true });
+  z.setUiAttribs({ colorPick: true });
+  e.setPortGroup("Oren-Nayar Diffuse", [n, r, i]);
+  e.toWorkShouldNotBeChild(
+    "Ops.Gl.TextureEffects.ImageCompose",
+    CABLES.OP_PORT_TYPE_FUNCTION
+  );
+  n.onChange = function () {
+    N.toggleDefine("ENABLE_OREN_NAYAR_DIFFUSE", n);
+    r.setUiAttribs({ greyout: !n.get() });
+    i.setUiAttribs({ greyout: !n.get() });
+  };
+  const a = e.inValueBool("Active", false);
+  a.setUiAttribs({ hidePort: true });
+  const W = e.inValueSlider("Fresnel Intensity", 0.7);
+  const K = e.inFloat("Fresnel Width", 1);
+  const Z = e.inFloat("Fresnel Exponent", 6);
+  const Q = e.inFloat("Fresnel R", 1);
+  const J = e.inFloat("Fresnel G", 1);
+  const $ = e.inFloat("Fresnel B", 1);
+  Q.setUiAttribs({ colorPick: true });
+  const ee = [W, K, Z, Q, J, $];
+  ee.forEach(function (e) {
+    e.setUiAttribs({ greyout: true });
+  });
+  e.setPortGroup("Fresnel", ee.concat([a]));
+  let s = null;
+  let te = null;
+  a.onChange = function () {
+    N.toggleDefine("ENABLE_FRESNEL", a);
+    if (a.get()) {
+      if (!s) s = new CGL.Uniform(N, "4f", "inFresnel", Q, J, $, W);
+      if (!te) te = new CGL.Uniform(N, "2f", "inFresnelWidthExponent", K, Z);
+    } else {
+      if (s) {
+        N.removeUniform("inFresnel");
+        s = null;
+      }
+      if (te) {
+        N.removeUniform("inFresnelWidthExponent");
+        te = null;
+      }
+    }
+    ee.forEach(function (e) {
+      e.setUiAttribs({ greyout: !a.get() });
+    });
+  };
+  const l = e.inBool("Emissive Active", false);
+  const u = e.inFloatSlider("Color Intensity", 0.3);
+  const c = e.inFloatSlider("Emissive R", Math.random());
+  const h = e.inFloatSlider("Emissive G", Math.random());
+  const f = e.inFloatSlider("Emissive B", Math.random());
+  c.setUiAttribs({ colorPick: true });
+  e.setPortGroup("Emissive Color", [l, u, c, h, f]);
+  u.setUiAttribs({ greyout: !l.get() });
+  c.setUiAttribs({ greyout: !l.get() });
+  h.setUiAttribs({ greyout: !l.get() });
+  f.setUiAttribs({ greyout: !l.get() });
+  let ne = null;
+  l.onChange = () => {
+    N.toggleDefine("ADD_EMISSIVE_COLOR", l);
+    if (l.get()) {
+      ne = new CGL.Uniform(N, "4f", "inEmissiveColor", c, h, f, u);
+      _.setUiAttribs({ greyout: false });
+      O.setUiAttribs({ greyout: false });
+      if (_.get()) x.setUiAttribs({ greyout: false });
+      if (O.get()) T.setUiAttribs({ greyout: false });
+    } else {
+      e.log("ayayay");
+      _.setUiAttribs({ greyout: true });
+      O.setUiAttribs({ greyout: true });
+      x.setUiAttribs({ greyout: true });
+      T.setUiAttribs({ greyout: true });
+      N.removeUniform("inEmissiveColor");
+      ne = null;
+    }
+    if (_.get()) {
+      u.setUiAttribs({ greyout: true });
+      c.setUiAttribs({ greyout: true });
+      h.setUiAttribs({ greyout: true });
+      f.setUiAttribs({ greyout: true });
+    } else {
+      if (l.get()) {
+        u.setUiAttribs({ greyout: false });
+        c.setUiAttribs({ greyout: false });
+        h.setUiAttribs({ greyout: false });
+        f.setUiAttribs({ greyout: false });
+      } else {
+        u.setUiAttribs({ greyout: true });
+        c.setUiAttribs({ greyout: true });
+        h.setUiAttribs({ greyout: true });
+        f.setUiAttribs({ greyout: true });
+      }
+    }
+  };
+  const re = e.inFloat("Shininess", 4);
+  const ie = e.inFloatSlider("Specular Amount", 0.5);
+  const m = e.inSwitch(
+    "Specular Model",
+    ["Blinn", "Schlick", "Phong", "Gauss"],
+    "Blinn"
+  );
+  m.setUiAttribs({ hidePort: true });
+  const ae = [re, ie, m];
+  e.setPortGroup("Specular", ae);
+  const se = e.inValueBool("Energy Conservation", false);
+  const oe = e.inBool("Double Sided Material", false);
+  const p = e.inSwitch("Falloff Mode", ["A", "B", "C", "D"], "A");
+  se.setUiAttribs({ hidePort: true });
+  oe.setUiAttribs({ hidePort: true });
+  p.setUiAttribs({ hidePort: true });
+  p.onChange = () => {
+    const e = ["A", "B", "C", "D"];
+    N.define("FALLOFF_MODE_" + p.get());
+    e.filter((e) => {
+      return e !== p.get();
+    }).forEach((e) => {
+      return N.removeDefine("FALLOFF_MODE_" + e);
+    });
+  };
+  const le = [se, oe, p];
+  e.setPortGroup("Light Options", le);
+  const d = e.inTexture("Diffuse Texture");
+  const g = e.inTexture("Specular Texture");
+  const b = e.inTexture("Normal Map");
+  const v = e.inTexture("AO Texture");
+  const _ = e.inTexture("Emissive Texture");
+  const O = e.inTexture("Emissive Mask");
+  const A = e.inTexture("Opacity Texture");
+  const I = e.inTexture("Environment Map");
+  const y = e.inTexture("Env Map Mask");
+  e.setPortGroup("Textures", [d, g, b, v, _, O, A, I, y]);
+  const ue = e.inBool("Colorize Texture", false);
+  const ce = e.inFloat("Diffuse Repeat X", 1);
+  const he = e.inFloat("Diffuse Repeat Y", 1);
+  const fe = e.inFloat("Texture Offset X", 0);
+  const me = e.inFloat("Texture Offset Y", 0);
+  const pe = e.inFloatSlider("Specular Intensity", 1);
+  const de = e.inFloatSlider("Normal Map Intensity", 0.5);
+  const ge = e.inFloatSlider("AO Intensity", 1);
+  const be = e.inSwitch("AO UV Channel", ["1", "2"], 1);
+  const x = e.inFloatSlider("Emissive Intensity", 1);
+  const T = e.inFloatSlider("Emissive Mask Intensity", 1);
+  const ve = e.inFloatSlider("Env Map Intensity", 1);
+  const S = e.inSwitch("Env Map Blend", ["Add", "Multiply", "Mix"], "Add");
+  const _e = e.inFloatSlider("Env Mask Intensity", 1);
+  ue.setUiAttribs({ hidePort: true });
+  e.setPortGroup("Texture Transforms", [ue, he, ce, me, fe]);
+  e.setPortGroup("Texture Intensities", [de, ge, pe, x, S, T, ve, _e]);
+  const E = e.inSwitch(
+    "Alpha Mask Source",
+    ["Luminance", "R", "G", "B", "A"],
+    "Luminance"
+  );
+  E.setUiAttribs({ greyout: true });
+  const C = e.inValueBool("Discard Transparent Pixels");
+  C.setUiAttribs({ hidePort: true });
+  e.setPortGroup("Opacity Texture", [E, C]);
+  be.onChange = S.onChange = E.onChange = qe;
+  const Oe = e.outTrigger("Trigger Out");
+  const Ae = e.outObject("Shader", null, "shader");
+  Ae.ignoreValueSerialize = true;
+  const N = new CGL.Shader(t, "phongmaterial_" + e.id, this);
+  N.op = this;
+  N.setModules([
+    "MODULE_VERTEX_POSITION",
+    "MODULE_COLOR",
+    "MODULE_BEGIN_FRAG",
+    "MODULE_BASE_COLOR",
+    "MODULE_VERTEX_MODELVIEW",
+  ]);
+  N.setSource(o.simosphong_vert, o.simosphong_frag);
+  N.define("FALLOFF_MODE_A");
+  if (t.glVersion < 2) {
+    N.enableExtension("GL_OES_standard_derivatives");
+    if (t.enableExtension("OES_texture_float"))
+      N.enableExtension("GL_OES_texture_float");
+    else e.log("error loading extension OES_texture_float");
+    if (t.enableExtension("OES_texture_float_linear"))
+      N.enableExtension("GL_OES_texture_float_linear");
+    else e.log("error loading extention OES_texture_float_linear");
+    if (t.enableExtension("GL_OES_texture_half_float"))
+      N.enableExtension("GL_OES_texture_half_float");
+    else e.log("error loading extention GL_OES_texture_half_float");
+    if (t.enableExtension("GL_OES_texture_half_float_linear"))
+      N.enableExtension("GL_OES_texture_half_float_linear");
+    else e.log("error loading extention GL_OES_texture_half_float_linear");
+  }
+  const Ie = new RegExp("{{PHONG_FRAGMENT_HEAD}}", "g");
+  const ye = new RegExp("{{PHONG_FRAGMENT_BODY}}", "g");
+  const j = { directional: false, spot: false, ambient: false, point: false };
+  function xe(t) {
+    let e = o.phong_frag;
+    let n = "";
+    let r = "";
+    j.directional = false;
+    j.spot = false;
+    j.ambient = false;
+    j.point = false;
+    for (let e = 0; e < t.length; e += 1) {
+      const i = t[e];
+      const a = i.type;
+      if (!j[a]) {
+        j[a] = true;
+      }
+      n = n.concat(D(e));
+      r = r.concat(G(e, i.type));
+    }
+    e = e.replace(Ie, n);
+    e = e.replace(ye, r);
+    N.setSource(o.phong_vert, e);
+    for (let e = 0, t = Object.keys(j); e < t.length; e += 1) {
+      const s = t[e];
+      if (j[s]) {
+        if (!N.hasDefine("HAS_" + s.toUpperCase())) {
+          N.define("HAS_" + s.toUpperCase());
+        }
+      } else {
+        if (N.hasDefine("HAS_" + s.toUpperCase())) {
+          N.removeDefine("HAS_" + s.toUpperCase());
+        }
+      }
+    }
+  }
+  Ae.set(N);
+  let Te = null;
+  let Se = null;
+  let Ee = null;
+  let Ce = null;
+  let Ne = null;
+  let je = null;
+  let Le = null;
+  let L = null;
+  let P = null;
+  let w = null;
+  let Pe = null;
+  let we = null;
+  let Re = null;
+  ue.onChange = function () {
+    N.toggleDefine("COLORIZE_TEXTURE", ue.get());
+  };
+  function Me() {
+    if (d.get()) {
+      if (!N.hasDefine("HAS_TEXTURE_DIFFUSE")) {
+        N.define("HAS_TEXTURE_DIFFUSE");
+        if (!Te) Te = new CGL.Uniform(N, "t", "texDiffuse", 0);
+      }
+    } else {
+      N.removeUniform("texDiffuse");
+      N.removeDefine("HAS_TEXTURE_DIFFUSE");
+      Te = null;
+    }
+  }
+  function ke() {
+    if (g.get()) {
+      pe.setUiAttribs({ greyout: false });
+      if (!N.hasDefine("HAS_TEXTURE_SPECULAR")) {
+        N.define("HAS_TEXTURE_SPECULAR");
+        if (!Se) Se = new CGL.Uniform(N, "t", "texSpecular", 0);
+      }
+    } else {
+      pe.setUiAttribs({ greyout: true });
+      N.removeUniform("texSpecular");
+      N.removeDefine("HAS_TEXTURE_SPECULAR");
+      Se = null;
+    }
+  }
+  function Ve() {
+    if (b.get()) {
+      de.setUiAttribs({ greyout: false });
+      if (!N.hasDefine("HAS_TEXTURE_NORMAL")) {
+        N.define("HAS_TEXTURE_NORMAL");
+        if (!Ee) Ee = new CGL.Uniform(N, "t", "texNormal", 0);
+      }
+    } else {
+      de.setUiAttribs({ greyout: true });
+      N.removeUniform("texNormal");
+      N.removeDefine("HAS_TEXTURE_NORMAL");
+      Ee = null;
+    }
+  }
+  Ce = new CGL.Uniform(N, "t", "texAO");
+  function Ue() {
+    N.toggleDefine("HAS_TEXTURE_AO", v.get());
+    ge.setUiAttribs({ greyout: !v.get() });
+  }
+  function De() {
+    if (_.get()) {
+      c.setUiAttribs({ greyout: true });
+      h.setUiAttribs({ greyout: true });
+      f.setUiAttribs({ greyout: true });
+      u.setUiAttribs({ greyout: true });
+      if (l.get()) {
+        x.setUiAttribs({ greyout: false });
+      }
+      if (!N.hasDefine("HAS_TEXTURE_EMISSIVE")) {
+        N.define("HAS_TEXTURE_EMISSIVE");
+        if (!Ne) Ne = new CGL.Uniform(N, "t", "texEmissive", 0);
+      }
+    } else {
+      x.setUiAttribs({ greyout: true });
+      if (l.get()) {
+        c.setUiAttribs({ greyout: false });
+        h.setUiAttribs({ greyout: false });
+        f.setUiAttribs({ greyout: false });
+        u.setUiAttribs({ greyout: false });
+      } else {
+        _.setUiAttribs({ greyout: true });
+      }
+      N.removeUniform("texEmissive");
+      N.removeDefine("HAS_TEXTURE_EMISSIVE");
+      Ne = null;
+    }
+  }
+  function Ge() {
+    if (O.get()) {
+      if (l.get()) {
+        T.setUiAttribs({ greyout: false });
+      }
+      if (!N.hasDefine("HAS_TEXTURE_EMISSIVE_MASK")) {
+        N.define("HAS_TEXTURE_EMISSIVE_MASK");
+        if (!je) je = new CGL.Uniform(N, "t", "texMaskEmissive", 0);
+        if (!Le) Le = new CGL.Uniform(N, "f", "inEmissiveMaskIntensity", T);
+      }
+    } else {
+      if (!l.get()) {
+        O.setUiAttribs({ greyout: true });
+      }
+      T.setUiAttribs({ greyout: true });
+      N.removeUniform("texMaskEmissive");
+      N.removeUniform("inEmissiveMaskIntensity");
+      N.removeDefine("HAS_TEXTURE_EMISSIVE_MASK");
+      je = null;
+      Le = null;
+    }
+  }
+  let Be = false;
+  function Fe() {
+    N.toggleDefine("HAS_TEXTURE_ENV", I.get());
+    ve.setUiAttribs({ greyout: !I.get() });
+    if (I.get()) {
+      if (!P) P = new CGL.Uniform(N, "t", "texEnv", 0);
+      N.toggleDefine("TEX_FORMAT_CUBEMAP", I.get().cubemap);
+      if (I.get().cubemap) {
+        N.removeDefine("TEX_FORMAT_EQUIRECT");
+        N.removeDefine("ENVMAP_MATCAP");
+        if (!w) w = new CGL.Uniform(N, "f", "inEnvMapIntensity", ve);
+        if (!Pe)
+          Pe = new CGL.Uniform(N, "f", "inEnvMapWidth", I.get().cubemap.width);
+      } else {
+        const e = I.get().width === I.get().height;
+        N.toggleDefine("TEX_FORMAT_EQUIRECT", !e);
+        N.toggleDefine("ENVMAP_MATCAP", e);
+        if (!w) w = new CGL.Uniform(N, "f", "inEnvMapIntensity", ve);
+        if (!Pe) Pe = new CGL.Uniform(N, "f", "inEnvMapWidth", I.get().width);
+      }
+    } else {
+      N.removeUniform("inEnvMapIntensity");
+      N.removeUniform("inEnvMapWidth");
+      N.removeUniform("texEnv");
+      N.removeDefine("HAS_TEXTURE_ENV");
+      N.removeDefine("ENVMAP_MATCAP");
+      P = null;
+      w = null;
+    }
+    Be = false;
+  }
+  function ze() {
+    if (y.get()) {
+      _e.setUiAttribs({ greyout: false });
+      if (!we) {
+        N.define("HAS_TEXTURE_LUMINANCE_MASK");
+        we = new CGL.Uniform(N, "t", "texLuminance", 0);
+        Re = new CGL.Uniform(N, "f", "inLuminanceMaskIntensity", _e);
+      }
+    } else {
+      _e.setUiAttribs({ greyout: true });
+      N.removeDefine("HAS_TEXTURE_LUMINANCE_MASK");
+      N.removeUniform("inLuminanceMaskIntensity");
+      N.removeUniform("texLuminance");
+      we = null;
+      Re = null;
+    }
+  }
+  function qe() {
+    N.toggleDefine("ENV_BLEND_ADD", S.get() == "Add");
+    N.toggleDefine("ENV_BLEND_MUL", S.get() == "Multiply");
+    N.toggleDefine("ENV_BLEND_MIX", S.get() == "Mix");
+    N.toggleDefine("ALPHA_MASK_ALPHA", E.get() == "A" || E.get() == "Alpha");
+    N.toggleDefine("ALPHA_MASK_LUMI", E.get() == "Luminance");
+    N.toggleDefine("ALPHA_MASK_R", E.get() == "R");
+    N.toggleDefine("ALPHA_MASK_G", E.get() == "G");
+    N.toggleDefine("ALPHA_MASK_B", E.get() == "B");
+    N.toggleDefine("AO_CHAN_0", be.get() == "1");
+    N.toggleDefine("AO_CHAN_1", be.get() == "2");
+  }
+  function Xe() {
+    if (A.get()) {
+      if (L !== null) return;
+      N.removeUniform("texAlpha");
+      N.define("HAS_TEXTURE_ALPHA");
+      if (!L) L = new CGL.Uniform(N, "t", "texAlpha", 0);
+      E.setUiAttribs({ greyout: false });
+      C.setUiAttribs({ greyout: false });
+    } else {
+      N.removeUniform("texAlpha");
+      N.removeDefine("HAS_TEXTURE_ALPHA");
+      L = null;
+      E.setUiAttribs({ greyout: true });
+      C.setUiAttribs({ greyout: true });
+    }
+    qe();
+  }
+  C.onChange = function () {
+    N.toggleDefine("DISCARDTRANS", C.get());
+  };
+  d.onChange = Me;
+  g.onChange = ke;
+  b.onChange = Ve;
+  v.onChange = Ue;
+  _.onChange = De;
+  O.onChange = Ge;
+  A.onChange = Xe;
+  I.onChange = () => {
+    Be = true;
+  };
+  y.onChange = ze;
+  const He = t.maxUniformsFrag;
+  const Ye = He === 64 ? 6 : 16;
+  N.define("MAX_LIGHTS", Ye.toString());
+  N.define("SPECULAR_PHONG");
+  m.onChange = function () {
+    if (m.get() === "Phong") {
+      N.define("SPECULAR_PHONG");
+      N.removeDefine("SPECULAR_BLINN");
+      N.removeDefine("SPECULAR_GAUSS");
+      N.removeDefine("SPECULAR_SCHLICK");
+    } else if (m.get() === "Blinn") {
+      N.define("SPECULAR_BLINN");
+      N.removeDefine("SPECULAR_PHONG");
+      N.removeDefine("SPECULAR_GAUSS");
+      N.removeDefine("SPECULAR_SCHLICK");
+    } else if (m.get() === "Gauss") {
+      N.define("SPECULAR_GAUSS");
+      N.removeDefine("SPECULAR_BLINN");
+      N.removeDefine("SPECULAR_PHONG");
+      N.removeDefine("SPECULAR_SCHLICK");
+    } else if (m.get() === "Schlick") {
+      N.define("SPECULAR_SCHLICK");
+      N.removeDefine("SPECULAR_BLINN");
+      N.removeDefine("SPECULAR_PHONG");
+      N.removeDefine("SPECULAR_GAUSS");
+    }
+  };
+  se.onChange = function () {
+    N.toggleDefine("CONSERVE_ENERGY", se.get());
+  };
+  oe.onChange = function () {
+    N.toggleDefine("DOUBLE_SIDED", oe.get());
+  };
+  const We = new CGL.Uniform(N, "4f", "inMaterialProperties", r, i, re, ie);
+  const Ke = new CGL.Uniform(N, "4f", "inDiffuseColor", z, q, X, H);
+  const Ze = new CGL.Uniform(N, "4f", "inTextureIntensities", de, ge, pe, x);
+  const Qe = new CGL.Uniform(N, "4f", "inTextureRepeatOffset", ce, he, fe, me);
+  N.uniformColorDiffuse = Ke;
+  const R = [];
+  let Je = 0;
+  function $e(t) {
+    for (let e = 0; e < R.length; e += 1) {
+      R[e] = null;
+    }
+    for (let e = 0; e < t; e += 1) {
+      R[e] = null;
+      if (!R[e]) {
+        R[e] = {
+          color: new CGL.Uniform(
+            N,
+            "3f",
+            "phongLight" + e + ".color",
+            [1, 1, 1]
+          ),
+          position: new CGL.Uniform(
+            N,
+            "3f",
+            "phongLight" + e + ".position",
+            [0, 11, 0]
+          ),
+          specular: new CGL.Uniform(
+            N,
+            "3f",
+            "phongLight" + e + ".specular",
+            [1, 1, 1]
+          ),
+          lightProperties: new CGL.Uniform(
+            N,
+            "4f",
+            "phongLight" + e + ".lightProperties",
+            [1, 1, 1, 1]
+          ),
+          conePointAt: new CGL.Uniform(
+            N,
+            "3f",
+            "phongLight" + e + ".conePointAt",
+            vec3.create()
+          ),
+          spotProperties: new CGL.Uniform(
+            N,
+            "3f",
+            "phongLight" + e + ".spotProperties",
+            [0, 0, 0, 0]
+          ),
+          castLight: new CGL.Uniform(
+            N,
+            "i",
+            "phongLight" + e + ".castLight",
+            1
+          ),
+        };
+      }
+    }
+  }
+  function et(e) {
+    M.position.setValue(e.position);
+    M.color.setValue(e.color);
+    M.specular.setValue(e.specular);
+    M.lightProperties.setValue([
+      e.intensity,
+      e.attenuation,
+      e.falloff,
+      e.radius,
+    ]);
+    M.conePointAt.setValue(e.conePointAt);
+    M.spotProperties.setValue([
+      e.cosConeAngle,
+      e.cosConeAngleInner,
+      e.spotExponent,
+    ]);
+  }
+  function tt(t) {
+    for (let e = 0; e < t.length; e += 1) {
+      const n = t[e];
+      n.isUsed = true;
+      R[e].position.setValue(n.position);
+      R[e].color.setValue(n.color);
+      R[e].specular.setValue(n.specular);
+      R[e].lightProperties.setValue([
+        n.intensity,
+        n.attenuation,
+        n.falloff,
+        n.radius,
+      ]);
+      R[e].conePointAt.setValue(n.conePointAt);
+      R[e].spotProperties.setValue([
+        n.cosConeAngle,
+        n.cosConeAngleInner,
+        n.spotExponent,
+      ]);
+      R[e].castLight.setValue(n.castLight);
+    }
+  }
+  function nt(e) {
+    if (e.length !== Je) {
+      xe(e);
+      $e(e.length);
+      Je = e.length;
+      tt(e);
+    } else {
+      tt(e);
+    }
+  }
+  let M = null;
+  function rt() {
+    M = {
+      color: new CGL.Uniform(N, "3f", "phongLight" + 0 + ".color", [1, 1, 1]),
+      specular: new CGL.Uniform(
+        N,
+        "3f",
+        "phongLight" + 0 + ".specular",
+        [1, 1, 1]
+      ),
+      position: new CGL.Uniform(
+        N,
+        "3f",
+        "phongLight" + 0 + ".position",
+        [0, 11, 0]
+      ),
+      lightProperties: new CGL.Uniform(
+        N,
+        "4f",
+        "phongLight" + 0 + ".lightProperties",
+        [1, 1, 1, 1]
+      ),
+      conePointAt: new CGL.Uniform(
+        N,
+        "3f",
+        "phongLight" + 0 + ".conePointAt",
+        vec3.create()
+      ),
+      spotProperties: new CGL.Uniform(
+        N,
+        "3f",
+        "phongLight" + 0 + ".spotProperties",
+        [0, 0, 0, 0]
+      ),
+      castLight: new CGL.Uniform(N, "i", "phongLight" + 0 + ".castLight", 1),
+    };
+  }
+  const it = [
+    {
+      type: "point",
+      position: [5, 5, 5],
+      color: [1, 1, 1],
+      specular: [1, 1, 1],
+      intensity: 1,
+      attenuation: 0,
+      falloff: 0.5,
+      radius: 80,
+      castLight: 1,
+    },
+  ];
+  const at = mat4.create();
+  function st() {
+    if (t.tempData.lightStack) {
+      if (t.tempData.lightStack.length === 0) {
+        e.setUiError(
+          "deflight",
+          "Default light is enabled. Please add lights to your patch to make this warning disappear.",
+          1
+        );
+      } else e.setUiError("deflight", null);
+    }
+    if (!t.tempData.lightStack || !t.tempData.lightStack.length) {
+      if (!M) {
+        B();
+        rt();
+      }
+      mat4.invert(at, t.vMatrix);
+      it[0].position = [at[12], at[13], at[14]];
+      et(it[0]);
+      Je = -1;
+    } else {
+      if (N) {
+        if (t.tempData.lightStack) {
+          if (t.tempData.lightStack.length) {
+            M = null;
+            nt(t.tempData.lightStack);
+          }
+        }
+      }
+    }
+  }
+  const ot = function () {
+    if (!N) {
+      e.log("NO SHADER");
+      return;
+    }
+    t.pushShader(N);
+    N.popTextures();
+    Oe.trigger();
+    t.popShader();
+  };
+  e.preRender = function () {
+    N.bind();
+    ot();
+  };
+  const lt = mat4.create();
+  const ut = vec3.create();
+  const ct = vec3.create();
+  F.onTriggered = function () {
+    if (!N) {
+      e.log("phong has no shader...");
+      return;
+    }
+    if (Be) Fe();
+    t.pushShader(N);
+    N.popTextures();
+    if (d.get()) N.pushTexture(Te, d.get());
+    if (g.get()) N.pushTexture(Se, g.get());
+    if (b.get()) N.pushTexture(Ee, b.get());
+    if (v.get()) N.pushTexture(Ce, v.get());
+    if (_.get()) N.pushTexture(Ne, _.get());
+    if (O.get()) N.pushTexture(je, O.get());
+    if (A.get()) N.pushTexture(L, A.get());
+    if (I.get()) {
+      if (I.get().cubemap)
+        N.pushTexture(P, I.get().cubemap, t.gl.TEXTURE_CUBE_MAP);
+      else N.pushTexture(P, I.get());
+    }
+    if (y.get()) {
+      N.pushTexture(we, y.get());
+    }
+    st();
+    Oe.trigger();
+    t.popShader();
+  };
+  if (t.glVersion == 1) {
+    if (!t.enableExtension("EXT_shader_texture_lod")) {
+      e.log("no EXT_shader_texture_lod texture extension");
+    } else {
+      N.enableExtension("GL_EXT_shader_texture_lod");
+      t.enableExtension("OES_texture_float");
+      t.enableExtension("OES_texture_float_linear");
+      t.enableExtension("OES_texture_half_float");
+      t.enableExtension("OES_texture_half_float_linear");
+      N.enableExtension("GL_OES_standard_derivatives");
+      N.enableExtension("GL_OES_texture_float");
+      N.enableExtension("GL_OES_texture_float_linear");
+      N.enableExtension("GL_OES_texture_half_float");
+      N.enableExtension("GL_OES_texture_half_float_linear");
+    }
+  }
+  Me();
+  ke();
+  Ve();
+  Ue();
+  Xe();
+  De();
+  Ge();
+  Fe();
+  ze();
+};
+Ops.Gl.Phong.PhongMaterial_v6.prototype = new CABLES.Op();
+CABLES.OPS["0d83ed06-cdbe-4fe0-87bb-0ccece7fb6e1"] = {
+  f: Ops.Gl.Phong.PhongMaterial_v6,
+  objName: "Ops.Gl.Phong.PhongMaterial_v6",
 };
 window.addEventListener("load", function (e) {
   CABLES.jsLoaded = new Event("CABLES.jsLoaded");
@@ -44438,9 +47018,9 @@ window.addEventListener("load", function (e) {
       2: [
         function (e, t, n) {
           var f = arguments[3],
-            d = arguments[4],
+            m = arguments[4],
             p = arguments[5],
-            m = JSON.stringify;
+            d = JSON.stringify;
           t.exports = function (e) {
             for (var t, n = Object.keys(p), r = 0, i = n.length; i > r; r++) {
               var a = n[r],
@@ -44456,7 +47036,7 @@ window.addEventListener("load", function (e) {
                 var a = n[r];
                 o[a] = a;
               }
-              d[t] = [
+              m[t] = [
                 Function(["require", "module", "exports"], "(" + e + ")(self)"),
                 o,
               ];
@@ -44464,11 +47044,11 @@ window.addEventListener("load", function (e) {
             var l = Math.floor(Math.pow(16, 8) * Math.random()).toString(16),
               u = {};
             (u[t] = t),
-              (d[l] = [
+              (m[l] = [
                 Function(
                   ["require"],
                   "var f = require(" +
-                    m(t) +
+                    d(t) +
                     ");(f.default ? f.default : f)(self);"
                 ),
                 u,
@@ -44477,13 +47057,13 @@ window.addEventListener("load", function (e) {
                 "(" +
                 f +
                 ")({" +
-                Object.keys(d)
+                Object.keys(m)
                   .map(function (e) {
-                    return m(e) + ":[" + d[e][0] + "," + m(d[e][1]) + "]";
+                    return d(e) + ":[" + m[e][0] + "," + d(m[e][1]) + "]";
                   })
                   .join(",") +
                 "},{},[" +
-                m(l) +
+                d(l) +
                 "])",
               h =
                 window.URL || window.webkitURL || window.mozURL || window.msURL;
@@ -44697,7 +47277,7 @@ window.addEventListener("load", function (e) {
             c = e("../event-handler"),
             h = r(c),
             f = e("../utils/logger"),
-            d = e("../errors"),
+            m = e("../errors"),
             p = (function (e) {
               function n(e) {
                 i(this, n);
@@ -44817,8 +47397,8 @@ window.addEventListener("load", function (e) {
                     value: function (e) {
                       f.logger.error("sourceBuffer error:" + e),
                         this.hls.trigger(u.default.ERROR, {
-                          type: d.ErrorTypes.MEDIA_ERROR,
-                          details: d.ErrorDetails.BUFFER_APPENDING_ERROR,
+                          type: m.ErrorTypes.MEDIA_ERROR,
+                          details: m.ErrorDetails.BUFFER_APPENDING_ERROR,
                           fatal: !1,
                         });
                     },
@@ -44877,8 +47457,8 @@ window.addEventListener("load", function (e) {
                     value: function (e) {
                       f.logger.error("sourceBuffer error:" + e.event),
                         this.hls.trigger(u.default.ERROR, {
-                          type: d.ErrorTypes.MEDIA_ERROR,
-                          details: d.ErrorDetails.BUFFER_APPENDING_ERROR,
+                          type: m.ErrorTypes.MEDIA_ERROR,
+                          details: m.ErrorDetails.BUFFER_APPENDING_ERROR,
                           fatal: !1,
                           frag: this.fragCurrent,
                         });
@@ -44957,14 +47537,14 @@ window.addEventListener("load", function (e) {
                               "error while trying to append buffer:" + t.message
                             ),
                               n.unshift(i);
-                            var a = { type: d.ErrorTypes.MEDIA_ERROR };
+                            var a = { type: m.ErrorTypes.MEDIA_ERROR };
                             if (22 !== t.code) {
                               if (
                                 (this.appendError
                                   ? this.appendError++
                                   : (this.appendError = 1),
                                 (a.details =
-                                  d.ErrorDetails.BUFFER_APPEND_ERROR),
+                                  m.ErrorDetails.BUFFER_APPEND_ERROR),
                                 (a.frag = this.fragCurrent),
                                 this.appendError > e.config.appendErrorMaxRetry)
                               )
@@ -44981,7 +47561,7 @@ window.addEventListener("load", function (e) {
                               (a.fatal = !1), e.trigger(u.default.ERROR, a);
                             } else
                               (n = []),
-                                (a.details = d.ErrorDetails.BUFFER_FULL_ERROR),
+                                (a.details = m.ErrorDetails.BUFFER_FULL_ERROR),
                                 e.trigger(u.default.ERROR, a);
                           }
                         }
@@ -45112,7 +47692,7 @@ window.addEventListener("load", function (e) {
             c = e("../event-handler"),
             h = r(c),
             f = e("../utils/logger"),
-            d = e("../errors"),
+            m = e("../errors"),
             p = (function (e) {
               function n(e) {
                 i(this, n);
@@ -45225,9 +47805,9 @@ window.addEventListener("load", function (e) {
                         });
                       } else
                         l.trigger(u.default.ERROR, {
-                          type: d.ErrorTypes.MEDIA_ERROR,
+                          type: m.ErrorTypes.MEDIA_ERROR,
                           details:
-                            d.ErrorDetails.MANIFEST_INCOMPATIBLE_CODECS_ERROR,
+                            m.ErrorDetails.MANIFEST_INCOMPATIBLE_CODECS_ERROR,
                           fatal: !0,
                           url: l.url,
                           reason:
@@ -45258,8 +47838,8 @@ window.addEventListener("load", function (e) {
                         }
                       } else
                         this.hls.trigger(u.default.ERROR, {
-                          type: d.ErrorTypes.OTHER_ERROR,
-                          details: d.ErrorDetails.LEVEL_SWITCH_ERROR,
+                          type: m.ErrorTypes.OTHER_ERROR,
+                          details: m.ErrorDetails.LEVEL_SWITCH_ERROR,
                           level: e,
                           fatal: !1,
                           reason: "invalid level idx",
@@ -45275,15 +47855,15 @@ window.addEventListener("load", function (e) {
                           r = e.details,
                           i = this.hls;
                         switch (r) {
-                          case d.ErrorDetails.FRAG_LOAD_ERROR:
-                          case d.ErrorDetails.FRAG_LOAD_TIMEOUT:
-                          case d.ErrorDetails.FRAG_LOOP_LOADING_ERROR:
-                          case d.ErrorDetails.KEY_LOAD_ERROR:
-                          case d.ErrorDetails.KEY_LOAD_TIMEOUT:
+                          case m.ErrorDetails.FRAG_LOAD_ERROR:
+                          case m.ErrorDetails.FRAG_LOAD_TIMEOUT:
+                          case m.ErrorDetails.FRAG_LOOP_LOADING_ERROR:
+                          case m.ErrorDetails.KEY_LOAD_ERROR:
+                          case m.ErrorDetails.KEY_LOAD_TIMEOUT:
                             t = e.frag.level;
                             break;
-                          case d.ErrorDetails.LEVEL_LOAD_ERROR:
-                          case d.ErrorDetails.LEVEL_LOAD_TIMEOUT:
+                          case m.ErrorDetails.LEVEL_LOAD_ERROR:
+                          case m.ErrorDetails.LEVEL_LOAD_TIMEOUT:
                             t = e.level;
                         }
                         if (void 0 !== t)
@@ -45315,8 +47895,8 @@ window.addEventListener("load", function (e) {
                                     r +
                                     " on live stream, discard"
                                 )
-                              : r !== d.ErrorDetails.FRAG_LOAD_ERROR &&
-                                r !== d.ErrorDetails.FRAG_LOAD_TIMEOUT &&
+                              : r !== m.ErrorDetails.FRAG_LOAD_ERROR &&
+                                r !== m.ErrorDetails.FRAG_LOAD_TIMEOUT &&
                                 (f.logger.error(
                                   "cannot recover " + r + " error"
                                 ),
@@ -45490,13 +48070,13 @@ window.addEventListener("load", function (e) {
             P = r(c),
             h = e("../event-handler"),
             f = r(h),
-            L = e("../utils/logger"),
-            d = e("../utils/binary-search"),
-            R = r(d),
+            w = e("../utils/logger"),
+            m = e("../utils/binary-search"),
+            R = r(m),
             p = e("../helper/level-helper"),
-            m = r(p),
-            k = e("../errors"),
-            M = {
+            d = r(p),
+            M = e("../errors"),
+            k = {
               STOPPED: "STOPPED",
               STARTING: "STARTING",
               IDLE: "IDLE",
@@ -45551,7 +48131,7 @@ window.addEventListener("load", function (e) {
                         this.timer &&
                           (clearInterval(this.timer), (this.timer = null)),
                         f.default.prototype.destroy.call(this),
-                        (this.state = M.STOPPED);
+                        (this.state = k.STOPPED);
                     },
                   },
                   {
@@ -45571,22 +48151,22 @@ window.addEventListener("load", function (e) {
                           (this.level = -1),
                           (this.fragLoadError = 0),
                           t && n
-                            ? (L.logger.log("configure startPosition @" + n),
+                            ? (w.logger.log("configure startPosition @" + n),
                               this.lastPaused ||
-                                (L.logger.log("resuming video"), t.play()),
-                              (this.state = M.IDLE))
+                                (w.logger.log("resuming video"), t.play()),
+                              (this.state = k.IDLE))
                             : ((this.lastCurrentTime = this.startPosition
                                 ? this.startPosition
                                 : e),
-                              (this.state = M.STARTING)),
+                              (this.state = k.STARTING)),
                           (this.nextLoadPosition = this.startPosition =
                             this.lastCurrentTime),
                           this.tick();
                       } else
-                        L.logger.warn(
+                        w.logger.warn(
                           "cannot start loading as manifest not parsed yet"
                         ),
-                          (this.state = M.STOPPED);
+                          (this.state = k.STOPPED);
                     },
                   },
                   {
@@ -45599,7 +48179,7 @@ window.addEventListener("load", function (e) {
                         (this.fragPrevious = null),
                         this.demuxer &&
                           (this.demuxer.destroy(), (this.demuxer = null)),
-                        (this.state = M.STOPPED);
+                        (this.state = k.STOPPED);
                     },
                   },
                   {
@@ -45622,19 +48202,19 @@ window.addEventListener("load", function (e) {
                         i = this.hls,
                         a = i.config;
                       switch (this.state) {
-                        case M.ERROR:
-                        case M.PAUSED:
+                        case k.ERROR:
+                        case k.PAUSED:
                           break;
-                        case M.STARTING:
+                        case k.STARTING:
                           (this.startLevel = i.startLevel),
                             -1 === this.startLevel &&
                               ((this.startLevel = 0),
                               (this.fragBitrateTest = !0)),
                             (this.level = i.nextLoadLevel = this.startLevel),
-                            (this.state = M.WAITING_LEVEL),
+                            (this.state = k.WAITING_LEVEL),
                             (this.loadedmetadata = !1);
                           break;
-                        case M.IDLE:
+                        case k.IDLE:
                           if (
                             !this.media &&
                             (this.startFragRequested || !a.startFragPrefetch)
@@ -45670,29 +48250,29 @@ window.addEventListener("load", function (e) {
                               "undefined" == typeof n ||
                                 (n.live && this.levelLastLoaded !== t))
                             ) {
-                              this.state = M.WAITING_LEVEL;
+                              this.state = k.WAITING_LEVEL;
                               break;
                             }
                             var h = n.fragments,
                               f = h.length,
-                              d = h[0].start,
+                              m = h[0].start,
                               p = h[f - 1].start + h[f - 1].duration,
-                              m = void 0;
+                              d = void 0;
                             if (n.live) {
                               var g =
                                 void 0 !== a.liveMaxLatencyDuration
                                   ? a.liveMaxLatencyDuration
                                   : a.liveMaxLatencyDurationCount *
                                     n.targetduration;
-                              if (u < Math.max(d, p - g)) {
+                              if (u < Math.max(m, p - g)) {
                                 var b =
                                   void 0 !== a.liveSyncDuration
                                     ? a.liveSyncDuration
                                     : a.liveSyncDurationCount *
                                       n.targetduration;
                                 (this.seekAfterBuffered =
-                                  d + Math.max(0, n.totalduration - b)),
-                                  L.logger.log(
+                                  m + Math.max(0, n.totalduration - b)),
+                                  w.logger.log(
                                     "buffer end: " +
                                       u +
                                       " is located too far from the end of live sliding playlist, media position will be reseted to: " +
@@ -45705,22 +48285,22 @@ window.addEventListener("load", function (e) {
                                   var v = c.sn + 1;
                                   v >= n.startSN &&
                                     v <= n.endSN &&
-                                    ((m = h[v - n.startSN]),
-                                    L.logger.log(
+                                    ((d = h[v - n.startSN]),
+                                    w.logger.log(
                                       "live playlist, switching playlist, load frag with next SN: " +
-                                        m.sn
+                                        d.sn
                                     ));
                                 }
-                                m ||
-                                  ((m = h[Math.min(f - 1, Math.round(f / 2))]),
-                                  L.logger.log(
+                                d ||
+                                  ((d = h[Math.min(f - 1, Math.round(f / 2))]),
+                                  w.logger.log(
                                     "live playlist, switching playlist, unknown, load middle frag : " +
-                                      m.sn
+                                      d.sn
                                   ));
                               }
-                            } else d > u && (m = h[0]);
+                            } else m > u && (d = h[0]);
                             if (
-                              (m ||
+                              (d ||
                                 !(function () {
                                   var e = void 0,
                                     t = a.maxFragLookUpTolerance;
@@ -45735,33 +48315,33 @@ window.addEventListener("load", function (e) {
                                       })))
                                     : (e = h[f - 1]),
                                     e &&
-                                      ((m = e),
-                                      (d = e.start),
+                                      ((d = e),
+                                      (m = e.start),
                                       c &&
-                                        m.level === c.level &&
-                                        m.sn === c.sn &&
-                                        (m.sn < n.endSN
-                                          ? ((m = h[m.sn + 1 - n.startSN]),
-                                            L.logger.log(
+                                        d.level === c.level &&
+                                        d.sn === c.sn &&
+                                        (d.sn < n.endSN
+                                          ? ((d = h[d.sn + 1 - n.startSN]),
+                                            w.logger.log(
                                               "SN just loaded, load next one: " +
-                                                m.sn
+                                                d.sn
                                             ))
                                           : (n.live ||
                                               (r.hls.trigger(
                                                 P.default.BUFFER_EOS
                                               ),
-                                              (r.state = M.ENDED)),
-                                            (m = null))));
+                                              (r.state = k.ENDED)),
+                                            (d = null))));
                                 })(),
-                              m)
+                              d)
                             )
                               if (
-                                null != m.decryptdata.uri &&
-                                null == m.decryptdata.key
+                                null != d.decryptdata.uri &&
+                                null == d.decryptdata.key
                               )
-                                L.logger.log(
+                                w.logger.log(
                                   "Loading key for " +
-                                    m.sn +
+                                    d.sn +
                                     " of [" +
                                     n.startSN +
                                     " ," +
@@ -45769,13 +48349,13 @@ window.addEventListener("load", function (e) {
                                     "],level " +
                                     t
                                 ),
-                                  (this.state = M.KEY_LOADING),
-                                  i.trigger(P.default.KEY_LOADING, { frag: m });
+                                  (this.state = k.KEY_LOADING),
+                                  i.trigger(P.default.KEY_LOADING, { frag: d });
                               else {
                                 if (
-                                  (L.logger.log(
+                                  (w.logger.log(
                                     "Loading " +
-                                      m.sn +
+                                      d.sn +
                                       " of [" +
                                       n.startSN +
                                       " ," +
@@ -45787,46 +48367,46 @@ window.addEventListener("load", function (e) {
                                       ",bufferEnd:" +
                                       u.toFixed(3)
                                   ),
-                                  (m.autoLevel = i.autoLevelEnabled),
+                                  (d.autoLevel = i.autoLevelEnabled),
                                   this.levels.length > 1 &&
-                                    ((m.expectedLen = Math.round(
-                                      (m.duration * this.levels[t].bitrate) / 8
+                                    ((d.expectedLen = Math.round(
+                                      (d.duration * this.levels[t].bitrate) / 8
                                     )),
-                                    (m.trequest = performance.now())),
+                                    (d.trequest = performance.now())),
                                   void 0 !== this.fragLoadIdx
                                     ? this.fragLoadIdx++
                                     : (this.fragLoadIdx = 0),
-                                  m.loadCounter)
+                                  d.loadCounter)
                                 ) {
-                                  m.loadCounter++;
+                                  d.loadCounter++;
                                   var _ = a.fragLoadingLoopThreshold;
                                   if (
-                                    m.loadCounter > _ &&
-                                    Math.abs(this.fragLoadIdx - m.loadIdx) < _
+                                    d.loadCounter > _ &&
+                                    Math.abs(this.fragLoadIdx - d.loadIdx) < _
                                   )
                                     return void i.trigger(P.default.ERROR, {
-                                      type: k.ErrorTypes.MEDIA_ERROR,
+                                      type: M.ErrorTypes.MEDIA_ERROR,
                                       details:
-                                        k.ErrorDetails.FRAG_LOOP_LOADING_ERROR,
+                                        M.ErrorDetails.FRAG_LOOP_LOADING_ERROR,
                                       fatal: !1,
-                                      frag: m,
+                                      frag: d,
                                     });
-                                } else m.loadCounter = 1;
-                                (m.loadIdx = this.fragLoadIdx),
-                                  (this.fragCurrent = m),
+                                } else d.loadCounter = 1;
+                                (d.loadIdx = this.fragLoadIdx),
+                                  (this.fragCurrent = d),
                                   (this.startFragRequested = !0),
                                   i.trigger(P.default.FRAG_LOADING, {
-                                    frag: m,
+                                    frag: d,
                                   }),
-                                  (this.state = M.FRAG_LOADING);
+                                  (this.state = k.FRAG_LOADING);
                               }
                           }
                           break;
-                        case M.WAITING_LEVEL:
+                        case k.WAITING_LEVEL:
                           (t = this.levels[this.level]),
-                            t && t.details && (this.state = M.IDLE);
+                            t && t.details && (this.state = k.IDLE);
                           break;
-                        case M.FRAG_LOADING:
+                        case k.FRAG_LOADING:
                           var O = this.media,
                             A = this.fragCurrent;
                           if (
@@ -45836,13 +48416,13 @@ window.addEventListener("load", function (e) {
                             this.level &&
                             this.levels.length > 1
                           ) {
-                            var y = performance.now() - A.trequest;
-                            if (y > 500 * A.duration) {
-                              var I = Math.max(1, (1e3 * A.loaded) / y);
+                            var I = performance.now() - A.trequest;
+                            if (I > 500 * A.duration) {
+                              var y = Math.max(1, (1e3 * A.loaded) / I);
                               A.expectedLen < A.loaded &&
                                 (A.expectedLen = A.loaded),
                                 (e = O.currentTime);
-                              var x = (A.expectedLen - A.loaded) / I,
+                              var x = (A.expectedLen - A.loaded) / y,
                                 T = this.bufferInfo(e, a.maxBufferHole).end - e;
                               if (T < 2 * A.duration && x > T) {
                                 var S = void 0,
@@ -45852,8 +48432,8 @@ window.addEventListener("load", function (e) {
                                   E >= 0 &&
                                   ((S =
                                     (A.duration * this.levels[E].bitrate) /
-                                    (6.4 * I)),
-                                  L.logger.log(
+                                    (6.4 * y)),
+                                  w.logger.log(
                                     "fragLoadedDelay/bufferStarvationDelay/fragLevelNextLoadedDelay[" +
                                       E +
                                       "] :" +
@@ -45869,7 +48449,7 @@ window.addEventListener("load", function (e) {
                                 x > S &&
                                   ((E = Math.max(0, E)),
                                   (i.nextLoadLevel = E),
-                                  L.logger.warn(
+                                  w.logger.warn(
                                     "loading too slow, abort fragment loading and switch to level " +
                                       E
                                   ),
@@ -45878,27 +48458,27 @@ window.addEventListener("load", function (e) {
                                     P.default.FRAG_LOAD_EMERGENCY_ABORTED,
                                     { frag: A }
                                   ),
-                                  (this.state = M.IDLE));
+                                  (this.state = k.IDLE));
                               }
                             }
                           }
                           break;
-                        case M.FRAG_LOADING_WAITING_RETRY:
+                        case k.FRAG_LOADING_WAITING_RETRY:
                           var C = performance.now(),
-                            j = this.retryDate,
-                            N = this.media,
-                            w = N && N.seeking;
-                          (!j || C >= j || w) &&
-                            (L.logger.log(
+                            N = this.retryDate,
+                            j = this.media,
+                            L = j && j.seeking;
+                          (!N || C >= N || L) &&
+                            (w.logger.log(
                               "mediaController: retryDate reached, switch back to IDLE state"
                             ),
-                            (this.state = M.IDLE));
+                            (this.state = k.IDLE));
                           break;
-                        case M.PARSING:
+                        case k.PARSING:
                           break;
-                        case M.PARSED:
+                        case k.PARSED:
                           break;
-                        case M.ENDED:
+                        case k.ENDED:
                       }
                       this._checkBuffer(), this._checkFragmentChanged();
                     },
@@ -46017,7 +48597,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "immediateLevelSwitch",
                     value: function () {
-                      L.logger.log("immediateLevelSwitch"),
+                      w.logger.log("immediateLevelSwitch"),
                         this.immediateSwitch ||
                           ((this.immediateSwitch = !0),
                           (this.previouslyPaused = this.media.paused),
@@ -46029,7 +48609,7 @@ window.addEventListener("load", function (e) {
                           startOffset: 0,
                           endOffset: Number.POSITIVE_INFINITY,
                         }),
-                        (this.state = M.PAUSED),
+                        (this.state = k.PAUSED),
                         (this.fragLoadIdx +=
                           2 * this.config.fragLoadingLoopThreshold),
                         this.tick();
@@ -46055,7 +48635,7 @@ window.addEventListener("load", function (e) {
                             startOffset: 0,
                             endOffset: t.start - 1,
                           }),
-                          (this.state = M.PAUSED)),
+                          (this.state = k.PAUSED)),
                         this.media.paused)
                       )
                         e = 0;
@@ -46078,7 +48658,7 @@ window.addEventListener("load", function (e) {
                           startOffset: n.start,
                           endOffset: Number.POSITIVE_INFINITY,
                         }),
-                          (this.state = M.PAUSED);
+                          (this.state = k.PAUSED);
                         var s = this.fragCurrent;
                         s && s.loader && s.loader.abort(),
                           (this.fragCurrent = null),
@@ -46108,7 +48688,7 @@ window.addEventListener("load", function (e) {
                       var e = this.media;
                       e &&
                         e.ended &&
-                        (L.logger.log(
+                        (w.logger.log(
                           "MSE detaching and video ended, reset startPosition"
                         ),
                         (this.startPosition = this.lastCurrentTime = 0));
@@ -46136,7 +48716,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "onMediaSeeking",
                     value: function () {
-                      if (this.state === M.FRAG_LOADING) {
+                      if (this.state === k.FRAG_LOADING) {
                         if (
                           0 ===
                           this.bufferInfo(
@@ -46144,7 +48724,7 @@ window.addEventListener("load", function (e) {
                             this.config.maxBufferHole
                           ).len
                         ) {
-                          L.logger.log(
+                          w.logger.log(
                             "seeking outside of buffer while fragment load in progress, cancel fragment load"
                           );
                           var e = this.fragCurrent;
@@ -46152,9 +48732,9 @@ window.addEventListener("load", function (e) {
                             (e.loader && e.loader.abort(),
                             (this.fragCurrent = null)),
                             (this.fragPrevious = null),
-                            (this.state = M.IDLE);
+                            (this.state = k.IDLE);
                         }
-                      } else this.state === M.ENDED && (this.state = M.IDLE);
+                      } else this.state === k.ENDED && (this.state = k.IDLE);
                       this.media &&
                         (this.lastCurrentTime = this.media.currentTime),
                         void 0 !== this.fragLoadIdx &&
@@ -46172,14 +48752,14 @@ window.addEventListener("load", function (e) {
                   {
                     key: "onMediaEnded",
                     value: function () {
-                      L.logger.log("media ended"),
+                      w.logger.log("media ended"),
                         (this.startPosition = this.lastCurrentTime = 0);
                     },
                   },
                   {
                     key: "onManifestLoading",
                     value: function () {
-                      L.logger.log("trigger BUFFER_RESET"),
+                      w.logger.log("trigger BUFFER_RESET"),
                         this.hls.trigger(P.default.BUFFER_RESET),
                         (this.bufferRange = []),
                         (this.stalled = !1);
@@ -46199,7 +48779,7 @@ window.addEventListener("load", function (e) {
                       }),
                         (this.audioCodecSwitch = n && r),
                         this.audioCodecSwitch &&
-                          L.logger.log(
+                          w.logger.log(
                             "both AAC/HE-AAC audio found in levels; declaring level codec as HE-AAC"
                           ),
                         (this.levels = e.levels),
@@ -46217,7 +48797,7 @@ window.addEventListener("load", function (e) {
                         i = t.totalduration,
                         a = 0;
                       if (
-                        (L.logger.log(
+                        (w.logger.log(
                           "level " +
                             n +
                             " loaded [" +
@@ -46232,17 +48812,17 @@ window.addEventListener("load", function (e) {
                       ) {
                         var s = r.details;
                         s
-                          ? (m.default.mergeDetails(s, t),
+                          ? (d.default.mergeDetails(s, t),
                             (a = t.fragments[0].start),
                             t.PTSKnown
-                              ? L.logger.log(
+                              ? w.logger.log(
                                   "live playlist sliding:" + a.toFixed(3)
                                 )
-                              : L.logger.log(
+                              : w.logger.log(
                                   "live playlist - outdated PTS, unknown sliding"
                                 ))
                           : ((t.PTSKnown = !1),
-                            L.logger.log(
+                            w.logger.log(
                               "live playlist - first load, unknown sliding"
                             ));
                       } else t.PTSKnown = !1;
@@ -46264,15 +48844,15 @@ window.addEventListener("load", function (e) {
                         }
                         this.nextLoadPosition = this.startPosition;
                       }
-                      this.state === M.WAITING_LEVEL && (this.state = M.IDLE),
+                      this.state === k.WAITING_LEVEL && (this.state = k.IDLE),
                         this.tick();
                     },
                   },
                   {
                     key: "onKeyLoaded",
                     value: function () {
-                      this.state === M.KEY_LOADING &&
-                        ((this.state = M.IDLE), this.tick());
+                      this.state === k.KEY_LOADING &&
+                        ((this.state = k.IDLE), this.tick());
                     },
                   },
                   {
@@ -46280,13 +48860,13 @@ window.addEventListener("load", function (e) {
                     value: function (e) {
                       var t = this.fragCurrent;
                       if (
-                        this.state === M.FRAG_LOADING &&
+                        this.state === k.FRAG_LOADING &&
                         t &&
                         e.frag.level === t.level &&
                         e.frag.sn === t.sn
                       )
                         if (this.fragBitrateTest === !0)
-                          (this.state = M.IDLE),
+                          (this.state = k.IDLE),
                             (this.fragBitrateTest = !1),
                             (e.stats.tparsed = e.stats.tbuffered =
                               performance.now()),
@@ -46295,7 +48875,7 @@ window.addEventListener("load", function (e) {
                               frag: t,
                             });
                         else {
-                          (this.state = M.PARSING), (this.stats = e.stats);
+                          (this.state = k.PARSING), (this.stats = e.stats);
                           var n = this.levels[this.level],
                             r = n.details,
                             i = r.totalduration,
@@ -46304,7 +48884,7 @@ window.addEventListener("load", function (e) {
                             o = t.sn,
                             l = n.audioCodec || this.config.defaultAudioCodec;
                           this.audioCodecSwap &&
-                            (L.logger.log("swapping playlist audio codec"),
+                            (w.logger.log("swapping playlist audio codec"),
                             void 0 === l && (l = this.lastAudioCodec),
                             l &&
                               (l =
@@ -46312,7 +48892,7 @@ window.addEventListener("load", function (e) {
                                   ? "mp4a.40.2"
                                   : "mp4a.40.5")),
                             (this.pendingAppending = 0),
-                            L.logger.log(
+                            w.logger.log(
                               "Demuxing " +
                                 o +
                                 " of [" +
@@ -46340,7 +48920,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "onFragParsingInitSegment",
                     value: function (e) {
-                      if (this.state === M.PARSING) {
+                      if (this.state === k.PARSING) {
                         var t,
                           n,
                           r = e.tracks;
@@ -46349,7 +48929,7 @@ window.addEventListener("load", function (e) {
                             a = navigator.userAgent.toLowerCase();
                           i &&
                             this.audioCodecSwap &&
-                            (L.logger.log("swapping playlist audio codec"),
+                            (w.logger.log("swapping playlist audio codec"),
                             (i =
                               -1 !== i.indexOf("mp4a.40.5")
                                 ? "mp4a.40.2"
@@ -46360,7 +48940,7 @@ window.addEventListener("load", function (e) {
                               (i = "mp4a.40.5"),
                             -1 !== a.indexOf("android") &&
                               ((i = "mp4a.40.2"),
-                              L.logger.log(
+                              w.logger.log(
                                 "Android: force audio codec to" + i
                               )),
                             (n.levelCodec = i);
@@ -46384,7 +48964,7 @@ window.addEventListener("load", function (e) {
                         this.hls.trigger(P.default.BUFFER_CODECS, r);
                         for (t in r) {
                           (n = r[t]),
-                            L.logger.log(
+                            w.logger.log(
                               "track:" +
                                 t +
                                 ",container:" +
@@ -46411,11 +48991,11 @@ window.addEventListener("load", function (e) {
                     key: "onFragParsingData",
                     value: function (t) {
                       var n = this;
-                      if (this.state === M.PARSING) {
+                      if (this.state === k.PARSING) {
                         this.tparse2 = Date.now();
                         var e = this.levels[this.level],
                           r = this.fragCurrent;
-                        L.logger.log(
+                        w.logger.log(
                           "parsed " +
                             t.type +
                             ",PTS:[" +
@@ -46429,7 +49009,7 @@ window.addEventListener("load", function (e) {
                             "],nb:" +
                             t.nb
                         );
-                        var i = m.default.updateFragPTS(
+                        var i = d.default.updateFragPTS(
                             e.details,
                             r.sn,
                             t.startPTS,
@@ -46458,7 +49038,7 @@ window.addEventListener("load", function (e) {
                           }),
                           this.tick();
                       } else
-                        L.logger.warn(
+                        w.logger.warn(
                           "not in PARSING state but " +
                             this.state +
                             ", ignoring FRAG_PARSING_DATA event"
@@ -46468,9 +49048,9 @@ window.addEventListener("load", function (e) {
                   {
                     key: "onFragParsed",
                     value: function () {
-                      this.state === M.PARSING &&
+                      this.state === k.PARSING &&
                         ((this.stats.tparsed = performance.now()),
-                        (this.state = M.PARSED),
+                        (this.state = k.PARSED),
                         this._checkAppendedParsed());
                     },
                   },
@@ -46478,8 +49058,8 @@ window.addEventListener("load", function (e) {
                     key: "onBufferAppended",
                     value: function () {
                       switch (this.state) {
-                        case M.PARSING:
-                        case M.PARSED:
+                        case k.PARSING:
+                        case k.PARSED:
                           this.pendingAppending--, this._checkAppendedParsed();
                       }
                     },
@@ -46488,7 +49068,7 @@ window.addEventListener("load", function (e) {
                     key: "_checkAppendedParsed",
                     value: function () {
                       if (
-                        this.state === M.PARSED &&
+                        this.state === k.PARSED &&
                         0 === this.pendingAppending
                       ) {
                         var e = this.fragCurrent,
@@ -46503,11 +49083,11 @@ window.addEventListener("load", function (e) {
                             stats: t,
                             frag: e,
                           }),
-                          L.logger.log(
+                          w.logger.log(
                             "media buffered : " +
                               this.timeRangesToString(this.media.buffered)
                           ),
-                          (this.state = M.IDLE)),
+                          (this.state = k.IDLE)),
                           this.tick();
                       }
                     },
@@ -46516,8 +49096,8 @@ window.addEventListener("load", function (e) {
                     key: "onError",
                     value: function (e) {
                       switch (e.details) {
-                        case k.ErrorDetails.FRAG_LOAD_ERROR:
-                        case k.ErrorDetails.FRAG_LOAD_TIMEOUT:
+                        case M.ErrorDetails.FRAG_LOAD_ERROR:
+                        case M.ErrorDetails.FRAG_LOAD_TIMEOUT:
                           if (!e.fatal) {
                             var t = this.fragLoadError;
                             if (
@@ -46531,41 +49111,41 @@ window.addEventListener("load", function (e) {
                                   this.config.fragLoadingRetryDelay,
                                 64e3
                               );
-                              L.logger.warn(
+                              w.logger.warn(
                                 "mediaController: frag loading failed, retry in " +
                                   n +
                                   " ms"
                               ),
                                 (this.retryDate = performance.now() + n),
-                                (this.state = M.FRAG_LOADING_WAITING_RETRY);
+                                (this.state = k.FRAG_LOADING_WAITING_RETRY);
                             } else
-                              L.logger.error(
+                              w.logger.error(
                                 "mediaController: " +
                                   e.details +
                                   " reaches max retry, redispatch as fatal ..."
                               ),
                                 (e.fatal = !0),
                                 this.hls.trigger(P.default.ERROR, e),
-                                (this.state = M.ERROR);
+                                (this.state = k.ERROR);
                           }
                           break;
-                        case k.ErrorDetails.FRAG_LOOP_LOADING_ERROR:
-                        case k.ErrorDetails.LEVEL_LOAD_ERROR:
-                        case k.ErrorDetails.LEVEL_LOAD_TIMEOUT:
-                        case k.ErrorDetails.KEY_LOAD_ERROR:
-                        case k.ErrorDetails.KEY_LOAD_TIMEOUT:
-                          L.logger.warn(
+                        case M.ErrorDetails.FRAG_LOOP_LOADING_ERROR:
+                        case M.ErrorDetails.LEVEL_LOAD_ERROR:
+                        case M.ErrorDetails.LEVEL_LOAD_TIMEOUT:
+                        case M.ErrorDetails.KEY_LOAD_ERROR:
+                        case M.ErrorDetails.KEY_LOAD_TIMEOUT:
+                          w.logger.warn(
                             "mediaController: " +
                               e.details +
                               " while loading frag,switch to " +
                               (e.fatal ? "ERROR" : "IDLE") +
                               " state ..."
                           ),
-                            (this.state = e.fatal ? M.ERROR : M.IDLE);
+                            (this.state = e.fatal ? k.ERROR : k.IDLE);
                           break;
-                        case k.ErrorDetails.BUFFER_FULL_ERROR:
+                        case M.ErrorDetails.BUFFER_FULL_ERROR:
                           (this.config.maxMaxBufferLength /= 2),
-                            L.logger.warn(
+                            w.logger.warn(
                               "reduce max buffer length to " +
                                 this.config.maxMaxBufferLength +
                                 "s and trigger a nextLevelSwitch to flush old buffer and fix QuotaExceededError"
@@ -46599,7 +49179,7 @@ window.addEventListener("load", function (e) {
                           }
                           n &&
                             ((r = n),
-                            L.logger.log("target seek position:" + n));
+                            w.logger.log("target seek position:" + n));
                           var s = this.bufferInfo(r, 0),
                             o = !(e.paused || e.ended || e.seeking || 2 > t),
                             l = 0.4,
@@ -46608,18 +49188,18 @@ window.addEventListener("load", function (e) {
                             (this.stalled &&
                               u &&
                               ((this.stalled = !1),
-                              L.logger.log("playback not stuck anymore @" + r)),
+                              w.logger.log("playback not stuck anymore @" + r)),
                             s.len <= l)
                           ) {
                             if (
                               (u || !o
                                 ? (l = 0)
                                 : this.stalled ||
-                                  (L.logger.log("playback seems stuck @" + r),
+                                  (w.logger.log("playback seems stuck @" + r),
                                   this.hls.trigger(P.default.ERROR, {
-                                    type: k.ErrorTypes.MEDIA_ERROR,
+                                    type: M.ErrorTypes.MEDIA_ERROR,
                                     details:
-                                      k.ErrorDetails.BUFFER_STALLED_ERROR,
+                                      M.ErrorDetails.BUFFER_STALLED_ERROR,
                                     fatal: !1,
                                   }),
                                   (this.stalled = !0)),
@@ -46631,7 +49211,7 @@ window.addEventListener("load", function (e) {
                                 h < this.config.maxSeekHole &&
                                 h > 0 &&
                                 !e.seeking &&
-                                (L.logger.log(
+                                (w.logger.log(
                                   "adjust currentTime from " +
                                     e.currentTime +
                                     " to next buffered @ " +
@@ -46639,15 +49219,15 @@ window.addEventListener("load", function (e) {
                                 ),
                                 (e.currentTime = c),
                                 this.hls.trigger(P.default.ERROR, {
-                                  type: k.ErrorTypes.MEDIA_ERROR,
-                                  details: k.ErrorDetails.BUFFER_SEEK_OVER_HOLE,
+                                  type: M.ErrorTypes.MEDIA_ERROR,
+                                  details: M.ErrorDetails.BUFFER_SEEK_OVER_HOLE,
                                   fatal: !1,
                                 }));
                             }
                           } else
                             n &&
                               e.currentTime !== n &&
-                              (L.logger.log(
+                              (w.logger.log(
                                 "adjust currentTime from " +
                                   e.currentTime +
                                   " to " +
@@ -46669,7 +49249,7 @@ window.addEventListener("load", function (e) {
                           this.isBuffered((e.start + e.end) / 2) && n.push(e);
                       (this.bufferRange = n),
                         this.immediateSwitch && this.immediateLevelSwitchEnd(),
-                        (this.state = M.IDLE),
+                        (this.state = k.IDLE),
                         (this.fragPrevious = null);
                     },
                   },
@@ -46788,7 +49368,7 @@ window.addEventListener("load", function (e) {
             c = e("../event-handler"),
             h = r(c),
             f = e("../utils/cea-708-interpreter"),
-            d = r(f),
+            m = r(f),
             p = (function (e) {
               function n(e) {
                 i(this, n);
@@ -46808,7 +49388,7 @@ window.addEventListener("load", function (e) {
                   (t.hls = e),
                   (t.config = e.config),
                   t.config.enableCEA708Captions &&
-                    (t.cea708Interpreter = new d.default()),
+                    (t.cea708Interpreter = new m.default()),
                   t
                 );
               }
@@ -46955,23 +49535,23 @@ window.addEventListener("load", function (e) {
                       c = this._tables[1],
                       h = u[4],
                       f = c[4],
-                      d = [],
+                      m = [],
                       p = [];
                     for (e = 0; 256 > e; e++)
-                      p[(d[e] = (e << 1) ^ (283 * (e >> 7))) ^ e] = e;
+                      p[(m[e] = (e << 1) ^ (283 * (e >> 7))) ^ e] = e;
                     for (t = n = 0; !h[t]; t ^= r || 1, n = p[n] || 1)
                       for (
                         s = n ^ (n << 1) ^ (n << 2) ^ (n << 3) ^ (n << 4),
                           s = (s >> 8) ^ (255 & s) ^ 99,
                           h[t] = s,
                           f[s] = t,
-                          a = d[(i = d[(r = d[t])])],
+                          a = m[(i = m[(r = m[t])])],
                           l =
                             (16843009 * a) ^
                             (65537 * i) ^
                             (257 * r) ^
                             (16843008 * t),
-                          o = (257 * d[s]) ^ (16843008 * s),
+                          o = (257 * m[s]) ^ (16843008 * s),
                           e = 0;
                         4 > e;
                         e++
@@ -46992,31 +49572,31 @@ window.addEventListener("load", function (e) {
                       c = this._key[1],
                       h = e ^ c[0],
                       f = r ^ c[1],
-                      d = n ^ c[2],
+                      m = n ^ c[2],
                       p = t ^ c[3],
-                      m = c.length / 4 - 2,
+                      d = c.length / 4 - 2,
                       g = 4,
                       b = this._tables[1],
                       v = b[0],
                       _ = b[1],
                       O = b[2],
                       A = b[3],
-                      y = b[4];
-                    for (u = 0; m > u; u++)
+                      I = b[4];
+                    for (u = 0; d > u; u++)
                       (s =
                         v[h >>> 24] ^
                         _[(f >> 16) & 255] ^
-                        O[(d >> 8) & 255] ^
+                        O[(m >> 8) & 255] ^
                         A[255 & p] ^
                         c[g]),
                         (o =
                           v[f >>> 24] ^
-                          _[(d >> 16) & 255] ^
+                          _[(m >> 16) & 255] ^
                           O[(p >> 8) & 255] ^
                           A[255 & h] ^
                           c[g + 1]),
                         (l =
-                          v[d >>> 24] ^
+                          v[m >>> 24] ^
                           _[(p >> 16) & 255] ^
                           O[(h >> 8) & 255] ^
                           A[255 & f] ^
@@ -47025,23 +49605,23 @@ window.addEventListener("load", function (e) {
                           v[p >>> 24] ^
                           _[(h >> 16) & 255] ^
                           O[(f >> 8) & 255] ^
-                          A[255 & d] ^
+                          A[255 & m] ^
                           c[g + 3]),
                         (g += 4),
                         (h = s),
                         (f = o),
-                        (d = l);
+                        (m = l);
                     for (u = 0; 4 > u; u++)
                       (i[(3 & -u) + a] =
-                        (y[h >>> 24] << 24) ^
-                        (y[(f >> 16) & 255] << 16) ^
-                        (y[(d >> 8) & 255] << 8) ^
-                        y[255 & p] ^
+                        (I[h >>> 24] << 24) ^
+                        (I[(f >> 16) & 255] << 16) ^
+                        (I[(m >> 8) & 255] << 8) ^
+                        I[255 & p] ^
                         c[g++]),
                         (s = h),
                         (h = f),
-                        (f = d),
-                        (d = p),
+                        (f = m),
+                        (m = p),
                         (p = s);
                   },
                 },
@@ -47114,9 +49694,9 @@ window.addEventListener("load", function (e) {
                           e.byteOffset,
                           e.byteLength >> 2
                         ),
-                        d = new g.default(Array.prototype.slice.call(t)),
+                        m = new g.default(Array.prototype.slice.call(t)),
                         p = new Uint8Array(e.byteLength),
-                        m = new Int32Array(p.buffer);
+                        d = new Int32Array(p.buffer);
                       for (
                         r = ~~n[0], i = ~~n[1], a = ~~n[2], s = ~~n[3], h = 0;
                         h < f.length;
@@ -47126,11 +49706,11 @@ window.addEventListener("load", function (e) {
                           (l = ~~this.ntoh(f[h + 1])),
                           (u = ~~this.ntoh(f[h + 2])),
                           (c = ~~this.ntoh(f[h + 3])),
-                          d.decrypt(o, l, u, c, m, h),
-                          (m[h] = this.ntoh(m[h] ^ r)),
-                          (m[h + 1] = this.ntoh(m[h + 1] ^ i)),
-                          (m[h + 2] = this.ntoh(m[h + 2] ^ a)),
-                          (m[h + 3] = this.ntoh(m[h + 3] ^ s)),
+                          m.decrypt(o, l, u, c, d, h),
+                          (d[h] = this.ntoh(d[h] ^ r)),
+                          (d[h + 1] = this.ntoh(d[h + 1] ^ i)),
+                          (d[h + 2] = this.ntoh(d[h + 2] ^ a)),
+                          (d[h + 3] = this.ntoh(d[h + 3] ^ s)),
                           (r = o),
                           (i = l),
                           (a = u),
@@ -47329,7 +49909,7 @@ window.addEventListener("load", function (e) {
             O = r(s),
             A = e("../utils/logger"),
             o = e("../demux/id3"),
-            y = r(o),
+            I = r(o),
             l = (function () {
               function n(e, t) {
                 i(this, n),
@@ -47357,16 +49937,16 @@ window.addEventListener("load", function (e) {
                           c,
                           h,
                           f,
-                          d,
-                          p,
                           m,
+                          p,
+                          d,
                           g,
                           b = this._aacTrack,
-                          v = new y.default(e),
+                          v = new I.default(e),
                           _ = 90 * v.timeStamp;
                         for (
-                          f = v.length, m = e.length;
-                          m - 1 > f &&
+                          f = v.length, d = e.length;
+                          d - 1 > f &&
                           (255 !== e[f] || 240 !== (240 & e[f + 1]));
                           f++
                         );
@@ -47394,28 +49974,28 @@ window.addEventListener("load", function (e) {
                             )),
                             h = 0,
                             c = 9216e4 / b.audiosamplerate;
-                          m > f + 5 &&
-                          ((d = 1 & e[f + 1] ? 7 : 9),
+                          d > f + 5 &&
+                          ((m = 1 & e[f + 1] ? 7 : 9),
                           (u =
                             ((3 & e[f + 3]) << 11) |
                             (e[f + 4] << 3) |
                             ((224 & e[f + 5]) >>> 5)),
-                          (u -= d),
-                          u > 0 && m >= f + d + u);
+                          (u -= m),
+                          u > 0 && d >= f + m + u);
 
                         )
                           for (
                             p = _ + h * c,
                               g = {
-                                unit: e.subarray(f + d, f + d + u),
+                                unit: e.subarray(f + m, f + m + u),
                                 pts: p,
                                 dts: p,
                               },
                               b.samples.push(g),
                               b.len += u,
-                              f += u + d,
+                              f += u + m,
                               h++;
-                            m - 1 > f &&
+                            d - 1 > f &&
                             (255 !== e[f] || 240 !== (240 & e[f + 1]));
                             f++
                           );
@@ -47436,7 +50016,7 @@ window.addEventListener("load", function (e) {
                       value: function (e) {
                         var t,
                           n,
-                          r = new y.default(e);
+                          r = new I.default(e);
                         if (r.hasTimeStamp)
                           for (t = r.length, n = e.length; n - 1 > t; t++)
                             if (255 === e[t] && 240 === (240 & e[t + 1]))
@@ -47597,11 +50177,11 @@ window.addEventListener("load", function (e) {
             o = e("../demux/aacdemuxer"),
             f = r(o),
             l = e("../demux/tsdemuxer"),
-            d = r(l),
+            m = r(l),
             u = e("../remux/mp4-remuxer"),
             p = r(u),
-            m = e("../remux/passthrough-remuxer"),
-            g = r(m),
+            d = e("../remux/passthrough-remuxer"),
+            g = r(d),
             b = (function () {
               function n(e, t) {
                 i(this, n), (this.hls = e), (this.typeSupported = t);
@@ -47621,11 +50201,11 @@ window.addEventListener("load", function (e) {
                       var l = this.demuxer;
                       if (!l) {
                         var u = this.hls;
-                        if (d.default.probe(e))
+                        if (m.default.probe(e))
                           l =
                             this.typeSupported.mp2t === !0
-                              ? new d.default(u, g.default)
-                              : new d.default(u, p.default);
+                              ? new m.default(u, g.default)
+                              : new m.default(u, p.default);
                         else {
                           if (!f.default.probe(e))
                             return void u.trigger(c.default.ERROR, {
@@ -47782,9 +50362,9 @@ window.addEventListener("load", function (e) {
             c = i("../demux/demuxer-worker"),
             h = n(c),
             f = i("../utils/logger"),
-            d = i("../crypt/decrypter"),
-            p = n(d),
-            m = (function () {
+            m = i("../crypt/decrypter"),
+            p = n(m),
+            d = (function () {
               function r(t) {
                 a(this, r), (this.hls = t);
                 var n = {
@@ -47917,7 +50497,7 @@ window.addEventListener("load", function (e) {
                 r
               );
             })();
-          t.default = m;
+          t.default = d;
         },
         {
           "../crypt/decrypter": 10,
@@ -48099,7 +50679,7 @@ window.addEventListener("load", function (e) {
                         c = 0,
                         h = 0,
                         f = 0,
-                        d = 1;
+                        m = 1;
                       if (
                         (this.readUByte(),
                         (e = this.readUByte()),
@@ -48132,9 +50712,9 @@ window.addEventListener("load", function (e) {
                                 : this.skipScalingList(64));
                       }
                       this.skipUEG();
-                      var m = this.readUEG();
-                      if (0 === m) this.readUEG();
-                      else if (1 === m)
+                      var d = this.readUEG();
+                      if (0 === d) this.readUEG();
+                      else if (1 === d)
                         for (
                           this.skipBits(1),
                             this.skipEG(),
@@ -48217,10 +50797,10 @@ window.addEventListener("load", function (e) {
                               (this.readUByte() << 8) | this.readUByte(),
                             ];
                         }
-                        g && (d = g[0] / g[1]);
+                        g && (m = g[0] / g[1]);
                       }
                       return {
-                        width: Math.ceil((16 * (i + 1) - 2 * u - 2 * c) * d),
+                        width: Math.ceil((16 * (i + 1) - 2 * u - 2 * c) * m),
                         height: (2 - s) * (a + 1) * 16 - (s ? 2 : 4) * (h + f),
                       };
                     },
@@ -48400,9 +50980,9 @@ window.addEventListener("load", function (e) {
           })();
           Object.defineProperty(n, "__esModule", { value: !0 });
           var s = e("./adts"),
-            y = r(s),
+            I = r(s),
             o = e("../events"),
-            I = r(o),
+            y = r(o),
             l = e("./exp-golomb"),
             S = r(l),
             E = e("../utils/logger"),
@@ -48474,9 +51054,9 @@ window.addEventListener("load", function (e) {
                           c,
                           h,
                           f,
-                          d,
-                          p,
                           m,
+                          p,
+                          d,
                           g = e.length,
                           b = this.remuxer.passthrough;
                         (this.audioCodec = t),
@@ -48503,15 +51083,15 @@ window.addEventListener("load", function (e) {
                           if (71 === e[h]) {
                             if (
                               ((f = !!(64 & e[h + 1])),
-                              (d = ((31 & e[h + 1]) << 8) + e[h + 2]),
+                              (m = ((31 & e[h + 1]) << 8) + e[h + 2]),
                               (p = (48 & e[h + 3]) >> 4),
                               p > 1)
                             ) {
-                              if (((m = h + 5 + e[h + 4]), m === h + 188))
+                              if (((d = h + 5 + e[h + 4]), d === h + 188))
                                 continue;
-                            } else m = h + 4;
+                            } else d = h + 4;
                             if (v)
-                              if (d === _) {
+                              if (m === _) {
                                 if (f) {
                                   if (
                                     l &&
@@ -48524,9 +51104,9 @@ window.addEventListener("load", function (e) {
                                   l = { data: [], size: 0 };
                                 }
                                 l &&
-                                  (l.data.push(e.subarray(m, h + 188)),
-                                  (l.size += h + 188 - m));
-                              } else if (d === O) {
+                                  (l.data.push(e.subarray(d, h + 188)),
+                                  (l.size += h + 188 - d));
+                              } else if (m === O) {
                                 if (f) {
                                   if (
                                     u &&
@@ -48539,28 +51119,28 @@ window.addEventListener("load", function (e) {
                                   u = { data: [], size: 0 };
                                 }
                                 u &&
-                                  (u.data.push(e.subarray(m, h + 188)),
-                                  (u.size += h + 188 - m));
+                                  (u.data.push(e.subarray(d, h + 188)),
+                                  (u.size += h + 188 - d));
                               } else
-                                d === A &&
+                                m === A &&
                                   (f &&
                                     (c && this._parseID3PES(this._parsePES(c)),
                                     (c = { data: [], size: 0 })),
                                   c &&
-                                    (c.data.push(e.subarray(m, h + 188)),
-                                    (c.size += h + 188 - m)));
+                                    (c.data.push(e.subarray(d, h + 188)),
+                                    (c.size += h + 188 - d)));
                             else
-                              f && (m += e[m] + 1),
-                                0 === d
-                                  ? this._parsePAT(e, m)
-                                  : d === this._pmtId &&
-                                    (this._parsePMT(e, m),
+                              f && (d += e[d] + 1),
+                                0 === m
+                                  ? this._parsePAT(e, d)
+                                  : m === this._pmtId &&
+                                    (this._parsePMT(e, d),
                                     (v = this.pmtParsed = !0),
                                     (_ = this._avcTrack.id),
                                     (O = this._aacTrack.id),
                                     (A = this._id3Track.id));
                           } else
-                            this.observer.trigger(I.default.ERROR, {
+                            this.observer.trigger(y.default.ERROR, {
                               type: x.ErrorTypes.MEDIA_ERROR,
                               details: x.ErrorDetails.FRAG_PARSING_ERROR,
                               fatal: !1,
@@ -48695,7 +51275,7 @@ window.addEventListener("load", function (e) {
                     },
                     {
                       key: "_parseAVCPES",
-                      value: function (m) {
+                      value: function (d) {
                         var g,
                           e,
                           b,
@@ -48703,36 +51283,36 @@ window.addEventListener("load", function (e) {
                           _ = this,
                           O = this._avcTrack,
                           t = O.samples,
-                          n = this._parseAVCNALu(m.data),
+                          n = this._parseAVCNALu(d.data),
                           A = [],
-                          y = !1,
                           I = !1,
+                          y = !1,
                           x = 0;
                         if (0 === n.length && t.length > 0) {
                           var r = t[t.length - 1],
                             i = r.units.units[r.units.units.length - 1],
                             a = new Uint8Array(
-                              i.data.byteLength + m.data.byteLength
+                              i.data.byteLength + d.data.byteLength
                             );
                           a.set(i.data, 0),
-                            a.set(m.data, i.data.byteLength),
+                            a.set(d.data, i.data.byteLength),
                             (i.data = a),
-                            (r.units.length += m.data.byteLength),
-                            (O.len += m.data.byteLength);
+                            (r.units.length += d.data.byteLength),
+                            (O.len += d.data.byteLength);
                         }
-                        m.data = null;
+                        d.data = null;
                         var T = "";
                         n.forEach(function (e) {
                           switch (e.type) {
                             case 1:
-                              (b = !0), y && (T += "NDR ");
+                              (b = !0), I && (T += "NDR ");
                               break;
                             case 5:
-                              (b = !0), y && (T += "IDR "), (I = !0);
+                              (b = !0), I && (T += "IDR "), (y = !0);
                               break;
                             case 6:
                               (b = !0),
-                                y && (T += "SEI "),
+                                I && (T += "SEI "),
                                 (g = new S.default(e.data)),
                                 g.readUByte();
                               var t = g.readUByte();
@@ -48759,7 +51339,7 @@ window.addEventListener("load", function (e) {
                                             c.push(g.readUByte());
                                         _._txtTrack.samples.push({
                                           type: 3,
-                                          pts: m.pts,
+                                          pts: d.pts,
                                           bytes: c,
                                         });
                                       }
@@ -48769,7 +51349,7 @@ window.addEventListener("load", function (e) {
                               }
                               break;
                             case 7:
-                              if (((b = !0), y && (T += "SPS "), !O.sps)) {
+                              if (((b = !0), I && (T += "SPS "), !O.sps)) {
                                 g = new S.default(e.data);
                                 var h = g.readSPS();
                                 (O.width = h.width),
@@ -48779,35 +51359,35 @@ window.addEventListener("load", function (e) {
                                   (O.duration =
                                     _.remuxer.timescale * _._duration);
                                 var f = e.data.subarray(1, 4),
-                                  d = "avc1.";
+                                  m = "avc1.";
                                 for (v = 0; 3 > v; v++) {
                                   var p = f[v].toString(16);
-                                  p.length < 2 && (p = "0" + p), (d += p);
+                                  p.length < 2 && (p = "0" + p), (m += p);
                                 }
-                                O.codec = d;
+                                O.codec = m;
                               }
                               break;
                             case 8:
                               (b = !0),
-                                y && (T += "PPS "),
+                                I && (T += "PPS "),
                                 O.pps || (O.pps = [e.data]);
                               break;
                             case 9:
-                              (b = !1), y && (T += "AUD ");
+                              (b = !1), I && (T += "AUD ");
                               break;
                             default:
                               (b = !1), (T += "unknown NAL " + e.type + " ");
                           }
                           b && (A.push(e), (x += e.data.byteLength));
                         }),
-                          (y || T.length) && E.logger.log(T),
+                          (I || T.length) && E.logger.log(T),
                           A.length &&
-                            (I === !0 || O.sps) &&
+                            (y === !0 || O.sps) &&
                             ((e = {
                               units: { units: A, length: x },
-                              pts: m.pts,
-                              dts: m.dts,
-                              key: I,
+                              pts: d.pts,
+                              dts: d.dts,
+                              key: y,
                             }),
                             t.push(e),
                             (O.len += x),
@@ -48852,17 +51432,17 @@ window.addEventListener("load", function (e) {
                                   var h = this._avcTrack,
                                     f = h.samples;
                                   if (f.length) {
-                                    var d = f[f.length - 1],
-                                      p = d.units.units,
-                                      m = p[p.length - 1],
-                                      g = new Uint8Array(m.data.byteLength + n);
-                                    g.set(m.data, 0),
+                                    var m = f[f.length - 1],
+                                      p = m.units.units,
+                                      d = p[p.length - 1],
+                                      g = new Uint8Array(d.data.byteLength + n);
+                                    g.set(d.data, 0),
                                       g.set(
                                         e.subarray(0, n),
-                                        m.data.byteLength
+                                        d.data.byteLength
                                       ),
-                                      (m.data = g),
-                                      (d.units.length += n),
+                                      (d.data = g),
+                                      (m.units.length += n),
                                       (h.len += n);
                                   }
                                 }
@@ -48892,9 +51472,9 @@ window.addEventListener("load", function (e) {
                           c = this._aacTrack,
                           h = e.data,
                           f = e.pts,
-                          d = 0,
+                          m = 0,
                           p = this._duration,
-                          m = this.audioCodec,
+                          d = this.audioCodec,
                           g = this.aacOverFlow,
                           b = this.lastAacPTS;
                         if (g) {
@@ -48902,7 +51482,7 @@ window.addEventListener("load", function (e) {
                           v.set(g, 0), v.set(h, g.byteLength), (h = v);
                         }
                         for (
-                          a = d, l = h.length;
+                          a = m, l = h.length;
                           l - 1 > a &&
                           (255 !== h[a] || 240 !== (240 & h[a + 1]));
                           a++
@@ -48917,7 +51497,7 @@ window.addEventListener("load", function (e) {
                                 (O = !1))
                               : ((_ = "no ADTS header found in AAC PES"),
                                 (O = !0)),
-                            this.observer.trigger(I.default.ERROR, {
+                            this.observer.trigger(y.default.ERROR, {
                               type: x.ErrorTypes.MEDIA_ERROR,
                               details: x.ErrorDetails.FRAG_PARSING_ERROR,
                               fatal: O,
@@ -48929,11 +51509,11 @@ window.addEventListener("load", function (e) {
                         }
                         if (
                           (c.audiosamplerate ||
-                            ((t = y.default.getAudioConfig(
+                            ((t = I.default.getAudioConfig(
                               this.observer,
                               h,
                               a,
-                              m
+                              d
                             )),
                             (c.config = t.config),
                             (c.audiosamplerate = t.samplerate),
@@ -49253,11 +51833,11 @@ window.addEventListener("load", function (e) {
           Object.defineProperty(n, "__esModule", { value: !0 });
           var p = e("../utils/logger"),
             a = (function () {
-              function d() {
-                r(this, d);
+              function m() {
+                r(this, m);
               }
               return (
-                i(d, null, [
+                i(m, null, [
                   {
                     key: "mergeDetails",
                     value: function (e, t) {
@@ -49289,7 +51869,7 @@ window.addEventListener("load", function (e) {
                           u++
                         )
                           o[u].cc += l;
-                      if (n) d.updateFragPTS(t, n.sn, n.startPTS, n.endPTS);
+                      if (n) m.updateFragPTS(t, n.sn, n.startPTS, n.endPTS);
                       else {
                         var f = s[a].start;
                         for (u = 0; u < o.length; u++) o[u].start += f;
@@ -49317,9 +51897,9 @@ window.addEventListener("load", function (e) {
                         o > 0;
                         o--
                       )
-                        d.updatePTS(a, o, o - 1);
+                        m.updatePTS(a, o, o - 1);
                       for (o = i; o < a.length - 1; o++)
-                        d.updatePTS(a, o, o + 1);
+                        m.updatePTS(a, o, o + 1);
                       return (e.PTSKnown = !0), l;
                     },
                   },
@@ -49355,7 +51935,7 @@ window.addEventListener("load", function (e) {
                     },
                   },
                 ]),
-                d
+                m
               );
             })();
           n.default = a;
@@ -49394,24 +51974,24 @@ window.addEventListener("load", function (e) {
             c = r(u),
             h = e("./loader/fragment-loader"),
             f = r(h),
-            d = e("./controller/abr-controller"),
-            p = r(d),
-            m = e("./controller/buffer-controller"),
-            g = r(m),
+            m = e("./controller/abr-controller"),
+            p = r(m),
+            d = e("./controller/buffer-controller"),
+            g = r(d),
             b = e("./controller/stream-controller"),
             v = r(b),
             _ = e("./controller/level-controller"),
             O = r(_),
             A = e("./controller/timeline-controller"),
-            y = r(A),
-            I = e("./utils/logger"),
+            I = r(A),
+            y = e("./utils/logger"),
             x = e("./utils/xhr-loader"),
             T = r(x),
             S = e("events"),
             E = r(S),
             C = e("./loader/key-loader"),
-            j = r(C),
-            N = (function () {
+            N = r(C),
+            j = (function () {
               function r() {
                 var e =
                   arguments.length <= 0 || void 0 === arguments[0]
@@ -49442,7 +52022,7 @@ window.addEventListener("load", function (e) {
                   throw new Error(
                     'Illegal hls.js config: "liveMaxLatencyDuration" must be gt "liveSyncDuration"'
                   );
-                (0, I.enableLogs)(e.debug), (this.config = e);
+                (0, y.enableLogs)(e.debug), (this.config = e);
                 var i = (this.observer = new E.default());
                 (i.trigger = function (e) {
                   for (
@@ -49476,7 +52056,7 @@ window.addEventListener("load", function (e) {
                   (this.bufferController = new e.bufferController(this)),
                   (this.streamController = new e.streamController(this)),
                   (this.timelineController = new e.timelineController(this)),
-                  (this.keyLoader = new j.default(this));
+                  (this.keyLoader = new N.default(this));
               }
               return (
                 i(r, null, [
@@ -49547,7 +52127,7 @@ window.addEventListener("load", function (e) {
                             abrController: p.default,
                             bufferController: g.default,
                             streamController: v.default,
-                            timelineController: y.default,
+                            timelineController: I.default,
                             enableCEA708Captions: !0,
                             enableMP2TPassThrough: !1,
                           }),
@@ -49563,7 +52143,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "destroy",
                     value: function () {
-                      I.logger.log("destroy"),
+                      y.logger.log("destroy"),
                         this.trigger(o.default.DESTROYING),
                         this.detachMedia(),
                         this.playlistLoader.destroy(),
@@ -49580,7 +52160,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "attachMedia",
                     value: function (e) {
-                      I.logger.log("attachMedia"),
+                      y.logger.log("attachMedia"),
                         (this.media = e),
                         this.trigger(o.default.MEDIA_ATTACHING, { media: e });
                     },
@@ -49588,7 +52168,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "detachMedia",
                     value: function () {
-                      I.logger.log("detachMedia"),
+                      y.logger.log("detachMedia"),
                         this.trigger(o.default.MEDIA_DETACHING),
                         (this.media = null);
                     },
@@ -49596,7 +52176,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "loadSource",
                     value: function (e) {
-                      I.logger.log("loadSource:" + e),
+                      y.logger.log("loadSource:" + e),
                         (this.url = e),
                         this.trigger(o.default.MANIFEST_LOADING, { url: e });
                     },
@@ -49608,7 +52188,7 @@ window.addEventListener("load", function (e) {
                         arguments.length <= 0 || void 0 === arguments[0]
                           ? 0
                           : arguments[0];
-                      I.logger.log("startLoad"),
+                      y.logger.log("startLoad"),
                         this.levelController.startLoad(),
                         this.streamController.startLoad(e);
                     },
@@ -49616,7 +52196,7 @@ window.addEventListener("load", function (e) {
                   {
                     key: "stopLoad",
                     value: function () {
-                      I.logger.log("stopLoad"),
+                      y.logger.log("stopLoad"),
                         this.levelController.stopLoad(),
                         this.streamController.stopLoad();
                     },
@@ -49624,14 +52204,14 @@ window.addEventListener("load", function (e) {
                   {
                     key: "swapAudioCodec",
                     value: function () {
-                      I.logger.log("swapAudioCodec"),
+                      y.logger.log("swapAudioCodec"),
                         this.streamController.swapAudioCodec();
                     },
                   },
                   {
                     key: "recoverMediaError",
                     value: function () {
-                      I.logger.log("recoverMediaError");
+                      y.logger.log("recoverMediaError");
                       var e = this.media;
                       this.detachMedia(), this.attachMedia(e);
                     },
@@ -49648,7 +52228,7 @@ window.addEventListener("load", function (e) {
                       return this.streamController.currentLevel;
                     },
                     set: function (e) {
-                      I.logger.log("set currentLevel:" + e),
+                      y.logger.log("set currentLevel:" + e),
                         (this.loadLevel = e),
                         this.streamController.immediateLevelSwitch();
                     },
@@ -49659,7 +52239,7 @@ window.addEventListener("load", function (e) {
                       return this.streamController.nextLevel;
                     },
                     set: function (e) {
-                      I.logger.log("set nextLevel:" + e),
+                      y.logger.log("set nextLevel:" + e),
                         (this.levelController.manualLevel = e),
                         this.streamController.nextLevelSwitch();
                     },
@@ -49670,7 +52250,7 @@ window.addEventListener("load", function (e) {
                       return this.levelController.level;
                     },
                     set: function (e) {
-                      I.logger.log("set loadLevel:" + e),
+                      y.logger.log("set loadLevel:" + e),
                         (this.levelController.manualLevel = e);
                     },
                   },
@@ -49689,7 +52269,7 @@ window.addEventListener("load", function (e) {
                       return this.levelController.firstLevel;
                     },
                     set: function (e) {
-                      I.logger.log("set firstLevel:" + e),
+                      y.logger.log("set firstLevel:" + e),
                         (this.levelController.firstLevel = e);
                     },
                   },
@@ -49699,7 +52279,7 @@ window.addEventListener("load", function (e) {
                       return this.levelController.startLevel;
                     },
                     set: function (e) {
-                      I.logger.log("set startLevel:" + e),
+                      y.logger.log("set startLevel:" + e),
                         (this.levelController.startLevel = e);
                     },
                   },
@@ -49709,7 +52289,7 @@ window.addEventListener("load", function (e) {
                       return this.abrController.autoLevelCapping;
                     },
                     set: function (e) {
-                      I.logger.log("set autoLevelCapping:" + e),
+                      y.logger.log("set autoLevelCapping:" + e),
                         (this.abrController.autoLevelCapping = e);
                     },
                   },
@@ -49729,7 +52309,7 @@ window.addEventListener("load", function (e) {
                 r
               );
             })();
-          n.default = N;
+          n.default = j;
         },
         {
           "./controller/abr-controller": 3,
@@ -49812,7 +52392,7 @@ window.addEventListener("load", function (e) {
             c = e("../event-handler"),
             h = r(c),
             f = e("../errors"),
-            d = (function (e) {
+            m = (function (e) {
               function t(e) {
                 return (
                   i(this, t),
@@ -49913,7 +52493,7 @@ window.addEventListener("load", function (e) {
                 t
               );
             })(h.default);
-          n.default = d;
+          n.default = m;
         },
         { "../errors": 19, "../event-handler": 20, "../events": 21 },
       ],
@@ -49975,7 +52555,7 @@ window.addEventListener("load", function (e) {
             c = e("../event-handler"),
             h = r(c),
             f = e("../errors"),
-            d = (function (e) {
+            m = (function (e) {
               function n(e) {
                 i(this, n);
                 var t = a(
@@ -50064,7 +52644,7 @@ window.addEventListener("load", function (e) {
                 n
               );
             })(h.default);
-          n.default = d;
+          n.default = m;
         },
         { "../errors": 19, "../event-handler": 20, "../events": 21 },
       ],
@@ -50126,10 +52706,10 @@ window.addEventListener("load", function (e) {
             u = e("../event-handler"),
             h = r(u),
             f = e("../errors"),
-            d = e("../utils/url"),
-            p = r(d),
-            m = e("../utils/attr-list"),
-            S = r(m),
+            m = e("../utils/url"),
+            p = r(m),
+            d = e("../utils/attr-list"),
+            S = r(d),
             g = (function (e) {
               function t(e) {
                 return (
@@ -50276,7 +52856,7 @@ window.addEventListener("load", function (e) {
                         c = { method: null, key: null, iv: null, uri: null },
                         h = 0,
                         f = null,
-                        d = null;
+                        m = null;
                       for (
                         i =
                           /(?:#EXT-X-(MEDIA-SEQUENCE):(\d+))|(?:#EXT-X-(TARGETDURATION):(\d+))|(?:#EXT-X-(KEY):(.*))|(?:#EXT(INF):([\d\.]+)[^\r\n]*([\r\n]+[^#|\r\n]+)?)|(?:#EXT-X-(BYTERANGE):([\d]+[@[\d]*)]*[\r\n]+([^#|\r\n]+)?|(?:#EXT-X-(ENDLIST))|(?:#EXT-X-(DIS)CONTINUITY))|(?:#EXT-X-(PROGRAM-DATE-TIME):(.*))/g;
@@ -50306,15 +52886,15 @@ window.addEventListener("load", function (e) {
                             var p = r[1].split("@");
                             (s = 1 === p.length ? a : parseInt(p[1])),
                               (a = parseInt(p[0]) + s),
-                              d &&
-                                !d.url &&
-                                ((d.byteRangeStartOffset = s),
-                                (d.byteRangeEndOffset = a),
-                                (d.url = this.resolve(r[2], t)));
+                              m &&
+                                !m.url &&
+                                ((m.byteRangeStartOffset = s),
+                                (m.byteRangeEndOffset = a),
+                                (m.url = this.resolve(r[2], t)));
                             break;
                           case "INF":
-                            var m = parseFloat(r[1]);
-                            if (!isNaN(m)) {
+                            var d = parseFloat(r[1]);
+                            if (!isNaN(d)) {
                               var g,
                                 b = o++;
                               if (c.method && c.uri && !c.iv) {
@@ -50328,9 +52908,9 @@ window.addEventListener("load", function (e) {
                                 g.iv = v;
                               } else g = c;
                               var O = r[2] ? this.resolve(r[2], t) : null;
-                              (d = {
+                              (m = {
                                 url: O,
-                                duration: m,
+                                duration: d,
                                 start: l,
                                 sn: b,
                                 level: n,
@@ -50340,19 +52920,19 @@ window.addEventListener("load", function (e) {
                                 decryptdata: g,
                                 programDateTime: f,
                               }),
-                                u.fragments.push(d),
-                                (l += m),
+                                u.fragments.push(m),
+                                (l += d),
                                 (s = null),
                                 (f = null);
                             }
                             break;
                           case "KEY":
                             var A = r[1],
-                              y = new S.default(A),
-                              I = y.enumeratedString("METHOD"),
-                              x = y.URI,
-                              T = y.hexadecimalInteger("IV");
-                            I &&
+                              I = new S.default(A),
+                              y = I.enumeratedString("METHOD"),
+                              x = I.URI,
+                              T = I.hexadecimalInteger("IV");
+                            y &&
                               ((c = {
                                 method: null,
                                 key: null,
@@ -50360,8 +52940,8 @@ window.addEventListener("load", function (e) {
                                 uri: null,
                               }),
                               x &&
-                                "AES-128" === I &&
-                                ((c.method = I),
+                                "AES-128" === y &&
+                                ((c.method = y),
                                 (c.uri = this.resolve(x, t)),
                                 (c.key = null),
                                 (c.iv = T)));
@@ -50370,7 +52950,7 @@ window.addEventListener("load", function (e) {
                             f = new Date(Date.parse(r[1]));
                         }
                       return (
-                        d && !d.url && (u.fragments.pop(), (l -= d.duration)),
+                        m && !m.url && (u.fragments.pop(), (l -= m.duration)),
                         (u.totalduration = l),
                         (u.endSN = o - 1),
                         u
@@ -51492,9 +54072,9 @@ window.addEventListener("load", function (e) {
                         c,
                         h,
                         f,
-                        d,
-                        p,
                         m,
+                        p,
+                        d,
                         g,
                         b,
                         v = 8,
@@ -51521,62 +54101,62 @@ window.addEventListener("load", function (e) {
                             (v += o.data.byteLength),
                             (s += 4 + o.data.byteLength);
                         if (
-                          ((d = i.pts - this._initDTS),
+                          ((m = i.pts - this._initDTS),
                           (p = i.dts - this._initDTS),
-                          (p = Math.min(d, p)),
+                          (p = Math.min(m, p)),
                           void 0 !== f)
                         ) {
-                          (m = this._PTSNormalize(d, f)),
+                          (d = this._PTSNormalize(m, f)),
                             (g = this._PTSNormalize(p, f));
-                          var y = (g - f) / O;
-                          0 >= y &&
+                          var I = (g - f) / O;
+                          0 >= I &&
                             (E.logger.log(
                               "invalid sample duration at PTS/DTS: " +
                                 i.pts +
                                 "/" +
                                 i.dts +
                                 ":" +
-                                y
+                                I
                             ),
-                            (y = 1)),
-                            (a.duration = y);
+                            (I = 1)),
+                            (a.duration = I);
                         } else {
-                          var I,
+                          var y,
                             x = this.nextAvcDts;
-                          (m = this._PTSNormalize(d, x)),
+                          (d = this._PTSNormalize(m, x)),
                             (g = this._PTSNormalize(p, x)),
-                            (I = Math.round((g - x) / 90)),
-                            (n || Math.abs(I) < 600) &&
-                              I &&
-                              (I > 1
+                            (y = Math.round((g - x) / 90)),
+                            (n || Math.abs(y) < 600) &&
+                              y &&
+                              (y > 1
                                 ? E.logger.log(
                                     "AVC:" +
-                                      I +
+                                      y +
                                       " ms hole between fragments detected,filling it"
                                   )
-                                : -1 > I &&
+                                : -1 > y &&
                                   E.logger.log(
                                     "AVC:" +
-                                      -I +
+                                      -y +
                                       " ms overlapping between fragments detected"
                                   ),
                               (g = x),
-                              (m = Math.max(m - I, g)),
+                              (d = Math.max(d - y, g)),
                               E.logger.log(
                                 "Video/PTS/DTS adjusted: " +
-                                  m +
+                                  d +
                                   "/" +
                                   g +
                                   ",delta:" +
-                                  I
+                                  y
                               )),
-                            (c = Math.max(0, m)),
+                            (c = Math.max(0, d)),
                             (h = Math.max(0, g));
                         }
                         (a = {
                           size: s,
                           duration: 0,
-                          cts: (m - g) / O,
+                          cts: (d - g) / O,
                           flags: {
                             isLeading: 0,
                             isDependedOn: 0,
@@ -51610,7 +54190,7 @@ window.addEventListener("load", function (e) {
                           data1: u,
                           data2: l,
                           startPTS: c / _,
-                          endPTS: (m + O * T) / _,
+                          endPTS: (d + O * T) / _,
                           startDTS: h / _,
                           endDTS: this.nextAvcDts / _,
                           type: "video",
@@ -51631,9 +54211,9 @@ window.addEventListener("load", function (e) {
                         c,
                         h,
                         f,
-                        d,
-                        p,
                         m,
+                        p,
+                        d,
                         g = 8,
                         b = this.PES_TIMESCALE,
                         v = e.timescale,
@@ -51652,12 +54232,12 @@ window.addEventListener("load", function (e) {
                           ((i = A.shift()),
                           (s = i.unit),
                           (f = i.pts - this._initDTS),
-                          (d = i.dts - this._initDTS),
+                          (m = i.dts - this._initDTS),
                           void 0 !== h)
                         )
                           (p = this._PTSNormalize(f, h)),
-                            (m = this._PTSNormalize(d, h)),
-                            (a.duration = (m - h) / _),
+                            (d = this._PTSNormalize(m, h)),
+                            (a.duration = (d - h) / _),
                             Math.abs(a.duration - 1024) > 10 &&
                               E.logger.log(
                                 "invalid AAC sample duration at PTS " +
@@ -51666,34 +54246,34 @@ window.addEventListener("load", function (e) {
                                   Math.round(a.duration)
                               ),
                             (a.duration = 1024),
-                            (m = 1024 * _ + h);
+                            (d = 1024 * _ + h);
                         else {
-                          var y,
-                            I = this.nextAacPts;
+                          var I,
+                            y = this.nextAacPts;
                           if (
-                            ((p = this._PTSNormalize(f, I)),
-                            (m = this._PTSNormalize(d, I)),
-                            (y = Math.round((1e3 * (p - I)) / b)),
-                            (n || Math.abs(y) < 600) && y)
+                            ((p = this._PTSNormalize(f, y)),
+                            (d = this._PTSNormalize(m, y)),
+                            (I = Math.round((1e3 * (p - y)) / b)),
+                            (n || Math.abs(I) < 600) && I)
                           ) {
-                            if (y > 0)
+                            if (I > 0)
                               E.logger.log(
-                                y +
+                                I +
                                   " ms hole between AAC samples detected,filling it"
                               );
-                            else if (-12 > y) {
+                            else if (-12 > I) {
                               E.logger.log(
-                                -y +
+                                -I +
                                   " ms overlapping between AAC samples detected, drop frame"
                               ),
                                 (e.len -= s.byteLength);
                               continue;
                             }
-                            p = m = I;
+                            p = d = y;
                           }
                           if (
                             ((u = Math.max(0, p)),
-                            (c = Math.max(0, m)),
+                            (c = Math.max(0, d)),
                             !(e.len > 0))
                           )
                             return;
@@ -51717,7 +54297,7 @@ window.addEventListener("load", function (e) {
                             },
                           }),
                           O.push(a),
-                          (h = m);
+                          (h = d);
                       }
                       var x = 0,
                         T = O.length;
@@ -51734,7 +54314,7 @@ window.addEventListener("load", function (e) {
                             startPTS: u / b,
                             endPTS: this.nextAacPts / b,
                             startDTS: c / b,
-                            endDTS: (m + _ * x) / b,
+                            endDTS: (d + _ * x) / b,
                             type: "audio",
                             nb: T,
                           }));
@@ -52446,7 +55026,7 @@ window.addEventListener("load", function (e) {
       35: [
         function (e, t, n) {
           "use strict";
-          var d = {
+          var m = {
             buildAbsoluteURL: function (e, t) {
               if (((t = t.trim()), /^[a-z]+:/i.test(t))) return t;
               var n = null,
@@ -52469,10 +55049,10 @@ window.addEventListener("load", function (e) {
                 f = null;
               return (
                 (f = /^\/\//.test(t)
-                  ? u + "://" + d.buildAbsolutePath("", t.substring(2))
+                  ? u + "://" + m.buildAbsolutePath("", t.substring(2))
                   : /^\//.test(t)
-                  ? c + d.buildAbsolutePath("", t.substring(1))
-                  : d.buildAbsolutePath(c + h, t)),
+                  ? c + m.buildAbsolutePath("", t.substring(1))
+                  : m.buildAbsolutePath(c + h, t)),
                 n && (f += n),
                 r && (f += r),
                 f
@@ -52500,7 +55080,7 @@ window.addEventListener("load", function (e) {
               return a + s.substr(o);
             },
           };
-          t.exports = d;
+          t.exports = m;
         },
         {},
       ],
@@ -53665,7 +56245,7 @@ window.addEventListener("load", function (e) {
     n.set(t, e.length);
     return n;
   };
-  const M = function (e) {
+  const k = function (e) {
     let t = e.split(".")[e.split(".").length - 1];
     if (t.contains(CONSTANTS.OP.OP_VERSION_PREFIX)) {
       const n = t.split(CONSTANTS.OP.OP_VERSION_PREFIX)[1];
@@ -53703,7 +56283,7 @@ window.addEventListener("load", function (e) {
     return e;
   };
   const D = null && r;
-  const B = null && r;
+  const G = null && r;
   function a(e) {
     for (const t in e) {
       if (e[t] && typeof objValue === "object" && e[t].constructor === Object)
@@ -53731,7 +56311,7 @@ window.addEventListener("load", function (e) {
     }
     return e + "" + r;
   };
-  const G = null && s;
+  const B = null && s;
   let o = 0;
   const F = function () {
     o++;
@@ -53762,21 +56342,21 @@ window.addEventListener("load", function (e) {
     const h = Math.max(r, i);
     if (c != r) u = true;
     let f = 0;
-    let d = 0;
+    let m = 0;
     if (s) f = ((l - e) * (h - c)) / (l - o);
     else f = ((e - o) * (h - c)) / (l - o);
-    if (u) d = h - f;
-    else d = f + c;
-    if (!a) return d;
+    if (u) m = h - f;
+    else m = f + c;
+    if (!a) return m;
     if (a == 1) {
-      e = Math.max(0, Math.min(1, (d - r) / (i - r)));
+      e = Math.max(0, Math.min(1, (m - r) / (i - r)));
       return r + e * e * (3 - 2 * e) * (i - r);
     }
     if (a == 2) {
-      e = Math.max(0, Math.min(1, (d - r) / (i - r)));
+      e = Math.max(0, Math.min(1, (m - r) / (i - r)));
       return r + e * e * e * (e * (e * 6 - 15) + 10) * (i - r);
     }
-    return d;
+    return m;
   };
   Math.randomSeed = 1;
   Math.setRandomSeed = function (e) {
@@ -54488,8 +57068,8 @@ window.addEventListener("load", function (e) {
     const h = vec3.create();
     for (let e = 0; e < t; e += 1) {
       const A = this.verticesIndices[e * 3];
-      const y = this.verticesIndices[e * 3 + 1];
-      const I = this.verticesIndices[e * 3 + 2];
+      const I = this.verticesIndices[e * 3 + 1];
+      const y = this.verticesIndices[e * 3 + 2];
       vec3.set(
         i,
         this.vertices[A * 3],
@@ -54498,53 +57078,53 @@ window.addEventListener("load", function (e) {
       );
       vec3.set(
         a,
-        this.vertices[y * 3],
-        this.vertices[y * 3 + 1],
-        this.vertices[y * 3 + 2]
-      );
-      vec3.set(
-        s,
         this.vertices[I * 3],
         this.vertices[I * 3 + 1],
         this.vertices[I * 3 + 2]
       );
+      vec3.set(
+        s,
+        this.vertices[y * 3],
+        this.vertices[y * 3 + 1],
+        this.vertices[y * 3 + 2]
+      );
       vec2.set(o, this.texCoords[A * 2], this.texCoords[A * 2 + 1]);
-      vec2.set(l, this.texCoords[y * 2], this.texCoords[y * 2 + 1]);
-      vec2.set(u, this.texCoords[I * 2], this.texCoords[I * 2 + 1]);
+      vec2.set(l, this.texCoords[I * 2], this.texCoords[I * 2 + 1]);
+      vec2.set(u, this.texCoords[y * 2], this.texCoords[y * 2 + 1]);
       const x = a[0] - i[0];
       const T = s[0] - i[0];
       const S = a[1] - i[1];
       const E = s[1] - i[1];
       const C = a[2] - i[2];
-      const j = s[2] - i[2];
-      const N = l[0] - o[0];
-      const w = u[0] - o[0];
+      const N = s[2] - i[2];
+      const j = l[0] - o[0];
+      const L = u[0] - o[0];
       const P = l[1] - o[1];
-      const L = u[1] - o[1];
-      const R = 1 / (N * L - w * P);
+      const w = u[1] - o[1];
+      const R = 1 / (j * w - L * P);
       vec3.set(
         c,
-        (L * x - P * T) * R,
-        (L * S - P * E) * R,
-        (L * C - P * j) * R
+        (w * x - P * T) * R,
+        (w * S - P * E) * R,
+        (w * C - P * N) * R
       );
       vec3.set(
         h,
-        (N * T - w * x) * R,
-        (N * E - w * S) * R,
-        (N * j - w * C) * R
+        (j * T - L * x) * R,
+        (j * E - L * S) * R,
+        (j * N - L * C) * R
       );
       r[A] = c;
-      r[y] = c;
       r[I] = c;
+      r[y] = c;
       r[A + n] = h;
-      r[y + n] = h;
       r[I + n] = h;
+      r[y + n] = h;
     }
     const f = vec3.create();
-    const d = vec3.create();
-    const p = vec3.create();
     const m = vec3.create();
+    const p = vec3.create();
+    const d = vec3.create();
     const g = vec3.create();
     const b = vec3.create();
     const v = vec3.create();
@@ -54557,21 +57137,21 @@ window.addEventListener("load", function (e) {
         this.vertexNormals[e * 3 + 1],
         this.vertexNormals[e * 3 + 2]
       );
-      vec3.set(d, r[e][0], r[e][1], r[e][2]);
-      const k = vec3.dot(f, d);
-      vec3.scale(g, f, k);
-      vec3.subtract(b, d, g);
+      vec3.set(m, r[e][0], r[e][1], r[e][2]);
+      const M = vec3.dot(f, m);
+      vec3.scale(g, f, M);
+      vec3.subtract(b, m, g);
       vec3.normalize(_, b);
-      vec3.cross(v, f, d);
-      const M = 1;
-      vec3.scale(p, _, 1 / M);
-      vec3.cross(m, f, p);
+      vec3.cross(v, f, m);
+      const k = 1;
+      vec3.scale(p, _, 1 / k);
+      vec3.cross(d, f, p);
       this.tangents[e * 3 + 0] = p[0];
       this.tangents[e * 3 + 1] = p[1];
       this.tangents[e * 3 + 2] = p[2];
-      this.biTangents[e * 3 + 0] = m[0];
-      this.biTangents[e * 3 + 1] = m[1];
-      this.biTangents[e * 3 + 2] = m[2];
+      this.biTangents[e * 3 + 0] = d[0];
+      this.biTangents[e * 3 + 1] = d[1];
+      this.biTangents[e * 3 + 2] = d[2];
     }
   };
   h.prototype.isIndexed = function () {
@@ -54855,7 +57435,7 @@ window.addEventListener("load", function (e) {
       }
     };
   };
-  const d = {
+  const m = {
     ANIM: {
       EASINGS: [
         "linear",
@@ -54953,7 +57533,7 @@ window.addEventListener("load", function (e) {
     this._easing = 0;
     this.cb = null;
     this.cbTriggered = false;
-    this.setEasing(d.ANIM.EASING_LINEAR);
+    this.setEasing(m.ANIM.EASING_LINEAR);
     this.set(e);
   };
   p.cubicSpline = function (e, t, n) {
@@ -54983,11 +57563,11 @@ window.addEventListener("load", function (e) {
   p.easeAbsolute = function (e, t) {
     return this.value;
   };
-  const m = function (e) {
+  const d = function (e) {
     return (e = 2 ** (10 * (e - 1)));
   };
   p.easeExpoIn = function (e, t) {
-    e = m(e);
+    e = d(e);
     return p.linear(e, this, t);
   };
   const g = function (e) {
@@ -55168,53 +57748,53 @@ window.addEventListener("load", function (e) {
   };
   p.prototype.setEasing = function (e) {
     this._easing = e;
-    if (this._easing == d.ANIM.EASING_LINEAR) this.ease = p.easeLinear;
-    else if (this._easing == d.ANIM.EASING_ABSOLUTE) this.ease = p.easeAbsolute;
-    else if (this._easing == d.ANIM.EASING_SMOOTHSTEP)
+    if (this._easing == m.ANIM.EASING_LINEAR) this.ease = p.easeLinear;
+    else if (this._easing == m.ANIM.EASING_ABSOLUTE) this.ease = p.easeAbsolute;
+    else if (this._easing == m.ANIM.EASING_SMOOTHSTEP)
       this.ease = p.easeSmoothStep;
-    else if (this._easing == d.ANIM.EASING_SMOOTHERSTEP)
+    else if (this._easing == m.ANIM.EASING_SMOOTHERSTEP)
       this.ease = p.easeSmootherStep;
-    else if (this._easing == d.ANIM.EASING_CUBIC_IN) this.ease = p.easeCubicIn;
-    else if (this._easing == d.ANIM.EASING_CUBIC_OUT)
+    else if (this._easing == m.ANIM.EASING_CUBIC_IN) this.ease = p.easeCubicIn;
+    else if (this._easing == m.ANIM.EASING_CUBIC_OUT)
       this.ease = p.easeCubicOut;
-    else if (this._easing == d.ANIM.EASING_CUBIC_INOUT)
+    else if (this._easing == m.ANIM.EASING_CUBIC_INOUT)
       this.ease = p.easeCubicInOut;
-    else if (this._easing == d.ANIM.EASING_EXPO_IN) this.ease = p.easeExpoIn;
-    else if (this._easing == d.ANIM.EASING_EXPO_OUT) this.ease = p.easeExpoOut;
-    else if (this._easing == d.ANIM.EASING_EXPO_INOUT)
+    else if (this._easing == m.ANIM.EASING_EXPO_IN) this.ease = p.easeExpoIn;
+    else if (this._easing == m.ANIM.EASING_EXPO_OUT) this.ease = p.easeExpoOut;
+    else if (this._easing == m.ANIM.EASING_EXPO_INOUT)
       this.ease = p.easeExpoInOut;
-    else if (this._easing == d.ANIM.EASING_SIN_IN) this.ease = p.easeSinIn;
-    else if (this._easing == d.ANIM.EASING_SIN_OUT) this.ease = p.easeSinOut;
-    else if (this._easing == d.ANIM.EASING_SIN_INOUT)
+    else if (this._easing == m.ANIM.EASING_SIN_IN) this.ease = p.easeSinIn;
+    else if (this._easing == m.ANIM.EASING_SIN_OUT) this.ease = p.easeSinOut;
+    else if (this._easing == m.ANIM.EASING_SIN_INOUT)
       this.ease = p.easeSinInOut;
-    else if (this._easing == d.ANIM.EASING_BACK_OUT) this.ease = p.easeOutBack;
-    else if (this._easing == d.ANIM.EASING_BACK_IN) this.ease = p.easeInBack;
-    else if (this._easing == d.ANIM.EASING_BACK_INOUT)
+    else if (this._easing == m.ANIM.EASING_BACK_OUT) this.ease = p.easeOutBack;
+    else if (this._easing == m.ANIM.EASING_BACK_IN) this.ease = p.easeInBack;
+    else if (this._easing == m.ANIM.EASING_BACK_INOUT)
       this.ease = p.easeInOutBack;
-    else if (this._easing == d.ANIM.EASING_ELASTIC_IN)
+    else if (this._easing == m.ANIM.EASING_ELASTIC_IN)
       this.ease = p.easeInElastic;
-    else if (this._easing == d.ANIM.EASING_ELASTIC_OUT)
+    else if (this._easing == m.ANIM.EASING_ELASTIC_OUT)
       this.ease = p.easeOutElastic;
-    else if (this._easing == d.ANIM.EASING_ELASTIC_INOUT)
+    else if (this._easing == m.ANIM.EASING_ELASTIC_INOUT)
       this.ease = p.easeElasticInOut;
-    else if (this._easing == d.ANIM.EASING_BOUNCE_IN)
+    else if (this._easing == m.ANIM.EASING_BOUNCE_IN)
       this.ease = p.easeInBounce;
-    else if (this._easing == d.ANIM.EASING_BOUNCE_OUT)
+    else if (this._easing == m.ANIM.EASING_BOUNCE_OUT)
       this.ease = p.easeOutBounce;
-    else if (this._easing == d.ANIM.EASING_QUART_OUT)
+    else if (this._easing == m.ANIM.EASING_QUART_OUT)
       this.ease = p.easeOutQuart;
-    else if (this._easing == d.ANIM.EASING_QUART_IN) this.ease = p.easeInQuart;
-    else if (this._easing == d.ANIM.EASING_QUART_INOUT)
+    else if (this._easing == m.ANIM.EASING_QUART_IN) this.ease = p.easeInQuart;
+    else if (this._easing == m.ANIM.EASING_QUART_INOUT)
       this.ease = p.easeInOutQuart;
-    else if (this._easing == d.ANIM.EASING_QUINT_OUT)
+    else if (this._easing == m.ANIM.EASING_QUINT_OUT)
       this.ease = p.easeOutQuint;
-    else if (this._easing == d.ANIM.EASING_QUINT_IN) this.ease = p.easeInQuint;
-    else if (this._easing == d.ANIM.EASING_QUINT_INOUT)
+    else if (this._easing == m.ANIM.EASING_QUINT_IN) this.ease = p.easeInQuint;
+    else if (this._easing == m.ANIM.EASING_QUINT_INOUT)
       this.ease = p.easeInOutQuint;
-    else if (this._easing == d.ANIM.EASING_CUBICSPLINE) {
+    else if (this._easing == m.ANIM.EASING_CUBICSPLINE) {
       this.ease = p.easeCubicSpline;
     } else {
-      this._easing = d.ANIM.EASING_LINEAR;
+      this._easing = m.ANIM.EASING_LINEAR;
       this.ease = p.easeLinear;
     }
   };
@@ -55263,7 +57843,7 @@ window.addEventListener("load", function (e) {
     this._lastKeyIndex = 0;
     this._cachedIndex = 0;
     this.name = e.name || null;
-    this.defaultEasing = e.defaultEasing || d.ANIM.EASING_LINEAR;
+    this.defaultEasing = e.defaultEasing || m.ANIM.EASING_LINEAR;
     this.onLooped = null;
     this._timesLooped = 0;
     this._needsSort = false;
@@ -55446,35 +58026,35 @@ window.addEventListener("load", function (e) {
     this._updateLastIndex();
   };
   A.prototype.easingFromString = function (e) {
-    if (e == "linear") return d.ANIM.EASING_LINEAR;
-    if (e == "absolute") return d.ANIM.EASING_ABSOLUTE;
-    if (e == "smoothstep") return d.ANIM.EASING_SMOOTHSTEP;
-    if (e == "smootherstep") return d.ANIM.EASING_SMOOTHERSTEP;
-    if (e == "Cubic In") return d.ANIM.EASING_CUBIC_IN;
-    if (e == "Cubic Out") return d.ANIM.EASING_CUBIC_OUT;
-    if (e == "Cubic In Out") return d.ANIM.EASING_CUBIC_INOUT;
-    if (e == "Expo In") return d.ANIM.EASING_EXPO_IN;
-    if (e == "Expo Out") return d.ANIM.EASING_EXPO_OUT;
-    if (e == "Expo In Out") return d.ANIM.EASING_EXPO_INOUT;
-    if (e == "Sin In") return d.ANIM.EASING_SIN_IN;
-    if (e == "Sin Out") return d.ANIM.EASING_SIN_OUT;
-    if (e == "Sin In Out") return d.ANIM.EASING_SIN_INOUT;
-    if (e == "Back In") return d.ANIM.EASING_BACK_IN;
-    if (e == "Back Out") return d.ANIM.EASING_BACK_OUT;
-    if (e == "Back In Out") return d.ANIM.EASING_BACK_INOUT;
-    if (e == "Elastic In") return d.ANIM.EASING_ELASTIC_IN;
-    if (e == "Elastic Out") return d.ANIM.EASING_ELASTIC_OUT;
-    if (e == "Bounce In") return d.ANIM.EASING_BOUNCE_IN;
-    if (e == "Bounce Out") return d.ANIM.EASING_BOUNCE_OUT;
-    if (e == "Quart Out") return d.ANIM.EASING_QUART_OUT;
-    if (e == "Quart In") return d.ANIM.EASING_QUART_IN;
-    if (e == "Quart In Out") return d.ANIM.EASING_QUART_INOUT;
-    if (e == "Quint Out") return d.ANIM.EASING_QUINT_OUT;
-    if (e == "Quint In") return d.ANIM.EASING_QUINT_IN;
-    if (e == "Quint In Out") return d.ANIM.EASING_QUINT_INOUT;
+    if (e == "linear") return m.ANIM.EASING_LINEAR;
+    if (e == "absolute") return m.ANIM.EASING_ABSOLUTE;
+    if (e == "smoothstep") return m.ANIM.EASING_SMOOTHSTEP;
+    if (e == "smootherstep") return m.ANIM.EASING_SMOOTHERSTEP;
+    if (e == "Cubic In") return m.ANIM.EASING_CUBIC_IN;
+    if (e == "Cubic Out") return m.ANIM.EASING_CUBIC_OUT;
+    if (e == "Cubic In Out") return m.ANIM.EASING_CUBIC_INOUT;
+    if (e == "Expo In") return m.ANIM.EASING_EXPO_IN;
+    if (e == "Expo Out") return m.ANIM.EASING_EXPO_OUT;
+    if (e == "Expo In Out") return m.ANIM.EASING_EXPO_INOUT;
+    if (e == "Sin In") return m.ANIM.EASING_SIN_IN;
+    if (e == "Sin Out") return m.ANIM.EASING_SIN_OUT;
+    if (e == "Sin In Out") return m.ANIM.EASING_SIN_INOUT;
+    if (e == "Back In") return m.ANIM.EASING_BACK_IN;
+    if (e == "Back Out") return m.ANIM.EASING_BACK_OUT;
+    if (e == "Back In Out") return m.ANIM.EASING_BACK_INOUT;
+    if (e == "Elastic In") return m.ANIM.EASING_ELASTIC_IN;
+    if (e == "Elastic Out") return m.ANIM.EASING_ELASTIC_OUT;
+    if (e == "Bounce In") return m.ANIM.EASING_BOUNCE_IN;
+    if (e == "Bounce Out") return m.ANIM.EASING_BOUNCE_OUT;
+    if (e == "Quart Out") return m.ANIM.EASING_QUART_OUT;
+    if (e == "Quart In") return m.ANIM.EASING_QUART_IN;
+    if (e == "Quart In Out") return m.ANIM.EASING_QUART_INOUT;
+    if (e == "Quint Out") return m.ANIM.EASING_QUINT_OUT;
+    if (e == "Quint In") return m.ANIM.EASING_QUINT_IN;
+    if (e == "Quint In Out") return m.ANIM.EASING_QUINT_INOUT;
   };
   A.prototype.createPort = function (e, t, n) {
-    const r = e.inDropDown(t, d.ANIM.EASINGS, "Cubic Out");
+    const r = e.inDropDown(t, m.ANIM.EASINGS, "Cubic Out");
     r.set("linear");
     r.defaultValue = "linear";
     r.onChange = function () {
@@ -55522,18 +58102,18 @@ window.addEventListener("load", function (e) {
     }
     return t;
   };
-  const y = { Key: p };
-  const I = function (e, t, n, r) {
+  const I = { Key: p };
+  const y = function (e, t, n, r) {
     f.apply(this);
     this.data = {};
     this._log = new c("core_port");
-    this.direction = d.PORT.PORT_DIR_IN;
+    this.direction = m.PORT.PORT_DIR_IN;
     this.id = String(CABLES.simpleId());
     this._op = e;
     this.links = [];
     this.value = 0;
     this.name = t;
-    this.type = n || d.OP.OP_PORT_TYPE_VALUE;
+    this.type = n || m.OP.OP_PORT_TYPE_VALUE;
     this.uiAttribs = r || {};
     this.anim = null;
     this._oldAnimVal = -5711;
@@ -55580,14 +58160,14 @@ window.addEventListener("load", function (e) {
       },
     });
   };
-  I.prototype.copyLinkedUiAttrib = function (e, t) {
+  y.prototype.copyLinkedUiAttrib = function (e, t) {
     if (!CABLES.UI) return;
     if (!this.isLinked()) return;
     const n = {};
     n[e] = this.links[0].getOtherPort(this).getUiAttrib(e);
     t.setUiAttribs(n);
   };
-  I.prototype.getValueForDisplay = function () {
+  y.prototype.getValueForDisplay = function () {
     let e = this.value;
     if (typeof this.value === "string" || this.value instanceof String) {
       if (e.length > 1e3) {
@@ -55608,15 +58188,15 @@ window.addEventListener("load", function (e) {
     }
     return e;
   };
-  I.prototype.onAnimToggle = function () {};
-  I.prototype._onAnimToggle = function () {
+  y.prototype.onAnimToggle = function () {};
+  y.prototype._onAnimToggle = function () {
     this.onAnimToggle();
   };
-  I.prototype.remove = function () {
+  y.prototype.remove = function () {
     this.removeLinks();
     this._op.removePort(this);
   };
-  I.prototype.setUiAttribs = function (e) {
+  y.prototype.setUiAttribs = function (e) {
     let t = false;
     if (!this.uiAttribs) this.uiAttribs = {};
     for (const n in e) {
@@ -55633,16 +58213,16 @@ window.addEventListener("load", function (e) {
       this._op.patch.emitEvent("subpatchExpose", this._op.uiAttribs.subPatch);
     if (t) this.emitEvent("onUiAttrChange", e, this);
   };
-  I.prototype.getUiAttribs = function () {
+  y.prototype.getUiAttribs = function () {
     return this.uiAttribs;
   };
-  I.prototype.getUiAttrib = function (e) {
+  y.prototype.getUiAttrib = function (e) {
     if (!this.uiAttribs || !this.uiAttribs.hasOwnProperty(e)) {
       return null;
     }
     return this.uiAttribs[e];
   };
-  I.prototype.get = function () {
+  y.prototype.get = function () {
     if (this._animated && this._lastAnimFrame != this._op.patch.getFrameNum()) {
       this._lastAnimFrame = this._op.patch.getFrameNum();
       let e = this.anim.getValue(this._op.patch.timer.getTime());
@@ -55654,16 +58234,16 @@ window.addEventListener("load", function (e) {
     }
     return this.value;
   };
-  I.prototype.setRef = function (e) {
+  y.prototype.setRef = function (e) {
     this.forceRefChange = true;
     this.set(e);
   };
-  I.prototype.set = I.prototype.setValue = function (e) {
+  y.prototype.set = y.prototype.setValue = function (e) {
     if (e === undefined) e = null;
     if (CABLES.UI && CABLES.UI.showDevInfos)
       if (
-        this.direction == d.PORT.PORT_DIR_OUT &&
-        this.type == d.OP.OP_PORT_TYPE_OBJECT &&
+        this.direction == m.PORT.PORT_DIR_OUT &&
+        this.type == m.OP.OP_PORT_TYPE_OBJECT &&
         e &&
         !this.forceRefChange
       )
@@ -55672,8 +58252,8 @@ window.addEventListener("load", function (e) {
       if (
         e !== this.value ||
         this.changeAlways ||
-        this.type == d.OP.OP_PORT_TYPE_TEXTURE ||
-        this.type == d.OP.OP_PORT_TYPE_ARRAY
+        this.type == m.OP.OP_PORT_TYPE_TEXTURE ||
+        this.type == m.OP.OP_PORT_TYPE_ARRAY
       ) {
         if (this._animated) {
           this.anim.setValue(this._op.patch.timer.getTime(), e);
@@ -55693,16 +58273,16 @@ window.addEventListener("load", function (e) {
             this._op &&
             this._op.patch &&
             this._op.patch.isEditorMode() &&
-            this.type == d.OP.OP_PORT_TYPE_TEXTURE
+            this.type == m.OP.OP_PORT_TYPE_TEXTURE
           )
             gui.texturePreview().updateTexturePort(this);
         }
-        if (this.direction == d.PORT.PORT_DIR_OUT)
+        if (this.direction == m.PORT.PORT_DIR_OUT)
           for (let e = 0; e < this.links.length; ++e) this.links[e].setValue();
       }
     }
   };
-  I.prototype.updateAnim = function () {
+  y.prototype.updateAnim = function () {
     if (this._animated) {
       this.value = this.get();
       if (this._oldAnimVal != this.value || this.changeAlways) {
@@ -55712,7 +58292,7 @@ window.addEventListener("load", function (e) {
       this._oldAnimVal = this.value;
     }
   };
-  I.prototype.forceChange = function () {
+  y.prototype.forceChange = function () {
     if (this.onValueChanged || this.onChange) {
     }
     this._activity();
@@ -55720,16 +58300,16 @@ window.addEventListener("load", function (e) {
     if (this.onChange) this.onChange(this, this.value);
     else if (this.onValueChanged) this.onValueChanged(this, this.value);
   };
-  I.prototype.getTypeString = function () {
-    if (this.type == d.OP.OP_PORT_TYPE_VALUE) return "Number";
-    if (this.type == d.OP.OP_PORT_TYPE_FUNCTION) return "Trigger";
-    if (this.type == d.OP.OP_PORT_TYPE_OBJECT) return "Object";
-    if (this.type == d.OP.OP_PORT_TYPE_DYNAMIC) return "Dynamic";
-    if (this.type == d.OP.OP_PORT_TYPE_ARRAY) return "Array";
-    if (this.type == d.OP.OP_PORT_TYPE_STRING) return "String";
+  y.prototype.getTypeString = function () {
+    if (this.type == m.OP.OP_PORT_TYPE_VALUE) return "Number";
+    if (this.type == m.OP.OP_PORT_TYPE_FUNCTION) return "Trigger";
+    if (this.type == m.OP.OP_PORT_TYPE_OBJECT) return "Object";
+    if (this.type == m.OP.OP_PORT_TYPE_DYNAMIC) return "Dynamic";
+    if (this.type == m.OP.OP_PORT_TYPE_ARRAY) return "Array";
+    if (this.type == m.OP.OP_PORT_TYPE_STRING) return "String";
     return "Unknown";
   };
-  I.prototype.deSerializeSettings = function (e) {
+  y.prototype.deSerializeSettings = function (e) {
     if (!e) return;
     if (e.animated) this.setAnimated(e.animated);
     if (e.useVariable) this.setVariableName(e.useVariable);
@@ -55747,12 +58327,12 @@ window.addEventListener("load", function (e) {
       });
       if (e.anim.loop) this.anim.loop = e.anim.loop;
       for (const t in e.anim.keys) {
-        this.anim.keys.push(new y.Key(e.anim.keys[t]));
+        this.anim.keys.push(new I.Key(e.anim.keys[t]));
       }
       this.anim.sortKeys();
     }
   };
-  I.prototype.setInitialValue = function (e) {
+  y.prototype.setInitialValue = function (e) {
     if (this.op.preservedPortLinks[this.name]) {
       for (let e = 0; e < this.op.preservedPortLinks[this.name].length; e++) {
         const t = this.op.preservedPortLinks[this.name][e];
@@ -55768,11 +58348,11 @@ window.addEventListener("load", function (e) {
     } else if (e !== undefined) this.set(e);
     if (e !== undefined) this.defaultValue = e;
   };
-  I.prototype.getSerialized = function () {
+  y.prototype.getSerialized = function () {
     let e = { name: this.getName() };
     if (!this.ignoreValueSerialize && this.links.length === 0) {
       if (
-        this.type == d.OP.OP_PORT_TYPE_OBJECT &&
+        this.type == m.OP.OP_PORT_TYPE_OBJECT &&
         this.value &&
         this.value.tex
       ) {
@@ -55793,7 +58373,7 @@ window.addEventListener("load", function (e) {
     }
     if (this.uiAttribs.title) e.title = this.uiAttribs.title;
     if (
-      (this.preserveLinks || this.direction == d.PORT.PORT_DIR_OUT) &&
+      (this.preserveLinks || this.direction == m.PORT.PORT_DIR_OUT) &&
       this.links.length > 0
     ) {
       e.links = [];
@@ -55806,7 +58386,7 @@ window.addEventListener("load", function (e) {
           e.links.push(this.links[t].getSerialized());
       }
     }
-    if (this.direction == d.PORT.PORT_DIR_IN && this.links.length > 0) {
+    if (this.direction == m.PORT.PORT_DIR_IN && this.links.length > 0) {
       for (const t in this.links) {
         if (!this.links[t].portIn || !this.links[t].portOut) continue;
         const n = this.links[t].getOtherPort(this);
@@ -55819,17 +58399,17 @@ window.addEventListener("load", function (e) {
       }
     }
     if (e.links && e.links.length == 0) delete e.links;
-    if (this.type === d.OP.OP_PORT_TYPE_FUNCTION) delete e.value;
-    if (this.type === d.OP.OP_PORT_TYPE_FUNCTION && this.links.length == 0)
+    if (this.type === m.OP.OP_PORT_TYPE_FUNCTION) delete e.value;
+    if (this.type === m.OP.OP_PORT_TYPE_FUNCTION && this.links.length == 0)
       e = null;
     if (e && Object.keys(e).length == 1 && e.name) e = null;
     a(e);
     return e;
   };
-  I.prototype.shouldLink = function () {
+  y.prototype.shouldLink = function () {
     return true;
   };
-  I.prototype.removeLinks = function () {
+  y.prototype.removeLinks = function () {
     let e = 0;
     while (this.links.length > 0) {
       e++;
@@ -55841,10 +58421,10 @@ window.addEventListener("load", function (e) {
       this.links[0].remove();
     }
   };
-  I.prototype.removeLink = function (e) {
+  y.prototype.removeLink = function (e) {
     for (const t in this.links) if (this.links[t] == e) this.links.splice(t, 1);
-    if (this.direction == d.PORT.PORT_DIR_IN) {
-      if (this.type == d.OP.OP_PORT_TYPE_VALUE)
+    if (this.direction == m.PORT.PORT_DIR_IN) {
+      if (this.type == m.OP.OP_PORT_TYPE_VALUE)
         this.setValue(this._valueBeforeLink || 0);
       else this.setValue(this._valueBeforeLink || null);
     }
@@ -55859,14 +58439,14 @@ window.addEventListener("load", function (e) {
       this._log.error(e);
     }
   };
-  I.prototype.getName = function () {
+  y.prototype.getName = function () {
     return this.name;
   };
-  I.prototype.getTitle = function () {
+  y.prototype.getTitle = function () {
     if (this.uiAttribs.title) return this.uiAttribs.title;
     return this.name;
   };
-  I.prototype.addLink = function (e) {
+  y.prototype.addLink = function (e) {
     this._valueBeforeLink = this.value;
     this.links.push(e);
     if (CABLES.UI && this._op.checkLinkTimeWarnings)
@@ -55879,12 +58459,12 @@ window.addEventListener("load", function (e) {
       this._log.error(e);
     }
   };
-  I.prototype.getLinkTo = function (e) {
+  y.prototype.getLinkTo = function (e) {
     for (const t in this.links)
       if (this.links[t].portIn == e || this.links[t].portOut == e)
         return this.links[t];
   };
-  I.prototype.removeLinkTo = function (e) {
+  y.prototype.removeLinkTo = function (e) {
     for (const t in this.links) {
       if (this.links[t].portIn == e || this.links[t].portOut == e) {
         this.links[t].remove();
@@ -55897,15 +58477,15 @@ window.addEventListener("load", function (e) {
       }
     }
   };
-  I.prototype.isLinkedTo = function (e) {
+  y.prototype.isLinkedTo = function (e) {
     for (const t in this.links)
       if (this.links[t].portIn == e || this.links[t].portOut == e) return true;
     return false;
   };
-  I.prototype._activity = function () {
+  y.prototype._activity = function () {
     this.activityCounter++;
   };
-  I.prototype.trigger = function () {
+  y.prototype.trigger = function () {
     const t = this.links.length;
     this._activity();
     if (t === 0) return;
@@ -55930,24 +58510,24 @@ window.addEventListener("load", function (e) {
       this._log.error(e);
     }
   };
-  I.prototype.call = function () {
+  y.prototype.call = function () {
     this._log.warn("call deprecated - use trigger() ");
     this.trigger();
   };
-  I.prototype.execute = function () {
+  y.prototype.execute = function () {
     this._log.warn("### execute port: " + this.getName(), this.goals.length);
   };
-  I.prototype.setVariableName = function (e) {
+  y.prototype.setVariableName = function (e) {
     this._useVariableName = e;
     this._op.patch.on("variableRename", (e, t) => {
       if (e != this._useVariableName) return;
       this._useVariableName = t;
     });
   };
-  I.prototype.getVariableName = function () {
+  y.prototype.getVariableName = function () {
     return this._useVariableName;
   };
-  I.prototype.setVariable = function (e) {
+  y.prototype.setVariable = function (e) {
     this.setAnimated(false);
     const t = { useVariable: false };
     if (this._variableIn && this._varChangeListenerId) {
@@ -55959,7 +58539,7 @@ window.addEventListener("load", function (e) {
       if (!this._variableIn) {
         this._log.warn("PORT VAR NOT FOUND!!!", e);
       } else {
-        if (this.type == d.OP.OP_PORT_TYPE_OBJECT) {
+        if (this.type == m.OP.OP_PORT_TYPE_OBJECT) {
           this._varChangeListenerId = this._variableIn.on("change", () => {
             this.set(null);
             this.set(this._variableIn.getValue());
@@ -55982,10 +58562,10 @@ window.addEventListener("load", function (e) {
     this.setUiAttribs(t);
     this._op.patch.emitEvent("portSetVariable", this._op, this, e);
   };
-  I.prototype._handleNoTriggerOpAnimUpdates = function (e) {
+  y.prototype._handleNoTriggerOpAnimUpdates = function (e) {
     let t = false;
     for (let e = 0; e < this._op.portsIn.length; e++) {
-      if (this._op.portsIn.type == d.OP.OP_PORT_TYPE_FUNCTION) {
+      if (this._op.portsIn.type == m.OP.OP_PORT_TYPE_FUNCTION) {
         t = true;
         break;
       }
@@ -55998,7 +58578,7 @@ window.addEventListener("load", function (e) {
       else this._op.patch.removeEventListener(this._notriggerAnimUpdate);
     }
   };
-  I.prototype.setAnimated = function (e) {
+  y.prototype.setAnimated = function (e) {
     if (this._animated != e) {
       this._animated = e;
       this._op._hasAnimPort = true;
@@ -56021,7 +58601,7 @@ window.addEventListener("load", function (e) {
     }
     this.setUiAttribs({ isAnimated: this._animated });
   };
-  I.prototype.toggleAnim = function () {
+  y.prototype.toggleAnim = function () {
     this._animated = !this._animated;
     if (this._animated && !this.anim) {
       this.anim = new A({ name: "port " + this.name });
@@ -56033,61 +58613,61 @@ window.addEventListener("load", function (e) {
     this._onAnimToggle();
     this.setUiAttribs({ isAnimated: this._animated });
   };
-  I.prototype.getType = function () {
+  y.prototype.getType = function () {
     return this.type;
   };
-  I.prototype.isLinked = function () {
+  y.prototype.isLinked = function () {
     return (
       this.links.length > 0 || this._animated || this._useVariableName != null
     );
   };
-  I.prototype.isBoundToVar = function () {
+  y.prototype.isBoundToVar = function () {
     const e = this._useVariableName != null;
     this.uiAttribs.boundToVar = e;
     return e;
   };
-  I.prototype.isAnimated = function () {
+  y.prototype.isAnimated = function () {
     return this._animated;
   };
-  I.prototype.isHidden = function () {
+  y.prototype.isHidden = function () {
     return this.uiAttribs.hidePort;
   };
-  I.prototype._onTriggered = function (e) {
+  y.prototype._onTriggered = function (e) {
     this._activity();
     this._op.updateAnims();
     if (this._op.enabled && this.onTriggered) this.onTriggered(e);
     if (this._op.enabled) this.emitEvent("trigger");
   };
-  I.prototype._onSetProfiling = function (e) {
+  y.prototype._onSetProfiling = function (e) {
     this._op.patch.profiler.add("port", this);
     this.setValue(e);
     this._op.patch.profiler.add("port", null);
   };
-  I.prototype._onTriggeredProfiling = function () {
+  y.prototype._onTriggeredProfiling = function () {
     if (this._op.enabled && this.onTriggered) {
       this._op.patch.profiler.add("port", this);
       this.onTriggered();
       this._op.patch.profiler.add("port", null);
     }
   };
-  I.prototype.getUiActiveState = function () {
+  y.prototype.getUiActiveState = function () {
     return this._uiActiveState;
   };
-  I.prototype.setUiActiveState = function (e) {
+  y.prototype.setUiActiveState = function (e) {
     this._uiActiveState = e;
     if (this.onUiActiveStateChange) this.onUiActiveStateChange();
   };
-  I.prototype.onValueChange = function (e) {
+  y.prototype.onValueChange = function (e) {
     this.onChange = e;
   };
-  I.prototype.hidePort = function () {};
-  I.portTypeNumberToString = function (e) {
-    if (e == d.OP.OP_PORT_TYPE_VALUE) return "value";
-    if (e == d.OP.OP_PORT_TYPE_FUNCTION) return "function";
-    if (e == d.OP.OP_PORT_TYPE_OBJECT) return "object";
-    if (e == d.OP.OP_PORT_TYPE_ARRAY) return "array";
-    if (e == d.OP.OP_PORT_TYPE_STRING) return "string";
-    if (e == d.OP.OP_PORT_TYPE_DYNAMIC) return "dynamic";
+  y.prototype.hidePort = function () {};
+  y.portTypeNumberToString = function (e) {
+    if (e == m.OP.OP_PORT_TYPE_VALUE) return "value";
+    if (e == m.OP.OP_PORT_TYPE_FUNCTION) return "function";
+    if (e == m.OP.OP_PORT_TYPE_OBJECT) return "object";
+    if (e == m.OP.OP_PORT_TYPE_ARRAY) return "array";
+    if (e == m.OP.OP_PORT_TYPE_STRING) return "string";
+    if (e == m.OP.OP_PORT_TYPE_DYNAMIC) return "dynamic";
     return "unknown";
   };
   class x {
@@ -56165,11 +58745,11 @@ window.addEventListener("load", function (e) {
       } else {
         this._log.error("Unknown uniform type " + t);
       }
-      if (typeof r == "object" && r instanceof I) {
+      if (typeof r == "object" && r instanceof y) {
         this._port = r;
         this._value = this._port.get();
         if (i && a && s) {
-          if (!(i instanceof I) || !(a instanceof I) || !(s instanceof I)) {
+          if (!(i instanceof y) || !(a instanceof y) || !(s instanceof y)) {
             this._log.error(
               "[cgl_uniform] mixed port/value parameter for vec4 ",
               this._name
@@ -56185,7 +58765,7 @@ window.addEventListener("load", function (e) {
           this._port4.on("change", this.updateFromPort4f.bind(this));
           this.updateFromPort4f();
         } else if (i && a) {
-          if (!(i instanceof I) || !(a instanceof I)) {
+          if (!(i instanceof y) || !(a instanceof y)) {
             this._log.error(
               "[cgl_uniform] mixed port/value parameter for vec4 ",
               this._name
@@ -56199,7 +58779,7 @@ window.addEventListener("load", function (e) {
           this._port3.on("change", this.updateFromPort3f.bind(this));
           this.updateFromPort3f();
         } else if (i) {
-          if (!(i instanceof I)) {
+          if (!(i instanceof y)) {
             this._log.error(
               "[cgl_uniform] mixed port/value parameter for vec4 ",
               this._name
@@ -56709,12 +59289,12 @@ window.addEventListener("load", function (e) {
     BLEND_SUB: 3,
     BLEND_MUL: 4,
   };
-  const j = 180 / Math.PI;
-  const N = Math.PI / 180;
-  const w = { MATH: { DEG2RAD: N, RAD2DEG: j }, SHADER: E, BLEND_MODES: C };
+  const N = 180 / Math.PI;
+  const j = Math.PI / 180;
+  const L = { MATH: { DEG2RAD: j, RAD2DEG: N }, SHADER: E, BLEND_MODES: C };
   const P = {};
   P.lastMesh = null;
-  const L = function (e, t, n) {
+  const w = function (e, t, n) {
     this._cgl = e;
     let r = n || {};
     if (CABLES.UTILS.isNumeric(r)) r = { glPrimitive: n };
@@ -56750,17 +59330,17 @@ window.addEventListener("load", function (e) {
       },
     });
   };
-  L.prototype.freeMem = function () {
+  w.prototype.freeMem = function () {
     this.memFreed = true;
     for (let e = 0; e < this._attributes.length; e++) {
       this._attributes[e].floatArray = null;
     }
   };
-  L.prototype.updateVertices = function (e) {
-    this.setAttribute(w.SHADER.SHADERVAR_VERTEX_POSITION, e.vertices, 3);
+  w.prototype.updateVertices = function (e) {
+    this.setAttribute(L.SHADER.SHADERVAR_VERTEX_POSITION, e.vertices, 3);
     this._numVerts = e.vertices.length / 3;
   };
-  L.prototype.setAttributePointer = function (t, n, r, i) {
+  w.prototype.setAttributePointer = function (t, n, r, i) {
     for (let e = 0; e < this._attributes.length; e++) {
       if (this._attributes[e].name == t) {
         if (!this._attributes[e].pointer) this._attributes[e].pointer = [];
@@ -56769,16 +59349,16 @@ window.addEventListener("load", function (e) {
           name: n,
           stride: r,
           offset: i,
-          instanced: t == w.SHADER.SHADERVAR_INSTANCE_MMATRIX,
+          instanced: t == L.SHADER.SHADERVAR_INSTANCE_MMATRIX,
         });
       }
     }
   };
-  L.prototype.getAttribute = function (t) {
+  w.prototype.getAttribute = function (t) {
     for (let e = 0; e < this._attributes.length; e++)
       if (this._attributes[e].name == t) return this._attributes[e];
   };
-  L.prototype.setAttributeRange = function (e, t, n, r) {
+  w.prototype.setAttributeRange = function (e, t, n, r) {
     if (!e) return;
     if (!n && !r) return;
     if (!e.name) {
@@ -56808,14 +59388,14 @@ window.addEventListener("load", function (e) {
     else
       this._cgl.gl.bufferSubData(this._cgl.gl.ARRAY_BUFFER, n * 4, t, n, r - n);
   };
-  L.prototype._resizeAttr = function (e, t) {
+  w.prototype._resizeAttr = function (e, t) {
     if (t.buffer) this._cgl.gl.deleteBuffer(t.buffer);
     t.buffer = this._cgl.gl.createBuffer();
     this._cgl.gl.bindBuffer(this._cgl.gl.ARRAY_BUFFER, t.buffer);
     this._bufferArray(e, t);
     t.numItems = e.length / t.itemSize;
   };
-  L.prototype._bufferArray = function (e, t) {
+  w.prototype._bufferArray = function (e, t) {
     let n = t.floatArray || null;
     if (!e) return;
     if (this._cgl.debugOneFrame) {
@@ -56844,9 +59424,9 @@ window.addEventListener("load", function (e) {
       this._cgl.gl.DYNAMIC_DRAW
     );
   };
-  L.prototype.addAttribute =
-    L.prototype.updateAttribute =
-    L.prototype.setAttribute =
+  w.prototype.addAttribute =
+    w.prototype.updateAttribute =
+    w.prototype.setAttribute =
       function (e, t, n, r) {
         if (!t) {
           this._log.error("mesh addAttribute - no array given! " + e);
@@ -56864,7 +59444,7 @@ window.addEventListener("load", function (e) {
           if (r.cb) i = r.cb;
           if (r.instanced) a = r.instanced;
         }
-        if (e == w.SHADER.SHADERVAR_INSTANCE_MMATRIX) a = true;
+        if (e == L.SHADER.SHADERVAR_INSTANCE_MMATRIX) a = true;
         for (s = 0; s < this._attributes.length; s++) {
           const c = this._attributes[s];
           if (c.name == e) {
@@ -56892,31 +59472,31 @@ window.addEventListener("load", function (e) {
           type: u,
         };
         this._bufferArray(t, c);
-        if (e == w.SHADER.SHADERVAR_VERTEX_POSITION) this._bufVertexAttrib = c;
+        if (e == L.SHADER.SHADERVAR_VERTEX_POSITION) this._bufVertexAttrib = c;
         this._attributes.push(c);
         this._attribLocs = {};
         return c;
       };
-  L.prototype.getAttributes = function () {
+  w.prototype.getAttributes = function () {
     return this._attributes;
   };
-  L.prototype.updateTexCoords = function (e) {
+  w.prototype.updateTexCoords = function (e) {
     if (e.texCoords && e.texCoords.length > 0) {
-      this.setAttribute(w.SHADER.SHADERVAR_VERTEX_TEXCOORD, e.texCoords, 2);
+      this.setAttribute(L.SHADER.SHADERVAR_VERTEX_TEXCOORD, e.texCoords, 2);
     } else {
       const t = new Float32Array(Math.round((e.vertices.length / 3) * 2));
-      this.setAttribute(w.SHADER.SHADERVAR_VERTEX_TEXCOORD, t, 2);
+      this.setAttribute(L.SHADER.SHADERVAR_VERTEX_TEXCOORD, t, 2);
     }
   };
-  L.prototype.updateNormals = function (e) {
+  w.prototype.updateNormals = function (e) {
     if (e.vertexNormals && e.vertexNormals.length > 0) {
-      this.setAttribute(w.SHADER.SHADERVAR_VERTEX_NORMAL, e.vertexNormals, 3);
+      this.setAttribute(L.SHADER.SHADERVAR_VERTEX_NORMAL, e.vertexNormals, 3);
     } else {
       const t = new Float32Array(Math.round(e.vertices.length));
-      this.setAttribute(w.SHADER.SHADERVAR_VERTEX_NORMAL, t, 3);
+      this.setAttribute(L.SHADER.SHADERVAR_VERTEX_NORMAL, t, 3);
     }
   };
-  L.prototype._setVertexNumbers = function (e) {
+  w.prototype._setVertexNumbers = function (e) {
     if (
       !this._verticesNumbers ||
       this._verticesNumbers.length != this._numVerts ||
@@ -56928,7 +59508,7 @@ window.addEventListener("load", function (e) {
         for (let e = 0; e < this._numVerts; e++) this._verticesNumbers[e] = e;
       }
       this.setAttribute(
-        w.SHADER.SHADERVAR_VERTEX_NUMBER,
+        L.SHADER.SHADERVAR_VERTEX_NUMBER,
         this._verticesNumbers,
         1,
         (e, t, n) => {
@@ -56939,7 +59519,7 @@ window.addEventListener("load", function (e) {
       );
     }
   };
-  L.prototype.setVertexIndices = function (t) {
+  w.prototype.setVertexIndices = function (t) {
     if (!this._bufVerticesIndizes) {
       this._log.warn("no bufVerticesIndizes: " + this._name);
       return;
@@ -56976,7 +59556,7 @@ window.addEventListener("load", function (e) {
       this._bufVerticesIndizes.numItems = t.length;
     } else this._bufVerticesIndizes.numItems = 0;
   };
-  L.prototype.setGeom = function (e, t) {
+  w.prototype.setGeom = function (e, t) {
     this._geom = e;
     if (e.glPrimitive != null) this._glPrimitive = e.glPrimitive;
     if (this._geom && this._geom.name) this._name = "mesh " + this._geom.name;
@@ -56988,9 +59568,9 @@ window.addEventListener("load", function (e) {
     if (this.addVertexNumbers) this._setVertexNumbers();
     const n = this._geom.getAttributes();
     const r = {
-      texCoords: w.SHADER.SHADERVAR_VERTEX_TEXCOORD,
-      vertexNormals: w.SHADER.SHADERVAR_VERTEX_NORMAL,
-      vertexColors: w.SHADER.SHADERVAR_VERTEX_COLOR,
+      texCoords: L.SHADER.SHADERVAR_VERTEX_TEXCOORD,
+      vertexNormals: L.SHADER.SHADERVAR_VERTEX_NORMAL,
+      vertexColors: L.SHADER.SHADERVAR_VERTEX_COLOR,
       tangents: "attrTangent",
       biTangents: "attrBiTangent",
     };
@@ -57001,12 +59581,12 @@ window.addEventListener("load", function (e) {
       this._geom = null;
     }
   };
-  L.prototype._preBind = function (t) {
+  w.prototype._preBind = function (t) {
     for (let e = 0; e < this._attributes.length; e++)
       if (this._attributes[e].cb)
         this._attributes[e].cb(this._attributes[e], this._geom, t);
   };
-  L.prototype._checkAttrLengths = function () {
+  w.prototype._checkAttrLengths = function () {
     if (this.memFreed) return;
     for (let e = 0; e < this._attributes.length; e++) {
       if (
@@ -57018,7 +59598,7 @@ window.addEventListener("load", function (e) {
       }
     }
   };
-  L.prototype._bind = function (t) {
+  w.prototype._bind = function (t) {
     if (!t.isValid()) return;
     let n = [];
     if (this._attribLocs[t.id]) n = this._attribLocs[t.id];
@@ -57135,7 +59715,7 @@ window.addEventListener("load", function (e) {
         this._bufVerticesIndizes
       );
   };
-  L.prototype.unBind = function () {
+  w.prototype.unBind = function () {
     const e = this._lastShader;
     this._lastShader = null;
     if (!e) return;
@@ -57161,22 +59741,22 @@ window.addEventListener("load", function (e) {
       if (t[e] != -1) this._cgl.gl.disableVertexAttribArray(t[e]);
     }
   };
-  L.prototype.meshChanged = function () {
+  w.prototype.meshChanged = function () {
     return this._cgl.lastMesh && this._cgl.lastMesh != this;
   };
-  L.prototype.printDebug = function (e) {
+  w.prototype.printDebug = function (e) {
     console.log("--attributes");
     for (let e = 0; e < this._attributes.length; e++) {
       console.log("attribute " + e + " " + this._attributes[e].name);
     }
   };
-  L.prototype.setNumVertices = function (e) {
+  w.prototype.setNumVertices = function (e) {
     this._bufVertexAttrib.numItems = e;
   };
-  L.prototype.getNumVertices = function () {
+  w.prototype.getNumVertices = function () {
     return this._bufVertexAttrib.numItems;
   };
-  L.prototype.render = function (n) {
+  w.prototype.render = function (n) {
     if (!n || !n.isValid() || this._cgl.aborted) return;
     this._checkAttrLengths();
     if (this._geom) {
@@ -57330,18 +59910,18 @@ window.addEventListener("load", function (e) {
     this._cgl.printError("mesh render " + this._name);
     this.unBind();
   };
-  L.prototype.setNumInstances = function (t) {
+  w.prototype.setNumInstances = function (t) {
     t = Math.max(0, t);
     if (this._numInstances != t) {
       this._numInstances = t;
       const n = new Float32Array(t);
       for (let e = 0; e < t; e++) n[e] = e;
-      this.setAttribute(w.SHADER.SHADERVAR_INSTANCE_INDEX, n, 1, {
+      this.setAttribute(L.SHADER.SHADERVAR_INSTANCE_INDEX, n, 1, {
         instanced: true,
       });
     }
   };
-  L.prototype._disposeAttributes = function () {
+  w.prototype._disposeAttributes = function () {
     if (!this._attributes) return;
     for (let e = 0; e < this._attributes.length; e++) {
       if (this._attributes[e].buffer) {
@@ -57351,7 +59931,7 @@ window.addEventListener("load", function (e) {
     }
     this._attributes.length = 0;
   };
-  L.prototype.dispose = function () {
+  w.prototype.dispose = function () {
     if (this._bufVertexAttrib && this._bufVertexAttrib.buffer)
       this._cgl.gl.deleteBuffer(this._bufVertexAttrib.buffer);
     if (this._bufVerticesIndizes)
@@ -57415,9 +59995,9 @@ window.addEventListener("load", function (e) {
       -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0,
       0, -1,
     ]);
-    return new L(e, n);
+    return new w(e, n);
   };
-  class k {
+  class M {
     constructor(e, t, n) {
       this.cgl = e;
       this._options = n;
@@ -57517,7 +60097,7 @@ window.addEventListener("load", function (e) {
       if (this.mesh) this.mesh.dispose();
     }
   }
-  CGL.CopyTexture = k;
+  CGL.CopyTexture = M;
   ((this.CGL = this.CGL || {}).COREMODULES =
     this.CGL.COREMODULES || {}).Copytexture = e.Copytexture;
 })();
@@ -57684,8 +60264,8 @@ window.addEventListener("load", function (e) {
         else this._pixelData = new Uint8Array(f);
         this._size = f * u;
       }
-      let d = l.UNSIGNED_BYTE;
-      if (u > 1) d = l.FLOAT;
+      let m = l.UNSIGNED_BYTE;
+      if (u > 1) m = l.FLOAT;
       if (this._size == 0 || !this._pixelData) {
         this._log.error("readpixel size 0", this._size, s, o);
         return;

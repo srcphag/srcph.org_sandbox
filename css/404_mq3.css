@@ -1,0 +1,39 @@
+[context="404"] {
+  .canvasmask {
+    background-color: #ffffff;
+    z-index: 6;
+  }
+  #canvasMask1 {
+    left: 0;
+    /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+    right: calc(((var(--mainWidth) / 6) * 5) + var(--mainMargin) * 3);
+    top: 0;
+    bottom: 50vh;
+    position: absolute;
+  }
+  #canvasMask2 {
+    right: 0;
+    /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+    left: calc(
+      (var(--mainWidth) / 6) * 3 + var(--mainMargin) + var(--mainPadding)
+    );
+    top: 50vh;
+    height: 15vh;
+    position: absolute;
+  }
+  #canvasMask3 {
+    right: 0;
+    /* right: calc(var(--mainMargin) + (var(--mainWidth) / 6)); */
+    left: calc(
+      (var(--mainWidth) / 6) * 4 + var(--mainMargin) + var(--mainPadding)
+    );
+    top: 50vh;
+    bottom: 0;
+    position: absolute;
+  }
+  #logo {
+    position: fixed;
+    top: 45vh;
+    left: 100px;
+  }
+}

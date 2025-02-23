@@ -5,9 +5,12 @@
   --black: #141414;
   --blue: rgb(0, 0, 256);
   --q1textSize0: 11.8px;
-  --textSize0: 12px;
-  --textSize1: 14px;
-  --textSize2: 16px;
+  --textSize0: clamp(0.75rem, 0.5vw, 1.5rem);
+  --textSize1: clamp(0.875rem, 0.5vw, 1.75rem);
+  --textSize2: clamp(1rem, 0.5vw, 2rem);
+  --lineHeight0: calc(var(--textSize0) + 0.5rem);
+  --lineHeight1: calc(var(--textSize1) + 0.5rem);
+  --lineHeight2: calc(var(--textSize2) + 0.5rem);
   --fLight: 100;
   --fRegular: 400;
   --fBold: 600;
@@ -16,7 +19,7 @@
   --mainPadding: 36px;
   --q1Margin: 24px;
 
-  --headerHeight: 65px;
+  --headerHeight: clamp(65px, 3vw, 130px);
   --indexWorkMargin: 300px;
 
   --mainHeight: calc(100vh - 110px);
@@ -24,7 +27,15 @@
   --mainWidthTouch: calc(100vw - (var(--mainMargin) * 2));
   --headerTextOffset: 50px;
 }
-
+html {
+  scroll-behavior: unset;
+}
+.nocursor {
+  cursor: none;
+}
+a:hover {
+  cursor: none;
+}
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -71,10 +82,14 @@ ol {
   mix-blend-mode: multiply;
 }
 .navbar > div {
-  height: 65px;
+  height: var(--headerHeight);
 }
 .nav-link {
   padding: 0px 8px 10px;
+  font-size: var(--textSize1);
+}
+.nav-link:hover {
+  font-weight: var(--fBold);
 }
 #glcanvas {
   display: block;
@@ -120,10 +135,11 @@ ol {
   filter: brightness(0);
   height: var(--headerHeight);
   left: calc((var(--mainPadding)) + var(--mainMargin));
+  width: unset;
 }
 
 #logo #logoPlayer {
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
   transform-origin: center left;
 }
 
@@ -149,6 +165,7 @@ nav a {
   color: var(--black);
   font-weight: var(--fRegular);
   text-decoration: underline;
+  font-weight: var(--fBold);
 }
 .container-3.w-container {
   margin: unset;

@@ -1,11 +1,10 @@
 // Creating a video element container firs
-const videoContainer = document.createElement('div');
-videoContainer.id = 'videoContainer';
+const videoContainer = document.createElement("div");
+videoContainer.id = "videoContainer";
 
 // videoContainer.style.display = 'none';
 
 document.addEventListener("CABLES.jsLoaded", function (event) {
-
   if (pageContext == "works") {
     var cmsVideos = document.querySelectorAll('[data-vid="works"]');
     var cmsImages = document.querySelectorAll('[data-img="works"]');
@@ -132,6 +131,72 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 
     // VideoControls
 
+    const playSVG =
+      "url(https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/671cd597249480e4a65bb82c_controlPlay.svg)";
+    const pauseSVG =
+      "url(https://cdn.prod.website-files.com/630ca11296e48c2b70f1013e/671cd5b679fab7c290b04404_controlPause.svg)";
+
+    const playText = "Play video";
+    const pauseText = "Pause video";
+
+    const soundOff = "Sound off";
+    const soundOn = "Sound on";
+
+    const fullScreenOn = "Fullscreen";
+    const fullScreenOff = "Exit fullscreen";
+
+    playButton.innerHTML = isPlaying ? pauseText : playText; // Set initial state
+    mutedButton.innerHTML = isMuted ? soundOff : soundOn; // Set initial state
+    fullscreenButton.innerHTML = isFullscreen ? fullScreenOff : fullScreenOn; // Set initial state
+
+    function setVideoPlay() {
+      isPlaying = !isPlaying;
+
+      // Change the SVG
+      playButton.innerHTML = isPlaying ? pauseText : playText;
+
+      // Set the CABLES variable
+      CABLES.patch.setVariable("videoPlay", isPlaying ? 1 : 0);
+      CABLES.patch.setVariable("videoMuted", isMuted ? 1 : 0);
+      CABLES.patch.setVariable("videoVolume", 1);
+    }
+    if (mq3.matches) {
+      playButton.addEventListener("click", () => {
+        setVideoPlay();
+      });
+    }
+
+    mutedButton.addEventListener("click", () => {
+      isMuted = !isMuted;
+      // Change the SVG
+      mutedButton.innerHTML = isMuted ? soundOff : soundOn;
+
+      // Set the CABLES variable
+      CABLES.patch.setVariable("videoMuted", isMuted ? 1 : 0);
+      CABLES.patch.setVariable("videoVolume", isMuted ? 0 : 1);
+      // console.log(isPlaying);
+    });
+
+    fullscreenButton.addEventListener("click", () => {
+      isFullscreen = !isFullscreen;
+
+      // Change the SVG
+      fullscreenButton.innerHTML = isFullscreen ? fullScreenOff : fullScreenOn;
+      srcShape.style.mixBlendMode = isFullscreen ? "normal" : "multiply";
+      srcShape.style.zIndex = isFullscreen ? 10 : 5;
+
+      // Set the CABLES variable
+      CABLES.patch.setVariable("videoFullscreen", isFullscreen ? 1 : 0);
+      if (mq1.matches && isFullscreen == true) {
+        document.getElementById("playerControls").style.top = "100vh";
+      }
+      if (mq1.matches && isFullscreen == false) {
+        document.getElementById("playerControls").style.top = "60vh";
+      }
+      // console.log(isPlaying);
+    });
+
+    // Mouse controls for larger screens
     if (mq3.matches) {
       const playerControls = document.getElementById("playerControls");
       let timeout;
@@ -139,9 +204,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 
       function showControls() {
         playerControls.style.opacity = "1";
-        // Reset timer
         clearTimeout(timeout);
-        // Only set hide timer if not hovering
         if (!isHovering) {
           timeout = setTimeout(hideControls, 2000);
         }
@@ -149,26 +212,73 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
 
       function hideControls() {
         if (!isHovering) {
-          // Only hide if not hovering
           playerControls.style.opacity = "0";
         }
       }
+
       playerControls.style.transition = "opacity 0.3s ease";
       playerControls.style.opacity = "0";
 
-      // Event listeners for mouse movement
+      // Mouse event listeners
       document.addEventListener("mousemove", showControls);
 
-      // Mouse enter/leave for controls
       playerControls.addEventListener("mouseenter", () => {
         isHovering = true;
         showControls();
-        clearTimeout(timeout); // Cancel any pending hide
+        clearTimeout(timeout);
       });
 
       playerControls.addEventListener("mouseleave", () => {
         isHovering = false;
         timeout = setTimeout(hideControls, 2000);
+      });
+    }
+
+    if (mq2.matches) {
+      const playerControls = document.getElementById("playerControls");
+      let timeout;
+
+      function showTouchControls() {
+        playerControls.style.opacity = "1";
+        clearTimeout(timeout);
+
+        updateControlsVisibility();
+      }
+
+      function hideTouchControls() {
+        if (!isTouching && isPlaying) {
+          playerControls.style.opacity = "0";
+        }
+      }
+
+      function updateControlsVisibility() {
+        if (!isPlaying) {
+          // If video is not playing, show controls and clear any hide timeout
+          playerControls.style.opacity = "1";
+          clearTimeout(timeout);
+        } else if (!isTouching) {
+          // If video is playing and not touching, start hide timeout
+          timeout = setTimeout(hideTouchControls, 2000);
+        }
+      }
+
+      playerControls.style.transition = "opacity 0.3s ease";
+      // Initial visibility based on playing state
+      updateControlsVisibility();
+
+      playButton.addEventListener("click", () => {
+        setVideoPlay();
+        updateControlsVisibility();
+      });
+      // Touch event listeners
+      document.addEventListener("touchstart", () => {
+        isTouching = true;
+        showTouchControls();
+      });
+
+      document.addEventListener("touchend", () => {
+        isTouching = false;
+        updateControlsVisibility();
       });
     }
 

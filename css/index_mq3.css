@@ -48,7 +48,7 @@
 
   #canvasMask2 {
     position: fixed;
-    height: 65px;
+    height: var(--headerHeight);
     width: calc((var(--mainWidth) / 6) + var(--mainMargin));
     top: 0;
     bottom: 0;
@@ -57,7 +57,9 @@
   #canvasMask3 {
     position: fixed;
     height: 55vh;
-    width: calc((var(--mainWidth) / 6));
+    width: calc(
+      (var(--mainWidth) / 6) + var(--mainMargin) + var(--mainPadding)
+    );
     left: calc(var(--mainMargin) + var(--mainPadding));
   }
   #canvasMask4 {
@@ -136,13 +138,19 @@
     color: var(--black);
   }
   .w-richtext ul[role="list"] > li {
-    font-weight: 800;
+    font-weight: var(--fBold);
     list-style: none;
-    font-size: var(--textSize2);
   }
-
+  .w-richtext ul strong {
+    font-size: calc(var(--textSize1) + 0.2rem) !important;
+    text-decoration: underline;
+  }
+  .w-richtext ul[role="list"] > li > ul {
+    padding-left: 70px;
+  }
   .w-richtext ul[role="list"] {
     margin-top: 8px;
+    line-height: var(--lineHeight1);
   }
 
   .w-richtext ul[role="list"] > li > ul > li {
@@ -178,7 +186,7 @@
   }
   #links #textContact {
     align-items: flex-end;
-    font-size: 12px;
+    font-size: var(--textSize1);
     position: relative;
     right: 201px;
     bottom: 20px;
@@ -188,7 +196,7 @@
     flex-direction: column;
     color: var(--black);
     align-items: flex-start;
-    font-size: 14px;
+    font-size: calc(var(--textSize1) + 0.2rem);
     font-weight: 500;
   }
   #about a {
@@ -254,7 +262,7 @@
     /* height: var(--mainHeight); */
     background-color: var(--bck2);
     position: fixed;
-    top: 65px;
+    top: var(--headerHeight);
     bottom: 0px;
     left: calc(var(--mainMargin) + var(--mainPadding));
     right: var(--mainMargin);
@@ -335,6 +343,7 @@
     margin-top: 25px;
     color: var(--black);
     font-size: var(--textSize0);
+    line-height: var(--lineHeight0);
     font-family: Twkeverett, sans-serif;
     font-weight: var(--fLight);
   }
@@ -417,19 +426,48 @@
   main .work .title {
     color: var(--black);
     opacity: 0;
+    font-size: var(--textSize2);
   }
 
   main .work .title.textVisible {
     opacity: 1;
-    transition: opacity 0.1 ease;
+    transition: opacity 0.5 ease;
   }
 
   main .work .title div {
     display: inline-block;
     background-color: var(--bck0);
-    padding: 0 5px;
+    padding: 8px 100px 1px 5px;
   }
-
+  main .work .description {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    /* width: 80%; */
+    margin-left: 20%;
+    left: 0;
+    color: var(--black);
+    font-weight: 200;
+    padding-left: calc(var(--mainPadding) / 2);
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    opacity: 0;
+    background-color: white;
+    transform: translateY(0px);
+    /* transition: opacity 0.3 ease, transform 0.5s ease 0.2s; */
+  }
+  main .work .description .w-richtext p {
+    margin-bottom: 0;
+    font-size: var(--textSize0);
+  }
+  main .work .description .w-richtext {
+    margin-bottom: 10px;
+  }
+  main .work .visibleDescription {
+    opacity: 1;
+    /* transform: translateX(10px); */
+  }
   main .basegrid {
     background-color: red;
     aspect-ratio: 1/1;

@@ -84,10 +84,11 @@ function patchFinishedLoading(patch) {
     //// mq3
 
     if (mq3.matches) {
+      const navHeight = navBar.offsetHeight;
       tl1.to("#logo", { translateY: "-50vh" }),
         tl1.to("#text1", { translateY: "-70vh", opacity: 0 }, "<"),
         tl1.to("#canvasMask4", { translateY: "-70vh" }, "<"),
-        tl1.to("#canvasMask3", { height: "65px", left: 0 }, "<"),
+        tl1.to("#canvasMask3", { height: navHeight, left: 0 }, "<"),
         tl1.to("#deco1", { opacity: 0 }, "<"),
         tl1.to("#deco2", { opacity: 0 }, "<"),
         tl1.to("#deco3", { opacity: 0 }, "<"),
