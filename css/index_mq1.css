@@ -47,8 +47,6 @@
 
     #logo {
       top: 48vh;
-    }
-    #logo {
       left: 32px;
     }
 
@@ -218,7 +216,8 @@
       color: var(--black);
       opacity: 0;
       height: 30px;
-      font-weight: var(--fBold);
+      font-weight: var(--fRegular);
+      font-size: var(--textSize1);
     }
     main .work .title div {
       display: inline-block;
@@ -228,7 +227,7 @@
       display: flex;
       /* vertical-align: middle; */
       align-items: center;
-      width: fit-content;
+      /* width: fit-content; */
       padding-right: 50px;
     }
   }

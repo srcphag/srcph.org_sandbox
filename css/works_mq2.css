@@ -77,7 +77,6 @@
       left: var(--mainMargin) !important;
     }
     #logo #logoPlayer {
-      transform: scale(0.7);
       transform-origin: center left;
     }
 

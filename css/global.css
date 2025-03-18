@@ -175,6 +175,9 @@ nav a {
 .vjs-modal-dialog-content {
   display: none !important;
 }
+.vjs-poster img {
+  object-fit: unset !important;
+}
 
 @keyframes scrollTextAnim {
   from {

@@ -139,7 +139,7 @@ function patchFinishedLoading(patch) {
         tl4.to("#text1", { opacity: 0, translateY: "-50vh" }, "<"),
         tl4.to("#canvasMask4", { translateY: "-70vh" }, "<"),
         tl4.to("#canvasMask3", { height: "65px" }, "<"),
-        tl4.to("#logoPlayer", { scale: "0.75" }, "<"),
+        tl4.to("#logoPlayer", { scale: "1" }, "<"),
         tl4.to("#backgroundMask1", { height: 0 }, "<");
 
       tl6.fromTo(
@@ -191,7 +191,7 @@ function patchFinishedLoading(patch) {
         tl4.to("#deco1", { opacity: 0 }, "<"),
         tl4.to("#deco2", { opacity: 0 }, "<"),
         tl4.to("#deco3", { opacity: 0 }, "<"),
-        tl4.to("#logoPlayer", { scale: "0.6" }, "<"),
+        tl4.to("#logoPlayer", { scale: "1" }, "<"),
         tl4.to("#backgroundMask1", { translateX: "-100vw" }, "<"),
         tl4.to("#canvasMask4", { height: "100vh" }, "<");
 

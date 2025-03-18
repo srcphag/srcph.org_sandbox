@@ -84,8 +84,8 @@
     }
 
     #logo #logoPlayer {
-      transform: scale(0.7);
       transform-origin: center left;
+      transform: scale(1.35);
     }
     #text1 {
       width: calc((var(--mainWidth) / 3) + var(--mainPadding));
@@ -100,7 +100,7 @@
     }
     main .work .description {
       display: flex;
-      position: absolute;
+      /* position: absolute; */
       color: var(--black);
       font-weight: 200;
       padding-left: var(--mainPadding);

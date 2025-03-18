@@ -224,6 +224,8 @@
   .videojs-work {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
   }
   .videojs-about {
     width: 100%;
@@ -235,7 +237,7 @@
 
   .collection-list .work .video .videojs-work video {
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .videojs-about video {
     width: 100%;
@@ -436,6 +438,7 @@
 
   main .work .title div {
     display: inline-block;
+    width: 100%;
     background-color: var(--bck0);
     padding: 8px 100px 1px 5px;
   }
