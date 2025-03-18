@@ -96,7 +96,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       videoVolume: videoVolume,
       videoFullscreen: isFullscreen,
       mainColorHex: "#141414",
-      indexPSR_mq3: [0.5, -0.5, -10, 10, 0, -20, 10],
+      indexPSR_mq3: [0.5, -0.5, -10, 7, 0, -20, 10],
       indexPSR_mq2: [0, 5, -2, 10, -40, 0, 0],
       indexPSR_mq1: [0, 5, 0, 15, -40, 0, 0],
 

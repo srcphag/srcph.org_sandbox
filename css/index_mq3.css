@@ -141,9 +141,14 @@
     font-weight: var(--fBold);
     list-style: none;
   }
-  .w-richtext ul strong {
-    font-size: calc(var(--textSize1) + 0.2rem) !important;
+  .w-richtext ul > li strong {
+    font-size: calc(var(--textSize1) + 0.2rem);
     text-decoration: underline;
+  }
+  .w-richtext ul > li > ul > li strong {
+    text-decoration: none;
+    font-size: var(--textSize0);
+    font-weight: var(--fBold);
   }
   .w-richtext ul[role="list"] > li > ul {
     padding-left: 70px;
@@ -348,6 +353,10 @@
     line-height: var(--lineHeight0);
     font-family: Twkeverett, sans-serif;
     font-weight: var(--fLight);
+    padding-right: 2em;
+  }
+  #text1 p:nth-child(2) {
+    padding-left: 5em;
   }
 
   main {
