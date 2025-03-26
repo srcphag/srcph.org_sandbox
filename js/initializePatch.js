@@ -98,7 +98,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       mainColorHex: "#141414",
       indexPSR_mq3: [0.5, -0.5, -10, 7, 0, -20, 10],
       indexPSR_mq2: [0, 5, -2, 10, -40, 0, 0],
-      indexPSR_mq1: [0, 5, 0, 15, -40, 0, 0],
+      indexPSR_mq1: [-5, 5, 0, 10, -40, 0, 0],
 
       indexWorkPSR_mq3: [0.5, 0, 0, 5, 180, 50, 30],
       indexWorkPSR_mq2: [0.5, 0, 0, 5, 180, 50, 30],

@@ -4,14 +4,16 @@ function patchFinishedLoading(patch) {
   pageLoad.fromTo(
     "body",
     { opacity: 0 },
-    { opacity: 1, duration: 1, delay: 0.05 },
+    { opacity: 1, duration: 0.5, delay: 0.05 },
     "<"
   );
 
   if (pageContext == "index") {
+    
+    const paragraphs = document.querySelectorAll('#text1 p');
     pageLoad
-      .from("#text1", 1, { x: -25 }, 0.8)
-      .from("#canvasMask3", 1, { x: -25 }, 1);
+    .from("#text1 p", 1, { opacity:0, x: -25, stagger: 0.5 })
+    .from("#canvasMask3", { x: -25, delay: 0.2 });
 
     ScrollTrigger.create({
       start: "top 50%",

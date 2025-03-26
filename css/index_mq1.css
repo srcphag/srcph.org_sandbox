@@ -108,7 +108,11 @@
       font-size: var(--q1textSize0);
       line-height: 15px;
       font-weight: var(--fLight);
+      padding-right: unset;
     }
+    #text1 p:nth-child(2) {
+      padding-left: 1em;
+  }
     #decoText1 {
       font-size: var(--q1textSize0);
       left: var(--q1Margin);
