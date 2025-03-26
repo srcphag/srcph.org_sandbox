@@ -159,7 +159,7 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       CABLES.patch.setVariable("videoPlay", isPlaying ? 1 : 0);
       CABLES.patch.setVariable("videoMuted", isMuted ? 1 : 0);
       CABLES.patch.setVariable("videoVolume", 1);
-      console.log("Play");
+      // console.log("Play");
     }
 
     playButton.addEventListener("click", () => {

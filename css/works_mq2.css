@@ -102,5 +102,11 @@
     #playerControls div.magic-hover {
       padding: 5px 7px;
     }
+    #playerControls {
+      pointer-events: none;
+    }
+    #controlsWrapper {
+      pointer-events: all;
+    }
   }
 }
