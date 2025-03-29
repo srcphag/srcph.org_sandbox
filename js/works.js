@@ -287,20 +287,16 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
     let workPSR_mq1_B = workPSR_mq1_A.slice(); // Creates a shallow copy
     workPSR_mq1_B[1] += 5;
 
-    mainElement.addEventListener("scroll", () => {
-      const scrollPercentage =
-        mainElement.scrollTop /
-        (mainElement.scrollHeight - mainElement.clientHeight);
+    // mainElement.addEventListener("scroll", () => {
+    //   const scrollPercentage =
+    //     mainElement.scrollTop /
+    //     (mainElement.scrollHeight - mainElement.clientHeight);
 
-      CABLES.patch.setVariable(
-        "workPSR_mq1",
-        lerpArrays(workPSR_mq1_A, workPSR_mq1_B, scrollPercentage)
-      );
+    //   CABLES.patch.setVariable(
+    //     "workPSR_mq1",
+    //     lerpArrays(workPSR_mq1_A, workPSR_mq1_B, scrollPercentage)
+    //   );
 
-      // CABLES.patch.setVariable(
-      //   "workPSR_mq2",
-      //   (workPSR_mq1[3] += remap(scrollPercentage, 0, 1, -1, 1))
-      // );
-    });
+    // });
   }
 });
