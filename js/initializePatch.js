@@ -135,6 +135,8 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
   });
   if (pageContext == "works") {
     textureOffset();
+    CABLES.patch.setVariable("autoTransformSpeed", 0);
+    CABLES.patch.setVariable("mouseTransformSpeed", 0);
   }
   if (pageContext == "index") {
     CABLES.patch.setVariable("videoPlay", 0);
