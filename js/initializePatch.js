@@ -117,8 +117,8 @@ document.addEventListener("CABLES.jsLoaded", function (event) {
       errorPSR_mq1: [0, 5, 0, 15, -40, 0, 0],
 
       imageTextureWrap: 0,
-      autoTransformSpeed: 0.1,
-      mouseTransformSpeed: 0.1,
+      autoTransformSpeed: 0.3,
+      mouseTransformSpeed: 0.08,
       trailAmmount: 0.5,
     },
     patch: CABLES.exportedPatch,
