@@ -1,7 +1,9 @@
 //Set context
 const currentURL = window.location.href;
 var pageContext;
-const path = "https://cdn.jsdelivr.net/gh/srcphag/srcph.org_sandbox@main/";
+const path =
+  window.SRCPH_BASE_URL ||
+  "https://cdn.jsdelivr.net/gh/srcphag/srcph.org_sandbox@main/";
 
 if (currentURL.includes("works")) {
   pageContext = "works";

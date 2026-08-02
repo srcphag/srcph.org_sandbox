@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serve",
+    "dev": "browser-sync start --config bs-config.js",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "serve": "^11.2.0"
   },
   "dependencies": {

@@ -239,7 +239,7 @@
   #playerControls div.magic-hover {
     background-size: contain;
     background-repeat: no-repeat;
-    /* cursor: pointer; */
+    cursor: pointer;
     background-color: var(--bck0);
     color: var(--black);
     padding: 5px 20px;

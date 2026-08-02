@@ -1,15 +1,5 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-options = {
-  outerStyle: "square",
-  hoverEffect: "circle-move",
-  hoverItemMove: false,
-  defaultCursor: false,
-  outerWidth: 6,
-  outerHeight: 6,
-};
-magicMouse(options);
-
 function handleScrollProgress(progress, variableName) {
   CABLES.patch.setVariable(variableName, progress);
 }
