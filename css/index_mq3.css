@@ -410,6 +410,7 @@
     position: absolute;
     display: block;
     z-index: 5;
+    cursor: pointer !important;
   }
 
   main .work .image {
