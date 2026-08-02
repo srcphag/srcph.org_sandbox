@@ -414,7 +414,8 @@
   }
 
   main .work .image {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #b1b1b1;
   }
   main .work .image .tint {
     background-color: transparent;
