@@ -156,8 +156,5 @@
     #controlsWrapper > div:nth-child(2) {
       padding: unset;
     }
-    #playerControls div.magic-hover {
-      padding: 5px 7px;
-    }
   }
 }

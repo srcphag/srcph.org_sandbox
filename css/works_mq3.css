@@ -208,7 +208,7 @@
     background-color: var(--black);
   }
   main #imageList li {
-    /* cursor: pointer; */
+    cursor: pointer;
   }
   #logo {
     position: fixed;
@@ -232,18 +232,14 @@
     height: 40px;  */
     z-index: 10;
   }
-  #playerControls div.magic-hover#play {
-    font-weight: var(--fBold);
-  }
-
   #playerControls div.magic-hover {
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-color: var(--bck0);
-    color: var(--black);
-    padding: 5px 20px;
-    font-weight: var(--fLight);
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-color: var(--bck0);
+      color: var(--black);
+      padding: 5px 20px;
+      font-weight: var(--fLight);
   }
   #controlsWrapper {
     display: flex;

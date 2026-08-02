@@ -30,12 +30,12 @@
 html {
   scroll-behavior: unset;
 }
-.nocursor {
-  cursor: none;
-}
-/* a:hover {
+/* .nocursor {
   cursor: none;
 } */
+a:hover {
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
